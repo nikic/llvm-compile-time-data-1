@@ -1,0 +1,356 @@
+MESSAGE: Execution of "./build_llvm_test_suite.sh O3" failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/O3.cmake
+-- The C compiler identification is Clang 16.0.0
+-- The CXX compiler identification is Clang 16.0.0
+-- Check for working C compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang
+-- Check for working C compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang++
+-- Check for working CXX compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: zen
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Adding directory CTMark
+-- Found Intl: /usr/include  
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/llvm-compile-time-tracker/llvm-test-suite-build
+ninja: Entering directory `./llvm-test-suite-build'
+[1/669] Generating HashProgramOutput.sh
+[2/669] Generating timeit-target
+[3/669] Generating timeit
+[4/669] Generating __init__.py
+[5/669] Generating shellcommand.py
+[6/669] Generating testfile.py
+[7/669] Generating testplan.py
+[8/669] Generating test.py
+[9/669] Generating modules/codesize.py
+[10/669] Generating modules/compiletime.py
+[11/669] Generating modules/hash.py
+[12/669] Generating modules/hpmcount.py
+[13/669] Generating modules/__init__.py
+[14/669] Generating modules/microbenchmark.py
+[15/669] Generating modules/perf.py
+[16/669] Generating modules/profilegen.py
+[17/669] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[18/669] Generating modules/remote.py
+[19/669] Generating modules/run_under.py
+[20/669] Generating modules/run.py
+[21/669] Generating modules/stats.py
+[22/669] Generating ../lit.cfg
+[23/669] Generating modules/timeit.py
+[24/669] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/669] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+[26/669] Linking C executable tools/fpcmp-target
+[27/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o
+FAILED: CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o 
+/root/llvm-compile-time-tracker/llvm-test-suite-build/tools/timeit --summary CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o.time /root/llvm-compile-time-tracker/llvm-project-build/bin/clang++  -DNDEBUG  -O3   -w -Werror=date-time -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -Wno-error=narrowing -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -MD -MT CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o -MF CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o.d -o CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o -c /root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows/wine_date_and_time.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows/wine_date_and_time.cpp:25:
+In file included from /usr/include/unistd.h:206:
+/usr/include/x86_64-linux-gnu/bits/environments.h:18:2: error: unterminated conditional directive
+#ifndef _UNISTD_H
+ ^
+1 error generated.
+[28/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/myGetTickCount.cpp.o
+[29/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/myAddExeFlag.cpp.o
+[30/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/mySplitCommandLine.cpp.o
+[31/669] Generating sqlite test inputs
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "./build_llvm_test_suite.sh ReleaseThinLTO" failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/ReleaseThinLTO.cmake
+-- The C compiler identification is Clang 16.0.0
+-- The CXX compiler identification is Clang 16.0.0
+-- Check for working C compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang
+-- Check for working C compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang++
+-- Check for working CXX compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: zen
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Adding directory CTMark
+-- Found Intl: /usr/include  
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/llvm-compile-time-tracker/llvm-test-suite-build
+ninja: Entering directory `./llvm-test-suite-build'
+[1/669] Generating timeit
+[2/669] Generating HashProgramOutput.sh
+[3/669] Generating timeit-target
+[4/669] Generating __init__.py
+[5/669] Generating shellcommand.py
+[6/669] Generating testfile.py
+[7/669] Generating testplan.py
+[8/669] Generating test.py
+[9/669] Generating modules/codesize.py
+[10/669] Generating modules/compiletime.py
+[11/669] Generating modules/hash.py
+[12/669] Generating modules/hpmcount.py
+[13/669] Generating modules/__init__.py
+[14/669] Generating modules/microbenchmark.py
+[15/669] Generating modules/perf.py
+[16/669] Generating modules/profilegen.py
+[17/669] Generating modules/remote.py
+[18/669] Generating modules/run.py
+[19/669] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[20/669] Generating modules/run_under.py
+[21/669] Generating modules/stats.py
+[22/669] Generating modules/timeit.py
+[23/669] Generating ../lit.cfg
+[24/669] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/669] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+[26/669] Linking C executable tools/fpcmp-target
+[27/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o
+FAILED: CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o 
+/root/llvm-compile-time-tracker/llvm-test-suite-build/tools/timeit --summary CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o.time /root/llvm-compile-time-tracker/llvm-project-build/bin/clang++  -DNDEBUG  -O3 -fomit-frame-pointer -flto=thin -DNDEBUG   -w -Werror=date-time -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -Wno-error=narrowing -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -MD -MT CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o -MF CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o.d -o CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o -c /root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows/wine_date_and_time.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows/wine_date_and_time.cpp:25:
+In file included from /usr/include/unistd.h:206:
+/usr/include/x86_64-linux-gnu/bits/environments.h:18:2: error: unterminated conditional directive
+#ifndef _UNISTD_H
+ ^
+1 error generated.
+[28/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/myGetTickCount.cpp.o
+[29/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/myAddExeFlag.cpp.o
+[30/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/mySplitCommandLine.cpp.o
+[31/669] Generating sqlite test inputs
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "./build_llvm_test_suite.sh ReleaseLTO-g" failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/ReleaseLTO-g.cmake
+-- The C compiler identification is Clang 16.0.0
+-- The CXX compiler identification is Clang 16.0.0
+-- Check for working C compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang
+-- Check for working C compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang++
+-- Check for working CXX compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: zen
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Adding directory CTMark
+-- Found Intl: /usr/include  
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/llvm-compile-time-tracker/llvm-test-suite-build
+ninja: Entering directory `./llvm-test-suite-build'
+[1/669] Generating timeit
+[2/669] Generating timeit-target
+[3/669] Generating HashProgramOutput.sh
+[4/669] Generating __init__.py
+[5/669] Generating shellcommand.py
+[6/669] Generating testfile.py
+[7/669] Generating modules/codesize.py
+[8/669] Generating testplan.py
+[9/669] Generating test.py
+[10/669] Generating modules/compiletime.py
+[11/669] Generating modules/hash.py
+[12/669] Generating modules/hpmcount.py
+[13/669] Generating modules/__init__.py
+[14/669] Generating modules/microbenchmark.py
+[15/669] Generating modules/perf.py
+[16/669] Generating modules/profilegen.py
+[17/669] Generating modules/remote.py
+[18/669] Generating modules/run.py
+[19/669] Generating modules/run_under.py
+[20/669] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[21/669] Generating modules/stats.py
+[22/669] Generating ../lit.cfg
+[23/669] Generating modules/timeit.py
+[24/669] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/669] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+[26/669] Linking C executable tools/fpcmp-target
+[27/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o
+FAILED: CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o 
+/root/llvm-compile-time-tracker/llvm-test-suite-build/tools/timeit --summary CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o.time /root/llvm-compile-time-tracker/llvm-project-build/bin/clang++  -DNDEBUG  -O3 -fomit-frame-pointer -flto -DNDEBUG -g   -w -Werror=date-time -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -Wno-error=narrowing -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -MD -MT CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o -MF CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o.d -o CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o -c /root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows/wine_date_and_time.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows/wine_date_and_time.cpp:25:
+In file included from /usr/include/unistd.h:206:
+/usr/include/x86_64-linux-gnu/bits/environments.h:18:2: error: unterminated conditional directive
+#ifndef _UNISTD_H
+ ^
+1 error generated.
+[28/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/myGetTickCount.cpp.o
+[29/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/myAddExeFlag.cpp.o
+[30/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/mySplitCommandLine.cpp.o
+[31/669] Generating sqlite test inputs
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "./build_llvm_test_suite.sh O0-g" failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/O0-g.cmake
+-- The C compiler identification is Clang 16.0.0
+-- The CXX compiler identification is Clang 16.0.0
+-- Check for working C compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang
+-- Check for working C compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang++
+-- Check for working CXX compiler: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: zen
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Adding directory CTMark
+-- Found Intl: /usr/include  
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/llvm-compile-time-tracker/llvm-test-suite-build
+ninja: Entering directory `./llvm-test-suite-build'
+[1/669] Generating timeit-target
+[2/669] Generating HashProgramOutput.sh
+[3/669] Generating timeit
+[4/669] Generating shellcommand.py
+[5/669] Generating __init__.py
+[6/669] Generating testfile.py
+[7/669] Generating testplan.py
+[8/669] Generating modules/codesize.py
+[9/669] Generating test.py
+[10/669] Generating modules/compiletime.py
+[11/669] Generating modules/hash.py
+[12/669] Generating modules/hpmcount.py
+[13/669] Generating modules/__init__.py
+[14/669] Generating modules/microbenchmark.py
+[15/669] Generating modules/perf.py
+[16/669] Generating modules/profilegen.py
+[17/669] Generating modules/remote.py
+[18/669] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+[19/669] Generating modules/run.py
+[20/669] Generating modules/stats.py
+[21/669] Generating modules/run_under.py
+[22/669] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[23/669] Generating modules/timeit.py
+[24/669] Generating ../lit.cfg
+[25/669] Linking C executable tools/fpcmp-target
+[26/669] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[27/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o
+FAILED: CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o 
+/root/llvm-compile-time-tracker/llvm-test-suite-build/tools/timeit --summary CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o.time /root/llvm-compile-time-tracker/llvm-project-build/bin/clang++  -DNDEBUG  -O0 -g   -w -Werror=date-time -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -Wno-error=narrowing -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -MD -MT CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o -MF CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o.d -o CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o -c /root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows/wine_date_and_time.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows/wine_date_and_time.cpp:25:
+In file included from /usr/include/unistd.h:206:
+/usr/include/x86_64-linux-gnu/bits/environments.h:18:2: error: unterminated conditional directive
+#ifndef _UNISTD_H
+ ^
+1 error generated.
+[28/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/myGetTickCount.cpp.o
+[29/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/myAddExeFlag.cpp.o
+[30/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/mySplitCommandLine.cpp.o
+[31/669] Generating sqlite test inputs
+ninja: build stopped: subcommand failed.
+
+
+STDERR:

@@ -1,0 +1,136 @@
+MESSAGE: Execution of "./build_llvm_project.sh" failed
+
+STDOUT:
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/TrackingMDRef.h:16,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ValueMap.h:30,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/PseudoSourceValue.h:17,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineMemOperand.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineInstr.h:24,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/GlobalISel/GISelChangeObserver.h:18,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/GlobalISel/GISelKnownBits.h:18,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/GlobalISel/Legalizer.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/Legalizer.cpp:15:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Value.h:32:7: note: forward declaration of ‘class llvm::BasicBlock’
+   32 | class BasicBlock;
+      |       ^~~~~~~~~~
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PassManager.h:45,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/BlockFrequencyInfo.h:16,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/OptimizationRemarkEmitter.h:17,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/Legalizer.cpp:17:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instruction.h:88:25: error: could not convert ‘{EndIt, EndIt}’ from ‘<brace-enclosed initializer list>’ to ‘llvm::iterator_range<llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::DPValue, false, false, void, false>, false, false> >’
+   88 |     return {EndIt, EndIt};
+      |                         ^
+      |                         |
+      |                         <brace-enclosed initializer list>
+[409/3199] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/Localizer.cpp.o
+FAILED: lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/Localizer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/lib/CodeGen/GlobalISel -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/Localizer.cpp.o -MF lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/Localizer.cpp.o.d -o lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/Localizer.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/Localizer.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetTransformInfo.h:26,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/Localizer.cpp:15:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instruction.h: In member function ‘llvm::iterator_range<llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::DPValue, false, false, void, false>, false, false> > llvm::Instruction::getDbgValueRange() const’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instruction.h:87:29: error: invalid use of incomplete type ‘const class llvm::BasicBlock’
+   87 |     auto EndIt = getParent()->TrailingDPValues.end();
+      |                             ^~
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/User.h:24,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constant.h:16,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.h:26,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/TrackingMDRef.h:16,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ValueMap.h:30,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/PseudoSourceValue.h:17,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineMemOperand.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineInstr.h:24,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunctionPass.h:21,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/GlobalISel/Localizer.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/Localizer.cpp:12:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Value.h:32:7: note: forward declaration of ‘class llvm::BasicBlock’
+   32 | class BasicBlock;
+      |       ^~~~~~~~~~
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetTransformInfo.h:26,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/Localizer.cpp:15:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instruction.h:88:25: error: could not convert ‘{EndIt, EndIt}’ from ‘<brace-enclosed initializer list>’ to ‘llvm::iterator_range<llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::DPValue, false, false, void, false>, false, false> >’
+   88 |     return {EndIt, EndIt};
+      |                         ^
+      |                         |
+      |                         <brace-enclosed initializer list>
+[410/3199] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LoadStoreOpt.cpp.o
+FAILED: lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LoadStoreOpt.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/lib/CodeGen/GlobalISel -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LoadStoreOpt.cpp.o -MF lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LoadStoreOpt.cpp.o.d -o lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LoadStoreOpt.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/LoadStoreOpt.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PassManager.h:45,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/AliasAnalysis.h:44,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/GlobalISel/LoadStoreOpt.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/LoadStoreOpt.cpp:12:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instruction.h: In member function ‘llvm::iterator_range<llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::DPValue, false, false, void, false>, false, false> > llvm::Instruction::getDbgValueRange() const’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instruction.h:87:29: error: invalid use of incomplete type ‘const class llvm::BasicBlock’
+   87 |     auto EndIt = getParent()->TrailingDPValues.end();
+      |                             ^~
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/User.h:24,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constant.h:16,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.h:26,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/MemoryLocation.h:19,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/AliasAnalysis.h:43,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/GlobalISel/LoadStoreOpt.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/LoadStoreOpt.cpp:12:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Value.h:32:7: note: forward declaration of ‘class llvm::BasicBlock’
+   32 | class BasicBlock;
+      |       ^~~~~~~~~~
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PassManager.h:45,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/AliasAnalysis.h:44,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/GlobalISel/LoadStoreOpt.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/LoadStoreOpt.cpp:12:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instruction.h:88:25: error: could not convert ‘{EndIt, EndIt}’ from ‘<brace-enclosed initializer list>’ to ‘llvm::iterator_range<llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::DPValue, false, false, void, false>, false, false> >’
+   88 |     return {EndIt, EndIt};
+      |                         ^
+      |                         |
+      |                         <brace-enclosed initializer list>
+[411/3199] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LegalizerHelper.cpp.o
+FAILED: lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LegalizerHelper.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/lib/CodeGen/GlobalISel -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LegalizerHelper.cpp.o -MF lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LegalizerHelper.cpp.o.d -o lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LegalizerHelper.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/LegalizerHelper.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/CFG.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instructions.h:26,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/GlobalISel/GenericMachineInstrs.h:17,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/LegalizerHelper.cpp:19:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instruction.h: In member function ‘llvm::iterator_range<llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::DPValue, false, false, void, false>, false, false> > llvm::Instruction::getDbgValueRange() const’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instruction.h:87:29: error: invalid use of incomplete type ‘const class llvm::BasicBlock’
+   87 |     auto EndIt = getParent()->TrailingDPValues.end();
+      |                             ^~
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/GlobalISel/CallLowering.h:24,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/GlobalISel/LegalizerHelper.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/LegalizerHelper.cpp:15:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Value.h:32:7: note: forward declaration of ‘class llvm::BasicBlock’
+   32 | class BasicBlock;
+      |       ^~~~~~~~~~
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/CFG.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instructions.h:26,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/GlobalISel/GenericMachineInstrs.h:17,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GlobalISel/LegalizerHelper.cpp:19:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instruction.h:88:25: error: could not convert ‘{EndIt, EndIt}’ from ‘<brace-enclosed initializer list>’ to ‘llvm::iterator_range<llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::DPValue, false, false, void, false>, false, false> >’
+   88 |     return {EndIt, EndIt};
+      |                         ^
+      |                         |
+      |                         <brace-enclosed initializer list>
+[412/3199] Building X86GenSubtargetInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+28.91user 2.83system 0:06.76elapsed 469%CPU (0avgtext+0avgdata 540332maxresident)k
+0inputs+171864outputs (1673major+1595603minor)pagefaults 0swaps

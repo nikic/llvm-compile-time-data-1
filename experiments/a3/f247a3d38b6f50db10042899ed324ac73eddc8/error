@@ -1,0 +1,399 @@
+MESSAGE: Execution of "./build_llvm_test_suite.sh O3" failed
+
+STDOUT:
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: zen
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Adding directory CTMark
+-- Found Intl: /usr/include  
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/llvm-compile-time-tracker/llvm-test-suite-build
+ninja: Entering directory `./llvm-test-suite-build'
+[1/669] Generating HashProgramOutput.sh
+[2/669] Generating timeit-target
+[3/669] Generating timeit
+[4/669] Generating shellcommand.py
+[5/669] Generating __init__.py
+[6/669] Generating testfile.py
+[7/669] Generating test.py
+[8/669] Generating testplan.py
+[9/669] Generating modules/codesize.py
+[10/669] Generating modules/compiletime.py
+[11/669] Generating modules/hash.py
+[12/669] Generating modules/hpmcount.py
+[13/669] Generating modules/__init__.py
+[14/669] Generating modules/microbenchmark.py
+[15/669] Generating modules/perf.py
+[16/669] Generating modules/profilegen.py
+[17/669] Generating modules/remote.py
+[18/669] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[19/669] Generating modules/run_under.py
+[20/669] Generating modules/run.py
+[21/669] Generating modules/stats.py
+[22/669] Generating modules/timeit.py
+[23/669] Generating ../lit.cfg
+[24/669] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/669] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+FAILED: tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o 
+/root/llvm-compile-time-tracker/llvm-project-build/bin/clang -DNDEBUG  -O3   -w -Werror=date-time -MD -MT tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -MF tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o.d -o tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o   -c /root/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang -DNDEBUG -O3 -w -Werror=date-time -MD -MT tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -MF tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o.d -o tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -c /root/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c
+1.	<eof> parser at end of file
+2.	Optimizer
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang           0x000055de06bb470f llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 63
+1  clang           0x000055de06bb273c llvm::sys::CleanupOnSignal(unsigned long) + 252
+2  clang           0x000055de06b12e28
+3  libpthread.so.0 0x00007fa52f6643c0
+4  clang           0x000055de063cb837
+5  clang           0x000055de063cc1b8 void llvm::DomTreeBuilder::ApplyUpdates<llvm::DominatorTreeBase<llvm::BasicBlock, false>>(llvm::DominatorTreeBase<llvm::BasicBlock, false>&, llvm::GraphDiff<llvm::DominatorTreeBase<llvm::BasicBlock, false>::NodePtr, llvm::DominatorTreeBase<llvm::BasicBlock, false>::IsPostDominator>&, llvm::GraphDiff<llvm::DominatorTreeBase<llvm::BasicBlock, false>::NodePtr, llvm::DominatorTreeBase<llvm::BasicBlock, false>::IsPostDominator>*) + 1656
+6  clang           0x000055de05bfa669 llvm::MemorySSAUpdater::applyUpdates(llvm::ArrayRef<llvm::cfg::Update<llvm::BasicBlock*>>, llvm::DominatorTree&, bool) + 1401
+7  clang           0x000055de06cc7160
+8  clang           0x000055de06cc9209 llvm::LoopRotation(llvm::Loop*, llvm::LoopInfo*, llvm::TargetTransformInfo const*, llvm::AssumptionCache*, llvm::DominatorTree*, llvm::ScalarEvolution*, llvm::MemorySSAUpdater*, llvm::SimplifyQuery const&, bool, unsigned int, bool, bool) + 201
+9  clang           0x000055de069ab333 llvm::LoopRotatePass::run(llvm::Loop&, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>&, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&) + 867
+10 clang           0x000055de07ea86a6
+11 clang           0x000055de095cfa5f std::optional<llvm::PreservedAnalyses> llvm::PassManager<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>::runSinglePass<llvm::Loop, std::unique_ptr<llvm::detail::PassConcept<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>, std::default_delete<llvm::detail::PassConcept<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>>>>(llvm::Loop&, std::unique_ptr<llvm::detail::PassConcept<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>, std::default_delete<llvm::detail::PassConcept<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>>>&, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>&, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&, llvm::PassInstrumentation&) + 879
+12 clang           0x000055de095cfcbd llvm::PassManager<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>::runWithoutLoopNestPasses(llvm::Loop&, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>&, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&) + 285
+13 clang           0x000055de095d0c7d llvm::PassManager<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>::run(llvm::Loop&, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>&, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&) + 45
+14 clang           0x000055de095d1ea9 llvm::FunctionToLoopPassAdaptor::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 4089
+15 clang           0x000055de07ea54f6
+16 clang           0x000055de06f7b27a
+17 clang           0x000055de09662d15 llvm::CGSCCToFunctionPassAdaptor::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 1829
+18 clang           0x000055de07ea54a6
+19 clang           0x000055de0965b424 llvm::PassManager<llvm::LazyCallGraph::SCC, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 404
+20 clang           0x000055de065b4f06
+21 clang           0x000055de0965f0be llvm::DevirtSCCRepeatedPass::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 542
+22 clang           0x000055de065b4eb6
+23 clang           0x000055de0965c5bb llvm::ModuleToPostOrderCGSCCPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 3899
+24 clang           0x000055de065bd42d llvm::ModuleInlinerWrapperPass::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 829
+25 clang           0x000055de07ea4c56
+26 clang           0x000055de06486039 llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 1017
+27 clang           0x000055de06f868e4
+28 clang           0x000055de06f89966 clang::EmitBackendOutput(clang::DiagnosticsEngine&, clang::HeaderSearchOptions const&, clang::CodeGenOptions const&, clang::TargetOptions const&, clang::LangOptions const&, llvm::StringRef, llvm::Module*, clang::BackendAction, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>) + 3542
+29 clang           0x000055de07e48d38
+30 clang           0x000055de0824593d clang::ParseAST(clang::Sema&, bool, bool) + 1293
+31 clang           0x000055de07e48365 clang::CodeGenAction::ExecuteAction() + 2517
+32 clang           0x000055de0776ff01 clang::FrontendAction::Execute() + 209
+33 clang           0x000055de076f4ec3 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 291
+34 clang           0x000055de07854fef clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 351
+35 clang           0x000055de0575477c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 3564
+36 clang           0x000055de0575018c
+37 clang           0x000055de075582c9
+38 clang           0x000055de06b13287 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+39 clang           0x000055de0755850c
+40 clang           0x000055de07520cec clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 172
+41 clang           0x000055de075216dd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 269
+42 clang           0x000055de0752babc clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 332
+43 clang           0x000055de05752a23 clang_main(int, char**) + 10051
+44 libc.so.6       0x00007fa52f1320b3 __libc_start_main + 243
+45 clang           0x000055de0574c2de _start + 46
+clang-16: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 16.0.0
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /root/llvm-compile-time-tracker/llvm-project-build/bin
+clang-16: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang-16: note: diagnostic msg: /tmp/fpcmp-280bdf.c
+clang-16: note: diagnostic msg: /tmp/fpcmp-280bdf.sh
+clang-16: note: diagnostic msg: 
+
+********************
+[26/669] Generating sqlite test inputs
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "./build_llvm_test_suite.sh ReleaseThinLTO" failed
+
+STDOUT:
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: zen
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Adding directory CTMark
+-- Found Intl: /usr/include  
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/llvm-compile-time-tracker/llvm-test-suite-build
+ninja: Entering directory `./llvm-test-suite-build'
+[1/669] Generating timeit-target
+[2/669] Generating timeit
+[3/669] Generating HashProgramOutput.sh
+[4/669] Generating __init__.py
+[5/669] Generating shellcommand.py
+[6/669] Generating testfile.py
+[7/669] Generating test.py
+[8/669] Generating testplan.py
+[9/669] Generating modules/codesize.py
+[10/669] Generating modules/compiletime.py
+[11/669] Generating modules/hash.py
+[12/669] Generating modules/hpmcount.py
+[13/669] Generating modules/__init__.py
+[14/669] Generating modules/microbenchmark.py
+[15/669] Generating modules/perf.py
+[16/669] Generating modules/profilegen.py
+[17/669] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[18/669] Generating modules/remote.py
+[19/669] Generating modules/run.py
+[20/669] Generating modules/run_under.py
+[21/669] Generating modules/stats.py
+[22/669] Generating ../lit.cfg
+[23/669] Generating modules/timeit.py
+[24/669] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/669] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+FAILED: tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o 
+/root/llvm-compile-time-tracker/llvm-project-build/bin/clang -DNDEBUG  -O3 -fomit-frame-pointer -flto=thin -DNDEBUG   -w -Werror=date-time -MD -MT tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -MF tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o.d -o tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o   -c /root/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang -DNDEBUG -O3 -fomit-frame-pointer -flto=thin -DNDEBUG -w -Werror=date-time -MD -MT tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -MF tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o.d -o tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -c /root/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c
+1.	<eof> parser at end of file
+2.	Optimizer
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang           0x000055c7c1aa770f llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 63
+1  clang           0x000055c7c1aa573c llvm::sys::CleanupOnSignal(unsigned long) + 252
+2  clang           0x000055c7c1a05e28
+3  libpthread.so.0 0x00007f2bd86473c0
+4  clang           0x000055c7c12be837
+5  clang           0x000055c7c12bf1b8 void llvm::DomTreeBuilder::ApplyUpdates<llvm::DominatorTreeBase<llvm::BasicBlock, false>>(llvm::DominatorTreeBase<llvm::BasicBlock, false>&, llvm::GraphDiff<llvm::DominatorTreeBase<llvm::BasicBlock, false>::NodePtr, llvm::DominatorTreeBase<llvm::BasicBlock, false>::IsPostDominator>&, llvm::GraphDiff<llvm::DominatorTreeBase<llvm::BasicBlock, false>::NodePtr, llvm::DominatorTreeBase<llvm::BasicBlock, false>::IsPostDominator>*) + 1656
+6  clang           0x000055c7c0aed669 llvm::MemorySSAUpdater::applyUpdates(llvm::ArrayRef<llvm::cfg::Update<llvm::BasicBlock*>>, llvm::DominatorTree&, bool) + 1401
+7  clang           0x000055c7c1bba160
+8  clang           0x000055c7c1bbc209 llvm::LoopRotation(llvm::Loop*, llvm::LoopInfo*, llvm::TargetTransformInfo const*, llvm::AssumptionCache*, llvm::DominatorTree*, llvm::ScalarEvolution*, llvm::MemorySSAUpdater*, llvm::SimplifyQuery const&, bool, unsigned int, bool, bool) + 201
+9  clang           0x000055c7c189e333 llvm::LoopRotatePass::run(llvm::Loop&, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>&, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&) + 867
+10 clang           0x000055c7c2d9b6a6
+11 clang           0x000055c7c44c2a5f std::optional<llvm::PreservedAnalyses> llvm::PassManager<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>::runSinglePass<llvm::Loop, std::unique_ptr<llvm::detail::PassConcept<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>, std::default_delete<llvm::detail::PassConcept<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>>>>(llvm::Loop&, std::unique_ptr<llvm::detail::PassConcept<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>, std::default_delete<llvm::detail::PassConcept<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>>>&, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>&, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&, llvm::PassInstrumentation&) + 879
+12 clang           0x000055c7c44c2cbd llvm::PassManager<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>::runWithoutLoopNestPasses(llvm::Loop&, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>&, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&) + 285
+13 clang           0x000055c7c44c3c7d llvm::PassManager<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>::run(llvm::Loop&, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>&, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&) + 45
+14 clang           0x000055c7c44c4ea9 llvm::FunctionToLoopPassAdaptor::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 4089
+15 clang           0x000055c7c2d984f6
+16 clang           0x000055c7c1e6e27a
+17 clang           0x000055c7c4555d15 llvm::CGSCCToFunctionPassAdaptor::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 1829
+18 clang           0x000055c7c2d984a6
+19 clang           0x000055c7c454e424 llvm::PassManager<llvm::LazyCallGraph::SCC, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 404
+20 clang           0x000055c7c14a7f06
+21 clang           0x000055c7c45520be llvm::DevirtSCCRepeatedPass::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 542
+22 clang           0x000055c7c14a7eb6
+23 clang           0x000055c7c454f5bb llvm::ModuleToPostOrderCGSCCPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 3899
+24 clang           0x000055c7c14b042d llvm::ModuleInlinerWrapperPass::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 829
+25 clang           0x000055c7c2d97c56
+26 clang           0x000055c7c1379039 llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 1017
+27 clang           0x000055c7c1e798e4
+28 clang           0x000055c7c1e7c966 clang::EmitBackendOutput(clang::DiagnosticsEngine&, clang::HeaderSearchOptions const&, clang::CodeGenOptions const&, clang::TargetOptions const&, clang::LangOptions const&, llvm::StringRef, llvm::Module*, clang::BackendAction, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>) + 3542
+29 clang           0x000055c7c2d3bd38
+30 clang           0x000055c7c313893d clang::ParseAST(clang::Sema&, bool, bool) + 1293
+31 clang           0x000055c7c2d3b365 clang::CodeGenAction::ExecuteAction() + 2517
+32 clang           0x000055c7c2662f01 clang::FrontendAction::Execute() + 209
+33 clang           0x000055c7c25e7ec3 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 291
+34 clang           0x000055c7c2747fef clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 351
+35 clang           0x000055c7c064777c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 3564
+36 clang           0x000055c7c064318c
+37 clang           0x000055c7c244b2c9
+38 clang           0x000055c7c1a06287 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+39 clang           0x000055c7c244b50c
+40 clang           0x000055c7c2413cec clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 172
+41 clang           0x000055c7c24146dd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 269
+42 clang           0x000055c7c241eabc clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 332
+43 clang           0x000055c7c0645a23 clang_main(int, char**) + 10051
+44 libc.so.6       0x00007f2bd81150b3 __libc_start_main + 243
+45 clang           0x000055c7c063f2de _start + 46
+clang-16: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 16.0.0
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /root/llvm-compile-time-tracker/llvm-project-build/bin
+clang-16: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang-16: note: diagnostic msg: /tmp/fpcmp-237805.c
+clang-16: note: diagnostic msg: /tmp/fpcmp-237805.sh
+clang-16: note: diagnostic msg: 
+
+********************
+[26/669] Generating sqlite test inputs
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "./build_llvm_test_suite.sh ReleaseLTO-g" failed
+
+STDOUT:
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: zen
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Adding directory CTMark
+-- Found Intl: /usr/include  
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/llvm-compile-time-tracker/llvm-test-suite-build
+ninja: Entering directory `./llvm-test-suite-build'
+[1/669] Generating timeit-target
+[2/669] Generating timeit
+[3/669] Generating HashProgramOutput.sh
+[4/669] Generating __init__.py
+[5/669] Generating shellcommand.py
+[6/669] Generating testfile.py
+[7/669] Generating testplan.py
+[8/669] Generating test.py
+[9/669] Generating modules/codesize.py
+[10/669] Generating modules/compiletime.py
+[11/669] Generating modules/hash.py
+[12/669] Generating modules/hpmcount.py
+[13/669] Generating modules/__init__.py
+[14/669] Generating modules/microbenchmark.py
+[15/669] Generating modules/perf.py
+[16/669] Generating modules/profilegen.py
+[17/669] Generating modules/remote.py
+[18/669] Generating modules/run.py
+[19/669] Generating modules/run_under.py
+[20/669] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[21/669] Generating modules/stats.py
+[22/669] Generating modules/timeit.py
+[23/669] Generating ../lit.cfg
+[24/669] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/669] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+FAILED: tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o 
+/root/llvm-compile-time-tracker/llvm-project-build/bin/clang -DNDEBUG  -O3 -fomit-frame-pointer -flto -DNDEBUG -g   -w -Werror=date-time -MD -MT tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -MF tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o.d -o tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o   -c /root/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /root/llvm-compile-time-tracker/llvm-project-build/bin/clang -DNDEBUG -O3 -fomit-frame-pointer -flto -DNDEBUG -g -w -Werror=date-time -MD -MT tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -MF tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o.d -o tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -c /root/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c
+1.	<eof> parser at end of file
+2.	Optimizer
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang           0x000055c98c04970f llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 63
+1  clang           0x000055c98c04773c llvm::sys::CleanupOnSignal(unsigned long) + 252
+2  clang           0x000055c98bfa7e28
+3  libpthread.so.0 0x00007fbfcc7413c0
+4  clang           0x000055c98b860837
+5  clang           0x000055c98b8611b8 void llvm::DomTreeBuilder::ApplyUpdates<llvm::DominatorTreeBase<llvm::BasicBlock, false>>(llvm::DominatorTreeBase<llvm::BasicBlock, false>&, llvm::GraphDiff<llvm::DominatorTreeBase<llvm::BasicBlock, false>::NodePtr, llvm::DominatorTreeBase<llvm::BasicBlock, false>::IsPostDominator>&, llvm::GraphDiff<llvm::DominatorTreeBase<llvm::BasicBlock, false>::NodePtr, llvm::DominatorTreeBase<llvm::BasicBlock, false>::IsPostDominator>*) + 1656
+6  clang           0x000055c98b08f669 llvm::MemorySSAUpdater::applyUpdates(llvm::ArrayRef<llvm::cfg::Update<llvm::BasicBlock*>>, llvm::DominatorTree&, bool) + 1401
+7  clang           0x000055c98c15c160
+8  clang           0x000055c98c15e209 llvm::LoopRotation(llvm::Loop*, llvm::LoopInfo*, llvm::TargetTransformInfo const*, llvm::AssumptionCache*, llvm::DominatorTree*, llvm::ScalarEvolution*, llvm::MemorySSAUpdater*, llvm::SimplifyQuery const&, bool, unsigned int, bool, bool) + 201
+9  clang           0x000055c98be40333 llvm::LoopRotatePass::run(llvm::Loop&, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>&, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&) + 867
+10 clang           0x000055c98d33d6a6
+11 clang           0x000055c98ea64a5f std::optional<llvm::PreservedAnalyses> llvm::PassManager<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>::runSinglePass<llvm::Loop, std::unique_ptr<llvm::detail::PassConcept<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>, std::default_delete<llvm::detail::PassConcept<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>>>>(llvm::Loop&, std::unique_ptr<llvm::detail::PassConcept<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>, std::default_delete<llvm::detail::PassConcept<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>>>&, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>&, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&, llvm::PassInstrumentation&) + 879
+12 clang           0x000055c98ea64cbd llvm::PassManager<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>::runWithoutLoopNestPasses(llvm::Loop&, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>&, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&) + 285
+13 clang           0x000055c98ea65c7d llvm::PassManager<llvm::Loop, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&>::run(llvm::Loop&, llvm::AnalysisManager<llvm::Loop, llvm::LoopStandardAnalysisResults&>&, llvm::LoopStandardAnalysisResults&, llvm::LPMUpdater&) + 45
+14 clang           0x000055c98ea66ea9 llvm::FunctionToLoopPassAdaptor::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 4089
+15 clang           0x000055c98d33a4f6
+16 clang           0x000055c98c41027a
+17 clang           0x000055c98eaf7d15 llvm::CGSCCToFunctionPassAdaptor::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 1829
+18 clang           0x000055c98d33a4a6
+19 clang           0x000055c98eaf0424 llvm::PassManager<llvm::LazyCallGraph::SCC, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 404
+20 clang           0x000055c98ba49f06
+21 clang           0x000055c98eaf40be llvm::DevirtSCCRepeatedPass::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 542
+22 clang           0x000055c98ba49eb6
+23 clang           0x000055c98eaf15bb llvm::ModuleToPostOrderCGSCCPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 3899
+24 clang           0x000055c98ba5242d llvm::ModuleInlinerWrapperPass::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 829
+25 clang           0x000055c98d339c56
+26 clang           0x000055c98b91b039 llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 1017
+27 clang           0x000055c98c41b8e4
+28 clang           0x000055c98c41e966 clang::EmitBackendOutput(clang::DiagnosticsEngine&, clang::HeaderSearchOptions const&, clang::CodeGenOptions const&, clang::TargetOptions const&, clang::LangOptions const&, llvm::StringRef, llvm::Module*, clang::BackendAction, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>) + 3542
+29 clang           0x000055c98d2ddd38
+30 clang           0x000055c98d6da93d clang::ParseAST(clang::Sema&, bool, bool) + 1293
+31 clang           0x000055c98d2dd365 clang::CodeGenAction::ExecuteAction() + 2517
+32 clang           0x000055c98cc04f01 clang::FrontendAction::Execute() + 209
+33 clang           0x000055c98cb89ec3 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 291
+34 clang           0x000055c98cce9fef clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 351
+35 clang           0x000055c98abe977c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 3564
+36 clang           0x000055c98abe518c
+37 clang           0x000055c98c9ed2c9
+38 clang           0x000055c98bfa8287 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+39 clang           0x000055c98c9ed50c
+40 clang           0x000055c98c9b5cec clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 172
+41 clang           0x000055c98c9b66dd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 269
+42 clang           0x000055c98c9c0abc clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 332
+43 clang           0x000055c98abe7a23 clang_main(int, char**) + 10051
+44 libc.so.6       0x00007fbfcc20f0b3 __libc_start_main + 243
+45 clang           0x000055c98abe12de _start + 46
+clang-16: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 16.0.0
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /root/llvm-compile-time-tracker/llvm-project-build/bin
+clang-16: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang-16: note: diagnostic msg: /tmp/fpcmp-3ffa9e.c
+clang-16: note: diagnostic msg: /tmp/fpcmp-3ffa9e.sh
+clang-16: note: diagnostic msg: 
+
+********************
+[26/669] Generating sqlite test inputs
+ninja: build stopped: subcommand failed.
+
+
+STDERR:

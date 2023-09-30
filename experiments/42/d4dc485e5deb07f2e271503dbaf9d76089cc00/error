@@ -1,0 +1,136 @@
+MESSAGE: Execution of "./build_llvm_project.sh" failed
+
+STDOUT:
+[1979/3174] Building arm_mve_builtins.inc...
+[1980/3174] Building arm_mve_builtin_sema.inc...
+[1981/3174] Building arm_mve_builtin_aliases.inc...
+[1982/3174] Building arm_sve_typeflags.inc...
+[1983/3174] Building arm_mve_builtin_cg.inc...
+[1984/3174] Building arm_cde_builtins.inc...
+[1985/3174] Building arm_cde_builtin_sema.inc...
+[1986/3174] Building arm_cde_builtin_aliases.inc...
+[1987/3174] Building arm_sve_builtin_cg.inc...
+[1988/3174] Building arm_sve_builtins.inc...
+[1989/3174] Building arm_sve_sema_rangechecks.inc...
+[1990/3174] Building riscv_vector_builtins.inc...
+[1991/3174] Building AttrParserStringSwitches.inc...
+[1992/3174] Building AttrSubMatchRulesParserStringSwitches.inc...
+[1993/3174] Building AttrParsedAttrList.inc...
+[1994/3174] Building AttrTemplateInstantiate.inc...
+[1995/3174] Building AttrSpellingListIndex.inc...
+[1996/3174] Building AttrParsedAttrKinds.inc...
+[1997/3174] Building AttrPCHRead.inc...
+[1998/3174] Building AttrPCHWrite.inc...
+[1999/3174] Building AttrParsedAttrImpl.inc...
+[2000/3174] Building Checkers.inc...
+[2001/3174] Building Nodes.inc...
+[2002/3174] Building NodeClasses.inc...
+[2003/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/Assembler.cpp.o
+[2004/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/BenchmarkResult.cpp.o
+[2005/3174] Building riscv_vector_builtin_sema.inc...
+[2006/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/Clustering.cpp.o
+[2007/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/BenchmarkRunner.cpp.o
+[2008/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/Error.cpp.o
+[2009/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/CodeTemplate.cpp.o
+[2010/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/LatencyBenchmarkRunner.cpp.o
+[2011/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/MCInstrDescView.cpp.o
+[2012/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/LlvmState.cpp.o
+[2013/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/PerfHelper.cpp.o
+[2014/3174] Building riscv_vector_builtin_cg.inc...
+[2015/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/ParallelSnippetGenerator.cpp.o
+[2016/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/RegisterAliasing.cpp.o
+[2017/3174] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/RegisterValue.cpp.o
+[2018/3174] Building CXX object tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/AvailabilityInfo.cpp.o
+[2019/3174] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CFG.cpp.o
+[2020/3174] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2021/3174] Linking CXX static library lib/libLLVMMCParser.a
+[2022/3174] Linking CXX static library lib/libLLVMObject.a
+[2023/3174] Linking CXX static library lib/libLLVMInterfaceStub.a
+[2024/3174] Linking CXX static library lib/libLLVMObjCopy.a
+[2025/3174] Linking CXX static library lib/libLLVMObjectYAML.a
+[2026/3174] Linking CXX static library lib/libLLVMDebugInfoDWARF.a
+[2027/3174] Linking CXX static library lib/libLLVMDebugInfoGSYM.a
+[2028/3174] Linking CXX static library lib/libLLVMDebugInfoLogicalView.a
+[2029/3174] Linking CXX static library lib/libLLVMDebugInfoPDB.a
+[2030/3174] Linking CXX static library lib/libLLVMSymbolize.a
+[2031/3174] Linking CXX static library lib/libLLVMDebuginfod.a
+[2032/3174] Building X86GenInstrInfo.inc...
+[2033/3174] Building CXX object tools/clang/lib/Tooling/Refactoring/CMakeFiles/obj.clangToolingRefactoring.dir/AtomicChange.cpp.o
+FAILED: tools/clang/lib/Tooling/Refactoring/CMakeFiles/obj.clangToolingRefactoring.dir/AtomicChange.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/Tooling/Refactoring -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/Tooling/Refactoring -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Tooling/Refactoring/CMakeFiles/obj.clangToolingRefactoring.dir/AtomicChange.cpp.o -MF tools/clang/lib/Tooling/Refactoring/CMakeFiles/obj.clangToolingRefactoring.dir/AtomicChange.cpp.o.d -o tools/clang/lib/Tooling/Refactoring/CMakeFiles/obj.clangToolingRefactoring.dir/AtomicChange.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/Tooling/Refactoring/AtomicChange.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/PrecompiledPreamble.h:16,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/ASTUnit.h:30,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Tooling/Tooling.h:35,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Tooling/Refactoring.h:22,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Tooling/ReplacementsYaml.h:18,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/Tooling/Refactoring/AtomicChange.cpp:10:
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:148:3: error: ‘Optional’ does not name a type
+  148 |   Optional<unsigned> NewLineOffset;
+      |   ^~~~~~~~
+[2034/3174] Building CXX object tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnPointerRangeChecker.cpp.o
+FAILED: tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnPointerRangeChecker.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -fno-rtti -std=c++17 -MD -MT tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnPointerRangeChecker.cpp.o -MF tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnPointerRangeChecker.cpp.o.d -o tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnPointerRangeChecker.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/ReturnPointerRangeChecker.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Preprocessor.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/BugReporter/BugReporter.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/ExprEngine.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/CheckerContext.h:17,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/ReturnPointerRangeChecker.cpp:19:
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:148:3: error: ‘Optional’ does not name a type
+  148 |   Optional<unsigned> NewLineOffset;
+      |   ^~~~~~~~
+[2035/3174] Building CXX object tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountDiagnostics.cpp.o
+FAILED: tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountDiagnostics.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -fno-rtti -std=c++17 -MD -MT tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountDiagnostics.cpp.o -MF tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountDiagnostics.cpp.o.d -o tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountDiagnostics.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountDiagnostics.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Preprocessor.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/BugReporter/BugReporter.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/ExprEngine.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallEvent.h:31,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountDiagnostics.h:21,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountDiagnostics.cpp:14:
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:148:3: error: ‘Optional’ does not name a type
+  148 |   Optional<unsigned> NewLineOffset;
+      |   ^~~~~~~~
+[2036/3174] Building CXX object tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountChecker.cpp.o
+FAILED: tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountChecker.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -fno-rtti -std=c++17 -MD -MT tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountChecker.cpp.o -MF tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountChecker.cpp.o.d -o tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountChecker.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountChecker.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Preprocessor.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/BugReporter/BugReporter.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/ExprEngine.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallEvent.h:31,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountDiagnostics.h:21,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountChecker.h:18,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountChecker.cpp:14:
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:148:3: error: ‘Optional’ does not name a type
+  148 |   Optional<unsigned> NewLineOffset;
+      |   ^~~~~~~~
+[2037/3174] Building CXX object tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnUndefChecker.cpp.o
+FAILED: tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnUndefChecker.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -fno-rtti -std=c++17 -MD -MT tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnUndefChecker.cpp.o -MF tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnUndefChecker.cpp.o.d -o tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnUndefChecker.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/ReturnUndefChecker.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Preprocessor.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/BugReporter/BugReporter.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/ExprEngine.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallEvent.h:31,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/ReturnUndefChecker.cpp:19:
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:148:3: error: ‘Optional’ does not name a type
+  148 |   Optional<unsigned> NewLineOffset;
+      |   ^~~~~~~~
+[2038/3174] Building CXX object tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnValueChecker.cpp.o
+FAILED: tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnValueChecker.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -fno-rtti -std=c++17 -MD -MT tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnValueChecker.cpp.o -MF tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnValueChecker.cpp.o.d -o tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnValueChecker.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/ReturnValueChecker.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Preprocessor.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/BugReporter/BugReporter.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/ExprEngine.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallEvent.h:31,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallDescription.h:18,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/ReturnValueChecker.cpp:17:
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:148:3: error: ‘Optional’ does not name a type
+  148 |   Optional<unsigned> NewLineOffset;
+      |   ^~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+76.09user 9.73system 0:17.08elapsed 502%CPU (0avgtext+0avgdata 703812maxresident)k
+0inputs+890904outputs (3457major+4556865minor)pagefaults 0swaps

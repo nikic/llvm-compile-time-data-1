@@ -1,0 +1,136 @@
+MESSAGE: Execution of "./build_llvm_project.sh" failed
+
+STDOUT:
+      |    -
+[1063/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/OptimizationRemarkEmitter.cpp.o
+[1064/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/OverflowInstAnalysis.cpp.o
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:31,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/OverflowInstAnalysis.cpp:16:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:986:4: warning: extra ‘;’ [-Wpedantic]
+  986 |   };
+      |    ^
+      |    -
+[1065/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ModuleSummaryAnalysis.cpp.o
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/MemoryProfileInfo.h:16,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ModuleSummaryAnalysis.cpp:27:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:986:4: warning: extra ‘;’ [-Wpedantic]
+  986 |   };
+      |    ^
+      |    -
+[1066/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/PostDominators.cpp.o
+[1067/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/PHITransAddr.cpp.o
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:31,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/InstructionSimplify.h:38,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/PHITransAddr.cpp:14:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:986:4: warning: extra ‘;’ [-Wpedantic]
+  986 |   };
+      |    ^
+      |    -
+[1068/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/PhiValues.cpp.o
+[1069/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/PtrUseVisitor.cpp.o
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IntrinsicInst.h:26,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstVisitor.h:15,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/PtrUseVisitor.h:30,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/PtrUseVisitor.cpp:14:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:986:4: warning: extra ‘;’ [-Wpedantic]
+  986 |   };
+      |    ^
+      |    -
+[1070/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/RegionPass.cpp.o
+[1071/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ProfileSummaryInfo.cpp.o
+[1072/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ReplayInlineAdvisor.cpp.o
+[1073/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/RegionPrinter.cpp.o
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/CFGPrinter.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/DOTGraphTraitsPass.h:16,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/RegionPrinter.h:17,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/RegionPrinter.cpp:11:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:986:4: warning: extra ‘;’ [-Wpedantic]
+  986 |   };
+      |    ^
+      |    -
+[1074/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/RegionInfo.cpp.o
+[1075/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolutionAliasAnalysis.cpp.o
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionExpressions.h:21,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolutionAliasAnalysis.cpp:23:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:986:4: warning: extra ‘;’ [-Wpedantic]
+  986 |   };
+      |    ^
+      |    -
+[1076/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolutionDivision.cpp.o
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionExpressions.h:21,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionDivision.h:16,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolutionDivision.cpp:13:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:986:4: warning: extra ‘;’ [-Wpedantic]
+  986 |   };
+      |    ^
+      |    -
+[1077/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolutionNormalization.cpp.o
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionExpressions.h:21,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolutionNormalization.cpp:17:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:986:4: warning: extra ‘;’ [-Wpedantic]
+  986 |   };
+      |    ^
+      |    -
+[1078/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TFUtils.cpp.o
+[1079/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TFLiteUtils.cpp.o
+[1080/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolution.cpp.o
+FAILED: lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolution.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++  -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Ilib/Analysis -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis -Iinclude -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG    -fno-exceptions -fno-rtti -std=c++17 -MD -MT lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolution.cpp.o -MF lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolution.cpp.o.d -o lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolution.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:31,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/InstructionSimplify.h:38,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:79:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:986:4: warning: extra ‘;’ [-Wpedantic]
+  986 |   };
+      |    ^
+      |    -
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp: In member function ‘void llvm::ScalarEvolution::forgetMemoizedResultsImpl(const llvm::SCEV*)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:13920:8: error: ‘using FoldID = class llvm::FoldingSetNodeIDBase<4>’ {aka ‘class llvm::FoldingSetNodeIDBase<4>’} has no member named ‘addInteger’; did you mean ‘AddInteger’?
+13920 |     ID.addInteger(scZeroExtend);
+      |        ^~~~~~~~~~
+      |        AddInteger
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:13921:8: error: ‘using FoldID = class llvm::FoldingSetNodeIDBase<4>’ {aka ‘class llvm::FoldingSetNodeIDBase<4>’} has no member named ‘addPointer’; did you mean ‘AddPointer’?
+13921 |     ID.addPointer(Test->getOperand());
+      |        ^~~~~~~~~~
+      |        AddPointer
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:13922:8: error: ‘using FoldID = class llvm::FoldingSetNodeIDBase<4>’ {aka ‘class llvm::FoldingSetNodeIDBase<4>’} has no member named ‘addPointer’; did you mean ‘AddPointer’?
+13922 |     ID.addPointer(Test->getType());
+      |        ^~~~~~~~~~
+      |        AddPointer
+[1081/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/SyncDependenceAnalysis.cpp.o
+[1082/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/StackLifetime.cpp.o
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ValueTracking.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/StackLifetime.cpp:14:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:986:4: warning: extra ‘;’ [-Wpedantic]
+  986 |   };
+      |    ^
+      |    -
+[1083/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/SyntheticCountsUtils.cpp.o
+[1084/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TargetLibraryInfo.cpp.o
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/TargetLibraryInfo.cpp:15:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:986:4: warning: extra ‘;’ [-Wpedantic]
+  986 |   };
+      |    ^
+      |    -
+[1085/3143] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/StackSafetyAnalysis.cpp.o
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IntrinsicInst.h:26,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/StackSafetyAnalysis.cpp:25:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:986:4: warning: extra ‘;’ [-Wpedantic]
+  986 |   };
+      |    ^
+      |    -
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+3323.06user 144.27system 9:41.23elapsed 596%CPU (0avgtext+0avgdata 1155060maxresident)k
+8inputs+7576288outputs (16major+85745993minor)pagefaults 0swaps

@@ -1,0 +1,136 @@
+MESSAGE: Execution of "./build_llvm_project.sh" failed
+
+STDOUT:
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/llvm-compile-time-tracker/llvm-project-build
+ninja: Entering directory `./llvm-project-build'
+[1/3142] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86ModRMFilters.cpp.o
+[2/3142] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/Demangle.cpp.o
+[3/3142] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangle.cpp.o
+[4/3142] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o
+[5/3142] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o
+[6/3142] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/RustDemangle.cpp.o
+[7/3142] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/DLangDemangle.cpp.o
+[8/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ABIBreak.cpp.o
+[9/3142] Linking CXX static library lib/libLLVMDemangle.a
+[10/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AddressRanges.cpp.o
+[11/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AArch64TargetParser.cpp.o
+[12/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMTargetParser.cpp.o
+[13/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o
+[14/3142] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86MnemonicTables.cpp.o
+[15/3142] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86FoldTablesEmitter.cpp.o
+[16/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APSInt.cpp.o
+[17/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o
+[18/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMBuildAttrs.cpp.o
+[19/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AutoConvert.cpp.o
+[20/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMWinEH.cpp.o
+[21/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o
+[22/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Base64.cpp.o
+[23/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamError.cpp.o
+[24/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o
+[25/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BlockFrequency.cpp.o
+[26/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o
+[27/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BuryPointer.cpp.o
+[28/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+[29/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamReader.cpp.o
+[30/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamRef.cpp.o
+[31/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BranchProbability.cpp.o
+[32/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/COM.cpp.o
+[33/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamWriter.cpp.o
+[34/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/circular_raw_ostream.cpp.o
+[35/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Chrono.cpp.o
+[36/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o
+[37/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertUTF.cpp.o
+[38/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Caching.cpp.o
+[39/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Compression.cpp.o
+[40/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CRC.cpp.o
+[41/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertUTFWrapper.cpp.o
+[42/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CodeGenCoverage.cpp.o
+[43/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CSKYAttributes.cpp.o
+[44/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CrashRecoveryContext.cpp.o
+[45/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CSKYAttributeParser.cpp.o
+[46/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DeltaAlgorithm.cpp.o
+[47/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DivisionByConstantInfo.cpp.o
+[48/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Debug.cpp.o
+[49/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CSKYTargetParser.cpp.o
+[50/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DataExtractor.cpp.o
+[51/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DJB.cpp.o
+[52/3142] Building ASM object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_avx2_x86-64_unix.S.o
+[53/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ELFAttributes.cpp.o
+[54/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DebugCounter.cpp.o
+[55/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ExtensibleRTTI.cpp.o
+[56/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DAGDeltaAlgorithm.cpp.o
+[57/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ErrorHandling.cpp.o
+[58/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ELFAttributeParser.cpp.o
+[59/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Error.cpp.o
+[60/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o
+[61/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FileCollector.cpp.o
+[62/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FileUtilities.cpp.o
+[63/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Format.cpp.o
+[64/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FoldingSet.cpp.o
+[65/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Hashing.cpp.o
+[66/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FormattedStream.cpp.o
+[67/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FileOutputBuffer.cpp.o
+[68/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FormatVariadic.cpp.o
+[69/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/InitLLVM.cpp.o
+[70/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/GlobPattern.cpp.o
+[71/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/InstructionCost.cpp.o
+[72/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/IntEqClasses.cpp.o
+[73/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/IntervalMap.cpp.o
+[74/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/GraphWriter.cpp.o
+[75/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/LEB128.cpp.o
+[76/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Locale.cpp.o
+[77/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/LineIterator.cpp.o
+[78/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/KnownBits.cpp.o
+[79/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MathExtras.cpp.o
+[80/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MemAlloc.cpp.o
+[81/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/LowLevelType.cpp.o
+[82/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ManagedStatic.cpp.o
+[83/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/LockFileManager.cpp.o
+[84/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MemoryBufferRef.cpp.o
+[85/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MD5.cpp.o
+[86/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/JSON.cpp.o
+[87/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MSP430Attributes.cpp.o
+[88/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MemoryBuffer.cpp.o
+[89/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MSP430AttributeParser.cpp.o
+[90/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/OptimizedStructLayout.cpp.o
+[91/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Optional.cpp.o
+[92/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/NativeFormatting.cpp.o
+[93/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/PrettyStackTrace.cpp.o
+[94/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/PluginLoader.cpp.o
+[95/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Regex.cpp.o
+[96/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Parallel.cpp.o
+[97/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RandomNumberGenerator.cpp.o
+[98/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ItaniumManglingCanonicalizer.cpp.o
+[99/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RISCVAttributes.cpp.o
+[100/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RISCVAttributeParser.cpp.o
+[101/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Signposts.cpp.o
+[102/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SmallPtrSet.cpp.o
+[103/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ScaledNumber.cpp.o
+[104/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SHA1.cpp.o
+[105/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SmallVector.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/SmallVector.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++  -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Ilib/Support -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -Iinclude -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG   -std=c++17  -fno-exceptions -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/SmallVector.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/SmallVector.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/SmallVector.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/SmallVector.cpp
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/SmallVector.cpp:40:46: error: static assertion failed: wasted space in SmallVector size 0
+   40 | static_assert(sizeof(SmallVector<void *, 0>) ==
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+   41 |                   sizeof(unsigned) * 2 + sizeof(void *),
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/SmallVector.cpp:51:46: error: static assertion failed: wasted space in SmallVector size 1
+   51 | static_assert(sizeof(SmallVector<void *, 1>) ==
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+   52 |                   sizeof(unsigned) * 2 + sizeof(void *) * 2,
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[106/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SHA256.cpp.o
+[107/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RISCVISAInfo.cpp.o
+[108/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ScopedPrinter.cpp.o
+[109/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SourceMgr.cpp.o
+[110/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SpecialCaseList.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+86.98user 5.85system 0:16.42elapsed 565%CPU (0avgtext+0avgdata 316712maxresident)k
+0inputs+397728outputs (0major+3180256minor)pagefaults 0swaps

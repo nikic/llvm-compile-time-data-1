@@ -1,0 +1,136 @@
+MESSAGE: Execution of "./build_llvm_project.sh" failed
+
+STDOUT:
+      |   ^
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/EvalEmitter.h:21,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/EvalEmitter.cpp:9:
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: In member function ‘bool clang::interp::EvalEmitter::emitInitGlobalBool(uint32_t, const clang::interp::SourceInfo&)’:
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:194:11: note: at offset 32 into destination object ‘clang::interp::Program::Global::B’ of size 32
+  194 |     Block B;
+      |           ^
+[2336/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/Function.cpp.o
+[2337/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/Interp.cpp.o
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Interp.cpp:9:
+In function ‘bool clang::interp::InitGlobal(clang::interp::InterpState&, clang::interp::CodePtr, uint32_t) [with clang::interp::PrimType Name = clang::interp::PT_Bool; T = clang::interp::Boolean]’,
+    inlined from ‘bool clang::interp::Interpret(clang::interp::InterpState&, clang::APValue&)’ at /root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/AST/Opcodes.inc:8430:27:
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Interp.h:718:3: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  718 |   S.P.getGlobal(I)->deref<T>() = S.Stk.pop<T>();
+      |   ^
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/InterpFrame.h:17,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Interp.h:18,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Interp.cpp:9:
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: In function ‘bool clang::interp::Interpret(clang::interp::InterpState&, clang::APValue&)’:
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:194:11: note: at offset 32 into destination object ‘clang::interp::Program::Global::B’ of size 32
+  194 |     Block B;
+      |           ^
+[2338/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/InterpBlock.cpp.o
+[2339/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/InterpStack.cpp.o
+[2340/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/InterpFrame.cpp.o
+[2341/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/InterpState.cpp.o
+[2342/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/Pointer.cpp.o
+[2343/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/PrimType.cpp.o
+[2344/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/Program.cpp.o
+[2345/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/Record.cpp.o
+[2346/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/Source.cpp.o
+[2347/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/State.cpp.o
+[2348/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ItaniumCXXABI.cpp.o
+[2349/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ItaniumMangle.cpp.o
+[2350/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/JSONNodeDumper.cpp.o
+[2351/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Mangle.cpp.o
+[2352/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/MicrosoftCXXABI.cpp.o
+[2353/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/MicrosoftMangle.cpp.o
+[2354/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/NestedNameSpecifier.cpp.o
+[2355/3167] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/Parser.cpp.o
+[2356/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/NSAPI.cpp.o
+[2357/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ODRDiagsEmitter.cpp.o
+[2358/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ODRHash.cpp.o
+[2359/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/OSLog.cpp.o
+[2360/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/OpenMPClause.cpp.o
+[2361/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ParentMap.cpp.o
+[2362/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/PrintfFormatString.cpp.o
+[2363/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/QualTypeNames.cpp.o
+[2364/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Randstruct.cpp.o
+[2365/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/RawCommentList.cpp.o
+[2366/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/RecordLayout.cpp.o
+[2367/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/RecordLayoutBuilder.cpp.o
+[2368/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ScanfFormatString.cpp.o
+[2369/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/SelectorLocationsKind.cpp.o
+[2370/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/CommentSema.cpp.o
+[2371/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtIterator.cpp.o
+[2372/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtCXX.cpp.o
+[2373/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Stmt.cpp.o
+[2374/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtObjC.cpp.o
+[2375/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtOpenMP.cpp.o
+[2376/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtProfile.cpp.o
+[2377/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtPrinter.cpp.o
+[2378/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtViz.cpp.o
+[2379/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TemplateBase.cpp.o
+[2380/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TemplateName.cpp.o
+[2381/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Type.cpp.o
+[2382/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TextNodeDumper.cpp.o
+[2383/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TypeLoc.cpp.o
+[2384/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TypePrinter.cpp.o
+[2385/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/VTTBuilder.cpp.o
+[2386/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/VTableBuilder.cpp.o
+[2387/3167] Building CXX object tools/clang/lib/ASTMatchers/Dynamic/CMakeFiles/obj.clangDynamicASTMatchers.dir/Parser.cpp.o
+[2388/3167] Building CXX object tools/clang/lib/ASTMatchers/Dynamic/CMakeFiles/obj.clangDynamicASTMatchers.dir/Diagnostics.cpp.o
+[2389/3167] Building CXX object tools/clang/lib/ASTMatchers/Dynamic/CMakeFiles/obj.clangDynamicASTMatchers.dir/VariantValue.cpp.o
+[2390/3167] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGAtomic.cpp.o
+[2391/3167] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o
+[2392/3167] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o
+[2393/3167] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o
+[2394/3167] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o
+[2395/3167] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o
+[2396/3167] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCXX.cpp.o
+[2397/3167] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCXXABI.cpp.o
+[2398/3167] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCall.cpp.o
+[2399/3167] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGClass.cpp.o
+[2400/3167] Building OpenCLBuiltins.inc...
+[2401/3167] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCleanup.cpp.o
+[2402/3167] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCoroutine.cpp.o
+[2403/3167] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Expr.cpp.o
+[2404/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/DeclSpec.cpp.o
+[2405/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/DelayedDiagnostic.cpp.o
+[2406/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/HLSLExternalSemaSource.cpp.o
+[2407/3167] Linking CXX static library lib/libclangAST.a
+[2408/3167] Linking CXX static library lib/libclangASTMatchers.a
+[2409/3167] Building CXX object tools/clang/lib/CrossTU/CMakeFiles/obj.clangCrossTU.dir/CrossTranslationUnit.cpp.o
+[2410/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/IdentifierResolver.cpp.o
+[2411/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/JumpDiagnostics.cpp.o
+[2412/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/MultiplexExternalSemaSource.cpp.o
+[2413/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Scope.cpp.o
+[2414/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/ParsedAttr.cpp.o
+[2415/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/ScopeInfo.cpp.o
+[2416/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAccess.cpp.o
+[2417/3167] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilderPipelines.cpp.o
+FAILED: lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilderPipelines.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/lib/Passes -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Passes -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -fno-rtti -std=c++17 -MD -MT lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilderPipelines.cpp.o -MF lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilderPipelines.cpp.o.d -o lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilderPipelines.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Passes/PassBuilderPipelines.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Passes/PassBuilderPipelines.cpp:112:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/SROA.h:95:7: warning: ‘llvm::SROAPass’ declared with greater visibility than the type of its field ‘llvm::SROAPass::SelectsToRewrite’ [-Wattributes]
+   95 | class SROAPass : public PassInfoMixin<SROAPass> {
+      |       ^~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Passes/PassBuilderPipelines.cpp: In member function ‘llvm::ModulePassManager llvm::PassBuilder::buildLTODefaultPipeline(llvm::OptimizationLevel, llvm::ModuleSummaryIndex*)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Passes/PassBuilderPipelines.cpp:1716:64: error: no matching function for call to ‘llvm::OpenMPOptPass::OpenMPOptPass(llvm::ThinOrFullLTOPhase)’
+ 1716 |   MPM.addPass(OpenMPOptPass(ThinOrFullLTOPhase::FullLTOPostLink));
+      |                                                                ^
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Passes/PassBuilderPipelines.cpp:60:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/IPO/OpenMPOpt.h:38:7: note: candidate: ‘constexpr llvm::OpenMPOptPass::OpenMPOptPass()’
+   38 | class OpenMPOptPass : public PassInfoMixin<OpenMPOptPass> {
+      |       ^~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/IPO/OpenMPOpt.h:38:7: note:   candidate expects 0 arguments, 1 provided
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/IPO/OpenMPOpt.h:38:7: note: candidate: ‘constexpr llvm::OpenMPOptPass::OpenMPOptPass(const llvm::OpenMPOptPass&)’
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/IPO/OpenMPOpt.h:38:7: note:   no known conversion for argument 1 from ‘llvm::ThinOrFullLTOPhase’ to ‘const llvm::OpenMPOptPass&’
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/IPO/OpenMPOpt.h:38:7: note: candidate: ‘constexpr llvm::OpenMPOptPass::OpenMPOptPass(llvm::OpenMPOptPass&&)’
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/IPO/OpenMPOpt.h:38:7: note:   no known conversion for argument 1 from ‘llvm::ThinOrFullLTOPhase’ to ‘llvm::OpenMPOptPass&&’
+[2418/3167] Linking CXX static library lib/libclangDynamicASTMatchers.a
+[2419/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/CodeCompleteConsumer.cpp.o
+[2420/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/AnalysisBasedWarnings.cpp.o
+[2421/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o
+[2422/3167] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAttr.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+71.22user 11.81system 0:14.58elapsed 569%CPU (0avgtext+0avgdata 708968maxresident)k
+0inputs+2259008outputs (2842major+4912727minor)pagefaults 0swaps

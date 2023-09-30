@@ -1,0 +1,136 @@
+MESSAGE: Execution of "./build_llvm_project.sh" failed
+
+STDOUT:
+-- git version: v0.0.0 normalized to 0.0.0
+-- Version: 1.6.0
+-- Looking for shm_open in rt
+-- Looking for shm_open in rt - found
+-- Performing Test HAVE_CXX_FLAG_STD_CXX11
+-- Performing Test HAVE_CXX_FLAG_STD_CXX11 - Success
+-- Performing Test HAVE_CXX_FLAG_WALL
+-- Performing Test HAVE_CXX_FLAG_WALL - Success
+-- Performing Test HAVE_CXX_FLAG_WEXTRA
+-- Performing Test HAVE_CXX_FLAG_WEXTRA - Success
+-- Performing Test HAVE_CXX_FLAG_WSHADOW
+-- Performing Test HAVE_CXX_FLAG_WSHADOW - Success
+-- Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE
+-- Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE - Success
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC - Success
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS - Success
+-- Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32
+-- Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32 - Failed
+-- Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING
+-- Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING - Success
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS - Success
+-- Performing Test HAVE_CXX_FLAG_FNO_EXCEPTIONS
+-- Performing Test HAVE_CXX_FLAG_FNO_EXCEPTIONS - Success
+-- Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING
+-- Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING - Success
+-- Performing Test HAVE_CXX_FLAG_WD654
+-- Performing Test HAVE_CXX_FLAG_WD654 - Failed
+-- Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY
+-- Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY - Failed
+-- Performing Test HAVE_CXX_FLAG_COVERAGE
+-- Performing Test HAVE_CXX_FLAG_COVERAGE - Success
+-- Performing Test HAVE_GNU_POSIX_REGEX
+-- Performing Test HAVE_GNU_POSIX_REGEX
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Performing Test HAVE_POSIX_REGEX
+-- Performing Test HAVE_POSIX_REGEX
+-- Performing Test HAVE_POSIX_REGEX -- success
+-- Performing Test HAVE_STEADY_CLOCK
+-- Performing Test HAVE_STEADY_CLOCK
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/llvm-compile-time-tracker/llvm-project-build
+ninja: Entering directory `./llvm-project-build'
+[1/3095] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangle.cpp.o
+[2/3095] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o
+[3/3095] Building CXX object utils/TableGen/GlobalISel/CMakeFiles/LLVMTableGenGlobalISel.dir/GIMatchDagEdge.cpp.o
+[4/3095] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/Demangle.cpp.o
+[5/3095] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o
+[6/3095] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/RustDemangle.cpp.o
+[7/3095] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ABIBreak.cpp.o
+[8/3095] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/DLangDemangle.cpp.o
+[9/3095] Linking CXX static library lib/libLLVMDemangle.a
+[10/3095] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AddressRanges.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/AddressRanges.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++  -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Ilib/Support -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -Iinclude -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wmisleading-indentation -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG   -std=c++14  -fno-exceptions -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/AddressRanges.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/AddressRanges.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/AddressRanges.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AddressRanges.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AddressRanges.cpp:10:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h: In function ‘OutputIt llvm::replace_copy_if(R&&, OutputIt, UnaryPredicate, const T&)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1666:31: error: ‘Newvalue’ was not declared in this scope; did you mean ‘NewValue’?
+ 1666 |                               Newvalue);
+      |                               ^~~~~~~~
+      |                               NewValue
+[11/3095] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AArch64TargetParser.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/AArch64TargetParser.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++  -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Ilib/Support -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -Iinclude -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wmisleading-indentation -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG   -std=c++14  -fno-exceptions -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/AArch64TargetParser.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/AArch64TargetParser.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/AArch64TargetParser.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AArch64TargetParser.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:15,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:21,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMTargetParser.h:18,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AArch64TargetParser.h:18,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AArch64TargetParser.cpp:14:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h: In function ‘OutputIt llvm::replace_copy_if(R&&, OutputIt, UnaryPredicate, const T&)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1666:31: error: ‘Newvalue’ was not declared in this scope; did you mean ‘NewValue’?
+ 1666 |                               Newvalue);
+      |                               ^~~~~~~~
+      |                               NewValue
+[12/3095] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMTargetParser.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/ARMTargetParser.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++  -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Ilib/Support -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -Iinclude -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wmisleading-indentation -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG   -std=c++14  -fno-exceptions -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/ARMTargetParser.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/ARMTargetParser.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/ARMTargetParser.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMTargetParser.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:15,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:21,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMTargetParser.h:18,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMTargetParser.cpp:14:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h: In function ‘OutputIt llvm::replace_copy_if(R&&, OutputIt, UnaryPredicate, const T&)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1666:31: error: ‘Newvalue’ was not declared in this scope; did you mean ‘NewValue’?
+ 1666 |                               Newvalue);
+      |                               ^~~~~~~~
+      |                               NewValue
+[13/3095] Building CXX object utils/TableGen/GlobalISel/CMakeFiles/LLVMTableGenGlobalISel.dir/CodeExpander.cpp.o
+FAILED: utils/TableGen/GlobalISel/CMakeFiles/LLVMTableGenGlobalISel.dir/CodeExpander.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++  -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Iutils/TableGen/GlobalISel -I/root/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISel -Iinclude -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wmisleading-indentation -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG    -fno-exceptions -fno-rtti -std=c++14 -MD -MT utils/TableGen/GlobalISel/CMakeFiles/LLVMTableGenGlobalISel.dir/CodeExpander.cpp.o -MF utils/TableGen/GlobalISel/CMakeFiles/LLVMTableGenGlobalISel.dir/CodeExpander.cpp.o.d -o utils/TableGen/GlobalISel/CMakeFiles/LLVMTableGenGlobalISel.dir/CodeExpander.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISel/CodeExpander.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:15,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISel/CodeExpander.h:16,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISel/CodeExpander.cpp:13:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h: In function ‘OutputIt llvm::replace_copy_if(R&&, OutputIt, UnaryPredicate, const T&)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1666:31: error: ‘Newvalue’ was not declared in this scope; did you mean ‘NewValue’?
+ 1666 |                               Newvalue);
+      |                               ^~~~~~~~
+      |                               NewValue
+[14/3095] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++  -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Ilib/Support -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -Iinclude -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wmisleading-indentation -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG   -std=c++14  -fno-exceptions -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:15,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/BitVector.h:17,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:12,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp:16:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h: In function ‘OutputIt llvm::replace_copy_if(R&&, OutputIt, UnaryPredicate, const T&)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1666:31: error: ‘Newvalue’ was not declared in this scope; did you mean ‘NewValue’?
+ 1666 |                               Newvalue);
+      |                               ^~~~~~~~
+      |                               NewValue
+[15/3095] Building CXX object utils/TableGen/GlobalISel/CMakeFiles/LLVMTableGenGlobalISel.dir/GIMatchDag.cpp.o
+FAILED: utils/TableGen/GlobalISel/CMakeFiles/LLVMTableGenGlobalISel.dir/GIMatchDag.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++  -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Iutils/TableGen/GlobalISel -I/root/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISel -Iinclude -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wmisleading-indentation -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG    -fno-exceptions -fno-rtti -std=c++14 -MD -MT utils/TableGen/GlobalISel/CMakeFiles/LLVMTableGenGlobalISel.dir/GIMatchDag.cpp.o -MF utils/TableGen/GlobalISel/CMakeFiles/LLVMTableGenGlobalISel.dir/GIMatchDag.cpp.o.d -o utils/TableGen/GlobalISel/CMakeFiles/LLVMTableGenGlobalISel.dir/GIMatchDag.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISel/GIMatchDag.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:15,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Format.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISel/GIMatchDag.cpp:11:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h: In function ‘OutputIt llvm::replace_copy_if(R&&, OutputIt, UnaryPredicate, const T&)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1666:31: error: ‘Newvalue’ was not declared in this scope; did you mean ‘NewValue’?
+ 1666 |                               Newvalue);
+      |                               ^~~~~~~~
+      |                               NewValue
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+4.11user 0.35system 0:01.32elapsed 338%CPU (0avgtext+0avgdata 187476maxresident)k
+0inputs+25784outputs (0major+201657minor)pagefaults 0swaps

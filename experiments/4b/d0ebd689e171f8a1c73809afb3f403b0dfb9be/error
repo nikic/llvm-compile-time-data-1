@@ -1,0 +1,136 @@
+MESSAGE: Execution of "./build_llvm_project.sh" failed
+
+STDOUT:
+  152 |   Optional<unsigned> NewLineOffset;
+      |   ^~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:172:43: error: ‘GrowBufferCallback’ has not been declared
+  172 |         bool IsFirstIncludeOfFile = true, GrowBufferCallback GrowBuffer = nullptr);
+      |                                           ^~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:172:75: error: could not convert ‘nullptr’ from ‘std::nullptr_t’ to ‘int’
+  172 |         bool IsFirstIncludeOfFile = true, GrowBufferCallback GrowBuffer = nullptr);
+      |                                                                           ^~~~~~~
+      |                                                                           |
+      |                                                                           std::nullptr_t
+[2032/3174] Building CXX object tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountDiagnostics.cpp.o
+FAILED: tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountDiagnostics.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -fno-rtti -std=c++17 -MD -MT tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountDiagnostics.cpp.o -MF tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountDiagnostics.cpp.o.d -o tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountDiagnostics.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountDiagnostics.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Preprocessor.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/BugReporter/BugReporter.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/ExprEngine.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallEvent.h:31,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountDiagnostics.h:21,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountDiagnostics.cpp:14:
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:147:58: error: ‘Optional’ is not a member of ‘llvm’
+  147 |   using GrowBufferCallback = llvm::unique_function<llvm::Optional<llvm::MemoryBufferRef>()>;
+      |                                                          ^~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:147:88: error: template argument 1 is invalid
+  147 |   using GrowBufferCallback = llvm::unique_function<llvm::Optional<llvm::MemoryBufferRef>()>;
+      |                                                                                        ^
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:148:3: error: ‘GrowBufferCallback’ does not name a type
+  148 |   GrowBufferCallback GrowBuffer;
+      |   ^~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:152:3: error: ‘Optional’ does not name a type
+  152 |   Optional<unsigned> NewLineOffset;
+      |   ^~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:172:43: error: ‘GrowBufferCallback’ has not been declared
+  172 |         bool IsFirstIncludeOfFile = true, GrowBufferCallback GrowBuffer = nullptr);
+      |                                           ^~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:172:75: error: could not convert ‘nullptr’ from ‘std::nullptr_t’ to ‘int’
+  172 |         bool IsFirstIncludeOfFile = true, GrowBufferCallback GrowBuffer = nullptr);
+      |                                                                           ^~~~~~~
+      |                                                                           |
+      |                                                                           std::nullptr_t
+[2033/3174] Building CXX object tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountChecker.cpp.o
+FAILED: tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountChecker.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -fno-rtti -std=c++17 -MD -MT tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountChecker.cpp.o -MF tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountChecker.cpp.o.d -o tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/RetainCountChecker/RetainCountChecker.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountChecker.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Preprocessor.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/BugReporter/BugReporter.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/ExprEngine.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallEvent.h:31,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountDiagnostics.h:21,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountChecker.h:18,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountChecker.cpp:14:
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:147:58: error: ‘Optional’ is not a member of ‘llvm’
+  147 |   using GrowBufferCallback = llvm::unique_function<llvm::Optional<llvm::MemoryBufferRef>()>;
+      |                                                          ^~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:147:88: error: template argument 1 is invalid
+  147 |   using GrowBufferCallback = llvm::unique_function<llvm::Optional<llvm::MemoryBufferRef>()>;
+      |                                                                                        ^
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:148:3: error: ‘GrowBufferCallback’ does not name a type
+  148 |   GrowBufferCallback GrowBuffer;
+      |   ^~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:152:3: error: ‘Optional’ does not name a type
+  152 |   Optional<unsigned> NewLineOffset;
+      |   ^~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:172:43: error: ‘GrowBufferCallback’ has not been declared
+  172 |         bool IsFirstIncludeOfFile = true, GrowBufferCallback GrowBuffer = nullptr);
+      |                                           ^~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:172:75: error: could not convert ‘nullptr’ from ‘std::nullptr_t’ to ‘int’
+  172 |         bool IsFirstIncludeOfFile = true, GrowBufferCallback GrowBuffer = nullptr);
+      |                                                                           ^~~~~~~
+      |                                                                           |
+      |                                                                           std::nullptr_t
+[2034/3174] Building CXX object tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnUndefChecker.cpp.o
+FAILED: tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnUndefChecker.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -fno-rtti -std=c++17 -MD -MT tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnUndefChecker.cpp.o -MF tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnUndefChecker.cpp.o.d -o tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnUndefChecker.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/ReturnUndefChecker.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Preprocessor.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/BugReporter/BugReporter.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/ExprEngine.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallEvent.h:31,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/ReturnUndefChecker.cpp:19:
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:147:58: error: ‘Optional’ is not a member of ‘llvm’
+  147 |   using GrowBufferCallback = llvm::unique_function<llvm::Optional<llvm::MemoryBufferRef>()>;
+      |                                                          ^~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:147:88: error: template argument 1 is invalid
+  147 |   using GrowBufferCallback = llvm::unique_function<llvm::Optional<llvm::MemoryBufferRef>()>;
+      |                                                                                        ^
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:148:3: error: ‘GrowBufferCallback’ does not name a type
+  148 |   GrowBufferCallback GrowBuffer;
+      |   ^~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:152:3: error: ‘Optional’ does not name a type
+  152 |   Optional<unsigned> NewLineOffset;
+      |   ^~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:172:43: error: ‘GrowBufferCallback’ has not been declared
+  172 |         bool IsFirstIncludeOfFile = true, GrowBufferCallback GrowBuffer = nullptr);
+      |                                           ^~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:172:75: error: could not convert ‘nullptr’ from ‘std::nullptr_t’ to ‘int’
+  172 |         bool IsFirstIncludeOfFile = true, GrowBufferCallback GrowBuffer = nullptr);
+      |                                                                           ^~~~~~~
+      |                                                                           |
+      |                                                                           std::nullptr_t
+[2035/3174] Building CXX object tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnValueChecker.cpp.o
+FAILED: tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnValueChecker.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -fno-rtti -std=c++17 -MD -MT tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnValueChecker.cpp.o -MF tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnValueChecker.cpp.o.d -o tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/ReturnValueChecker.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/ReturnValueChecker.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Preprocessor.h:27,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/BugReporter/BugReporter.h:20,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/ExprEngine.h:25,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallEvent.h:31,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallDescription.h:18,
+                 from /root/llvm-compile-time-tracker/llvm-project/clang/lib/StaticAnalyzer/Checkers/ReturnValueChecker.cpp:17:
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:147:58: error: ‘Optional’ is not a member of ‘llvm’
+  147 |   using GrowBufferCallback = llvm::unique_function<llvm::Optional<llvm::MemoryBufferRef>()>;
+      |                                                          ^~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:147:88: error: template argument 1 is invalid
+  147 |   using GrowBufferCallback = llvm::unique_function<llvm::Optional<llvm::MemoryBufferRef>()>;
+      |                                                                                        ^
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:148:3: error: ‘GrowBufferCallback’ does not name a type
+  148 |   GrowBufferCallback GrowBuffer;
+      |   ^~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:152:3: error: ‘Optional’ does not name a type
+  152 |   Optional<unsigned> NewLineOffset;
+      |   ^~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:172:43: error: ‘GrowBufferCallback’ has not been declared
+  172 |         bool IsFirstIncludeOfFile = true, GrowBufferCallback GrowBuffer = nullptr);
+      |                                           ^~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:172:75: error: could not convert ‘nullptr’ from ‘std::nullptr_t’ to ‘int’
+  172 |         bool IsFirstIncludeOfFile = true, GrowBufferCallback GrowBuffer = nullptr);
+      |                                                                           ^~~~~~~
+      |                                                                           |
+      |                                                                           std::nullptr_t
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+75.71user 9.89system 0:16.84elapsed 508%CPU (0avgtext+0avgdata 703768maxresident)k
+0inputs+890664outputs (3468major+4555773minor)pagefaults 0swaps

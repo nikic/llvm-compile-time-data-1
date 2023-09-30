@@ -1,0 +1,136 @@
+MESSAGE: Execution of "./build_llvm_project.sh" failed
+
+STDOUT:
+[1725/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/ELF_aarch64.cpp.o
+[1726/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/ELF_i386.cpp.o
+[1727/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/ELF_loongarch.cpp.o
+[1728/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/ELF_ppc64.cpp.o
+[1729/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/ELF_riscv.cpp.o
+[1730/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/COFF.cpp.o
+[1731/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/ELF_x86_64.cpp.o
+[1732/3268] Building X86GenDAGISel.inc...
+[1733/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/COFFDirectiveParser.cpp.o
+[1734/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/COFF_x86_64.cpp.o
+[1735/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/COFFLinkGraphBuilder.cpp.o
+[1736/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/aarch32.cpp.o
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/ExecutionEngine/JITLink/aarch32.cpp: In function ‘bool llvm::jitlink::aarch32::writeRegister(llvm::jitlink::aarch32::WritableThumbRelocation&, llvm::jitlink::aarch32::HalfWords)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/ExecutionEngine/JITLink/aarch32.cpp:182:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  182 | }
+      | ^
+[1737/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/aarch64.cpp.o
+[1738/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/i386.cpp.o
+[1739/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/loongarch.cpp.o
+[1740/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/riscv.cpp.o
+[1741/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/ppc64.cpp.o
+[1742/3268] Building CXX object lib/ExecutionEngine/JITLink/CMakeFiles/LLVMJITLink.dir/x86_64.cpp.o
+[1743/3268] Building CXX object lib/ExecutionEngine/MCJIT/CMakeFiles/LLVMMCJIT.dir/MCJIT.cpp.o
+[1744/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/COFFPlatform.cpp.o
+[1745/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/COFFVCRuntimeSupport.cpp.o
+[1746/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/CompileOnDemandLayer.cpp.o
+[1747/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/CompileUtils.cpp.o
+[1748/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/Core.cpp.o
+[1749/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/DebugObjectManagerPlugin.cpp.o
+[1750/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/DebuggerSupportPlugin.cpp.o
+[1751/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/DebugUtils.cpp.o
+[1752/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/EPCDynamicLibrarySearchGenerator.cpp.o
+[1753/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/EPCDebugObjectRegistrar.cpp.o
+[1754/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/EPCEHFrameRegistrar.cpp.o
+[1755/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/EPCGenericDylibManager.cpp.o
+[1756/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/EPCGenericJITLinkMemoryManager.cpp.o
+[1757/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/EPCGenericRTDyldMemoryManager.cpp.o
+[1758/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/EPCIndirectionUtils.cpp.o
+[1759/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/ExecutionUtils.cpp.o
+[1760/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/ObjectFileInterface.cpp.o
+[1761/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/IndirectionUtils.cpp.o
+[1762/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/IRCompileLayer.cpp.o
+[1763/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/IRTransformLayer.cpp.o
+[1764/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/JITTargetMachineBuilder.cpp.o
+[1765/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/LazyReexports.cpp.o
+[1766/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/LookupAndRecordAddrs.cpp.o
+[1767/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/Layer.cpp.o
+[1768/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/LLJIT.cpp.o
+[1769/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/MachOPlatform.cpp.o
+In file included from /usr/include/string.h:535,
+                 from /usr/include/c++/11/cstring:42,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringRef.h:19,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ExecutionEngine/Orc/MachOPlatform.h:16,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/ExecutionEngine/Orc/MachOPlatform.cpp:9:
+In function ‘char* strncpy(char*, const char*, size_t)’,
+    inlined from ‘llvm::Error llvm::orc::MachOPlatform::MachOPlatformPlugin::populateObjCRuntimeObject(llvm::jitlink::LinkGraph&, llvm::orc::MaterializationResponsibility&)’ at /root/llvm-compile-time-tracker/llvm-project/llvm/lib/ExecutionEngine/Orc/MachOPlatform.cpp:1373:12:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:95:34: warning: ‘char* __builtin_strncpy(char*, const char*, long unsigned int)’ output truncated before terminating nul copying 16 bytes from a string of the same length [-Wstringop-truncation]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+   96 |                                   __glibc_objsize (__dest));
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~
+[1770/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/MapperJITLinkMemoryManager.cpp.o
+[1771/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/MemoryMapper.cpp.o
+[1772/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/Mangling.cpp.o
+[1773/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/ObjectTransformLayer.cpp.o
+[1774/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/ELFNixPlatform.cpp.o
+[1775/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/ObjectLinkingLayer.cpp.o
+[1776/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/OrcABISupport.cpp.o
+[1777/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/SimpleRemoteEPC.cpp.o
+[1778/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/RTDyldObjectLinkingLayer.cpp.o
+[1779/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/OrcV2CBindings.cpp.o
+[1780/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/TaskDispatch.cpp.o
+[1781/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/Speculation.cpp.o
+[1782/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/ExecutorProcessControl.cpp.o
+[1783/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/SpeculateAnalyses.cpp.o
+[1784/3268] Building CXX object lib/ExecutionEngine/Orc/TargetProcess/CMakeFiles/LLVMOrcTargetProcess.dir/ExecutorSharedMemoryMapperService.cpp.o
+[1785/3268] Building CXX object lib/ExecutionEngine/Orc/TargetProcess/CMakeFiles/LLVMOrcTargetProcess.dir/JITLoaderGDB.cpp.o
+[1786/3268] Building CXX object lib/ExecutionEngine/Orc/CMakeFiles/LLVMOrcJIT.dir/ThreadSafeModule.cpp.o
+[1787/3268] Building CXX object lib/ExecutionEngine/Orc/TargetProcess/CMakeFiles/LLVMOrcTargetProcess.dir/OrcRTBootstrap.cpp.o
+[1788/3268] Building CXX object lib/ExecutionEngine/Orc/TargetProcess/CMakeFiles/LLVMOrcTargetProcess.dir/RegisterEHFrames.cpp.o
+[1789/3268] Building CXX object lib/ExecutionEngine/Orc/TargetProcess/CMakeFiles/LLVMOrcTargetProcess.dir/SimpleExecutorDylibManager.cpp.o
+[1790/3268] Building CXX object lib/ExecutionEngine/Orc/TargetProcess/CMakeFiles/LLVMOrcTargetProcess.dir/SimpleExecutorMemoryManager.cpp.o
+[1791/3268] Building CXX object lib/ExecutionEngine/Orc/TargetProcess/CMakeFiles/LLVMOrcTargetProcess.dir/SimpleRemoteEPCServer.cpp.o
+[1792/3268] Building CXX object lib/ExecutionEngine/Orc/TargetProcess/CMakeFiles/LLVMOrcTargetProcess.dir/TargetExecutionUtils.cpp.o
+[1793/3268] Building CXX object lib/ExecutionEngine/RuntimeDyld/CMakeFiles/LLVMRuntimeDyld.dir/RTDyldMemoryManager.cpp.o
+[1794/3268] Building CXX object lib/ExecutionEngine/RuntimeDyld/CMakeFiles/LLVMRuntimeDyld.dir/JITSymbol.cpp.o
+[1795/3268] Building CXX object lib/ExecutionEngine/RuntimeDyld/CMakeFiles/LLVMRuntimeDyld.dir/RuntimeDyld.cpp.o
+[1796/3268] Building CXX object lib/ExecutionEngine/RuntimeDyld/CMakeFiles/LLVMRuntimeDyld.dir/RuntimeDyldChecker.cpp.o
+[1797/3268] Building CXX object lib/ExecutionEngine/RuntimeDyld/CMakeFiles/LLVMRuntimeDyld.dir/RuntimeDyldCOFF.cpp.o
+[1798/3268] Building CXX object lib/ExecutionEngine/RuntimeDyld/CMakeFiles/LLVMRuntimeDyld.dir/RuntimeDyldELF.cpp.o
+[1799/3268] Building CXX object lib/ExecutionEngine/RuntimeDyld/CMakeFiles/LLVMRuntimeDyld.dir/RuntimeDyldMachO.cpp.o
+[1800/3268] Building CXX object lib/ExecutionEngine/RuntimeDyld/CMakeFiles/LLVMRuntimeDyld.dir/Targets/RuntimeDyldELFMips.cpp.o
+[1801/3268] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/Target.cpp.o
+[1802/3268] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetIntrinsicInfo.cpp.o
+[1803/3268] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetLoweringObjectFile.cpp.o
+[1804/3268] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetMachine.cpp.o
+[1805/3268] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetMachineC.cpp.o
+[1806/3268] Building X86GenExegesis.inc...
+[1807/3268] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MemCpyOptimizer.cpp.o
+FAILED: lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MemCpyOptimizer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/lib/Transforms/Scalar -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MemCpyOptimizer.cpp.o -MF lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MemCpyOptimizer.cpp.o.d -o lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MemCpyOptimizer.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/MemCpyOptimizer.cpp
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/MemCpyOptimizer.cpp: In member function ‘llvm::PreservedAnalyses llvm::MemCpyOptPass::run(llvm::Function&, llvm::FunctionAnalysisManager&)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/MemCpyOptimizer.cpp:2004:28: error: no matching function for call to ‘llvm::MemCpyOptPass::runImpl(llvm::Function&, llvm::TargetLibraryInfo*, llvm::AAResults*&, llvm::AssumptionCache*&, llvm::DominatorTree*&, llvm::MemorySSA*)’
+ 2004 |   bool MadeChange = runImpl(F, &TLI, AA, AC, DT, &MSSA->getMSSA());
+      |                     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/MemCpyOptimizer.cpp:14:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/MemCpyOptimizer.h:57:8: note: candidate: ‘bool llvm::MemCpyOptPass::runImpl(llvm::Function&, llvm::TargetLibraryInfo*, llvm::AAResults*, llvm::AssumptionCache*, llvm::DominatorTree*, llvm::PostDominatorTree*, llvm::MemorySSA*)’
+   57 |   bool runImpl(Function &F, TargetLibraryInfo *TLI, AAResults *AA,
+      |        ^~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/MemCpyOptimizer.h:57:8: note:   candidate expects 7 arguments, 6 provided
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/MemCpyOptimizer.cpp: At global scope:
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/MemCpyOptimizer.cpp:2014:6: error: no declaration matches ‘bool llvm::MemCpyOptPass::runImpl(llvm::Function&, llvm::TargetLibraryInfo*, llvm::AliasAnalysis*, llvm::AssumptionCache*, llvm::DominatorTree*, llvm::MemorySSA*)’
+ 2014 | bool MemCpyOptPass::runImpl(Function &F, TargetLibraryInfo *TLI_,
+      |      ^~~~~~~~~~~~~
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/MemCpyOptimizer.cpp:14:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/MemCpyOptimizer.h:57:8: note: candidate is: ‘bool llvm::MemCpyOptPass::runImpl(llvm::Function&, llvm::TargetLibraryInfo*, llvm::AAResults*, llvm::AssumptionCache*, llvm::DominatorTree*, llvm::PostDominatorTree*, llvm::MemorySSA*)’
+   57 |   bool runImpl(Function &F, TargetLibraryInfo *TLI, AAResults *AA,
+      |        ^~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/MemCpyOptimizer.h:42:7: note: ‘class llvm::MemCpyOptPass’ defined here
+   42 | class MemCpyOptPass : public PassInfoMixin<MemCpyOptPass> {
+      |       ^~~~~~~~~~~~~
+[1808/3268] Building X86GenEVEX2VEXTables.inc...
+[1809/3268] Building X86GenDisassemblerTables.inc...
+[1810/3268] Building X86GenFastISel.inc...
+[1811/3268] Building X86GenFoldTables.inc...
+[1812/3268] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+39.60user 7.04system 0:10.89elapsed 428%CPU (0avgtext+0avgdata 718572maxresident)k
+0inputs+562936outputs (3095major+2831236minor)pagefaults 0swaps
