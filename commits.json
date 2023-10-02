@@ -47849,6 +47849,24 @@
             "author_name": "JP Lehr",
             "commit_date": "2023-10-02T06:26:33-05:00",
             "subject": "Revert \"InlineSpiller: Consider if all subranges are the same when avoiding redundant spills\""
+        },
+        {
+            "hash": "29081420894eb3ceb9d0c8b6b39092892820a1dc",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-10-02T12:38:25+01:00",
+            "subject": "[X86] Add test coverage for zext(or(shl_nuw(x,c1),c2)) pointer math"
+        },
+        {
+            "hash": "2984e3529b559c90e37408d1b87628fae7bf11de",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-10-02T12:38:25+01:00",
+            "subject": "[X86] matchIndexRecursively - fold zext(addlike(shl_nuw(x,c1),c2) patterns into LEA"
+        },
+        {
+            "hash": "6741dd0696d3b9726e506823a43e96c6b8ba575e",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-10-02T12:41:08+01:00",
+            "subject": "Fix MSVC \"cannot convert from 'llvm::Register' to 'llvm::MCRegister'\" build error. NFCI."
         }
     ]
 }
