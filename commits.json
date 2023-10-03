@@ -49108,5 +49108,25 @@
             "commit_date": "2023-10-02T20:10:37+02:00",
             "subject": "[clang][codegen] Add a verifier IR pass before any further passes."
         }
+    ],
+    "goldsteinn\/perf\/goldsteinn\/inliner-attrs-next-next": [
+        {
+            "hash": "2da4960f20f7e5d88a68ce25636a895284dc66d8",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-10-03T16:12:19-05:00",
+            "subject": "[Inliner] Also propagate `noundef` and `align` ret attributes during inlining"
+        },
+        {
+            "hash": "73290d5992e6a395fc953a9223173e9fd60a8775",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-10-03T16:13:39-05:00",
+            "subject": "[Inliner] Propagate callee function memory access attributes before inlining"
+        },
+        {
+            "hash": "f8c9f5bce65756598da22e8aec5d91fb66b16d5c",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-10-03T16:13:42-05:00",
+            "subject": "[Inliner] Propagate callee argument memory access attributes before inlining"
+        }
     ]
 }
