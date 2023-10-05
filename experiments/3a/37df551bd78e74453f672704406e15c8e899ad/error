@@ -1,0 +1,136 @@
+MESSAGE: Execution of "./build_llvm_project.sh" failed
+
+STDOUT:
+[1511/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/ObjCopy.cpp.o
+[1512/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/ConfigManager.cpp.o
+[1513/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/COFF/COFFObjcopy.cpp.o
+[1514/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/COFF/COFFObject.cpp.o
+[1515/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/COFF/COFFReader.cpp.o
+[1516/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/COFF/COFFWriter.cpp.o
+[1517/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/ELF/ELFObjcopy.cpp.o
+[1518/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/ELF/ELFObject.cpp.o
+[1519/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/MachO/MachOObjcopy.cpp.o
+[1520/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/MachO/MachOReader.cpp.o
+[1521/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/MachO/MachOWriter.cpp.o
+[1522/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/MachO/MachOLayoutBuilder.cpp.o
+[1523/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/MachO/MachOObject.cpp.o
+[1524/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/wasm/WasmObject.cpp.o
+[1525/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/wasm/WasmReader.cpp.o
+[1526/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/wasm/WasmWriter.cpp.o
+[1527/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/XCOFF/XCOFFObjcopy.cpp.o
+[1528/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/wasm/WasmObjcopy.cpp.o
+[1529/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/XCOFF/XCOFFReader.cpp.o
+[1530/3303] Building CXX object lib/ObjCopy/CMakeFiles/LLVMObjCopy.dir/XCOFF/XCOFFWriter.cpp.o
+[1531/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Archive.cpp.o
+[1532/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Binary.cpp.o
+[1533/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ArchiveWriter.cpp.o
+[1534/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/BuildID.cpp.o
+[1535/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/COFFImportFile.cpp.o
+[1536/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/COFFModuleDefinition.cpp.o
+[1537/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/COFFObjectFile.cpp.o
+[1538/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Decompressor.cpp.o
+[1539/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/DXContainer.cpp.o
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/DXContainer.cpp: In member function ‘llvm::Error llvm::object::DirectX::PSVRuntimeInfo::parse(uint16_t)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/DXContainer.cpp:304:18: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  304 |       alignTo<4>(reinterpret_cast<const uintptr_t>(Current)));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1540/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Error.cpp.o
+[1541/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ELF.cpp.o
+[1542/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ELFObjectFile.cpp.o
+[1543/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/GOFFObjectFile.cpp.o
+[1544/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/FaultMapParser.cpp.o
+[1545/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/IRObjectFile.cpp.o
+[1546/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/IRSymtab.cpp.o
+[1547/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/MachOObjectFile.cpp.o
+[1548/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/MachOUniversal.cpp.o
+[1549/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Minidump.cpp.o
+[1550/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ModuleSymbolTable.cpp.o
+[1551/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Object.cpp.o
+[1552/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ObjectFile.cpp.o
+[1553/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/OffloadBinary.cpp.o
+[1554/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/SymbolicFile.cpp.o
+[1555/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/RelocationResolver.cpp.o
+[1556/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/RecordStreamer.cpp.o
+[1557/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/SymbolSize.cpp.o
+[1558/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/TapiFile.cpp.o
+[1559/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/TapiUniversal.cpp.o
+[1560/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/MachOUniversalWriter.cpp.o
+[1561/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/WindowsMachineFlag.cpp.o
+[1562/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/WasmObjectFile.cpp.o
+[1563/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/XCOFFObjectFile.cpp.o
+[1564/3303] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/WindowsResource.cpp.o
+[1565/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/ArchiveEmitter.cpp.o
+[1566/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/ArchiveYAML.cpp.o
+[1567/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/CodeViewYAMLDebugSections.cpp.o
+[1568/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/CodeViewYAMLSymbols.cpp.o
+[1569/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/CodeViewYAMLTypeHashing.cpp.o
+[1570/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/CodeViewYAMLTypes.cpp.o
+[1571/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/COFFYAML.cpp.o
+[1572/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/DWARFEmitter.cpp.o
+[1573/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/DWARFYAML.cpp.o
+[1574/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/ELFEmitter.cpp.o
+[1575/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/ELFYAML.cpp.o
+[1576/3303] Building X86GenDAGISel.inc...
+[1577/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/MachOYAML.cpp.o
+[1578/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/DXContainerYAML.cpp.o
+FAILED: lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/DXContainerYAML.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/lib/ObjectYAML -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/DXContainerYAML.cpp.o -MF lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/DXContainerYAML.cpp.o.d -o lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/DXContainerYAML.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML/DXContainerYAML.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML/DXContainerYAML.cpp:14:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/DXContainerYAML.h:157:28: error: declaration of ‘std::optional<llvm::DXContainerYAML::Signature> llvm::DXContainerYAML::Part::Signature’ changes meaning of ‘Signature’ [-fpermissive]
+  157 |   std::optional<Signature> Signature;
+      |                            ^~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/DXContainerYAML.h:144:8: note: ‘Signature’ declared here as ‘struct llvm::DXContainerYAML::Signature’
+  144 | struct Signature {
+      |        ^~~~~~~~~
+[1579/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/DXContainerEmitter.cpp.o
+FAILED: lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/DXContainerEmitter.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/lib/ObjectYAML -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/DXContainerEmitter.cpp.o -MF lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/DXContainerEmitter.cpp.o.d -o lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/DXContainerEmitter.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML/DXContainerEmitter.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/ObjectYAML.h:14,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML/DXContainerEmitter.cpp:16:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/DXContainerYAML.h:157:28: error: declaration of ‘std::optional<llvm::DXContainerYAML::Signature> llvm::DXContainerYAML::Part::Signature’ changes meaning of ‘Signature’ [-fpermissive]
+  157 |   std::optional<Signature> Signature;
+      |                            ^~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/DXContainerYAML.h:144:8: note: ‘Signature’ declared here as ‘struct llvm::DXContainerYAML::Signature’
+  144 | struct Signature {
+      |        ^~~~~~~~~
+[1580/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/COFFEmitter.cpp.o
+FAILED: lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/COFFEmitter.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/lib/ObjectYAML -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/COFFEmitter.cpp.o -MF lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/COFFEmitter.cpp.o.d -o lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/COFFEmitter.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML/COFFEmitter.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/ObjectYAML.h:14,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML/COFFEmitter.cpp:19:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/DXContainerYAML.h:157:28: error: declaration of ‘std::optional<llvm::DXContainerYAML::Signature> llvm::DXContainerYAML::Part::Signature’ changes meaning of ‘Signature’ [-fpermissive]
+  157 |   std::optional<Signature> Signature;
+      |                            ^~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/DXContainerYAML.h:144:8: note: ‘Signature’ declared here as ‘struct llvm::DXContainerYAML::Signature’
+  144 | struct Signature {
+      |        ^~~~~~~~~
+[1581/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/MachOEmitter.cpp.o
+FAILED: lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/MachOEmitter.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/lib/ObjectYAML -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/MachOEmitter.cpp.o -MF lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/MachOEmitter.cpp.o.d -o lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/MachOEmitter.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML/MachOEmitter.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/ObjectYAML.h:14,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML/MachOEmitter.cpp:16:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/DXContainerYAML.h:157:28: error: declaration of ‘std::optional<llvm::DXContainerYAML::Signature> llvm::DXContainerYAML::Part::Signature’ changes meaning of ‘Signature’ [-fpermissive]
+  157 |   std::optional<Signature> Signature;
+      |                            ^~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/DXContainerYAML.h:144:8: note: ‘Signature’ declared here as ‘struct llvm::DXContainerYAML::Signature’
+  144 | struct Signature {
+      |        ^~~~~~~~~
+[1582/3303] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/ObjectYAML.cpp.o
+FAILED: lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/ObjectYAML.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/lib/ObjectYAML -I/root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/ObjectYAML.cpp.o -MF lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/ObjectYAML.cpp.o.d -o lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/ObjectYAML.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML/ObjectYAML.cpp
+In file included from /root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/ObjectYAML.h:14,
+                 from /root/llvm-compile-time-tracker/llvm-project/llvm/lib/ObjectYAML/ObjectYAML.cpp:13:
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/DXContainerYAML.h:157:28: error: declaration of ‘std::optional<llvm::DXContainerYAML::Signature> llvm::DXContainerYAML::Part::Signature’ changes meaning of ‘Signature’ [-fpermissive]
+  157 |   std::optional<Signature> Signature;
+      |                            ^~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ObjectYAML/DXContainerYAML.h:144:8: note: ‘Signature’ declared here as ‘struct llvm::DXContainerYAML::Signature’
+  144 | struct Signature {
+      |        ^~~~~~~~~
+[1583/3303] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+37.91user 6.43system 0:10.83elapsed 409%CPU (0avgtext+0avgdata 627300maxresident)k
+0inputs+508896outputs (3493major+2444318minor)pagefaults 0swaps
