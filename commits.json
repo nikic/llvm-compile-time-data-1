@@ -50648,5 +50648,19 @@
             "commit_date": "2023-10-05T16:22:14+02:00",
             "subject": "limit invalidation"
         }
+    ],
+    "nikic\/perf\/gvn-same-value": [
+        {
+            "hash": "ff5e2babcb46e7eb3887ee265decb2948da2792c",
+            "author_name": "Job Noorman",
+            "commit_date": "2023-10-06T06:46:16+00:00",
+            "subject": "[BOLT] Improve handling of relocations targeting specific instructions (#66395)"
+        },
+        {
+            "hash": "8c6f93c8606faeb2a750cf7c31e0effd21bb88e6",
+            "author_name": "Sergey Kachkov",
+            "commit_date": "2023-10-06T09:23:04+02:00",
+            "subject": "Drop Clobber dependency if store may overwrite only the same value"
+        }
     ]
 }
