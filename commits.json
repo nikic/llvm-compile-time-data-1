@@ -45865,6 +45865,42 @@
             "author_name": "Ren\u00e9 Rebe",
             "commit_date": "2023-10-03T08:37:35+02:00",
             "subject": "Fix release\/export.sh to export runtimes tarball, too (#67404)"
+        },
+        {
+            "hash": "69c8c96691c76d43b6a05ea5ec2feaa11bbba58c",
+            "author_name": "Shoaib Meenai",
+            "commit_date": "2023-10-10T08:42:54+02:00",
+            "subject": "[Sema] Use underlying type of scoped enum for -Wformat diagnostics (#67378)"
+        },
+        {
+            "hash": "1090b91a28401b82f7553076c75fe035f1c759a0",
+            "author_name": "Martin Storsj\u00f6",
+            "commit_date": "2023-10-10T08:43:06+02:00",
+            "subject": "[AArch64] Disable loop alignment for Windows targets (#67894)"
+        },
+        {
+            "hash": "8a8ade49ff49c5e06bced50f52be5d2e1eef5748",
+            "author_name": "Tom Stellard",
+            "commit_date": "2023-10-10T08:43:18+02:00",
+            "subject": "workflows\/release-binaries: Use more cores to avoid the 6 hour timeout (#67874)"
+        },
+        {
+            "hash": "f0a687d821c151b23013da75296be369a4c420d3",
+            "author_name": "Martin Storsj\u00f6",
+            "commit_date": "2023-10-10T08:43:27+02:00",
+            "subject": "[LLD] [COFF] Fix handling of comdat .drectve sections (#68116)"
+        },
+        {
+            "hash": "e7b3b94cf500c5c4dc1bed6dd47e031d73678c86",
+            "author_name": "Arvind Mukund",
+            "commit_date": "2023-10-10T08:43:34+02:00",
+            "subject": "[clang] Correct behavior of `LLVM_UNREACHABLE_OPTIMIZE=OFF` for `Release` builds (#68284)"
+        },
+        {
+            "hash": "5a13ce2d60204e151c3e047c673d81d6bf85d5d2",
+            "author_name": "Tobias Hieta",
+            "commit_date": "2023-10-10T08:47:40+02:00",
+            "subject": "Bump version to 17.0.3"
         }
     ],
     "nikic\/perf\/instcombine-unreach-3": [
@@ -51977,6 +52013,12 @@
             "author_name": "kasuga-fj",
             "commit_date": "2023-10-10T15:31:21+09:00",
             "subject": "[Clang] Fix missing diagnostic for non-standard layout type in `offsetof` (#65246)"
+        },
+        {
+            "hash": "909087c7276a34eb3236c77460465b885b439acf",
+            "author_name": "Douglas Yung",
+            "commit_date": "2023-10-09T23:43:59-07:00",
+            "subject": "Replace hard coded numbers from 462d583 with regex so the test passes on downstream projects that may define additional opcodes."
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
