@@ -73637,6 +73637,36 @@
             "author_name": "Leonard Chan",
             "commit_date": "2023-10-12T20:34:31+00:00",
             "subject": "Fix minimal-throw-catch.ll on x86 mac"
+        },
+        {
+            "hash": "9427fce6778c8d01a0519cd0382a0ae6a75b2d35",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-10-12T16:05:19-05:00",
+            "subject": "[ValueTracking] Add tests for `cmpExcludesZero` for non-splat vecs; NFC"
+        },
+        {
+            "hash": "dfda65c89272eb90c0377f6c15ad134fc902dab6",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-10-12T16:05:19-05:00",
+            "subject": "[ValueTracking] Add support for non-splat vecs in cmpExcludesZero Just a small QOL change."
+        },
+        {
+            "hash": "444383e0d07cd5de3d60b25cf849fd0b68b6e974",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-10-12T16:05:19-05:00",
+            "subject": "[ValueTracking] Do more thorough non-zero check in `isKnownToBePowerOfTwo` when `OrZero` is no set."
+        },
+        {
+            "hash": "968468af9c6808fa76304deb226f13ef85403e4a",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-10-12T16:05:19-05:00",
+            "subject": "[InstCombine] Tests for adding flags to shifts; NFC"
+        },
+        {
+            "hash": "2dd52b4527667837cc525aa48435ab5cbfa30a0b",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-10-12T16:05:19-05:00",
+            "subject": "[InstCombine] Improve logic for adding flags to shift instructions."
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
