@@ -54159,6 +54159,12 @@
             "author_name": "Craig Topper",
             "commit_date": "2023-10-13T22:38:48-07:00",
             "subject": "[RISCV] Move hasOneUse() call after opcode check."
+        },
+        {
+            "hash": "02f67c097de12dc9f6c97a68d9e180af79a2483b",
+            "author_name": "Kazu Hirata",
+            "commit_date": "2023-10-13T23:16:25-07:00",
+            "subject": "Use llvm::endianness::{big,little,native} (NFC)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -54457,22 +54463,16 @@
     ],
     "khei4\/perf\/stack-move-multi-bb-lifetime-spans": [
         {
-            "hash": "e4e02e31c24fa15456d938e9e37ee54f8202c079",
-            "author_name": "CarolineConcatto",
-            "commit_date": "2023-10-13T14:25:42+01:00",
-            "subject": "[AArch64][NFC] Refactor NEON, SVE and SME classes and multiclasses fo\u2026 (#68800)"
+            "hash": "514381840c6d7aa775a092556992c87f022a361f",
+            "author_name": "Craig Topper",
+            "commit_date": "2023-10-13T22:38:48-07:00",
+            "subject": "[RISCV] Move hasOneUse() call after opcode check."
         },
         {
-            "hash": "e246ca0c40b3c47728c4e5d4b8c79501a530d6fc",
-            "author_name": "Nathan Gau\u00ebr",
-            "commit_date": "2023-10-13T22:37:23+09:00",
-            "subject": "[NFC] test commit"
-        },
-        {
-            "hash": "f4781f132644f247ddb12beeda131c61c61735cb",
+            "hash": "a72047488c064fb63a08f4904343ec8d1c88abe9",
             "author_name": "khei4",
-            "commit_date": "2023-10-13T22:37:23+09:00",
-            "subject": "[MemCpyOpt] reconstruction of lifetime markers, after stack-move optimization."
+            "commit_date": "2023-10-14T15:12:54+09:00",
+            "subject": "[MemCpyOpt] lifetime markers reconstruction for Stack-move optimization"
         }
     ],
     "serge-sans-paille\/perf\/sse4-lexer": [
