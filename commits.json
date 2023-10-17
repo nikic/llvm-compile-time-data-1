@@ -55713,6 +55713,12 @@
             "author_name": "Peiming Liu",
             "commit_date": "2023-10-17T10:54:44-07:00",
             "subject": "[mlir][sparse] implementating stageSparseOpPass as an interface (#69022)"
+        },
+        {
+            "hash": "ddc30ff802eb135934fc7b785d33c05217ab9e39",
+            "author_name": "Joseph Huber",
+            "commit_date": "2023-10-17T13:02:31-05:00",
+            "subject": "[libc] Implement the 'ungetc' function on the GPU (#69248)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -56135,6 +56141,26 @@
             "author_name": "Dhruv Chawla",
             "commit_date": "2023-10-17T21:01:25+05:30",
             "subject": "[InstCombine] Use CachedBitsValue for computing KnownBits in visitAddSub"
+        }
+    ],
+    "goldsteinn\/perf\/goldsteinn\/cmp-excludes-zero-non-const": [
+        {
+            "hash": "2a40ec2d3e4d2af0222156022256cdee1ae6bb56",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-10-17T17:50:12+01:00",
+            "subject": "[DAG] SimplifyDemandedBits - fix isOperationLegal typo in D146121"
+        },
+        {
+            "hash": "0ec39fb48e9dc4aad5f20bc50d44947ac004dd34",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-10-17T12:14:30-05:00",
+            "subject": "[ValueTracking] Add tests for proving phi-nonzero based on ICmp without constants; NFC"
+        },
+        {
+            "hash": "e768cd016daafe105bbc6808dbd26b87adc5f89c",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-10-17T12:14:30-05:00",
+            "subject": "[ValueTracking] Expand `cmpExcludesZero` to optionally work with non-constant RHS"
         }
     ]
 }
