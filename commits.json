@@ -55989,6 +55989,18 @@
             "author_name": "Kazu Hirata",
             "commit_date": "2023-10-17T23:04:35-07:00",
             "subject": "[ModuleInliner] Fix the heap maintenance (#69251)"
+        },
+        {
+            "hash": "0c2d28a448dee14f52c4600368da0345048588bb",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-10-18T01:16:55-05:00",
+            "subject": "[X86] Add tests for transform `(icmp eq\/ne (and X, C0), (shift X, C1))`; NFC"
+        },
+        {
+            "hash": "112e49b38150b8bfdef01434309d1b05204193e4",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-10-18T01:16:55-05:00",
+            "subject": "[DAGCombiner] Transform `(icmp eq\/ne (and X,C0),(shift X,C1))` to use rotate or to getter constants."
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
