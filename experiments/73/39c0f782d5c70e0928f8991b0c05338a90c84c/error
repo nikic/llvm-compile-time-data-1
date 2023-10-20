@@ -1,0 +1,136 @@
+MESSAGE: Execution of "./build_llvm_project.sh" failed
+
+STDOUT:
+[3128/3306] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/RegisterValue.cpp.o
+[3129/3306] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/SchedClassResolution.cpp.o
+[3130/3306] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/SerialSnippetGenerator.cpp.o
+[3131/3306] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/SnippetFile.cpp.o
+[3132/3306] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/SnippetGenerator.cpp.o
+[3133/3306] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/SnippetRepetitor.cpp.o
+[3134/3306] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/SubprocessMemory.cpp.o
+[3135/3306] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/Target.cpp.o
+[3136/3306] Building CXX object tools/llvm-isel-fuzzer/CMakeFiles/llvm-isel-fuzzer.dir/DummyISelFuzzer.cpp.o
+[3137/3306] Building CXX object tools/llvm-exegesis/lib/CMakeFiles/LLVMExegesis.dir/UopsBenchmarkRunner.cpp.o
+[3138/3306] Building CXX object tools/llvm-isel-fuzzer/CMakeFiles/llvm-isel-fuzzer.dir/llvm-isel-fuzzer.cpp.o
+/root/llvm-compile-time-tracker/llvm-project/llvm/tools/llvm-isel-fuzzer/llvm-isel-fuzzer.cpp: In function ‘int LLVMFuzzerInitialize(int*, char***)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/tools/llvm-isel-fuzzer/llvm-isel-fuzzer.cpp:141:43: warning: ISO C++ forbids zero-size array ‘argv’ [-Wpedantic]
+  141 |   ExitOnError ExitOnErr(std::string(*argv[0]) + ": error:");
+      |                                           ^
+[3139/3306] Building CXX object tools/llvm-itanium-demangle-fuzzer/CMakeFiles/llvm-itanium-demangle-fuzzer.dir/DummyDemanglerFuzzer.cpp.o
+[3140/3306] Building CXX object tools/llvm-exegesis/lib/X86/CMakeFiles/LLVMExegesisX86.dir/Target.cpp.o
+[3141/3306] Building CXX object tools/llvm-itanium-demangle-fuzzer/CMakeFiles/llvm-itanium-demangle-fuzzer.dir/llvm-itanium-demangle-fuzzer.cpp.o
+[3142/3306] Linking CXX static library lib/libLLVMExegesis.a
+[3143/3306] Linking CXX static library lib/libLLVMExegesisX86.a
+[3144/3306] Building CXX object tools/llvm-jitlink/llvm-jitlink-executor/CMakeFiles/llvm-jitlink-executor.dir/llvm-jitlink-executor.cpp.o
+[3145/3306] Linking CXX executable bin/llvm-itanium-demangle-fuzzer
+[3146/3306] Building CXX object tools/llvm-microsoft-demangle-fuzzer/CMakeFiles/llvm-microsoft-demangle-fuzzer.dir/DummyDemanglerFuzzer.cpp.o
+[3147/3306] Building CXX object tools/llvm-microsoft-demangle-fuzzer/CMakeFiles/llvm-microsoft-demangle-fuzzer.dir/llvm-microsoft-demangle-fuzzer.cpp.o
+[3148/3306] Linking CXX executable bin/llvm-jitlink-executor
+[3149/3306] Building CXX object tools/llvm-opt-fuzzer/CMakeFiles/llvm-opt-fuzzer.dir/DummyOptFuzzer.cpp.o
+[3150/3306] Linking CXX executable bin/llvm-microsoft-demangle-fuzzer
+[3151/3306] Building CXX object tools/llvm-opt-fuzzer/CMakeFiles/llvm-opt-fuzzer.dir/llvm-opt-fuzzer.cpp.o
+/root/llvm-compile-time-tracker/llvm-project/llvm/tools/llvm-opt-fuzzer/llvm-opt-fuzzer.cpp: In function ‘int LLVMFuzzerInitialize(int*, char***)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/tools/llvm-opt-fuzzer/llvm-opt-fuzzer.cpp:201:43: warning: ISO C++ forbids zero-size array ‘argv’ [-Wpedantic]
+  201 |   ExitOnError ExitOnErr(std::string(*argv[0]) + ": error:");
+      |                                           ^
+[3152/3306] Building CXX object tools/llvm-rust-demangle-fuzzer/CMakeFiles/llvm-rust-demangle-fuzzer.dir/llvm-rust-demangle-fuzzer.cpp.o
+[3153/3306] Linking CXX executable bin/llvm-rust-demangle-fuzzer
+[3154/3306] Building CXX object tools/llvm-special-case-list-fuzzer/CMakeFiles/llvm-special-case-list-fuzzer.dir/DummySpecialCaseListFuzzer.cpp.o
+[3155/3306] Building CXX object tools/llvm-special-case-list-fuzzer/CMakeFiles/llvm-special-case-list-fuzzer.dir/special-case-list-fuzzer.cpp.o
+[3156/3306] Linking CXX executable bin/llvm-special-case-list-fuzzer
+[3157/3306] Building CXX object tools/llvm-yaml-numeric-parser-fuzzer/CMakeFiles/llvm-yaml-numeric-parser-fuzzer.dir/DummyYAMLNumericParserFuzzer.cpp.o
+[3158/3306] Building CXX object tools/llvm-yaml-numeric-parser-fuzzer/CMakeFiles/llvm-yaml-numeric-parser-fuzzer.dir/yaml-numeric-parser-fuzzer.cpp.o
+[3159/3306] Linking CXX executable bin/llvm-yaml-numeric-parser-fuzzer
+[3160/3306] Building CXX object tools/llvm-yaml-parser-fuzzer/CMakeFiles/llvm-yaml-parser-fuzzer.dir/DummyYAMLParserFuzzer.cpp.o
+[3161/3306] Building CXX object tools/llvm-yaml-parser-fuzzer/CMakeFiles/llvm-yaml-parser-fuzzer.dir/yaml-parser-fuzzer.cpp.o
+[3162/3306] Linking CXX executable bin/llvm-yaml-parser-fuzzer
+[3163/3306] Building CXX object tools/obj2yaml/CMakeFiles/obj2yaml.dir/archive2yaml.cpp.o
+[3164/3306] Building CXX object tools/obj2yaml/CMakeFiles/obj2yaml.dir/obj2yaml.cpp.o
+[3165/3306] Building CXX object tools/obj2yaml/CMakeFiles/obj2yaml.dir/coff2yaml.cpp.o
+[3166/3306] Building CXX object tools/obj2yaml/CMakeFiles/obj2yaml.dir/dwarf2yaml.cpp.o
+[3167/3306] Building CXX object tools/obj2yaml/CMakeFiles/obj2yaml.dir/dxcontainer2yaml.cpp.o
+[3168/3306] Building CXX object tools/obj2yaml/CMakeFiles/obj2yaml.dir/elf2yaml.cpp.o
+[3169/3306] Building CXX object tools/obj2yaml/CMakeFiles/obj2yaml.dir/macho2yaml.cpp.o
+[3170/3306] Building CXX object tools/obj2yaml/CMakeFiles/obj2yaml.dir/minidump2yaml.cpp.o
+[3171/3306] Building CXX object tools/obj2yaml/CMakeFiles/obj2yaml.dir/offload2yaml.cpp.o
+[3172/3306] Building CXX object tools/obj2yaml/CMakeFiles/obj2yaml.dir/xcoff2yaml.cpp.o
+[3173/3306] Building CXX object tools/obj2yaml/CMakeFiles/obj2yaml.dir/wasm2yaml.cpp.o
+[3174/3306] Linking CXX executable bin/obj2yaml
+[3175/3306] Creating export file for Remarks
+[3176/3306] Building CXX object tools/remarks-shlib/CMakeFiles/Remarks.dir/libremarks.cpp.o
+[3177/3306] Linking CXX executable bin/llvm-isel-fuzzer
+[3178/3306] Building CXX object tools/yaml2obj/CMakeFiles/yaml2obj.dir/yaml2obj.cpp.o
+[3179/3306] Linking CXX shared library lib/libRemarks.so.18git
+[3180/3306] Creating library symlink lib/libRemarks.so
+[3181/3306] Building CXX object examples/IRTransforms/CMakeFiles/ExampleIRTransforms.dir/SimplifyCFG.cpp.o
+[3182/3306] Linking CXX shared module lib/ExampleIRTransforms.so
+[3183/3306] Building CXX object unittests/Analysis/InlineAdvisorPlugin/CMakeFiles/InlineAdvisorPlugin.dir/InlineAdvisorPlugin.cpp.o
+[3184/3306] Linking CXX shared module unittests/Analysis/InlineAdvisorPlugin.so
+[3185/3306] Building CXX object unittests/Analysis/InlineOrderPlugin/CMakeFiles/InlineOrderPlugin.dir/InlineOrderPlugin.cpp.o
+[3186/3306] Linking CXX shared module unittests/Analysis/InlineOrderPlugin.so
+[3187/3306] Building CXX object unittests/Passes/Plugins/TestPlugin/CMakeFiles/TestPlugin.dir/TestPlugin.cpp.o
+[3188/3306] Linking CXX shared module unittests/Passes/Plugins/TestPlugin.so
+[3189/3306] Linking CXX executable bin/yaml2obj
+[3190/3306] Building CXX object unittests/Support/DynamicLibrary/CMakeFiles/DynamicLibraryLib.dir/ExportedFuncs.cpp.o
+[3191/3306] Building CXX object unittests/Passes/Plugins/DoublerPlugin/CMakeFiles/DoublerPlugin.dir/DoublerPlugin.cpp.o
+[3192/3306] Linking CXX static library lib/libDynamicLibraryLib.a
+[3193/3306] Building CXX object unittests/Support/DynamicLibrary/CMakeFiles/PipSqueak.dir/PipSqueak.cpp.o
+[3194/3306] Linking CXX shared module unittests/Passes/Plugins/DoublerPlugin.so
+[3195/3306] Building CXX object unittests/Support/DynamicLibrary/CMakeFiles/SecondLib.dir/PipSqueak.cpp.o
+[3196/3306] Linking CXX shared module unittests/Support/DynamicLibrary/PipSqueak.so
+[3197/3306] Linking CXX executable bin/clang-linker-wrapper
+[3198/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/benchmark_api_internal.cc.o
+[3199/3306] Linking CXX shared module unittests/Support/DynamicLibrary/SecondLib.so
+[3200/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/benchmark.cc.o
+[3201/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/benchmark_name.cc.o
+[3202/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/benchmark_runner.cc.o
+[3203/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/benchmark_register.cc.o
+[3204/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/colorprint.cc.o
+[3205/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/commandlineflags.cc.o
+[3206/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/complexity.cc.o
+[3207/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/console_reporter.cc.o
+[3208/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/counter.cc.o
+[3209/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/csv_reporter.cc.o
+[3210/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/json_reporter.cc.o
+[3211/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/perf_counters.cc.o
+[3212/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/reporter.cc.o
+[3213/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/sleep.cc.o
+[3214/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/statistics.cc.o
+[3215/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/string_util.cc.o
+[3216/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/sysinfo.cc.o
+[3217/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark.dir/timers.cc.o
+[3218/3306] Building CXX object third-party/benchmark/src/CMakeFiles/benchmark_main.dir/benchmark_main.cc.o
+[3219/3306] Linking CXX static library lib/libbenchmark.a
+[3220/3306] Linking CXX static library lib/libbenchmark_main.a
+[3221/3306] Linking CXX executable bin/llvm-opt-fuzzer
+[3222/3306] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ASTReader.cpp.o
+[3223/3306] Linking CXX static library lib/libclangSerialization.a
+[3224/3306] Linking CXX static library lib/libclangFrontend.a
+[3225/3306] Linking CXX static library lib/libclangToolingSyntax.a
+[3226/3306] Linking CXX static library lib/libclangIndex.a
+[3227/3306] Linking CXX static library lib/libclangRewriteFrontend.a
+[3228/3306] Linking CXX static library lib/libclangCrossTU.a
+[3229/3306] Linking CXX static library lib/libclangExtractAPI.a
+[3230/3306] Linking CXX static library lib/libclangToolingRefactoring.a
+[3231/3306] Linking CXX static library lib/libclangTransformer.a
+[3232/3306] Linking CXX static library lib/libclangStaticAnalyzerCore.a
+[3233/3306] Linking CXX static library lib/libclangCodeGen.a
+[3234/3306] Linking CXX static library lib/libclangFrontendTool.a
+[3235/3306] Linking CXX static library lib/libclangStaticAnalyzerCheckers.a
+[3236/3306] Linking CXX static library lib/libclangStaticAnalyzerFrontend.a
+[3237/3306] Linking CXX executable bin/diagtool
+[3238/3306] Linking CXX executable bin/clang-ast-dump
+[3239/3306] ASTNodeAPI.json
+FAILED: tools/clang/lib/Tooling/ASTNodeAPI.json /root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/Tooling/ASTNodeAPI.json 
+cd /root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/Tooling && /root/llvm-compile-time-tracker/llvm-project-build/bin/clang-ast-dump --skip-processing=0 -I /root/llvm-compile-time-tracker/llvm-project-build/lib/clang/18/include -I /root/llvm-compile-time-tracker/llvm-project/clang/include -I /root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I /root/llvm-compile-time-tracker/llvm-project-build/include -I /root/llvm-compile-time-tracker/llvm-project/llvm/include -I /usr/include/c++/11 -I /usr/include/x86_64-linux-gnu/c++/11 -I /usr/include/c++/11/backward -I /usr/lib/gcc/x86_64-linux-gnu/11/include -I /usr/local/include -I /usr/include/x86_64-linux-gnu -I /usr/include --json-output-path /root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/Tooling/ASTNodeAPI.json
+Segmentation fault
+[3240/3306] Linking CXX executable bin/clang-import-test
+[3241/3306] Linking CXX executable bin/clang-18
+[3242/3306] Building CXX object tools/clang/lib/Interpreter/CMakeFiles/obj.clangInterpreter.dir/Interpreter.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+903.06user 49.07system 2:45.35elapsed 575%CPU (0avgtext+0avgdata 1902180maxresident)k
+0inputs+4917520outputs (133740major+25231060minor)pagefaults 0swaps
