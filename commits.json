@@ -57807,6 +57807,12 @@
             "author_name": "Adrian Kuegel",
             "commit_date": "2023-10-20T10:53:59+00:00",
             "subject": "[mlir][Tosa] Fix Clamp verifier to handle quantized types."
+        },
+        {
+            "hash": "783b4d91c73c992fad32e045ce3265b01028fc99",
+            "author_name": "Sarthak Gupta",
+            "commit_date": "2023-10-20T12:03:24+01:00",
+            "subject": "[mlir][tosa] Check for 0-ranked-tensors during fold (#68512)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -58283,6 +58289,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-10-18T17:03:10+02:00",
             "subject": "increase"
+        }
+    ],
+    "nikic\/perf\/memdep-eii": [
+        {
+            "hash": "7c7896b1beeb1d275a06557111363b99b754398a",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-10-20T12:49:07+02:00",
+            "subject": "[MemCpyOpt] Remove unnecessary typed pointer handling (NFC)"
+        },
+        {
+            "hash": "694ddb42edfe08741436bd840402119d9ef71f2e",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-10-20T13:04:21+02:00",
+            "subject": "use earliest escape info"
         }
     ]
 }
