@@ -59169,6 +59169,42 @@
             "author_name": "Nikita Kudriavtsev",
             "commit_date": "2023-10-23T10:12:39-07:00",
             "subject": "Fixed Windows build warnings (#68978)"
+        },
+        {
+            "hash": "2e6940754793fb085adf0097ab73ab8e1f40bd1f",
+            "author_name": "David Green",
+            "commit_date": "2023-10-23T18:15:36+01:00",
+            "subject": "[AArch64] Don't generate st2 for 64bit store that can use stp (#69901)"
+        },
+        {
+            "hash": "fe929770f41e7b962ebaaeb0a77773a3b03f8b8c",
+            "author_name": "David Spickett",
+            "commit_date": "2023-10-23T18:16:03+01:00",
+            "subject": "[lldb] Add a single bit constructor for RegisterFlags::Field (#69315)"
+        },
+        {
+            "hash": "25bf1ae99b3985a62f00ebf764f17a12f30c257c",
+            "author_name": "Joseph Huber",
+            "commit_date": "2023-10-23T13:16:20-04:00",
+            "subject": "[libc] Enable remaining string functions on the GPU (#68346)"
+        },
+        {
+            "hash": "aab0626c2e3e8ffedcb69dd2c73a4c9fe0e2aca4",
+            "author_name": "David Spickett",
+            "commit_date": "2023-10-23T18:20:27+01:00",
+            "subject": "[lldb][docs] Update contributing links (#69726)"
+        },
+        {
+            "hash": "25da9bb7d44c91b0339382af6c91b6a346685212",
+            "author_name": "Philip Reames",
+            "commit_date": "2023-10-23T10:37:56-07:00",
+            "subject": "[RISCV] Allow swapped operands in reduction formation (#68634)"
+        },
+        {
+            "hash": "2973febe1087353be285d84afc82a5cbe49a5b9f",
+            "author_name": "alex-t",
+            "commit_date": "2023-10-23T19:41:07+02:00",
+            "subject": "[AMDGPU] Force the third source operand of the MAI instructions to VGPR if no AGPRs are used. (#69720)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -59741,6 +59777,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-10-23T17:07:37+02:00",
             "subject": "[BasicAA] Make isNotCapturedBefore() check for calls more precise"
+        }
+    ],
+    "serge-sans-paille\/perf\/lexer-lookup": [
+        {
+            "hash": "f9906508bc4f05d3950e2219b4c56f6c078a61ef",
+            "author_name": "Ben Shi",
+            "commit_date": "2023-10-21T16:29:14+02:00",
+            "subject": "[analyzer][NFC] Substitute operator() with lambda in StreamChecker"
+        },
+        {
+            "hash": "43c9f3e4573d3f6af17b427f6b0690e8ae4d0ac5",
+            "author_name": "serge-sans-paille",
+            "commit_date": "2023-10-23T08:56:56+02:00",
+            "subject": "perf lexer"
         }
     ]
 }
