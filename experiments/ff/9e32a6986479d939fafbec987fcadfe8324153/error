@@ -1,0 +1,136 @@
+MESSAGE: Execution of "./build_llvm_project.sh" failed
+
+STDOUT:
+[2223/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ATTInstPrinter.cpp.o
+[2224/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86IntelInstPrinter.cpp.o
+[2225/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86InstComments.cpp.o
+[2226/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86InstPrinterCommon.cpp.o
+[2227/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ShuffleDecode.cpp.o
+[2228/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86EncodingOptimization.cpp.o
+[2229/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86AsmBackend.cpp.o
+[2230/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCAsmInfo.cpp.o
+[2231/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCTargetDesc.cpp.o
+[2232/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCCodeEmitter.cpp.o
+[2233/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MachObjectWriter.cpp.o
+[2234/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MnemonicTables.cpp.o
+[2235/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ELFObjectWriter.cpp.o
+[2236/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFObjectWriter.cpp.o
+[2237/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFStreamer.cpp.o
+[2238/3306] Building CXX object lib/Target/X86/TargetInfo/CMakeFiles/LLVMX86Info.dir/X86TargetInfo.cpp.o
+[2239/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFTargetStreamer.cpp.o
+[2240/3306] Linking CXX static library lib/libLLVMX86Info.a
+[2241/3306] Building CXX object tools/lto/CMakeFiles/LTO.dir/LTODisassembler.cpp.o
+[2242/3306] Linking CXX static library lib/libLLVMX86Disassembler.a
+[2243/3306] Building CXX object tools/lto/CMakeFiles/LTO.dir/lto.cpp.o
+[2244/3306] Linking CXX static library lib/libLLVMX86Desc.a
+[2245/3306] Building CXX object tools/gold/CMakeFiles/LLVMgold.dir/gold-plugin.cpp.o
+/root/llvm-compile-time-tracker/llvm-project/llvm/tools/gold/gold-plugin.cpp: In function ‘ld_plugin_status onload(ld_plugin_tv*)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/tools/gold/gold-plugin.cpp:438:11: warning: cast between incompatible function types from ‘ld_plugin_message’ {aka ‘ld_plugin_status (*)(int, const char*, ...)’} to ‘ld_plugin_get_wrap_symbols’ {aka ‘ld_plugin_status (*)(long unsigned int*, const char***)’} [-Wcast-function-type]
+  438 |           (ld_plugin_get_wrap_symbols)tv->tv_u.tv_message;
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2246/3306] Linking CXX static library lib/libLLVMX86AsmParser.a
+[2247/3306] Linking CXX static library lib/libLLVMX86TargetMCA.a
+[2248/3306] Building C object tools/clang/tools/clang-fuzzer/dictionary/CMakeFiles/clang-fuzzer-dictionary.dir/dictionary.c.o
+[2249/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/CodeGenOptions.cpp.o
+[2250/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Cuda.cpp.o
+[2251/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/DarwinSDKInfo.cpp.o
+[2252/3306] Linking CXX static library lib/libLLVMX86CodeGen.a
+[2253/3306] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/USRGeneration.cpp.o
+[2254/3306] Linking CXX shared library lib/libLTO.so.18git
+[2255/3306] Creating library symlink lib/libLTO.so
+[2256/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/DiagnosticIDs.cpp.o
+[2257/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/DiagnosticOptions.cpp.o
+[2258/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/ExpressionTraits.cpp.o
+[2259/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/FileEntry.cpp.o
+[2260/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/FileManager.cpp.o
+[2261/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/FileSystemStatCache.cpp.o
+[2262/3306] Linking CXX shared module lib/LLVMgold.so
+[2263/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/LangOptions.cpp.o
+[2264/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/LangStandards.cpp.o
+[2265/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/MakeSupport.cpp.o
+[2266/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Diagnostic.cpp.o
+[2267/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/ObjCRuntime.cpp.o
+[2268/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/OpenCLOptions.cpp.o
+[2269/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/OpenMPKinds.cpp.o
+[2270/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/OperatorPrecedence.cpp.o
+[2271/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/ParsedAttrInfo.cpp.o
+[2272/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/ProfileList.cpp.o
+[2273/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/NoSanitizeList.cpp.o
+[2274/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/SanitizerSpecialCaseList.cpp.o
+[2275/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Sanitizers.cpp.o
+[2276/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Sarif.cpp.o
+[2277/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/SourceLocation.cpp.o
+[2278/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/SourceManager.cpp.o
+[2279/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Stack.cpp.o
+[2280/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/TargetID.cpp.o
+[2281/3306] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexTypeSourceInfo.cpp.o
+[2282/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets.cpp.o
+[2283/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/AArch64.cpp.o
+[2284/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/AMDGPU.cpp.o
+[2285/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/ARC.cpp.o
+[2286/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/ARM.cpp.o
+[2287/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/AVR.cpp.o
+[2288/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/BPF.cpp.o
+[2289/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/CSKY.cpp.o
+[2290/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/DirectX.cpp.o
+[2291/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/Hexagon.cpp.o
+[2292/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/Lanai.cpp.o
+[2293/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/Le64.cpp.o
+[2294/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/LoongArch.cpp.o
+[2295/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/M68k.cpp.o
+[2296/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/MSP430.cpp.o
+[2297/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/Mips.cpp.o
+[2298/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/NVPTX.cpp.o
+[2299/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/OSTargets.cpp.o
+[2300/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/PNaCl.cpp.o
+[2301/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/PPC.cpp.o
+[2302/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/RISCV.cpp.o
+[2303/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/SPIR.cpp.o
+[2304/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/Sparc.cpp.o
+[2305/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/SystemZ.cpp.o
+[2306/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/TCE.cpp.o
+[2307/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/VE.cpp.o
+[2308/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/WebAssembly.cpp.o
+[2309/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/X86.cpp.o
+[2310/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/XCore.cpp.o
+[2311/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/TokenKinds.cpp.o
+[2312/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/TypeTraits.cpp.o
+[2313/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Version.cpp.o
+[2314/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Warnings.cpp.o
+[2315/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/XRayInstr.cpp.o
+[2316/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/XRayLists.cpp.o
+[2317/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/IdentifierTable.cpp.o
+[2318/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/TargetInfo.cpp.o
+[2319/3306] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Module.cpp.o
+[2320/3306] Linking CXX static library lib/libclangBasic.a
+[2321/3306] Linking CXX static library lib/libclangAPINotes.a
+[2322/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/InitHeaderSearch.cpp.o
+[2323/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/HeaderMap.cpp.o
+[2324/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/DependencyDirectivesScanner.cpp.o
+[2325/3306] Building CXX object tools/clang/lib/Tooling/Transformer/CMakeFiles/obj.clangTransformer.dir/RewriteRule.cpp.o
+[2326/3306] Building CXX object tools/clang/lib/Tooling/DependencyScanning/CMakeFiles/obj.clangDependencyScanning.dir/DependencyScanningWorker.cpp.o
+[2327/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/Lexer.cpp.o
+FAILED: tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/Lexer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/Lex -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/Lexer.cpp.o -MF tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/Lexer.cpp.o.d -o tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/Lexer.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/Lexer.cpp
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/Lexer.cpp: In static member function ‘static unsigned int clang::Lexer::getTokenPrefixLength(clang::SourceLocation, unsigned int, const clang::SourceManager&, const clang::LangOptions&)’:
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/Lexer.cpp:756:41: error: ‘isObviouslySimpleCharacter’ is not a member of ‘clang::Lexer’
+  756 |   if (Invalid || (CharNo == 0 && Lexer::isObviouslySimpleCharacter(*TokPtr)))
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/Lexer.cpp:764:17: error: ‘isObviouslySimpleCharacter’ is not a member of ‘clang::Lexer’
+  764 |   while (Lexer::isObviouslySimpleCharacter(*TokPtr)) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/Lexer.cpp:785:15: error: ‘isObviouslySimpleCharacter’ is not a member of ‘clang::Lexer’
+  785 |   if (!Lexer::isObviouslySimpleCharacter(*TokPtr))
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[2328/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/MacroArgs.cpp.o
+[2329/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/MacroInfo.cpp.o
+[2330/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/HeaderSearch.cpp.o
+[2331/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/LiteralSupport.cpp.o
+[2332/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/ModuleMap.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+167.97user 16.21system 0:34.44elapsed 534%CPU (0avgtext+0avgdata 973372maxresident)k
+0inputs+2283568outputs (31787major+7448618minor)pagefaults 0swaps
