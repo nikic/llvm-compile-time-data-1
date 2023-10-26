@@ -61533,6 +61533,18 @@
             "author_name": "Christudasan Devadasan",
             "commit_date": "2023-10-26T17:43:14+05:30",
             "subject": "[AMDGPU] precommit lit test for PR 69924."
+        },
+        {
+            "hash": "ce6b9b3b58b6c9e51d87084c916fa7aef81401f1",
+            "author_name": "Markus M\u00fctzel",
+            "commit_date": "2023-10-26T14:30:11+02:00",
+            "subject": "[flang][runtime] Avoid dependency on libc++ for `std::__libcpp_verbose_abort`"
+        },
+        {
+            "hash": "4638c29c3dd14048ca78e37f132d4c75f490d139",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-10-26T14:30:33+02:00",
+            "subject": "[InstSimplify] Remove redundant pointer icmp fold (NFCI)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -62161,6 +62173,20 @@
             "author_name": "serge-sans-paille",
             "commit_date": "2023-10-26T00:50:10+02:00",
             "subject": "[clang] Reorder CharInfo enumeration in order to optimize identifier info check"
+        }
+    ],
+    "fhahn\/perf\/ce-uge-vars": [
+        {
+            "hash": "96e040acee7c1728506ec49a5a229bfecd49f7db",
+            "author_name": "Benjamin Maxwell",
+            "commit_date": "2023-10-26T12:18:58+01:00",
+            "subject": "[mlir][ArmSVE] Add `-arm-sve-legalize-vector-storage` pass  (#68794)"
+        },
+        {
+            "hash": "d9914695f204dd28719ebebb962cf863b820b909",
+            "author_name": "Florian Hahn",
+            "commit_date": "2023-10-26T13:29:40+01:00",
+            "subject": "[ConstraintElim] Add (UGE, var, 0) to unsigned system for new vars."
         }
     ]
 }
