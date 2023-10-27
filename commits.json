@@ -62811,6 +62811,12 @@
             "author_name": "Craig Topper",
             "commit_date": "2023-10-27T13:36:44-07:00",
             "subject": "[RISCV] Reduce the number of parameters to copyPhysRegVector. NFC (#70502)"
+        },
+        {
+            "hash": "505e32302c07b9081fa1bc05daf72bafed6ca29a",
+            "author_name": "Daniil Suchkov",
+            "commit_date": "2023-10-27T20:48:54+00:00",
+            "subject": "[Test] NFC. Add missing \"REQUIRES: x86-registered-target\" to LoopStrengthReduce\/scev-incorrect-nuw-inference.ll"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -63501,6 +63507,26 @@
             "author_name": "Yingwei Zheng",
             "commit_date": "2023-10-27T22:20:50+08:00",
             "subject": "[InstCombine] Simplify and\/or of icmp eq with op replacement"
+        }
+    ],
+    "serge-sans-paille\/perf\/lexer-faster-slow-get-char-and-size": [
+        {
+            "hash": "f9906508bc4f05d3950e2219b4c56f6c078a61ef",
+            "author_name": "Ben Shi",
+            "commit_date": "2023-10-21T16:29:14+02:00",
+            "subject": "[analyzer][NFC] Substitute operator() with lambda in StreamChecker"
+        },
+        {
+            "hash": "3fe63f81fcb999681daa11b2890c82fda3aaeef5",
+            "author_name": "serge-sans-paille",
+            "commit_date": "2023-10-27T22:16:34+02:00",
+            "subject": "[clang] Change representation of CurLexerKind"
+        },
+        {
+            "hash": "0ce21a1cd13746fc57077e242c63a2a152ba6f4c",
+            "author_name": "serge-sans-paille",
+            "commit_date": "2023-10-27T22:48:16+02:00",
+            "subject": "faster and less error prone ger char and size"
         }
     ]
 }
