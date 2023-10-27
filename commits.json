@@ -46033,6 +46033,36 @@
             "author_name": "kadir \u00e7etinkaya",
             "commit_date": "2023-10-25T14:02:20+02:00",
             "subject": "[clangd] Disable crashy unchecked-optional-access tidy check (#69427)"
+        },
+        {
+            "hash": "2a41d978b4fa6dee568e247dd8bd9cabf34660b4",
+            "author_name": "Aaron Ballman",
+            "commit_date": "2023-10-27T14:47:29+02:00",
+            "subject": "[C23] Use thread_local semantics (#70107)"
+        },
+        {
+            "hash": "030d68ef2cd7ec5728e9d99a5a547f2d401a72a2",
+            "author_name": "Aaron Ballman",
+            "commit_date": "2023-10-27T14:47:29+02:00",
+            "subject": "Fix a c23 -> c2x think-o"
+        },
+        {
+            "hash": "1f6d35b36681b23668fea01a13657eb59419b5da",
+            "author_name": "Aaron Ballman",
+            "commit_date": "2023-10-27T14:47:29+02:00",
+            "subject": "Fix tests for c23 <-> c2x"
+        },
+        {
+            "hash": "fb62a201a199663dcaf6511bd7a453ff669438e4",
+            "author_name": "Owen Pan",
+            "commit_date": "2023-10-27T14:47:59+02:00",
+            "subject": "Revert \"[clang-format] Fix align consecutive declarations over function pointers\""
+        },
+        {
+            "hash": "4b7f4152a8d166166c6756f933d7dcaa82c0e55e",
+            "author_name": "wanglei",
+            "commit_date": "2023-10-27T14:48:09+02:00",
+            "subject": "[LoongArch] Implement COPY instruction between CFRs (#69300)"
         }
     ],
     "nikic\/perf\/instcombine-unreach-3": [
@@ -62487,6 +62517,18 @@
             "author_name": "Florian Hahn",
             "commit_date": "2023-10-27T13:34:54+01:00",
             "subject": "[VPlan] Handle VPValues without underlying values in getTypeForVPValue."
+        },
+        {
+            "hash": "7391ad38d6cb67ac9364c19c0ba1f4e16f3d71e0",
+            "author_name": "Kiran Chandramohan",
+            "commit_date": "2023-10-27T13:48:41+01:00",
+            "subject": "[Flang][OpenMP] Move the host-ir-flag test to the Driver directory (#70441)"
+        },
+        {
+            "hash": "4fc1e7db273d2c1d0140ab7234b2f7b05d58a397",
+            "author_name": "Pierre van Houtryve",
+            "commit_date": "2023-10-27T14:52:09+02:00",
+            "subject": "[InstSimplify] Fold (a != 0) ? abs(a) : 0 (#70305)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
