@@ -62583,6 +62583,24 @@
             "author_name": "Richard Howell",
             "commit_date": "2023-10-27T07:10:46-07:00",
             "subject": "[clang] use relative paths for builtin headers during module compilation (#68023)"
+        },
+        {
+            "hash": "deb429e5b0003b4951b6387fe6d0cb0ea4181f8a",
+            "author_name": "Igor Kirillov",
+            "commit_date": "2023-10-27T14:12:45+00:00",
+            "subject": "Revert \"[CodeGen] Improve ExpandMemCmp for more efficient non-register aligned sizes handling (#69942)\""
+        },
+        {
+            "hash": "cb950c9dc9bff37367068310bdfad75c7274915c",
+            "author_name": "Louis Dionne",
+            "commit_date": "2023-10-27T10:19:20-04:00",
+            "subject": "[libc++] Make sure we implement and test LWG2280 properly (#67670)"
+        },
+        {
+            "hash": "574c5cc9d8f6fcdf3702f5f98ea07ea6a8ebdfb7",
+            "author_name": "Louis Dionne",
+            "commit_date": "2023-10-27T10:21:50-04:00",
+            "subject": "[libc++] Fix incorrect length check in std::basic_filebuf"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -63259,6 +63277,20 @@
             "author_name": "serge-sans-paille",
             "commit_date": "2023-10-26T23:06:18+02:00",
             "subject": "[clang] Change representation of CurLexerKind"
+        }
+    ],
+    "dtcxzyw\/perf\/pr70335": [
+        {
+            "hash": "4fc1e7db273d2c1d0140ab7234b2f7b05d58a397",
+            "author_name": "Pierre van Houtryve",
+            "commit_date": "2023-10-27T14:52:09+02:00",
+            "subject": "[InstSimplify] Fold (a != 0) ? abs(a) : 0 (#70305)"
+        },
+        {
+            "hash": "c6702c03882c6545cfae35d0a2d82e3eaa86ba25",
+            "author_name": "Yingwei Zheng",
+            "commit_date": "2023-10-27T22:20:50+08:00",
+            "subject": "[InstCombine] Simplify and\/or of icmp eq with op replacement"
         }
     ]
 }
