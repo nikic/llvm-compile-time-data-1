@@ -62793,6 +62793,24 @@
             "author_name": "Stanislav Mekhanoshin",
             "commit_date": "2023-10-27T13:32:48-07:00",
             "subject": "[AMDGPU] Remove unneeded implicit-def from shrink-i32-kimm.mir. NFC. (#70489)"
+        },
+        {
+            "hash": "035c154f4f6ebf7d7c5cc4a21c267b3a08bfb062",
+            "author_name": "Craig Topper",
+            "commit_date": "2023-10-27T13:35:56-07:00",
+            "subject": "[RISCV] Refactor RISCVPostRAExpandPseudo::expandMovImm and RISCVInstrInfo::movImm to prepare for merging."
+        },
+        {
+            "hash": "b679ec86e3cba95b1858077fb78bfff46080eb73",
+            "author_name": "Craig Topper",
+            "commit_date": "2023-10-27T13:35:56-07:00",
+            "subject": "[RISCV] Use RISCVInstrInfo::movImm to implement most of RISCVPostRAExpandPseudo::expandMovImm (#70389)"
+        },
+        {
+            "hash": "8363996894b29811d74fa7ce10f2dda7cb79c28f",
+            "author_name": "Craig Topper",
+            "commit_date": "2023-10-27T13:36:44-07:00",
+            "subject": "[RISCV] Reduce the number of parameters to copyPhysRegVector. NFC (#70502)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
