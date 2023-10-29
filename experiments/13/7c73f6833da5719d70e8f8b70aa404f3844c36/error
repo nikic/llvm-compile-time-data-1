@@ -1,0 +1,136 @@
+MESSAGE: Execution of "./build_llvm_project.sh" failed
+
+STDOUT:
+[2251/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupLEAs.cpp.o
+[2252/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupInstTuning.cpp.o
+[2253/3306] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexTypeSourceInfo.cpp.o
+[2254/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupVectorConstants.cpp.o
+[2255/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AvoidStoreForwardingBlocks.cpp.o
+[2256/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DynAllocaExpander.cpp.o
+[2257/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupSetCC.cpp.o
+[2258/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FlagsCopyLowering.cpp.o
+[2259/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FloatingPoint.cpp.o
+[2260/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FrameLowering.cpp.o
+[2261/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelDAGToDAG.cpp.o
+[2262/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelLowering.cpp.o
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86ISelLowering.cpp: In member function ‘virtual unsigned int llvm::X86TargetLowering::preferedOpcodeForCmpEqPiecesOfOperand(llvm::EVT, unsigned int, bool, const llvm::APInt&, const std::optional<llvm::APInt>&) const’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86ISelLowering.cpp:3300:51: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+ 3300 |         return AndMask->getSignificantBits() > 32 ? ISD::SRL : ShiftOpc;
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86ISelLowering.cpp:3305:38: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+ 3305 |       return ShiftOrRotateAmt.uge(7) ? ISD::SRL : ShiftOpc;
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86ISelLowering.cpp:3311:49: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+ 3311 |       return AndMask->getSignificantBits() > 33 ? ISD::SHL : ShiftOpc;
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/root/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86ISelLowering.cpp:3314:36: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+ 3314 |     return ShiftOrRotateAmt.ult(7) ? ISD::SHL : ShiftOpc;
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+[2263/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelLoweringCall.cpp.o
+[2264/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86IndirectBranchTracking.cpp.o
+[2265/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86IndirectThunks.cpp.o
+[2266/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InterleavedAccess.cpp.o
+[2267/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InsertPrefetch.cpp.o
+[2268/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstrFMA3Info.cpp.o
+[2269/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstCombineIntrinsic.cpp.o
+[2270/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstrFoldTables.cpp.o
+[2271/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstrInfo.cpp.o
+[2272/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86EvexToVex.cpp.o
+[2273/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LoadValueInjectionLoadHardening.cpp.o
+[2274/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LoadValueInjectionRetHardening.cpp.o
+[2275/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MachineFunctionInfo.cpp.o
+[2276/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MCInstLower.cpp.o
+[2277/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MacroFusion.cpp.o
+[2278/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86OptimizeLEAs.cpp.o
+[2279/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PadShortFunction.cpp.o
+[2280/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PartialReduction.cpp.o
+[2281/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86RegisterInfo.cpp.o
+[2282/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ReturnThunks.cpp.o
+[2283/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SelectionDAGInfo.cpp.o
+[2284/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ShuffleDecodeConstantPool.cpp.o
+[2285/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SpeculativeLoadHardening.cpp.o
+[2286/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SpeculativeExecutionSideEffectSuppression.cpp.o
+[2287/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86Subtarget.cpp.o
+[2288/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetMachine.cpp.o
+[2289/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetObjectFile.cpp.o
+[2290/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetTransformInfo.cpp.o
+[2291/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86VZeroUpper.cpp.o
+[2292/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86WinEHState.cpp.o
+[2293/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InsertWait.cpp.o
+[2294/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86CallLowering.cpp.o
+[2295/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86InstructionSelector.cpp.o
+[2296/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86LegalizerInfo.cpp.o
+[2297/3306] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86RegisterBankInfo.cpp.o
+[2298/3306] Building CXX object lib/Target/X86/AsmParser/CMakeFiles/LLVMX86AsmParser.dir/X86AsmParser.cpp.o
+[2299/3306] Building CXX object lib/Target/X86/Disassembler/CMakeFiles/LLVMX86Disassembler.dir/X86Disassembler.cpp.o
+[2300/3306] Building CXX object lib/Target/X86/MCA/CMakeFiles/LLVMX86TargetMCA.dir/X86CustomBehaviour.cpp.o
+[2301/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ATTInstPrinter.cpp.o
+[2302/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86IntelInstPrinter.cpp.o
+[2303/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86InstComments.cpp.o
+[2304/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86InstPrinterCommon.cpp.o
+[2305/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ShuffleDecode.cpp.o
+[2306/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86EncodingOptimization.cpp.o
+[2307/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86AsmBackend.cpp.o
+[2308/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCAsmInfo.cpp.o
+[2309/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCTargetDesc.cpp.o
+[2310/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCCodeEmitter.cpp.o
+[2311/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MachObjectWriter.cpp.o
+[2312/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MnemonicTables.cpp.o
+[2313/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ELFObjectWriter.cpp.o
+[2314/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFObjectWriter.cpp.o
+[2315/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFStreamer.cpp.o
+[2316/3306] Building CXX object lib/Target/X86/TargetInfo/CMakeFiles/LLVMX86Info.dir/X86TargetInfo.cpp.o
+[2317/3306] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFTargetStreamer.cpp.o
+[2318/3306] Building CXX object tools/lto/CMakeFiles/LTO.dir/LTODisassembler.cpp.o
+[2319/3306] Linking CXX static library lib/libLLVMX86Info.a
+[2320/3306] Building CXX object tools/lto/CMakeFiles/LTO.dir/lto.cpp.o
+[2321/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/Lexer.cpp.o
+[2322/3306] Linking CXX static library lib/libLLVMX86Disassembler.a
+[2323/3306] Building C object tools/clang/tools/clang-fuzzer/dictionary/CMakeFiles/clang-fuzzer-dictionary.dir/dictionary.c.o
+[2324/3306] Building CXX object tools/gold/CMakeFiles/LLVMgold.dir/gold-plugin.cpp.o
+/root/llvm-compile-time-tracker/llvm-project/llvm/tools/gold/gold-plugin.cpp: In function ‘ld_plugin_status onload(ld_plugin_tv*)’:
+/root/llvm-compile-time-tracker/llvm-project/llvm/tools/gold/gold-plugin.cpp:438:11: warning: cast between incompatible function types from ‘ld_plugin_message’ {aka ‘ld_plugin_status (*)(int, const char*, ...)’} to ‘ld_plugin_get_wrap_symbols’ {aka ‘ld_plugin_status (*)(long unsigned int*, const char***)’} [-Wcast-function-type]
+  438 |           (ld_plugin_get_wrap_symbols)tv->tv_u.tv_message;
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2325/3306] Linking CXX static library lib/libLLVMX86Desc.a
+[2326/3306] Linking CXX static library lib/libLLVMX86AsmParser.a
+[2327/3306] Linking CXX static library lib/libLLVMX86CodeGen.a
+[2328/3306] Linking CXX static library lib/libLLVMX86TargetMCA.a
+[2329/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/HeaderSearch.cpp.o
+[2330/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/LiteralSupport.cpp.o
+[2331/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/ModuleMap.cpp.o
+[2332/3306] Linking CXX shared library lib/libLTO.so.18git
+[2333/3306] Creating library symlink lib/libLTO.so
+[2334/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPCallbacks.cpp.o
+[2335/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPConditionalDirectiveRecord.cpp.o
+[2336/3306] Linking CXX shared module lib/LLVMgold.so
+[2337/3306] Building CXX object tools/clang/lib/Tooling/DependencyScanning/CMakeFiles/obj.clangDependencyScanning.dir/DependencyScanningWorker.cpp.o
+[2338/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/MacroArgs.cpp.o
+[2339/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/MacroInfo.cpp.o
+[2340/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPCaching.cpp.o
+FAILED: tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPCaching.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/Lex -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPCaching.cpp.o -MF tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPCaching.cpp.o.d -o tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPCaching.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/PPCaching.cpp
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/PPCaching.cpp: In member function ‘void clang::Preprocessor::Backtrack()’:
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/PPCaching.cpp:45:3: error: ‘recomputeCurLexerCallback’ was not declared in this scope; did you mean ‘recomputeCurLexerKind’?
+   45 |   recomputeCurLexerCallback();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |   recomputeCurLexerKind
+[2341/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPLexerChange.cpp.o
+FAILED: tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPLexerChange.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/lib/Lex -I/root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex -I/root/llvm-compile-time-tracker/llvm-project/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/tools/clang/include -I/root/llvm-compile-time-tracker/llvm-project-build/include -I/root/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPLexerChange.cpp.o -MF tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPLexerChange.cpp.o.d -o tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPLexerChange.cpp.o -c /root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/PPLexerChange.cpp
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/PPLexerChange.cpp: In member function ‘bool clang::Preprocessor::HandleEndOfFile(clang::Token&, bool)’:
+/root/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/PPLexerChange.cpp:455:7: error: ‘recomputeCurLexerCallback’ was not declared in this scope; did you mean ‘recomputeCurLexerKind’?
+  455 |       recomputeCurLexerCallback();
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |       recomputeCurLexerKind
+[2342/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPExpressions.cpp.o
+[2343/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPDirectives.cpp.o
+[2344/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/Pragma.cpp.o
+[2345/3306] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/PPMacroExpansion.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+152.46user 14.85system 0:30.11elapsed 555%CPU (0avgtext+0avgdata 973180maxresident)k
+0inputs+2280760outputs (31861major+6998560minor)pagefaults 0swaps
