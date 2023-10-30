@@ -63273,6 +63273,18 @@
             "author_name": "Kristof Beyls",
             "commit_date": "2023-10-30T08:25:42+01:00",
             "subject": "[doc] Improve wording for \"What is considered a security issue?\" (#69436)"
+        },
+        {
+            "hash": "130b149ba92265d09fc7a08c116506f68982cc9b",
+            "author_name": "Christian Ulmann",
+            "commit_date": "2023-10-30T08:57:16+01:00",
+            "subject": "[MLIR][FuncToLLVM] Remove typed pointer support (#70574)"
+        },
+        {
+            "hash": "41f3b83fb066b4c3273e9abe02a8630864f22f30",
+            "author_name": "Christian Ulmann",
+            "commit_date": "2023-10-30T08:57:35+01:00",
+            "subject": "[MLIR][SPIRVToLLVM] Remove typed pointer support (#70568)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -63995,6 +64007,34 @@
             "author_name": "serge-sans-paille",
             "commit_date": "2023-10-29T08:06:35+01:00",
             "subject": "fixup! [clang] Change GetCharAndSizeSlow interface to by-value style"
+        }
+    ],
+    "RKSimon\/perf\/D152928": [
+        {
+            "hash": "7caff73e38038a98b837566eaf0e2e50754e2443",
+            "author_name": "Jay Foad",
+            "commit_date": "2023-10-26T15:39:10+01:00",
+            "subject": "[AMDGPU] Assert that we can find subregs in copyPhysReg. NFC. (#70332)"
+        },
+        {
+            "hash": "7c3bb787366cdd7c0d7026f45f5df794d5520e18",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-10-26T15:50:24+01:00",
+            "subject": "[RFC][DAG] Initially add nodes in the worklist in topological order."
+        }
+    ],
+    "RKSimon\/perf\/broadcast": [
+        {
+            "hash": "09e8ef975d9970560b893f79ec283f69ea8db953",
+            "author_name": "Aaron Ballman",
+            "commit_date": "2023-10-26T11:59:17-04:00",
+            "subject": "Diagnose use of VLAs in a coroutine (#70341)"
+        },
+        {
+            "hash": "9f52b6300b3be221ee8b2ffa0a3e5b100c9f801e",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-10-26T17:21:40+01:00",
+            "subject": "[X86] Disable lowering constant build vectors to broadcasts on pre-AVX512 targets"
         }
     ]
 }
