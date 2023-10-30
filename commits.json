@@ -63771,6 +63771,12 @@
             "author_name": "Jan Kokem\u00fcller",
             "commit_date": "2023-10-30T14:56:03-04:00",
             "subject": "[libc++] Fix UB in <expected> related to \"has value\" flag (#68552) (#68733)"
+        },
+        {
+            "hash": "d0caa4eef702f6eda1ce5ab3d72faabb55b15ca9",
+            "author_name": "Vlad Serebrennikov",
+            "commit_date": "2023-10-30T23:06:28+04:00",
+            "subject": "[ADT] Backport std::to_underlying from C++23 (#70681)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -64521,6 +64527,20 @@
             "author_name": "Simon Pilgrim",
             "commit_date": "2023-10-30T14:26:13+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on pre-AVX512 targets"
+        }
+    ],
+    "nikic\/perf\/get-metadata-opt": [
+        {
+            "hash": "e46dd6fbc0aff05884b5e3736bb4286a5914a2d3",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-10-30T18:33:03+01:00",
+            "subject": "Revert \"[InstCombine] Simplify and\/or of icmp eq with op replacement (#70335)\""
+        },
+        {
+            "hash": "163246a29734881b51919c3cef3d65921e044e67",
+            "author_name": "Matthias Braun",
+            "commit_date": "2023-10-30T20:02:40+01:00",
+            "subject": "Metadata: Optimize metadata queries"
         }
     ]
 }
