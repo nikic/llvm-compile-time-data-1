@@ -46111,6 +46111,54 @@
             "author_name": "Takuya Shimizu",
             "commit_date": "2023-10-30T12:59:55+01:00",
             "subject": "Update release note for the fix"
+        },
+        {
+            "hash": "bdb1553c7639baaf17f462bb743beac1fdd360d9",
+            "author_name": "David Truby",
+            "commit_date": "2023-10-31T08:58:56+01:00",
+            "subject": "[mlir] Add pass to add comdat to all linkonce functions (#65270)"
+        },
+        {
+            "hash": "12bbcd627f60342dbed87ce0bc064bcc27b6d169",
+            "author_name": "David Truby",
+            "commit_date": "2023-10-31T08:58:56+01:00",
+            "subject": "[flang] Add comdats to functions with linkonce linkage (#66516)"
+        },
+        {
+            "hash": "a8046f72bfb3d0000f9427dd4d2e20d41ab591d7",
+            "author_name": "Konstantinos Parasyris",
+            "commit_date": "2023-10-31T08:59:04+01:00",
+            "subject": "[OpenMP] record-replay use static-cast  (#70516)"
+        },
+        {
+            "hash": "9d0ca259eed64c547b0a28fc7c5c46b9ca66ce9f",
+            "author_name": "Brad Smith",
+            "commit_date": "2023-10-31T08:59:13+01:00",
+            "subject": "[OpenMP] Fix building for 32-bit DragonFly, NetBSD, OpenBSD (#70527)"
+        },
+        {
+            "hash": "586481468a073b342a1d7940cc9f65b762a9a6ce",
+            "author_name": "Piotr Zegar",
+            "commit_date": "2023-10-31T08:59:21+01:00",
+            "subject": "[clang-tidy] Fix crash in modernize-use-trailing-return-type (#70709)"
+        },
+        {
+            "hash": "c2eab59e622cde6989b5ee923a1f957f3afd7ad5",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-10-31T09:00:10+01:00",
+            "subject": "[GVN] Fix use-after-free in load PRE with select available value (#69314)"
+        },
+        {
+            "hash": "9477268e4247c7689b8252659151837f9e11b9d0",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-10-31T09:00:30+01:00",
+            "subject": "[AArch64] Add test for #70207 (NFC)"
+        },
+        {
+            "hash": "309d55140c46384b6de7a7573206cbeba3f7077f",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-10-31T09:00:30+01:00",
+            "subject": "[AArch64][GlobalISel] Fix incorrect ABI when tail call not supported (#70215)"
         }
     ],
     "nikic\/perf\/instcombine-unreach-3": [
@@ -64143,6 +64191,18 @@
             "author_name": "chenli",
             "commit_date": "2023-10-31T15:52:07+08:00",
             "subject": "[LoongArch][CodeGen] Add LASX builtin testcases"
+        },
+        {
+            "hash": "1aaac0129cb1a5c7de74265bed7f6c940a625642",
+            "author_name": "LLVM GN Syncbot",
+            "commit_date": "2023-10-31T07:54:27+00:00",
+            "subject": "[gn build] Port a4005e729c8d"
+        },
+        {
+            "hash": "f3fd1ecd5759cfa7f368a2e0a876ca7cddcc8b2b",
+            "author_name": "LLVM GN Syncbot",
+            "commit_date": "2023-10-31T07:54:27+00:00",
+            "subject": "[gn build] Port d6bfa3341181"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
