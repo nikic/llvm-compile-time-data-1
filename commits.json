@@ -65274,5 +65274,19 @@
             "commit_date": "2023-10-30T20:02:40+01:00",
             "subject": "Metadata: Optimize metadata queries"
         }
+    ],
+    "RKSimon\/perf\/zext-or-xor": [
+        {
+            "hash": "73c6248cc2cc3acd01c3580bfdc64825c09a0fd6",
+            "author_name": "Krzysztof Drewniak",
+            "commit_date": "2023-10-31T09:01:43-05:00",
+            "subject": "[mlir][MemRefToLLVM] Fix crashes with unconvertable memory spaces (#70694)"
+        },
+        {
+            "hash": "dbd189b785bd6425c648ddbbc661db4d009d30e9",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-10-31T15:25:53+00:00",
+            "subject": "[DAG] SimplifyDemandedBits - fold ((x)or X, Y) -> (zext ((x)or (trunc X), (trunc Y)) iff the upper half is known to be zero"
+        }
     ]
 }
