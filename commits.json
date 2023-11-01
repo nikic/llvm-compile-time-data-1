@@ -65493,6 +65493,18 @@
             "author_name": "Alexey Bataev",
             "commit_date": "2023-11-01T08:52:31-07:00",
             "subject": "Revert \"[SLP]Improve tryToGatherExtractElements by using per-register analysis.\""
+        },
+        {
+            "hash": "e2550b7aa072130230baa9dba0feff808ffe907d",
+            "author_name": "Kerry McLaughlin",
+            "commit_date": "2023-11-01T15:57:14+00:00",
+            "subject": "Revert \"[AArch64][Clang] Refactor code to emit SVE & SME builtins (#70662)\""
+        },
+        {
+            "hash": "860f9e5170767c08a879b592c9121d35e90a320e",
+            "author_name": "Shengchen Kan",
+            "commit_date": "2023-11-02T00:12:05+08:00",
+            "subject": "[NFC][X86] Reorder the registers to reduce unnecessary iterations (#70222)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -66239,16 +66251,16 @@
     ],
     "RKSimon\/perf\/broadcast": [
         {
-            "hash": "432649700db1bcfd5c991296242195129f03b4b1",
-            "author_name": "Simon Pilgrim",
-            "commit_date": "2023-10-30T12:43:18+00:00",
-            "subject": "[X86] vec_insert-5.ll - ensure we build with +mmx as we reference x86_mmx types"
+            "hash": "e3c2eacfd8b95346cfa4e71ba08b91cab124047b",
+            "author_name": "ZhangYin",
+            "commit_date": "2023-11-01T10:51:23-04:00",
+            "subject": "[libc++] <experimental\/simd> Add default constructor for class simd\/simd_mask (#70424)"
         },
         {
-            "hash": "df865b6c52aa2ddea05863c988cfa985028e2d7b",
+            "hash": "8211853d128348ea19be32303f64869f131dab8f",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-10-30T14:26:13+00:00",
-            "subject": "[X86] Disable lowering constant build vectors to broadcasts on pre-AVX512 targets"
+            "commit_date": "2023-11-01T16:00:08+00:00",
+            "subject": "[X86] Disable lowering constant build vectors to broadcasts on pre-AVX512 (VLX) targets"
         }
     ],
     "nikic\/perf\/get-metadata-opt": [
