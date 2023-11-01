@@ -66182,5 +66182,19 @@
             "commit_date": "2023-10-31T15:25:53+00:00",
             "subject": "[DAG] SimplifyDemandedBits - fold ((x)or X, Y) -> (zext ((x)or (trunc X), (trunc Y)) iff the upper half is known to be zero"
         }
+    ],
+    "nikic\/perf\/machinelicm-load": [
+        {
+            "hash": "c7f0e499158fa4471ac86af46e13f45ccbfba399",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-01T14:52:50+01:00",
+            "subject": "[InstCombine] Fix canAlwaysEvaluateInTy() with constant exprs"
+        },
+        {
+            "hash": "ad70d044dd2794addd4838cffcf22dc79d63cf39",
+            "author_name": "Igor Kirillov",
+            "commit_date": "2023-11-01T15:12:16+01:00",
+            "subject": "Pre-commit tests"
+        }
     ]
 }
