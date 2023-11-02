@@ -66039,6 +66039,18 @@
             "author_name": "Andrew Kaster",
             "commit_date": "2023-11-02T05:28:12-04:00",
             "subject": "[llvm] Add triple for SerenityOS"
+        },
+        {
+            "hash": "18839aec4ed1977142444d650bf6c74c705fee44",
+            "author_name": "Thomas Symalla",
+            "commit_date": "2023-11-02T10:36:27+01:00",
+            "subject": "[AMDGPU] Detect kills in register sets when trying to form V_CMPX instructions. (#68293)"
+        },
+        {
+            "hash": "41cf94e6b8b43f6dec089ab1df03130926d51997",
+            "author_name": "Jessica Del",
+            "commit_date": "2023-11-02T10:37:52+01:00",
+            "subject": "[AMDGPU] - Add s_quadmask intrinsics (#70804)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -66671,22 +66683,34 @@
     ],
     "fhahn\/perf\/ce-uge-vars": [
         {
-            "hash": "96e040acee7c1728506ec49a5a229bfecd49f7db",
-            "author_name": "Benjamin Maxwell",
-            "commit_date": "2023-10-26T12:18:58+01:00",
-            "subject": "[mlir][ArmSVE] Add `-arm-sve-legalize-vector-storage` pass  (#68794)"
+            "hash": "41cf94e6b8b43f6dec089ab1df03130926d51997",
+            "author_name": "Jessica Del",
+            "commit_date": "2023-11-02T10:37:52+01:00",
+            "subject": "[AMDGPU] - Add s_quadmask intrinsics (#70804)"
         },
         {
-            "hash": "d9914695f204dd28719ebebb962cf863b820b909",
+            "hash": "26e34c09b2995a43ce34de1b340ffece8ae08dce",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-10-26T13:29:40+01:00",
-            "subject": "[ConstraintElim] Add (UGE, var, 0) to unsigned system for new vars."
+            "commit_date": "2023-11-02T09:55:59+00:00",
+            "subject": "[ConstraintElim] Add tests for additional SGT->UGT transfer."
         },
         {
-            "hash": "3f99af966d121a86485a1cb298db05432cf591ef",
+            "hash": "623316be219fd3b0a321c07448dcaa07dfaa7e68",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-10-26T22:19:08+01:00",
+            "commit_date": "2023-11-02T09:56:05+00:00",
             "subject": "[ConstraintElim] Use isKnownNonNegative for signed->unsigned transfer."
+        },
+        {
+            "hash": "8467ac622ecd4287a9de4e0e25c763b6a3a328e2",
+            "author_name": "Florian Hahn",
+            "commit_date": "2023-11-02T09:56:05+00:00",
+            "subject": "[ConstraintElim] Add tests that require (UGE, Variable, 0) info."
+        },
+        {
+            "hash": "21203b073d105fac129da298d91b8ccd1a3a7d91",
+            "author_name": "Florian Hahn",
+            "commit_date": "2023-11-02T09:56:05+00:00",
+            "subject": "[ConstraintElim] Add (UGE, var, 0) to unsigned system for new vars."
         }
     ],
     "nikic\/perf\/simplify-and-or-with-op-replaced": [
