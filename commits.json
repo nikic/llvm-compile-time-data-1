@@ -65901,6 +65901,18 @@
             "author_name": "Noah Goldstein",
             "commit_date": "2023-11-01T23:50:36-05:00",
             "subject": "[InstCombine] Fold `(ptrtoint (ptrmask p0, m0))` -> `(and (ptrtoint p0), m0)`"
+        },
+        {
+            "hash": "a40f651a065ef28fee17bc1f22cce08247eff950",
+            "author_name": "Fangrui Song",
+            "commit_date": "2023-11-01T22:35:28-07:00",
+            "subject": "[ELF] adjustOutputSections: don't copy SHF_EXECINSTR when an output does not contain input sections (#70911)"
+        },
+        {
+            "hash": "d636d73f9420bb78959af0dec0885f5a26e515af",
+            "author_name": "Matt Arsenault",
+            "commit_date": "2023-11-02T14:38:12+09:00",
+            "subject": "Revert \"Move ExpandLargeDivRem to llvm\/test\/CodeGen\/X86 because they need a triple\""
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
