@@ -65859,6 +65859,48 @@
             "author_name": "Kazu Hirata",
             "commit_date": "2023-11-01T21:39:41-07:00",
             "subject": "[mlir] Use llvm::to_underlying (NFC)"
+        },
+        {
+            "hash": "a37861d70754688dacdeb6c09db812b6c68b7fb6",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-01T23:50:35-05:00",
+            "subject": "[InstSimplify] Add tests for simplify `llvm.ptrmask`; NFC"
+        },
+        {
+            "hash": "8c2fcf5b772ee686b079af75079537d1e4852faf",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-01T23:50:35-05:00",
+            "subject": "[InstSimplify] Add some basic simplifications for `llvm.ptrmask`"
+        },
+        {
+            "hash": "2c5f2b33aea2ebaa780ca522f3d1007e99c7577e",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-01T23:50:35-05:00",
+            "subject": "[InstCombine] Add tests for combining `llvm.ptrmask`; NFC"
+        },
+        {
+            "hash": "edb9e9a5fb3cae861511f9a11e6d000e8a82fe91",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-01T23:50:35-05:00",
+            "subject": "[InstCombine] Implement `SimplifyDemandedBits` for `llvm.ptrmask`"
+        },
+        {
+            "hash": "51abbf98d19cb1b89c6938811f2805bafe4b336e",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-01T23:50:35-05:00",
+            "subject": "[InstCombine] Deduce `align` and `nonnull` return attributes for `llvm.ptrmask`"
+        },
+        {
+            "hash": "cc8341872d48ed3b7d4c42cac32d68349644c1c1",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-01T23:50:36-05:00",
+            "subject": "[InstCombine] Preserve return attributes when merging `llvm.ptrmask`"
+        },
+        {
+            "hash": "bd29197fd8448265dbf8e370a8a21a477cd50f5a",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-01T23:50:36-05:00",
+            "subject": "[InstCombine] Fold `(ptrtoint (ptrmask p0, m0))` -> `(and (ptrtoint p0), m0)`"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
