@@ -66087,6 +66087,18 @@
             "author_name": "Jay Foad",
             "commit_date": "2023-11-02T10:31:02+00:00",
             "subject": "[AMDGPU] Fix test for #70532 (Implement moveToVALU for S_CSELECT_B64)"
+        },
+        {
+            "hash": "3a223f4414444c3ecc65abb6482df3df87e26b86",
+            "author_name": "Nicolas Vasilache",
+            "commit_date": "2023-11-02T11:34:10+01:00",
+            "subject": "[mlir][Bufferization] Add support for controlled bufferization of alloc_tensor (#70957)"
+        },
+        {
+            "hash": "b90cfe46015d9d12317146251e633d2ca07dccd7",
+            "author_name": "Jay Foad",
+            "commit_date": "2023-11-02T10:35:15+00:00",
+            "subject": "[AMDGPU] New ttracedata intrinsics (#70235)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -66873,16 +66885,16 @@
     ],
     "RKSimon\/perf\/zext-or-xor": [
         {
-            "hash": "73c6248cc2cc3acd01c3580bfdc64825c09a0fd6",
-            "author_name": "Krzysztof Drewniak",
-            "commit_date": "2023-10-31T09:01:43-05:00",
-            "subject": "[mlir][MemRefToLLVM] Fix crashes with unconvertable memory spaces (#70694)"
+            "hash": "1590cac4941e278ab10580c8a19a2720a512054c",
+            "author_name": "Jay Foad",
+            "commit_date": "2023-11-02T10:08:09+00:00",
+            "subject": "[AMDGPU] Implement moveToVALU for S_CSELECT_B64 (#70352)"
         },
         {
-            "hash": "dbd189b785bd6425c648ddbbc661db4d009d30e9",
+            "hash": "d0a32584ca283ecc6517b993d98d580209acd973",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-10-31T15:25:53+00:00",
-            "subject": "[DAG] SimplifyDemandedBits - fold ((x)or X, Y) -> (zext ((x)or (trunc X), (trunc Y)) iff the upper half is known to be zero"
+            "commit_date": "2023-11-02T10:36:55+00:00",
+            "subject": "[X86] Shrink i64 instructions to i32 when the upper 32-bits are known to be zero"
         }
     ],
     "nikic\/perf\/machinelicm-load": [
