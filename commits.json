@@ -66105,6 +66105,24 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-02T11:41:47+01:00",
             "subject": "[InstSimplify] Add extra tests for #70335 (NFC)"
+        },
+        {
+            "hash": "6d013959774631bacb87a9fc90bbe505b5c1612a",
+            "author_name": "harishch4",
+            "commit_date": "2023-11-02T16:30:07+05:30",
+            "subject": "[Flang][OpenMP] Port openmp task tests to HLFIR flow (#70781)"
+        },
+        {
+            "hash": "6b96a4c5ccd05514994765f0a95fdd2a2b4e5d79",
+            "author_name": "harishch4",
+            "commit_date": "2023-11-02T16:30:23+05:30",
+            "subject": "[Flang][OpenMP] Port openmp default clause tests to HLFIR flow (#70782)"
+        },
+        {
+            "hash": "cc763dc2573f988538a1c6d29607743c61ff9aa2",
+            "author_name": "harishch4",
+            "commit_date": "2023-11-02T16:30:34+05:30",
+            "subject": "[Flang][OpenMP] Port openmp private clause tests to HLFIR flow (#70783)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -66943,6 +66961,20 @@
             "author_name": "serge-sans-paille",
             "commit_date": "2023-11-02T10:20:36+01:00",
             "subject": "WIP"
+        }
+    ],
+    "RKSimon\/perf\/x86-shrink-i64-binop": [
+        {
+            "hash": "e331ca5076b5757434b8560743b47895a9319c49",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-02T11:41:47+01:00",
+            "subject": "[InstSimplify] Add extra tests for #70335 (NFC)"
+        },
+        {
+            "hash": "c2b65d1a3a8d10633291a2000a68e0452bc0a0e2",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-02T11:00:16+00:00",
+            "subject": "[X86] Shrink i64 instructions to i32 when the upper 32-bits are known to be zero"
         }
     ]
 }
