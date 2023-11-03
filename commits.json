@@ -66939,6 +66939,24 @@
             "author_name": "Christian Ulmann",
             "commit_date": "2023-11-03T13:02:35+01:00",
             "subject": "[MLIR][LLVM] Remove typed pointer conversion utils (#71169)"
+        },
+        {
+            "hash": "51485019fb34a48dc6226bfa42d7449091e3f03d",
+            "author_name": "Paul Walker",
+            "commit_date": "2023-11-03T12:10:48+00:00",
+            "subject": "[NFC][LLVM][SVE] Refactor predicate register ASM constraint parsing to use std::optional."
+        },
+        {
+            "hash": "236197a065879c900a450e5236adbb76578006cb",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-03T13:12:39+01:00",
+            "subject": "[ConstantFold] Simplify evaluateICmpRelation() implementation (NFCI)"
+        },
+        {
+            "hash": "05a47706476f3cd467aa1c4347fdfb71bcbc1252",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-03T13:12:39+01:00",
+            "subject": "[ConstantFold] Fix incorrect type assumptions"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -67571,33 +67589,33 @@
     ],
     "fhahn\/perf\/ce-uge-vars": [
         {
-            "hash": "41cf94e6b8b43f6dec089ab1df03130926d51997",
-            "author_name": "Jessica Del",
-            "commit_date": "2023-11-02T10:37:52+01:00",
-            "subject": "[AMDGPU] - Add s_quadmask intrinsics (#70804)"
+            "hash": "ceb4dc44778f79bb1ddf2ca4b490c230ad08c10f",
+            "author_name": "Christian Ulmann",
+            "commit_date": "2023-11-03T11:16:11+01:00",
+            "subject": "[MLIR][VectorToLLVM] Remove typed pointer support (#71075)"
         },
         {
-            "hash": "d3e185db781460b467752258c1121568f6ce234f",
+            "hash": "c8f520e6cab143e4b91e908181411386eae1f8f6",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-11-02T12:50:41+00:00",
+            "commit_date": "2023-11-03T10:16:44+00:00",
             "subject": "[ConstraintElim] Add tests for additional SGT->UGT transfer."
         },
         {
-            "hash": "1b4f06d8d4a5dea63bb1b8917715df57d386f6df",
+            "hash": "c3dca77e2b6b383891278f51aee6727ef9071124",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-11-02T13:01:45+00:00",
+            "commit_date": "2023-11-03T10:16:44+00:00",
             "subject": "[ConstraintElim] Use isKnownNonNegative for signed->unsigned transfer."
         },
         {
-            "hash": "9f55d2fa5272fd71f14a47cfbaf3c978d2f61588",
+            "hash": "b10810502e17d3139660accf9efdbb6cbc4d6082",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-11-02T13:19:14+00:00",
+            "commit_date": "2023-11-03T10:16:44+00:00",
             "subject": "[ConstraintElim] Add tests that require (UGE, Variable, 0) info."
         },
         {
-            "hash": "5372e5e0cd24c07645e6e65a6006bf4166ac577e",
+            "hash": "9c437f57b7d30e25605e975764ca736cc205894b",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-11-02T13:19:25+00:00",
+            "commit_date": "2023-11-03T10:16:45+00:00",
             "subject": "[ConstraintElim] Add (UGE, var, 0) to unsigned system for new vars."
         }
     ],
