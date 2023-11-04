@@ -67599,6 +67599,12 @@
             "author_name": "Balazs Benics",
             "commit_date": "2023-11-04T15:26:59+01:00",
             "subject": "[analyzer][NFC] Rework SVal kind representation (#71039)"
+        },
+        {
+            "hash": "1085b70a94d34a645d97990e1ac213882af5128e",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-04T15:32:13+00:00",
+            "subject": "[DAG] Don't fold (zext (bitop (load x), cst)) -> (bitop (zextload x), (zext cst)) if the zext is free"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
