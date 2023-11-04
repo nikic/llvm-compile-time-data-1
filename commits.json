@@ -67605,6 +67605,24 @@
             "author_name": "Simon Pilgrim",
             "commit_date": "2023-11-04T15:32:13+00:00",
             "subject": "[DAG] Don't fold (zext (bitop (load x), cst)) -> (bitop (zextload x), (zext cst)) if the zext is free"
+        },
+        {
+            "hash": "7d367bc92bad9211b5d990b999710f7b25fbd907",
+            "author_name": "Chengji Yao",
+            "commit_date": "2023-11-04T09:12:24-07:00",
+            "subject": "[MLIR] fix msan uninitialized value error (#71286)"
+        },
+        {
+            "hash": "d5e33cc1473bf820d2598fca24ad16710d43295b",
+            "author_name": "J. Ryan Stinnett",
+            "commit_date": "2023-11-04T17:08:42+00:00",
+            "subject": "[DebugInfo] Use human-friendly printing for DWARF column attributes (#71062)"
+        },
+        {
+            "hash": "e6bd68c90b1a386e276f53ba28fdfdfda48bcea1",
+            "author_name": "Fangrui Song",
+            "commit_date": "2023-11-04T10:19:14-07:00",
+            "subject": "[ELF][test] Improve symver-non-default.s to test foo and foo@v1 combining for executable linking"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
