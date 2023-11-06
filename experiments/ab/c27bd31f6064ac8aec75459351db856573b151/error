@@ -1,0 +1,152 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O3 stage2" failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/O3.cmake
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /tmp/llvm-project-build-stage2/bin/clang
+-- Check for working C compiler: /tmp/llvm-project-build-stage2/bin/clang - broken
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-test-suite-build/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-test-suite-build/CMakeFiles/CMakeError.log".
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+
+
+STDERR:
+CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "/tmp/llvm-project-build-stage2/bin/clang"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/ninja cmTC_4c91a && [1/2] Building C object CMakeFiles/cmTC_4c91a.dir/testCCompiler.c.o
+    FAILED: CMakeFiles/cmTC_4c91a.dir/testCCompiler.c.o 
+    /tmp/llvm-project-build-stage2/bin/clang    -o CMakeFiles/cmTC_4c91a.dir/testCCompiler.c.o -c /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCCompiler.c
+    PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+    Stack dump:
+    0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang -o CMakeFiles/cmTC_4c91a.dir/testCCompiler.c.o -c /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCCompiler.c
+     #0 0x0000562bcda8a108 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/tmp/llvm-project-build-stage2/bin/clang+0x2b61108)
+     #1 0x0000562bcda8778e llvm::sys::RunSignalHandlers() (/tmp/llvm-project-build-stage2/bin/clang+0x2b5e78e)
+     #2 0x0000562bcd9ea7b7 CrashRecoverySignalHandler(int) (.llvm.7442304922805708862) CrashRecoveryContext.cpp:0:0
+     #3 0x00007f164af8c520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+     #4 0x00007f164afef3fe __libc_free ./malloc/./malloc/malloc.c:3368:7
+     #5 0x0000562bcdc4fdbe clang::SourceManager::clearIDTables() (/tmp/llvm-project-build-stage2/bin/clang+0x2d26dbe)
+     #6 0x0000562bcdc4fd41 clang::SourceManager::SourceManager(clang::DiagnosticsEngine&, clang::FileManager&, bool) (/tmp/llvm-project-build-stage2/bin/clang+0x2d26d41)
+     #7 0x0000562bce7cc2b9 clang::FrontendAction::BeginSourceFile(clang::CompilerInstance&, clang::FrontendInputFile const&) (/tmp/llvm-project-build-stage2/bin/clang+0x38a32b9)
+     #8 0x0000562bce711e35 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage2/bin/clang+0x37e8e35)
+     #9 0x0000562bce8d2665 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage2/bin/clang+0x39a9665)
+    #10 0x0000562bcc8abc92 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage2/bin/clang+0x1982c92)
+    #11 0x0000562bcc8a8f6c ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+    #12 0x0000562bce52b519 void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::$_0>(long) Job.cpp:0:0
+    #13 0x0000562bcd9ea38c llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage2/bin/clang+0x2ac138c)
+    #14 0x0000562bce52b215 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (/tmp/llvm-project-build-stage2/bin/clang+0x3602215)
+    #15 0x0000562bce4df862 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage2/bin/clang+0x35b6862)
+    #16 0x0000562bce5054bc clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage2/bin/clang+0x35dc4bc)
+    #17 0x0000562bcc8a811b clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage2/bin/clang+0x197f11b)
+    #18 0x0000562bcc8b9d11 main (/tmp/llvm-project-build-stage2/bin/clang+0x1990d11)
+    #19 0x00007f164af73d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #20 0x00007f164af73e40 call_init ./csu/../csu/libc-start.c:128:20
+    #21 0x00007f164af73e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+    #22 0x0000562bcc899125 _start (/tmp/llvm-project-build-stage2/bin/clang+0x1970125)
+    clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+    clang version 18.0.0
+    Target: x86_64-unknown-linux-gnu
+    Thread model: posix
+    InstalledDir: /tmp/llvm-project-build-stage2/bin
+    clang: error: unable to execute command: Segmentation fault (core dumped)
+    clang: note: diagnostic msg: Error generating preprocessed source(s).
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: loading 'build.ninja': No such file or directory
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O0-g stage2" failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/O0-g.cmake
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /tmp/llvm-project-build-stage2/bin/clang
+-- Check for working C compiler: /tmp/llvm-project-build-stage2/bin/clang - broken
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-test-suite-build/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-test-suite-build/CMakeFiles/CMakeError.log".
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+
+
+STDERR:
+CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "/tmp/llvm-project-build-stage2/bin/clang"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/ninja cmTC_68768 && [1/2] Building C object CMakeFiles/cmTC_68768.dir/testCCompiler.c.o
+    FAILED: CMakeFiles/cmTC_68768.dir/testCCompiler.c.o 
+    /tmp/llvm-project-build-stage2/bin/clang    -o CMakeFiles/cmTC_68768.dir/testCCompiler.c.o -c /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCCompiler.c
+    PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+    Stack dump:
+    0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang -o CMakeFiles/cmTC_68768.dir/testCCompiler.c.o -c /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCCompiler.c
+     #0 0x000055d608133108 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/tmp/llvm-project-build-stage2/bin/clang+0x2b61108)
+     #1 0x000055d60813078e llvm::sys::RunSignalHandlers() (/tmp/llvm-project-build-stage2/bin/clang+0x2b5e78e)
+     #2 0x000055d6080937b7 CrashRecoverySignalHandler(int) (.llvm.7442304922805708862) CrashRecoveryContext.cpp:0:0
+     #3 0x00007f9a23526520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+     #4 0x00007f9a235893fe __libc_free ./malloc/./malloc/malloc.c:3368:7
+     #5 0x000055d6082f8dbe clang::SourceManager::clearIDTables() (/tmp/llvm-project-build-stage2/bin/clang+0x2d26dbe)
+     #6 0x000055d6082f8d41 clang::SourceManager::SourceManager(clang::DiagnosticsEngine&, clang::FileManager&, bool) (/tmp/llvm-project-build-stage2/bin/clang+0x2d26d41)
+     #7 0x000055d608e752b9 clang::FrontendAction::BeginSourceFile(clang::CompilerInstance&, clang::FrontendInputFile const&) (/tmp/llvm-project-build-stage2/bin/clang+0x38a32b9)
+     #8 0x000055d608dbae35 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage2/bin/clang+0x37e8e35)
+     #9 0x000055d608f7b665 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage2/bin/clang+0x39a9665)
+    #10 0x000055d606f54c92 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage2/bin/clang+0x1982c92)
+    #11 0x000055d606f51f6c ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+    #12 0x000055d608bd4519 void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::$_0>(long) Job.cpp:0:0
+    #13 0x000055d60809338c llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage2/bin/clang+0x2ac138c)
+    #14 0x000055d608bd4215 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (/tmp/llvm-project-build-stage2/bin/clang+0x3602215)
+    #15 0x000055d608b88862 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage2/bin/clang+0x35b6862)
+    #16 0x000055d608bae4bc clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage2/bin/clang+0x35dc4bc)
+    #17 0x000055d606f5111b clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage2/bin/clang+0x197f11b)
+    #18 0x000055d606f62d11 main (/tmp/llvm-project-build-stage2/bin/clang+0x1990d11)
+    #19 0x00007f9a2350dd90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #20 0x00007f9a2350de40 call_init ./csu/../csu/libc-start.c:128:20
+    #21 0x00007f9a2350de40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+    #22 0x000055d606f42125 _start (/tmp/llvm-project-build-stage2/bin/clang+0x1970125)
+    clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+    clang version 18.0.0
+    Target: x86_64-unknown-linux-gnu
+    Thread model: posix
+    InstalledDir: /tmp/llvm-project-build-stage2/bin
+    clang: error: unable to execute command: Segmentation fault (core dumped)
+    clang: note: diagnostic msg: Error generating preprocessed source(s).
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: loading 'build.ninja': No such file or directory
