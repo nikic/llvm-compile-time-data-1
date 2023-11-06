@@ -68589,6 +68589,18 @@
             "author_name": "Florian Hahn",
             "commit_date": "2023-11-06T16:08:22+00:00",
             "subject": "[VPlan] Add VPValue::replaceUsesWithIf (NFCI)."
+        },
+        {
+            "hash": "34ee69b4ce66280ccc65acc1799a5863de2f2aa6",
+            "author_name": "Youngsuk Kim",
+            "commit_date": "2023-11-06T10:19:48-06:00",
+            "subject": "[clang][CGObjCMac] Remove no-op ptr-to-ptr bitcasts (NFC)"
+        },
+        {
+            "hash": "5d662011022cc5e7db9c34716f8cea22744153aa",
+            "author_name": "Leonard Grey",
+            "commit_date": "2023-11-06T11:23:05-05:00",
+            "subject": "[gn] Fix typo"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -69661,6 +69673,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-06T11:10:00+01:00",
             "subject": "Fix prefix detection with anchor"
+        }
+    ],
+    "nikic\/perf\/instcombine-zext-nneg": [
+        {
+            "hash": "8f76522a61d01cf7d70debd39418259e969bb8d6",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-06T16:58:04+01:00",
+            "subject": "[SCEV] Remove mul handling from BuildConstantFromSCEV()"
+        },
+        {
+            "hash": "20a4612687e6f2d75097e67987c1c592359b3b96",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-06T17:28:11+01:00",
+            "subject": "[InstCombine] Infer zext nneg flag"
         }
     ]
 }
