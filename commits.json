@@ -69525,6 +69525,18 @@
             "author_name": "Aaron Ballman",
             "commit_date": "2023-11-07T10:42:50-05:00",
             "subject": "Silence diagnostics about not all control paths returning a value; NFC"
+        },
+        {
+            "hash": "551c280cfda6892deb4585b2b8bd1753914f1a36",
+            "author_name": "Philip Reames",
+            "commit_date": "2023-11-07T07:49:39-08:00",
+            "subject": "[indvars] Always fallback to truncation if AddRec widening fails (#70967)"
+        },
+        {
+            "hash": "f0cdf4b468f6ee48b0d0d51ce78145455e2f07a6",
+            "author_name": "Anna Thomas",
+            "commit_date": "2023-11-07T10:50:19-05:00",
+            "subject": "[InstCombine] Check FPMathOperator for Ctx before FMF check"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -70535,6 +70547,12 @@
             "author_name": "Jeremy Morse",
             "commit_date": "2023-11-07T15:12:15+00:00",
             "subject": "ihold my beer,"
+        },
+        {
+            "hash": "901b35953c5dab3f83074150aafc500d7b2ed95d",
+            "author_name": "Jeremy Morse",
+            "commit_date": "2023-11-07T15:59:42+00:00",
+            "subject": "revert-to-last-good"
         }
     ],
     "nikic\/perf\/scev-implied-via-ranges": [
