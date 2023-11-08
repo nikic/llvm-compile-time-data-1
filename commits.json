@@ -70155,6 +70155,12 @@
             "author_name": "Florian Hahn",
             "commit_date": "2023-11-08T14:07:28+00:00",
             "subject": "[ConstraintElim] Make sure add-rec is for the current loop."
+        },
+        {
+            "hash": "9cdaeefc4542d889cc8aefbc7d7e69baa8675cd9",
+            "author_name": "Krzysztof Parzyszek",
+            "commit_date": "2023-11-08T08:31:58-06:00",
+            "subject": "[flang] Fix typo in ExpressionAnalyzer::CheckIntrinsicKind, NFC"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -71323,6 +71329,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-08T12:03:17+01:00",
             "subject": "[InstCombine] Make indexed compare fold GEP source type independent"
+        }
+    ],
+    "nikic\/perf\/x86-num-regs": [
+        {
+            "hash": "d687057de8babc215d1cc883514085704ede5ab4",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-08T14:49:24+01:00",
+            "subject": "[CVP] Try to fold sdiv to constant"
+        },
+        {
+            "hash": "d218b6dece5d492e3a258524f4679b17c5d565d8",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-08T15:27:11+01:00",
+            "subject": "[X86] Return more accurate getNumSupportedRegs() (NFC)"
         }
     ]
 }
