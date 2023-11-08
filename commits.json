@@ -69981,6 +69981,18 @@
             "author_name": "Pravin Jagtap",
             "commit_date": "2023-11-08T15:09:10+05:30",
             "subject": "[AMDGPU] const-fold imm operands of amdgcn_update_dpp intrinsic (#71139)"
+        },
+        {
+            "hash": "e6a94dca38d77db2678366c55bb7b72cfa312487",
+            "author_name": "Timm Baeder",
+            "commit_date": "2023-11-08T10:48:07+01:00",
+            "subject": "[clang][Interp] Fix creating APSInt from IntegralAP (#71410)"
+        },
+        {
+            "hash": "d5f3b3b3b188d17aa8a2227d31e8fd7611d7dfff",
+            "author_name": "Jay Foad",
+            "commit_date": "2023-11-08T09:49:07+00:00",
+            "subject": "[RegScavenger] Simplify state tracking for backwards scavenging (#71202)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -71129,6 +71141,20 @@
             "author_name": "Mats Petersson",
             "commit_date": "2023-11-07T12:01:02+01:00",
             "subject": "Update function specialization to handle phi-chains"
+        }
+    ],
+    "nikic\/perf\/instcombine-indexed-compare": [
+        {
+            "hash": "5918f62301788b53e7d3a23f3203c483e9d4d791",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-08T09:34:40+01:00",
+            "subject": "[InstCombine] Infer zext nneg flag (#71534)"
+        },
+        {
+            "hash": "a8fde9df8074fa9a0c65eb9bc9d971b625cb068b",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-08T10:51:14+01:00",
+            "subject": "[InstCombine] Remove inttoptr\/ptrtoint handling from indexed compare fold"
         }
     ]
 }
