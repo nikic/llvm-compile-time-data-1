@@ -70029,6 +70029,36 @@
             "author_name": "Bj\u00f6rn Pettersson",
             "commit_date": "2023-11-08T11:30:03+01:00",
             "subject": "[clangd] Allow hover over 128-bit variable without crashing (#71415)"
+        },
+        {
+            "hash": "33ecd935963a622349140ca633fa72ddc2c8a1ab",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-08T10:33:18+00:00",
+            "subject": "[X86] Add test coverage for ABDS\/ABDU patterns with mismatching extension types"
+        },
+        {
+            "hash": "f416f6c46d9318877563fbda4f2da94c579c4fa4",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-08T10:33:18+00:00",
+            "subject": "[X86] LowerABD - remove freeze from abd*(lhs, rhs) -> trunc(abs(sub(*ext(lhs), *ext(rhs))))"
+        },
+        {
+            "hash": "8d72079077f8b8bf4a8d7173edbb09be083d975b",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-08T10:45:20+00:00",
+            "subject": "Fix MSVC \"not all control paths return a value\" warning. NFC."
+        },
+        {
+            "hash": "96b5e092dcd624b494d769e47341e50b1028972e",
+            "author_name": "Job Noorman",
+            "commit_date": "2023-11-08T11:01:10+00:00",
+            "subject": "[BOLT] Support instrumentation hook via DT_FINI_ARRAY (#67348)"
+        },
+        {
+            "hash": "6eb97f03802a219997af4b615a2afae339cb674d",
+            "author_name": "Guray Ozen",
+            "commit_date": "2023-11-08T12:03:16+01:00",
+            "subject": "[MLIR][NVGPU] Improve and Cleanup verifier of TMA OPs (#70923)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -71187,16 +71217,16 @@
     ],
     "nikic\/perf\/instcombine-indexed-compare": [
         {
-            "hash": "5918f62301788b53e7d3a23f3203c483e9d4d791",
+            "hash": "567c02a80e828a7c6864b1497be1e06de9ec0462",
             "author_name": "Nikita Popov",
-            "commit_date": "2023-11-08T09:34:40+01:00",
-            "subject": "[InstCombine] Infer zext nneg flag (#71534)"
+            "commit_date": "2023-11-08T11:13:57+01:00",
+            "subject": "[InstCombine] Remove inttoptr\/ptrtoint handling from indexed compare fold"
         },
         {
-            "hash": "a8fde9df8074fa9a0c65eb9bc9d971b625cb068b",
+            "hash": "d248f7d45aa9341a2dd1f292fca8390e5be6a05c",
             "author_name": "Nikita Popov",
-            "commit_date": "2023-11-08T10:51:14+01:00",
-            "subject": "[InstCombine] Remove inttoptr\/ptrtoint handling from indexed compare fold"
+            "commit_date": "2023-11-08T12:03:17+01:00",
+            "subject": "[InstCombine] Make indexed compare fold GEP source type independent"
         }
     ]
 }
