@@ -70131,6 +70131,30 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-08T14:49:24+01:00",
             "subject": "[CVP] Try to fold sdiv to constant"
+        },
+        {
+            "hash": "0d48a4645d9a3e9f188a0c9503df3f82ca5759e3",
+            "author_name": "Florian Hahn",
+            "commit_date": "2023-11-08T14:01:25+00:00",
+            "subject": "[ConstraintElim] Add test for mis-compile with adjacent loops."
+        },
+        {
+            "hash": "d79fff0abb5a8ae6f49f5e3fd4f31d65717c7a37",
+            "author_name": "Ilya Leoshkevich",
+            "commit_date": "2023-11-08T15:05:47+01:00",
+            "subject": "[SystemZ] Add backchain target-feature (#71668)"
+        },
+        {
+            "hash": "067632e141b28806d7dff5f7ef606292d914b90f",
+            "author_name": "alexfh",
+            "commit_date": "2023-11-08T15:07:12+01:00",
+            "subject": "Revert \"[DAGCombiner] Transform `(icmp eq\/ne (and X,C0),(shift X,C1))` to use rotate or to getter constants.\" due to a miscompile (#71598)"
+        },
+        {
+            "hash": "26ab444e88fc8fdd554e5a9381a68b7b5e63b6fd",
+            "author_name": "Florian Hahn",
+            "commit_date": "2023-11-08T14:07:28+00:00",
+            "subject": "[ConstraintElim] Make sure add-rec is for the current loop."
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
