@@ -70725,6 +70725,18 @@
             "author_name": "Samira Bazuzi",
             "commit_date": "2023-11-09T16:57:04+01:00",
             "subject": "[clang][dataflow] Fix buggy assertion: Compare an unqualified type to an unqualified type. (#71573)"
+        },
+        {
+            "hash": "8131eeb9e1ee9d61a84c053f6449044afbe40266",
+            "author_name": "Florian Mayer",
+            "commit_date": "2023-11-09T07:59:47-08:00",
+            "subject": "[scudo] document allocation_ring_buffer_size (#71812)"
+        },
+        {
+            "hash": "7ac8486e54d99ed72c15da391dbeed134a37bae5",
+            "author_name": "Philip Reames",
+            "commit_date": "2023-11-09T08:03:13-08:00",
+            "subject": "[RISCVInsertVSETVLI] Allow PRE with non-immediate AVLs (#71728)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -71971,10 +71983,24 @@
             "subject": "[AArch64][SME] Shuffle lowering, assume that the minimal SVE register is 128-bit, when NOEN is not available. (#71647)"
         },
         {
-            "hash": "5bb87e3b2f51dd7373887526a65cbaadbd6c0675",
+            "hash": "fe04a043484432913b479c86bcc57c7fd30b0679",
             "author_name": "serge-sans-paille",
-            "commit_date": "2023-11-09T16:23:41+01:00",
+            "commit_date": "2023-11-09T17:15:03+01:00",
             "subject": "sse2"
+        }
+    ],
+    "jmorse\/perf\/auto-conversion-test": [
+        {
+            "hash": "b002b38fd9f9bd66c7364eb4e9d639da9a5a66c7",
+            "author_name": "Jeremy Morse",
+            "commit_date": "2023-11-09T15:25:39+00:00",
+            "subject": "[DebugInfo][RemoveDIs] Add new behind-the-scenes plumbing for debug-info"
+        },
+        {
+            "hash": "12c0add24203585aa214bf9c3261641e358230eb",
+            "author_name": "Jeremy Morse",
+            "commit_date": "2023-11-09T16:00:21+00:00",
+            "subject": "More checks to avoid suprises"
         }
     ]
 }
