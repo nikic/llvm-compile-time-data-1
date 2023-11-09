@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Bitfields.h: In member function ‘void llvm::RegsForValue::AddInlineAsmOperands(llvm::InlineAsm::Kind, bool, unsigned int, const llvm::SDLoc&, llvm::SelectionDAG&, std::vector<llvm::SDValue, std::allocator<llvm::SDValue> >&) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Bitfields.h:172:12: warning: ‘Flag.llvm::InlineAsm::Flag::Storage’ is used uninitialized [-Wuninitialized]
+  172 |     Packed &= ~Mask;
+      |     ~~~~~~~^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp:998:19: note: ‘Flag.llvm::InlineAsm::Flag::Storage’ was declared here
+  998 |   InlineAsm::Flag Flag(Code, Regs.size());
+      |                   ^~~~
+[1046/2625] Building CXX object lib/Bitcode/Reader/CMakeFiles/LLVMBitReader.dir/BitReader.cpp.o
+[1047/2625] Building CXX object lib/Bitcode/Reader/CMakeFiles/LLVMBitReader.dir/ValueList.cpp.o
+[1048/2625] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/InstructionSelect.cpp.o
+[1049/2625] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/Localizer.cpp.o
+[1050/2625] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/Architecture.cpp.o
+[1051/2625] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LoadStoreOpt.cpp.o
+[1052/2625] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/Legalizer.cpp.o
+[1053/2625] Building CXX object lib/Frontend/OpenMP/CMakeFiles/LLVMFrontendOpenMP.dir/OMP.cpp.o
+[1054/2625] Building CXX object lib/Frontend/OpenMP/CMakeFiles/LLVMFrontendOpenMP.dir/OMPContext.cpp.o
+[1055/2625] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/RegBankSelect.cpp.o
+[1056/2625] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DwarfDebug.cpp.o
+[1057/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/ASanStackFrameLayout.cpp.o
+[1058/2625] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/DAGCombiner.cpp.o
+[1059/2625] Building CXX object lib/Bitcode/Writer/CMakeFiles/LLVMBitWriter.dir/BitWriter.cpp.o
+[1060/2625] Building CXX object lib/Bitcode/Writer/CMakeFiles/LLVMBitWriter.dir/BitcodeWriterPass.cpp.o
+[1061/2625] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/MachineIRBuilder.cpp.o
+[1062/2625] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/Utils.cpp.o
+[1063/2625] Building CXX object lib/Frontend/HLSL/CMakeFiles/LLVMFrontendHLSL.dir/HLSLResource.cpp.o
+[1064/2625] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/CodeViewDebug.cpp.o
+[1065/2625] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/IRTranslator.cpp.o
+[1066/2625] Building CXX object lib/Bitcode/Reader/CMakeFiles/LLVMBitReader.dir/MetadataLoader.cpp.o
+[1067/2625] Building CXX object lib/Bitcode/Writer/CMakeFiles/LLVMBitWriter.dir/ValueEnumerator.cpp.o
+[1068/2625] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/CombinerHelper.cpp.o
+[1069/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/AddDiscriminators.cpp.o
+[1070/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/AMDGPUEmitPrintf.cpp.o
+[1071/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/CanonicalizeAliases.cpp.o
+[1072/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/CodeLayout.cpp.o
+[1073/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/BypassSlowDivision.cpp.o
+[1074/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/BuildLibCalls.cpp.o
+[1075/2625] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LegalizerHelper.cpp.o
+[1076/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/CallPromotionUtils.cpp.o
+[1077/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/CallGraphUpdater.cpp.o
+[1078/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/AssumeBundleBuilder.cpp.o
+[1079/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/CanonicalizeFreezeInLoops.cpp.o
+[1080/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/CountVisits.cpp.o
+[1081/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/BreakCriticalEdges.cpp.o
+[1082/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/CtorUtils.cpp.o
+[1083/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/BasicBlockUtils.cpp.o
+[1084/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/CloneModule.cpp.o
+[1085/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/CodeMoverUtils.cpp.o
+[1086/2625] Building CXX object lib/Bitcode/Writer/CMakeFiles/LLVMBitWriter.dir/BitcodeWriter.cpp.o
+[1087/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/DemoteRegToStack.cpp.o
+[1088/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/EscapeEnumerator.cpp.o
+[1089/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/EntryExitInstrumenter.cpp.o
+[1090/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/GlobalStatus.cpp.o
+[1091/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/HelloWorld.cpp.o
+[1092/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/Evaluator.cpp.o
+[1093/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/FunctionImportUtils.cpp.o
+[1094/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/FlattenCFG.cpp.o
+[1095/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/FunctionComparator.cpp.o
+[1096/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/CloneFunction.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/CloneFunction.cpp: In member function ‘void {anonymous}::PruningFunctionCloner::CloneBlock(const llvm::BasicBlock*, llvm::BasicBlock::const_iterator, std::vector<const llvm::BasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/CloneFunction.cpp:486:11: warning: unused variable ‘M’ [-Wunused-variable]
+  486 |   Module *M = const_cast<Module*>(BB->getModule());
+      |           ^
+[1097/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/InstructionNamer.cpp.o
+[1098/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/FixIrreducible.cpp.o
+[1099/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/CodeExtractor.cpp.o
+[1100/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/GuardUtils.cpp.o
+[1101/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/Debugify.cpp.o
+[1102/2625] Building CXX object lib/Bitcode/Reader/CMakeFiles/LLVMBitReader.dir/BitcodeReader.cpp.o
+[1103/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/InjectTLIMappings.cpp.o
+[1104/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/IntegerDivision.cpp.o
+[1105/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LibCallsShrinkWrap.cpp.o
+[1106/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LowerAtomic.cpp.o
+[1107/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LowerIFunc.cpp.o
+[1108/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LCSSA.cpp.o
+[1109/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LowerGlobalDtors.cpp.o
+[1110/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LowerInvoke.cpp.o
+[1111/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LoopSimplify.cpp.o
+[1112/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LoopRotationUtils.cpp.o
+[1113/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LowerSwitch.cpp.o
+[1114/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LowerMemIntrinsics.cpp.o
+[1115/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LoopVersioning.cpp.o
+[1116/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LoopPeel.cpp.o
+[1117/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/InlineFunction.cpp.o
+[1118/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LoopUnroll.cpp.o
+[1119/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/MatrixUtils.cpp.o
+[1120/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LoopUnrollAndJam.cpp.o
+[1121/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LoopUnrollRuntime.cpp.o
+[1122/2625] Building CXX object lib/Frontend/OpenMP/CMakeFiles/LLVMFrontendOpenMP.dir/OMPIRBuilder.cpp.o
+[1123/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/MemoryOpRemark.cpp.o
+[1124/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SampleProfileInference.cpp.o
+[1125/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/Mem2Reg.cpp.o
+[1126/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/MetaRenamer.cpp.o
+[1127/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/LoopUtils.cpp.o
+[1128/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/MemoryTaggingSupport.cpp.o
+[1129/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/NameAnonGlobals.cpp.o
+[1130/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/MisExpect.cpp.o
+[1131/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/Local.cpp.o
+[1132/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/RelLookupTableConverter.cpp.o
+[1133/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/StripGCRelocates.cpp.o
+[1134/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/PromoteMemoryToRegister.cpp.o
+FAILED: lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/PromoteMemoryToRegister.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DEXPERIMENTAL_DEBUGINFO_ITERATORS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Utils -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/PromoteMemoryToRegister.cpp.o -MF lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/PromoteMemoryToRegister.cpp.o.d -o lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/PromoteMemoryToRegister.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/PromoteMemoryToRegister.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/PromoteMemoryToRegister.cpp: In member function ‘void {anonymous}::PromoteMem2Reg::run()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/PromoteMemoryToRegister.cpp:833:41: error: ‘DII’ was not declared in this scope; did you mean ‘DIB’?
+  833 |       if (DPV->isAddressOfVariable() || DII->getExpression()->startsWithDeref())
+      |                                         ^~~
+      |                                         DIB
+[1135/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SanitizerStats.cpp.o
+[1136/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/MoveAutoInit.cpp.o
+[1137/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/ModuleUtils.cpp.o
+[1138/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SSAUpdaterBulk.cpp.o
+[1139/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SampleProfileLoaderBaseUtil.cpp.o
+[1140/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SizeOpts.cpp.o
+[1141/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SSAUpdater.cpp.o
+[1142/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/StripNonLineTableDebugInfo.cpp.o
+[1143/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/PredicateInfo.cpp.o
+[1144/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SymbolRewriter.cpp.o
+[1145/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/UnifyFunctionExitNodes.cpp.o
+[1146/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SCCPSolver.cpp.o
+[1147/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SplitModule.cpp.o
+[1148/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SimplifyIndVar.cpp.o
+[1149/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/ScalarEvolutionExpander.cpp.o
+[1150/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SimplifyLibCalls.cpp.o
+[1151/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SimplifyCFG.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+1572.70user 76.56system 1:47.09elapsed 1539%CPU (0avgtext+0avgdata 1035312maxresident)k
+0inputs+3862712outputs (8886major+46891066minor)pagefaults 0swaps
