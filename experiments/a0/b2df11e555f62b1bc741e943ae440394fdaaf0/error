@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void {anonymous}::NewGVN::updateReachableEdge(llvm::BasicBlock*, llvm::BasicBlock*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+[1250/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/PartiallyInlineLibCalls.cpp.o
+[1251/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/PlaceSafepoints.cpp.o
+[1252/2625] Building X86GenAsmMatcher.inc...
+[1253/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Reg2Mem.cpp.o
+[1254/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Reassociate.cpp.o
+[1255/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/RewriteStatepointsForGC.cpp.o
+[1256/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SROA.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/SROA.cpp:25:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/SROA.h:96:7: warning: ‘llvm::SROAPass’ declared with greater visibility than the type of its field ‘llvm::SROAPass::SelectsToRewrite’ [-Wattributes]
+   96 | class SROAPass : public PassInfoMixin<SROAPass> {
+      |       ^~~~~~~~
+[1257/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SCCP.cpp.o
+[1258/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Scalar.cpp.o
+[1259/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Scalarizer.cpp.o
+[1260/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/ScalarizeMaskedMemIntrin.cpp.o
+[1261/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Sink.cpp.o
+[1262/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SeparateConstOffsetFromGEP.cpp.o
+[1263/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SimplifyCFGPass.cpp.o
+[1264/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SpeculativeExecution.cpp.o
+[1265/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/StraightLineStrengthReduce.cpp.o
+[1266/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/StructurizeCFG.cpp.o
+[1267/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/TailRecursionElimination.cpp.o
+[1268/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/TLSVariableHoist.cpp.o
+[1269/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/Annotation2Metadata.cpp.o
+[1270/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/AlwaysInliner.cpp.o
+[1271/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ArgumentPromotion.cpp.o
+[1272/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/Attributor.cpp.o
+[1273/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/BarrierNoopPass.cpp.o
+[1274/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/AttributorAttributes.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/AttributorAttributes.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/AttributorAttributes.cpp:12555:17: warning: unused variable ‘SI’ [-Wunused-variable]
+12555 |       if (auto *SI = dyn_cast<StoreInst>(Inst)) {
+      |                 ^~
+[1275/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/CalledValuePropagation.cpp.o
+[1276/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ConstantMerge.cpp.o
+[1277/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/CrossDSOCFI.cpp.o
+[1278/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/DeadArgumentElimination.cpp.o
+[1279/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/BlockExtractor.cpp.o
+[1280/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ElimAvailExtern.cpp.o
+[1281/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/EmbedBitcodePass.cpp.o
+[1282/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ExtractGV.cpp.o
+[1283/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ForceFunctionAttrs.cpp.o
+[1284/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/FunctionAttrs.cpp.o
+[1285/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/FunctionImport.cpp.o
+[1286/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/FunctionSpecialization.cpp.o
+[1287/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/GlobalDCE.cpp.o
+[1288/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/GlobalOpt.cpp.o
+[1289/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/GlobalSplit.cpp.o
+[1290/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/HotColdSplitting.cpp.o
+[1291/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/IPO.cpp.o
+[1292/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/IROutliner.cpp.o
+[1293/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/InferFunctionAttrs.cpp.o
+[1294/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/Inliner.cpp.o
+[1295/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/Internalize.cpp.o
+[1296/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/LoopExtractor.cpp.o
+[1297/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/LowerTypeTests.cpp.o
+[1298/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/MergeFunctions.cpp.o
+[1299/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/MemProfContextDisambiguation.cpp.o
+[1300/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ModuleInliner.cpp.o
+[1301/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/PartialInlining.cpp.o
+[1302/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/OpenMPOpt.cpp.o
+[1303/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SampleContextTracker.cpp.o
+[1304/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SampleProfile.cpp.o
+[1305/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SCCP.cpp.o
+[1306/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/StripDeadPrototypes.cpp.o
+[1307/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SampleProfileProbe.cpp.o
+[1308/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/StripSymbols.cpp.o
+[1309/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SyntheticCountsPropagation.cpp.o
+[1310/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ThinLTOBitcodeWriter.cpp.o
+[1311/2625] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/WholeProgramDevirt.cpp.o
+[1312/2625] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoadStoreVectorizer.cpp.o
+[1313/2625] Building X86GenFastISel.inc...
+[1314/2625] Building X86GenGlobalISel.inc...
+[1315/2625] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/Vectorize.cpp.o
+[1316/2625] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VectorCombine.cpp.o
+[1317/2625] Building X86GenDAGISel.inc...
+[1318/2625] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanHCFGBuilder.cpp.o
+[1319/2625] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o
+[1320/2625] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanSLP.cpp.o
+[1321/2625] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanTransforms.cpp.o
+[1322/2625] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanVerifier.cpp.o
+[1323/2625] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARC.cpp.o
+[1324/2625] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARCOpts.cpp.o
+[1325/2625] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARCExpand.cpp.o
+[1326/2625] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARCAPElim.cpp.o
+[1327/2625] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARCContract.cpp.o
+[1328/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/WarnMissedTransforms.cpp.o
+[1329/2625] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ProvenanceAnalysis.cpp.o
+[1330/2625] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/DependencyAnalysis.cpp.o
+[1331/2625] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/PromoteMemoryToRegister.cpp.o
+FAILED: lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/PromoteMemoryToRegister.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DEXPERIMENTAL_DEBUGINFO_ITERATORS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Utils -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/PromoteMemoryToRegister.cpp.o -MF lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/PromoteMemoryToRegister.cpp.o.d -o lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/PromoteMemoryToRegister.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/PromoteMemoryToRegister.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/PromoteMemoryToRegister.cpp: In member function ‘void {anonymous}::PromoteMem2Reg::run()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/PromoteMemoryToRegister.cpp:833:41: error: ‘DII’ was not declared in this scope; did you mean ‘DIB’?
+  833 |       if (DPV->isAddressOfVariable() || DII->getExpression()->startsWithDeref())
+      |                                         ^~~
+      |                                         DIB
+[1332/2625] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ProvenanceAnalysisEvaluator.cpp.o
+[1333/2625] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/PtrState.cpp.o
+[1334/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopUnrollAndJamPass.cpp.o
+[1335/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopVersioningLICM.cpp.o
+[1336/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopRotation.cpp.o
+[1337/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopSimplifyCFG.cpp.o
+[1338/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopUnrollPass.cpp.o
+[1339/2625] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorizationLegality.cpp.o
+[1340/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerMatrixIntrinsics.cpp.o
+[1341/2625] Building X86GenInstrInfo.inc...
+[1342/2625] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o
+[1343/2625] Building X86GenSubtargetInfo.inc...
+[1344/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SimpleLoopUnswitch.cpp.o
+[1345/2625] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/IRTranslator.cpp.o
+[1346/2625] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopStrengthReduce.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/LoopStrengthReduce.cpp:6647:13: warning: ‘void DbgGatherSalvagableDVI(llvm::Loop*, llvm::ScalarEvolution&, llvm::SmallVector<std::unique_ptr<{anonymous}::DVIRecoveryRec>, 2>&, llvm::SmallSet<llvm::AssertingVH<llvm::DbgValueInst>, 2>&)’ defined but not used [-Wunused-function]
+ 6647 | static void DbgGatherSalvagableDVI(
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+[1347/2625] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o
+[1348/2625] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+139.39user 10.13system 0:20.46elapsed 730%CPU (0avgtext+0avgdata 1087108maxresident)k
+0inputs+673312outputs (9459major+5726790minor)pagefaults 0swaps
