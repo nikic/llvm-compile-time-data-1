@@ -71589,6 +71589,30 @@
             "author_name": "Guray Ozen",
             "commit_date": "2023-11-10T16:50:01+01:00",
             "subject": "[mlir] Fix sm90 test for new verifier"
+        },
+        {
+            "hash": "4ba50a783b4d6cbfc93d989e4d2bdfe4e4726e4a",
+            "author_name": "Anna Thomas",
+            "commit_date": "2023-11-10T10:50:35-05:00",
+            "subject": "Update test to consider incompatible align attribute"
+        },
+        {
+            "hash": "a00caad6bf318a7497d477b434464ca75ecb41fc",
+            "author_name": "Guray Ozen",
+            "commit_date": "2023-11-10T16:52:00+01:00",
+            "subject": "[mlir] Add sm_90a GEMM test 128x128x128 (F32 =F16*F16) with predicate (#70028)"
+        },
+        {
+            "hash": "51916f0c924f2ed4e970dd043a14d70b6b1d3f71",
+            "author_name": "Guray Ozen",
+            "commit_date": "2023-11-10T16:53:43+01:00",
+            "subject": "[mlir] Add sm_90a GEMM test 128x128x128 (F32 += F16 * F16) (#69913)"
+        },
+        {
+            "hash": "b43b2a64b5d12b8ecbe1bef0aff5c89c9860319e",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-10T16:58:10+01:00",
+            "subject": "[InstCombine] Avoid use of shift constant expressions (NFCI)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -72895,6 +72919,26 @@
             "author_name": "Yingwei Zheng",
             "commit_date": "2023-11-10T21:57:17+08:00",
             "subject": "[InstCombine] Infer nneg flag from shift users"
+        }
+    ],
+    "jmorse\/perf\/find-dbg-values-for-dpvalues": [
+        {
+            "hash": "10a9e7442c4c4e09ee94f6e1d67e2ba7396bf7cb",
+            "author_name": "Jeremy Morse",
+            "commit_date": "2023-11-09T22:30:49+00:00",
+            "subject": "[DebugInfo][RemoveDIs] Add conversion utilities for new-debug-info format"
+        },
+        {
+            "hash": "47b21d0b40ac78d59d20a7e3a63ef8b9d86ef7d1",
+            "author_name": "Jeremy Morse",
+            "commit_date": "2023-11-10T15:46:59+00:00",
+            "subject": "[DebugInfo][RemoveDIs] Support finding DPValues as well as dbg.values"
+        },
+        {
+            "hash": "e37fe1fd8d7c73960f40298a381c2d9e72d45468",
+            "author_name": "Jeremy Morse",
+            "commit_date": "2023-11-10T15:47:09+00:00",
+            "subject": "Temporary fixes to make DIArgLists... temporary"
         }
     ]
 }
