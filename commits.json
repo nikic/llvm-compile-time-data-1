@@ -71439,6 +71439,30 @@
             "author_name": "David Green",
             "commit_date": "2023-11-10T13:41:13+00:00",
             "subject": "[AArch64][GlobalISel] Expand handling for sitofp and uitofp (#71282)"
+        },
+        {
+            "hash": "96a0d714d58e48c363ee6abbbcdfd7a6ce646ac1",
+            "author_name": "Hans Wennborg",
+            "commit_date": "2023-11-10T14:45:52+01:00",
+            "subject": "Revert \"ValueTracking: Identify implied fp classes by general fcmp (#66505)\""
+        },
+        {
+            "hash": "d96ea279734fd9105a0ed7bad898ed84d79ed308",
+            "author_name": "David Spickett",
+            "commit_date": "2023-11-10T13:47:41+00:00",
+            "subject": "Revert \"[lldb] Remove the newly-added test in 66acd1e4dc1080015fe6b234226f1d30d6577f04\""
+        },
+        {
+            "hash": "df49a97ab2e952d1588d9e7784987d982ebf3365",
+            "author_name": "Quinn Dawkins",
+            "commit_date": "2023-11-10T08:49:33-05:00",
+            "subject": "[mlir][vector] Root the transfer write distribution pattern on the warp op (#71868)"
+        },
+        {
+            "hash": "7513650be68bc087f280724415a00fef8b5bf898",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-10T14:54:35+01:00",
+            "subject": "[ConstantFolding] Remove unnecessary pointer handling in FoldBitCast (NFCI)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -72731,6 +72755,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-10T09:28:20+01:00",
             "subject": "Remove InstCombine run before runtime unrolling"
+        }
+    ],
+    "dtcxzyw\/perf\/infer-nneg-from-shift-user": [
+        {
+            "hash": "bd611264993f64decbce178d460caf1d1cb05f59",
+            "author_name": "David Spickett",
+            "commit_date": "2023-11-10T11:18:30+00:00",
+            "subject": "[lldb][docs] Update Discord invite link"
+        },
+        {
+            "hash": "f41dea2fd6af06469b631d1c47cbec77693b4dd6",
+            "author_name": "Yingwei Zheng",
+            "commit_date": "2023-11-10T21:22:36+08:00",
+            "subject": "[InstCombine] Infer nneg flag from shift users"
         }
     ]
 }
