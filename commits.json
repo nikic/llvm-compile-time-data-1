@@ -71253,6 +71253,18 @@
             "author_name": "NimishMishra",
             "commit_date": "2023-11-10T00:17:47-08:00",
             "subject": "[flang][OpenMP] Fix common block missing symbol crash (#67330)"
+        },
+        {
+            "hash": "20e9e4f797e72bc6006c68e1eb8dbca0d2191851",
+            "author_name": "Diana Picus",
+            "commit_date": "2023-11-10T09:30:44+01:00",
+            "subject": "[AMDGPU] si-wqm: Skip only LiveMask COPY"
+        },
+        {
+            "hash": "f577bfb99528c8e65b3741a7701e6a356f25f1ff",
+            "author_name": "Alexander Potapenko",
+            "commit_date": "2023-11-10T09:33:49+01:00",
+            "subject": "[sanitizer][msan] fix AArch64 vararg support for KMSAN (#70660)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -72527,10 +72539,24 @@
             "subject": "ValueTracking: Identify implied fp classes by general fcmp (#66505)"
         },
         {
-            "hash": "b9622fafb662998cd72abea9b70a62321853fd93",
+            "hash": "04c38cca49af96b6a66fc006576d8482d1725648",
             "author_name": "Yingwei Zheng",
-            "commit_date": "2023-11-10T14:58:54+08:00",
-            "subject": "[InstCombine] Infer zext nneg flag"
+            "commit_date": "2023-11-10T16:32:29+08:00",
+            "subject": "[InstCombine] Infer zext nneg flag directly"
+        }
+    ],
+    "nikic\/perf\/remove-ic": [
+        {
+            "hash": "67c3cb4f6b9adc4dffe67a3fff1933193cf52bbc",
+            "author_name": "Matt Arsenault",
+            "commit_date": "2023-11-10T17:09:55+09:00",
+            "subject": "AMDGPU: Use an explicit triple in test to avoid bot failures"
+        },
+        {
+            "hash": "569a6217e246351cabdaa52e37aa5b802f095cb3",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-10T09:28:20+01:00",
+            "subject": "Remove InstCombine run before runtime unrolling"
         }
     ]
 }
