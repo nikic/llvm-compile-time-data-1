@@ -73461,6 +73461,18 @@
             "author_name": "Benjamin Maxwell",
             "commit_date": "2023-11-14T12:50:38+00:00",
             "subject": "[mlir][ArmSME] Make use of backend function attributes for enabling ZA storage (#71044)"
+        },
+        {
+            "hash": "074e4ae0e769e831ca06beb7b37814d67b3d56b6",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-14T12:56:42+00:00",
+            "subject": "[DAG] foldABSToABD - support abs(*ext(x) - *ext(y)) -> zext(abd*(x, y)) from different extension source types (#71670)"
+        },
+        {
+            "hash": "bdc0afc87181d4f7ab8aad2da6fa70a1204f0a84",
+            "author_name": "David Sherwood",
+            "commit_date": "2023-11-14T13:00:28+00:00",
+            "subject": "[CodeGen][AArch64] Set min jump table entries to 13 for AArch64 targets (#71166)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
