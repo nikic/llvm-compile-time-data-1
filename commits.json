@@ -46207,6 +46207,42 @@
             "author_name": "Alexey Bataev",
             "commit_date": "2023-11-13T12:11:12+01:00",
             "subject": "[SLP]Fix PR70004: Do not change insert point for reduction gather nodes."
+        },
+        {
+            "hash": "aebee698ef16a4346c669e9f940c6dbf2247b7ef",
+            "author_name": "Serge Pavlov",
+            "commit_date": "2023-11-14T09:22:13+01:00",
+            "subject": "[clang] Do not clear FP pragma stack when instantiating functions (#70646)"
+        },
+        {
+            "hash": "e666be92b44b65af7e8cee4402a5de4e8f3622f6",
+            "author_name": "Serge Pavlov",
+            "commit_date": "2023-11-14T09:22:13+01:00",
+            "subject": "[clang] Run test on x86 only"
+        },
+        {
+            "hash": "42f8800b720fa4948155fed029200ba6aad01655",
+            "author_name": "antoine moynault",
+            "commit_date": "2023-11-14T09:22:13+01:00",
+            "subject": "[clang] fix test PR69717.cpp (#72134)"
+        },
+        {
+            "hash": "0a1274224ef8928507b8e50c19ea25e62a7a3bf3",
+            "author_name": "Jan Kokem\u00fcller",
+            "commit_date": "2023-11-14T09:22:23+01:00",
+            "subject": "[libc++] Fix UB in <expected> related to \"has value\" flag (#68552) (#68733)"
+        },
+        {
+            "hash": "12c6ee8fd2046c85ae9693105288fcd749b90733",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-14T09:22:31+01:00",
+            "subject": "[GlobalOpt] Cache whether CC is changeable (#71381)"
+        },
+        {
+            "hash": "98bfdac5ce82d1679f8af9a57501471812ab68d7",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-14T09:22:39+01:00",
+            "subject": "[BranchFolding] Remove dubious assert from operator< (#71639)"
         }
     ],
     "nikic\/perf\/instcombine-unreach-3": [
@@ -73323,6 +73359,18 @@
             "author_name": "David Spickett",
             "commit_date": "2023-11-14T08:21:33+00:00",
             "subject": "[GitHub] Remove pr-subscriber-wait.py download (#72120)"
+        },
+        {
+            "hash": "56c1d30183e156365f7057f5945b2bc48fdb32e7",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-14T09:25:14+01:00",
+            "subject": "[IR] Remove support for lshr\/ashr constant expressions (#71955)"
+        },
+        {
+            "hash": "6229cd0272a84bbfaeda171c3d502e864e85e173",
+            "author_name": "Fangrui Song",
+            "commit_date": "2023-11-14T00:28:58-08:00",
+            "subject": "[CodeGen] Drop some references to getInt8PtrTy. NFC"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
