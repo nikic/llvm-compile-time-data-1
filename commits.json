@@ -74193,6 +74193,12 @@
             "author_name": "Yingwei Zheng",
             "commit_date": "2023-11-15T21:27:48+08:00",
             "subject": "[ValueTracking] Add support for non-splat vecs in computeConstantRange (#72365)"
+        },
+        {
+            "hash": "33b51588c5d51995909f1f0be0b47b1708dac4fa",
+            "author_name": "serge-sans-paille",
+            "commit_date": "2023-11-15T15:01:36+01:00",
+            "subject": "Replace usage of StringRef::find_last_of with a string literal of size one by the equivalent char literal"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -75433,21 +75439,15 @@
     ],
     "serge-sans-paille\/perf\/find-last-of": [
         {
-            "hash": "3f9d385e5844f2f1f144305037cfc904789c6187",
-            "author_name": "Dinar Temirbulatov",
-            "commit_date": "2023-11-08T14:37:49+00:00",
-            "subject": "[AArch64][SME] Shuffle lowering, assume that the minimal SVE register is 128-bit, when NOEN is not available. (#71647)"
+            "hash": "2060bfcdc7eb704647c64bf925cdceb94c1f535f",
+            "author_name": "Yingwei Zheng",
+            "commit_date": "2023-11-15T21:27:48+08:00",
+            "subject": "[ValueTracking] Add support for non-splat vecs in computeConstantRange (#72365)"
         },
         {
-            "hash": "65e931aa7bde6fffe3dfeee1a2147c8fcd73f0af",
+            "hash": "cc478997921b395d310f1ff4827eea525b7cb529",
             "author_name": "serge-sans-paille",
-            "commit_date": "2023-11-13T09:00:31+01:00",
-            "subject": "Replace usage of StringRef::find_last_of with a string literal of size one by the equivalent char literal"
-        },
-        {
-            "hash": "2e48f5a337bdecc671e174c4b0a2a77174d30b9f",
-            "author_name": "serge-sans-paille",
-            "commit_date": "2023-11-13T11:16:09+01:00",
+            "commit_date": "2023-11-15T15:07:51+01:00",
             "subject": "[llvm] Improve implementation of StringRef::find_last_of for the usual case of 2 chars"
         }
     ],
