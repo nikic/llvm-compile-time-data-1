@@ -74463,6 +74463,18 @@
             "author_name": "Fangrui Song",
             "commit_date": "2023-11-15T12:50:49-08:00",
             "subject": "[Instrumentation] Remove unneeded pointer casts and migrate away from getInt8PtrTy. NFC"
+        },
+        {
+            "hash": "58090617c6fe3878e4ebc6e1cb91fb1eff0801a6",
+            "author_name": "Aart Bik",
+            "commit_date": "2023-11-15T13:01:43-08:00",
+            "subject": "[mlir][sparse] fix broken test (merge conflict marker was left) (#72438)"
+        },
+        {
+            "hash": "5535e48be25f9eeece0a9b89f6e0fc80bb62843c",
+            "author_name": "Aart Bik",
+            "commit_date": "2023-11-15T13:04:27-08:00",
+            "subject": "[mlir][sparse] Capitalize class comment (#72436)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -75873,6 +75885,20 @@
             "author_name": "Philip Reames",
             "commit_date": "2023-11-15T21:21:44+01:00",
             "subject": "Attempt to reinfer flags dropped due to CSE"
+        }
+    ],
+    "nikic\/perf\/valuetracking-dom-nonneg": [
+        {
+            "hash": "f205950e5ca6dc98ce839af9e7ab0ffe767dbe55",
+            "author_name": "Bjorn Pettersson",
+            "commit_date": "2023-11-15T21:16:32+01:00",
+            "subject": "[BuildLibCalls] Use getPtrTy instead of getInt8PtrTy"
+        },
+        {
+            "hash": "d9db9065959c586b90aba14a844d725e06685643",
+            "author_name": "Philip Reames",
+            "commit_date": "2023-11-15T21:59:54+01:00",
+            "subject": "Perform a local edge implication check for isKnownNonNegative"
         }
     ]
 }
