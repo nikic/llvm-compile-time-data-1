@@ -74349,6 +74349,24 @@
             "author_name": "Craig Topper",
             "commit_date": "2023-11-15T09:56:36-08:00",
             "subject": "[RISCV] Add IsSignExtendingOpW to LR_W and SC_W as well. NFC"
+        },
+        {
+            "hash": "5a3399c49600b7b61a10225deedc699ce96d8a07",
+            "author_name": "Nico Weber",
+            "commit_date": "2023-11-15T13:33:37-05:00",
+            "subject": "[gn] port ec64af599421"
+        },
+        {
+            "hash": "4fdc289d4ac26970749ca24802931bd662a2a1f8",
+            "author_name": "Yingwei Zheng",
+            "commit_date": "2023-11-16T02:34:59+08:00",
+            "subject": "[InstCombine] Infer nsw flag for `(X <<nuw C1) >>u C --> X << (C1 - C)` (#72407)"
+        },
+        {
+            "hash": "8e516d48fedc1d0b537fe0e134259ac077e5df16",
+            "author_name": "Yingwei Zheng",
+            "commit_date": "2023-11-16T02:35:47+08:00",
+            "subject": "[InstCombine] Infer nuw flags for `C-(X+C2)` -> `(C-C2)-X` (#72373)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -75099,9 +75117,9 @@
             "subject": "[DAG] foldABSToABD - add support for abs(sub(sign_extend_inreg(),sign_extend_inreg())) patterns"
         },
         {
-            "hash": "3f3f63c2d021b943b85db5454d240666b90bd1f3",
+            "hash": "0d088ee8008466c31fc13da14217e70f37042982",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-11-15T16:05:58+00:00",
+            "commit_date": "2023-11-15T18:32:21+00:00",
             "subject": "[RFC][DAG] Initially add nodes in the worklist in topological order."
         }
     ],
