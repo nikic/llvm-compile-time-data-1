@@ -75525,6 +75525,12 @@
             "author_name": "Simon Pilgrim",
             "commit_date": "2023-11-17T10:01:31+00:00",
             "subject": "[X86] getTargetConstantBitsFromNode - bail if we're loading from a constant vector element type larger than the target value size"
+        },
+        {
+            "hash": "915f6c3d6a4377e2672a95c656374d71df62e95a",
+            "author_name": "jeanPerier",
+            "commit_date": "2023-11-17T11:10:15+01:00",
+            "subject": "[flang][RFC] Adding a design document for assumed-rank objects (#71959)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -77049,6 +77055,20 @@
             "author_name": "Jeremy Morse",
             "commit_date": "2023-11-16T18:07:01+00:00",
             "subject": "[DebugInfo][RemoveDIs] Support cloning and remapping DPValues"
+        }
+    ],
+    "nikic\/perf\/simplify-knownbits-assume": [
+        {
+            "hash": "8775232c49cde288c429e27dd0f4f492fbb0cefa",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-17T10:42:18+01:00",
+            "subject": "[ValueTracking] Remove handling of KnownBits assumptions with invert"
+        },
+        {
+            "hash": "3d4581c38b44372b2acd57038b79b2a1e631a7eb",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-17T11:13:04+01:00",
+            "subject": "wip"
         }
     ]
 }
