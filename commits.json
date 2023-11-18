@@ -77710,5 +77710,25 @@
             "commit_date": "2023-11-17T16:44:58+01:00",
             "subject": "avoid tli"
         }
+    ],
+    "goldsteinn\/perf\/goldsteinn\/trunc": [
+        {
+            "hash": "2b71f91b06ad4f5a0c54725b06283fd731620b92",
+            "author_name": "Mehdi Amini",
+            "commit_date": "2023-11-17T19:06:49-08:00",
+            "subject": "Revert \"[mlir][sparse] stress test BSR\" (#72735)"
+        },
+        {
+            "hash": "81a0e62c02b47eba9e35ae66c570d288f5c497ac",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-17T22:49:42-06:00",
+            "subject": "[InstCombine] Add tests for transforming `(icmp eq\/ne trunc(x), truncOrZext(y))`; NFC"
+        },
+        {
+            "hash": "2343dfccca46d158de240fca8e0588ae4cc46203",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-17T22:49:44-06:00",
+            "subject": "[InstCombine] Add transforms for `(icmp uPred (trunc x),(truncOrZext(y)))`->`(icmp uPred x,y)`"
+        }
     ]
 }
