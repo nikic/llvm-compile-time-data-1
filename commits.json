@@ -76377,6 +76377,42 @@
             "author_name": "Yingwei Zheng",
             "commit_date": "2023-11-20T00:02:23+08:00",
             "subject": "[InstCombine] Propagate NSW\/NUW flags for `(X - Y) - Z -> X - (Y + Z)` (#72693)"
+        },
+        {
+            "hash": "3af514e5aea2a3e7774c667232ccd0d611cf911a",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-19T12:15:03-06:00",
+            "subject": "[InstCombine] Add tests for improving `sub X, ~Y` -> `add X, -Y`; NFC"
+        },
+        {
+            "hash": "f112e4693a9718ef55019ab4d68ede739b2dca3d",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-19T12:15:03-06:00",
+            "subject": "[InstCombine] Don't transform `sub X, ~Y` -> `add X, -Y` unless `Y` is actually negatable"
+        },
+        {
+            "hash": "160a13a0cc98afc15c08bdeb07bec8f72b04e051",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-19T12:15:03-06:00",
+            "subject": "[X86] Add more tests for transform `(icmp eq\/ne (and X,C0),(shift X,C1))`; PR71598"
+        },
+        {
+            "hash": "ed7c97e0ad335eec8d65c00d8f963fea3455d4cf",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-19T12:15:04-06:00",
+            "subject": "Recommit \"[DAGCombiner] Transform `(icmp eq\/ne (and X,C0),(shift X,C1))` to use rotate or to getter constants.\" (2nd Try)"
+        },
+        {
+            "hash": "0f3a9efcbdc90b9e29dce405ee6c2ac5703fd63f",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-19T12:15:04-06:00",
+            "subject": "[InstCombine] Add tests for transforming `(icmp eq\/ne trunc(x), truncOrZext(y))`; NFC"
+        },
+        {
+            "hash": "99387e33dc750b35223a86f59f755d41d8614bd5",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-19T12:15:04-06:00",
+            "subject": "[InstCombine] Add transforms for `(icmp uPred (trunc x),(truncOrZext(y)))`->`(icmp uPred x,y)`"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
