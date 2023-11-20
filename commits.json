@@ -76893,6 +76893,12 @@
             "author_name": "Yingwei Zheng",
             "commit_date": "2023-11-20T23:29:44+08:00",
             "subject": "[InstCombine] Propagate NUW flags for `shl (lshr X, C1), C2 -> shl X, C2-C1` (#72525)"
+        },
+        {
+            "hash": "59d14b623357d9b0514a9575e6d92474694b2f74",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-20T15:38:48+00:00",
+            "subject": "[X86] combineLoad - try to reuse existing constant pool entries for smaller vector constant data (REAPPLIED)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -77455,15 +77461,15 @@
     ],
     "nikic\/perf\/eii-before": [
         {
-            "hash": "178270b7bebe863d8a55fb18cba7aa304ab919e1",
+            "hash": "9ca9c2cf7e05a0fe44a8a688d0c322d5229511d9",
             "author_name": "Nikita Popov",
-            "commit_date": "2023-10-23T16:45:14+02:00",
-            "subject": "[GVN] Add additional captured before tests (NFC)"
+            "commit_date": "2023-11-20T16:25:48+01:00",
+            "subject": "[InstSimplify] Remove redundant gep zero fold (NFC)"
         },
         {
-            "hash": "c5c8650c0cd48e3c8eb25d2a1d15ba619c4ee513",
+            "hash": "10057c2657e0864516337842bdd9425f26cbc3dc",
             "author_name": "Nikita Popov",
-            "commit_date": "2023-10-23T17:07:37+02:00",
+            "commit_date": "2023-11-20T16:42:09+01:00",
             "subject": "[BasicAA] Make isNotCapturedBefore() check for calls more precise"
         }
     ],
