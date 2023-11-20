@@ -76917,6 +76917,18 @@
             "author_name": "Krasimir Georgiev",
             "commit_date": "2023-11-20T16:05:01+00:00",
             "subject": "NFCI: update debug-names-types test to use an output file unique to the test"
+        },
+        {
+            "hash": "a32a2b2ceb6b4c1bbcbcb39363c8dee44daf86ab",
+            "author_name": "Liviu Ionescu",
+            "commit_date": "2023-11-20T11:14:36-05:00",
+            "subject": "[clang][driver] Add <executable>\/..\/include\/c++\/v1 to include path on Darwin (#70817)"
+        },
+        {
+            "hash": "c38ae74b48c1cb8aedf384686eaa05815d366609",
+            "author_name": "Louis Dionne",
+            "commit_date": "2023-11-20T11:23:24-05:00",
+            "subject": "[libc++] Stop checking for trailing whitespace in check-generated-output (#72711)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -78549,6 +78561,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-20T14:55:06+01:00",
             "subject": "wip"
+        }
+    ],
+    "nikic\/perf\/range-sharpening": [
+        {
+            "hash": "9ca9c2cf7e05a0fe44a8a688d0c322d5229511d9",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-20T16:25:48+01:00",
+            "subject": "[InstSimplify] Remove redundant gep zero fold (NFC)"
+        },
+        {
+            "hash": "541ec50dd7907e0945f30fd3778d599425a4e665",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-20T17:22:49+01:00",
+            "subject": "computeConstantRange() based sharpening"
         }
     ]
 }
