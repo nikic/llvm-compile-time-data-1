@@ -46243,6 +46243,42 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-14T09:22:39+01:00",
             "subject": "[BranchFolding] Remove dubious assert from operator< (#71639)"
+        },
+        {
+            "hash": "bb66d8f8f73b07f06f2aed2a906f3c08679ed605",
+            "author_name": "YAMAMOTO Takashi",
+            "commit_date": "2023-11-20T09:48:32+01:00",
+            "subject": "[clang][WebAssembly] Link crt1 even in case of -shared"
+        },
+        {
+            "hash": "e6de86cb9ef868c652d8932db2c08f953f47a1e2",
+            "author_name": "Arthur Eubanks",
+            "commit_date": "2023-11-20T09:48:41+01:00",
+            "subject": "Revert \"Reland [clang] Canonicalize system headers in dependency file when -canonical-prefixes\" (#71697)"
+        },
+        {
+            "hash": "b5cbb35408a3901900dc2b2ca6adda80a77ea093",
+            "author_name": "Ilya Biryukov",
+            "commit_date": "2023-11-20T09:50:27+01:00",
+            "subject": "[libc++] Use correct size for deallocation of arrays in shared_ptr (#68233)"
+        },
+        {
+            "hash": "76c7e0e1e2d15706cb9ad28b607e937df5e00c24",
+            "author_name": "Utkarsh Saxena",
+            "commit_date": "2023-11-20T09:50:43+01:00",
+            "subject": "Use the correct namespace for looking up matching operator!= (#68922)"
+        },
+        {
+            "hash": "442401f7c0ca6939a6c4e953486ee370f6470e26",
+            "author_name": "Utkarsh Saxena",
+            "commit_date": "2023-11-20T09:50:43+01:00",
+            "subject": "remove tests from bad merge"
+        },
+        {
+            "hash": "308c816de5a47dd7d08a29f91b68381b45ed3552",
+            "author_name": "Tobias Hieta",
+            "commit_date": "2023-11-20T09:56:48+01:00",
+            "subject": "Bump version to 17.0.6"
         }
     ],
     "nikic\/perf\/instcombine-unreach-3": [
@@ -76551,6 +76587,60 @@
             "author_name": "Cullen Rhodes",
             "commit_date": "2023-11-20T08:39:34+00:00",
             "subject": "[mlir][vector] Extend TransferReadDropUnitDimsPattern to support partially-static memrefs (#72142)"
+        },
+        {
+            "hash": "d715e2c65b4449f00b39493b1e0a19c04b75bc7c",
+            "author_name": "Aiden Grossman",
+            "commit_date": "2023-11-20T00:59:25-08:00",
+            "subject": "[NewPM] Remove GuardWideningLegacyPass (#72810)"
+        },
+        {
+            "hash": "b9975cec0ea0a2f10d65b7bd1197d9e1706cbd3d",
+            "author_name": "Aiden Grossman",
+            "commit_date": "2023-11-20T00:59:42-08:00",
+            "subject": "[NewPM] Remove LoopSinkLegacy Pass (#72811)"
+        },
+        {
+            "hash": "cd11a7fba44d92ca018a2b418da69b8a680614f3",
+            "author_name": "Aiden Grossman",
+            "commit_date": "2023-11-20T01:00:08-08:00",
+            "subject": "[NewPM] Remove LoopInstSimplifyLegacyPass (#72812)"
+        },
+        {
+            "hash": "8319e222c89bf9a0df42a17df771645eaf4beb95",
+            "author_name": "Aiden Grossman",
+            "commit_date": "2023-11-20T01:00:24-08:00",
+            "subject": "[NewPM] Remove MergedLoadStoreMotionLegacyPass (#72813)"
+        },
+        {
+            "hash": "7e65dc72c4251cb7409545686bc2751d50d4efae",
+            "author_name": "Alex Zinenko",
+            "commit_date": "2023-11-20T09:00:40+00:00",
+            "subject": "Revert \"Apply clang-tidy fixes for misc-include-cleaner in IRCore.cpp (NFC)\""
+        },
+        {
+            "hash": "61332cb047faca2dffce9a0ae68bf0d1c0cdee39",
+            "author_name": "Diana",
+            "commit_date": "2023-11-20T10:01:13+01:00",
+            "subject": "[AMDGPU] Emit backend_stack_size PAL metadata (#72509)"
+        },
+        {
+            "hash": "3cc523d935427baf62766e9e2cc7b65eca5925bb",
+            "author_name": "Aiden Grossman",
+            "commit_date": "2023-11-20T01:02:33-08:00",
+            "subject": "[NewPM] Remove UnifyFunctionExitNodesLegacyPass (#72816)"
+        },
+        {
+            "hash": "72ab99500f45d8672f91fe4d75ffdc6f5146b007",
+            "author_name": "Aiden Grossman",
+            "commit_date": "2023-11-20T01:02:52-08:00",
+            "subject": "[NewPM] Remove AssumeBundleBuilderPassLegacyPass (#72817)"
+        },
+        {
+            "hash": "4671f18906ad2149df1720b5a0513f23f17abde1",
+            "author_name": "Aiden Grossman",
+            "commit_date": "2023-11-20T01:03:10-08:00",
+            "subject": "[NewPM] Remove LowerWidenableConditionLegacyPass (#72818)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
