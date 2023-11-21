@@ -77499,6 +77499,30 @@
             "author_name": "Joseph Huber",
             "commit_date": "2023-11-21T06:48:34-06:00",
             "subject": "[Offload] Initial support for registering offloading entries on COFF targets (#72697)"
+        },
+        {
+            "hash": "f4418f8813ee15d13217ab0dd995a2a519d9c688",
+            "author_name": "Abhina Sree",
+            "commit_date": "2023-11-21T07:51:17-05:00",
+            "subject": "[SystemZ][z\/OS] Replace unconventional characters that are not within the ASCII range (#72906)"
+        },
+        {
+            "hash": "414815872434f6b4f7479a2732e87d221eefb01d",
+            "author_name": "David Green",
+            "commit_date": "2023-11-21T12:58:09+00:00",
+            "subject": "[RegBankInfo] Add brackets around || in assert. NFC"
+        },
+        {
+            "hash": "fd640384a5ac472e4f812ab5211d9d227078ec5e",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-21T12:58:23+00:00",
+            "subject": "[CodeGen] getPointerMemTy - move FIXME to start of comment line so editors are more likely to detect it. NFC."
+        },
+        {
+            "hash": "8336bfb17ee0ed694a30519da8ed3a930a5661ee",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-21T12:58:24+00:00",
+            "subject": "[X86] Regenerate ispow2.ll. NFC."
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -79179,6 +79203,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-21T13:04:57+01:00",
             "subject": "nonnull as well"
+        }
+    ],
+    "RKSimon\/perf\/broadcast-avx512": [
+        {
+            "hash": "7f740be4acddd8acf46796229c46117b735a9be8",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-21T12:22:13+01:00",
+            "subject": "[BasicAA] Don't assume DT is nonnull"
+        },
+        {
+            "hash": "abfd057730777ec0bb58aca933015a338094dc40",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-21T12:56:47+00:00",
+            "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 (VLX) targets"
         }
     ]
 }
