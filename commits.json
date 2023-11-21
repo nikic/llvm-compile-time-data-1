@@ -77139,6 +77139,60 @@
             "author_name": "Valentin Clement (\u30d0\u30ec\u30f3\u30bf\u30a4\u30f3 \u30af\u30ec\u30e1\u30f3)",
             "commit_date": "2023-11-20T15:44:55-08:00",
             "subject": "[flang][openacc][NFC] Check only HLFIR lowering for atomic tests (#72922)"
+        },
+        {
+            "hash": "85ee3fc7ec15f432430ee0c73fe81f3d6382d9df",
+            "author_name": "jeffreytan81",
+            "commit_date": "2023-11-20T15:57:14-08:00",
+            "subject": "Fix command escape bug in lldb-dap (#72902)"
+        },
+        {
+            "hash": "c4d8d9167938aa09fd7b1492a4abcfcf5bc1a9ca",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-20T17:59:26-06:00",
+            "subject": "[InstCombine] Add tests for folding `(X + Y) - (W + Z)`; NFC"
+        },
+        {
+            "hash": "dbf6f30926891dfab4d59d0ff0e960c2a31ab472",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-20T17:59:26-06:00",
+            "subject": "[InstCombine] Add folds for `(X + Y) - (W + Z)`"
+        },
+        {
+            "hash": "d01857803f3593c26118b7f9fe59db71234a3359",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-20T17:59:26-06:00",
+            "subject": "[InstCombine] Make `isFreeToInvert` check recursively."
+        },
+        {
+            "hash": "742c15adcb28701709de7a01f2dc5374e63b9908",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-20T17:59:26-06:00",
+            "subject": "[InstCombine] Add additional tests for free inversion; NFC"
+        },
+        {
+            "hash": "3039691f53487289bab40a4f889810ffd91980c2",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-20T17:59:27-06:00",
+            "subject": "[InstCombine] add `getFreeInverted` to perform folds for free inversion of op"
+        },
+        {
+            "hash": "b7c0f79926ad0e4f4abe193c82dad8468855eb81",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-20T17:59:27-06:00",
+            "subject": "[InstCombine] Replace `isFreeToInvert` + `CreateNot` with `getFreelyInverted`"
+        },
+        {
+            "hash": "5271d330770573d2df772aa0fa50d958f44400aa",
+            "author_name": "Noah Goldstein",
+            "commit_date": "2023-11-20T17:59:27-06:00",
+            "subject": "[InstCombine] Add transform for `~X + ~Y)` -> `-2 - Y - X`"
+        },
+        {
+            "hash": "eaffcc85ea53d7d90ac0271490f62526f91a5af6",
+            "author_name": "Jeremy Morse",
+            "commit_date": "2023-11-21T00:01:00+00:00",
+            "subject": "[DebugInfo][RemoveDIs] Make dropping variable locations explicit (#72399)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
