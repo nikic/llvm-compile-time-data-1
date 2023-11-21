@@ -77619,6 +77619,24 @@
             "author_name": "Florian Hahn",
             "commit_date": "2023-11-21T14:38:13+00:00",
             "subject": "[LV] Add test case for diff checks with nested AddRecs."
+        },
+        {
+            "hash": "a1652fdb5ebf4a7d94d28200765232ebc2ba7c62",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-21T15:47:55+01:00",
+            "subject": "[InstCombine] Add tests for incorrect shift nneg inference (NFC)"
+        },
+        {
+            "hash": "ac75171d41f0000d53eadf64a943d6fabc24af6c",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-21T15:47:55+01:00",
+            "subject": "[InstCombine] Fix incorrect nneg inference on shift amount"
+        },
+        {
+            "hash": "5f7c8c1068d23d1f23643ddd141ca6f4f23f3578",
+            "author_name": "Boian Petkantchin",
+            "commit_date": "2023-11-21T06:50:24-08:00",
+            "subject": "[mlir][mesh] Add collective communication operations (#71960)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -79313,6 +79331,20 @@
             "author_name": "Simon Pilgrim",
             "commit_date": "2023-11-21T14:37:06+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 (VLX) targets"
+        }
+    ],
+    "nikic\/perf\/basicaa-adjust": [
+        {
+            "hash": "ac75171d41f0000d53eadf64a943d6fabc24af6c",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-21T15:47:55+01:00",
+            "subject": "[InstCombine] Fix incorrect nneg inference on shift amount"
+        },
+        {
+            "hash": "d5f884bb66649339af248b77b275f23fed146ec4",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-21T15:55:57+01:00",
+            "subject": "more efficient index adjust"
         }
     ]
 }
