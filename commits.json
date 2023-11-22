@@ -78033,6 +78033,12 @@
             "author_name": "Sander de Smalen",
             "commit_date": "2023-11-22T08:52:53+00:00",
             "subject": "[llvm][TypeSize] Fix addition\/subtraction in TypeSize. (#72979)"
+        },
+        {
+            "hash": "21646789497346a1a8dabb4b369e12db482b4daa",
+            "author_name": "Sander de Smalen",
+            "commit_date": "2023-11-22T09:06:28+00:00",
+            "subject": "[mlir] Fix a few more TypeSize::Fixed->TypeSize::getFixed following #72979."
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -79773,6 +79779,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-21T20:13:26+01:00",
             "subject": "use label index"
+        }
+    ],
+    "nikic\/perf\/machine-dt": [
+        {
+            "hash": "03f05a4e72891237264ab48adf62034aaac8bd46",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-22T09:06:36+01:00",
+            "subject": "[IR] Don't include GenericDomTreeConstruction.h in header (NFC)"
+        },
+        {
+            "hash": "e1878aa780c69609afa71a24a62730d2dfb0b929",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-22T10:07:50+01:00",
+            "subject": "[CodeGen] Do not include GenericDomTreeConstruction.h in header (NFC)"
         }
     ]
 }
