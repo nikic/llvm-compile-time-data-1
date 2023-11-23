@@ -78681,6 +78681,24 @@
             "author_name": "Dominik Adamski",
             "commit_date": "2023-11-23T13:29:55+01:00",
             "subject": "[NFC][OpenMP][MLIR] Add MLIR test for lowering parallel if (#71788)"
+        },
+        {
+            "hash": "bf353a71a2c1360a445618dde6610cf850a1f417",
+            "author_name": "Ivan Butygin",
+            "commit_date": "2023-11-23T13:32:42+01:00",
+            "subject": "Revert \"[mlir] Workaround for export lib generation on Windows for `mlir_arm_sme_abi_stubs` (#73147)\""
+        },
+        {
+            "hash": "8735b7dcc9ebcfd00f478660656f75432af38ed3",
+            "author_name": "Oleksandr \"Alex\" Zinenko",
+            "commit_date": "2023-11-23T13:38:25+01:00",
+            "subject": "[mlir] do not inject malloc\/free in to-LLVM translation (#73224)"
+        },
+        {
+            "hash": "fd9a777e018d23d258646af613179eebf6df4b34",
+            "author_name": "Florian Hahn",
+            "commit_date": "2023-11-23T12:42:23+00:00",
+            "subject": "[LV] Remove TODO addressed in 32d1197a8fa."
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -79427,15 +79445,15 @@
     ],
     "RKSimon\/perf\/broadcast": [
         {
-            "hash": "423ad04c67b7fbe7c6a6b4e0591bff40844c6027",
-            "author_name": "Stefan Pintilie",
-            "commit_date": "2023-11-06T12:30:19-05:00",
-            "subject": "[PowerPC] Add an alias for -mregnames so that full register names used in assembly. (#70255)"
+            "hash": "7b97d5048a8f5261bf493ad8989f0eaed59c4bf1",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-23T12:09:11+00:00",
+            "subject": "Fix MSVC \"not all control paths return a value\" warning. NFC."
         },
         {
-            "hash": "c8babf98316975aa1564c733d6f61a0ee3fb1456",
+            "hash": "b2d5c7825e3f2cf6efdd799652d635cd73553a5f",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-11-06T17:40:17+00:00",
+            "commit_date": "2023-11-23T12:33:15+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on pre-AVX512 (VLX) targets"
         }
     ],
