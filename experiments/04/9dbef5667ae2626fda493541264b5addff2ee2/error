@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2627/2652] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SyntheticSections.cpp.o
+[2628/2652] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Writer.cpp.o
+[2629/2652] Linking CXX static library lib/liblldWasm.a
+[2630/2652] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTMerge.cpp.o
+[2631/2652] Linking CXX executable bin/lld
+[2632/2652] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/PrecompiledPreamble.cpp.o
+FAILED: tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/PrecompiledPreamble.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Frontend -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/PrecompiledPreamble.cpp.o -MF tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/PrecompiledPreamble.cpp.o.d -o tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/PrecompiledPreamble.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/PrecompiledPreamble.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/PrecompiledPreamble.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/PrecompiledPreamble.cpp:13:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::ASTUnit]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::ASTUnit; _Dp = std::default_delete<clang::ASTUnit>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:165:36:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::ASTUnit’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2633/2652] Building CXX object tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/ExtractAPIConsumer.cpp.o
+FAILED: tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/ExtractAPIConsumer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/ExtractAPI -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/ExtractAPI -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/ExtractAPIConsumer.cpp.o -MF tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/ExtractAPIConsumer.cpp.o.d -o tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/ExtractAPIConsumer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/ExtractAPI/ExtractAPIConsumer.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DiagnosticIDs.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/NestedNameSpecifier.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclarationName.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTConcept.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/ExtractAPI/ExtractAPIConsumer.cpp:15:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::ASTUnit]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::ASTUnit; _Dp = std::default_delete<clang::ASTUnit>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:165:36:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::ASTUnit’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2634/2652] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInstance.cpp.o
+FAILED: tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInstance.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Frontend -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInstance.cpp.o -MF tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInstance.cpp.o.d -o tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInstance.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/CompilerInstance.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DiagnosticIDs.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/CompilerInstance.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/CompilerInstance.cpp:9:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::ASTUnit]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::ASTUnit; _Dp = std::default_delete<clang::ASTUnit>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:165:36:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::ASTUnit’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2635/2652] Building CXX object tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/FrontendActions.cpp.o
+FAILED: tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/FrontendActions.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Frontend/Rewrite -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/Rewrite -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/FrontendActions.cpp.o -MF tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/FrontendActions.cpp.o.d -o tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/FrontendActions.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/Rewrite/FrontendActions.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Rewrite/Frontend/FrontendActions.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/Rewrite/FrontendActions.cpp:9:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::ASTUnit]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::ASTUnit; _Dp = std::default_delete<clang::ASTUnit>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:165:36:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::ASTUnit’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2636/2652] Building CXX object tools/clang/lib/FrontendTool/CMakeFiles/obj.clangFrontendTool.dir/ExecuteCompilerInvocation.cpp.o
+FAILED: tools/clang/lib/FrontendTool/CMakeFiles/obj.clangFrontendTool.dir/ExecuteCompilerInvocation.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/FrontendTool -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/FrontendTool -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/FrontendTool/CMakeFiles/obj.clangFrontendTool.dir/ExecuteCompilerInvocation.cpp.o -MF tools/clang/lib/FrontendTool/CMakeFiles/obj.clangFrontendTool.dir/ExecuteCompilerInvocation.cpp.o.d -o tools/clang/lib/FrontendTool/CMakeFiles/obj.clangFrontendTool.dir/ExecuteCompilerInvocation.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/FrontendTool/ExecuteCompilerInvocation.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DirectoryEntry.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/FileEntry.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/ARCMigrate/FileRemapper.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/ARCMigrate/ARCMTActions.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/FrontendTool/ExecuteCompilerInvocation.cpp:14:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::ASTUnit]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::ASTUnit; _Dp = std::default_delete<clang::ASTUnit>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:165:36:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::ASTUnit’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2637/2652] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/InterfaceStubFunctionsConsumer.cpp.o
+FAILED: tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/InterfaceStubFunctionsConsumer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Frontend -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/InterfaceStubFunctionsConsumer.cpp.o -MF tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/InterfaceStubFunctionsConsumer.cpp.o.d -o tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/InterfaceStubFunctionsConsumer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/InterfaceStubFunctionsConsumer.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/APValue.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Mangle.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/InterfaceStubFunctionsConsumer.cpp:9:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::ASTUnit]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::ASTUnit; _Dp = std::default_delete<clang::ASTUnit>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:165:36:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::ASTUnit’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2638/2652] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInvocation.cpp.o
+FAILED: tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInvocation.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Frontend -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInvocation.cpp.o -MF tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInvocation.cpp.o.d -o tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInvocation.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/CompilerInvocation.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Sanitizers.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/CodeGenOptions.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/CompilerInvocation.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/CompilerInvocation.cpp:9:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::ASTUnit]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::ASTUnit; _Dp = std::default_delete<clang::ASTUnit>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:165:36:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::ASTUnit’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2639/2652] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexingAction.cpp.o
+[2640/2652] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/FrontendActions.cpp.o
+[2641/2652] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/FrontendAction.cpp.o
+[2642/2652] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CodeGenAction.cpp.o
+[2643/2652] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o
+[2644/2652] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTUnit.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+218.37user 24.34system 0:17.68elapsed 1372%CPU (0avgtext+0avgdata 1258016maxresident)k
+0inputs+5041512outputs (42071major+11548202minor)pagefaults 0swaps
