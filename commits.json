@@ -80097,6 +80097,18 @@
             "author_name": "Shengchen Kan",
             "commit_date": "2023-11-27T21:37:07+08:00",
             "subject": "[X86][CodeGen] Teach frame lowering to spill\/reload registers w\/ PUSHP\/POPP, PUSH2[P]\/POP2[P] (#73292)"
+        },
+        {
+            "hash": "edf645616f8734b0dbf08e15cc5209e6cf553c12",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-27T13:48:36+00:00",
+            "subject": "[X86] Regenerate vector-interleaved-store-i64-stride-4.ll"
+        },
+        {
+            "hash": "5bd643e1456bd2acc53ac0bf594d285be89a44fe",
+            "author_name": "martinboehme",
+            "commit_date": "2023-11-27T14:55:49+01:00",
+            "subject": "[clang][dataflow] Strengthen widening of boolean values. (#73484)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -81983,6 +81995,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-27T14:45:17+01:00",
             "subject": "avoid duplicate lookup"
+        }
+    ],
+    "nikic\/perf\/sdag-space-opt": [
+        {
+            "hash": "272085f10bfaa33349682a9e4d08c990c159355d",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-27T11:12:16+01:00",
+            "subject": "[DomTree] Remove unnecessary domtree level check in SemiNCA (NFC) (#73107)"
+        },
+        {
+            "hash": "552529fe5cfb5f91b29098879b643c1c2c5f0629",
+            "author_name": "wangpc",
+            "commit_date": "2023-11-27T14:49:47+01:00",
+            "subject": "Add space-optimized forms of OPC_EmitNode\/OPC_MorphNodeTo"
         }
     ]
 }
