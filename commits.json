@@ -80019,6 +80019,36 @@
             "author_name": "Florian Hahn",
             "commit_date": "2023-11-27T10:06:17+00:00",
             "subject": "[LAA] Auto-generate checks for forward-loop-carried.ll"
+        },
+        {
+            "hash": "0e86d3ea9b93da273ee800a251dd60a44b85a320",
+            "author_name": "Timm Baeder",
+            "commit_date": "2023-11-27T11:10:02+01:00",
+            "subject": "[clang] Print static_assert values of arithmetic binary operators (#71671)"
+        },
+        {
+            "hash": "17139f38e55ec06b8546b9306e04e64d0408033a",
+            "author_name": "Florian Hahn",
+            "commit_date": "2023-11-27T10:10:41+00:00",
+            "subject": "[LAA] Check HasSameSize before couldPreventStoreLoadForward."
+        },
+        {
+            "hash": "272085f10bfaa33349682a9e4d08c990c159355d",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-27T11:12:16+01:00",
+            "subject": "[DomTree] Remove unnecessary domtree level check in SemiNCA (NFC) (#73107)"
+        },
+        {
+            "hash": "56cf3ff479ab70b4d802f935afa64a343b402a73",
+            "author_name": "Rik Huijzer",
+            "commit_date": "2023-11-27T11:17:07+01:00",
+            "subject": "[mlir][spirv][doc] Remove duplicate syntax formats (#73386)"
+        },
+        {
+            "hash": "489df61a2960cbd154fe0a2c23918c2609ef4357",
+            "author_name": "Timm B\u00e4der",
+            "commit_date": "2023-11-27T11:17:49+01:00",
+            "subject": "[clang][Interp][NFC] const qualify a local variable"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -81871,6 +81901,26 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-24T16:44:56+01:00",
             "subject": "remove cold callsite heuristic"
+        }
+    ],
+    "nikic\/perf\/semi-nca-4": [
+        {
+            "hash": "272085f10bfaa33349682a9e4d08c990c159355d",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-27T11:12:16+01:00",
+            "subject": "[DomTree] Remove unnecessary domtree level check in SemiNCA (NFC) (#73107)"
+        },
+        {
+            "hash": "91ab97f955f246579367433335d78054ad23b023",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-27T11:16:08+01:00",
+            "subject": "store reverse children as index"
+        },
+        {
+            "hash": "3df05125000536a0c954dacac2d5a1b232be3efe",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-27T11:16:22+01:00",
+            "subject": "increase reverse children size"
         }
     ]
 }
