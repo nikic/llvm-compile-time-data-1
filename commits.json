@@ -80187,6 +80187,36 @@
             "author_name": "h-vetinari",
             "commit_date": "2023-11-27T10:14:18-05:00",
             "subject": "[libc++] fix some inconsistencies on libcxx status pages (#73471)"
+        },
+        {
+            "hash": "c94444390f4c8f4d898ac8a8444bc4bf3394609f",
+            "author_name": "Utkarsh Saxena",
+            "commit_date": "2023-11-27T16:21:07+01:00",
+            "subject": "[clangtidy] Allow safe suspensions in coroutine-hostile-raii check (#72954)"
+        },
+        {
+            "hash": "fb23fabc190f528e09d85505c094666bb75fbf11",
+            "author_name": "Guillaume Chatelet",
+            "commit_date": "2023-11-27T16:21:20+01:00",
+            "subject": "[libc] Fix forward octal prefix (#73526)"
+        },
+        {
+            "hash": "ca007181eadf9bce357e382400cfddb5b925c142",
+            "author_name": "Joseph Huber",
+            "commit_date": "2023-11-27T09:23:15-06:00",
+            "subject": "[OpenMP] Fix missing CMake function in runtimes build"
+        },
+        {
+            "hash": "bf95a0cd2073b6f5bd2c00bc645be00d38bf49a6",
+            "author_name": "Stephan T. Lavavej",
+            "commit_date": "2023-11-27T10:24:22-05:00",
+            "subject": "[libc++][test] Avoid C++23 Core features that MSVC lacks (#73438)"
+        },
+        {
+            "hash": "c449460d8a657e46500ad12be457928207207e3e",
+            "author_name": "Fangrui Song",
+            "commit_date": "2023-11-27T07:27:50-08:00",
+            "subject": "ms inline asm: Fix {call,jmp} fptr (#73207)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -81883,15 +81913,15 @@
     ],
     "RKSimon\/perf\/broadcast-avx512": [
         {
-            "hash": "edf645616f8734b0dbf08e15cc5209e6cf553c12",
+            "hash": "286905351f5b0f520ec4ed6081f7008a0b292aa5",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-11-27T13:48:36+00:00",
-            "subject": "[X86] Regenerate vector-interleaved-store-i64-stride-4.ll"
+            "commit_date": "2023-11-27T15:06:24+00:00",
+            "subject": "[X86] vector-interleaved tests - add AVX512F\/AVX512DQ\/AVX512BW\/AVX512DQBW-ONLY common prefixes to merge more SLOW\/FAST checks"
         },
         {
-            "hash": "a70d702e7cf7a41569273bc966686f0b241d0c16",
+            "hash": "e8ae737218d2b701a6e689e48098b04b4ae9e326",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-11-27T13:53:39+00:00",
+            "commit_date": "2023-11-27T15:23:52+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 (VLX) targets"
         }
     ],
