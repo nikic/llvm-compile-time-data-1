@@ -80913,6 +80913,18 @@
             "author_name": "Nico Weber",
             "commit_date": "2023-11-28T16:45:20+09:00",
             "subject": "Reland \"[gn] port 92b821f2dcdd\""
+        },
+        {
+            "hash": "aefca74d44667749e6f513fbe1908de1429e9226",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-28T09:10:29+01:00",
+            "subject": "[DomTree] Store ReverseChildren as indices (NFC) (#73505)"
+        },
+        {
+            "hash": "d01237c45b7cdbf83d1249dd019178b2cafbb63c",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-28T09:16:04+01:00",
+            "subject": "[InstCombine] Make indexed compare fold GEP source type independent (#71663)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -82827,6 +82839,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-27T15:15:25+01:00",
             "subject": "wip"
+        }
+    ],
+    "nikic\/perf\/instcombine-sq": [
+        {
+            "hash": "c6444867405d25e5784e36302c90bca1c280a964",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-27T17:35:53+01:00",
+            "subject": "[ValueTracking] Pass unpacked arguments to computeKnownBitsFromCmp() (NFC)"
+        },
+        {
+            "hash": "5b05792afac1320fbb58beb6920f3af06e21f988",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-28T09:08:24+01:00",
+            "subject": "use sq for known bits"
         }
     ]
 }
