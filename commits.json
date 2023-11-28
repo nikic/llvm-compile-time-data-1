@@ -81123,6 +81123,18 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-28T14:57:24+01:00",
             "subject": "[ValueTracking] Rename computeKnownBitsFrom{Assume -> Context} (NFC)"
+        },
+        {
+            "hash": "b5d132010dd460453203ed03e223283ba63383c3",
+            "author_name": "Uday Bondhugula",
+            "commit_date": "2023-11-28T19:28:51+05:30",
+            "subject": "[NFC][NVPTX] Add a simpler test case for 0b80288e9e0b (#73379)"
+        },
+        {
+            "hash": "01091fd101ee78fb8068a2b916ae007a4873d66a",
+            "author_name": "Zhikai Zeng",
+            "commit_date": "2023-11-28T22:08:11+08:00",
+            "subject": "[clang] fix typo (#73644)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -82653,57 +82665,21 @@
     ],
     "nikic\/perf\/dom-cond": [
         {
-            "hash": "8775232c49cde288c429e27dd0f4f492fbb0cefa",
+            "hash": "1116e4f5dc2ba070dd655ec55231a5b21d33573f",
             "author_name": "Nikita Popov",
-            "commit_date": "2023-11-17T10:42:18+01:00",
-            "subject": "[ValueTracking] Remove handling of KnownBits assumptions with invert"
+            "commit_date": "2023-11-28T14:57:24+01:00",
+            "subject": "[ValueTracking] Rename computeKnownBitsFrom{Assume -> Context} (NFC)"
         },
         {
-            "hash": "3d4581c38b44372b2acd57038b79b2a1e631a7eb",
+            "hash": "d1a81a49dfb534f9a621d1a6de06998b72e11f16",
             "author_name": "Nikita Popov",
-            "commit_date": "2023-11-17T11:13:04+01:00",
-            "subject": "wip"
-        },
-        {
-            "hash": "5408a17d96d3c8bc047865feb481c8c8a256dce3",
-            "author_name": "Nikita Popov",
-            "commit_date": "2023-11-17T12:59:13+01:00",
+            "commit_date": "2023-11-28T14:58:21+01:00",
             "subject": "dom cond"
         },
         {
-            "hash": "8e14c667ef9f3b0556b84dce464670985c43609a",
+            "hash": "2133614c6d63a7a5776f8ac0313df6fd717eff35",
             "author_name": "Nikita Popov",
-            "commit_date": "2023-11-17T13:05:36+01:00",
-            "subject": "invert"
-        },
-        {
-            "hash": "1be0a3868d084547902c724b3d5ea53eff17e331",
-            "author_name": "Nikita Popov",
-            "commit_date": "2023-11-17T14:42:53+01:00",
-            "subject": "use sq"
-        },
-        {
-            "hash": "3ce4be85d034693afd8a39714b4aaf432d8b3b7c",
-            "author_name": "Nikita Popov",
-            "commit_date": "2023-11-17T15:29:04+01:00",
-            "subject": "less affected values"
-        },
-        {
-            "hash": "b891872fb0f4ecee295664a6691ef54ec8a2acad",
-            "author_name": "Nikita Popov",
-            "commit_date": "2023-11-21T12:28:15+01:00",
-            "subject": "don't use value handles"
-        },
-        {
-            "hash": "83fb75a0cbaa356b90457bc96867444abc0bcccd",
-            "author_name": "Nikita Popov",
-            "commit_date": "2023-11-21T16:09:28+01:00",
-            "subject": "fast path"
-        },
-        {
-            "hash": "fcfc9ab4b941b9ad4bb61222dcf34c70cc942561",
-            "author_name": "Nikita Popov",
-            "commit_date": "2023-11-21T16:11:22+01:00",
+            "commit_date": "2023-11-28T15:01:12+01:00",
             "subject": "avoid second order effects"
         }
     ],
