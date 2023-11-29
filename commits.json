@@ -81891,6 +81891,18 @@
             "author_name": "Simon Pilgrim",
             "commit_date": "2023-11-29T10:38:11+00:00",
             "subject": "[DAG] getNode() - relax (zext (trunc x)) -> x fold iff the upper bits are known zero."
+        },
+        {
+            "hash": "1bfb84b47738155cc3c290ac7034075bec60920b",
+            "author_name": "Paschalis Mpeis",
+            "commit_date": "2023-11-29T11:19:10+00:00",
+            "subject": "[NFC][TLI] Improve tests for ArmPL and SLEEF Intrinsics. (#73352)"
+        },
+        {
+            "hash": "47df664c7acfd8abd082c0252d1793182c92dc3d",
+            "author_name": "Ben Shi",
+            "commit_date": "2023-11-29T19:20:49+08:00",
+            "subject": "[clang][analyzer] Support `fgets` in the SteamChecker (#73638)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -83551,15 +83563,15 @@
     ],
     "RKSimon\/perf\/broadcast-avx512": [
         {
-            "hash": "eba50929b863c6270fce6b24538dd871aa1f2fd6",
+            "hash": "0fac9da7342e7846fbc4464abe5c00086cbf026c",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-11-28T10:17:57+00:00",
-            "subject": "[X86] X86DAGToDAGISel - fix typo in #73126"
+            "commit_date": "2023-11-29T10:38:11+00:00",
+            "subject": "[DAG] getNode() - relax (zext (trunc x)) -> x fold iff the upper bits are known zero."
         },
         {
-            "hash": "941d6de6ceecd0ad6bd21489b35bf419ec3705f1",
+            "hash": "e44566663a77a69312de552fb7cb174d998505f2",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-11-28T10:42:16+00:00",
+            "commit_date": "2023-11-29T11:07:25+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 (VLX) targets"
         }
     ],
