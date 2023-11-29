@@ -81879,6 +81879,18 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-29T11:27:46+01:00",
             "subject": "[InstCombine] Regenerate test checks (NFC)"
+        },
+        {
+            "hash": "621183cb45b93517169787bb254705ab3baff2a2",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-29T10:38:11+00:00",
+            "subject": "[X86] Add test case showing failure to remove unnecessary zext from address math"
+        },
+        {
+            "hash": "0fac9da7342e7846fbc4464abe5c00086cbf026c",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-11-29T10:38:11+00:00",
+            "subject": "[DAG] getNode() - relax (zext (trunc x)) -> x fold iff the upper bits are known zero."
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
