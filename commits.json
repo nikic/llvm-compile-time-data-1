@@ -82095,6 +82095,24 @@
             "author_name": "Nick Desaulniers",
             "commit_date": "2023-11-29T08:18:51-08:00",
             "subject": "[X86InstrInfo] support memfold on spillable inline asm (#70832)"
+        },
+        {
+            "hash": "3bf72bf427f15521111df4e35c868005ceb0013b",
+            "author_name": "Jeremy Morse",
+            "commit_date": "2023-11-29T16:21:14+00:00",
+            "subject": "[DebugInfo][RemoveDIs] Extract DPValues in CodeExtractor like dbg.values (#73252)"
+        },
+        {
+            "hash": "859338a695169d2804d6999f44e1e94bedf6ddd7",
+            "author_name": "Youngsuk Kim",
+            "commit_date": "2023-11-29T10:22:31-06:00",
+            "subject": "[llvm] Replace uses of Type::getPointerTo (NFC)"
+        },
+        {
+            "hash": "e2299e8d9d99ed1e5315b767a8dd5790967ef485",
+            "author_name": "Johannes Doerfert",
+            "commit_date": "2023-11-29T08:29:41-08:00",
+            "subject": "[OpenMP][NFC] Move OMPT headers into OpenMP\/OMPT (#73718)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -82841,15 +82859,15 @@
     ],
     "RKSimon\/perf\/broadcast": [
         {
-            "hash": "286905351f5b0f520ec4ed6081f7008a0b292aa5",
-            "author_name": "Simon Pilgrim",
-            "commit_date": "2023-11-27T15:06:24+00:00",
-            "subject": "[X86] vector-interleaved tests - add AVX512F\/AVX512DQ\/AVX512BW\/AVX512DQBW-ONLY common prefixes to merge more SLOW\/FAST checks"
+            "hash": "953d675c42c254676ca446951bd728abefecf436",
+            "author_name": "jyu2-git",
+            "commit_date": "2023-11-29T08:01:57-08:00",
+            "subject": "Fix accsessing \"PresentModifierLocs\" array beyond its end. (#73579)"
         },
         {
-            "hash": "567d37ee9942690263ccde3993af5512e3454052",
+            "hash": "026c391524dcfdba7dab8eec6872ab76b3812e33",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-11-27T15:33:02+00:00",
+            "commit_date": "2023-11-29T16:21:53+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on pre-AVX512 (VLX) targets"
         }
     ],
