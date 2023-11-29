@@ -81873,6 +81873,12 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-29T11:18:42+01:00",
             "subject": "[ValueTracking] Convert MaskedValueIsZero() to use SimplifyQuery (NFC)"
+        },
+        {
+            "hash": "511218642bc5df7815423de211192dd577eb3a9c",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-29T11:27:46+01:00",
+            "subject": "[InstCombine] Regenerate test checks (NFC)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -83765,6 +83771,26 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-28T09:08:24+01:00",
             "subject": "use sq for known bits"
+        }
+    ],
+    "nikic\/perf\/dom-cond-2": [
+        {
+            "hash": "511218642bc5df7815423de211192dd577eb3a9c",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-29T11:27:46+01:00",
+            "subject": "[InstCombine] Regenerate test checks (NFC)"
+        },
+        {
+            "hash": "3064446a6c5117034fefcfdca27bf76343820e7e",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-29T11:29:39+01:00",
+            "subject": "[ValueTracking] Add dominating condition support in computeKnownBits()"
+        },
+        {
+            "hash": "8da9c98badcccea02161e5d6c740aaf79974c831",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-29T11:30:09+01:00",
+            "subject": "avoid second order effects"
         }
     ]
 }
