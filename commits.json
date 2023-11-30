@@ -82941,6 +82941,18 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-11-30T14:22:48+01:00",
             "subject": "[InstCombine] Use analyzeKnownBitsFromAndXorOr() in multi-use demanded bits"
+        },
+        {
+            "hash": "2031e7226cc5318c547c6d3f62ac62d369d0e723",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-30T14:26:57+01:00",
+            "subject": "[InstCombine] Require non-demanded known bits to be accurate (NFC)"
+        },
+        {
+            "hash": "c44dca15a4297eef3b9319a5e24f85267a099642",
+            "author_name": "Matt Arsenault",
+            "commit_date": "2023-11-30T22:33:42+09:00",
+            "subject": "MachineVerifier: Reject extra non-register operands on instructions (#73758)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -84601,15 +84613,15 @@
     ],
     "RKSimon\/perf\/broadcast-avx512": [
         {
-            "hash": "953d675c42c254676ca446951bd728abefecf436",
-            "author_name": "jyu2-git",
-            "commit_date": "2023-11-29T08:01:57-08:00",
-            "subject": "Fix accsessing \"PresentModifierLocs\" array beyond its end. (#73579)"
+            "hash": "1566380e6b47d7876c0f3eaa105097063dbe7cc8",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-11-30T14:06:05+01:00",
+            "subject": "[ValueTracking] Switch analyzeKnownBitsFromAndXorOr() to use SimplifyQuery (NFC)"
         },
         {
-            "hash": "21fad09d34da92b532465140c06138b6415dca88",
+            "hash": "dae650602e85cb52aaa94521aa6dd9d19f68a4ca",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-11-29T16:04:53+00:00",
+            "commit_date": "2023-11-30T13:36:32+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 (VLX) targets"
         }
     ],
