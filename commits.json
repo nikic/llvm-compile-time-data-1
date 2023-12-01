@@ -83949,6 +83949,12 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-12-01T12:18:59+01:00",
             "subject": "[InstSimplify] Check common operand with constant earlier"
+        },
+        {
+            "hash": "9468de48fcd413aa0895a78bd6f1aeb161b39294",
+            "author_name": "Ramkumar Ramachandra",
+            "commit_date": "2023-12-01T11:29:19+00:00",
+            "subject": "TargetInstrInfo: make getOperandLatency return optional (NFC) (#73769)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -85609,15 +85615,15 @@
     ],
     "RKSimon\/perf\/broadcast-avx512": [
         {
-            "hash": "b8bbd5fe6f6371f549e0aedf726fa47e7dd3bbf6",
-            "author_name": "Simon Pilgrim",
-            "commit_date": "2023-11-30T15:20:42+00:00",
-            "subject": "[X86] X86InstrFoldTables.cpp - add Op4 Broadcast Fold\/Unfold table entries"
+            "hash": "cd31cf5989aaf6a187aaf3af4f94207c55a70d0f",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-01T11:45:09+01:00",
+            "subject": "[InstSimplify] Fix or disjoint miscompile with op replacement"
         },
         {
-            "hash": "d443aa5adb23a4e06cdec80f5e900893e297fa81",
+            "hash": "7cc43be05a03b58b8cdf860454bf241767fc0fe0",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-11-30T15:35:49+00:00",
+            "commit_date": "2023-12-01T11:30:12+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 (VLX) targets"
         }
     ],
