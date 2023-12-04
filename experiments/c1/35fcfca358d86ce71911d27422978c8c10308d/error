@@ -1,0 +1,133 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+[477/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveIntervalCalc.cpp.o
+[478/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRangeCalc.cpp.o
+[479/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LowLevelTypeUtils.cpp.o
+[480/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRegUnits.cpp.o
+[481/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRangeEdit.cpp.o
+[482/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LoopTraversal.cpp.o
+[483/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRegMatrix.cpp.o
+[484/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveIntervals.cpp.o
+[485/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRangeShrink.cpp.o
+[486/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveStacks.cpp.o
+[487/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LowerEmuTLS.cpp.o
+[488/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LocalStackSlotAllocation.cpp.o
+[489/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBranchProbabilityInfo.cpp.o
+[490/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveVariables.cpp.o
+[491/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugVariables.cpp.o
+[492/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCFGPrinter.cpp.o
+[493/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockFrequencyInfo.cpp.o
+[494/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDominanceFrontier.cpp.o
+[495/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCycleAnalysis.cpp.o
+[496/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCheckDebugify.cpp.o
+[497/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFrameInfo.cpp.o
+[498/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCombiner.cpp.o
+[499/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCopyPropagation.cpp.o
+[500/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCSE.cpp.o
+[501/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDominators.cpp.o
+[502/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDebugify.cpp.o
+[503/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPrinterPass.cpp.o
+[504/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBasicBlock.cpp.o
+[505/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LLVMTargetMachine.cpp.o
+[506/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockPlacement.cpp.o
+[507/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPass.cpp.o
+[508/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstrBundle.cpp.o
+[509/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLateInstrsCleanup.cpp.o
+[510/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLoopUtils.cpp.o
+[511/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineModuleInfoImpls.cpp.o
+[512/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionSplitter.cpp.o
+[513/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunction.cpp.o
+[514/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineOptimizationRemarkEmitter.cpp.o
+[515/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineModuleInfo.cpp.o
+[516/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLoopInfo.cpp.o
+[517/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineModuleSlotTracker.cpp.o
+[518/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineInstr.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineInstr.cpp
+1.	<eof> parser at end of file
+2.	Optimizer
+ #0 0x00005626d4d0da40 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/tmp/llvm-project-build-stage1/bin/clang+++0x1dbda40)
+ #1 0x00005626d4d0b914 llvm::sys::CleanupOnSignal(unsigned long) (/tmp/llvm-project-build-stage1/bin/clang+++0x1dbb914)
+ #2 0x00005626d4c54998 CrashRecoverySignalHandler(int) CrashRecoveryContext.cpp:0:0
+ #3 0x00007eff79cdb520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #4 0x00005626d46de7d7 bool llvm::DenseMapBase<llvm::DenseMap<llvm::APFloat, std::unique_ptr<llvm::ConstantFP, std::default_delete<llvm::ConstantFP> >, llvm::DenseMapInfo<llvm::APFloat, void>, llvm::detail::DenseMapPair<llvm::APFloat, std::unique_ptr<llvm::ConstantFP, std::default_delete<llvm::ConstantFP> > > >, llvm::APFloat, std::unique_ptr<llvm::ConstantFP, std::default_delete<llvm::ConstantFP> >, llvm::DenseMapInfo<llvm::APFloat, void>, llvm::detail::DenseMapPair<llvm::APFloat, std::unique_ptr<llvm::ConstantFP, std::default_delete<llvm::ConstantFP> > > >::LookupBucketFor<llvm::APFloat>(llvm::APFloat const&, llvm::detail::DenseMapPair<llvm::APFloat, std::unique_ptr<llvm::ConstantFP, std::default_delete<llvm::ConstantFP> > > const*&) const crtstuff.c:0:0
+ #5 0x00005626d46e0012 llvm::ConstantFP::get(llvm::LLVMContext&, llvm::APFloat const&) (/tmp/llvm-project-build-stage1/bin/clang+++0x1790012)
+ #6 0x00005626d46eda2d llvm::Constant::getAllOnesValue(llvm::Type*) (/tmp/llvm-project-build-stage1/bin/clang+++0x179da2d)
+ #7 0x00005626d46eda54 llvm::Constant::getAllOnesValue(llvm::Type*) (/tmp/llvm-project-build-stage1/bin/clang+++0x179da54)
+ #8 0x00005626d46edb94 llvm::ConstantExpr::getNot(llvm::Constant*) (/tmp/llvm-project-build-stage1/bin/clang+++0x179db94)
+ #9 0x00005626d489d404 llvm::InstCombiner::getFreelyInvertedImpl(llvm::Value*, bool, llvm::IRBuilder<llvm::TargetFolder, llvm::IRBuilderCallbackInserter>*, bool&, unsigned int) crtstuff.c:0:0
+#10 0x00005626d495d1fd llvm::InstCombinerImpl::visitICmpInst(llvm::ICmpInst&) crtstuff.c:0:0
+#11 0x00005626d48b0bce llvm::InstCombinerImpl::run() crtstuff.c:0:0
+#12 0x00005626d48b2aba combineInstructionsOverFunction(llvm::Function&, llvm::InstructionWorklist&, llvm::AAResults*, llvm::AssumptionCache&, llvm::TargetLibraryInfo&, llvm::TargetTransformInfo&, llvm::DominatorTree&, llvm::OptimizationRemarkEmitter&, llvm::BlockFrequencyInfo*, llvm::ProfileSummaryInfo*, llvm::LoopInfo*, llvm::InstCombineOptions const&) InstructionCombining.cpp:0:0
+#13 0x00005626d48b34ee llvm::InstCombinePass::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) (/tmp/llvm-project-build-stage1/bin/clang+++0x19634ee)
+#14 0x00005626d4f415e6 llvm::detail::PassModel<llvm::Function, llvm::InstCombinePass, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Function> >::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) crtstuff.c:0:0
+#15 0x00005626d4f49d08 llvm::detail::PassModel<llvm::Function, llvm::PassManager<llvm::Function, llvm::AnalysisManager<llvm::Function> >, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Function> >::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) crtstuff.c:0:0
+#16 0x00005626d7cd4276 llvm::CGSCCToFunctionPassAdaptor::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) (/tmp/llvm-project-build-stage1/bin/clang+++0x4d84276)
+#17 0x00005626d5ece196 llvm::detail::PassModel<llvm::LazyCallGraph::SCC, llvm::CGSCCToFunctionPassAdaptor, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) crtstuff.c:0:0
+#18 0x00005626d7ccf7fb llvm::PassManager<llvm::LazyCallGraph::SCC, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) (/tmp/llvm-project-build-stage1/bin/clang+++0x4d7f7fb)
+#19 0x00005626d5ece0f6 llvm::detail::PassModel<llvm::LazyCallGraph::SCC, llvm::PassManager<llvm::LazyCallGraph::SCC, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) crtstuff.c:0:0
+#20 0x00005626d7cd52b3 llvm::DevirtSCCRepeatedPass::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) (/tmp/llvm-project-build-stage1/bin/clang+++0x4d852b3)
+#21 0x00005626d5ece146 llvm::detail::PassModel<llvm::LazyCallGraph::SCC, llvm::DevirtSCCRepeatedPass, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) crtstuff.c:0:0
+#22 0x00005626d7cd08d2 llvm::ModuleToPostOrderCGSCCPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) (/tmp/llvm-project-build-stage1/bin/clang+++0x4d808d2)
+#23 0x00005626d61206c6 llvm::ModuleInlinerWrapperPass::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) (/tmp/llvm-project-build-stage1/bin/clang+++0x31d06c6)
+#24 0x00005626d5ecd776 llvm::detail::PassModel<llvm::Module, llvm::ModuleInlinerWrapperPass, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Module> >::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) crtstuff.c:0:0
+#25 0x00005626d481fee7 llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module> >::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) (/tmp/llvm-project-build-stage1/bin/clang+++0x18cfee7)
+#26 0x00005626d4f53a0a (anonymous namespace)::EmitAssemblyHelper::RunOptimizationPipeline(clang::BackendAction, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream> >&, std::unique_ptr<llvm::ToolOutputFile, std::default_delete<llvm::ToolOutputFile> >&, clang::BackendConsumer*) BackendUtil.cpp:0:0
+#27 0x00005626d4f56bc3 clang::EmitBackendOutput(clang::DiagnosticsEngine&, clang::HeaderSearchOptions const&, clang::CodeGenOptions const&, clang::TargetOptions const&, clang::LangOptions const&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream> >, clang::BackendConsumer*) (/tmp/llvm-project-build-stage1/bin/clang+++0x2006bc3)
+#28 0x00005626d54fdd29 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) (/tmp/llvm-project-build-stage1/bin/clang+++0x25add29)
+#29 0x00005626d658dd49 clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x363dd49)
+#30 0x00005626d578d9e1 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage1/bin/clang+++0x283d9e1)
+#31 0x00005626d570c8b9 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage1/bin/clang+++0x27bc8b9)
+#32 0x00005626d584ffe4 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage1/bin/clang+++0x28fffe4)
+#33 0x00005626d3adfde3 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage1/bin/clang+++0xb8fde3)
+#34 0x00005626d3ad84ad ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#35 0x00005626d5545f6d void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+#36 0x00005626d4c54de7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage1/bin/clang+++0x1d04de7)
+#37 0x00005626d5546307 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (.part.0) Job.cpp:0:0
+#38 0x00005626d550ed41 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x25bed41)
+#39 0x00005626d550f7fd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x25bf7fd)
+#40 0x00005626d552095c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage1/bin/clang+++0x25d095c)
+#41 0x00005626d3adcff9 clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage1/bin/clang+++0xb8cff9)
+#42 0x00005626d3a27c33 main (/tmp/llvm-project-build-stage1/bin/clang+++0xad7c33)
+#43 0x00007eff79cc2d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#44 0x00007eff79cc2e40 call_init ./csu/../csu/libc-start.c:128:20
+#45 0x00007eff79cc2e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#46 0x00005626d3ad7925 _start (/tmp/llvm-project-build-stage1/bin/clang+++0xb87925)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 18.0.0
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/MachineInstr-47e27f.cpp
+clang++: note: diagnostic msg: /tmp/MachineInstr-47e27f.sh
+clang++: note: diagnostic msg: 
+
+********************
+[519/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineOperand.cpp.o
+[520/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLICM.cpp.o
+[521/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachinePassManager.cpp.o
+[522/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineSSAContext.cpp.o
+[523/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineRegisterInfo.cpp.o
+[524/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineSizeOpts.cpp.o
+[525/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachinePostDominators.cpp.o
+[526/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineSSAUpdater.cpp.o
+[527/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineOutliner.cpp.o
+[528/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineStripDebug.cpp.o
+[529/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineRegionInfo.cpp.o
+[530/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineTraceMetrics.cpp.o
+[531/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineScheduler.cpp.o
+[532/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineSink.cpp.o
+[533/2518] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachinePipeliner.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
