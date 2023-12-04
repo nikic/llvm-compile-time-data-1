@@ -85467,6 +85467,18 @@
             "author_name": "Thomas Schenker",
             "commit_date": "2023-12-04T17:30:12+01:00",
             "subject": "[clang-tidy] readability-container-contains literal suffixes (#74215)"
+        },
+        {
+            "hash": "86accd4e039ca60882caceab48701df4731a266c",
+            "author_name": "Benjamin Kramer",
+            "commit_date": "2023-12-04T17:33:39+01:00",
+            "subject": "Remove unused includes. NFC."
+        },
+        {
+            "hash": "b935f1a7edccd9f7c1b6342be80e48693af0ce11",
+            "author_name": "Benjamin Kramer",
+            "commit_date": "2023-12-04T17:40:35+01:00",
+            "subject": "[bazel] Add missing dependency for 3a03da37a3c1e146ce7af1a1bbf8a2d3a0bf53df"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -87499,6 +87511,26 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-12-04T16:47:15+01:00",
             "subject": "don'T use"
+        }
+    ],
+    "nikic\/perf\/dom-cond-3": [
+        {
+            "hash": "8f40ef3479fb16b9b754a29e56bac91c6377e7b7",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-04T15:49:35+01:00",
+            "subject": "[IndVarSimplify] Regenerate test checks (NFC)"
+        },
+        {
+            "hash": "460cf89ad6399d84243c5af7996e4d7b1dff278b",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-04T15:52:46+01:00",
+            "subject": "[ValueTracking] Add dominating condition support in computeKnownBits()"
+        },
+        {
+            "hash": "b006199aaa1b2ec110b188547943d1328286961c",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-04T17:32:01+01:00",
+            "subject": "don't use dominating cond for icmp knownbits simplification"
         }
     ]
 }
