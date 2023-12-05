@@ -86175,6 +86175,12 @@
             "author_name": "Guillaume Chatelet",
             "commit_date": "2023-12-05T13:53:19+01:00",
             "subject": "[libc] Fix arm32 tests (#74457)"
+        },
+        {
+            "hash": "eecb99c5f66c8491766628a2925587e20f3b1dbd",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-05T14:09:36+01:00",
+            "subject": "[Tests] Add disjoint flag to some tests (NFC)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -88239,6 +88245,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-12-04T17:32:01+01:00",
             "subject": "don't use dominating cond for icmp knownbits simplification"
+        }
+    ],
+    "nikic\/perf\/scev-or-disjoint": [
+        {
+            "hash": "eecb99c5f66c8491766628a2925587e20f3b1dbd",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-05T14:09:36+01:00",
+            "subject": "[Tests] Add disjoint flag to some tests (NFC)"
+        },
+        {
+            "hash": "cb81cfbe460c758456ab7037e9b0ca7a625780e6",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-05T14:15:25+01:00",
+            "subject": "scev use disjoint flag"
         }
     ]
 }
