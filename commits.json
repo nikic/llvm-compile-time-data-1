@@ -86307,6 +86307,18 @@
             "author_name": "Craig Topper",
             "commit_date": "2023-12-05T07:51:54-08:00",
             "subject": "[ARM][AArch64] Use SelectionDAG::SplitScalar to simplify some code. (#74411)"
+        },
+        {
+            "hash": "64a9b355fea89ced300e36108d6eb5a4f0fcd93a",
+            "author_name": "Craig Topper",
+            "commit_date": "2023-12-05T07:55:01-08:00",
+            "subject": "[RISCV] Optimize VRELOAD\/VSPILL lowering if VLEN is known. (#74421)"
+        },
+        {
+            "hash": "ff0e4fb89a75ebe5f30a0292caba1ff88c8bff88",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-05T17:01:46+01:00",
+            "subject": "[SCEV] Use or disjoint flag (#74467)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -88313,15 +88325,15 @@
     ],
     "RKSimon\/perf\/extract-fpimm": [
         {
-            "hash": "383e35048e16c85ab26bc46822d3ceb11fd4d3f2",
-            "author_name": "Nikita Popov",
-            "commit_date": "2023-12-05T10:09:52+01:00",
-            "subject": "[CaptureTracking] Treat vector GEPs as captures"
+            "hash": "80fa79609e9adf0e2ccd71b9838d7fdb6ab2d07a",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-12-05T15:39:21+00:00",
+            "subject": "[X86] combineStore - add early out for 32-bit f64 store combines. NFC."
         },
         {
-            "hash": "25dd56167af4a27fc4d68d432f7a96001c7b63fd",
+            "hash": "92591d77f95d122d7a91795b28aa16ce6d9cf113",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-05T09:38:45+00:00",
+            "commit_date": "2023-12-05T15:40:56+00:00",
             "subject": "[DAG] visitEXTRACT_VECTOR_ELT - constant fold legal fp imm values"
         }
     ],
