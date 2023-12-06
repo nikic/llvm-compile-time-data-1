@@ -87027,6 +87027,12 @@
             "author_name": "Stephan T. Lavavej",
             "commit_date": "2023-12-06T08:48:43-05:00",
             "subject": "[libc++][test] Drop unnecessary typename and template for layout_meow::mapping (#74571)"
+        },
+        {
+            "hash": "bcb917eba70b454a3d11010c45889c364fd4d9ec",
+            "author_name": "Stephan T. Lavavej",
+            "commit_date": "2023-12-06T08:52:50-05:00",
+            "subject": "[libc++][test] Fix more MSVC warnings (#74256)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -89111,6 +89117,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-12-05T14:15:25+01:00",
             "subject": "scev use disjoint flag"
+        }
+    ],
+    "nikic\/perf\/dom-tree": [
+        {
+            "hash": "d77067d08a3f56dc2d0e6c95bd2852c943df743a",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-06T14:17:18+01:00",
+            "subject": "[ValueTracking] Add dominating condition support in computeKnownBits() (#73662)"
+        },
+        {
+            "hash": "5fb8df5af7a872b79cf9ecc563519746a7e40f42",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-06T14:52:20+01:00",
+            "subject": "avoid hash lookup"
         }
     ]
 }
