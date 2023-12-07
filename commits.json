@@ -87849,6 +87849,12 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-12-07T14:10:59+01:00",
             "subject": "[ValueTracking] Add missing check when computing known bits from pointer icmp"
+        },
+        {
+            "hash": "3293c088c25db5be6042d20bd95c80a0863a88d0",
+            "author_name": "Aaron Ballman",
+            "commit_date": "2023-12-07T08:26:33-05:00",
+            "subject": "Remove dead code; NFC"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -89521,15 +89527,15 @@
     ],
     "RKSimon\/perf\/broadcast-avx512": [
         {
-            "hash": "cd31cf5989aaf6a187aaf3af4f94207c55a70d0f",
-            "author_name": "Nikita Popov",
-            "commit_date": "2023-12-01T11:45:09+01:00",
-            "subject": "[InstSimplify] Fix or disjoint miscompile with op replacement"
+            "hash": "9ff7d0ebeb54347f9006405a6d08ed2b713bc411",
+            "author_name": "wanglei",
+            "commit_date": "2023-12-07T20:11:43+08:00",
+            "subject": "[LoongArch] Add codegen support for icmp\/fcmp with lsx\/lasx fetaures (#74700)"
         },
         {
-            "hash": "48bec963a5387ddd05bee7663cdc724cdf3e4bf9",
+            "hash": "fc410b2bc877ecda458e6b709a6acb9f112fbd82",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-01T11:59:49+00:00",
+            "commit_date": "2023-12-07T12:35:06+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 (VLX) targets"
         }
     ],
