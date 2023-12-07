@@ -87909,6 +87909,24 @@
             "author_name": "W-50243",
             "commit_date": "2023-12-07T09:18:00-05:00",
             "subject": "[libc++] Fix regex_traits::isctype on big endian platforms (#73200)"
+        },
+        {
+            "hash": "9406d2a345e827146b7bf369542d8778982bfc6c",
+            "author_name": "Timm B\u00e4der",
+            "commit_date": "2023-12-07T15:20:22+01:00",
+            "subject": "[clang][Interp][NFC] Remove unused include"
+        },
+        {
+            "hash": "52fe16a47e2e7a09e10830fee489eeeeef7fd130",
+            "author_name": "Joseph Huber",
+            "commit_date": "2023-12-07T08:27:38-06:00",
+            "subject": "[Libomptarget][Obvious] Fix incorrect if-else in CMake for destination"
+        },
+        {
+            "hash": "ed61123ff0d83ab5e70cac0b11c276e5372d171d",
+            "author_name": "Dominik W\u00f3jt",
+            "commit_date": "2023-12-07T09:29:00-05:00",
+            "subject": "[libc++] tests with picolibc: handle stdin (#74712)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -89581,15 +89599,15 @@
     ],
     "RKSimon\/perf\/broadcast-avx512": [
         {
-            "hash": "9ff7d0ebeb54347f9006405a6d08ed2b713bc411",
-            "author_name": "wanglei",
-            "commit_date": "2023-12-07T20:11:43+08:00",
-            "subject": "[LoongArch] Add codegen support for icmp\/fcmp with lsx\/lasx fetaures (#74700)"
+            "hash": "5384fb3d407c8bf4f34117baf60ddcb273a4b6d2",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-12-07T14:07:10+00:00",
+            "subject": "[X86] gep-expanded-vector.ll - regenerate checks"
         },
         {
-            "hash": "fc410b2bc877ecda458e6b709a6acb9f112fbd82",
+            "hash": "c5db884de7ecb73fd93f045e7bebf45a172b3620",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-07T12:35:06+00:00",
+            "commit_date": "2023-12-07T14:22:02+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 (VLX) targets"
         }
     ],
@@ -89915,15 +89933,15 @@
     ],
     "RKSimon\/perf\/extract-fpimm": [
         {
-            "hash": "4a4804bf70930751ebce2968b13297561414ebf6",
-            "author_name": "Duo Wang",
-            "commit_date": "2023-12-07T11:44:24+00:00",
-            "subject": "[CMake][Windows] Turn off lld string tail merging when ASAN is turned on (#74207)"
+            "hash": "9406d2a345e827146b7bf369542d8778982bfc6c",
+            "author_name": "Timm B\u00e4der",
+            "commit_date": "2023-12-07T15:20:22+01:00",
+            "subject": "[clang][Interp][NFC] Remove unused include"
         },
         {
-            "hash": "7599f06f525cf44e299a106917a3939bd4279280",
+            "hash": "3ae3edc85b54296b55b8baf824a2667257f39a14",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-07T11:55:46+00:00",
+            "commit_date": "2023-12-07T14:24:27+00:00",
             "subject": "[DAG] visitEXTRACT_VECTOR_ELT - constant fold legal fp imm values"
         }
     ],
