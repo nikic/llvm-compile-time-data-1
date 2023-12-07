@@ -87945,6 +87945,18 @@
             "author_name": "Simon Pilgrim",
             "commit_date": "2023-12-07T14:56:12+00:00",
             "subject": "[DAG] visitEXTRACT_VECTOR_ELT - constant fold legal fp imm values (#74304)"
+        },
+        {
+            "hash": "cbe27c45cdb33e73ee7b29c46e2a64359ae5cc8e",
+            "author_name": "Zack Johnson",
+            "commit_date": "2023-12-07T10:17:58-05:00",
+            "subject": "[ASan][Windows] Interception fix for 'mov al, byte ptr []' sequences (#72531)"
+        },
+        {
+            "hash": "9026dff382c32e8924dc7ea4ad89dc5887608289",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-07T16:23:20+01:00",
+            "subject": "[InstCombine] Add extra tests for known bits from dominating conds (NFC)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -89965,15 +89977,15 @@
     ],
     "RKSimon\/perf\/splat-constant": [
         {
-            "hash": "4a4804bf70930751ebce2968b13297561414ebf6",
-            "author_name": "Duo Wang",
-            "commit_date": "2023-12-07T11:44:24+00:00",
-            "subject": "[CMake][Windows] Turn off lld string tail merging when ASAN is turned on (#74207)"
+            "hash": "f1200ca7ac88c6ff9aa4fe3b560cf326dc3d4e25",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-12-07T14:56:12+00:00",
+            "subject": "[DAG] visitEXTRACT_VECTOR_ELT - constant fold legal fp imm values (#74304)"
         },
         {
-            "hash": "0b9a6031d997d507ba10ae36e2fefaea521c52ce",
+            "hash": "ec635520c384de8f1012b4420ac28f082d93cc37",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-07T11:48:36+00:00",
+            "commit_date": "2023-12-07T15:19:28+00:00",
             "subject": "[DAG] isSplatValue - node is a splat if all demanded elts are the same constant value"
         }
     ],
