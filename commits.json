@@ -88527,6 +88527,24 @@
             "author_name": "Simon Pilgrim",
             "commit_date": "2023-12-08T10:28:56+00:00",
             "subject": "[X86] LowerBUILD_VECTOR - don't use insert_element(constant, elt, idx) if we have a freeze(undef) element"
+        },
+        {
+            "hash": "ea85345eb69f751fdfd793016c854605f14f9dfc",
+            "author_name": "Wang Pengcheng",
+            "commit_date": "2023-12-08T18:34:31+08:00",
+            "subject": "[RISCV][NFC] Use raw_svector_ostream to construct key of SubtargetMap (#72964)"
+        },
+        {
+            "hash": "e33302fa1279d0a15aac18eca3f0311669bfe328",
+            "author_name": "Mikhail Goncharov",
+            "commit_date": "2023-12-08T11:39:10+01:00",
+            "subject": "Revert \"[lldb][test] TestLocationListLookup.py: skip expr check on unsupported platforms (#74818)\""
+        },
+        {
+            "hash": "b43ab182040f7c3b43e37ade7af600af1c9b3dfd",
+            "author_name": "Mikhail Goncharov",
+            "commit_date": "2023-12-08T11:43:14+01:00",
+            "subject": "Reapply \"[lldb][test] TestLocationListLookup.py: skip expr check on unsupported platforms (#74818)\""
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -90547,15 +90565,15 @@
     ],
     "RKSimon\/perf\/splat-constant": [
         {
-            "hash": "f1200ca7ac88c6ff9aa4fe3b560cf326dc3d4e25",
+            "hash": "8859a4f630cb90d28f5dab993aa4aef0e915cd74",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-07T14:56:12+00:00",
-            "subject": "[DAG] visitEXTRACT_VECTOR_ELT - constant fold legal fp imm values (#74304)"
+            "commit_date": "2023-12-08T10:28:56+00:00",
+            "subject": "[X86] LowerBUILD_VECTOR - don't use insert_element(constant, elt, idx) if we have a freeze(undef) element"
         },
         {
-            "hash": "ec635520c384de8f1012b4420ac28f082d93cc37",
+            "hash": "642834a2d3601358bb3a6eff8cf761240f6b642c",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-07T15:19:28+00:00",
+            "commit_date": "2023-12-08T10:29:41+00:00",
             "subject": "[DAG] isSplatValue - node is a splat if all demanded elts are the same constant value"
         }
     ],
