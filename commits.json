@@ -89883,6 +89883,12 @@
             "author_name": "kkwli",
             "commit_date": "2023-12-11T12:32:13-05:00",
             "subject": "[flang] update ppc-vec-store-elem-order.f90 after #74709 (NFC) (#75064)"
+        },
+        {
+            "hash": "f92d970c8cc27747478abb7df66bb8b6701cea49",
+            "author_name": "Youngsuk Kim",
+            "commit_date": "2023-12-11T11:56:49-06:00",
+            "subject": "[llvm][SanitizerCoverage] Remove no-op 'ptr addrspace(0)' to 'ptr addrspace(0)' pointercast (NFC)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -90515,27 +90521,39 @@
     ],
     "fhahn\/perf\/ce-uge-vars": [
         {
-            "hash": "dd32d26a37e22a3bce15ed8c21145b17ff5e1401",
-            "author_name": "Pierre van Houtryve",
-            "commit_date": "2023-12-11T11:38:27+01:00",
-            "subject": "[AMDGPU] Form V_MAD_U64_U32 from mul24 (#72393)"
+            "hash": "97efd8aa435c07aac5676d30e0311e9c05fb12c7",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-11T14:27:00+01:00",
+            "subject": "[InstCombine] Preserve inalloca tag when transforming alloca"
         },
         {
-            "hash": "d33fb2500a3205700b4e07fc4f826e5ffb180f6c",
+            "hash": "0f6597d5682a719e05f6855202555b578d21b989",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-12-11T10:57:34+00:00",
+            "commit_date": "2023-12-11T14:25:57+00:00",
             "subject": "[ConstraintElim] Add (UGE, var, 0) to unsigned system for new vars."
         },
         {
-            "hash": "2d7a0ff552caa8510ff695ad1fd12cc464ed2308",
+            "hash": "b6cc4e986264a01a1e3b10e96ca5791ec856afda",
+            "author_name": "Florian Hahn",
+            "commit_date": "2023-12-11T17:42:49+00:00",
+            "subject": "[ConstraintElim] Check if second op implies first for And."
+        },
+        {
+            "hash": "9d74b17cc44c8d954b97529ea7754ee3c6594ba8",
+            "author_name": "Florian Hahn",
+            "commit_date": "2023-12-11T17:55:40+00:00",
+            "subject": "[ConstraintElim] Support implied by OR."
+        },
+        {
+            "hash": "416324b2bde5d2f135da19a98a83954774f9712f",
             "author_name": "Alexander Shaposhnikov",
-            "commit_date": "2023-12-11T10:57:35+00:00",
+            "commit_date": "2023-12-11T17:55:44+00:00",
             "subject": "[ConstraintElim] Add facts implied by llvm.abs"
         },
         {
-            "hash": "d9ab49bed319d15e546490287282feb4dd374f35",
+            "hash": "65c352c1eda25fcbbebdc04c4651eb995f71cd70",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-12-11T10:57:35+00:00",
+            "commit_date": "2023-12-11T17:55:45+00:00",
             "subject": "[ConstraintElim] Support info from AND."
         }
     ],
@@ -92055,6 +92073,20 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-12-11T11:58:02+01:00",
             "subject": "reduce 2"
+        }
+    ],
+    "OCHyams\/perf\/ddd-find-dbg-interface": [
+        {
+            "hash": "07056c227456a63893cc809fadf62537863cb92d",
+            "author_name": "Jonas Paulsson",
+            "commit_date": "2023-12-11T17:28:12+01:00",
+            "subject": "[SystemZ]  Use LCGR\/AGHI for i64 XOR with -1 (#74882)"
+        },
+        {
+            "hash": "991fd0959c85723f6719a3a82fa358e1bff087d0",
+            "author_name": "OCHyams",
+            "commit_date": "2023-12-11T17:50:41+00:00",
+            "subject": "[NFC] Change findDbg<Ty> interface"
         }
     ]
 }
