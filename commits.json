@@ -89661,6 +89661,24 @@
             "author_name": "Nikita Popov",
             "commit_date": "2023-12-11T12:48:34+01:00",
             "subject": "[Bitcode] Check type of alloca size argument"
+        },
+        {
+            "hash": "d1deeae0946aad2de36153f3462575813ace88fd",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-12-11T11:52:53+00:00",
+            "subject": "[X86] Rename VBROADCASTF128\/VBROADCASTI128 to VBROADCASTF128rm\/VBROADCASTI128rm (#75040)"
+        },
+        {
+            "hash": "b68afd7b51769796cf920d7926bad3067c7092a1",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-11T12:54:59+01:00",
+            "subject": "[Bitcode] Check validity of fcmp\/icmp predicate"
+        },
+        {
+            "hash": "2460bf2facd1c0208ecda68c427a256710246dbb",
+            "author_name": "Yingchi Long",
+            "commit_date": "2023-12-11T19:58:34+08:00",
+            "subject": "[BPF][GlobalISel] add initial gisel support for BPF (#74999)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -91333,15 +91351,15 @@
     ],
     "RKSimon\/perf\/broadcast-avx512": [
         {
-            "hash": "e38c29c2b7769c255e4976742b6ed51f7f6f576a",
-            "author_name": "Jay Foad",
-            "commit_date": "2023-12-08T13:06:03+00:00",
-            "subject": "[AMDGPU] Add GFX11 test coverage to integer-mad-patterns.ll"
+            "hash": "21be9114ab78348cf0cdb59df90192a5a8d2b0e7",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-12-11T11:10:03+00:00",
+            "subject": "[X86] evex-to-vex-compress.mir - strip trailing whitespace"
         },
         {
-            "hash": "3af081040b02148c4660954ff42d042f653ad6b8",
+            "hash": "850d986c42300b2b9cf0d280330c0cc5f1465e2a",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-08T13:21:19+00:00",
+            "commit_date": "2023-12-11T11:29:27+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 targets"
         }
     ],
