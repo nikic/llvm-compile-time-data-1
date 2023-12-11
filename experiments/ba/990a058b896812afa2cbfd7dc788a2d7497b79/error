@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+      |                                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note: candidate: ‘llvm::MCEncodedFragmentWithFixups<ContentsSize, FixupsSize>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool, llvm::MCSection*) [with unsigned int ContentsSize = 8; unsigned int FixupsSize = 0]’
+  212 |   MCEncodedFragmentWithFixups(MCFragment::FragmentType FType,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note:   candidate expects 3 arguments, 0 provided
+[778/2660] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicBlockSections.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbol.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineInstr.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/BasicBlockSectionsProfileReader.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicBlockSections.cpp:74:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCLEBFragment::MCLEBFragment(const llvm::MCExpr&, bool, llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:440:9: error: type ‘llvm::MCEncodedFragmentWithFixups<10, 1>’ is not a direct base of ‘llvm::MCLEBFragment’
+  440 |       : MCEncodedFragmentWithFixups<10, 1>(FT_LEB, false, Sec),
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:441:41: error: no matching function for call to ‘llvm::MCEncodedFragmentWithFixups<8, 0>::MCEncodedFragmentWithFixups()’
+  441 |         IsSigned(IsSigned), Value(&Value) {
+      |                                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note: candidate: ‘llvm::MCEncodedFragmentWithFixups<ContentsSize, FixupsSize>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool, llvm::MCSection*) [with unsigned int ContentsSize = 8; unsigned int FixupsSize = 0]’
+  212 |   MCEncodedFragmentWithFixups(MCFragment::FragmentType FType,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note:   candidate expects 3 arguments, 0 provided
+[779/2660] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CalcSpillWeights.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CalcSpillWeights.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CalcSpillWeights.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CalcSpillWeights.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CalcSpillWeights.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CalcSpillWeights.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbol.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineInstr.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/SlotIndexes.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/CalcSpillWeights.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CalcSpillWeights.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCLEBFragment::MCLEBFragment(const llvm::MCExpr&, bool, llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:440:9: error: type ‘llvm::MCEncodedFragmentWithFixups<10, 1>’ is not a direct base of ‘llvm::MCLEBFragment’
+  440 |       : MCEncodedFragmentWithFixups<10, 1>(FT_LEB, false, Sec),
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:441:41: error: no matching function for call to ‘llvm::MCEncodedFragmentWithFixups<8, 0>::MCEncodedFragmentWithFixups()’
+  441 |         IsSigned(IsSigned), Value(&Value) {
+      |                                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note: candidate: ‘llvm::MCEncodedFragmentWithFixups<ContentsSize, FixupsSize>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool, llvm::MCSection*) [with unsigned int ContentsSize = 8; unsigned int FixupsSize = 0]’
+  212 |   MCEncodedFragmentWithFixups(MCFragment::FragmentType FType,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note:   candidate expects 3 arguments, 0 provided
+[780/2660] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AtomicExpandPass.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbol.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineInstr.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineRegisterInfo.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:33,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AtomicExpandPass.cpp:24:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCLEBFragment::MCLEBFragment(const llvm::MCExpr&, bool, llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:440:9: error: type ‘llvm::MCEncodedFragmentWithFixups<10, 1>’ is not a direct base of ‘llvm::MCLEBFragment’
+  440 |       : MCEncodedFragmentWithFixups<10, 1>(FT_LEB, false, Sec),
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:441:41: error: no matching function for call to ‘llvm::MCEncodedFragmentWithFixups<8, 0>::MCEncodedFragmentWithFixups()’
+  441 |         IsSigned(IsSigned), Value(&Value) {
+      |                                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note: candidate: ‘llvm::MCEncodedFragmentWithFixups<ContentsSize, FixupsSize>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool, llvm::MCSection*) [with unsigned int ContentsSize = 8; unsigned int FixupsSize = 0]’
+  212 |   MCEncodedFragmentWithFixups(MCFragment::FragmentType FType,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note:   candidate expects 3 arguments, 0 provided
+[781/2660] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchFolding.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbol.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineInstr.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LivePhysRegs.h:33,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchFolding.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchFolding.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCLEBFragment::MCLEBFragment(const llvm::MCExpr&, bool, llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:440:9: error: type ‘llvm::MCEncodedFragmentWithFixups<10, 1>’ is not a direct base of ‘llvm::MCLEBFragment’
+  440 |       : MCEncodedFragmentWithFixups<10, 1>(FT_LEB, false, Sec),
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:441:41: error: no matching function for call to ‘llvm::MCEncodedFragmentWithFixups<8, 0>::MCEncodedFragmentWithFixups()’
+  441 |         IsSigned(IsSigned), Value(&Value) {
+      |                                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note: candidate: ‘llvm::MCEncodedFragmentWithFixups<ContentsSize, FixupsSize>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool, llvm::MCSection*) [with unsigned int ContentsSize = 8; unsigned int FixupsSize = 0]’
+  212 |   MCEncodedFragmentWithFixups(MCFragment::FragmentType FType,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note:   candidate expects 3 arguments, 0 provided
+[782/2660] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/Analysis.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbol.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineInstr.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/Analysis.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCLEBFragment::MCLEBFragment(const llvm::MCExpr&, bool, llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:440:9: error: type ‘llvm::MCEncodedFragmentWithFixups<10, 1>’ is not a direct base of ‘llvm::MCLEBFragment’
+  440 |       : MCEncodedFragmentWithFixups<10, 1>(FT_LEB, false, Sec),
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:441:41: error: no matching function for call to ‘llvm::MCEncodedFragmentWithFixups<8, 0>::MCEncodedFragmentWithFixups()’
+  441 |         IsSigned(IsSigned), Value(&Value) {
+      |                                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note: candidate: ‘llvm::MCEncodedFragmentWithFixups<ContentsSize, FixupsSize>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool, llvm::MCSection*) [with unsigned int ContentsSize = 8; unsigned int FixupsSize = 0]’
+  212 |   MCEncodedFragmentWithFixups(MCFragment::FragmentType FType,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note:   candidate expects 3 arguments, 0 provided
+[783/2660] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicTargetTransformInfo.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbol.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineInstr.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineRegisterInfo.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:33,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/BasicTTIImpl.h:30,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicTargetTransformInfo.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCLEBFragment::MCLEBFragment(const llvm::MCExpr&, bool, llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:440:9: error: type ‘llvm::MCEncodedFragmentWithFixups<10, 1>’ is not a direct base of ‘llvm::MCLEBFragment’
+  440 |       : MCEncodedFragmentWithFixups<10, 1>(FT_LEB, false, Sec),
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:441:41: error: no matching function for call to ‘llvm::MCEncodedFragmentWithFixups<8, 0>::MCEncodedFragmentWithFixups()’
+  441 |         IsSigned(IsSigned), Value(&Value) {
+      |                                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note: candidate: ‘llvm::MCEncodedFragmentWithFixups<ContentsSize, FixupsSize>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool, llvm::MCSection*) [with unsigned int ContentsSize = 8; unsigned int FixupsSize = 0]’
+  212 |   MCEncodedFragmentWithFixups(MCFragment::FragmentType FType,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:212:3: note:   candidate expects 3 arguments, 0 provided
+[784/2660] Building X86GenSubtargetInfo.inc...
+[785/2660] Building X86GenInstrInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+76.78user 7.77system 0:06.38elapsed 1325%CPU (0avgtext+0avgdata 777196maxresident)k
+0inputs+458344outputs (8345major+4601457minor)pagefaults 0swaps
