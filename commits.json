@@ -90651,6 +90651,18 @@
             "author_name": "Simon Pilgrim",
             "commit_date": "2023-12-12T10:59:38+00:00",
             "subject": "[X86] canonicalizeShuffleWithBinOps - generalize to handle some unary ops"
+        },
+        {
+            "hash": "4b7f14573e32d0abd092f097d18e333267a6c2ea",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-12T12:06:19+01:00",
+            "subject": "[CVP] Add test for invalid use of undef range in urem transform (NFC)"
+        },
+        {
+            "hash": "967e84eee3076bc6f306c70d07e3a922e3c1c3a6",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-12T12:06:19+01:00",
+            "subject": "[CVP] Don't use undef range for LHS of div\/rem transforms"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -92335,15 +92347,15 @@
     ],
     "RKSimon\/perf\/broadcast-avx512": [
         {
-            "hash": "1d56138d741ebec81ac7a6dada10f5d6b891a768",
+            "hash": "3be65325f9e37db2d6eeffe96f9709d710a9a49f",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-12T10:32:04+00:00",
-            "subject": "[X86] X86FixupVectorConstants - create f32\/f64 broadcast constants if the source constant data was f32\/f64"
+            "commit_date": "2023-12-12T10:59:38+00:00",
+            "subject": "[X86] canonicalizeShuffleWithBinOps - generalize to handle some unary ops"
         },
         {
-            "hash": "3c7fe8d3b3e3c094393fec8fa4964ccef2045412",
+            "hash": "9b36b8f9b02cc88bcfbb9637addc2a09995d6b12",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-12T10:38:51+00:00",
+            "commit_date": "2023-12-12T11:09:26+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 targets"
         }
     ],
