@@ -90609,6 +90609,18 @@
             "author_name": "Mariusz Sikora",
             "commit_date": "2023-12-12T11:38:24+01:00",
             "subject": "[AMDGPU] Update VOP instructions for GFX12 (#74853)"
+        },
+        {
+            "hash": "696cc20d4e748f2619f7398dcfe8f4ed8d0863ab",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-12T11:43:52+01:00",
+            "subject": "[LVI] Make UndefAllowed argument of getConstantRange() required"
+        },
+        {
+            "hash": "2bab0e01676ce7c9609a60bf86cb07c17f6080f0",
+            "author_name": "Guillaume Chatelet",
+            "commit_date": "2023-12-12T11:44:27+01:00",
+            "subject": "[libc][NFC] Swap ifdef logic for UInt128 (#75160)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -92293,15 +92305,15 @@
     ],
     "RKSimon\/perf\/broadcast-avx512": [
         {
-            "hash": "21be9114ab78348cf0cdb59df90192a5a8d2b0e7",
+            "hash": "1d56138d741ebec81ac7a6dada10f5d6b891a768",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-11T11:10:03+00:00",
-            "subject": "[X86] evex-to-vex-compress.mir - strip trailing whitespace"
+            "commit_date": "2023-12-12T10:32:04+00:00",
+            "subject": "[X86] X86FixupVectorConstants - create f32\/f64 broadcast constants if the source constant data was f32\/f64"
         },
         {
-            "hash": "850d986c42300b2b9cf0d280330c0cc5f1465e2a",
+            "hash": "3c7fe8d3b3e3c094393fec8fa4964ccef2045412",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-11T11:29:27+00:00",
+            "commit_date": "2023-12-12T10:38:51+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 targets"
         }
     ],
