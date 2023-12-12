@@ -90885,6 +90885,36 @@
             "author_name": "Orlando Cazalet-Hyams",
             "commit_date": "2023-12-12T14:53:27+00:00",
             "subject": "[RemoveDIs] Fix removeRedundantDdbgInstrs utils for dbg.declares (#74102)"
+        },
+        {
+            "hash": "f22a65c158b4195120e250bf5decaed3ea5ac3bd",
+            "author_name": "Guillaume Chatelet",
+            "commit_date": "2023-12-12T15:56:06+01:00",
+            "subject": "[libc][NFC] Reuse `FloatProperties` constant instead of creating new ones (#75187)"
+        },
+        {
+            "hash": "c4e764ea24eb02b6ec34038061cee8ff94c0f34c",
+            "author_name": "Orlando Cazalet-Hyams",
+            "commit_date": "2023-12-12T14:57:51+00:00",
+            "subject": "[RemoveDIs] Update ConvertDebugDeclareToDebugValue after #72276 (#73508)"
+        },
+        {
+            "hash": "d9671bba3e3a4f60302cbc110beede1c864e645b",
+            "author_name": "Timm Baeder",
+            "commit_date": "2023-12-12T15:59:39+01:00",
+            "subject": "[clang][Interp] Implement __builtin_ffs (#72988)"
+        },
+        {
+            "hash": "e8e9a335839350d444d1b90fa6727b3947708ab6",
+            "author_name": "Alexander Yermolovich",
+            "commit_date": "2023-12-12T07:01:20-08:00",
+            "subject": "[LLVM][DWARF] Add compilation directory and dwo name to TU in dwo section (#74909)"
+        },
+        {
+            "hash": "220e095a2c26b26a8d7a74b90461b650e020d2f2",
+            "author_name": "Jay Foad",
+            "commit_date": "2023-12-12T15:01:57+00:00",
+            "subject": "[AMDGPU] Remove unused function splitScalar64BitAddSub"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -91523,39 +91553,39 @@
             "subject": "[RemoveDIs] Handle DPValues in LowerDbgDeclare (#73504)"
         },
         {
-            "hash": "dd1d491a75992c61e6b5ad04a07b4616aa4c0ea2",
+            "hash": "081823a2762bf02635845b7f1e2fa1b5babfe3d4",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-12-12T14:30:46+00:00",
+            "commit_date": "2023-12-12T14:45:27+00:00",
             "subject": "[ConstraintElim] Add extra tests."
         },
         {
-            "hash": "646715e0ae943a63ea2b11a22f508c24df7812b1",
+            "hash": "663cc91597399aea65746bc019e8e7a5768a97cb",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-12-12T14:30:59+00:00",
+            "commit_date": "2023-12-12T14:54:37+00:00",
             "subject": "[ConstraintElim] Check if second op implies first for And."
         },
         {
-            "hash": "5aaaaccdbac8ea7a4222bf300da77450b5786ca2",
+            "hash": "0f09376ae865356b20c579974a0d88a1d5b1ce36",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-12-12T14:30:59+00:00",
+            "commit_date": "2023-12-12T14:55:25+00:00",
             "subject": "[ConstraintElim] Support implied by OR."
         },
         {
-            "hash": "de9c8bb5ab29710ed965997bd66ef4df17ee298c",
+            "hash": "c28c9d78fa0aab5169f1bb296807318403e1f77a",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-12-12T14:30:59+00:00",
+            "commit_date": "2023-12-12T14:55:29+00:00",
             "subject": "[ConstraintElim] Add (UGE, var, 0) to unsigned system for new vars."
         },
         {
-            "hash": "9e6b36a55b708e968e932e5d5adc0bf6e9b2fce0",
+            "hash": "3dae2a3a5ec9a646202b14806ae0d735a152c22e",
             "author_name": "Alexander Shaposhnikov",
-            "commit_date": "2023-12-12T14:30:59+00:00",
+            "commit_date": "2023-12-12T14:55:29+00:00",
             "subject": "[ConstraintElim] Add facts implied by llvm.abs"
         },
         {
-            "hash": "74edca73df7e987eba9147e8064d24d810a919a1",
+            "hash": "61c952dfb93615dbcf31f102336558b2aa7a1099",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-12-12T14:31:00+00:00",
+            "commit_date": "2023-12-12T14:55:29+00:00",
             "subject": "[ConstraintElim] Support info from AND."
         }
     ],
