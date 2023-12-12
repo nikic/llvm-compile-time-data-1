@@ -90819,6 +90819,24 @@
             "author_name": "Orlando Cazalet-Hyams",
             "commit_date": "2023-12-12T14:28:05+00:00",
             "subject": "[RemoveDIs] Handle DPValues in LowerDbgDeclare (#73504)"
+        },
+        {
+            "hash": "1f5ee8078958338e1ad320704b8b658c399c2236",
+            "author_name": "Nikita Popov",
+            "commit_date": "2023-12-12T15:32:26+01:00",
+            "subject": "[LVI] Don't return optional from getEdgeValueLocal() (NFC)"
+        },
+        {
+            "hash": "10582cbf2e967f5886ec674ca79dc65c6f0f03f7",
+            "author_name": "Louis Dionne",
+            "commit_date": "2023-12-12T09:32:35-05:00",
+            "subject": "[libc++] Fix incorrectly-placed attribute"
+        },
+        {
+            "hash": "cd138fddf1b52a43108376371ad1c38585aaa4e2",
+            "author_name": "Piotr Sobczak",
+            "commit_date": "2023-12-12T15:38:06+01:00",
+            "subject": "[AMDGPU] Turn off clang-format in moveToVALU (#75188)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -91451,39 +91469,45 @@
     ],
     "fhahn\/perf\/ce-uge-vars": [
         {
-            "hash": "97efd8aa435c07aac5676d30e0311e9c05fb12c7",
-            "author_name": "Nikita Popov",
-            "commit_date": "2023-12-11T14:27:00+01:00",
-            "subject": "[InstCombine] Preserve inalloca tag when transforming alloca"
+            "hash": "cb8690ff6fefecb15d73452899834d19b526e197",
+            "author_name": "Orlando Cazalet-Hyams",
+            "commit_date": "2023-12-12T14:28:05+00:00",
+            "subject": "[RemoveDIs] Handle DPValues in LowerDbgDeclare (#73504)"
         },
         {
-            "hash": "d814b19f4a60cbacffdf4bec9c79cfe6aa9c5ee6",
+            "hash": "dd1d491a75992c61e6b5ad04a07b4616aa4c0ea2",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-12-11T19:18:24+00:00",
+            "commit_date": "2023-12-12T14:30:46+00:00",
+            "subject": "[ConstraintElim] Add extra tests."
+        },
+        {
+            "hash": "646715e0ae943a63ea2b11a22f508c24df7812b1",
+            "author_name": "Florian Hahn",
+            "commit_date": "2023-12-12T14:30:59+00:00",
             "subject": "[ConstraintElim] Check if second op implies first for And."
         },
         {
-            "hash": "996d7163b532833efd3f10785d6b8589e86fed11",
+            "hash": "5aaaaccdbac8ea7a4222bf300da77450b5786ca2",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-12-11T19:18:29+00:00",
+            "commit_date": "2023-12-12T14:30:59+00:00",
             "subject": "[ConstraintElim] Support implied by OR."
         },
         {
-            "hash": "55f3c429f388bdf9f268164e91467df87a99dac5",
+            "hash": "de9c8bb5ab29710ed965997bd66ef4df17ee298c",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-12-11T19:18:29+00:00",
+            "commit_date": "2023-12-12T14:30:59+00:00",
             "subject": "[ConstraintElim] Add (UGE, var, 0) to unsigned system for new vars."
         },
         {
-            "hash": "c3a25ae611e5994abe5b9758048466d3a12cf739",
+            "hash": "9e6b36a55b708e968e932e5d5adc0bf6e9b2fce0",
             "author_name": "Alexander Shaposhnikov",
-            "commit_date": "2023-12-11T19:18:30+00:00",
+            "commit_date": "2023-12-12T14:30:59+00:00",
             "subject": "[ConstraintElim] Add facts implied by llvm.abs"
         },
         {
-            "hash": "4607d5203523fbedfe3f05013537f40d0e7fdef6",
+            "hash": "74edca73df7e987eba9147e8064d24d810a919a1",
             "author_name": "Florian Hahn",
-            "commit_date": "2023-12-11T19:18:30+00:00",
+            "commit_date": "2023-12-12T14:31:00+00:00",
             "subject": "[ConstraintElim] Support info from AND."
         }
     ],
