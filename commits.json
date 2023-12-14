@@ -92667,6 +92667,18 @@
             "author_name": "LLVM GN Syncbot",
             "commit_date": "2023-12-14T15:39:35+00:00",
             "subject": "[gn build] Port fd6e19cdc399"
+        },
+        {
+            "hash": "732bccb8c1b4ea724919db6ff02b1188e20850e7",
+            "author_name": "Kazu Hirata",
+            "commit_date": "2023-12-14T07:53:20-08:00",
+            "subject": "Use StringRef::{starts,ends}_with (NFC)"
+        },
+        {
+            "hash": "0d02ecc6bddc5e8c8bacbae3ab72a10467e177b4",
+            "author_name": "David Spickett",
+            "commit_date": "2023-12-14T16:01:20+00:00",
+            "subject": "[llvm][llvm-exegesis] Fix unused private field warning on Windows"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -94357,15 +94369,15 @@
     ],
     "RKSimon\/perf\/broadcast-avx512": [
         {
-            "hash": "2141a51be162916856823d0bf41f19373e5529a8",
+            "hash": "3c423722cfd75bf293e42001145fe9ebad53c522",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-14T12:10:33+00:00",
-            "subject": "[X86] broadcast-elm-cross-splat-vec.ll - drop constant pool check"
+            "commit_date": "2023-12-14T15:13:39+00:00",
+            "subject": "[X86] combineLoad - improve constant pool matches by ignoring undef elements"
         },
         {
-            "hash": "7b209cd2a35a3371423b83ca12081fb6c8791274",
+            "hash": "59f0be8a5838d1851af67c224e3ae14c48fa64e0",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-14T12:11:21+00:00",
+            "commit_date": "2023-12-14T15:44:44+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 targets"
         }
     ],
