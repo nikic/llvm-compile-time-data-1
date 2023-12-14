@@ -92523,6 +92523,18 @@
             "author_name": "Timm B\u00e4der",
             "commit_date": "2023-12-14T13:17:40+01:00",
             "subject": "[clang][Interp] ComplexFloatingToBoolean casts"
+        },
+        {
+            "hash": "b7f50e13d81d69fd631e0a1f7f07fe942af4e060",
+            "author_name": "Yingwei Zheng",
+            "commit_date": "2023-12-14T21:02:10+08:00",
+            "subject": "[InstCombine] Improve `foldICmpWithDominatingICmp` with DomConditionCache (#75370)"
+        },
+        {
+            "hash": "26616c62d1e4e379fd768a66292d92a7d61963f2",
+            "author_name": "Thorsten Sch\u00fctt",
+            "commit_date": "2023-12-14T14:04:57+01:00",
+            "subject": "[GlobalIsel][NFC] Harden MachineIRBuilder (#75465)"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -94213,15 +94225,15 @@
     ],
     "RKSimon\/perf\/broadcast-avx512": [
         {
-            "hash": "3be65325f9e37db2d6eeffe96f9709d710a9a49f",
+            "hash": "2141a51be162916856823d0bf41f19373e5529a8",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-12T10:59:38+00:00",
-            "subject": "[X86] canonicalizeShuffleWithBinOps - generalize to handle some unary ops"
+            "commit_date": "2023-12-14T12:10:33+00:00",
+            "subject": "[X86] broadcast-elm-cross-splat-vec.ll - drop constant pool check"
         },
         {
-            "hash": "9b36b8f9b02cc88bcfbb9637addc2a09995d6b12",
+            "hash": "7b209cd2a35a3371423b83ca12081fb6c8791274",
             "author_name": "Simon Pilgrim",
-            "commit_date": "2023-12-12T11:09:26+00:00",
+            "commit_date": "2023-12-14T12:11:21+00:00",
             "subject": "[X86] Disable lowering constant build vectors to broadcasts on AVX512 targets"
         }
     ],
