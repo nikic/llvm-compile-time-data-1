@@ -92643,6 +92643,18 @@
             "author_name": "Yingwei Zheng",
             "commit_date": "2023-12-14T23:06:38+08:00",
             "subject": "[InstCombine] Explicitly fold `~(~X >>u Y)` into `X >>s Y` (#75473)"
+        },
+        {
+            "hash": "39093102cade6ec09d3f9f625dd942eeb5ccc737",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-12-14T15:13:38+00:00",
+            "subject": "[DAG] visitTRUNCATE - format (truncate (load x)) fold code."
+        },
+        {
+            "hash": "3c423722cfd75bf293e42001145fe9ebad53c522",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-12-14T15:13:39+00:00",
+            "subject": "[X86] combineLoad - improve constant pool matches by ignoring undef elements"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
