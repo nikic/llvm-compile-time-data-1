@@ -92457,6 +92457,12 @@
             "author_name": "Timm B\u00e4der",
             "commit_date": "2023-12-14T11:57:38+01:00",
             "subject": "[clang][Interp] Start supporting complex types"
+        },
+        {
+            "hash": "a0c7a29655b818e1ec101cf2bcd6e35841bb872d",
+            "author_name": "Simon Pilgrim",
+            "commit_date": "2023-12-14T11:02:38+00:00",
+            "subject": "[GlobalISel] IRTranslator::translateGetElementPtr - don't assume a gep constant offset is representable as i64"
         }
     ],
     "nikic\/perf\/add-branch-likelihood": [
@@ -94717,6 +94723,20 @@
             "author_name": "Yingwei Zheng",
             "commit_date": "2023-12-14T18:02:43+08:00",
             "subject": "[InstCombine] Improve `foldICmpWithDominatingICmp` with DomConditionCache"
+        }
+    ],
+    "nikic\/perf\/gep-vector-offset": [
+        {
+            "hash": "2047ab00eaf0a17e71ce5e8a5b27a8c90f034c3d",
+            "author_name": "Shih-Po Hung",
+            "commit_date": "2023-12-14T17:36:58+08:00",
+            "subject": "[VPlan] Add a test for testing unused interleave recipes (#75026)"
+        },
+        {
+            "hash": "4c67b91a069fb8e71cddde773378a219f6d0ea37",
+            "author_name": "Jannik Silvanus",
+            "commit_date": "2023-12-14T12:02:27+01:00",
+            "subject": "Precommit test exhibiting miscompile"
         }
     ]
 }
