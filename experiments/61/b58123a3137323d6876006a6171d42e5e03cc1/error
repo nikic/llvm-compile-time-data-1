@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[672/2667] Building X86GenAsmMatcher.inc...
+FAILED: lib/Target/X86/X86GenAsmMatcher.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenAsmMatcher.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-asm-matcher -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenAsmMatcher.inc -d lib/Target/X86/X86GenAsmMatcher.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[673/2667] Building X86GenExegesis.inc...
+FAILED: lib/Target/X86/X86GenExegesis.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenExegesis.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-exegesis -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenExegesis.inc -d lib/Target/X86/X86GenExegesis.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[674/2667] Building X86GenFastISel.inc...
+FAILED: lib/Target/X86/X86GenFastISel.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenFastISel.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-fast-isel -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenFastISel.inc -d lib/Target/X86/X86GenFastISel.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[675/2667] Building X86GenRegisterBank.inc...
+FAILED: lib/Target/X86/X86GenRegisterBank.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenRegisterBank.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-register-bank -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenRegisterBank.inc -d lib/Target/X86/X86GenRegisterBank.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[676/2667] Building X86GenDisassemblerTables.inc...
+FAILED: lib/Target/X86/X86GenDisassemblerTables.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenDisassemblerTables.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-disassembler -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenDisassemblerTables.inc -d lib/Target/X86/X86GenDisassemblerTables.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[677/2667] Building X86GenSubtargetInfo.inc...
+FAILED: lib/Target/X86/X86GenSubtargetInfo.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenSubtargetInfo.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-subtarget -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenSubtargetInfo.inc -d lib/Target/X86/X86GenSubtargetInfo.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[678/2667] Building X86GenFoldTables.inc...
+FAILED: lib/Target/X86/X86GenFoldTables.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenFoldTables.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-x86-fold-tables -asmwriternum=1 -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenFoldTables.inc -d lib/Target/X86/X86GenFoldTables.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[679/2667] Building X86GenCallingConv.inc...
+FAILED: lib/Target/X86/X86GenCallingConv.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenCallingConv.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-callingconv -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenCallingConv.inc -d lib/Target/X86/X86GenCallingConv.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[680/2667] Building X86GenMnemonicTables.inc...
+FAILED: lib/Target/X86/X86GenMnemonicTables.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenMnemonicTables.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-x86-mnemonic-tables -asmwriternum=1 -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenMnemonicTables.inc -d lib/Target/X86/X86GenMnemonicTables.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[681/2667] Building X86GenRegisterInfo.inc...
+FAILED: lib/Target/X86/X86GenRegisterInfo.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenRegisterInfo.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-register-info -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenRegisterInfo.inc -d lib/Target/X86/X86GenRegisterInfo.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[682/2667] Building X86GenEVEX2VEXTables.inc...
+FAILED: lib/Target/X86/X86GenEVEX2VEXTables.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenEVEX2VEXTables.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-x86-EVEX2VEX-tables -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenEVEX2VEXTables.inc -d lib/Target/X86/X86GenEVEX2VEXTables.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[683/2667] Building X86GenDAGISel.inc...
+FAILED: lib/Target/X86/X86GenDAGISel.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenDAGISel.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-dag-isel -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target -omit-comments /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenDAGISel.inc -d lib/Target/X86/X86GenDAGISel.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[684/2667] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/Compilation.cpp.o
+[685/2667] Building X86GenInstrInfo.inc...
+FAILED: lib/Target/X86/X86GenInstrInfo.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenInstrInfo.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-instr-info -instr-info-expand-mi-operand-info=0 -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenInstrInfo.inc -d lib/Target/X86/X86GenInstrInfo.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[686/2667] Building X86GenAsmWriter1.inc...
+FAILED: lib/Target/X86/X86GenAsmWriter1.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenAsmWriter1.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-asm-writer -asmwriternum=1 -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenAsmWriter1.inc -d lib/Target/X86/X86GenAsmWriter1.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[687/2667] Building X86GenGlobalISel.inc...
+FAILED: lib/Target/X86/X86GenGlobalISel.inc /tmp/llvm-project-build-stage1/lib/Target/X86/X86GenGlobalISel.inc 
+cd /tmp/llvm-project-build-stage1 && /tmp/llvm-project-build-stage1/bin/llvm-tblgen -gen-global-isel -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86 -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td --write-if-changed -o lib/Target/X86/X86GenGlobalISel.inc -d lib/Target/X86/X86GenGlobalISel.inc.d
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:6775:26: error: Couldn't find class 'EVEX_NoCD8'
+                         EVEX_NoCD8, T_MAP4PS, Sched<[SchedWriteVecIMul.XMM]>;
+                         ^
+[688/2667] Building RISCVTargetParserDef.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+15.33user 2.88system 0:01.55elapsed 1175%CPU (0avgtext+0avgdata 386092maxresident)k
+0inputs+215536outputs (9525major+1671159minor)pagefaults 0swaps
