@@ -1,0 +1,133 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:1422:1: error: In anonymous_7917: Incompatible types
+def : Pat<(v2f64 (X86Movsd
+^
+anonymous_7926: [
+	(X86Movss:{ *:[v4f32] } VR128:{ *:[v4f32] }:$dst, (scalar_to_vector:{ *:[v4f32] } (strict_fpround:{ *:[f32] } (extractelt:{ *:[f64] } VR128:{ *:[v2f64] }:$src, 0:{ *:[iPTR] }))))
+	(X86Movss:{ *:[v4f32] } VR128:{ *:[v4f32] }:$dst, (scalar_to_vector:{ *:[v4f32] } (fpround:{ *:[f32] } (extractelt:{ *:[f64] } VR128:{ *:[v2f64] }:$src, 0:{ *:[iPTR] }))))
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:1470:1: error: In anonymous_7926: Incompatible types
+def : Pat<(v4f32 (X86Movss
+^
+anonymous_7927: [
+	(X86Movsd:{ *:[v2f64] } VR128:{ *:[v2f64] }:$dst, (scalar_to_vector:{ *:[v2f64] } (strict_fpextend:{ *:[f64] } (extractelt:{ *:[f32] } VR128:{ *:[v4f32] }:$src, 0:{ *:[iPTR] }))))
+	(X86Movsd:{ *:[v2f64] } VR128:{ *:[v2f64] }:$dst, (scalar_to_vector:{ *:[v2f64] } (fpextend:{ *:[f64] } (extractelt:{ *:[f32] } VR128:{ *:[v4f32] }:$src, 0:{ *:[iPTR] }))))
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:63:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrSSE.td:1476:1: error: In anonymous_7927: Incompatible types
+def : Pat<(v2f64 (X86Movsd
+^
+anonymous_11527: [
+	(strict_fpextend:{ *:[f64] } FR32X:{ *:[f32] }:$src)
+	(fpextend:{ *:[f64] } FR32X:{ *:[f32] }:$src)
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:64:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrAVX512.td:7711:1: error: In anonymous_11527: Incompatible types
+def : Pat<(f64 (any_fpextend FR32X:$src)),
+^
+anonymous_11528: [
+	(strict_fpextend:{ *:[f64] } (ld:{ *:[f32] } addr:{ *:[iPTR] }:$src)<<P:Predicate_unindexedload>><<P:Predicate_load>>)
+	(fpextend:{ *:[f64] } (ld:{ *:[f32] } addr:{ *:[iPTR] }:$src)<<P:Predicate_unindexedload>><<P:Predicate_load>>)
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:64:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrAVX512.td:7714:1: error: In anonymous_11528: Incompatible types
+def : Pat<(f64 (any_fpextend (loadf32 addr:$src))),
+^
+anonymous_11529: [
+	(strict_fpround:{ *:[f32] } FR64X:{ *:[f64] }:$src)
+	(fpround:{ *:[f32] } FR64X:{ *:[f64] }:$src)
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:64:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrAVX512.td:7718:1: error: In anonymous_11529: Incompatible types
+def : Pat<(f32 (any_fpround FR64X:$src)),
+^
+anonymous_11530: [
+	(strict_fpextend:{ *:[f32] } FR16X:{ *:[f16] }:$src)
+	(fpextend:{ *:[f32] } FR16X:{ *:[f16] }:$src)
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:64:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrAVX512.td:7722:1: error: In anonymous_11530: Incompatible types
+def : Pat<(f32 (any_fpextend FR16X:$src)),
+^
+anonymous_11531: [
+	(strict_fpextend:{ *:[f32] } (ld:{ *:[f16] } addr:{ *:[iPTR] }:$src)<<P:Predicate_unindexedload>><<P:Predicate_load>>)
+	(fpextend:{ *:[f32] } (ld:{ *:[f16] } addr:{ *:[iPTR] }:$src)<<P:Predicate_unindexedload>><<P:Predicate_load>>)
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:64:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrAVX512.td:7725:1: error: In anonymous_11531: Incompatible types
+def : Pat<(f32 (any_fpextend (loadf16 addr:$src))),
+^
+anonymous_11532: [
+	(strict_fpextend:{ *:[f64] } FR16X:{ *:[f16] }:$src)
+	(fpextend:{ *:[f64] } FR16X:{ *:[f16] }:$src)
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:64:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrAVX512.td:7729:1: error: In anonymous_11532: Incompatible types
+def : Pat<(f64 (any_fpextend FR16X:$src)),
+^
+anonymous_11533: [
+	(strict_fpextend:{ *:[f64] } (ld:{ *:[f16] } addr:{ *:[iPTR] }:$src)<<P:Predicate_unindexedload>><<P:Predicate_load>>)
+	(fpextend:{ *:[f64] } (ld:{ *:[f16] } addr:{ *:[iPTR] }:$src)<<P:Predicate_unindexedload>><<P:Predicate_load>>)
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:64:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrAVX512.td:7732:1: error: In anonymous_11533: Incompatible types
+def : Pat<(f64 (any_fpextend (loadf16 addr:$src))),
+^
+anonymous_11534: [
+	(strict_fpround:{ *:[f16] } FR32X:{ *:[f32] }:$src)
+	(fpround:{ *:[f16] } FR32X:{ *:[f32] }:$src)
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:64:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrAVX512.td:7736:1: error: In anonymous_11534: Incompatible types
+def : Pat<(f16 (any_fpround FR32X:$src)),
+^
+anonymous_11535: [
+	(strict_fpround:{ *:[f16] } FR64X:{ *:[f64] }:$src)
+	(fpround:{ *:[f16] } FR64X:{ *:[f64] }:$src)
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:64:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrAVX512.td:7739:1: error: In anonymous_11535: Incompatible types
+def : Pat<(f16 (any_fpround FR64X:$src)),
+^
+anonymous_11536: [
+	(X86Movss:{ *:[v4f32] } VR128X:{ *:[v4f32] }:$dst, (scalar_to_vector:{ *:[v4f32] } (strict_fpround:{ *:[f32] } (extractelt:{ *:[f64] } VR128X:{ *:[v2f64] }:$src, 0:{ *:[iPTR] }))))
+	(X86Movss:{ *:[v4f32] } VR128X:{ *:[v4f32] }:$dst, (scalar_to_vector:{ *:[v4f32] } (fpround:{ *:[f32] } (extractelt:{ *:[f64] } VR128X:{ *:[v2f64] }:$src, 0:{ *:[iPTR] }))))
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:64:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrAVX512.td:7743:1: error: In anonymous_11536: Incompatible types
+def : Pat<(v4f32 (X86Movss
+^
+anonymous_11537: [
+	(X86Movsd:{ *:[v2f64] } VR128X:{ *:[v2f64] }:$dst, (scalar_to_vector:{ *:[v2f64] } (strict_fpextend:{ *:[f64] } (extractelt:{ *:[f32] } VR128X:{ *:[v4f32] }:$src, 0:{ *:[iPTR] }))))
+	(X86Movsd:{ *:[v2f64] } VR128X:{ *:[v2f64] }:$dst, (scalar_to_vector:{ *:[v2f64] } (fpextend:{ *:[f64] } (extractelt:{ *:[f32] } VR128X:{ *:[v4f32] }:$src, 0:{ *:[iPTR] }))))
+]
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86.td:764:
+Included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrInfo.td:64:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86InstrAVX512.td:7750:1: error: In anonymous_11537: Incompatible types
+def : Pat<(v2f64 (X86Movsd
+^
+/tmp/llvm-project-build-stage2/bin/llvm-tblgen: 32 errors.
+[1446/2529] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/RawMemProfReader.cpp.o
+[1447/2529] Building CXX object lib/AsmParser/CMakeFiles/LLVMAsmParser.dir/LLParser.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
