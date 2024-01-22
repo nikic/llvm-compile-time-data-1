@@ -1,0 +1,86 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: /tmp/llvm-project-build-stage1/bin/clang
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang - broken
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeError.log".
+
+
+STDERR:
+CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "/tmp/llvm-project-build-stage1/bin/clang"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/ninja cmTC_075cb && [1/2] Building C object CMakeFiles/cmTC_075cb.dir/testCCompiler.c.o
+    FAILED: CMakeFiles/cmTC_075cb.dir/testCCompiler.c.o 
+    /tmp/llvm-project-build-stage1/bin/clang    -o CMakeFiles/cmTC_075cb.dir/testCCompiler.c.o -c /tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c
+    PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+    Stack dump:
+    0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang -o CMakeFiles/cmTC_075cb.dir/testCCompiler.c.o -c /tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c
+     #0 0x000055813a420aa0 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/tmp/llvm-project-build-stage1/bin/clang+0x1e01aa0)
+     #1 0x000055813a41e974 llvm::sys::CleanupOnSignal(unsigned long) (/tmp/llvm-project-build-stage1/bin/clang+0x1dff974)
+     #2 0x000055813a367b88 CrashRecoverySignalHandler(int) CrashRecoveryContext.cpp:0:0
+     #3 0x00007fc7a51f0520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+     #4 0x00007fc7a53547cd ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:317:0
+     #5 0x000055813d0a6429 clang::Preprocessor::removeCommentHandler(clang::CommentHandler*) (/tmp/llvm-project-build-stage1/bin/clang+0x4a87429)
+     #6 0x000055813bcd89c0 clang::Parser::~Parser() (/tmp/llvm-project-build-stage1/bin/clang+0x36b99c0)
+     #7 0x000055813bcd90cd clang::Parser::~Parser() (/tmp/llvm-project-build-stage1/bin/clang+0x36ba0cd)
+     #8 0x000055813bcd8223 clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+0x36b9223)
+     #9 0x000055813aea3951 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage1/bin/clang+0x2884951)
+    #10 0x000055813ae221c9 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage1/bin/clang+0x28031c9)
+    #11 0x000055813af66064 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage1/bin/clang+0x2947064)
+    #12 0x00005581391db5a3 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage1/bin/clang+0xbbc5a3)
+    #13 0x00005581391d3c7d ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+    #14 0x000055813ac5932d void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+    #15 0x000055813a367fd7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage1/bin/clang+0x1d48fd7)
+    #16 0x000055813ac596c7 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (.part.0) Job.cpp:0:0
+    #17 0x000055813ac22111 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+0x2603111)
+    #18 0x000055813ac22bcd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+0x2603bcd)
+    #19 0x000055813ac3407c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage1/bin/clang+0x261507c)
+    #20 0x00005581391d8709 clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage1/bin/clang+0xbb9709)
+    #21 0x00005581391223db main (/tmp/llvm-project-build-stage1/bin/clang+0xb033db)
+    #22 0x00007fc7a51d7d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #23 0x00007fc7a51d7e40 call_init ./csu/../csu/libc-start.c:128:20
+    #24 0x00007fc7a51d7e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+    #25 0x00005581391d30f5 _start (/tmp/llvm-project-build-stage1/bin/clang+0xbb40f5)
+    clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+    clang version 18.0.0git
+    Target: x86_64-unknown-linux-gnu
+    Thread model: posix
+    InstalledDir: /tmp/llvm-project-build-stage1/bin
+    clang: note: diagnostic msg: 
+    ********************
+    
+    PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+    Preprocessed source(s) and associated run script(s) are located at:
+    clang: note: diagnostic msg: /tmp/testCCompiler-e3a70a.c
+    clang: note: diagnostic msg: /tmp/testCCompiler-e3a70a.sh
+    clang: note: diagnostic msg: 
+    
+    ********************
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:54 (project)
+
+
