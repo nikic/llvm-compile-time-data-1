@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:233:31: note: ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’ previously defined here
+  233 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+[1025/2671] Building X86GenDAGISel.inc...
+[1026/2671] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Value.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Value.cpp:20:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:239:31: error: redefinition of ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’
+  239 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:233:31: note: ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’ previously defined here
+  233 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+[1027/2671] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Verifier.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/Verifier.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/Verifier.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/Verifier.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/Verifier.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Verifier.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Verifier.cpp:78:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:239:31: error: redefinition of ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’
+  239 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:233:31: note: ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’ previously defined here
+  233 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+[1028/2671] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AssignmentTrackingAnalysis.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AssignmentTrackingAnalysis.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AssignmentTrackingAnalysis.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AssignmentTrackingAnalysis.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AssignmentTrackingAnalysis.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AssignmentTrackingAnalysis.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AssignmentTrackingAnalysis.cpp:22:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:239:31: error: redefinition of ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’
+  239 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:233:31: note: ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’ previously defined here
+  233 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+[1029/2671] Building X86GenSubtargetInfo.inc...
+[1030/2671] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DebugHandlerBase.cpp.o
+FAILED: lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DebugHandlerBase.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen/AsmPrinter -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DebugHandlerBase.cpp.o -MF lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DebugHandlerBase.cpp.o.d -o lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DebugHandlerBase.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DebugHandlerBase.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DebugHandlerBase.cpp:20:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:239:31: error: redefinition of ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’
+  239 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:233:31: note: ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’ previously defined here
+  233 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+[1031/2671] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AccelTable.cpp.o
+FAILED: lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AccelTable.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen/AsmPrinter -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AccelTable.cpp.o -MF lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AccelTable.cpp.o.d -o lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AccelTable.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/AccelTable.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DebugLocEntry.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/AccelTable.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:239:31: error: redefinition of ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’
+  239 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:233:31: note: ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’ previously defined here
+  233 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+[1032/2671] Building X86GenInstrInfo.inc...
+[1033/2671] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DebugLocStream.cpp.o
+FAILED: lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DebugLocStream.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen/AsmPrinter -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DebugLocStream.cpp.o -MF lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DebugLocStream.cpp.o.d -o lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DebugLocStream.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DebugLocStream.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DebugLocEntry.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DebugLocStream.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:239:31: error: redefinition of ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’
+  239 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:233:31: note: ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’ previously defined here
+  233 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+[1034/2671] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DIE.cpp.o
+FAILED: lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DIE.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen/AsmPrinter -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DIE.cpp.o -MF lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DIE.cpp.o.d -o lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DIE.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DIE.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DebugLocEntry.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DIE.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:239:31: error: redefinition of ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’
+  239 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:233:31: note: ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’ previously defined here
+  233 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+[1035/2671] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:50:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:239:31: error: redefinition of ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’
+  239 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:233:31: note: ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’ previously defined here
+  233 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+[1036/2671] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGISel.cpp.o
+FAILED: lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGISel.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen/SelectionDAG -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SelectionDAG -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGISel.cpp.o -MF lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGISel.cpp.o.d -o lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGISel.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SelectionDAG/SelectionDAGISel.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SelectionDAG/SelectionDAGISel.cpp:67:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:239:31: error: redefinition of ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’
+  239 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:233:31: note: ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’ previously defined here
+  233 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+[1037/2671] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AsmPrinter.cpp.o
+FAILED: lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AsmPrinter.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen/AsmPrinter -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AsmPrinter.cpp.o -MF lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AsmPrinter.cpp.o.d -o lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AsmPrinter.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/AsmPrinter.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DebugLocEntry.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AsmPrinter/AsmPrinter.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:239:31: error: redefinition of ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’
+  239 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:233:31: note: ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’ previously defined here
+  233 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+[1038/2671] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGBuilder.cpp.o
+FAILED: lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGBuilder.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen/SelectionDAG -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SelectionDAG -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGBuilder.cpp.o -MF lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGBuilder.cpp.o.d -o lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGBuilder.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp:66:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:239:31: error: redefinition of ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’
+  239 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:233:31: note: ‘llvm::SmallVector<llvm::DPValue*> llvm::at::getDPVAssignmentMarkers(const llvm::Instruction*)’ previously defined here
+  233 | inline SmallVector<DPValue *> getDPVAssignmentMarkers(const Instruction *Inst) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+95.74user 9.32system 0:08.81elapsed 1191%CPU (0avgtext+0avgdata 822220maxresident)k
+0inputs+550728outputs (8894major+5412199minor)pagefaults 0swaps
