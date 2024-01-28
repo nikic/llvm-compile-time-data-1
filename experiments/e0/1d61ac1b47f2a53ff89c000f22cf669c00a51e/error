@@ -1,0 +1,798 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O3 stage1" failed
+
+STDOUT:
+#18 0x000055af4fde2cb1 clang::Parser::ParseExprStatement(clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3801cb1)
+#19 0x000055af4fdd6d17 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f5d17)
+#20 0x000055af4fdd76a8 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f66a8)
+#21 0x000055af4fdd84b1 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f74b1)
+#22 0x000055af4fddb45a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37fa45a)
+#23 0x000055af4fd05878 clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3724878)
+#24 0x000055af4fd054dd clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37244dd)
+#25 0x000055af4fd527e1 clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37717e1)
+#26 0x000055af4fd546a2 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37736a2)
+#27 0x000055af4fd22be2 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3741be2)
+#28 0x000055af4fcec126 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370b126)
+#29 0x000055af4fced03e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370c03e)
+#30 0x000055af4fcf4582 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage1/bin/clang+++0x3713582)
+#31 0x000055af4fcf5f67 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3714f67)
+#32 0x000055af4fce685a clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x370585a)
+#33 0x000055af4eeac8d1 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage1/bin/clang+++0x28cb8d1)
+#34 0x000055af4ee2b239 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage1/bin/clang+++0x284a239)
+#35 0x000055af4ef722e4 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage1/bin/clang+++0x29912e4)
+#36 0x000055af4d1a3233 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage1/bin/clang+++0xbc2233)
+#37 0x000055af4d19b90d ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#38 0x000055af4ec61a4d void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+#39 0x000055af4e36e9c7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage1/bin/clang+++0x1d8d9c7)
+#40 0x000055af4ec61de7 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (.part.0) Job.cpp:0:0
+#41 0x000055af4ec2a601 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x2649601)
+#42 0x000055af4ec2b0bd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x264a0bd)
+#43 0x000055af4ec3c60c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage1/bin/clang+++0x265b60c)
+#44 0x000055af4d1a0399 clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage1/bin/clang+++0xbbf399)
+#45 0x000055af4d0e9cab main (/tmp/llvm-project-build-stage1/bin/clang+++0xb08cab)
+#46 0x00007faf2ab42d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#47 0x00007faf2ab42e40 call_init ./csu/../csu/libc-start.c:128:20
+#48 0x00007faf2ab42e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#49 0x000055af4d19ad85 _start (/tmp/llvm-project-build-stage1/bin/clang+++0xbb9d85)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/SphereTriangleDetector-a1b033.cpp
+clang++: note: diagnostic msg: /tmp/SphereTriangleDetector-a1b033.sh
+clang++: note: diagnostic msg: 
+
+********************
+[245/669] Building CXX object CTMark/Bullet/CMakeFiles/bullet.dir/btAlignedAllocator.cpp.o
+[246/669] Building C object CTMark/ClamAV/CMakeFiles/clamscan.dir/libclamav_mbox.c.o
+[247/669] Building C object CTMark/ClamAV/CMakeFiles/clamscan.dir/libclamav_message.c.o
+[248/669] Building C object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/C/LzmaEnc.c.o
+[249/669] Building CXX object CTMark/Bullet/CMakeFiles/bullet.dir/btActivatingCollisionAlgorithm.cpp.o
+FAILED: CTMark/Bullet/CMakeFiles/bullet.dir/btActivatingCollisionAlgorithm.cpp.o 
+/tmp/llvm-test-suite-build/tools/timeit --summary CTMark/Bullet/CMakeFiles/bullet.dir/btActivatingCollisionAlgorithm.cpp.o.time /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG  -O3   -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/btActivatingCollisionAlgorithm.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/btActivatingCollisionAlgorithm.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/btActivatingCollisionAlgorithm.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/btActivatingCollisionAlgorithm.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG -O3 -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/btActivatingCollisionAlgorithm.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/btActivatingCollisionAlgorithm.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/btActivatingCollisionAlgorithm.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/btActivatingCollisionAlgorithm.cpp
+1.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:212:4: current parser token 'm'
+2.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:28:1: parsing struct/union/class body 'btMatrix3x3'
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:207:3: parsing function body 'btMatrix3x3::getOpenGLSubMatrix'
+4.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:207:3: in compound statement ('{}')
+ #0 0x00005639df5fbf20 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/tmp/llvm-project-build-stage1/bin/clang+++0x1e45f20)
+ #1 0x00005639df5f9df4 llvm::sys::CleanupOnSignal(unsigned long) (/tmp/llvm-project-build-stage1/bin/clang+++0x1e43df4)
+ #2 0x00005639df543578 CrashRecoverySignalHandler(int) CrashRecoveryContext.cpp:0:0
+ #3 0x00007f3c1b5e0520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #4 0x00005639e1fd7be5 clang::interp::CheckRange(clang::interp::InterpState&, clang::interp::CodePtr, clang::interp::Pointer const&, clang::AccessKinds) (/tmp/llvm-project-build-stage1/bin/clang+++0x4821be5)
+ #5 0x00005639e1fd8025 clang::interp::CheckStore(clang::interp::InterpState&, clang::interp::CodePtr, clang::interp::Pointer const&) (/tmp/llvm-project-build-stage1/bin/clang+++0x4822025)
+ #6 0x00005639e1f66545 clang::interp::EvalEmitter::emitStore(clang::interp::PrimType, clang::interp::SourceInfo const&) (/tmp/llvm-project-build-stage1/bin/clang+++0x47b0545)
+ #7 0x00005639e21ea2c2 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::VisitBinaryOperator(clang::BinaryOperator const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4a342c2)
+ #8 0x00005639e21e4215 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visit(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4a2e215)
+ #9 0x00005639e21e6d41 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4a30d41)
+#10 0x00005639e1f1b849 clang::interp::EvalEmitter::interpretExpr(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4765849)
+#11 0x00005639e1f1007a clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) (/tmp/llvm-project-build-stage1/bin/clang+++0x475a07a)
+#12 0x00005639e1e8a9b9 EvaluateAsRValue((anonymous namespace)::EvalInfo&, clang::Expr const*, clang::APValue&) ExprConstant.cpp:0:0
+#13 0x00005639e1e8b463 clang::Expr::EvaluateForOverflow(clang::ASTContext const&) const (/tmp/llvm-project-build-stage1/bin/clang+++0x46d5463)
+#14 0x00005639e108de01 clang::Sema::CheckForIntOverflow(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d7e01)
+#15 0x00005639e10da27b clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x392427b)
+#16 0x00005639e1509400 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3d53400)
+#17 0x00005639e1774eee clang::Sema::ActOnExprStmt(clang::ActionResult<clang::Expr*, true>, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3fbeeee)
+#18 0x00005639e0fb7cb1 clang::Parser::ParseExprStatement(clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3801cb1)
+#19 0x00005639e0fabd17 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f5d17)
+#20 0x00005639e0fac6a8 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f66a8)
+#21 0x00005639e0fad4b1 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f74b1)
+#22 0x00005639e0fb045a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37fa45a)
+#23 0x00005639e0eda878 clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3724878)
+#24 0x00005639e0eda4dd clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37244dd)
+#25 0x00005639e0f277e1 clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37717e1)
+#26 0x00005639e0f296a2 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37736a2)
+#27 0x00005639e0ef7be2 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3741be2)
+#28 0x00005639e0ec1126 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370b126)
+#29 0x00005639e0ec203e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370c03e)
+#30 0x00005639e0ec9582 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage1/bin/clang+++0x3713582)
+#31 0x00005639e0ecaf67 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3714f67)
+#32 0x00005639e0ebb85a clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x370585a)
+#33 0x00005639e00818d1 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage1/bin/clang+++0x28cb8d1)
+#34 0x00005639e0000239 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage1/bin/clang+++0x284a239)
+#35 0x00005639e01472e4 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage1/bin/clang+++0x29912e4)
+#36 0x00005639de378233 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage1/bin/clang+++0xbc2233)
+#37 0x00005639de37090d ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#38 0x00005639dfe36a4d void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+#39 0x00005639df5439c7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage1/bin/clang+++0x1d8d9c7)
+#40 0x00005639dfe36de7 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (.part.0) Job.cpp:0:0
+#41 0x00005639dfdff601 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x2649601)
+#42 0x00005639dfe000bd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x264a0bd)
+#43 0x00005639dfe1160c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage1/bin/clang+++0x265b60c)
+#44 0x00005639de375399 clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage1/bin/clang+++0xbbf399)
+#45 0x00005639de2becab main (/tmp/llvm-project-build-stage1/bin/clang+++0xb08cab)
+#46 0x00007f3c1b5c7d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#47 0x00007f3c1b5c7e40 call_init ./csu/../csu/libc-start.c:128:20
+#48 0x00007f3c1b5c7e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#49 0x00005639de36fd85 _start (/tmp/llvm-project-build-stage1/bin/clang+++0xbb9d85)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/btActivatingCollisionAlgorithm-bee072.cpp
+clang++: note: diagnostic msg: /tmp/btActivatingCollisionAlgorithm-bee072.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh ReleaseThinLTO stage1" failed
+
+STDOUT:
+#15 0x00005640faf3e27b clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x392427b)
+#16 0x00005640fb36d400 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3d53400)
+#17 0x00005640fb5d8eee clang::Sema::ActOnExprStmt(clang::ActionResult<clang::Expr*, true>, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3fbeeee)
+#18 0x00005640fae1bcb1 clang::Parser::ParseExprStatement(clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3801cb1)
+#19 0x00005640fae0fd17 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f5d17)
+#20 0x00005640fae106a8 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f66a8)
+#21 0x00005640fae114b1 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f74b1)
+#22 0x00005640fae1445a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37fa45a)
+#23 0x00005640fad3e878 clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3724878)
+#24 0x00005640fad3e4dd clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37244dd)
+#25 0x00005640fad8b7e1 clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37717e1)
+#26 0x00005640fad8d6a2 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37736a2)
+#27 0x00005640fad5bbe2 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3741be2)
+#28 0x00005640fad25126 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370b126)
+#29 0x00005640fad2603e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370c03e)
+#30 0x00005640fad2d582 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage1/bin/clang+++0x3713582)
+#31 0x00005640fad2ef67 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3714f67)
+#32 0x00005640fad1f85a clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x370585a)
+#33 0x00005640f9ee58d1 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage1/bin/clang+++0x28cb8d1)
+#34 0x00005640f9e64239 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage1/bin/clang+++0x284a239)
+#35 0x00005640f9fab2e4 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage1/bin/clang+++0x29912e4)
+#36 0x00005640f81dc233 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage1/bin/clang+++0xbc2233)
+#37 0x00005640f81d490d ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#38 0x00005640f9c9aa4d void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+#39 0x00005640f93a79c7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage1/bin/clang+++0x1d8d9c7)
+#40 0x00005640f9c9ade7 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (.part.0) Job.cpp:0:0
+#41 0x00005640f9c63601 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x2649601)
+#42 0x00005640f9c640bd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x264a0bd)
+#43 0x00005640f9c7560c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage1/bin/clang+++0x265b60c)
+#44 0x00005640f81d9399 clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage1/bin/clang+++0xbbf399)
+#45 0x00005640f8122cab main (/tmp/llvm-project-build-stage1/bin/clang+++0xb08cab)
+#46 0x00007fa007eaad90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#47 0x00007fa007eaae40 call_init ./csu/../csu/libc-start.c:128:20
+#48 0x00007fa007eaae40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#49 0x00005640f81d3d85 _start (/tmp/llvm-project-build-stage1/bin/clang+++0xbb9d85)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/btBox2dShape-a59653.cpp
+clang++: note: diagnostic msg: /tmp/btBox2dShape-a59653.sh
+clang++: note: diagnostic msg: 
+
+********************
+[252/669] Building CXX object CTMark/Bullet/CMakeFiles/bullet.dir/btAxisSweep3.cpp.o
+FAILED: CTMark/Bullet/CMakeFiles/bullet.dir/btAxisSweep3.cpp.o 
+/tmp/llvm-test-suite-build/tools/timeit --summary CTMark/Bullet/CMakeFiles/bullet.dir/btAxisSweep3.cpp.o.time /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG  -O3 -fomit-frame-pointer -flto=thin -DNDEBUG   -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/btAxisSweep3.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/btAxisSweep3.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/btAxisSweep3.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/btAxisSweep3.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG -O3 -fomit-frame-pointer -flto=thin -DNDEBUG -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/btAxisSweep3.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/btAxisSweep3.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/btAxisSweep3.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/btAxisSweep3.cpp
+1.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:212:4: current parser token 'm'
+2.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:28:1: parsing struct/union/class body 'btMatrix3x3'
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:207:3: parsing function body 'btMatrix3x3::getOpenGLSubMatrix'
+4.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:207:3: in compound statement ('{}')
+ #0 0x00005604672bcf20 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/tmp/llvm-project-build-stage1/bin/clang+++0x1e45f20)
+ #1 0x00005604672badf4 llvm::sys::CleanupOnSignal(unsigned long) (/tmp/llvm-project-build-stage1/bin/clang+++0x1e43df4)
+ #2 0x0000560467204578 CrashRecoverySignalHandler(int) CrashRecoveryContext.cpp:0:0
+ #3 0x00007fe766f43520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #4 0x0000560469c98be5 clang::interp::CheckRange(clang::interp::InterpState&, clang::interp::CodePtr, clang::interp::Pointer const&, clang::AccessKinds) (/tmp/llvm-project-build-stage1/bin/clang+++0x4821be5)
+ #5 0x0000560469c99025 clang::interp::CheckStore(clang::interp::InterpState&, clang::interp::CodePtr, clang::interp::Pointer const&) (/tmp/llvm-project-build-stage1/bin/clang+++0x4822025)
+ #6 0x0000560469c27545 clang::interp::EvalEmitter::emitStore(clang::interp::PrimType, clang::interp::SourceInfo const&) (/tmp/llvm-project-build-stage1/bin/clang+++0x47b0545)
+ #7 0x0000560469eab2c2 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::VisitBinaryOperator(clang::BinaryOperator const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4a342c2)
+ #8 0x0000560469ea5215 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visit(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4a2e215)
+ #9 0x0000560469ea7d41 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4a30d41)
+#10 0x0000560469bdc849 clang::interp::EvalEmitter::interpretExpr(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4765849)
+#11 0x0000560469bd107a clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) (/tmp/llvm-project-build-stage1/bin/clang+++0x475a07a)
+#12 0x0000560469b4b9b9 EvaluateAsRValue((anonymous namespace)::EvalInfo&, clang::Expr const*, clang::APValue&) ExprConstant.cpp:0:0
+#13 0x0000560469b4c463 clang::Expr::EvaluateForOverflow(clang::ASTContext const&) const (/tmp/llvm-project-build-stage1/bin/clang+++0x46d5463)
+#14 0x0000560468d4ee01 clang::Sema::CheckForIntOverflow(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d7e01)
+#15 0x0000560468d9b27b clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x392427b)
+#16 0x00005604691ca400 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3d53400)
+#17 0x0000560469435eee clang::Sema::ActOnExprStmt(clang::ActionResult<clang::Expr*, true>, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3fbeeee)
+#18 0x0000560468c78cb1 clang::Parser::ParseExprStatement(clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3801cb1)
+#19 0x0000560468c6cd17 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f5d17)
+#20 0x0000560468c6d6a8 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f66a8)
+#21 0x0000560468c6e4b1 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f74b1)
+#22 0x0000560468c7145a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37fa45a)
+#23 0x0000560468b9b878 clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3724878)
+#24 0x0000560468b9b4dd clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37244dd)
+#25 0x0000560468be87e1 clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37717e1)
+#26 0x0000560468bea6a2 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37736a2)
+#27 0x0000560468bb8be2 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3741be2)
+#28 0x0000560468b82126 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370b126)
+#29 0x0000560468b8303e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370c03e)
+#30 0x0000560468b8a582 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage1/bin/clang+++0x3713582)
+#31 0x0000560468b8bf67 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3714f67)
+#32 0x0000560468b7c85a clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x370585a)
+#33 0x0000560467d428d1 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage1/bin/clang+++0x28cb8d1)
+#34 0x0000560467cc1239 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage1/bin/clang+++0x284a239)
+#35 0x0000560467e082e4 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage1/bin/clang+++0x29912e4)
+#36 0x0000560466039233 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage1/bin/clang+++0xbc2233)
+#37 0x000056046603190d ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#38 0x0000560467af7a4d void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+#39 0x00005604672049c7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage1/bin/clang+++0x1d8d9c7)
+#40 0x0000560467af7de7 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (.part.0) Job.cpp:0:0
+#41 0x0000560467ac0601 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x2649601)
+#42 0x0000560467ac10bd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x264a0bd)
+#43 0x0000560467ad260c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage1/bin/clang+++0x265b60c)
+#44 0x0000560466036399 clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage1/bin/clang+++0xbbf399)
+#45 0x0000560465f7fcab main (/tmp/llvm-project-build-stage1/bin/clang+++0xb08cab)
+#46 0x00007fe766f2ad90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#47 0x00007fe766f2ae40 call_init ./csu/../csu/libc-start.c:128:20
+#48 0x00007fe766f2ae40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#49 0x0000560466030d85 _start (/tmp/llvm-project-build-stage1/bin/clang+++0xbb9d85)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/btAxisSweep3-e09225.cpp
+clang++: note: diagnostic msg: /tmp/btAxisSweep3-e09225.sh
+clang++: note: diagnostic msg: 
+
+********************
+[253/669] Linking CXX executable CTMark/7zip/7zip-benchmark
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh ReleaseLTO-g stage1" failed
+
+STDOUT:
+#15 0x000055b5da66b27b clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x392427b)
+#16 0x000055b5daa9a400 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3d53400)
+#17 0x000055b5dad05eee clang::Sema::ActOnExprStmt(clang::ActionResult<clang::Expr*, true>, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3fbeeee)
+#18 0x000055b5da548cb1 clang::Parser::ParseExprStatement(clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3801cb1)
+#19 0x000055b5da53cd17 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f5d17)
+#20 0x000055b5da53d6a8 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f66a8)
+#21 0x000055b5da53e4b1 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f74b1)
+#22 0x000055b5da54145a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37fa45a)
+#23 0x000055b5da46b878 clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3724878)
+#24 0x000055b5da46b4dd clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37244dd)
+#25 0x000055b5da4b87e1 clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37717e1)
+#26 0x000055b5da4ba6a2 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37736a2)
+#27 0x000055b5da488be2 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3741be2)
+#28 0x000055b5da452126 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370b126)
+#29 0x000055b5da45303e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370c03e)
+#30 0x000055b5da45a582 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage1/bin/clang+++0x3713582)
+#31 0x000055b5da45bf67 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3714f67)
+#32 0x000055b5da44c85a clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x370585a)
+#33 0x000055b5d96128d1 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage1/bin/clang+++0x28cb8d1)
+#34 0x000055b5d9591239 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage1/bin/clang+++0x284a239)
+#35 0x000055b5d96d82e4 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage1/bin/clang+++0x29912e4)
+#36 0x000055b5d7909233 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage1/bin/clang+++0xbc2233)
+#37 0x000055b5d790190d ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#38 0x000055b5d93c7a4d void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+#39 0x000055b5d8ad49c7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage1/bin/clang+++0x1d8d9c7)
+#40 0x000055b5d93c7de7 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (.part.0) Job.cpp:0:0
+#41 0x000055b5d9390601 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x2649601)
+#42 0x000055b5d93910bd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x264a0bd)
+#43 0x000055b5d93a260c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage1/bin/clang+++0x265b60c)
+#44 0x000055b5d7906399 clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage1/bin/clang+++0xbbf399)
+#45 0x000055b5d784fcab main (/tmp/llvm-project-build-stage1/bin/clang+++0xb08cab)
+#46 0x00007f862345bd90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#47 0x00007f862345be40 call_init ./csu/../csu/libc-start.c:128:20
+#48 0x00007f862345be40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#49 0x000055b5d7900d85 _start (/tmp/llvm-project-build-stage1/bin/clang+++0xbb9d85)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/btBox2dShape-6ded9a.cpp
+clang++: note: diagnostic msg: /tmp/btBox2dShape-6ded9a.sh
+clang++: note: diagnostic msg: 
+
+********************
+[252/669] Building CXX object CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o
+FAILED: CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o 
+/tmp/llvm-test-suite-build/tools/timeit --summary CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o.time /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG  -O3 -fomit-frame-pointer -flto -DNDEBUG -g   -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/btBox2dBox2dCollisionAlgorithm.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG -O3 -fomit-frame-pointer -flto -DNDEBUG -g -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/btBox2dBox2dCollisionAlgorithm.cpp
+1.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:212:4: current parser token 'm'
+2.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:28:1: parsing struct/union/class body 'btMatrix3x3'
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:207:3: parsing function body 'btMatrix3x3::getOpenGLSubMatrix'
+4.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:207:3: in compound statement ('{}')
+ #0 0x0000561d7726cf20 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/tmp/llvm-project-build-stage1/bin/clang+++0x1e45f20)
+ #1 0x0000561d7726adf4 llvm::sys::CleanupOnSignal(unsigned long) (/tmp/llvm-project-build-stage1/bin/clang+++0x1e43df4)
+ #2 0x0000561d771b4578 CrashRecoverySignalHandler(int) CrashRecoveryContext.cpp:0:0
+ #3 0x00007f5d9a19b520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #4 0x0000561d79c48be5 clang::interp::CheckRange(clang::interp::InterpState&, clang::interp::CodePtr, clang::interp::Pointer const&, clang::AccessKinds) (/tmp/llvm-project-build-stage1/bin/clang+++0x4821be5)
+ #5 0x0000561d79c49025 clang::interp::CheckStore(clang::interp::InterpState&, clang::interp::CodePtr, clang::interp::Pointer const&) (/tmp/llvm-project-build-stage1/bin/clang+++0x4822025)
+ #6 0x0000561d79bd7545 clang::interp::EvalEmitter::emitStore(clang::interp::PrimType, clang::interp::SourceInfo const&) (/tmp/llvm-project-build-stage1/bin/clang+++0x47b0545)
+ #7 0x0000561d79e5b2c2 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::VisitBinaryOperator(clang::BinaryOperator const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4a342c2)
+ #8 0x0000561d79e55215 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visit(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4a2e215)
+ #9 0x0000561d79e57d41 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4a30d41)
+#10 0x0000561d79b8c849 clang::interp::EvalEmitter::interpretExpr(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4765849)
+#11 0x0000561d79b8107a clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) (/tmp/llvm-project-build-stage1/bin/clang+++0x475a07a)
+#12 0x0000561d79afb9b9 EvaluateAsRValue((anonymous namespace)::EvalInfo&, clang::Expr const*, clang::APValue&) ExprConstant.cpp:0:0
+#13 0x0000561d79afc463 clang::Expr::EvaluateForOverflow(clang::ASTContext const&) const (/tmp/llvm-project-build-stage1/bin/clang+++0x46d5463)
+#14 0x0000561d78cfee01 clang::Sema::CheckForIntOverflow(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d7e01)
+#15 0x0000561d78d4b27b clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x392427b)
+#16 0x0000561d7917a400 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3d53400)
+#17 0x0000561d793e5eee clang::Sema::ActOnExprStmt(clang::ActionResult<clang::Expr*, true>, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3fbeeee)
+#18 0x0000561d78c28cb1 clang::Parser::ParseExprStatement(clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3801cb1)
+#19 0x0000561d78c1cd17 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f5d17)
+#20 0x0000561d78c1d6a8 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f66a8)
+#21 0x0000561d78c1e4b1 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f74b1)
+#22 0x0000561d78c2145a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37fa45a)
+#23 0x0000561d78b4b878 clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3724878)
+#24 0x0000561d78b4b4dd clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37244dd)
+#25 0x0000561d78b987e1 clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37717e1)
+#26 0x0000561d78b9a6a2 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37736a2)
+#27 0x0000561d78b68be2 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3741be2)
+#28 0x0000561d78b32126 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370b126)
+#29 0x0000561d78b3303e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370c03e)
+#30 0x0000561d78b3a582 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage1/bin/clang+++0x3713582)
+#31 0x0000561d78b3bf67 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3714f67)
+#32 0x0000561d78b2c85a clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x370585a)
+#33 0x0000561d77cf28d1 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage1/bin/clang+++0x28cb8d1)
+#34 0x0000561d77c71239 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage1/bin/clang+++0x284a239)
+#35 0x0000561d77db82e4 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage1/bin/clang+++0x29912e4)
+#36 0x0000561d75fe9233 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage1/bin/clang+++0xbc2233)
+#37 0x0000561d75fe190d ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#38 0x0000561d77aa7a4d void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+#39 0x0000561d771b49c7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage1/bin/clang+++0x1d8d9c7)
+#40 0x0000561d77aa7de7 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (.part.0) Job.cpp:0:0
+#41 0x0000561d77a70601 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x2649601)
+#42 0x0000561d77a710bd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x264a0bd)
+#43 0x0000561d77a8260c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage1/bin/clang+++0x265b60c)
+#44 0x0000561d75fe6399 clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage1/bin/clang+++0xbbf399)
+#45 0x0000561d75f2fcab main (/tmp/llvm-project-build-stage1/bin/clang+++0xb08cab)
+#46 0x00007f5d9a182d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#47 0x00007f5d9a182e40 call_init ./csu/../csu/libc-start.c:128:20
+#48 0x00007f5d9a182e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#49 0x0000561d75fe0d85 _start (/tmp/llvm-project-build-stage1/bin/clang+++0xbb9d85)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/btBox2dBox2dCollisionAlgorithm-7a4368.cpp
+clang++: note: diagnostic msg: /tmp/btBox2dBox2dCollisionAlgorithm-7a4368.sh
+clang++: note: diagnostic msg: 
+
+********************
+[253/669] Linking CXX executable CTMark/7zip/7zip-benchmark
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O0-g stage1" failed
+
+STDOUT:
+#14 0x0000558e3888de01 clang::Sema::CheckForIntOverflow(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d7e01)
+#15 0x0000558e388da27b clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x392427b)
+#16 0x0000558e38d09400 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3d53400)
+#17 0x0000558e38f74eee clang::Sema::ActOnExprStmt(clang::ActionResult<clang::Expr*, true>, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3fbeeee)
+#18 0x0000558e387b7cb1 clang::Parser::ParseExprStatement(clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3801cb1)
+#19 0x0000558e387abd17 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f5d17)
+#20 0x0000558e387ac6a8 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f66a8)
+#21 0x0000558e387ad4b1 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f74b1)
+#22 0x0000558e387b045a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37fa45a)
+#23 0x0000558e386da878 clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3724878)
+#24 0x0000558e386da4dd clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37244dd)
+#25 0x0000558e387277e1 clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37717e1)
+#26 0x0000558e387296a2 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37736a2)
+#27 0x0000558e386f7be2 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3741be2)
+#28 0x0000558e386c1126 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370b126)
+#29 0x0000558e386c203e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370c03e)
+#30 0x0000558e386c9582 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage1/bin/clang+++0x3713582)
+#31 0x0000558e386caf67 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3714f67)
+#32 0x0000558e386bb85a clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x370585a)
+#33 0x0000558e378818d1 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage1/bin/clang+++0x28cb8d1)
+#34 0x0000558e37800239 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage1/bin/clang+++0x284a239)
+#35 0x0000558e379472e4 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage1/bin/clang+++0x29912e4)
+#36 0x0000558e35b78233 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage1/bin/clang+++0xbc2233)
+#37 0x0000558e35b7090d ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#38 0x0000558e37636a4d void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+#39 0x0000558e36d439c7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage1/bin/clang+++0x1d8d9c7)
+#40 0x0000558e37636de7 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (.part.0) Job.cpp:0:0
+#41 0x0000558e375ff601 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x2649601)
+#42 0x0000558e376000bd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x264a0bd)
+#43 0x0000558e3761160c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage1/bin/clang+++0x265b60c)
+#44 0x0000558e35b75399 clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage1/bin/clang+++0xbbf399)
+#45 0x0000558e35abecab main (/tmp/llvm-project-build-stage1/bin/clang+++0xb08cab)
+#46 0x00007f1156166d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#47 0x00007f1156166e40 call_init ./csu/../csu/libc-start.c:128:20
+#48 0x00007f1156166e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#49 0x0000558e35b6fd85 _start (/tmp/llvm-project-build-stage1/bin/clang+++0xbb9d85)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/btBox2dBox2dCollisionAlgorithm-0fb845.cpp
+clang++: note: diagnostic msg: /tmp/btBox2dBox2dCollisionAlgorithm-0fb845.sh
+clang++: note: diagnostic msg: 
+
+********************
+[253/669] Building CXX object CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o
+FAILED: CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o 
+/tmp/llvm-test-suite-build/tools/timeit --summary CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o.time /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG  -O0 -g   -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/btBox2dShape.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG -O0 -g -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/btBox2dShape.cpp
+1.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:212:4: current parser token 'm'
+2.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:28:1: parsing struct/union/class body 'btMatrix3x3'
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:207:3: parsing function body 'btMatrix3x3::getOpenGLSubMatrix'
+4.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:207:3: in compound statement ('{}')
+ #0 0x000055f6cd925f20 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/tmp/llvm-project-build-stage1/bin/clang+++0x1e45f20)
+ #1 0x000055f6cd923df4 llvm::sys::CleanupOnSignal(unsigned long) (/tmp/llvm-project-build-stage1/bin/clang+++0x1e43df4)
+ #2 0x000055f6cd86d578 CrashRecoverySignalHandler(int) CrashRecoveryContext.cpp:0:0
+ #3 0x00007f79873c9520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #4 0x000055f6d0301be5 clang::interp::CheckRange(clang::interp::InterpState&, clang::interp::CodePtr, clang::interp::Pointer const&, clang::AccessKinds) (/tmp/llvm-project-build-stage1/bin/clang+++0x4821be5)
+ #5 0x000055f6d0302025 clang::interp::CheckStore(clang::interp::InterpState&, clang::interp::CodePtr, clang::interp::Pointer const&) (/tmp/llvm-project-build-stage1/bin/clang+++0x4822025)
+ #6 0x000055f6d0290545 clang::interp::EvalEmitter::emitStore(clang::interp::PrimType, clang::interp::SourceInfo const&) (/tmp/llvm-project-build-stage1/bin/clang+++0x47b0545)
+ #7 0x000055f6d05142c2 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::VisitBinaryOperator(clang::BinaryOperator const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4a342c2)
+ #8 0x000055f6d050e215 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visit(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4a2e215)
+ #9 0x000055f6d0510d41 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4a30d41)
+#10 0x000055f6d0245849 clang::interp::EvalEmitter::interpretExpr(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x4765849)
+#11 0x000055f6d023a07a clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) (/tmp/llvm-project-build-stage1/bin/clang+++0x475a07a)
+#12 0x000055f6d01b49b9 EvaluateAsRValue((anonymous namespace)::EvalInfo&, clang::Expr const*, clang::APValue&) ExprConstant.cpp:0:0
+#13 0x000055f6d01b5463 clang::Expr::EvaluateForOverflow(clang::ASTContext const&) const (/tmp/llvm-project-build-stage1/bin/clang+++0x46d5463)
+#14 0x000055f6cf3b7e01 clang::Sema::CheckForIntOverflow(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d7e01)
+#15 0x000055f6cf40427b clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x392427b)
+#16 0x000055f6cf833400 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3d53400)
+#17 0x000055f6cfa9eeee clang::Sema::ActOnExprStmt(clang::ActionResult<clang::Expr*, true>, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3fbeeee)
+#18 0x000055f6cf2e1cb1 clang::Parser::ParseExprStatement(clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3801cb1)
+#19 0x000055f6cf2d5d17 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f5d17)
+#20 0x000055f6cf2d66a8 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f66a8)
+#21 0x000055f6cf2d74b1 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x37f74b1)
+#22 0x000055f6cf2da45a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37fa45a)
+#23 0x000055f6cf204878 clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3724878)
+#24 0x000055f6cf2044dd clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37244dd)
+#25 0x000055f6cf2517e1 clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37717e1)
+#26 0x000055f6cf2536a2 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37736a2)
+#27 0x000055f6cf221be2 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x3741be2)
+#28 0x000055f6cf1eb126 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370b126)
+#29 0x000055f6cf1ec03e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x370c03e)
+#30 0x000055f6cf1f3582 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage1/bin/clang+++0x3713582)
+#31 0x000055f6cf1f4f67 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3714f67)
+#32 0x000055f6cf1e585a clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x370585a)
+#33 0x000055f6ce3ab8d1 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage1/bin/clang+++0x28cb8d1)
+#34 0x000055f6ce32a239 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage1/bin/clang+++0x284a239)
+#35 0x000055f6ce4712e4 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage1/bin/clang+++0x29912e4)
+#36 0x000055f6cc6a2233 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage1/bin/clang+++0xbc2233)
+#37 0x000055f6cc69a90d ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#38 0x000055f6ce160a4d void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+#39 0x000055f6cd86d9c7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage1/bin/clang+++0x1d8d9c7)
+#40 0x000055f6ce160de7 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (.part.0) Job.cpp:0:0
+#41 0x000055f6ce129601 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x2649601)
+#42 0x000055f6ce12a0bd clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x264a0bd)
+#43 0x000055f6ce13b60c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage1/bin/clang+++0x265b60c)
+#44 0x000055f6cc69f399 clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage1/bin/clang+++0xbbf399)
+#45 0x000055f6cc5e8cab main (/tmp/llvm-project-build-stage1/bin/clang+++0xb08cab)
+#46 0x00007f79873b0d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#47 0x00007f79873b0e40 call_init ./csu/../csu/libc-start.c:128:20
+#48 0x00007f79873b0e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#49 0x000055f6cc699d85 _start (/tmp/llvm-project-build-stage1/bin/clang+++0xbb9d85)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/btBox2dShape-446254.cpp
+clang++: note: diagnostic msg: /tmp/btBox2dShape-446254.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O3 stage2" failed
+
+STDOUT:
+ #8 0x0000557c705f14ee clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visit(clang::Expr const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c404ee)
+ #9 0x0000557c705fba83 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c4aa83)
+#10 0x0000557c705cff05 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c1ef05)
+#11 0x0000557c704fb1de EvaluateAsRValue((anonymous namespace)::EvalInfo&, clang::Expr const*, clang::APValue&) ExprConstant.cpp:0:0
+#12 0x0000557c704fb74f clang::Expr::EvaluateForOverflow(clang::ASTContext const&) const (/tmp/llvm-project-build-stage2/bin/clang+++0x5b4a74f)
+#13 0x0000557c6f58d30c clang::Sema::CheckForIntOverflow(clang::Expr const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x4bdc30c)
+#14 0x0000557c6f58db46 clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x4bdcb46)
+#15 0x0000557c6fb120d4 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x51610d4)
+#16 0x0000557c6f418d22 clang::Parser::handleExprStmt(clang::ActionResult<clang::Expr*, true>, clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a67d22)
+#17 0x0000557c6f40fba1 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5eba1)
+#18 0x0000557c6f40f29f clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5e29f)
+#19 0x0000557c6f41a656 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a69656)
+#20 0x0000557c6f41bb9e clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a6ab9e)
+#21 0x0000557c6f40cf0a clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5bf0a)
+#22 0x0000557c6f40b6ca clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5a6ca)
+#23 0x0000557c6f3f123e clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a4023e)
+#24 0x0000557c6f3eea57 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a3da57)
+#25 0x0000557c6f3b5d97 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a04d97)
+#26 0x0000557c6f360e54 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage2/bin/clang+++0x49afe54)
+#27 0x0000557c6f360baa clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/tmp/llvm-project-build-stage2/bin/clang+++0x49afbaa)
+#28 0x0000557c6f35fa56 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage2/bin/clang+++0x49aea56)
+#29 0x0000557c6f35dc34 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage2/bin/clang+++0x49acc34)
+#30 0x0000557c6f3591fe clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x49a81fe)
+#31 0x0000557c6e3274d7 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage2/bin/clang+++0x39764d7)
+#32 0x0000557c6e266ac4 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage2/bin/clang+++0x38b5ac4)
+#33 0x0000557c6e428785 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage2/bin/clang+++0x3a77785)
+#34 0x0000557c6c3a8bba cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage2/bin/clang+++0x19f7bba)
+#35 0x0000557c6c3a5bcc ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#36 0x0000557c6e07e0c9 void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::$_0>(long) Job.cpp:0:0
+#37 0x0000557c6d52d3ac llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage2/bin/clang+++0x2b7c3ac)
+#38 0x0000557c6e07ddc5 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (/tmp/llvm-project-build-stage2/bin/clang+++0x36ccdc5)
+#39 0x0000557c6e0324b2 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage2/bin/clang+++0x36814b2)
+#40 0x0000557c6e0580cc clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage2/bin/clang+++0x36a70cc)
+#41 0x0000557c6c3a4dfb clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage2/bin/clang+++0x19f3dfb)
+#42 0x0000557c6c3b6c6a main (/tmp/llvm-project-build-stage2/bin/clang+++0x1a05c6a)
+#43 0x00007f6030b43d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#44 0x00007f6030b43e40 call_init ./csu/../csu/libc-start.c:128:20
+#45 0x00007f6030b43e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#46 0x0000557c6c395e25 _start (/tmp/llvm-project-build-stage2/bin/clang+++0x19e4e25)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage2/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/btAxisSweep3-c8cb62.cpp
+clang++: note: diagnostic msg: /tmp/btAxisSweep3-c8cb62.sh
+clang++: note: diagnostic msg: 
+
+********************
+[251/669] Building CXX object CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o
+FAILED: CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o 
+/tmp/llvm-test-suite-build/tools/timeit --summary CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o.time /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG  -O3   -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/btBox2dBox2dCollisionAlgorithm.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG -O3 -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dBox2dCollisionAlgorithm.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/btBox2dBox2dCollisionAlgorithm.cpp
+1.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:212:4: current parser token 'm'
+2.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:28:1: parsing struct/union/class body 'btMatrix3x3'
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:207:3: parsing function body 'btMatrix3x3::getOpenGLSubMatrix'
+4.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:207:3: in compound statement ('{}')
+ #0 0x000055d900d009a8 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/tmp/llvm-project-build-stage2/bin/clang+++0x2c199a8)
+ #1 0x000055d900cfe04e llvm::sys::RunSignalHandlers() (/tmp/llvm-project-build-stage2/bin/clang+++0x2c1704e)
+ #2 0x000055d900c637d7 CrashRecoverySignalHandler(int) (.llvm.550094096184462423) CrashRecoveryContext.cpp:0:0
+ #3 0x00007f90a2c6d520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #4 0x000055d903e6674b clang::interp::CheckRange(clang::interp::InterpState&, clang::interp::CodePtr, clang::interp::Pointer const&, clang::AccessKinds) (/tmp/llvm-project-build-stage2/bin/clang+++0x5d7f74b)
+ #5 0x000055d903e67de5 clang::interp::CheckStore(clang::interp::InterpState&, clang::interp::CodePtr, clang::interp::Pointer const&) (/tmp/llvm-project-build-stage2/bin/clang+++0x5d80de5)
+ #6 0x000055d903e01481 bool clang::interp::Store<(clang::interp::PrimType)11, clang::interp::Floating>(clang::interp::InterpState&, clang::interp::CodePtr) EvalEmitter.cpp:0:0
+ #7 0x000055d903d29233 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::VisitBinaryOperator(clang::BinaryOperator const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c42233)
+ #8 0x000055d903d274ee clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visit(clang::Expr const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c404ee)
+ #9 0x000055d903d31a83 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c4aa83)
+#10 0x000055d903d05f05 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c1ef05)
+#11 0x000055d903c311de EvaluateAsRValue((anonymous namespace)::EvalInfo&, clang::Expr const*, clang::APValue&) ExprConstant.cpp:0:0
+#12 0x000055d903c3174f clang::Expr::EvaluateForOverflow(clang::ASTContext const&) const (/tmp/llvm-project-build-stage2/bin/clang+++0x5b4a74f)
+#13 0x000055d902cc330c clang::Sema::CheckForIntOverflow(clang::Expr const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x4bdc30c)
+#14 0x000055d902cc3b46 clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x4bdcb46)
+#15 0x000055d9032480d4 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x51610d4)
+#16 0x000055d902b4ed22 clang::Parser::handleExprStmt(clang::ActionResult<clang::Expr*, true>, clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a67d22)
+#17 0x000055d902b45ba1 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5eba1)
+#18 0x000055d902b4529f clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5e29f)
+#19 0x000055d902b50656 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a69656)
+#20 0x000055d902b51b9e clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a6ab9e)
+#21 0x000055d902b42f0a clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5bf0a)
+#22 0x000055d902b416ca clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5a6ca)
+#23 0x000055d902b2723e clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a4023e)
+#24 0x000055d902b24a57 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a3da57)
+#25 0x000055d902aebd97 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a04d97)
+#26 0x000055d902a96e54 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage2/bin/clang+++0x49afe54)
+#27 0x000055d902a96baa clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/tmp/llvm-project-build-stage2/bin/clang+++0x49afbaa)
+#28 0x000055d902a95a56 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage2/bin/clang+++0x49aea56)
+#29 0x000055d902a93c34 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage2/bin/clang+++0x49acc34)
+#30 0x000055d902a8f1fe clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x49a81fe)
+#31 0x000055d901a5d4d7 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage2/bin/clang+++0x39764d7)
+#32 0x000055d90199cac4 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage2/bin/clang+++0x38b5ac4)
+#33 0x000055d901b5e785 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage2/bin/clang+++0x3a77785)
+#34 0x000055d8ffadebba cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage2/bin/clang+++0x19f7bba)
+#35 0x000055d8ffadbbcc ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#36 0x000055d9017b40c9 void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::$_0>(long) Job.cpp:0:0
+#37 0x000055d900c633ac llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage2/bin/clang+++0x2b7c3ac)
+#38 0x000055d9017b3dc5 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (/tmp/llvm-project-build-stage2/bin/clang+++0x36ccdc5)
+#39 0x000055d9017684b2 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage2/bin/clang+++0x36814b2)
+#40 0x000055d90178e0cc clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage2/bin/clang+++0x36a70cc)
+#41 0x000055d8ffadadfb clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage2/bin/clang+++0x19f3dfb)
+#42 0x000055d8ffaecc6a main (/tmp/llvm-project-build-stage2/bin/clang+++0x1a05c6a)
+#43 0x00007f90a2c54d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#44 0x00007f90a2c54e40 call_init ./csu/../csu/libc-start.c:128:20
+#45 0x00007f90a2c54e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#46 0x000055d8ffacbe25 _start (/tmp/llvm-project-build-stage2/bin/clang+++0x19e4e25)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage2/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/btBox2dBox2dCollisionAlgorithm-02432a.cpp
+clang++: note: diagnostic msg: /tmp/btBox2dBox2dCollisionAlgorithm-02432a.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O0-g stage2" failed
+
+STDOUT:
+ #8 0x00005582974a84ee clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visit(clang::Expr const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c404ee)
+ #9 0x00005582974b2a83 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c4aa83)
+#10 0x0000558297486f05 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c1ef05)
+#11 0x00005582973b21de EvaluateAsRValue((anonymous namespace)::EvalInfo&, clang::Expr const*, clang::APValue&) ExprConstant.cpp:0:0
+#12 0x00005582973b274f clang::Expr::EvaluateForOverflow(clang::ASTContext const&) const (/tmp/llvm-project-build-stage2/bin/clang+++0x5b4a74f)
+#13 0x000055829644430c clang::Sema::CheckForIntOverflow(clang::Expr const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x4bdc30c)
+#14 0x0000558296444b46 clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x4bdcb46)
+#15 0x00005582969c90d4 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x51610d4)
+#16 0x00005582962cfd22 clang::Parser::handleExprStmt(clang::ActionResult<clang::Expr*, true>, clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a67d22)
+#17 0x00005582962c6ba1 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5eba1)
+#18 0x00005582962c629f clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5e29f)
+#19 0x00005582962d1656 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a69656)
+#20 0x00005582962d2b9e clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a6ab9e)
+#21 0x00005582962c3f0a clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5bf0a)
+#22 0x00005582962c26ca clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5a6ca)
+#23 0x00005582962a823e clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a4023e)
+#24 0x00005582962a5a57 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a3da57)
+#25 0x000055829626cd97 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a04d97)
+#26 0x0000558296217e54 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage2/bin/clang+++0x49afe54)
+#27 0x0000558296217baa clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/tmp/llvm-project-build-stage2/bin/clang+++0x49afbaa)
+#28 0x0000558296216a56 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage2/bin/clang+++0x49aea56)
+#29 0x0000558296214c34 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage2/bin/clang+++0x49acc34)
+#30 0x00005582962101fe clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x49a81fe)
+#31 0x00005582951de4d7 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage2/bin/clang+++0x39764d7)
+#32 0x000055829511dac4 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage2/bin/clang+++0x38b5ac4)
+#33 0x00005582952df785 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage2/bin/clang+++0x3a77785)
+#34 0x000055829325fbba cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage2/bin/clang+++0x19f7bba)
+#35 0x000055829325cbcc ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#36 0x0000558294f350c9 void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::$_0>(long) Job.cpp:0:0
+#37 0x00005582943e43ac llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage2/bin/clang+++0x2b7c3ac)
+#38 0x0000558294f34dc5 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (/tmp/llvm-project-build-stage2/bin/clang+++0x36ccdc5)
+#39 0x0000558294ee94b2 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage2/bin/clang+++0x36814b2)
+#40 0x0000558294f0f0cc clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage2/bin/clang+++0x36a70cc)
+#41 0x000055829325bdfb clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage2/bin/clang+++0x19f3dfb)
+#42 0x000055829326dc6a main (/tmp/llvm-project-build-stage2/bin/clang+++0x1a05c6a)
+#43 0x00007f85f650fd90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#44 0x00007f85f650fe40 call_init ./csu/../csu/libc-start.c:128:20
+#45 0x00007f85f650fe40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#46 0x000055829324ce25 _start (/tmp/llvm-project-build-stage2/bin/clang+++0x19e4e25)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage2/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/btBox2dBox2dCollisionAlgorithm-a22734.cpp
+clang++: note: diagnostic msg: /tmp/btBox2dBox2dCollisionAlgorithm-a22734.sh
+clang++: note: diagnostic msg: 
+
+********************
+[253/669] Building CXX object CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o
+FAILED: CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o 
+/tmp/llvm-test-suite-build/tools/timeit --summary CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o.time /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG  -O0 -g   -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/btBox2dShape.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG -O0 -g -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/btBox2dShape.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/btBox2dShape.cpp
+1.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:212:4: current parser token 'm'
+2.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:28:1: parsing struct/union/class body 'btMatrix3x3'
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:207:3: parsing function body 'btMatrix3x3::getOpenGLSubMatrix'
+4.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btMatrix3x3.h:207:3: in compound statement ('{}')
+ #0 0x0000563fdf0769a8 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/tmp/llvm-project-build-stage2/bin/clang+++0x2c199a8)
+ #1 0x0000563fdf07404e llvm::sys::RunSignalHandlers() (/tmp/llvm-project-build-stage2/bin/clang+++0x2c1704e)
+ #2 0x0000563fdefd97d7 CrashRecoverySignalHandler(int) (.llvm.550094096184462423) CrashRecoveryContext.cpp:0:0
+ #3 0x00007fc25dd35520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #4 0x0000563fe21dc74b clang::interp::CheckRange(clang::interp::InterpState&, clang::interp::CodePtr, clang::interp::Pointer const&, clang::AccessKinds) (/tmp/llvm-project-build-stage2/bin/clang+++0x5d7f74b)
+ #5 0x0000563fe21ddde5 clang::interp::CheckStore(clang::interp::InterpState&, clang::interp::CodePtr, clang::interp::Pointer const&) (/tmp/llvm-project-build-stage2/bin/clang+++0x5d80de5)
+ #6 0x0000563fe2177481 bool clang::interp::Store<(clang::interp::PrimType)11, clang::interp::Floating>(clang::interp::InterpState&, clang::interp::CodePtr) EvalEmitter.cpp:0:0
+ #7 0x0000563fe209f233 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::VisitBinaryOperator(clang::BinaryOperator const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c42233)
+ #8 0x0000563fe209d4ee clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visit(clang::Expr const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c404ee)
+ #9 0x0000563fe20a7a83 clang::interp::ByteCodeExprGen<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c4aa83)
+#10 0x0000563fe207bf05 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) (/tmp/llvm-project-build-stage2/bin/clang+++0x5c1ef05)
+#11 0x0000563fe1fa71de EvaluateAsRValue((anonymous namespace)::EvalInfo&, clang::Expr const*, clang::APValue&) ExprConstant.cpp:0:0
+#12 0x0000563fe1fa774f clang::Expr::EvaluateForOverflow(clang::ASTContext const&) const (/tmp/llvm-project-build-stage2/bin/clang+++0x5b4a74f)
+#13 0x0000563fe103930c clang::Sema::CheckForIntOverflow(clang::Expr const*) (/tmp/llvm-project-build-stage2/bin/clang+++0x4bdc30c)
+#14 0x0000563fe1039b46 clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x4bdcb46)
+#15 0x0000563fe15be0d4 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x51610d4)
+#16 0x0000563fe0ec4d22 clang::Parser::handleExprStmt(clang::ActionResult<clang::Expr*, true>, clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a67d22)
+#17 0x0000563fe0ebbba1 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5eba1)
+#18 0x0000563fe0ebb29f clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5e29f)
+#19 0x0000563fe0ec6656 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a69656)
+#20 0x0000563fe0ec7b9e clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a6ab9e)
+#21 0x0000563fe0eb8f0a clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5bf0a)
+#22 0x0000563fe0eb76ca clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a5a6ca)
+#23 0x0000563fe0e9d23e clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a4023e)
+#24 0x0000563fe0e9aa57 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a3da57)
+#25 0x0000563fe0e61d97 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage2/bin/clang+++0x4a04d97)
+#26 0x0000563fe0e0ce54 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage2/bin/clang+++0x49afe54)
+#27 0x0000563fe0e0cbaa clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/tmp/llvm-project-build-stage2/bin/clang+++0x49afbaa)
+#28 0x0000563fe0e0ba56 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage2/bin/clang+++0x49aea56)
+#29 0x0000563fe0e09c34 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage2/bin/clang+++0x49acc34)
+#30 0x0000563fe0e051fe clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage2/bin/clang+++0x49a81fe)
+#31 0x0000563fdfdd34d7 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage2/bin/clang+++0x39764d7)
+#32 0x0000563fdfd12ac4 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage2/bin/clang+++0x38b5ac4)
+#33 0x0000563fdfed4785 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage2/bin/clang+++0x3a77785)
+#34 0x0000563fdde54bba cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage2/bin/clang+++0x19f7bba)
+#35 0x0000563fdde51bcc ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#36 0x0000563fdfb2a0c9 void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::$_0>(long) Job.cpp:0:0
+#37 0x0000563fdefd93ac llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage2/bin/clang+++0x2b7c3ac)
+#38 0x0000563fdfb29dc5 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (/tmp/llvm-project-build-stage2/bin/clang+++0x36ccdc5)
+#39 0x0000563fdfade4b2 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage2/bin/clang+++0x36814b2)
+#40 0x0000563fdfb040cc clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage2/bin/clang+++0x36a70cc)
+#41 0x0000563fdde50dfb clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage2/bin/clang+++0x19f3dfb)
+#42 0x0000563fdde62c6a main (/tmp/llvm-project-build-stage2/bin/clang+++0x1a05c6a)
+#43 0x00007fc25dd1cd90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#44 0x00007fc25dd1ce40 call_init ./csu/../csu/libc-start.c:128:20
+#45 0x00007fc25dd1ce40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#46 0x0000563fdde41e25 _start (/tmp/llvm-project-build-stage2/bin/clang+++0x19e4e25)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage2/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/btBox2dShape-c40310.cpp
+clang++: note: diagnostic msg: /tmp/btBox2dShape-c40310.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
