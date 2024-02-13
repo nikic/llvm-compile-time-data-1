@@ -1,0 +1,133 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+`-MemberExpr 0x5626919bbd00 '_Bool' lvalue ->Printing 0x562691801300
+  `-CXXThisExpr 0x5626919bbcf0 'const class llvm::itanium_demangle::ReferenceType *' implicit this
+bool clang::interp::Context::evaluateAsRValue(clang::interp::State&, const clang::Expr*, clang::APValue&)
+MemberExpr 0x5626919bbd00 '_Bool' lvalue ->Printing 0x562691801300
+`-CXXThisExpr 0x5626919bbcf0 'const class llvm::itanium_demangle::ReferenceType *' implicit this
+bool clang::interp::Context::evaluateAsRValue(clang::interp::State&, const clang::Expr*, clang::APValue&)
+UnaryOperator 0x5626919bc2c0 '_Bool' prefix '!' cannot overflow
+`-ImplicitCastExpr 0x5626919bc2a8 '_Bool' <PointerToBoolean>
+  `-ImplicitCastExpr 0x5626919bc290 'const class llvm::itanium_demangle::Node *' <LValueToRValue>
+    `-MemberExpr 0x5626919bc260 'const class llvm::itanium_demangle::Node *' lvalue .second 0x562691803bc0
+      `-DeclRefExpr 0x5626919bc240 'std::pair<ReferenceKind, const Node *>':'struct std::pair<enum llvm::itanium_demangle::ReferenceKind, const class llvm::itanium_demangle::Node *>' lvalue Var 0x5626919bc138 'Collapsed' 'std::pair<ReferenceKind, const Node *>':'struct std::pair<enum llvm::itanium_demangle::ReferenceKind, const class llvm::itanium_demangle::Node *>'
+bool clang::interp::Context::evaluateAsRValue(clang::interp::State&, const clang::Expr*, clang::APValue&)
+BinaryOperator 0x5626919bc4c8 '_Bool' '||'
+|-CXXMemberCallExpr 0x5626919bc3c0 '_Bool'
+| |-MemberExpr 0x5626919bc370 '<bound member function type>' ->hasArray 0x5626917bb3f8
+| | `-ImplicitCastExpr 0x5626919bc358 'const class llvm::itanium_demangle::Node *' <LValueToRValue>
+| |   `-MemberExpr 0x5626919bc328 'const class llvm::itanium_demangle::Node *' lvalue .second 0x562691803bc0
+| |     `-DeclRefExpr 0x5626919bc308 'std::pair<ReferenceKind, const Node *>':'struct std::pair<enum llvm::itanium_demangle::ReferenceKind, const class llvm::itanium_demangle::Node *>' lvalue Var 0x5626919bc138 'Collapsed' 'std::pair<ReferenceKind, const Node *>':'struct std::pair<enum llvm::itanium_demangle::ReferenceKind, const class llvm::itanium_demangle::Node *>'
+| `-DeclRefExpr 0x5626919bc3a0 'OutputBuffer':'class llvm::itanium_demangle::OutputBuffer' lvalue ParmVar 0x5626918020a0 'OB' 'OutputBuffer &'
+`-CXXMemberCallExpr 0x5626919bc4a0 '_Bool'
+  |-MemberExpr 0x5626919bc450 '<bound member function type>' ->hasFunction 0x5626917bb550
+  | `-ImplicitCastExpr 0x5626919bc438 'const class llvm::itanium_demangle::Node *' <LValueToRValue>
+  |   `-MemberExpr 0x5626919bc408 'const class llvm::itanium_demangle::Node *' lvalue .second 0x562691803bc0
+  |     `-DeclRefExpr 0x5626919bc3e8 'std::pair<ReferenceKind, const Node *>':'struct std::pair<enum llvm::itanium_demangle::ReferenceKind, const class llvm::itanium_demangle::Node *>' lvalue Var 0x5626919bc138 'Collapsed' 'std::pair<ReferenceKind, const Node *>':'struct std::pair<enum llvm::itanium_demangle::ReferenceKind, const class llvm::itanium_demangle::Node *>'
+  `-DeclRefExpr 0x5626919bc480 'OutputBuffer':'class llvm::itanium_demangle::OutputBuffer' lvalue ParmVar 0x5626918020a0 'OB' 'OutputBuffer &'
+bool clang::interp::Context::evaluateAsRValue(clang::interp::State&, const clang::Expr*, clang::APValue&)
+CXXMemberCallExpr 0x5626919bc3c0 '_Bool'
+|-MemberExpr 0x5626919bc370 '<bound member function type>' ->hasArray 0x5626917bb3f8
+| `-ImplicitCastExpr 0x5626919bc358 'const class llvm::itanium_demangle::Node *' <LValueToRValue>
+|   `-MemberExpr 0x5626919bc328 'const class llvm::itanium_demangle::Node *' lvalue .second 0x562691803bc0
+|     `-DeclRefExpr 0x5626919bc308 'std::pair<ReferenceKind, const Node *>':'struct std::pair<enum llvm::itanium_demangle::ReferenceKind, const class llvm::itanium_demangle::Node *>' lvalue Var 0x5626919bc138 'Collapsed' 'std::pair<ReferenceKind, const Node *>':'struct std::pair<enum llvm::itanium_demangle::ReferenceKind, const class llvm::itanium_demangle::Node *>'
+`-DeclRefExpr 0x5626919bc3a0 'OutputBuffer':'class llvm::itanium_demangle::OutputBuffer' lvalue ParmVar 0x5626918020a0 'OB' 'OutputBuffer &'
+bool clang::interp::Context::evaluateAsRValue(clang::interp::State&, const clang::Expr*, clang::APValue&)
+CXXMemberCallExpr 0x5626919bc4a0 '_Bool'
+|-MemberExpr 0x5626919bc450 '<bound member function type>' ->hasFunction 0x5626917bb550
+| `-ImplicitCastExpr 0x5626919bc438 'const class llvm::itanium_demangle::Node *' <LValueToRValue>
+|   `-MemberExpr 0x5626919bc408 'const class llvm::itanium_demangle::Node *' lvalue .second 0x562691803bc0
+|     `-DeclRefExpr 0x5626919bc3e8 'std::pair<ReferenceKind, const Node *>':'struct std::pair<enum llvm::itanium_demangle::ReferenceKind, const class llvm::itanium_demangle::Node *>' lvalue Var 0x5626919bc138 'Collapsed' 'std::pair<ReferenceKind, const Node *>':'struct std::pair<enum llvm::itanium_demangle::ReferenceKind, const class llvm::itanium_demangle::Node *>'
+`-DeclRefExpr 0x5626919bc480 'OutputBuffer':'class llvm::itanium_demangle::OutputBuffer' lvalue ParmVar 0x5626918020a0 'OB' 'OutputBuffer &'
+bool clang::interp::Context::evaluateAsRValue(clang::interp::State&, const clang::Expr*, clang::APValue&)
+ImplicitCastExpr 0x56269201b128 'Node *' <DerivedToBase (Node)>
+`-CXXMemberCallExpr 0x56269201b0f8 'class llvm::itanium_demangle::PostfixQualifiedType *'
+  |-MemberExpr 0x56269201b080 '<bound member function type>' .makeNode 0x56269201af60
+  | `-MemberExpr 0x562692019d00 'class (anonymous namespace)::DefaultAllocator' lvalue ->ASTAllocator 0x562691a6a640
+  |   `-CXXThisExpr 0x562692019cf0 'struct llvm::itanium_demangle::AbstractManglingParser<struct llvm::itanium_demangle::ManglingParser<class (anonymous namespace)::DefaultAllocator>, class (anonymous namespace)::DefaultAllocator> *' implicit this
+  |-CallExpr 0x56269201a488 'class llvm::itanium_demangle::Node *' lvalue
+  | |-ImplicitCastExpr 0x56269201a470 'class llvm::itanium_demangle::Node *&(*)(typename std::remove_reference<class Node *&>::type &) noexcept' <BuiltinFnToFnPtr>
+  | | `-DeclRefExpr 0x56269201a408 '<builtin fn type>' Function 0x562691d34028 'forward' 'class llvm::itanium_demangle::Node *&(typename std::remove_reference<class Node *&>::type &) noexcept' (FunctionTemplate 0x5626905e2d40 'forward')
+  | |   `-NestedNameSpecifier Namespace 0x562691752208 'std'
+  | `-DeclRefExpr 0x562692019ec0 'class llvm::itanium_demangle::Node *' lvalue ParmVar 0x562691fd3dd0 'args' 'class llvm::itanium_demangle::Node *&'
+  `-CallExpr 0x56269201ab38 'const char[9]' lvalue
+    |-ImplicitCastExpr 0x56269201ab20 'const char (&(*)(typename std::remove_reference<const char (&)[9]>::type &) noexcept)[9]' <BuiltinFnToFnPtr>
+    | `-DeclRefExpr 0x56269201aab8 '<builtin fn type>' Function 0x562691d395b8 'forward' 'const char (&(typename std::remove_reference<const char (&)[9]>::type &) noexcept)[9]' (FunctionTemplate 0x5626905e2d40 'forward')
+    |   `-NestedNameSpecifier Namespace 0x562691752208 'std'
+    `-DeclRefExpr 0x56269201a570 'const char[9]' lvalue ParmVar 0x562691fd3e48 'args' 'const char (&)[9]'
+bool clang::interp::Context::evaluateAsRValue(clang::interp::State&, const clang::Expr*, clang::APValue&)
+UnaryExprOrTypeTraitExpr 0x56269201b1c0 'unsigned long' sizeof 'class llvm::itanium_demangle::PostfixQualifiedType'
+bool clang::interp::Context::evaluateAsRValue(clang::interp::State&, const clang::Expr*, clang::APValue&)
+CXXNewExpr 0x56269201c098 'class llvm::itanium_demangle::PostfixQualifiedType *' Function 0x562690824150 'operator new' 'void *(std::size_t, void *) noexcept'
+|-CXXConstructExpr 0x56269201c060 'class llvm::itanium_demangle::PostfixQualifiedType' 'void (const Node *, std::string_view)'
+| |-ImplicitCastExpr 0x56269201bfe8 'const Node *' <NoOp>
+| | `-ImplicitCastExpr 0x56269201bfd0 'class llvm::itanium_demangle::Node *' <LValueToRValue>
+| |   `-CallExpr 0x56269201b898 'class llvm::itanium_demangle::Node *' lvalue
+| |     |-ImplicitCastExpr 0x56269201b880 'class llvm::itanium_demangle::Node *&(*)(typename std::remove_reference<class Node *&>::type &) noexcept' <BuiltinFnToFnPtr>
+| |     | `-DeclRefExpr 0x56269201b818 '<builtin fn type>' Function 0x562691d34028 'forward' 'class llvm::itanium_demangle::Node *&(typename std::remove_reference<class Node *&>::type &) noexcept' (FunctionTemplate 0x5626905e2d40 'forward')
+| |     |   `-NestedNameSpecifier Namespace 0x562691a44338 'std'
+| |     `-DeclRefExpr 0x56269201b2d0 'class llvm::itanium_demangle::Node *' lvalue ParmVar 0x56269201add0 'args' 'class llvm::itanium_demangle::Node *&'
+| `-ImplicitCastExpr 0x56269201c048 'std::string_view':'class std::basic_string_view<char>' <ConstructorConversion>
+|   `-CXXConstructExpr 0x56269201c018 'std::string_view':'class std::basic_string_view<char>' 'void (const char *) noexcept'
+|     `-ImplicitCastExpr 0x56269201c000 'const char *' <ArrayToPointerDecay>
+|       `-CallExpr 0x56269201bf48 'const char[9]' lvalue
+|         |-ImplicitCastExpr 0x56269201bf30 'const char (&(*)(typename std::remove_reference<const char (&)[9]>::type &) noexcept)[9]' <BuiltinFnToFnPtr>
+|         | `-DeclRefExpr 0x56269201bec8 '<builtin fn type>' Function 0x562691d395b8 'forward' 'const char (&(typename std::remove_reference<const char (&)[9]>::type &) noexcept)[9]' (FunctionTemplate 0x5626905e2d40 'forward')
+|         |   `-NestedNameSpecifier Namespace 0x562691a44338 'std'
+|         `-DeclRefExpr 0x56269201b980 'const char[9]' lvalue ParmVar 0x56269201ae48 'args' 'const char (&)[9]'
+`-CXXMemberCallExpr 0x56269201b1e0 'void *'
+  |-MemberExpr 0x562691a68fa0 '<bound member function type>' .allocate 0x562691a65388
+  | `-MemberExpr 0x562691a68f70 'BumpPointerAllocator':'class (anonymous namespace)::BumpPointerAllocator' lvalue ->Alloc 0x562691a67c08
+  |   `-CXXThisExpr 0x562691a68f60 'class (anonymous namespace)::DefaultAllocator *' implicit this
+  `-UnaryExprOrTypeTraitExpr 0x56269201b1c0 'unsigned long' sizeof 'class llvm::itanium_demangle::PostfixQualifiedType'
+bool clang::interp::Context::evaluateAsRValue(clang::interp::State&, const clang::Expr*, clang::APValue&)
+ImplicitCastExpr 0x56269201d548 'Node *' <DerivedToBase (Node)>
+`-CXXMemberCallExpr 0x56269201d518 'class llvm::itanium_demangle::PostfixQualifiedType *'
+  |-MemberExpr 0x56269201d4a0 '<bound member function type>' .makeNode 0x56269201d380
+  | `-MemberExpr 0x56269201c118 'class (anonymous namespace)::DefaultAllocator' lvalue ->ASTAllocator 0x562691a6a640
+  |   `-CXXThisExpr 0x56269201c108 'struct llvm::itanium_demangle::AbstractManglingParser<struct llvm::itanium_demangle::ManglingParser<class (anonymous namespace)::DefaultAllocator>, class (anonymous namespace)::DefaultAllocator> *' implicit this
+  |-CallExpr 0x56269201c8a8 'class llvm::itanium_demangle::Node *' lvalue
+  | |-ImplicitCastExpr 0x56269201c890 'class llvm::itanium_demangle::Node *&(*)(typename std::remove_reference<class Node *&>::type &) noexcept' <BuiltinFnToFnPtr>
+  | | `-DeclRefExpr 0x56269201c828 '<builtin fn type>' Function 0x562691d34028 'forward' 'class llvm::itanium_demangle::Node *&(typename std::remove_reference<class Node *&>::type &) noexcept' (FunctionTemplate 0x5626905e2d40 'forward')
+  | |   `-NestedNameSpecifier Namespace 0x562691752208 'std'
+  | `-DeclRefExpr 0x56269201c2e0 'class llvm::itanium_demangle::Node *' lvalue ParmVar 0x562691fd4780 'args' 'class llvm::itanium_demangle::Node *&'
+  `-CallExpr 0x56269201cf58 'const char[11]' lvalue
+    |-ImplicitCastExpr 0x56269201cf40 'const char (&(*)(typename std::remove_reference<const char (&)[11]>::type &) noexcept)[11]' <BuiltinFnToFnPtr>
+    | `-DeclRefExpr 0x56269201ced8 '<builtin fn type>' Function 0x562691f5c9f8 'forward' 'const char (&(typename std::remove_reference<const char (&)[11]>::type &) noexcept)[11]' (FunctionTemplate 0x5626905e2d40 'forward')
+    |   `-NestedNameSpecifier Namespace 0x562691752208 'std'
+    `-DeclRefExpr 0x56269201c990 'const char[11]' lvalue ParmVar 0x562691fd47f8 'args' 'const char (&)[11]'
+bool clang::interp::Context::evaluateAsRValue(clang::interp::State&, const clang::Expr*, clang::APValue&)
+UnaryExprOrTypeTraitExpr 0x56269201d5e0 'unsigned long' sizeof 'class llvm::itanium_demangle::PostfixQualifiedType'
+bool clang::interp::Context::evaluateAsRValue(clang::interp::State&, const clang::Expr*, clang::APValue&)
+CXXNewExpr 0x56269201e4b8 'class llvm::itanium_demangle::PostfixQualifiedType *' Function 0x562690824150 'operator new' 'void *(std::size_t, void *) noexcept'
+|-CXXConstructExpr 0x56269201e480 'class llvm::itanium_demangle::PostfixQualifiedType' 'void (const Node *, std::string_view)'
+| |-ImplicitCastExpr 0x56269201e408 'const Node *' <NoOp>
+| | `-ImplicitCastExpr 0x56269201e3f0 'class llvm::itanium_demangle::Node *' <LValueToRValue>
+| |   `-CallExpr 0x56269201dcb8 'class llvm::itanium_demangle::Node *' lvalue
+| |     |-ImplicitCastExpr 0x56269201dca0 'class llvm::itanium_demangle::Node *&(*)(typename std::remove_reference<class Node *&>::type &) noexcept' <BuiltinFnToFnPtr>
+| |     | `-DeclRefExpr 0x56269201dc38 '<builtin fn type>' Function 0x562691d34028 'forward' 'class llvm::itanium_demangle::Node *&(typename std::remove_reference<class Node *&>::type &) noexcept' (FunctionTemplate 0x5626905e2d40 'forward')
+| |     |   `-NestedNameSpecifier Namespace 0x562691a44338 'std'
+| |     `-DeclRefExpr 0x56269201d6f0 'class llvm::itanium_demangle::Node *' lvalue ParmVar 0x56269201d1f0 'args' 'class llvm::itanium_demangle::Node *&'
+| `-ImplicitCastExpr 0x56269201e468 'std::string_view':'class std::basic_string_view<char>' <ConstructorConversion>
+|   `-CXXConstructExpr 0x56269201e438 'std::string_view':'class std::basic_string_view<char>' 'void (const char *) noexcept'
+|     `-ImplicitCastExpr 0x56269201e420 'const char *' <ArrayToPointerDecay>
+|       `-CallExpr 0x56269201e368 'const char[11]' lvalue
+|         |-ImplicitCastExpr 0x56269201e350 'const char (&(*)(typename std::remove_reference<const char (&)[11]>::type &) noexcept)[11]' <BuiltinFnToFnPtr>
+|         | `-DeclRefExpr 0x56269201e2e8 '<builtin fn type>' Function 0x562691f5c9f8 'forward' 'const char (&(typename std::remove_reference<const char (&)[11]>::type &) noexcept)[11]' (FunctionTemplate 0x5626905e2d40 'forward')
+|         |   `-NestedNameSpecifier Namespace 0x562691a44338 'std'
+|         `-DeclRefExpr 0x56269201dda0 'const char[11]' lvalue ParmVar 0x56269201d268 'args' 'const char (&)[11]'
+`-CXXMemberCallExpr 0x56269201d600 'void *'
+  |-MemberExpr 0x562691a68fa0 '<bound member function type>' .allocate 0x562691a65388
+  | `-MemberExpr 0x562691a68f70 'BumpPointerAllocator':'class (anonymous namespace)::BumpPointerAllocator' lvalue ->Alloc 0x562691a67c08
+  |   `-CXXThisExpr 0x562691a68f60 'class (anonymous namespace)::DefaultAllocator *' implicit this
+  `-UnaryExprOrTypeTraitExpr 0x56269201d5e0 'unsigned long' sizeof 'class llvm::itanium_demangle::PostfixQualifiedType'
+bool clang::interp::Context::evaluateAsRValue(clang::interp::State&, const clang::Expr*, clang::APValue&)
+BinaryOperator 0x56269202f848 '_Bool' '!='
+|-ImplicitCastExpr 0x56269202f830 'int' <LValueToRValue>
+| `-DeclRefExpr 0x56269202f810 'int' lvalue Var 0x56269202f790 'I' 'int'
+`-IntegerLiteral 0x562691b8fe98 'int' 3
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
