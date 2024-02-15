@@ -1,0 +1,133 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+      |                                 ~~  ~~~^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:439:40: note: place parentheses around the '-' expression to silence this warning
+  439 |   return int32_t(X << (32 - B)) >> (32 - B);
+      |                                        ^  
+      |                                     (     )
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:447:27: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  447 |   return int32_t(X << (32 - B)) >> (32 - B);
+      |                    ~~  ~~~^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:447:27: note: place parentheses around the '-' expression to silence this warning
+  447 |   return int32_t(X << (32 - B)) >> (32 - B);
+      |                           ^  
+      |                        (     )
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:447:40: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  447 |   return int32_t(X << (32 - B)) >> (32 - B);
+      |                                 ~~  ~~~^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:447:40: note: place parentheses around the '-' expression to silence this warning
+  447 |   return int32_t(X << (32 - B)) >> (32 - B);
+      |                                        ^  
+      |                                     (     )
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:455:27: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  455 |   return int64_t(x << (64 - B)) >> (64 - B);
+      |                    ~~  ~~~^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:455:27: note: place parentheses around the '-' expression to silence this warning
+  455 |   return int64_t(x << (64 - B)) >> (64 - B);
+      |                           ^  
+      |                        (     )
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:455:40: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  455 |   return int64_t(x << (64 - B)) >> (64 - B);
+      |                                 ~~  ~~~^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:455:40: note: place parentheses around the '-' expression to silence this warning
+  455 |   return int64_t(x << (64 - B)) >> (64 - B);
+      |                                        ^  
+      |                                     (     )
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:463:27: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  463 |   return int64_t(X << (64 - B)) >> (64 - B);
+      |                    ~~  ~~~^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:463:27: note: place parentheses around the '-' expression to silence this warning
+  463 |   return int64_t(X << (64 - B)) >> (64 - B);
+      |                           ^  
+      |                        (     )
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:463:40: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+  463 |   return int64_t(X << (64 - B)) >> (64 - B);
+      |                                 ~~  ~~~^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MathExtras.h:463:40: note: place parentheses around the '-' expression to silence this warning
+  463 |   return int64_t(X << (64 - B)) >> (64 - B);
+      |                                        ^  
+      |                                     (     )
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:18:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ThreadPool.h:16:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:855:70: warning: operator '<<' has lower precedence than '+'; '+' will be evaluated first [-Wshift-op-parentheses]
+  855 |       NewNumBuckets = std::max(64, 1 << (Log2_32_Ceil(OldNumEntries) + 1));
+      |                                      ~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:855:70: note: place parentheses around the '+' expression to silence this warning
+  855 |       NewNumBuckets = std::max(64, 1 << (Log2_32_Ceil(OldNumEntries) + 1));
+      |                                                                      ^  
+      |                                          (                              )
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:1130:51: warning: operator '<<' has lower precedence than '+'; '+' will be evaluated first [-Wshift-op-parentheses]
+ 1130 |       NewNumBuckets = 1 << (Log2_32_Ceil(OldSize) + 1);
+      |                         ~~  ~~~~~~~~~~~~~~~~~~~~~~^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:1130:51: note: place parentheses around the '+' expression to silence this warning
+ 1130 |       NewNumBuckets = 1 << (Log2_32_Ceil(OldSize) + 1);
+      |                                                   ^  
+      |                             (                        )
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:1134:16: warning: '&&' within '||' [-Wlogical-op-parentheses]
+ 1134 |     if ((Small && NewNumBuckets <= InlineBuckets) ||
+      |          ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:1134:16: note: place parentheses around the '&&' expression to silence this warning
+ 1134 |     if ((Small && NewNumBuckets <= InlineBuckets) ||
+      |                ^                                
+      |          (                                      )
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:1135:17: warning: '&&' within '||' [-Wlogical-op-parentheses]
+ 1134 |     if ((Small && NewNumBuckets <= InlineBuckets) ||
+      |                                                   ~~
+ 1135 |         (!Small && NewNumBuckets == getLargeRep()->NumBuckets)) {
+      |          ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:1135:17: note: place parentheses around the '&&' expression to silence this warning
+ 1135 |         (!Small && NewNumBuckets == getLargeRep()->NumBuckets)) {
+      |                 ^                                            
+      |          (                                                   )
+22 warnings and 4 errors generated.
+[21/2542] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Demangle/ItaniumDemangle.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Demangle/ItaniumDemangle.h:2876:53: warning: '&&' within '||' [-Wlogical-op-parentheses]
+ 2876 |       return Enc[0] < Peek[0] || (Enc[0] == Peek[0] && Enc[1] < Peek[1]);
+      |                               ~~  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Demangle/ItaniumDemangle.h:2876:53: note: place parentheses around the '&&' expression to silence this warning
+ 2876 |       return Enc[0] < Peek[0] || (Enc[0] == Peek[0] && Enc[1] < Peek[1]);
+      |                                                     ^                  
+      |                                   (                                    )
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Demangle/ItaniumDemangle.h:4074:34: warning: '&&' within '||' [-Wlogical-op-parentheses]
+ 4073 |     if (look(AfterQuals) == 'F' ||
+      |                                 ~~
+ 4074 |         (look(AfterQuals) == 'D' &&
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~
+ 4075 |          (look(AfterQuals + 1) == 'o' || look(AfterQuals + 1) == 'O' ||
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 4076 |           look(AfterQuals + 1) == 'w' || look(AfterQuals + 1) == 'x'))) {
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Demangle/ItaniumDemangle.h:4074:34: note: place parentheses around the '&&' expression to silence this warning
+ 4074 |         (look(AfterQuals) == 'D' &&
+      |                                  ^
+      |          (
+ 4075 |          (look(AfterQuals + 1) == 'o' || look(AfterQuals + 1) == 'O' ||
+ 4076 |           look(AfterQuals + 1) == 'w' || look(AfterQuals + 1) == 'x'))) {
+      |                                                                     
+      |                                                                     )
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Demangle/ItaniumDemangle.h:4751:13: warning: '&&' within '||' [-Wlogical-op-parentheses]
+ 4750 |         || (Op->getKind() == OperatorInfo::Member
+      |         ~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 4751 |             && Op->getName().back() == '*')))
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Demangle/ItaniumDemangle.h:4751:13: note: place parentheses around the '&&' expression to silence this warning
+ 4750 |         || (Op->getKind() == OperatorInfo::Member
+      |             
+      |             (
+ 4751 |             && Op->getName().back() == '*')))
+      |             ^                             
+      |                                           )
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Demangle/ItaniumDemangle.h:5100:43: warning: '&&' within '||' [-Wlogical-op-parentheses]
+ 5100 |     if (look(1) == 'p' || (look(1) == 'L' && std::isdigit(look(2))))
+      |                        ~~  ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Demangle/ItaniumDemangle.h:5100:43: note: place parentheses around the '&&' expression to silence this warning
+ 5100 |     if (look(1) == 'p' || (look(1) == 'L' && std::isdigit(look(2))))
+      |                                           ^                       
+      |                            (                                      )
+4 warnings generated.
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
