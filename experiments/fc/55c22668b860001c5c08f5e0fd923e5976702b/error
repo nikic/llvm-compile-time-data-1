@@ -1,0 +1,47 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+-- The C compiler identification is Clang 19.0.0
+-- The CXX compiler identification is Clang 19.0.0
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: /tmp/llvm-project-build-stage1/bin/clang
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage1/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- bolt project is disabled
+-- clang project is enabled
+-- clang-tools-extra project is disabled
+-- compiler-rt project is disabled
+-- cross-project-tests project is disabled
+-- libc project is disabled
+-- libclc project is disabled
+-- lld project is disabled
+-- lldb project is disabled
+-- mlir project is disabled
+-- openmp project is disabled
+-- polly project is disabled
+-- pstl project is disabled
+-- flang project is disabled
+-- Found Python3: /usr/bin/python3.10 (found suitable version "3.10.12", minimum required is "3.0") found components: Interpreter 
+-- Performing Test LLVM_LIBSTDCXX_MIN
+-- Performing Test LLVM_LIBSTDCXX_MIN - Failed
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeError.log".
+
+
+STDERR:
+CMake Error at cmake/modules/CheckCompilerVersion.cmake:88 (message):
+  libstdc++ version must be at least 7.4.
+Call Stack (most recent call first):
+  cmake/config-ix.cmake:16 (include)
+  CMakeLists.txt:911 (include)
+
+
