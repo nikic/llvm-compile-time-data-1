@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2433/2689] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCCodeEmitter.cpp.o
+[2434/2689] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCAsmInfo.cpp.o
+[2435/2689] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCTargetDesc.cpp.o
+[2436/2689] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MachObjectWriter.cpp.o
+[2437/2689] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MnemonicTables.cpp.o
+[2438/2689] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86AsmBackend.cpp.o
+[2439/2689] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ELFObjectWriter.cpp.o
+[2440/2689] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFObjectWriter.cpp.o
+[2441/2689] Building CXX object tools/llvm-ar/CMakeFiles/llvm-ar.dir/llvm-ar.cpp.o
+[2442/2689] Building CXX object lib/Target/X86/TargetInfo/CMakeFiles/LLVMX86Info.dir/X86TargetInfo.cpp.o
+[2443/2689] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFStreamer.cpp.o
+[2444/2689] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFTargetStreamer.cpp.o
+[2445/2689] Building CXX object tools/llvm-ar/CMakeFiles/llvm-ar.dir/llvm-ar-driver.cpp.o
+[2446/2689] Building CXX object tools/clang/lib/Tooling/Core/CMakeFiles/obj.clangToolingCore.dir/Replacement.cpp.o
+[2447/2689] Building CXX object tools/clang/lib/Tooling/Inclusions/CMakeFiles/obj.clangToolingInclusions.dir/HeaderIncludes.cpp.o
+[2448/2689] Building CXX object tools/clang/lib/Tooling/Inclusions/CMakeFiles/obj.clangToolingInclusions.dir/IncludeStyle.cpp.o
+[2449/2689] Building CXX object tools/clang/lib/Tooling/Inclusions/CMakeFiles/obj.clangToolingInclusions.dir/HeaderAnalysis.cpp.o
+[2450/2689] Building CXX object tools/gold/CMakeFiles/LLVMgold.dir/gold-plugin.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/llvm/tools/gold/gold-plugin.cpp: In function ‘ld_plugin_status onload(ld_plugin_tv*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/tools/gold/gold-plugin.cpp:438:11: warning: cast between incompatible function types from ‘ld_plugin_message’ {aka ‘ld_plugin_status (*)(int, const char*, ...)’} to ‘ld_plugin_get_wrap_symbols’ {aka ‘ld_plugin_status (*)(long unsigned int*, const char***)’} [-Wcast-function-type]
+  438 |           (ld_plugin_get_wrap_symbols)tv->tv_u.tv_message;
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2451/2689] Building CXX object tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/FrontendActions.cpp.o
+[2452/2689] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/CommentToXML.cpp.o
+[2453/2689] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/FileIndexRecord.cpp.o
+[2454/2689] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/USRGeneration.cpp.o
+[2455/2689] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexSymbol.cpp.o
+[2456/2689] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/HeaderFile.cpp.o
+[2457/2689] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/FileList.cpp.o
+[2458/2689] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/InterfaceStubFunctionsConsumer.cpp.o
+[2459/2689] Linking CXX static library lib/libLLVMX86Info.a
+[2460/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/Format.cpp.o
+[2461/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/AffectedRangeManager.cpp.o
+[2462/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/DefinitionBlockSeparator.cpp.o
+[2463/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/BreakableToken.cpp.o
+[2464/2689] Building CXX object tools/clang/lib/FrontendTool/CMakeFiles/obj.clangFrontendTool.dir/ExecuteCompilerInvocation.cpp.o
+[2465/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/FormatToken.cpp.o
+[2466/2689] Linking CXX static library lib/libLLVMX86Disassembler.a
+[2467/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/MacroCallReconstructor.cpp.o
+[2468/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/IntegerLiteralSeparatorFixer.cpp.o
+[2469/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/MatchFilePath.cpp.o
+[2470/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/FormatTokenLexer.cpp.o
+[2471/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/NamespaceEndCommentsFixer.cpp.o
+[2472/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/ObjCPropertyAttributeOrderFixer.cpp.o
+[2473/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/QualifierAlignmentFixer.cpp.o
+[2474/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/SortJavaScriptImports.cpp.o
+[2475/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/TokenAnalyzer.cpp.o
+[2476/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/TokenAnnotator.cpp.o
+[2477/2689] Linking CXX static library lib/libLLVMX86Desc.a
+[2478/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/UnwrappedLineParser.cpp.o
+[2479/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/UsingDeclarationsSorter.cpp.o
+[2480/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/UnwrappedLineFormatter.cpp.o
+[2481/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/WhitespaceManager.cpp.o
+[2482/2689] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/clang-driver.cpp.o
+[2483/2689] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/MacroExpander.cpp.o
+[2484/2689] Building Options.inc...
+[2485/2689] Building Options.inc...
+[2486/2689] Building Options.inc...
+[2487/2689] Building Options.inc...
+[2488/2689] Building Options.inc...
+[2489/2689] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexingContext.cpp.o
+[2490/2689] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexDecl.cpp.o
+[2491/2689] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1gen_reproducer_main.cpp.o
+[2492/2689] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexingAction.cpp.o
+[2493/2689] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2494/2689] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1as_main.cpp.o
+[2495/2689] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexBody.cpp.o
+[2496/2689] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/driver.cpp.o
+[2497/2689] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInvocation.cpp.o
+[2498/2689] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexTypeSourceInfo.cpp.o
+[2499/2689] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/Frontend.cpp.o
+[2500/2689] Linking CXX static library lib/libLLVMMCParser.a
+[2501/2689] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1_main.cpp.o
+[2502/2689] Linking CXX static library lib/libLLVMX86AsmParser.a
+[2503/2689] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/Visitor.cpp.o
+[2504/2689] Linking CXX static library lib/libLLVMObject.a
+[2505/2689] Linking CXX static library lib/libLLVMDlltoolDriver.a
+[2506/2689] Linking CXX static library lib/libLLVMLibDriver.a
+[2507/2689] Linking CXX static library lib/libLLVMDebugInfoDWARF.a
+[2508/2689] Linking CXX static library lib/libLLVMDebugInfoPDB.a
+[2509/2689] Linking CXX static library lib/libLLVMSymbolize.a
+[2510/2689] Linking CXX static library lib/libLLVMProfileData.a
+[2511/2689] Linking CXX executable bin/llvm-ar
+[2512/2689] Linking CXX static library lib/libLLVMCoverage.a
+[2513/2689] Generating ../../bin/llvm-ranlib
+[2514/2689] Linking CXX static library lib/libLLVMAnalysis.a
+[2515/2689] Linking CXX static library lib/libLLVMIRPrinter.a
+[2516/2689] Linking CXX static library lib/libLLVMFrontendDriver.a
+[2517/2689] Linking CXX static library lib/libLLVMBitWriter.a
+[2518/2689] Linking CXX static library lib/libLLVMTarget.a
+[2519/2689] Linking CXX static library lib/libLLVMTransformUtils.a
+[2520/2689] Linking CXX static library lib/libLLVMHipStdPar.a
+[2521/2689] Linking CXX static library lib/libLLVMLinker.a
+[2522/2689] Linking CXX static library lib/libLLVMObjCARCOpts.a
+[2523/2689] Linking CXX static library lib/libLLVMFrontendOffloading.a
+[2524/2689] Linking CXX static library lib/libLLVMAggressiveInstCombine.a
+[2525/2689] Linking CXX static library lib/libLLVMInstrumentation.a
+[2526/2689] Linking CXX static library lib/libLLVMInstCombine.a
+[2527/2689] Linking CXX static library lib/libLLVMScalarOpts.a
+[2528/2689] Linking CXX static library lib/libLLVMFrontendOpenMP.a
+[2529/2689] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/HIPUtility.cpp.o
+[2530/2689] Linking CXX static library lib/libclangBasic.a
+[2531/2689] Linking CXX static library lib/libclangAPINotes.a
+[2532/2689] Linking CXX static library lib/libclangLex.a
+[2533/2689] Linking CXX static library lib/libclangRewrite.a
+[2534/2689] Linking CXX static library lib/libclangDriver.a
+[2535/2689] Linking CXX static library lib/libclangToolingCore.a
+[2536/2689] Linking CXX static library lib/libclangToolingInclusions.a
+[2537/2689] Linking CXX static library lib/libclangFormat.a
+[2538/2689] Linking CXX static library lib/libclangAST.a
+[2539/2689] Linking CXX static library lib/libclangEdit.a
+[2540/2689] Linking CXX static library lib/libclangInstallAPI.a
+[2541/2689] Linking CXX static library lib/libclangASTMatchers.a
+[2542/2689] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:3617:24: error: declaration of ‘llvm::TargetTransformInfo* llvm::slpvectorizer::BoUpSLP::TTI’ changes meaning of ‘TTI’ [-fpermissive]
+ 3617 |   TargetTransformInfo *TTI;
+      |                        ^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:48:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetTransformInfo.h:206:29: note: ‘TTI’ declared here as ‘typedef class llvm::TargetTransformInfo llvm::TTI’
+  206 | typedef TargetTransformInfo TTI;
+      |                             ^~~
+[2543/2689] Linking CXX static library lib/libclangAnalysis.a
+[2544/2689] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerAMXIntrinsics.cpp.o
+[2545/2689] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+132.87user 20.56system 0:13.17elapsed 1164%CPU (0avgtext+0avgdata 856848maxresident)k
+0inputs+4013744outputs (23316major+8457473minor)pagefaults 0swaps
