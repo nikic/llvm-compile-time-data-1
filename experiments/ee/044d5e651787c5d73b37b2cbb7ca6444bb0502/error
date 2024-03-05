@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[1775/2689] Building CXX object lib/ProfileData/Coverage/CMakeFiles/LLVMCoverage.dir/CoverageMappingReader.cpp.o
+[1776/2689] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/SymbolRemappingReader.cpp.o
+[1777/2689] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/OptimizationLevel.cpp.o
+[1778/2689] Building CXX object lib/ProfileData/Coverage/CMakeFiles/LLVMCoverage.dir/CoverageMappingWriter.cpp.o
+[1779/2689] Building X86GenFastISel.inc...
+[1780/2689] Building X86GenGlobalISel.inc...
+[1781/2689] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassPlugin.cpp.o
+[1782/2689] Building X86GenDAGISel.inc...
+[1783/2689] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/AArch64TargetParser.cpp.o
+[1784/2689] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/ARMTargetParserCommon.cpp.o
+[1785/2689] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/ARMTargetParser.cpp.o
+[1786/2689] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/CSKYTargetParser.cpp.o
+[1787/2689] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/Host.cpp.o
+[1788/2689] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/LoongArchTargetParser.cpp.o
+[1789/2689] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/RISCVTargetParser.cpp.o
+[1790/2689] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/SummaryBasedOptimizations.cpp.o
+[1791/2689] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/SubtargetFeature.cpp.o
+[1792/2689] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/TargetParser.cpp.o
+[1793/2689] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/Triple.cpp.o
+[1794/2689] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/X86TargetParser.cpp.o
+[1795/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/Architecture.cpp.o
+[1796/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/ArchitectureSet.cpp.o
+[1797/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/InterfaceFile.cpp.o
+[1798/2689] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/OffloadBinary.cpp.o
+[1799/2689] Linking CXX static library lib/libLLVMTargetParser.a
+[1800/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/TextStubV5.cpp.o
+[1801/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/PackedVersion.cpp.o
+[1802/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/RecordsSlice.cpp.o
+[1803/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/RecordVisitor.cpp.o
+[1804/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/Symbol.cpp.o
+[1805/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/SymbolSet.cpp.o
+[1806/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/Target.cpp.o
+[1807/2689] Linking CXX static library lib/libLLVMBinaryFormat.a
+[1808/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/TextAPIError.cpp.o
+[1809/2689] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetLoweringObjectFile.cpp.o
+[1810/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/TextStub.cpp.o
+[1811/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/TextStubCommon.cpp.o
+[1812/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/Utils.cpp.o
+[1813/2689] Building CXX object lib/ToolDrivers/llvm-dlltool/CMakeFiles/LLVMDlltoolDriver.dir/DlltoolDriver.cpp.o
+[1814/2689] Building CXX object lib/ToolDrivers/llvm-lib/CMakeFiles/LLVMLibDriver.dir/LibDriver.cpp.o
+[1815/2689] Building CXX object lib/WindowsDriver/CMakeFiles/LLVMWindowsDriver.dir/MSVCPaths.cpp.o
+[1816/2689] Linking CXX static library lib/libLLVMMC.a
+[1817/2689] Linking CXX static library lib/libLLVMWindowsDriver.a
+[1818/2689] Linking CXX static library lib/libLLVMCore.a
+[1819/2689] Linking CXX static library lib/libLLVMMCDisassembler.a
+[1820/2689] Linking CXX static library lib/libLLVMBitReader.a
+[1821/2689] Linking CXX static library lib/libLLVMFrontendHLSL.a
+[1822/2689] Linking CXX static library lib/libLLVMCFGuard.a
+[1823/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/DiagnosticOptions.cpp.o
+[1824/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/ExpressionTraits.cpp.o
+[1825/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/FileEntry.cpp.o
+[1826/2689] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/UpdateCompilerUsed.cpp.o
+[1827/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/FileManager.cpp.o
+[1828/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/FileSystemStatCache.cpp.o
+[1829/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/LangOptions.cpp.o
+[1830/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/LangStandards.cpp.o
+[1831/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/MakeSupport.cpp.o
+[1832/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Module.cpp.o
+[1833/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/DiagnosticIDs.cpp.o
+[1834/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/ObjCRuntime.cpp.o
+[1835/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/OpenCLOptions.cpp.o
+[1836/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/OperatorPrecedence.cpp.o
+[1837/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/ParsedAttrInfo.cpp.o
+[1838/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/ProfileList.cpp.o
+[1839/2689] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/Platform.cpp.o
+[1840/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/NoSanitizeList.cpp.o
+[1841/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/SanitizerSpecialCaseList.cpp.o
+[1842/2689] Linking CXX static library lib/libLLVMTextAPI.a
+[1843/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Sanitizers.cpp.o
+[1844/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/SourceLocation.cpp.o
+[1845/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/SourceManager.cpp.o
+[1846/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Sarif.cpp.o
+[1847/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/SourceMgrAdapter.cpp.o
+[1848/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Stack.cpp.o
+[1849/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/TargetInfo.cpp.o
+[1850/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/TargetID.cpp.o
+[1851/2689] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/CodeGenPassBuilder.cpp.o
+[1852/2689] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/InstrProf.cpp.o
+[1853/2689] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/SampleProf.cpp.o
+[1854/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/OpenMPKinds.cpp.o
+[1855/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/AVR.cpp.o
+[1856/2689] Building X86GenSubtargetInfo.inc...
+[1857/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/CSKY.cpp.o
+[1858/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/DirectX.cpp.o
+[1859/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Diagnostic.cpp.o
+[1860/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/Lanai.cpp.o
+[1861/2689] Building X86GenInstrInfo.inc...
+[1862/2689] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ATTInstPrinter.cpp.o
+[1863/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/IdentifierTable.cpp.o
+[1864/2689] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilderBindings.cpp.o
+[1865/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/ARC.cpp.o
+[1866/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/BPF.cpp.o
+[1867/2689] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[1868/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/AMDGPU.cpp.o
+[1869/2689] Linking CXX static library lib/libLLVMMCParser.a
+[1870/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/AArch64.cpp.o
+[1871/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/Hexagon.cpp.o
+[1872/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/Le64.cpp.o
+[1873/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets/ARM.cpp.o
+[1874/2689] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:3617:24: error: declaration of ‘llvm::TargetTransformInfo* llvm::slpvectorizer::BoUpSLP::TTI’ changes meaning of ‘TTI’ [-fpermissive]
+ 3617 |   TargetTransformInfo *TTI;
+      |                        ^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:48:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetTransformInfo.h:206:29: note: ‘TTI’ declared here as ‘typedef class llvm::TargetTransformInfo llvm::TTI’
+  206 | typedef TargetTransformInfo TTI;
+      |                             ^~~
+[1875/2689] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/StandardInstrumentations.cpp.o
+[1876/2689] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/ThinLTOCodeGenerator.cpp.o
+[1877/2689] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AvoidTrailingCall.cpp.o
+[1878/2689] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ArgumentStackSlotRebase.cpp.o
+[1879/2689] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Targets.cpp.o
+[1880/2689] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CmovConversion.cpp.o
+[1881/2689] Building CXX object lib/AsmParser/CMakeFiles/LLVMAsmParser.dir/LLParser.cpp.o
+[1882/2689] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CallFrameOptimization.cpp.o
+[1883/2689] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerAMXType.cpp.o
+[1884/2689] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerTileCopy.cpp.o
+[1885/2689] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AsmPrinter.cpp.o
+[1886/2689] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilderPipelines.cpp.o
+[1887/2689] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CallingConv.cpp.o
+[1888/2689] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DomainReassignment.cpp.o
+[1889/2689] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DiscriminateMemOps.cpp.o
+[1890/2689] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CodeGenPassBuilder.cpp.o
+[1891/2689] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilder.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+242.17user 18.91system 0:29.72elapsed 878%CPU (0avgtext+0avgdata 1804992maxresident)k
+0inputs+1182384outputs (6478major+10573246minor)pagefaults 0swaps
