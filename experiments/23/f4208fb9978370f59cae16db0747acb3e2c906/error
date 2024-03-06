@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2080/2690] Building X86GenDAGISel.inc...
+[2081/2690] Building X86GenSubtargetInfo.inc...
+[2082/2690] Building X86GenInstrInfo.inc...
+[2083/2690] Building CXX object tools/llvm-ar/CMakeFiles/llvm-ar.dir/llvm-ar-driver.cpp.o
+[2084/2690] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ATTInstPrinter.cpp.o
+[2085/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ArgumentStackSlotRebase.cpp.o
+[2086/2690] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2087/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AsmPrinter.cpp.o
+[2088/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AvoidTrailingCall.cpp.o
+[2089/2690] Linking CXX static library lib/libLLVMMCParser.a
+[2090/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CallFrameOptimization.cpp.o
+[2091/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CallingConv.cpp.o
+[2092/2690] Linking CXX static library lib/libLLVMObject.a
+[2093/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CmovConversion.cpp.o
+[2094/2690] Linking CXX static library lib/libLLVMDebugInfoDWARF.a
+[2095/2690] Linking CXX static library lib/libLLVMDebugInfoPDB.a
+[2096/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CodeGenPassBuilder.cpp.o
+[2097/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DomainReassignment.cpp.o
+[2098/2690] Linking CXX static library lib/libLLVMSymbolize.a
+[2099/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DiscriminateMemOps.cpp.o
+[2100/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerTileCopy.cpp.o
+[2101/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerAMXType.cpp.o
+[2102/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerAMXIntrinsics.cpp.o
+[2103/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TileConfig.cpp.o
+[2104/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastPreTileConfig.cpp.o
+[2105/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastTileConfig.cpp.o
+[2106/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PreTileConfig.cpp.o
+[2107/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ExpandPseudo.cpp.o
+[2108/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastISel.cpp.o
+[2109/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupBWInsts.cpp.o
+[2110/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupLEAs.cpp.o
+[2111/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupVectorConstants.cpp.o
+[2112/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupInstTuning.cpp.o
+[2113/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AvoidStoreForwardingBlocks.cpp.o
+[2114/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DynAllocaExpander.cpp.o
+[2115/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupSetCC.cpp.o
+[2116/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FlagsCopyLowering.cpp.o
+[2117/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FloatingPoint.cpp.o
+[2118/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FrameLowering.cpp.o
+[2119/2690] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenACC.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenACC.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenACC.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenACC.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenACC.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseOpenACC.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseOpenACC.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaOpenACC.h:26:9: error: declaration of ‘clang::Sema& clang::SemaOpenACC::Sema’ changes meaning of ‘Sema’ [-fpermissive]
+   26 |   Sema &Sema;
+      |         ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseOpenACC.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:427:7: note: ‘Sema’ declared here as ‘class clang::Sema’
+  427 | class Sema final {
+      |       ^~~~
+[2120/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelDAGToDAG.cpp.o
+[2121/2690] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelLowering.cpp.o
+[2122/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaFixItUtils.cpp.o
+[2123/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o
+FAILED: tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o -MF tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o.d -o tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/Sema.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/Sema.cpp:46:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaOpenACC.h:26:9: error: declaration of ‘clang::Sema& clang::SemaOpenACC::Sema’ changes meaning of ‘Sema’ [-fpermissive]
+   26 |   Sema &Sema;
+      |         ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Lookup.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaInternal.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/UsedDeclVisitor.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/Sema.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:427:7: note: ‘Sema’ declared here as ‘class clang::Sema’
+  427 | class Sema final {
+      |       ^~~~
+[2124/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCUDA.cpp.o
+[2125/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExceptionSpec.cpp.o
+[2126/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCoroutine.cpp.o
+[2127/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaHLSL.cpp.o
+[2128/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaConcept.cpp.o
+FAILED: tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaConcept.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaConcept.cpp.o -MF tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaConcept.cpp.o.d -o tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaConcept.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaConcept.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/TreeTransform.h:42,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaConcept.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaOpenACC.h:26:9: error: declaration of ‘clang::Sema& clang::SemaOpenACC::Sema’ changes meaning of ‘Sema’ [-fpermissive]
+   26 |   Sema &Sema;
+      |         ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Lookup.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaInternal.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/CoroutineStmtBuilder.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/TreeTransform.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaConcept.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:427:7: note: ‘Sema’ declared here as ‘class clang::Sema’
+  427 | class Sema final {
+      |       ^~~~
+[2129/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprMember.cpp.o
+[2130/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprObjC.cpp.o
+[2131/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprCXX.cpp.o
+FAILED: tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprCXX.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprCXX.cpp.o -MF tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprCXX.cpp.o.d -o tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprCXX.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExprCXX.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/TreeTransform.h:42,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExprCXX.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaOpenACC.h:26:9: error: declaration of ‘clang::Sema& clang::SemaOpenACC::Sema’ changes meaning of ‘Sema’ [-fpermissive]
+   26 |   Sema &Sema;
+      |         ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Lookup.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaInternal.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/CoroutineStmtBuilder.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/TreeTransform.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExprCXX.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:427:7: note: ‘Sema’ declared here as ‘class clang::Sema’
+  427 | class Sema final {
+      |       ^~~~
+[2132/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o
+FAILED: tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o -MF tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o.d -o tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/TreeTransform.h:42,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaOpenACC.h:26:9: error: declaration of ‘clang::Sema& clang::SemaOpenACC::Sema’ changes meaning of ‘Sema’ [-fpermissive]
+   26 |   Sema &Sema;
+      |         ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Lookup.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaInternal.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/CoroutineStmtBuilder.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/TreeTransform.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:427:7: note: ‘Sema’ declared here as ‘class clang::Sema’
+  427 | class Sema final {
+      |       ^~~~
+[2133/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclObjC.cpp.o
+[2134/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclAttr.cpp.o
+[2135/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDecl.cpp.o
+[2136/2690] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclCXX.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+230.89user 17.43system 0:26.34elapsed 942%CPU (0avgtext+0avgdata 1461864maxresident)k
+0inputs+1772392outputs (10228major+9530897minor)pagefaults 0swaps
