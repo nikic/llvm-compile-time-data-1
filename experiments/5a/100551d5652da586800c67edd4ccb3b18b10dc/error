@@ -1,0 +1,14 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+-- Configuring incomplete, errors occurred!
+
+
+STDERR:
+CMake Error at /var/llvm-compile-time-tracker/llvm-project/cmake/Modules/CMakePolicy.cmake:23:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "+if".
+Call Stack (most recent call first):
+  CMakeLists.txt:6 (include)
+
+
