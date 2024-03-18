@@ -1,0 +1,133 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+-- Looking for sys/resource.h
+-- Looking for sys/resource.h - found
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - found
+-- Looking for dladdr
+-- Looking for dladdr - found
+-- Clang version: 19.0.0git
+-- Performing Test CXX_SUPPORTS_NO_NESTED_ANON_TYPES_FLAG
+-- Performing Test CXX_SUPPORTS_NO_NESTED_ANON_TYPES_FLAG - Success
+-- Looking for include file sys/inotify.h
+-- Looking for include file sys/inotify.h - found
+-- Performing Test HAVE_LINKER_FLAG_LONG_PLT
+-- Performing Test HAVE_LINKER_FLAG_LONG_PLT - Success
+-- Registering ExampleIRTransforms as a pass plugin (static build: OFF)
+-- Registering Bye as a pass plugin (static build: OFF)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/llvm-project-build-stage2
+ninja: Entering directory `/tmp/llvm-project-build-stage2'
+[1/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ABIBreak.cpp.o
+[2/2549] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/Demangle.cpp.o
+[3/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AutoConvert.cpp.o
+[4/2549] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/DLangDemangle.cpp.o
+[5/2549] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o
+[6/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMWinEH.cpp.o
+[7/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MSP430Attributes.cpp.o
+[8/2549] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/RustDemangle.cpp.o
+[9/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APSInt.cpp.o
+[10/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o
+[11/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMBuildAttrs.cpp.o
+[12/2549] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangle.cpp.o
+[13/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BuryPointer.cpp.o
+[14/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o
+[15/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Base64.cpp.o
+[16/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamError.cpp.o
+[17/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/COM.cpp.o
+[18/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BlockFrequency.cpp.o
+[19/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BranchProbability.cpp.o
+[20/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o
+[21/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamRef.cpp.o
+[22/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamReader.cpp.o
+[23/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o
+[24/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/circular_raw_ostream.cpp.o
+[25/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamWriter.cpp.o
+[26/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o
+[27/2549] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o
+[28/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertUTF.cpp.o
+[29/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Chrono.cpp.o
+[30/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CRC.cpp.o
+[31/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CrashRecoveryContext.cpp.o
+[32/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Compression.cpp.o
+[33/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+[34/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertEBCDIC.cpp.o
+[35/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o
+[36/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CSKYAttributes.cpp.o
+[37/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DivisionByConstantInfo.cpp.o
+[38/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertUTFWrapper.cpp.o
+[39/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Caching.cpp.o
+[40/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CSKYAttributeParser.cpp.o
+[41/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ExtensibleRTTI.cpp.o
+[42/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Debug.cpp.o
+[43/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DJB.cpp.o
+[44/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DeltaAlgorithm.cpp.o
+[45/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o
+[46/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ELFAttributes.cpp.o
+[47/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DataExtractor.cpp.o
+[48/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CodeGenCoverage.cpp.o
+[49/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DebugCounter.cpp.o
+[50/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DAGDeltaAlgorithm.cpp.o
+[51/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ExponentialBackoff.cpp.o
+[52/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Error.cpp.o
+[53/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ErrorHandling.cpp.o
+[54/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FormattedStream.cpp.o
+[55/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FoldingSet.cpp.o
+[56/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FloatingPointMode.cpp.o
+[57/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FormatVariadic.cpp.o
+[58/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Hashing.cpp.o
+[59/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ELFAttributeParser.cpp.o
+[60/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/IntEqClasses.cpp.o
+[61/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FileOutputBuffer.cpp.o
+[62/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/InstructionCost.cpp.o
+[63/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/GraphWriter.cpp.o
+[64/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FileUtilities.cpp.o
+[65/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/IntervalMap.cpp.o
+[66/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MemAlloc.cpp.o
+[67/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FileCollector.cpp.o
+[68/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/LEB128.cpp.o
+[69/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MathExtras.cpp.o
+[70/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/InitLLVM.cpp.o
+[71/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/GlobPattern.cpp.o
+[72/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/LineIterator.cpp.o
+[73/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Locale.cpp.o
+[74/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/KnownBits.cpp.o
+[75/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o
+[76/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ManagedStatic.cpp.o
+[77/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MemoryBufferRef.cpp.o
+[78/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Optional.cpp.o
+[79/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MD5.cpp.o
+[80/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/OptimizedStructLayout.cpp.o
+[81/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/NativeFormatting.cpp.o
+[82/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MSP430AttributeParser.cpp.o
+[83/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/PrettyStackTrace.cpp.o
+[84/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/PluginLoader.cpp.o
+[85/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Regex.cpp.o
+[86/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/LockFileManager.cpp.o
+[87/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RISCVAttributes.cpp.o
+[88/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MemoryBuffer.cpp.o
+[89/2549] Linking CXX static library lib/libLLVMDemangle.a
+FAILED: lib/libLLVMDemangle.a 
+: && /usr/bin/cmake -E rm -f lib/libLLVMDemangle.a && /tmp/llvm-project-build-stage1/bin/llvm-ar Dqc lib/libLLVMDemangle.a  lib/Demangle/CMakeFiles/LLVMDemangle.dir/Demangle.cpp.o lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangle.cpp.o lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o lib/Demangle/CMakeFiles/LLVMDemangle.dir/RustDemangle.cpp.o lib/Demangle/CMakeFiles/LLVMDemangle.dir/DLangDemangle.cpp.o && /tmp/llvm-project-build-stage1/bin/llvm-ranlib -D lib/libLLVMDemangle.a && :
+/tmp/llvm-project-build-stage1/bin/llvm-ar: error: lib/libLLVMDemangle.a: 'Demangle.cpp.o': Invalid attribute group entry (Producer: 'LLVM19.0.0git' Reader: 'LLVM 19.0.0git')
+[90/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/JSON.cpp.o
+[91/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/PGOOptions.cpp.o
+[92/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RISCVAttributeParser.cpp.o
+[93/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ScaledNumber.cpp.o
+[94/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Parallel.cpp.o
+[95/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SHA1.cpp.o
+[96/2549] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/SetTheory.cpp.o
+[97/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SmallPtrSet.cpp.o
+[98/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Signposts.cpp.o
+[99/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SHA256.cpp.o
+[100/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RandomNumberGenerator.cpp.o
+[101/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SmallVector.cpp.o
+[102/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SourceMgr.cpp.o
+[103/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ScopedPrinter.cpp.o
+[104/2549] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RISCVISAInfo.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
