@@ -1,0 +1,133 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh ReleaseLTO-g stage1" failed
+
+STDOUT:
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: unknown
+-- Adding directory CTMark
+-- Found Intl: built in to C library  
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/llvm-test-suite-build
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+[1/669] Generating ../lit.cfg
+[2/669] Generating __init__.py
+[3/669] Generating HashProgramOutput.sh
+[4/669] Generating timeit
+[5/669] Generating timeit-target
+[6/669] Generating modules/__init__.py
+[7/669] Generating modules/codesize.py
+[8/669] Generating modules/hash.py
+[9/669] Generating modules/hpmcount.py
+[10/669] Generating modules/compiletime.py
+[11/669] Generating modules/microbenchmark.py
+[12/669] Generating modules/perf.py
+[13/669] Generating modules/remote.py
+[14/669] Generating modules/profilegen.py
+[15/669] Generating modules/run.py
+[16/669] Generating modules/stats.py
+[17/669] Generating modules/timeit.py
+[18/669] Generating shellcommand.py
+[19/669] Generating test.py
+[20/669] Generating modules/run_under.py
+[21/669] Generating testfile.py
+[22/669] Generating testplan.py
+[23/669] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[24/669] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/669] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+[26/669] Linking C executable tools/fpcmp-target
+[27/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/wine_date_and_time.cpp.o
+[28/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/myGetTickCount.cpp.o
+[29/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/ConsoleClose.cpp.o
+[30/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/myAddExeFlag.cpp.o
+[31/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/mySplitCommandLine.cpp.o
+[32/669] Generating sqlite test inputs
+[33/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/BenchCon.cpp.o
+[34/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/MainAr.cpp.o
+[35/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/OpenCallbackConsole.cpp.o
+[36/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/ExtractCallbackConsole.cpp.o
+[37/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/PercentPrinter.cpp.o
+[38/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/UpdateCallbackConsole.cpp.o
+[39/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/CRC.cpp.o
+[40/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/UserInputUtils.cpp.o
+[41/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/CommandLineParser.cpp.o
+[42/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/List.cpp.o
+[43/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/StdInStream.cpp.o
+[44/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/StdOutStream.cpp.o
+[45/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/ListFileUtils.cpp.o
+[46/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/Main.cpp.o
+[47/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/IntToString.cpp.o
+FAILED: CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/IntToString.cpp.o 
+/tmp/llvm-test-suite-build/tools/timeit --summary CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/IntToString.cpp.o.time /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG  -O3 -fomit-frame-pointer -flto -DNDEBUG -g   -w -Werror=date-time -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -Wno-error=narrowing -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -MD -MT CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/IntToString.cpp.o -MF CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/IntToString.cpp.o.d -o CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/IntToString.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/Common/IntToString.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG -O3 -fomit-frame-pointer -flto -DNDEBUG -g -w -Werror=date-time -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -Wno-error=narrowing -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -MD -MT CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/IntToString.cpp.o -MF CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/IntToString.cpp.o.d -o CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/IntToString.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/Common/IntToString.cpp
+1.	<eof> parser at end of file
+2.	Optimizer
+ #0 0x000055c32978fec5 PrintStackTraceSignalHandler(void*) Signals.cpp:0:0
+ #1 0x000055c32978dbe4 llvm::sys::CleanupOnSignal(unsigned long) (/tmp/llvm-project-build-stage1/bin/clang+++0x1f95be4)
+ #2 0x000055c3296da0a8 CrashRecoverySignalHandler(int) CrashRecoveryContext.cpp:0:0
+ #3 0x00007f644929e520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #4 0x000055c329853ac6 getSalvageOpsForBinOp(llvm::BinaryOperator*, unsigned long, llvm::SmallVectorImpl<unsigned long>&, llvm::SmallVectorImpl<llvm::Value*>&) (/tmp/llvm-project-build-stage1/bin/clang+++0x205bac6)
+ #5 0x000055c329854132 llvm::salvageDebugInfoForDbgValues(llvm::Instruction&, llvm::ArrayRef<llvm::DbgVariableIntrinsic*>) (/tmp/llvm-project-build-stage1/bin/clang+++0x205c132)
+ #6 0x000055c3298544bd llvm::salvageDebugInfo(llvm::Instruction&) (/tmp/llvm-project-build-stage1/bin/clang+++0x205c4bd)
+ #7 0x000055c328fd2473 llvm::Instruction::eraseFromParent() (/tmp/llvm-project-build-stage1/bin/clang+++0x17da473)
+ #8 0x000055c3299fc421 llvm::slpvectorizer::BoUpSLP::~BoUpSLP() (/tmp/llvm-project-build-stage1/bin/clang+++0x2204421)
+ #9 0x000055c329a4ec52 llvm::SLPVectorizerPass::runImpl(llvm::Function&, llvm::ScalarEvolution*, llvm::TargetTransformInfo*, llvm::TargetLibraryInfo*, llvm::AAResults*, llvm::LoopInfo*, llvm::DominatorTree*, llvm::AssumptionCache*, llvm::DemandedBits*, llvm::OptimizationRemarkEmitter*) (.part.0) SLPVectorizer.cpp:0:0
+#10 0x000055c329a4f6c6 llvm::SLPVectorizerPass::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) (/tmp/llvm-project-build-stage1/bin/clang+++0x22576c6)
+#11 0x000055c32a903e86 llvm::detail::PassModel<llvm::Function, llvm::SLPVectorizerPass, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Function> >::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) crtstuff.c:0:0
+#12 0x000055c329af2333 llvm::detail::PassModel<llvm::Function, llvm::PassManager<llvm::Function, llvm::AnalysisManager<llvm::Function> >, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Function> >::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) crtstuff.c:0:0
+#13 0x000055c329055c04 llvm::ModuleToFunctionPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) (/tmp/llvm-project-build-stage1/bin/clang+++0x185dc04)
+#14 0x000055c329aeba06 llvm::detail::PassModel<llvm::Module, llvm::ModuleToFunctionPassAdaptor, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Module> >::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) crtstuff.c:0:0
+#15 0x000055c32904f905 llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module> >::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) (/tmp/llvm-project-build-stage1/bin/clang+++0x1857905)
+#16 0x000055c329af9877 (anonymous namespace)::EmitAssemblyHelper::RunOptimizationPipeline(clang::BackendAction, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream> >&, std::unique_ptr<llvm::ToolOutputFile, std::default_delete<llvm::ToolOutputFile> >&) (.constprop.0) BackendUtil.cpp:0:0
+#17 0x000055c329afc8ca clang::EmitBackendOutput(clang::DiagnosticsEngine&, clang::HeaderSearchOptions const&, clang::CodeGenOptions const&, clang::TargetOptions const&, clang::LangOptions const&, llvm::StringRef, llvm::Module*, clang::BackendAction, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream> >) (/tmp/llvm-project-build-stage1/bin/clang+++0x23048ca)
+#18 0x000055c32a899e1d clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) crtstuff.c:0:0
+#19 0x000055c32ac7f569 clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3487569)
+#20 0x000055c32a232629 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage1/bin/clang+++0x2a3a629)
+#21 0x000055c32a1bfc11 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage1/bin/clang+++0x29c7c11)
+#22 0x000055c32a2ed7ec clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage1/bin/clang+++0x2af57ec)
+#23 0x000055c3283dd8d5 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage1/bin/clang+++0xbe58d5)
+#24 0x000055c3283d6d4c ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&) driver.cpp:0:0
+#25 0x000055c32a02c579 void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<llvm::Optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+#26 0x000055c3296da1b7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage1/bin/clang+++0x1ee21b7)
+#27 0x000055c32a02c917 clang::driver::CC1Command::Execute(llvm::ArrayRef<llvm::Optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (.part.0) Job.cpp:0:0
+#28 0x000055c329ff8c7b clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x2800c7b)
+#29 0x000055c329ff96ed clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x28016ed)
+#30 0x000055c32a0097dc clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage1/bin/clang+++0x28117dc)
+#31 0x000055c3283db750 clang_main(int, char**) (/tmp/llvm-project-build-stage1/bin/clang+++0xbe3750)
+#32 0x00007f6449285d90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#33 0x00007f6449285e40 call_init ./csu/../csu/libc-start.c:128:20
+#34 0x00007f6449285e40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#35 0x000055c3283d6825 _start (/tmp/llvm-project-build-stage1/bin/clang+++0xbde825)
+clang-15: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 15.0.0
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang-15: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang-15: note: diagnostic msg: /tmp/IntToString-abe352.cpp
+clang-15: note: diagnostic msg: /tmp/IntToString-abe352.sh
+clang-15: note: diagnostic msg: 
+
+********************
+[48/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/StringToInt.cpp.o
+[49/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/MyString.cpp.o
+[50/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/MyWindows.cpp.o
+[51/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/StringConvert.cpp.o
+[52/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/MyVector.cpp.o
+[53/669] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/Common/UTFConvert.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
