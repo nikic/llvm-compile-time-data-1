@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  102 |           Handler),
+      |           ~~~~~~~~    
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Core.cpp: In function ‘void (* LLVMContextGetDiagnosticHandler(LLVMContextRef))(LLVMDiagnosticInfoRef, void*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Core.cpp:107:25: warning: cast between incompatible function types from ‘llvm::DiagnosticHandler::DiagnosticHandlerTy’ {aka ‘void (*)(const llvm::DiagnosticInfo&, void*)’} to ‘LLVMDiagnosticHandler’ {aka ‘void (*)(LLVMOpaqueDiagnosticInfo*, void*)’} [-Wcast-function-type]
+  107 |   return LLVM_EXTENSION reinterpret_cast<LLVMDiagnosticHandler>(
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  108 |       unwrap(C)->getDiagnosticHandlerCallBack());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[711/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/CycleInfo.cpp.o
+[712/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DIBuilder.cpp.o
+[713/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DataLayout.cpp.o
+[714/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o
+[715/2691] Building X86GenExegesis.inc...
+[716/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugProgramInstruction.cpp.o
+[717/2691] Building X86GenCallingConv.inc...
+[718/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugLoc.cpp.o
+[719/2691] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/DiagnosticIDs.cpp.o
+[720/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DiagnosticHandler.cpp.o
+[721/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DiagnosticInfo.cpp.o
+[722/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Dominators.cpp.o
+[723/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DiagnosticPrinter.cpp.o
+[724/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/EHPersonalities.cpp.o
+[725/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/FPEnv.cpp.o
+[726/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/GCStrategy.cpp.o
+[727/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Function.cpp.o
+[728/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/GVMaterializer.cpp.o
+[729/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Globals.cpp.o
+[730/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/IRBuilder.cpp.o
+[731/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/InlineAsm.cpp.o
+[732/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/IRPrintingPasses.cpp.o
+[733/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Instruction.cpp.o
+[734/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/IntrinsicInst.cpp.o
+[735/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/SSAContext.cpp.o
+[736/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Instructions.cpp.o
+[737/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMContext.cpp.o
+[738/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMContextImpl.cpp.o
+[739/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/MDBuilder.cpp.o
+[740/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMRemarkStreamer.cpp.o
+[741/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Mangler.cpp.o
+[742/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Metadata.cpp.o
+[743/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LegacyPassManager.cpp.o
+[744/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Module.cpp.o
+[745/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/OptBisect.cpp.o
+[746/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ModuleSummaryIndex.cpp.o
+[747/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Operator.cpp.o
+[748/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassManager.cpp.o
+[749/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Pass.cpp.o
+[750/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassTimingInfo.cpp.o
+[751/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassInstrumentation.cpp.o
+[752/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassRegistry.cpp.o
+[753/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PrintPasses.cpp.o
+[754/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ProfDataUtils.cpp.o
+[755/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/SafepointIRVerifier.cpp.o
+[756/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ReplaceConstant.cpp.o
+[757/2691] Building X86GenRegisterBank.inc...
+[758/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ProfileSummary.cpp.o
+[759/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PseudoProbe.cpp.o
+[760/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Statepoint.cpp.o
+[761/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Type.cpp.o
+[762/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/StructuralHash.cpp.o
+[763/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Use.cpp.o
+[764/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/TypeFinder.cpp.o
+[765/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ValueSymbolTable.cpp.o
+[766/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/TypedPointerType.cpp.o
+[767/2691] Building X86GenRegisterInfo.inc...
+[768/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/VFABIDemangler.cpp.o
+[769/2691] Building CXX object lib/IRPrinter/CMakeFiles/LLVMIRPrinter.dir/IRPrintingPasses.cpp.o
+[770/2691] Building X86GenCompressEVEXTables.inc...
+[771/2691] Building CXX object lib/IRReader/CMakeFiles/LLVMIRReader.dir/IRReader.cpp.o
+[772/2691] Building X86GenMnemonicTables.inc...
+[773/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AllocationOrder.cpp.o
+[774/2691] Building X86GenAsmWriter1.inc...
+[775/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o
+[776/2691] Building X86GenFoldTables.inc...
+[777/2691] Building X86GenDisassemblerTables.inc...
+[778/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchRelaxation.cpp.o
+[779/2691] Building X86GenAsmMatcher.inc...
+[780/2691] Building X86GenAsmWriter.inc...
+[781/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BreakFalseDeps.cpp.o
+[782/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockPathCloning.cpp.o
+[783/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CalcSpillWeights.cpp.o
+[784/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o
+[785/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o
+[786/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CFGuardLongjmp.cpp.o
+[787/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CFIFixup.cpp.o
+[788/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CFIInstrInserter.cpp.o
+[789/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGen.cpp.o
+[790/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/User.cpp.o
+[791/2691] Building X86GenGlobalISel.inc...
+[792/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CommandFlags.cpp.o
+[793/2691] Building X86GenFastISel.inc...
+[794/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CriticalAntiDepBreaker.cpp.o
+[795/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/DeadMachineInstructionElim.cpp.o
+[796/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/DetectDeadLanes.cpp.o
+[797/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/DFAPacketizer.cpp.o
+[798/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/VectorBuilder.cpp.o
+[799/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/EarlyIfConversion.cpp.o
+[800/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/EdgeBundles.cpp.o
+[801/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/EHContGuardCatchret.cpp.o
+[802/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp: In function ‘llvm::SmallVector<long unsigned int> canonicalizeDwarfOperations(llvm::ArrayRef<long unsigned int>)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp:2147:10: error: could not convert ‘ResultOps’ from ‘SmallVector<[...],8>’ to ‘SmallVector<[...],6>’
+ 2147 |   return ResultOps;
+      |          ^~~~~~~~~
+      |          |
+      |          SmallVector<[...],8>
+[803/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExecutionDomainFix.cpp.o
+[804/2691] Building X86GenDAGISel.inc...
+[805/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallBrPrepare.cpp.o
+[806/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSectionsProfileReader.cpp.o
+[807/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o
+[808/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenCommonISel.cpp.o
+[809/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o
+[810/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o
+[811/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o
+[812/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o
+[813/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/DwarfEHPrepare.cpp.o
+[814/2691] Building X86GenSubtargetInfo.inc...
+[815/2691] Building X86GenInstrInfo.inc...
+[816/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ComplexDeinterleavingPass.cpp.o
+[817/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AssignmentTrackingAnalysis.cpp.o
+[818/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Verifier.cpp.o
+[819/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+112.67user 8.91system 0:13.25elapsed 917%CPU (0avgtext+0avgdata 857848maxresident)k
+0inputs+563920outputs (9617major+5396021minor)pagefaults 0swaps
