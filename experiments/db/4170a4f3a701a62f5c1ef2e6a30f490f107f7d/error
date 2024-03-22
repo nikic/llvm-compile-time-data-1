@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2177/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86OptimizeLEAs.cpp.o
+[2178/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MacroFusion.cpp.o
+[2179/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86RegisterInfo.cpp.o
+[2180/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ReturnThunks.cpp.o
+[2181/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PartialReduction.cpp.o
+[2182/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ShuffleDecodeConstantPool.cpp.o
+[2183/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SelectionDAGInfo.cpp.o
+[2184/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SpeculativeExecutionSideEffectSuppression.cpp.o
+[2185/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetMachine.cpp.o
+[2186/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SpeculativeLoadHardening.cpp.o
+[2187/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86Subtarget.cpp.o
+[2188/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetObjectFile.cpp.o
+[2189/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86WinEHState.cpp.o
+[2190/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetTransformInfo.cpp.o
+[2191/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86VZeroUpper.cpp.o
+[2192/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InsertWait.cpp.o
+[2193/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86CallLowering.cpp.o
+[2194/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86InstructionSelector.cpp.o
+[2195/2696] Building CXX object lib/Target/X86/AsmParser/CMakeFiles/LLVMX86AsmParser.dir/X86AsmParser.cpp.o
+[2196/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86LegalizerInfo.cpp.o
+[2197/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86RegisterBankInfo.cpp.o
+[2198/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86IntelInstPrinter.cpp.o
+[2199/2696] Building CXX object lib/Target/X86/Disassembler/CMakeFiles/LLVMX86Disassembler.dir/X86Disassembler.cpp.o
+[2200/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ShuffleDecode.cpp.o
+[2201/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86InstComments.cpp.o
+[2202/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86InstPrinterCommon.cpp.o
+[2203/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86AsmBackend.cpp.o
+[2204/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCAsmInfo.cpp.o
+[2205/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86EncodingOptimization.cpp.o
+[2206/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCTargetDesc.cpp.o
+[2207/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCCodeEmitter.cpp.o
+[2208/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MachObjectWriter.cpp.o
+[2209/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MnemonicTables.cpp.o
+[2210/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ELFObjectWriter.cpp.o
+[2211/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFObjectWriter.cpp.o
+[2212/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFStreamer.cpp.o
+[2213/2696] Building CXX object lib/Target/X86/TargetInfo/CMakeFiles/LLVMX86Info.dir/X86TargetInfo.cpp.o
+[2214/2696] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFTargetStreamer.cpp.o
+[2215/2696] Linking CXX static library lib/libLLVMDlltoolDriver.a
+[2216/2696] Linking CXX static library lib/libLLVMLibDriver.a
+[2217/2696] Building CXX object tools/gold/CMakeFiles/LLVMgold.dir/gold-plugin.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/llvm/tools/gold/gold-plugin.cpp: In function ‘ld_plugin_status onload(ld_plugin_tv*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/tools/gold/gold-plugin.cpp:438:11: warning: cast between incompatible function types from ‘ld_plugin_message’ {aka ‘ld_plugin_status (*)(int, const char*, ...)’} to ‘ld_plugin_get_wrap_symbols’ {aka ‘ld_plugin_status (*)(long unsigned int*, const char***)’} [-Wcast-function-type]
+  438 |           (ld_plugin_get_wrap_symbols)tv->tv_u.tv_message;
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2218/2696] Building CXX object tools/llvm-ar/CMakeFiles/llvm-ar.dir/llvm-ar.cpp.o
+[2219/2696] Building CXX object tools/llvm-ar/CMakeFiles/llvm-ar.dir/llvm-ar-driver.cpp.o
+[2220/2696] Linking CXX static library lib/libLLVMX86Info.a
+[2221/2696] Linking CXX static library lib/libLLVMProfileData.a
+[2222/2696] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateVariadic.cpp.o
+[2223/2696] Linking CXX static library lib/libLLVMX86Desc.a
+[2224/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DomainReassignment.cpp.o
+[2225/2696] Linking CXX static library lib/libLLVMX86Disassembler.a
+[2226/2696] Linking CXX static library lib/libLLVMX86AsmParser.a
+[2227/2696] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1as_main.cpp.o
+[2228/2696] Linking CXX static library lib/libLLVMAnalysis.a
+[2229/2696] Linking CXX static library lib/libLLVMCoverage.a
+[2230/2696] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/TypeLocBuilder.cpp.o
+[2231/2696] Linking CXX static library lib/libLLVMFrontendDriver.a
+[2232/2696] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastPreTileConfig.cpp.o
+[2233/2696] Linking CXX static library lib/libLLVMBitWriter.a
+[2234/2696] Linking CXX static library lib/libLLVMIRPrinter.a
+[2235/2696] Linking CXX executable bin/llvm-ar
+[2236/2696] Linking CXX static library lib/libLLVMTarget.a
+[2237/2696] Generating ../../bin/llvm-ranlib
+[2238/2696] Linking CXX static library lib/libLLVMTransformUtils.a
+[2239/2696] Linking CXX static library lib/libLLVMFrontendOffloading.a
+[2240/2696] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiateDecl.cpp.o
+[2241/2696] Linking CXX static library lib/libLLVMAggressiveInstCombine.a
+[2242/2696] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaType.cpp.o
+[2243/2696] Linking CXX static library lib/libLLVMInstrumentation.a
+[2244/2696] Linking CXX static library lib/libLLVMObjCARCOpts.a
+[2245/2696] Linking CXX static library lib/libLLVMInstCombine.a
+[2246/2696] Linking CXX static library lib/libLLVMHipStdPar.a
+[2247/2696] Linking CXX static library lib/libLLVMVectorize.a
+[2248/2696] Linking CXX static library lib/libLLVMLinker.a
+[2249/2696] Linking CXX static library lib/libLLVMScalarOpts.a
+[2250/2696] Linking CXX static library lib/libLLVMCodeGen.a
+[2251/2696] Linking CXX static library lib/libLLVMSelectionDAG.a
+[2252/2696] Linking CXX static library lib/libLLVMAsmPrinter.a
+[2253/2696] Linking CXX static library lib/libLLVMGlobalISel.a
+[2254/2696] Linking CXX static library lib/libLLVMFrontendOpenMP.a
+[2255/2696] Linking CXX static library lib/libLLVMipo.a
+[2256/2696] Linking CXX static library lib/libLLVMCoroutines.a
+[2257/2696] Linking CXX static library lib/libLLVMX86CodeGen.a
+[2258/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp: In function ‘void replaceManagedVar(llvm::GlobalVariable*, llvm::GlobalVariable*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp:494:45: error: no matching function for call to ‘llvm::ConstantExpr::getAsInstruction(llvm::Instruction*&)’
+  494 |         auto *NewInst = CE->getAsInstruction(I);
+      |                         ~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/Address.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuilder.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CodeGenFunction.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCXXABI.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:1298:16: note: candidate: ‘llvm::Instruction* llvm::ConstantExpr::getAsInstruction() const’
+ 1298 |   Instruction *getAsInstruction() const;
+      |                ^~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:1298:16: note:   candidate expects 0 arguments, 1 provided
+[2259/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGGPUBuiltin.cpp.o
+[2260/2696] Linking CXX static library lib/libLLVMPasses.a
+[2261/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGLoopInfo.cpp.o
+[2262/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDeclCXX.cpp.o
+[2263/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprComplex.cpp.o
+[2264/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprCXX.cpp.o
+[2265/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGException.cpp.o
+[2266/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprAgg.cpp.o
+[2267/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprScalar.cpp.o
+[2268/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprConstant.cpp.o
+[2269/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDecl.cpp.o
+[2270/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGHLSLRuntime.cpp.o
+[2271/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExpr.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGExpr.cpp: In member function ‘void clang::CodeGen::CodeGenFunction::EmitTrapCheck(llvm::Value*, clang::CodeGen::SanitizerHandler)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGExpr.cpp:3832:48: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+ 3831 |         llvm::ConstantInt::get(CGM.Int8Ty, ClSanitizeDebugDeoptimization
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3832 |                                                ? TrapBB->getParent()->size()
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3833 |                                                : CheckHandlerID));
+      |                                                ~~~~~~~~~~~~~~~~
+[2272/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGNonTrivialStruct.cpp.o
+[2273/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGObjC.cpp.o
+[2274/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGObjCGNU.cpp.o
+[2275/2696] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGObjCMac.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+243.40user 24.09system 0:21.25elapsed 1258%CPU (0avgtext+0avgdata 1230192maxresident)k
+0inputs+3752776outputs (12509major+12071733minor)pagefaults 0swaps
