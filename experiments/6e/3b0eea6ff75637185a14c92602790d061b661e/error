@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[652/2691] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86FoldTablesEmitter.cpp.o
+[653/2691] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86MnemonicTables.cpp.o
+[654/2691] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86RecognizableInstr.cpp.o
+[655/2691] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/WebAssemblyDisassemblerEmitter.cpp.o
+[656/2691] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/BitstreamRemarkParser.cpp.o
+[657/2691] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/BitstreamRemarkSerializer.cpp.o
+[658/2691] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/Remark.cpp.o
+[659/2691] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkFormat.cpp.o
+[660/2691] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkLinker.cpp.o
+[661/2691] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkParser.cpp.o
+[662/2691] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkSerializer.cpp.o
+[663/2691] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkStreamer.cpp.o
+[664/2691] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkStringTable.cpp.o
+[665/2691] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/YAMLRemarkParser.cpp.o
+[666/2691] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/YAMLRemarkSerializer.cpp.o
+[667/2691] Building CXX object lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFParser.cpp.o
+[668/2691] Building CXX object lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFContext.cpp.o
+[669/2691] Linking CXX static library lib/libLLVMDebugInfoBTF.a
+[670/2691] Linking CXX static library lib/libLLVMRemarks.a
+[671/2691] Linking CXX executable bin/llvm-tblgen
+[672/2691] Building Options.inc...
+[673/2691] Building Options.inc...
+[674/2691] Building Options.inc...
+[675/2691] Building CXX object tools/clang/lib/Rewrite/CMakeFiles/obj.clangRewrite.dir/RewriteRope.cpp.o
+[676/2691] Building CXX object tools/clang/lib/Edit/CMakeFiles/obj.clangEdit.dir/Commit.cpp.o
+[677/2691] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/ContinuationIndenter.cpp.o
+[678/2691] Building CXX object tools/clang/lib/APINotes/CMakeFiles/obj.clangAPINotes.dir/APINotesTypes.cpp.o
+[679/2691] Building CXX object tools/clang/lib/APINotes/CMakeFiles/obj.clangAPINotes.dir/APINotesReader.cpp.o
+[680/2691] Building CXX object tools/clang/lib/APINotes/CMakeFiles/obj.clangAPINotes.dir/APINotesYAMLCompiler.cpp.o
+[681/2691] Building CXX object tools/clang/lib/APINotes/CMakeFiles/obj.clangAPINotes.dir/APINotesWriter.cpp.o
+[682/2691] Building CXX object tools/clang/lib/APINotes/CMakeFiles/obj.clangAPINotes.dir/APINotesManager.cpp.o
+[683/2691] Generating VCSVersion.inc
+[684/2691] Building RISCVTargetParserDef.inc...
+[685/2691] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Builtins.cpp.o
+[686/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TypePromotion.cpp.o
+[687/2691] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TwoAddressInstructionPass.cpp.o
+[688/2691] Building CXX object lib/Bitcode/Writer/CMakeFiles/LLVMBitWriter.dir/BitcodeWriterPass.cpp.o
+[689/2691] Building X86GenExegesis.inc...
+[690/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/AbstractCallSite.cpp.o
+[691/2691] Building X86GenRegisterBank.inc...
+[692/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Assumptions.cpp.o
+[693/2691] Building X86GenCallingConv.inc...
+[694/2691] Building X86GenRegisterInfo.inc...
+[695/2691] Building X86GenMnemonicTables.inc...
+[696/2691] Building X86GenCompressEVEXTables.inc...
+[697/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/BuiltinGCs.cpp.o
+[698/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Comdat.cpp.o
+[699/2691] Building X86GenAsmWriter.inc...
+[700/2691] Building X86GenAsmWriter1.inc...
+[701/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConstantRange.cpp.o
+[702/2691] Building X86GenFoldTables.inc...
+[703/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/CycleInfo.cpp.o
+[704/2691] Building X86GenDisassemblerTables.inc...
+[705/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DataLayout.cpp.o
+[706/2691] Building X86GenAsmMatcher.inc...
+[707/2691] Building X86GenFastISel.inc...
+[708/2691] Building X86GenGlobalISel.inc...
+[709/2691] Building X86GenDAGISel.inc...
+[710/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DiagnosticHandler.cpp.o
+[711/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/BasicBlock.cpp.o
+[712/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConstantFold.cpp.o
+[713/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConvergenceVerifier.cpp.o
+[714/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/EHPersonalities.cpp.o
+[715/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DiagnosticPrinter.cpp.o
+[716/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Dominators.cpp.o
+[717/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/GCStrategy.cpp.o
+[718/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/GVMaterializer.cpp.o
+[719/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp: In function ‘llvm::SmallVector<long unsigned int> canonicalizeDwarfOperations(llvm::ArrayRef<long unsigned int>)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp:2149:10: error: could not convert ‘ResultOps’ from ‘SmallVector<[...],8>’ to ‘SmallVector<[...],6>’
+ 2149 |   return ResultOps;
+      |          ^~~~~~~~~
+      |          |
+      |          SmallVector<[...],8>
+[720/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Attributes.cpp.o
+[721/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugProgramInstruction.cpp.o
+[722/2691] Building CXX object lib/Bitcode/Writer/CMakeFiles/LLVMBitWriter.dir/ValueEnumerator.cpp.o
+[723/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugLoc.cpp.o
+[724/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DIBuilder.cpp.o
+[725/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Core.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Core.cpp: In function ‘void LLVMContextSetDiagnosticHandler(LLVMContextRef, LLVMDiagnosticHandler, void*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Core.cpp:101:22: warning: cast between incompatible function types from ‘LLVMDiagnosticHandler’ {aka ‘void (*)(LLVMOpaqueDiagnosticInfo*, void*)’} to ‘llvm::DiagnosticHandler::DiagnosticHandlerTy’ {aka ‘void (*)(const llvm::DiagnosticInfo&, void*)’} [-Wcast-function-type]
+  101 |       LLVM_EXTENSION reinterpret_cast<DiagnosticHandler::DiagnosticHandlerTy>(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  102 |           Handler),
+      |           ~~~~~~~~    
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Core.cpp: In function ‘void (* LLVMContextGetDiagnosticHandler(LLVMContextRef))(LLVMDiagnosticInfoRef, void*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Core.cpp:107:25: warning: cast between incompatible function types from ‘llvm::DiagnosticHandler::DiagnosticHandlerTy’ {aka ‘void (*)(const llvm::DiagnosticInfo&, void*)’} to ‘LLVMDiagnosticHandler’ {aka ‘void (*)(LLVMOpaqueDiagnosticInfo*, void*)’} [-Wcast-function-type]
+  107 |   return LLVM_EXTENSION reinterpret_cast<LLVMDiagnosticHandler>(
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  108 |       unwrap(C)->getDiagnosticHandlerCallBack());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[726/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/FPEnv.cpp.o
+[727/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o
+[728/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DiagnosticInfo.cpp.o
+[729/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/AsmWriter.cpp.o
+[730/2691] Building X86GenInstrInfo.inc...
+[731/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Globals.cpp.o
+[732/2691] Building X86GenSubtargetInfo.inc...
+[733/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Constants.cpp.o
+[734/2691] Building CXX object lib/Bitcode/Writer/CMakeFiles/LLVMBitWriter.dir/BitcodeWriter.cpp.o
+[735/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/AutoUpgrade.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/AutoUpgrade.cpp: In function ‘bool upgradeArmOrAarch64IntrinsicFunction(bool, llvm::Function*, llvm::StringRef, llvm::Function*&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/AutoUpgrade.cpp:652:43: warning: enumerated mismatch in conditional expression: ‘llvm::Intrinsic::ARMIntrinsics’ vs ‘llvm::Intrinsic::AARCH64Intrinsics’ [-Wenum-compare]
+  652 |                                     IsArm ? Intrinsic::arm_neon_bfdot
+      |                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  653 |                                           : Intrinsic::aarch64_neon_bfdot)
+      |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/AutoUpgrade.cpp:677:36: warning: enumerated mismatch in conditional expression: ‘llvm::Intrinsic::ARMIntrinsics’ vs ‘llvm::Intrinsic::AARCH64Intrinsics’ [-Wenum-compare]
+  677 |                 .Case("mla", IsArm ? Intrinsic::arm_neon_bfmmla
+      |                              ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  678 |                                    : Intrinsic::aarch64_neon_bfmmla)
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/AutoUpgrade.cpp:679:37: warning: enumerated mismatch in conditional expression: ‘llvm::Intrinsic::ARMIntrinsics’ vs ‘llvm::Intrinsic::AARCH64Intrinsics’ [-Wenum-compare]
+  679 |                 .Case("lalb", IsArm ? Intrinsic::arm_neon_bfmlalb
+      |                               ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  680 |                                     : Intrinsic::aarch64_neon_bfmlalb)
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/AutoUpgrade.cpp:681:37: warning: enumerated mismatch in conditional expression: ‘llvm::Intrinsic::ARMIntrinsics’ vs ‘llvm::Intrinsic::AARCH64Intrinsics’ [-Wenum-compare]
+  681 |                 .Case("lalt", IsArm ? Intrinsic::arm_neon_bfmlalt
+      |                               ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  682 |                                     : Intrinsic::aarch64_neon_bfmlalt)
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[736/2691] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Function.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+118.00user 9.04system 0:10.75elapsed 1181%CPU (0avgtext+0avgdata 831948maxresident)k
+584inputs+525536outputs (9021major+5532871minor)pagefaults 0swaps
