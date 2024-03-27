@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[1666/2704] Building CXX object lib/AsmParser/CMakeFiles/LLVMAsmParser.dir/Parser.cpp.o
+[1667/2704] Linking CXX static library lib/libLLVMDebugInfoBTF.a
+[1668/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/InstrProf.cpp.o
+[1669/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/InstrProfCorrelator.cpp.o
+[1670/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/GCOV.cpp.o
+[1671/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/InstrProfReader.cpp.o
+[1672/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/InstrProfWriter.cpp.o
+[1673/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/MemProf.cpp.o
+[1674/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/ItaniumManglingCanonicalizer.cpp.o
+[1675/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/ProfileSummaryBuilder.cpp.o
+[1676/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/RawMemProfReader.cpp.o
+[1677/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/SymbolRemappingReader.cpp.o
+[1678/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/SampleProf.cpp.o
+[1679/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/SampleProfWriter.cpp.o
+[1680/2704] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/SampleProfReader.cpp.o
+[1681/2704] Building CXX object lib/ProfileData/Coverage/CMakeFiles/LLVMCoverage.dir/CoverageMapping.cpp.o
+[1682/2704] Building CXX object lib/ProfileData/Coverage/CMakeFiles/LLVMCoverage.dir/CoverageMappingReader.cpp.o
+[1683/2704] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/OptimizationLevel.cpp.o
+[1684/2704] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/GOFFObjectFile.cpp.o
+FAILED: lib/Object/CMakeFiles/LLVMObject.dir/GOFFObjectFile.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Object -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Object/CMakeFiles/LLVMObject.dir/GOFFObjectFile.cpp.o -MF lib/Object/CMakeFiles/LLVMObject.dir/GOFFObjectFile.cpp.o.d -o lib/Object/CMakeFiles/LLVMObject.dir/GOFFObjectFile.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:397:10: error: no declaration matches ‘uint32_t llvm::object::GOFFObjectFile::getSectionDefEsdId(llvm::object::DataRefImpl&) const’
+  397 | uint32_t GOFFObjectFile::getSectionDefEsdId(DataRefImpl &Sec) const {
+      |          ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:397:10: note: no functions named ‘uint32_t llvm::object::GOFFObjectFile::getSectionDefEsdId(llvm::object::DataRefImpl&) const’
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/GOFFObjectFile.h:31:7: note: ‘class llvm::object::GOFFObjectFile’ defined here
+   31 | class GOFFObjectFile : public ObjectFile {
+      |       ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:413:6: error: redefinition of ‘void llvm::object::GOFFObjectFile::moveSectionNext(llvm::object::DataRefImpl&) const’
+  413 | void GOFFObjectFile::moveSectionNext(DataRefImpl &Sec) const {
+      |      ^~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/GOFFObjectFile.h:84:8: note: ‘virtual void llvm::object::GOFFObjectFile::moveSectionNext(llvm::object::DataRefImpl&) const’ previously defined here
+   84 |   void moveSectionNext(DataRefImpl &Sec) const override {}
+      |        ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:419:21: error: redefinition of ‘llvm::Expected<llvm::StringRef> llvm::object::GOFFObjectFile::getSectionName(llvm::object::DataRefImpl) const’
+  419 | Expected<StringRef> GOFFObjectFile::getSectionName(DataRefImpl Sec) const {
+      |                     ^~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/GOFFObjectFile.h:85:31: note: ‘virtual llvm::Expected<llvm::StringRef> llvm::object::GOFFObjectFile::getSectionName(llvm::object::DataRefImpl) const’ previously defined here
+   85 |   virtual Expected<StringRef> getSectionName(DataRefImpl Sec) const override {
+      |                               ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:433:10: error: redefinition of ‘uint64_t llvm::object::GOFFObjectFile::getSectionAddress(llvm::object::DataRefImpl) const’
+  433 | uint64_t GOFFObjectFile::getSectionAddress(DataRefImpl Sec) const {
+      |          ^~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/GOFFObjectFile.h:88:12: note: ‘virtual uint64_t llvm::object::GOFFObjectFile::getSectionAddress(llvm::object::DataRefImpl) const’ previously defined here
+   88 |   uint64_t getSectionAddress(DataRefImpl Sec) const override { return 0; }
+      |            ^~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:440:10: error: redefinition of ‘uint64_t llvm::object::GOFFObjectFile::getSectionSize(llvm::object::DataRefImpl) const’
+  440 | uint64_t GOFFObjectFile::getSectionSize(DataRefImpl Sec) const {
+      |          ^~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/GOFFObjectFile.h:89:12: note: ‘virtual uint64_t llvm::object::GOFFObjectFile::getSectionSize(llvm::object::DataRefImpl) const’ previously defined here
+   89 |   uint64_t getSectionSize(DataRefImpl Sec) const override { return 0; }
+      |            ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:452:1: error: redefinition of ‘llvm::Expected<llvm::ArrayRef<unsigned char> > llvm::object::GOFFObjectFile::getSectionContents(llvm::object::DataRefImpl) const’
+  452 | GOFFObjectFile::getSectionContents(DataRefImpl Sec) const {
+      | ^~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/GOFFObjectFile.h:91:3: note: ‘virtual llvm::Expected<llvm::ArrayRef<unsigned char> > llvm::object::GOFFObjectFile::getSectionContents(llvm::object::DataRefImpl) const’ previously defined here
+   91 |   getSectionContents(DataRefImpl Sec) const override {
+      |   ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:501:10: error: redefinition of ‘uint64_t llvm::object::GOFFObjectFile::getSectionAlignment(llvm::object::DataRefImpl) const’
+  501 | uint64_t GOFFObjectFile::getSectionAlignment(DataRefImpl Sec) const {
+      |          ^~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/GOFFObjectFile.h:95:12: note: ‘virtual uint64_t llvm::object::GOFFObjectFile::getSectionAlignment(llvm::object::DataRefImpl) const’ previously defined here
+   95 |   uint64_t getSectionAlignment(DataRefImpl Sec) const override { return 0; }
+      |            ^~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:508:6: error: redefinition of ‘bool llvm::object::GOFFObjectFile::isSectionText(llvm::object::DataRefImpl) const’
+  508 | bool GOFFObjectFile::isSectionText(DataRefImpl Sec) const {
+      |      ^~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/GOFFObjectFile.h:97:8: note: ‘virtual bool llvm::object::GOFFObjectFile::isSectionText(llvm::object::DataRefImpl) const’ previously defined here
+   97 |   bool isSectionText(DataRefImpl Sec) const override { return false; }
+      |        ^~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:515:6: error: redefinition of ‘bool llvm::object::GOFFObjectFile::isSectionData(llvm::object::DataRefImpl) const’
+  515 | bool GOFFObjectFile::isSectionData(DataRefImpl Sec) const {
+      |      ^~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/GOFFObjectFile.h:98:8: note: ‘virtual bool llvm::object::GOFFObjectFile::isSectionData(llvm::object::DataRefImpl) const’ previously defined here
+   98 |   bool isSectionData(DataRefImpl Sec) const override { return false; }
+      |        ^~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:522:6: error: no declaration matches ‘bool llvm::object::GOFFObjectFile::isSectionNoLoad(llvm::object::DataRefImpl) const’
+  522 | bool GOFFObjectFile::isSectionNoLoad(DataRefImpl Sec) const {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:522:6: note: no functions named ‘bool llvm::object::GOFFObjectFile::isSectionNoLoad(llvm::object::DataRefImpl) const’
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/GOFFObjectFile.h:31:7: note: ‘class llvm::object::GOFFObjectFile’ defined here
+   31 | class GOFFObjectFile : public ObjectFile {
+      |       ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:529:6: error: no declaration matches ‘bool llvm::object::GOFFObjectFile::isSectionReadOnlyData(llvm::object::DataRefImpl) const’
+  529 | bool GOFFObjectFile::isSectionReadOnlyData(DataRefImpl Sec) const {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:529:6: note: no functions named ‘bool llvm::object::GOFFObjectFile::isSectionReadOnlyData(llvm::object::DataRefImpl) const’
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/GOFFObjectFile.h:31:7: note: ‘class llvm::object::GOFFObjectFile’ defined here
+   31 | class GOFFObjectFile : public ObjectFile {
+      |       ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:539:6: error: no declaration matches ‘bool llvm::object::GOFFObjectFile::isSectionZeroInit(llvm::object::DataRefImpl) const’
+  539 | bool GOFFObjectFile::isSectionZeroInit(DataRefImpl Sec) const {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:539:6: note: no functions named ‘bool llvm::object::GOFFObjectFile::isSectionZeroInit(llvm::object::DataRefImpl) const’
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Object/GOFFObjectFile.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/GOFFObjectFile.h:31:7: note: ‘class llvm::object::GOFFObjectFile’ defined here
+   31 | class GOFFObjectFile : public ObjectFile {
+      |       ^~~~~~~~~~~~~~
+[1685/2704] Building CXX object lib/ProfileData/Coverage/CMakeFiles/LLVMCoverage.dir/CoverageMappingWriter.cpp.o
+[1686/2704] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/CodeGenPassBuilder.cpp.o
+[1687/2704] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilderBindings.cpp.o
+[1688/2704] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilder.cpp.o
+[1689/2704] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetRegisterInfo.cpp.o
+[1690/2704] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/RegisterInfoEmitter.cpp.o
+[1691/2704] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/GlobalISelCombinerEmitter.cpp.o
+[1692/2704] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanSLP.cpp.o
+[1693/2704] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/GlobalISelEmitter.cpp.o
+[1694/2704] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanAnalysis.cpp.o
+[1695/2704] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanVerifier.cpp.o
+[1696/2704] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanHCFGBuilder.cpp.o
+[1697/2704] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o
+[1698/2704] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanTransforms.cpp.o
+[1699/2704] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o
+[1700/2704] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[1701/2704] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+185.09user 13.22system 0:18.99elapsed 1043%CPU (0avgtext+0avgdata 895972maxresident)k
+0inputs+837632outputs (8158major+6261382minor)pagefaults 0swaps
