@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:236:69: error: return type ‘class ModuleToMachineFunctionPassAdaptor’ is incomplete
+  236 | createModuleToMachineFunctionPassAdaptor(MachineFunctionPassT &&Pass) {
+      |                                                                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h: In function ‘void createModuleToMachineFunctionPassAdaptor(MachineFunctionPassT&&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:237:30: error: ‘PassModel’ in namespace ‘detail’ does not name a template type
+  237 |   using PassModelT = detail::PassModel<MachineFunction, MachineFunctionPassT,
+      |                              ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:242:59: error: incomplete type ‘ModuleToMachineFunctionPassAdaptor’ used in nested name specifier
+  242 |       std::unique_ptr<ModuleToMachineFunctionPassAdaptor::PassConceptT>(
+      |                                                           ^~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:242:71: error: template argument 1 is invalid
+  242 |       std::unique_ptr<ModuleToMachineFunctionPassAdaptor::PassConceptT>(
+      |                                                                       ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:242:71: error: template argument 2 is invalid
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:241:44: error: expected primary-expression before ‘(’ token
+  241 |   return ModuleToMachineFunctionPassAdaptor(
+      |                                            ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:243:15: error: expected type-specifier before ‘PassModelT’
+  243 |           new PassModelT(std::forward<MachineFunctionPassT>(Pass))));
+      |               ^~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:248:39: error: ‘PassManager’ was not declared in this scope
+  248 | std::enable_if_t<!std::is_same<PassT, PassManager<MachineFunction>>::value>
+      |                                       ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:248:39: note: suggested alternatives:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetLibraryInfo.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LazyCallGraph.h:45,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/CGSCCPassManager.h:92,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Passes/PassBuilder.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/Config.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/LTO.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/legacy/ThinLTOCodeGenerator.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/LTO/ThinLTOCodeGenerator.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PassManager.h:189:7: note:   ‘llvm::PassManager’
+  189 | class PassManager : public PassInfoMixin<
+      |       ^~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/Config.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/LTO.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/legacy/ThinLTOCodeGenerator.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/LTO/ThinLTOCodeGenerator.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/LegacyPassManager.h:52:7: note:   ‘llvm::legacy::PassManager’
+   52 | class PassManager : public PassManagerBase {
+      |       ^~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Passes/PassBuilder.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/Config.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/LTO.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/legacy/ThinLTOCodeGenerator.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/LTO/ThinLTOCodeGenerator.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:248:51: error: ‘MachineFunction’ was not declared in this scope; did you mean ‘llvm::MachineFunction’?
+  248 | std::enable_if_t<!std::is_same<PassT, PassManager<MachineFunction>>::value>
+      |                                                   ^~~~~~~~~~~~~~~
+      |                                                   llvm::MachineFunction
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Passes/PassBuilder.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/Config.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/LTO.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/legacy/ThinLTOCodeGenerator.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/LTO/ThinLTOCodeGenerator.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:259:32: note: ‘llvm::MachineFunction’ declared here
+  259 | class LLVM_EXTERNAL_VISIBILITY MachineFunction {
+      |                                ^~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Passes/PassBuilder.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/Config.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/LTO.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/legacy/ThinLTOCodeGenerator.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/LTO/ThinLTOCodeGenerator.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:248:51: error: template argument 2 is invalid
+  248 | std::enable_if_t<!std::is_same<PassT, PassManager<MachineFunction>>::value>
+      |                                                   ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:248:66: error: template argument 1 is invalid
+  248 | std::enable_if_t<!std::is_same<PassT, PassManager<MachineFunction>>::value>
+      |                                                                  ^~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:248:70: error: too many template-parameter-lists
+  248 | std::enable_if_t<!std::is_same<PassT, PassManager<MachineFunction>>::value>
+      |                                                                      ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:265:1: error: ‘PreservedAnalyses’ does not name a type
+  265 | PreservedAnalyses
+      | ^~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:268:23: error: ‘PassManager’ is not a class template
+  268 | extern template class PassManager<MachineFunction>;
+      |                       ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:268:35: error: ‘MachineFunction’ was not declared in this scope; did you mean ‘llvm::MachineFunction’?
+  268 | extern template class PassManager<MachineFunction>;
+      |                                   ^~~~~~~~~~~~~~~
+      |                                   llvm::MachineFunction
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Passes/PassBuilder.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/Config.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/LTO.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/legacy/ThinLTOCodeGenerator.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/LTO/ThinLTOCodeGenerator.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:259:32: note: ‘llvm::MachineFunction’ declared here
+  259 | class LLVM_EXTERNAL_VISIBILITY MachineFunction {
+      |                                ^~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Passes/PassBuilder.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/Config.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/LTO.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/legacy/ThinLTOCodeGenerator.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/LTO/ThinLTOCodeGenerator.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:268:23: error: explicit instantiation of non-template type ‘PassManager’
+  268 | extern template class PassManager<MachineFunction>;
+      |                       ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:271:36: error: ‘PassManager’ is not a template
+  271 | using MachineFunctionPassManager = PassManager<MachineFunction>;
+      |                                    ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:271:48: error: ‘MachineFunction’ was not declared in this scope; did you mean ‘llvm::MachineFunction’?
+  271 | using MachineFunctionPassManager = PassManager<MachineFunction>;
+      |                                                ^~~~~~~~~~~~~~~
+      |                                                llvm::MachineFunction
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Passes/PassBuilder.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/Config.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/LTO.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/legacy/ThinLTOCodeGenerator.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/LTO/ThinLTOCodeGenerator.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:259:32: note: ‘llvm::MachineFunction’ declared here
+  259 | class LLVM_EXTERNAL_VISIBILITY MachineFunction {
+      |                                ^~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Passes/PassBuilder.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/Config.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/LTO.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/LTO/legacy/ThinLTOCodeGenerator.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/LTO/ThinLTOCodeGenerator.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:273:1: error: expected declaration before ‘}’ token
+  273 | } // end namespace llvm
+      | ^
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+90.80user 10.61system 0:09.24elapsed 1097%CPU (0avgtext+0avgdata 833620maxresident)k
+0inputs+687008outputs (7691major+5431223minor)pagefaults 0swaps
