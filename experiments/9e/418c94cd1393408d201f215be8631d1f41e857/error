@@ -1,0 +1,266 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O3 stage2" failed
+
+STDOUT:
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:109:33: error: '__nonnull__' attribute takes no arguments
+  109 |      __THROW __attribute_pure__ __nonnull ((1)) __wur;
+      |                                 ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:114:33: error: '__nonnull__' attribute takes no arguments
+  114 |      __THROW __attribute_pure__ __nonnull ((1)) __wur;
+      |                                 ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:120:14: error: '__nonnull__' attribute takes no arguments
+  120 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:125:44: error: '__nonnull__' attribute takes no arguments
+  125 |                      char **__restrict __endptr) __THROW __nonnull ((1));
+      |                                                          ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:129:14: error: '__nonnull__' attribute takes no arguments
+  129 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:179:14: error: '__nonnull__' attribute takes no arguments
+  179 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:183:14: error: '__nonnull__' attribute takes no arguments
+  183 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:190:14: error: '__nonnull__' attribute takes no arguments
+  190 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:195:14: error: '__nonnull__' attribute takes no arguments
+  195 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:203:14: error: '__nonnull__' attribute takes no arguments
+  203 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:208:14: error: '__nonnull__' attribute takes no arguments
+  208 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:390:33: error: '__nonnull__' attribute takes no arguments
+  390 |      __THROW __attribute_pure__ __nonnull ((1)) __wur;
+      |                                 ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+[24/669] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[25/669] Generating sqlite test inputs
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O0-g stage2" failed
+
+STDOUT:
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:109:33: error: '__nonnull__' attribute takes no arguments
+  109 |      __THROW __attribute_pure__ __nonnull ((1)) __wur;
+      |                                 ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:114:33: error: '__nonnull__' attribute takes no arguments
+  114 |      __THROW __attribute_pure__ __nonnull ((1)) __wur;
+      |                                 ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:120:14: error: '__nonnull__' attribute takes no arguments
+  120 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:125:44: error: '__nonnull__' attribute takes no arguments
+  125 |                      char **__restrict __endptr) __THROW __nonnull ((1));
+      |                                                          ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:129:14: error: '__nonnull__' attribute takes no arguments
+  129 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:179:14: error: '__nonnull__' attribute takes no arguments
+  179 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:183:14: error: '__nonnull__' attribute takes no arguments
+  183 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:190:14: error: '__nonnull__' attribute takes no arguments
+  190 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:195:14: error: '__nonnull__' attribute takes no arguments
+  195 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:203:14: error: '__nonnull__' attribute takes no arguments
+  203 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:208:14: error: '__nonnull__' attribute takes no arguments
+  208 |      __THROW __nonnull ((1));
+      |              ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c:17:
+/usr/include/stdlib.h:390:33: error: '__nonnull__' attribute takes no arguments
+  390 |      __THROW __attribute_pure__ __nonnull ((1)) __wur;
+      |                                 ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:390:28: note: expanded from macro '__nonnull'
+  390 | # define __nonnull(params) __attribute_nonnull__ (params)
+      |                            ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:384:57: note: expanded from macro '__attribute_nonnull__'
+  384 | #  define __attribute_nonnull__(params) __attribute__ ((__nonnull__ params))
+      |                                                         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+[24/669] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[25/669] Generating sqlite test inputs
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
