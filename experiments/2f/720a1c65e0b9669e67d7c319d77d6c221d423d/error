@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2060/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/RecordLayout.cpp.o
+[2061/2706] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTemplate.cpp.o
+[2062/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ScanfFormatString.cpp.o
+[2063/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/SelectorLocationsKind.cpp.o
+[2064/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/RecordLayoutBuilder.cpp.o
+[2065/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtCXX.cpp.o
+[2066/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Stmt.cpp.o
+[2067/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtIterator.cpp.o
+[2068/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtObjC.cpp.o
+[2069/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtOpenACC.cpp.o
+[2070/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtOpenMP.cpp.o
+[2071/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtPrinter.cpp.o
+[2072/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtProfile.cpp.o
+[2073/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtViz.cpp.o
+[2074/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TemplateBase.cpp.o
+[2075/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TemplateName.cpp.o
+[2076/2706] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmtAsm.cpp.o
+[2077/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TextNodeDumper.cpp.o
+[2078/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Type.cpp.o
+[2079/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TypeLoc.cpp.o
+[2080/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/VTTBuilder.cpp.o
+[2081/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TypePrinter.cpp.o
+[2082/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/VTableBuilder.cpp.o
+[2083/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o
+[2084/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o
+[2085/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o
+[2086/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o
+[2087/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o
+[2088/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCXX.cpp.o
+[2089/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCall.cpp.o
+[2090/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCleanup.cpp.o
+[2091/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCXXABI.cpp.o
+[2092/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGClass.cpp.o
+[2093/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCoroutine.cpp.o
+[2094/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/CommentSema.cpp.o
+[2095/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDecl.cpp.o
+[2096/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDebugInfo.cpp.o
+[2097/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprAgg.cpp.o
+[2098/2706] Building OpenCLBuiltins.inc...
+[2099/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExpr.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGExpr.cpp: In member function ‘void clang::CodeGen::CodeGenFunction::EmitTrapCheck(llvm::Value*, clang::CodeGen::SanitizerHandler)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGExpr.cpp:3848:48: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+ 3847 |         llvm::ConstantInt::get(CGM.Int8Ty, ClSanitizeDebugDeoptimization
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3848 |                                                ? TrapBB->getParent()->size()
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3849 |                                                : CheckHandlerID));
+      |                                                ~~~~~~~~~~~~~~~~
+[2100/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprComplex.cpp.o
+[2101/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprConstant.cpp.o
+[2102/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprCXX.cpp.o
+[2103/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprScalar.cpp.o
+[2104/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/DelayedDiagnostic.cpp.o
+[2105/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/DeclSpec.cpp.o
+[2106/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDeclCXX.cpp.o
+[2107/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGException.cpp.o
+[2108/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/HLSLExternalSemaSource.cpp.o
+[2109/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Scope.cpp.o
+[2110/2706] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTentative.cpp.o
+[2111/2706] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/Parser.cpp.o
+[2112/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/JumpDiagnostics.cpp.o
+[2113/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/MultiplexExternalSemaSource.cpp.o
+[2114/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/ScopeInfo.cpp.o
+[2115/2706] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenACC.cpp.o
+[2116/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/ParsedAttr.cpp.o
+[2117/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAccess.cpp.o
+[2118/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAPINotes.cpp.o
+[2119/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCXXScopeSpec.cpp.o
+[2120/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaBase.cpp.o
+[2121/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaChecking.cpp.o
+[2122/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaConsumer.cpp.o
+[2123/2706] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Expr.cpp.o
+[2124/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/IdentifierResolver.cpp.o
+[2125/2706] Building X86GenDAGISel.inc...
+[2126/2706] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o
+[2127/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCast.cpp.o
+[2128/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclObjC.cpp.o
+[2129/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExceptionSpec.cpp.o
+[2130/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAttr.cpp.o
+[2131/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCoroutine.cpp.o
+[2132/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/CodeCompleteConsumer.cpp.o
+[2133/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o
+[2134/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAvailability.cpp.o
+[2135/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/AnalysisBasedWarnings.cpp.o
+[2136/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaHLSL.cpp.o
+[2137/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCUDA.cpp.o
+[2138/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLambda.cpp.o
+[2139/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaInit.cpp.o
+[2140/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenACC.cpp.o
+[2141/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaConcept.cpp.o
+[2142/2706] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TypeMetadataUtils.cpp.o
+FAILED: lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TypeMetadataUtils.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Analysis -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TypeMetadataUtils.cpp.o -MF lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TypeMetadataUtils.cpp.o.d -o lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TypeMetadataUtils.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/TypeMetadataUtils.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/TypeMetadataUtils.cpp:238:59: error: ‘void llvm::replaceRelativePointerUsersWithZero(llvm::Function*)’ should have been declared inside ‘llvm’
+  238 | void llvm::replaceRelativePointerUsersWithZero(Function *F) {
+      |                                                           ^
+[2143/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCodeComplete.cpp.o
+[2144/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOverload.cpp.o
+[2145/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDecl.cpp.o
+[2146/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprMember.cpp.o
+[2147/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaFixItUtils.cpp.o
+[2148/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclCXX.cpp.o
+[2149/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprObjC.cpp.o
+[2150/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclAttr.cpp.o
+[2151/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaModule.cpp.o
+[2152/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprCXX.cpp.o
+[2153/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLookup.cpp.o
+[2154/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaObjCProperty.cpp.o
+[2155/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenMP.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/APNumericStorage.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/CoroutineStmtBuilder.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/TreeTransform.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:14:
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:23:21,
+    inlined from ‘bool checkOMPArraySectionConstantForReduction(clang::ASTContext&, const clang::OMPArraySectionExpr*, bool&, llvm::SmallVectorImpl<llvm::APSInt>&)’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:19497:45,
+    inlined from ‘bool actOnOMPReductionKindClause(clang::Sema&, {anonymous}::DSAStackTy*, clang::OpenMPClauseKind, llvm::ArrayRef<clang::Expr*>, clang::SourceLocation, clang::SourceLocation, clang::SourceLocation, clang::SourceLocation, clang::CXXScopeSpec&, const clang::DeclarationNameInfo&, llvm::ArrayRef<clang::Expr*>, {anonymous}::ReductionData&)’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:19855:68:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:170:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  170 |       delete[] U.pVal;
+      |                  ^~~~
+[2156/2706] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o
+[2157/2706] Building X86GenInstrInfo.inc...
+[2158/2706] Building X86GenSubtargetInfo.inc...
+[2159/2706] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+76.30user 12.59system 0:07.80elapsed 1138%CPU (0avgtext+0avgdata 834260maxresident)k
+0inputs+1790592outputs (9589major+5537289minor)pagefaults 0swaps
