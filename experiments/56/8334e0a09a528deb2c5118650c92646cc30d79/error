@@ -1,0 +1,133 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+-- Performing Test HAVE_LINKER_FLAG_LONG_PLT
+-- Performing Test HAVE_LINKER_FLAG_LONG_PLT - Success
+-- Registering ExampleIRTransforms as a pass plugin (static build: OFF)
+-- Registering Bye as a pass plugin (static build: OFF)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/llvm-project-build-stage2
+ninja: Entering directory `/tmp/llvm-project-build-stage2'
+[1/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ABIBreak.cpp.o
+[2/2570] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/Demangle.cpp.o
+[3/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AutoConvert.cpp.o
+[4/2570] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/DLangDemangle.cpp.o
+[5/2570] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o
+[6/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMWinEH.cpp.o
+[7/2570] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/RustDemangle.cpp.o
+[8/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o
+[9/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APSInt.cpp.o
+[10/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMBuildAttrs.cpp.o
+[11/2570] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangle.cpp.o
+[12/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BuryPointer.cpp.o
+[13/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o
+[14/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Base64.cpp.o
+[15/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamError.cpp.o
+[16/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MemoryBuffer.cpp.o
+[17/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/COM.cpp.o
+[18/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BlockFrequency.cpp.o
+[19/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17 -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp
+1.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/random.h:5554:39: current parser token ';'
+2.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/random.h:37:1: parsing namespace 'std'
+3.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/random.h:5514:5: parsing struct/union/class body 'std::piecewise_constant_distribution'
+4.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/random.h:5551:2: parsing function body 'std::piecewise_constant_distribution::param_type::intervals'
+5.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/random.h:5551:2: in compound statement ('{}')
+6.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/random.h:5553:6: in compound statement ('{}')
+ #0 0x000055d78ec97130 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/tmp/llvm-project-build-stage1/bin/clang+++0x1e99130)
+ #1 0x000055d78ec95004 llvm::sys::CleanupOnSignal(unsigned long) (/tmp/llvm-project-build-stage1/bin/clang+++0x1e97004)
+ #2 0x000055d78ebe8e98 CrashRecoverySignalHandler(int) CrashRecoveryContext.cpp:0:0
+ #3 0x00007f1ac2746520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #4 0x000055d7907bb2b1 clang::Sema::CheckForIntOverflow(clang::Expr const*) (/tmp/llvm-project-build-stage1/bin/clang+++0x39bd2b1)
+ #5 0x000055d79082b68b clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3a2d68b)
+ #6 0x000055d790c5b5d0 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3e5d5d0)
+ #7 0x000055d7909644f5 clang::Sema::AddInitializerToDecl(clang::Decl*, clang::Expr*, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x3b664f5)
+ #8 0x000055d790612ee9 clang::Parser::ParseDeclarationAfterDeclaratorAndAttributes(clang::Declarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::ForRangeInit*) (/tmp/llvm-project-build-stage1/bin/clang+++0x3814ee9)
+ #9 0x000055d79062696d clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::SourceLocation*, clang::Parser::ForRangeInit*) (/tmp/llvm-project-build-stage1/bin/clang+++0x382896d)
+#10 0x000055d790627ed0 clang::Parser::ParseSimpleDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, bool, clang::Parser::ForRangeInit*, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x3829ed0)
+#11 0x000055d7906283e1 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x382a3e1)
+#12 0x000055d7906cfb78 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d1b78)
+#13 0x000055d7906d0727 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d2727)
+#14 0x000055d7906d1531 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d3531)
+#15 0x000055d7906d1e5f clang::Parser::ParseCompoundStatement(bool, unsigned int) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d3e5f)
+#16 0x000055d7906ceac7 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d0ac7)
+#17 0x000055d7906d0727 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d2727)
+#18 0x000055d7906d5788 clang::Parser::ParseStatement(clang::SourceLocation*, clang::Parser::ParsedStmtContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d7788)
+#19 0x000055d7906ce30c clang::Parser::ParseIfStatement(clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d030c)
+#20 0x000055d7906cf78b clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d178b)
+#21 0x000055d7906d0727 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d2727)
+#22 0x000055d7906d1531 clang::Parser::ParseCompoundStatementBody(bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d3531)
+#23 0x000055d7906d409a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/tmp/llvm-project-build-stage1/bin/clang+++0x38d609a)
+#24 0x000055d7905f8b51 clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37fab51)
+#25 0x000055d7905f73c5 clang::Parser::LateParsedClass::ParseLexedMethodDefs() (/tmp/llvm-project-build-stage1/bin/clang+++0x37f93c5)
+#26 0x000055d7905f879d clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37fa79d)
+#27 0x000055d790648126 clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) (/tmp/llvm-project-build-stage1/bin/clang+++0x384a126)
+#28 0x000055d79064a5fa clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x384c5fa)
+#29 0x000055d79061b335 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) (/tmp/llvm-project-build-stage1/bin/clang+++0x381d335)
+#30 0x000055d7906e6a21 clang::Parser::ParseDeclarationAfterTemplate(clang::DeclaratorContext, clang::Parser::ParsedTemplateInfo&, clang::ParsingDeclRAIIObject&, clang::SourceLocation&, clang::ParsedAttributes&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x38e8a21)
+#31 0x000055d7906f391e clang::Parser::ParseTemplateDeclarationOrSpecialization(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::AccessSpecifier) (/tmp/llvm-project-build-stage1/bin/clang+++0x38f591e)
+#32 0x000055d7906f3b69 clang::Parser::ParseDeclarationStartingWithTemplate(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&) (/tmp/llvm-project-build-stage1/bin/clang+++0x38f5b69)
+#33 0x000055d790628507 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x382a507)
+#34 0x000055d7905e9517 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37eb517)
+#35 0x000055d790641767 clang::Parser::ParseInnerNamespace(llvm::SmallVector<clang::Parser::InnerNamespaceInfo, 4u> const&, unsigned int, clang::SourceLocation&, clang::ParsedAttributes&, clang::BalancedDelimiterTracker&) (/tmp/llvm-project-build-stage1/bin/clang+++0x3843767)
+#36 0x000055d79064c45b clang::Parser::ParseNamespace(clang::DeclaratorContext, clang::SourceLocation&, clang::SourceLocation) (/tmp/llvm-project-build-stage1/bin/clang+++0x384e45b)
+#37 0x000055d7906285c1 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, clang::SourceLocation*) (/tmp/llvm-project-build-stage1/bin/clang+++0x382a5c1)
+#38 0x000055d7905e9517 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) (/tmp/llvm-project-build-stage1/bin/clang+++0x37eb517)
+#39 0x000055d7905ea487 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) (/tmp/llvm-project-build-stage1/bin/clang+++0x37ec487)
+#40 0x000055d7905dafda clang::ParseAST(clang::Sema&, bool, bool) (/tmp/llvm-project-build-stage1/bin/clang+++0x37dcfda)
+#41 0x000055d78f7632f9 clang::FrontendAction::Execute() (/tmp/llvm-project-build-stage1/bin/clang+++0x29652f9)
+#42 0x000055d78f6de4e9 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/tmp/llvm-project-build-stage1/bin/clang+++0x28e04e9)
+#43 0x000055d78f829e34 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/tmp/llvm-project-build-stage1/bin/clang+++0x2a2be34)
+#44 0x000055d78d9fe719 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/tmp/llvm-project-build-stage1/bin/clang+++0xc00719)
+#45 0x000055d78d9f7ffd ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&) driver.cpp:0:0
+#46 0x000055d78f509ead void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+#47 0x000055d78ebe92e7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) (/tmp/llvm-project-build-stage1/bin/clang+++0x1deb2e7)
+#48 0x000055d78f50a247 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, bool*) const (.part.0) Job.cpp:0:0
+#49 0x000055d78f4d0f91 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x26d2f91)
+#50 0x000055d78f4d1a4d clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&, bool) const (/tmp/llvm-project-build-stage1/bin/clang+++0x26d3a4d)
+#51 0x000055d78f4e371c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*> >&) (/tmp/llvm-project-build-stage1/bin/clang+++0x26e571c)
+#52 0x000055d78d9fb931 clang_main(int, char**, llvm::ToolContext const&) (/tmp/llvm-project-build-stage1/bin/clang+++0xbfd931)
+#53 0x000055d78d930ecb main (/tmp/llvm-project-build-stage1/bin/clang+++0xb32ecb)
+#54 0x00007f1ac272dd90 __libc_start_call_main ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+#55 0x00007f1ac272de40 call_init ./csu/../csu/libc-start.c:128:20
+#56 0x00007f1ac272de40 __libc_start_main ./csu/../csu/libc-start.c:379:5
+#57 0x000055d78d9f7e25 _start (/tmp/llvm-project-build-stage1/bin/clang+++0xbf9e25)
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 19.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/BalancedPartitioning-20da77.cpp
+clang++: note: diagnostic msg: /tmp/BalancedPartitioning-20da77.sh
+clang++: note: diagnostic msg: 
+
+********************
+[20/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o
+[21/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BranchProbability.cpp.o
+[22/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamWriter.cpp.o
+[23/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o
+[24/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamReader.cpp.o
+[25/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamRef.cpp.o
+[26/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/circular_raw_ostream.cpp.o
+[27/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o
+[28/2570] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o
+[29/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Chrono.cpp.o
+[30/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+[31/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o
+[32/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Caching.cpp.o
+[33/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CodeGenCoverage.cpp.o
+[34/2570] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
