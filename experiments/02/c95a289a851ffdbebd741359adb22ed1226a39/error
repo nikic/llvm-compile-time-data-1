@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2153/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCoroutine.cpp.o
+[2154/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCleanup.cpp.o
+[2155/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDecl.cpp.o
+[2156/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDebugInfo.cpp.o
+[2157/2712] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaSYCL.cpp.o
+[2158/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGException.cpp.o
+[2159/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExpr.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGExpr.cpp: In member function ‘void clang::CodeGen::CodeGenFunction::EmitTrapCheck(llvm::Value*, clang::CodeGen::SanitizerHandler)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGExpr.cpp:3848:48: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+ 3847 |         llvm::ConstantInt::get(CGM.Int8Ty, ClSanitizeDebugDeoptimization
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3848 |                                                ? TrapBB->getParent()->size()
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3849 |                                                : CheckHandlerID));
+      |                                                ~~~~~~~~~~~~~~~~
+[2160/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprAgg.cpp.o
+[2161/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprCXX.cpp.o
+[2162/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprScalar.cpp.o
+[2163/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGGPUBuiltin.cpp.o
+[2164/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGHLSLRuntime.cpp.o
+[2165/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprConstant.cpp.o
+[2166/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGLoopInfo.cpp.o
+[2167/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGNonTrivialStruct.cpp.o
+[2168/2712] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaStmt.cpp.o
+[2169/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGObjCGNU.cpp.o
+[2170/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGObjC.cpp.o
+[2171/2712] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaType.cpp.o
+[2172/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGObjCRuntime.cpp.o
+[2173/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGObjCMac.cpp.o
+[2174/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGOpenMPRuntime.cpp.o
+[2175/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGStmt.cpp.o
+[2176/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGOpenMPRuntimeGPU.cpp.o
+[2177/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGRecordLayoutBuilder.cpp.o
+[2178/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGStmtOpenMP.cpp.o
+[2179/2712] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiate.cpp.o
+[2180/2712] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiateDecl.cpp.o
+[2181/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGVTables.cpp.o
+[2182/2712] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplate.cpp.o
+[2183/2712] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateDeduction.cpp.o
+[2184/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o
+[2185/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CodeGenFunction.cpp.o
+[2186/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CodeGenTBAA.cpp.o
+[2187/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CodeGenTypes.cpp.o
+[2188/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ConstantInitBuilder.cpp.o
+[2189/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o
+[2190/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDeclCXX.cpp.o
+[2191/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/MicrosoftCXXABI.cpp.o
+[2192/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/LinkInModulesPass.cpp.o
+[2193/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCXX.cpp.o
+[2194/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ModuleBuilder.cpp.o
+[2195/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/PatternInit.cpp.o
+[2196/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/SwiftCallingConv.cpp.o
+[2197/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/SanitizerMetadata.cpp.o
+[2198/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/AArch64.cpp.o
+[2199/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprComplex.cpp.o
+[2200/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/AMDGPU.cpp.o
+[2201/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGClass.cpp.o
+[2202/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGOpenCLRuntime.cpp.o
+[2203/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/ARM.cpp.o
+[2204/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CodeGenABITypes.cpp.o
+[2205/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGVTT.cpp.o
+[2206/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/MacroPPCallbacks.cpp.o
+[2207/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/LoongArch.cpp.o
+[2208/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CodeGenAction.cpp.o
+[2209/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CoverageMappingGen.cpp.o
+[2210/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ItaniumCXXABI.cpp.o
+[2211/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/NVPTX.cpp.o
+[2212/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CodeGenModule.cpp.o
+[2213/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/PPC.cpp.o
+[2214/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CodeGenPGO.cpp.o
+[2215/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/RISCV.cpp.o
+[2216/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/Sparc.cpp.o
+[2217/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/SystemZ.cpp.o
+[2218/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ObjectFilePCHContainerOperations.cpp.o
+[2219/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetInfo.cpp.o
+[2220/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/AVR.cpp.o
+[2221/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/ARC.cpp.o
+[2222/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/BPF.cpp.o
+[2223/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/X86.cpp.o
+[2224/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/VarBypassDetector.cpp.o
+[2225/2712] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/AnalysisDeclContext.cpp.o
+[2226/2712] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/DFAJumpThreading.cpp.o
+FAILED: lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/DFAJumpThreading.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Scalar -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/DFAJumpThreading.cpp.o -MF lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/DFAJumpThreading.cpp.o.d -o lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/DFAJumpThreading.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp:533:36: error: expected ‘,’ or ‘...’ before ‘LoopInfo’
+  533 |                  DominatorTree *DT LoopInfo *LI)
+      |                                    ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp: In constructor ‘{anonymous}::AllSwitchPaths::AllSwitchPaths(const {anonymous}::MainSwitch*, llvm::OptimizationRemarkEmitter*, llvm::DominatorTree*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp:532:3: warning: ‘{anonymous}::AllSwitchPaths::LI’ is initialized with itself [-Winit-self]
+  532 |   AllSwitchPaths(const MainSwitch *MSwitch, OptimizationRemarkEmitter *ORE,
+      |   ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp: In member function ‘{anonymous}::PathsType {anonymous}::AllSwitchPaths::paths(llvm::BasicBlock*, {anonymous}::VisitedBlocks&, unsigned int) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp:613:10: error: ‘isPotentiallyReachable’ was not declared in this scope
+  613 |     if (!isPotentiallyReachable(BB, SwitchBlock, nullptr, DT, LI))
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp: In member function ‘bool {anonymous}::DFAJumpThreading::run(llvm::Function&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp:1327:52: error: no matching function for call to ‘{anonymous}::AllSwitchPaths::AllSwitchPaths({anonymous}::MainSwitch*, llvm::OptimizationRemarkEmitter*&, llvm::DominatorTree*&, llvm::LoopInfo*&)’
+ 1327 |     AllSwitchPaths SwitchPaths(&Switch, ORE, DT, LI);
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp:532:3: note: candidate: ‘{anonymous}::AllSwitchPaths::AllSwitchPaths(const {anonymous}::MainSwitch*, llvm::OptimizationRemarkEmitter*, llvm::DominatorTree*)’
+  532 |   AllSwitchPaths(const MainSwitch *MSwitch, OptimizationRemarkEmitter *ORE,
+      |   ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp:532:3: note:   candidate expects 3 arguments, 4 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp:531:8: note: candidate: ‘{anonymous}::AllSwitchPaths::AllSwitchPaths(const {anonymous}::AllSwitchPaths&)’
+  531 | struct AllSwitchPaths {
+      |        ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp:531:8: note:   candidate expects 1 argument, 4 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp:531:8: note: candidate: ‘{anonymous}::AllSwitchPaths::AllSwitchPaths({anonymous}::AllSwitchPaths&&)’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/DFAJumpThreading.cpp:531:8: note:   candidate expects 1 argument, 4 provided
+[2227/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/XCore.cpp.o
+[2228/2712] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CalledOnceCheck.cpp.o
+[2229/2712] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CFG.cpp.o
+[2230/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/Hexagon.cpp.o
+[2231/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/Lanai.cpp.o
+[2232/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/CSKY.cpp.o
+[2233/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/MSP430.cpp.o
+[2234/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/M68k.cpp.o
+[2235/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/PNaCl.cpp.o
+[2236/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/SPIR.cpp.o
+[2237/2712] Building X86GenSubtargetInfo.inc...
+[2238/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/Mips.cpp.o
+[2239/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/VE.cpp.o
+[2240/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/TCE.cpp.o
+[2241/2712] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/WebAssembly.cpp.o
+[2242/2712] Building X86GenInstrInfo.inc...
+[2243/2712] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+108.09user 16.49system 0:09.56elapsed 1302%CPU (0avgtext+0avgdata 834096maxresident)k
+6736inputs+2963736outputs (8353major+7365036minor)pagefaults 0swaps
