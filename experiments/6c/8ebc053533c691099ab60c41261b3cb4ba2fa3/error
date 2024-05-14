@@ -1,0 +1,133 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+[904/2575] Building CXX object lib/Transforms/InstCombine/CMakeFiles/LLVMInstCombine.dir/InstCombineCompares.cpp.o
+[905/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/AlignmentFromAssumptions.cpp.o
+[906/2575] Building CXX object lib/Transforms/InstCombine/CMakeFiles/LLVMInstCombine.dir/InstCombineSelect.cpp.o
+[907/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/BDCE.cpp.o
+[908/2575] Building CXX object lib/Transforms/InstCombine/CMakeFiles/LLVMInstCombine.dir/InstructionCombining.cpp.o
+[909/2575] Building CXX object lib/Transforms/InstCombine/CMakeFiles/LLVMInstCombine.dir/InstCombineVectorOps.cpp.o
+[910/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/CallSiteSplitting.cpp.o
+[911/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/DCE.cpp.o
+[912/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/FlattenCFGPass.cpp.o
+[913/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/ADCE.cpp.o
+[914/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/ConstantHoisting.cpp.o
+[915/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/CorrelatedValuePropagation.cpp.o
+[916/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/DivRemPairs.cpp.o
+[917/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Float2Int.cpp.o
+[918/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/IVUsersPrinter.cpp.o
+[919/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/ConstraintElimination.cpp.o
+[920/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/InferAlignment.cpp.o
+[921/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/EarlyCSE.cpp.o
+[922/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/InstSimplifyPass.cpp.o
+[923/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/DFAJumpThreading.cpp.o
+[924/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/DeadStoreElimination.cpp.o
+[925/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/GuardWidening.cpp.o
+[926/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/GVNSink.cpp.o
+[927/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/GVNHoist.cpp.o
+[928/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/JumpTableToSwitch.cpp.o
+[929/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/InferAddressSpaces.cpp.o
+[930/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/InductiveRangeCheckElimination.cpp.o
+[931/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/GVN.cpp.o
+[932/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopAccessAnalysisPrinter.cpp.o
+[933/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/IndVarSimplify.cpp.o
+[934/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopDataPrefetch.cpp.o
+[935/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopSink.cpp.o
+[936/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/JumpThreading.cpp.o
+[937/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopDeletion.cpp.o
+[938/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopBoundSplit.cpp.o
+[939/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopFuse.cpp.o
+[940/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopInstSimplify.cpp.o
+[941/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopDistribute.cpp.o
+[942/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LICM.cpp.o
+[943/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopPassManager.cpp.o
+[944/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopIdiomRecognize.cpp.o
+[945/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopInterchange.cpp.o
+[946/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopFlatten.cpp.o
+[947/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopRotation.cpp.o
+[948/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerAtomicPass.cpp.o
+[949/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopLoadElimination.cpp.o
+[950/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopPredication.cpp.o
+[951/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerExpectIntrinsic.cpp.o
+[952/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerGuardIntrinsic.cpp.o
+[953/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopUnrollAndJamPass.cpp.o
+[954/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopSimplifyCFG.cpp.o
+[955/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopVersioningLICM.cpp.o
+[956/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MakeGuardsExplicit.cpp.o
+[957/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerConstantIntrinsics.cpp.o
+[958/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerWidenableCondition.cpp.o
+[959/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Scalar.cpp.o
+[960/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopUnrollPass.cpp.o
+[961/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MergedLoadStoreMotion.cpp.o
+[962/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Reg2Mem.cpp.o
+[963/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/NaryReassociate.cpp.o
+FAILED: lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/NaryReassociate.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Transforms/Scalar -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/NaryReassociate.cpp.o -MF lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/NaryReassociate.cpp.o.d -o lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/NaryReassociate.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:610:32: error: comparison of distinct pointer types ('auto *' and 'Instruction *')
+  610 |                       return U != I &&
+      |                              ~ ^  ~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:609:34: note: while substituting into a lambda expression here
+  609 |                     [&](auto *U) {
+      |                                  ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:286:13: note: in instantiation of function template specialization 'llvm::NaryReassociatePass::tryReassociateMinOrMax<llvm::PatternMatch::MaxMin_match<llvm::ICmpInst, llvm::PatternMatch::bind_ty<llvm::Value>, llvm::PatternMatch::bind_ty<llvm::Value>, llvm::PatternMatch::umin_pred_ty>>' requested here
+  286 |             tryReassociateMinOrMax(I, MinMaxMatcher, LHS, RHS)))
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:319:17: note: in instantiation of function template specialization 'llvm::NaryReassociatePass::matchAndReassociateMinOrMax<llvm::PatternMatch::umin_pred_ty>' requested here
+  319 |     if ((ResI = matchAndReassociateMinOrMax<umin_pred_ty>(I, OrigSCEV)) ||
+      |                 ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:610:32: error: comparison of distinct pointer types ('auto *' and 'Instruction *')
+  610 |                       return U != I &&
+      |                              ~ ^  ~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:609:34: note: while substituting into a lambda expression here
+  609 |                     [&](auto *U) {
+      |                                  ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:286:13: note: in instantiation of function template specialization 'llvm::NaryReassociatePass::tryReassociateMinOrMax<llvm::PatternMatch::MaxMin_match<llvm::ICmpInst, llvm::PatternMatch::bind_ty<llvm::Value>, llvm::PatternMatch::bind_ty<llvm::Value>, llvm::PatternMatch::smin_pred_ty>>' requested here
+  286 |             tryReassociateMinOrMax(I, MinMaxMatcher, LHS, RHS)))
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:320:17: note: in instantiation of function template specialization 'llvm::NaryReassociatePass::matchAndReassociateMinOrMax<llvm::PatternMatch::smin_pred_ty>' requested here
+  320 |         (ResI = matchAndReassociateMinOrMax<smin_pred_ty>(I, OrigSCEV)) ||
+      |                 ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:610:32: error: comparison of distinct pointer types ('auto *' and 'Instruction *')
+  610 |                       return U != I &&
+      |                              ~ ^  ~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:609:34: note: while substituting into a lambda expression here
+  609 |                     [&](auto *U) {
+      |                                  ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:286:13: note: in instantiation of function template specialization 'llvm::NaryReassociatePass::tryReassociateMinOrMax<llvm::PatternMatch::MaxMin_match<llvm::ICmpInst, llvm::PatternMatch::bind_ty<llvm::Value>, llvm::PatternMatch::bind_ty<llvm::Value>, llvm::PatternMatch::umax_pred_ty>>' requested here
+  286 |             tryReassociateMinOrMax(I, MinMaxMatcher, LHS, RHS)))
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:321:17: note: in instantiation of function template specialization 'llvm::NaryReassociatePass::matchAndReassociateMinOrMax<llvm::PatternMatch::umax_pred_ty>' requested here
+  321 |         (ResI = matchAndReassociateMinOrMax<umax_pred_ty>(I, OrigSCEV)) ||
+      |                 ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:610:32: error: comparison of distinct pointer types ('auto *' and 'Instruction *')
+  610 |                       return U != I &&
+      |                              ~ ^  ~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:609:34: note: while substituting into a lambda expression here
+  609 |                     [&](auto *U) {
+      |                                  ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:286:13: note: in instantiation of function template specialization 'llvm::NaryReassociatePass::tryReassociateMinOrMax<llvm::PatternMatch::MaxMin_match<llvm::ICmpInst, llvm::PatternMatch::bind_ty<llvm::Value>, llvm::PatternMatch::bind_ty<llvm::Value>, llvm::PatternMatch::smax_pred_ty>>' requested here
+  286 |             tryReassociateMinOrMax(I, MinMaxMatcher, LHS, RHS)))
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/NaryReassociate.cpp:322:17: note: in instantiation of function template specialization 'llvm::NaryReassociatePass::matchAndReassociateMinOrMax<llvm::PatternMatch::smax_pred_ty>' requested here
+  322 |         (ResI = matchAndReassociateMinOrMax<smax_pred_ty>(I, OrigSCEV)))
+      |                 ^
+4 errors generated.
+[964/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/PartiallyInlineLibCalls.cpp.o
+[965/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MergeICmps.cpp.o
+[966/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SCCP.cpp.o
+[967/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MemCpyOptimizer.cpp.o
+[968/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/PlaceSafepoints.cpp.o
+[969/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/ScalarizeMaskedMemIntrin.cpp.o
+[970/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SeparateConstOffsetFromGEP.cpp.o
+[971/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopStrengthReduce.cpp.o
+[972/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Scalarizer.cpp.o
+[973/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Reassociate.cpp.o
+[974/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerMatrixIntrinsics.cpp.o
+[975/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/RewriteStatepointsForGC.cpp.o
+[976/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/NewGVN.cpp.o
+[977/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SROA.cpp.o
+[978/2575] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SimpleLoopUnswitch.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
