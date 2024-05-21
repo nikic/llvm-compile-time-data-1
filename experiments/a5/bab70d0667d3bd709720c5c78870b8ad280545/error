@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[606/2718] Building AttrParserStringSwitches.inc...
+[607/2718] Building AttrParsedAttrList.inc...
+[608/2718] Building AttrParsedAttrKinds.inc...
+[609/2718] Building AttrSpellingListIndex.inc...
+[610/2718] Building AttrPCHRead.inc...
+[611/2718] Building AttrPCHWrite.inc...
+[612/2718] Building NodeClasses.inc...
+[613/2718] Building Checkers.inc...
+[614/2718] Building Nodes.inc...
+[615/2718] Building AttrParsedAttrImpl.inc...
+[616/2718] Building arm_sve_builtins.inc...
+[617/2718] Building arm_sve_sema_rangechecks.inc...
+[618/2718] Building riscv_vector_builtin_sema.inc...
+[619/2718] Building IntrinsicsRISCV.h...
+[620/2718] Building riscv_vector_builtins.inc...
+[621/2718] Building IntrinsicsS390.h...
+[622/2718] Building IntrinsicsSPIRV.h...
+[623/2718] Building riscv_vector_builtin_cg.inc...
+[624/2718] Building IntrinsicsR600.h...
+[625/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/ARMTargetDefEmitter.cpp.o
+[626/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/AsmWriterEmitter.cpp.o
+[627/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/Attributes.cpp.o
+[628/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/CallingConvEmitter.cpp.o
+[629/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/CodeEmitterGen.cpp.o
+[630/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/CodeGenMapTable.cpp.o
+[631/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/CTagsEmitter.cpp.o
+[632/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/AsmMatcherEmitter.cpp.o
+[633/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/CompressInstEmitter.cpp.o
+[634/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DAGISelEmitter.cpp.o
+[635/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DAGISelMatcherEmitter.cpp.o
+[636/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DAGISelMatcherGen.cpp.o
+[637/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DAGISelMatcherOpt.cpp.o
+[638/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DecoderEmitter.cpp.o
+[639/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DFAEmitter.cpp.o
+[640/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DFAPacketizerEmitter.cpp.o
+[641/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DirectiveEmitter.cpp.o
+[642/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DisassemblerEmitter.cpp.o
+[643/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DXILEmitter.cpp.o
+[644/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/ExegesisEmitter.cpp.o
+[645/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/FastISelEmitter.cpp.o
+[646/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/InstrDocsEmitter.cpp.o
+[647/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/IntrinsicEmitter.cpp.o
+[648/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/GlobalISelCombinerEmitter.cpp.o
+[649/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/GlobalISelEmitter.cpp.o
+[650/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/InstrInfoEmitter.cpp.o
+[651/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/MacroFusionPredicatorEmitter.cpp.o
+[652/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/OptParserEmitter.cpp.o
+[653/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/OptRSTEmitter.cpp.o
+[654/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86ModRMFilters.cpp.o
+[655/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/PseudoLoweringEmitter.cpp.o
+[656/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/RISCVTargetDefEmitter.cpp.o
+[657/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/RegisterBankEmitter.cpp.o
+[658/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/TableGen.cpp.o
+[659/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/RegisterInfoEmitter.cpp.o
+[660/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/SubtargetEmitter.cpp.o
+[661/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/VTEmitter.cpp.o
+[662/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/SearchableTableEmitter.cpp.o
+[663/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/WebAssemblyDisassemblerEmitter.cpp.o
+[664/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86DisassemblerTables.cpp.o
+[665/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86CompressEVEXTablesEmitter.cpp.o
+[666/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86FoldTablesEmitter.cpp.o
+[667/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86MnemonicTables.cpp.o
+[668/2718] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/Remark.cpp.o
+[669/2718] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/BitstreamRemarkParser.cpp.o
+[670/2718] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/BitstreamRemarkSerializer.cpp.o
+[671/2718] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86RecognizableInstr.cpp.o
+[672/2718] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkParser.cpp.o
+[673/2718] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkSerializer.cpp.o
+[674/2718] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkStringTable.cpp.o
+[675/2718] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkStreamer.cpp.o
+[676/2718] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/YAMLRemarkParser.cpp.o
+[677/2718] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/YAMLRemarkSerializer.cpp.o
+[678/2718] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkFormat.cpp.o
+[679/2718] Linking CXX executable bin/llvm-tblgen
+[680/2718] Building ARMTargetParserDef.inc...
+[681/2718] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkLinker.cpp.o
+FAILED: lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkLinker.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Remarks -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkLinker.cpp.o -MF lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkLinker.cpp.o.d -o lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkLinker.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks/RemarkLinker.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks/RemarkLinker.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/ObjectFile.h:305:27: error: expected primary-expression before ‘const’
+  305 |   ObjectFile &opeartor = (const ObjectFile &other) = delete;
+      |                           ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/ObjectFile.h:305:27: error: expected ‘)’ before ‘const’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/ObjectFile.h:305:26: note: to match this ‘(’
+  305 |   ObjectFile &opeartor = (const ObjectFile &other) = delete;
+      |                          ^
+[682/2718] Building CXX object lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFParser.cpp.o
+FAILED: lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFParser.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/DebugInfo/BTF -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/BTF -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFParser.cpp.o -MF lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFParser.cpp.o.d -o lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFParser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/BTF/BTFParser.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/BTF/BTFParser.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/BTF/BTFParser.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/ObjectFile.h:305:27: error: expected primary-expression before ‘const’
+  305 |   ObjectFile &opeartor = (const ObjectFile &other) = delete;
+      |                           ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/ObjectFile.h:305:27: error: expected ‘)’ before ‘const’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/ObjectFile.h:305:26: note: to match this ‘(’
+  305 |   ObjectFile &opeartor = (const ObjectFile &other) = delete;
+      |                          ^
+[683/2718] Building AArch64TargetParserDef.inc...
+[684/2718] Building CXX object lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFContext.cpp.o
+FAILED: lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFContext.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/DebugInfo/BTF -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/BTF -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFContext.cpp.o -MF lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFContext.cpp.o.d -o lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFContext.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/BTF/BTFContext.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/BTF/BTFParser.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/BTF/BTFContext.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/BTF/BTFContext.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/ObjectFile.h:305:27: error: expected primary-expression before ‘const’
+  305 |   ObjectFile &opeartor = (const ObjectFile &other) = delete;
+      |                           ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/ObjectFile.h:305:27: error: expected ‘)’ before ‘const’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Object/ObjectFile.h:305:26: note: to match this ‘(’
+  305 |   ObjectFile &opeartor = (const ObjectFile &other) = delete;
+      |                          ^
+[685/2718] Building X86GenCallingConv.inc...
+[686/2718] Building X86GenExegesis.inc...
+[687/2718] Building X86GenCompressEVEXTables.inc...
+[688/2718] Building X86GenMnemonicTables.inc...
+[689/2718] Building X86GenRegisterBank.inc...
+[690/2718] Building X86GenDisassemblerTables.inc...
+[691/2718] Building X86GenAsmWriter1.inc...
+[692/2718] Building X86GenAsmWriter.inc...
+[693/2718] Building X86GenAsmMatcher.inc...
+[694/2718] Building X86GenFoldTables.inc...
+[695/2718] Building X86GenFastISel.inc...
+[696/2718] Building X86GenGlobalISel.inc...
+[697/2718] Building X86GenDAGISel.inc...
+[698/2718] Building X86GenInstrInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+36.99user 4.74system 0:04.69elapsed 889%CPU (0avgtext+0avgdata 834524maxresident)k
+0inputs+295416outputs (8907major+3239816minor)pagefaults 0swaps
