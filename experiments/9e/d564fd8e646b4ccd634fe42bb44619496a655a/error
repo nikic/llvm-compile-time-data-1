@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:655:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(From&)’
+  655 | [[nodiscard]] inline decltype(auto) dyn_cast(From &Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:655:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:783:62: error: template argument 1 is invalid
+  783 |       auto *WriteR = dyn_cast<VPWidenMemoryInstructionRecipe>(SinkCandidate);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:661:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(From*)’
+  661 | [[nodiscard]] inline decltype(auto) dyn_cast(From *Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:661:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:783:62: error: template argument 1 is invalid
+  783 |       auto *WriteR = dyn_cast<VPWidenMemoryInstructionRecipe>(SinkCandidate);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:667:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(std::unique_ptr<From>&)’
+  667 | [[nodiscard]] inline decltype(auto) dyn_cast(std::unique_ptr<From> &Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:667:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:783:62: error: template argument 1 is invalid
+  783 |       auto *WriteR = dyn_cast<VPWidenMemoryInstructionRecipe>(SinkCandidate);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:791:70: error: no matching function for call to ‘dyn_cast<<expression error> >(llvm::VPRecipeBase*)’
+  791 |                              dyn_cast<VPWidenMemoryInstructionRecipe>(&R)) {
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:649:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(const From&)’
+  649 | [[nodiscard]] inline decltype(auto) dyn_cast(const From &Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:649:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:791:70: error: template argument 1 is invalid
+  791 |                              dyn_cast<VPWidenMemoryInstructionRecipe>(&R)) {
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:655:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(From&)’
+  655 | [[nodiscard]] inline decltype(auto) dyn_cast(From &Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:655:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:791:70: error: template argument 1 is invalid
+  791 |                              dyn_cast<VPWidenMemoryInstructionRecipe>(&R)) {
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:661:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(From*)’
+  661 | [[nodiscard]] inline decltype(auto) dyn_cast(From *Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:661:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:791:70: error: template argument 1 is invalid
+  791 |                              dyn_cast<VPWidenMemoryInstructionRecipe>(&R)) {
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:667:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(std::unique_ptr<From>&)’
+  667 | [[nodiscard]] inline decltype(auto) dyn_cast(std::unique_ptr<From> &Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:667:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:791:70: error: template argument 1 is invalid
+  791 |                              dyn_cast<VPWidenMemoryInstructionRecipe>(&R)) {
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+[2029/2717] Building X86GenInstrInfo.inc...
+[2030/2717] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h: In constructor ‘llvm::VPScalarIVStepsRecipe::VPScalarIVStepsRecipe(llvm::VPValue*, llvm::VPValue*, llvm::Instruction::BinaryOps, llvm::FastMathFlags)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:2796:9: error: class ‘llvm::VPScalarIVStepsRecipe’ does not have any field named ‘InductionOpcode’
+ 2796 |         InductionOpcode(Opcode) {}
+      |         ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h: In member function ‘virtual llvm::VPScalarIVStepsRecipe* llvm::VPScalarIVStepsRecipe::clone()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:2810:39: error: ‘InductionOpcode’ was not declared in this scope
+ 2810 |         getOperand(0), getOperand(1), InductionOpcode,
+      |                                       ^~~~~~~~~~~~~~~
+[2031/2717] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorizationLegality.cpp.o
+[2032/2717] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:57:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h: In constructor ‘llvm::VPScalarIVStepsRecipe::VPScalarIVStepsRecipe(llvm::VPValue*, llvm::VPValue*, llvm::Instruction::BinaryOps, llvm::FastMathFlags)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:2796:9: error: class ‘llvm::VPScalarIVStepsRecipe’ does not have any field named ‘InductionOpcode’
+ 2796 |         InductionOpcode(Opcode) {}
+      |         ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h: In member function ‘virtual llvm::VPScalarIVStepsRecipe* llvm::VPScalarIVStepsRecipe::clone()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:2810:39: error: ‘InductionOpcode’ was not declared in this scope
+ 2810 |         getOperand(0), getOperand(1), InductionOpcode,
+      |                                       ^~~~~~~~~~~~~~~
+[2033/2717] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2034/2717] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilderPipelines.cpp.o
+[2035/2717] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilder.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+134.04user 13.97system 0:26.47elapsed 559%CPU (0avgtext+0avgdata 1806116maxresident)k
+0inputs+1504816outputs (9545major+6957780minor)pagefaults 0swaps
