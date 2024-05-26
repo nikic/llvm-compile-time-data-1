@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:649:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(const From&)’
+  649 | [[nodiscard]] inline decltype(auto) dyn_cast(const From &Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:649:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:783:62: error: template argument 1 is invalid
+  783 |       auto *WriteR = dyn_cast<VPWidenMemoryInstructionRecipe>(SinkCandidate);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:655:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(From&)’
+  655 | [[nodiscard]] inline decltype(auto) dyn_cast(From &Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:655:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:783:62: error: template argument 1 is invalid
+  783 |       auto *WriteR = dyn_cast<VPWidenMemoryInstructionRecipe>(SinkCandidate);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:661:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(From*)’
+  661 | [[nodiscard]] inline decltype(auto) dyn_cast(From *Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:661:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:783:62: error: template argument 1 is invalid
+  783 |       auto *WriteR = dyn_cast<VPWidenMemoryInstructionRecipe>(SinkCandidate);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:667:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(std::unique_ptr<From>&)’
+  667 | [[nodiscard]] inline decltype(auto) dyn_cast(std::unique_ptr<From> &Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:667:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:783:62: error: template argument 1 is invalid
+  783 |       auto *WriteR = dyn_cast<VPWidenMemoryInstructionRecipe>(SinkCandidate);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:791:70: error: no matching function for call to ‘dyn_cast<<expression error> >(llvm::VPRecipeBase*)’
+  791 |                              dyn_cast<VPWidenMemoryInstructionRecipe>(&R)) {
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:649:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(const From&)’
+  649 | [[nodiscard]] inline decltype(auto) dyn_cast(const From &Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:649:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:791:70: error: template argument 1 is invalid
+  791 |                              dyn_cast<VPWidenMemoryInstructionRecipe>(&R)) {
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:655:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(From&)’
+  655 | [[nodiscard]] inline decltype(auto) dyn_cast(From &Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:655:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:791:70: error: template argument 1 is invalid
+  791 |                              dyn_cast<VPWidenMemoryInstructionRecipe>(&R)) {
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:661:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(From*)’
+  661 | [[nodiscard]] inline decltype(auto) dyn_cast(From *Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:661:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:791:70: error: template argument 1 is invalid
+  791 |                              dyn_cast<VPWidenMemoryInstructionRecipe>(&R)) {
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:667:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::dyn_cast(std::unique_ptr<From>&)’
+  667 | [[nodiscard]] inline decltype(auto) dyn_cast(std::unique_ptr<From> &Val) {
+      |                                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:667:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:791:70: error: template argument 1 is invalid
+  791 |                              dyn_cast<VPWidenMemoryInstructionRecipe>(&R)) {
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+[2396/2717] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexSymbol.cpp.o
+[2397/2717] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/USRGeneration.cpp.o
+[2398/2717] Building CXX object tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/RewriteMacros.cpp.o
+[2399/2717] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/DiagnosticBuilderWrappers.cpp.o
+[2400/2717] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/PrecompiledPreamble.cpp.o
+[2401/2717] Building CXX object tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/FrontendActions.cpp.o
+[2402/2717] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexDecl.cpp.o
+[2403/2717] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexingAction.cpp.o
+[2404/2717] Building CXX object tools/clang/lib/FrontendTool/CMakeFiles/obj.clangFrontendTool.dir/ExecuteCompilerInvocation.cpp.o
+[2405/2717] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexingContext.cpp.o
+[2406/2717] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/InterfaceStubFunctionsConsumer.cpp.o
+[2407/2717] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexBody.cpp.o
+[2408/2717] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexTypeSourceInfo.cpp.o
+[2409/2717] Building X86GenInstrInfo.inc...
+[2410/2717] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInvocation.cpp.o
+[2411/2717] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/HIPUtility.cpp.o
+[2412/2717] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+113.83user 17.37system 0:09.69elapsed 1353%CPU (0avgtext+0avgdata 835208maxresident)k
+0inputs+2974568outputs (11004major+7624799minor)pagefaults 0swaps
