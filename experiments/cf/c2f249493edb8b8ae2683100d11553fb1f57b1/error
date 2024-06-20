@@ -1,0 +1,61 @@
+MESSAGE: The process "sudo -u lctt-runner ./build_llvm_test_suite.sh ReleaseLTO-g stage1" exceeded the timeout of 300 seconds.
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/ReleaseLTO-g.cmake
+-- The C compiler identification is Clang 19.0.0
+-- The CXX compiler identification is Clang 19.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage1/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: unknown
+-- Adding directory CTMark
+-- Found Intl: built in to C library  
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/llvm-test-suite-build
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+[1/669] Generating ../lit.cfg
+[2/669] Generating __init__.py
+[3/669] Generating HashProgramOutput.sh
+[4/669] Generating timeit
+[5/669] Generating timeit-target
+[6/669] Generating modules/__init__.py
+[7/669] Generating modules/codesize.py
+[8/669] Generating modules/hash.py
+[9/669] Generating modules/compiletime.py
+[10/669] Generating modules/hpmcount.py
+[11/669] Generating modules/microbenchmark.py
+[12/669] Generating modules/perf.py
+[13/669] Generating modules/run.py
+[14/669] Generating modules/remote.py
+[15/669] Generating modules/profilegen.py
+[16/669] Generating modules/run_under.py
+[17/669] Generating modules/timeit.py
+[18/669] Generating shellcommand.py
+[19/669] Generating modules/stats.py
+[20/669] Generating test.py
+[21/669] Generating testfile.py
+[22/669] Generating testplan.py
+[23/669] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[24/669] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/669] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+[26/669] Generating sqlite test inputs
+
+
+STDERR:
