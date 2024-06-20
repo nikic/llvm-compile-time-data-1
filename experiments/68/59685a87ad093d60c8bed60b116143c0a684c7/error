@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/FormatVariadicDetails.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/BinaryFormat/Dwarf.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:437:1: note: candidate: ‘template<class OStream, class T> std::enable_if_t<((! is_reference_v<OStream>) && is_base_of_v<llvm::raw_ostream, OStream>), OStream&&> llvm::operator<<(OStream&&, const T&)’
+  437 | operator<<(OStream &&OS, const T &Value) {
+      | ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:437:1: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/bits/move.h:57,
+                 from /usr/include/c++/11/bits/stl_pair.h:59,
+                 from /usr/include/c++/11/utility:70,
+                 from /usr/include/c++/11/tuple:38,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMapInfo.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCContext.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:9:
+/usr/include/c++/11/type_traits: In substitution of ‘template<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = llvm::StringRef&&]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:437:1:   required by substitution of ‘template<class OStream, class T> std::enable_if_t<((! is_reference_v<OStream>) && is_base_of_v<llvm::raw_ostream, OStream>), OStream&&> llvm::operator<<(OStream&&, const T&) [with OStream = llvm::StringRef; T = llvm::Twine]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:328:64:   required from here
+/usr/include/c++/11/type_traits:2579:11: error: no type named ‘type’ in ‘struct std::enable_if<false, llvm::StringRef&&>’
+ 2579 |     using enable_if_t = typename enable_if<_Cond, _Tp>::type;
+      |           ^~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/FormatVariadicDetails.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/BinaryFormat/Dwarf.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:787:14: note: candidate: ‘template<class T, class> llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const std::optional<_Tp>&)’
+  787 | raw_ostream &operator<<(raw_ostream &OS, const std::optional<T> &O) {
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:787:14: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:328:64: note:   ‘const llvm::Twine’ is not derived from ‘const std::optional<_Tp>’
+  328 |   return createRenamableSymbol(MAI->getPrivateLabelPrefix() << Name,
+      |                                                                ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCContext.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Twine.h:572:23: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::Twine&)’
+  572 |   inline raw_ostream &operator<<(raw_ostream &OS, const Twine &RHS) {
+      |                       ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Twine.h:572:47: note:   no known conversion for argument 1 from ‘llvm::StringRef’ to ‘llvm::raw_ostream&’
+  572 |   inline raw_ostream &operator<<(raw_ostream &OS, const Twine &RHS) {
+      |                                  ~~~~~~~~~~~~~^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/FormatVariadicDetails.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/BinaryFormat/Dwarf.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:783:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, std::nullopt_t)’
+  783 | raw_ostream &operator<<(raw_ostream &OS, std::nullopt_t);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:783:38: note:   no known conversion for argument 1 from ‘llvm::StringRef’ to ‘llvm::raw_ostream&’
+  783 | raw_ostream &operator<<(raw_ostream &OS, std::nullopt_t);
+      |                         ~~~~~~~~~~~~~^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TargetParser/Triple.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/BinaryFormat/Dwarf.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/VersionTuple.h:191:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::VersionTuple&)’
+  191 | raw_ostream &operator<<(raw_ostream &Out, const VersionTuple &V);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/VersionTuple.h:191:38: note:   no known conversion for argument 1 from ‘llvm::StringRef’ to ‘llvm::raw_ostream&’
+  191 | raw_ostream &operator<<(raw_ostream &Out, const VersionTuple &V);
+      |                         ~~~~~~~~~~~~~^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCAsmMacro.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCContext.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:2128:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::APInt&)’
+ 2128 | inline raw_ostream &operator<<(raw_ostream &OS, const APInt &I) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:2128:45: note:   no known conversion for argument 1 from ‘llvm::StringRef’ to ‘llvm::raw_ostream&’
+ 2128 | inline raw_ostream &operator<<(raw_ostream &OS, const APInt &I) {
+      |                                ~~~~~~~~~~~~~^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSection.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCContext.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCInst.h:241:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::MCOperand&)’
+  241 | inline raw_ostream& operator<<(raw_ostream &OS, const MCOperand &MO) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCInst.h:241:45: note:   no known conversion for argument 1 from ‘llvm::StringRef’ to ‘llvm::raw_ostream&’
+  241 | inline raw_ostream& operator<<(raw_ostream &OS, const MCOperand &MO) {
+      |                                ~~~~~~~~~~~~~^~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCInst.h:246:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::MCInst&)’
+  246 | inline raw_ostream& operator<<(raw_ostream &OS, const MCInst &MI) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCInst.h:246:45: note:   no known conversion for argument 1 from ‘llvm::StringRef’ to ‘llvm::raw_ostream&’
+  246 | inline raw_ostream& operator<<(raw_ostream &OS, const MCInst &MI) {
+      |                                ~~~~~~~~~~~~~^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:22:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCExpr.h:138:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::MCExpr&)’
+  138 | inline raw_ostream &operator<<(raw_ostream &OS, const MCExpr &E) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCExpr.h:138:45: note:   no known conversion for argument 1 from ‘llvm::StringRef’ to ‘llvm::raw_ostream&’
+  138 | inline raw_ostream &operator<<(raw_ostream &OS, const MCExpr &E) {
+      |                                ~~~~~~~~~~~~~^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:25:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCLabel.h:49:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::MCLabel&)’
+   49 | inline raw_ostream &operator<<(raw_ostream &OS, const MCLabel &Label) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCLabel.h:49:45: note:   no known conversion for argument 1 from ‘llvm::StringRef’ to ‘llvm::raw_ostream&’
+   49 | inline raw_ostream &operator<<(raw_ostream &OS, const MCLabel &Label) {
+      |                                ~~~~~~~~~~~~~^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbolELF.h:11,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSectionELF.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCContext.cpp:28:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbol.h:437:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::MCSymbol&)’
+  437 | inline raw_ostream &operator<<(raw_ostream &OS, const MCSymbol &Sym) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbol.h:437:45: note:   no known conversion for argument 1 from ‘llvm::StringRef’ to ‘llvm::raw_ostream&’
+  437 | inline raw_ostream &operator<<(raw_ostream &OS, const MCSymbol &Sym) {
+      |                                ~~~~~~~~~~~~~^~
+[1683/2742] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCCodeView.cpp.o
+[1684/2742] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmStreamer.cpp.o
+[1685/2742] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCELFStreamer.cpp.o
+[1686/2742] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCFragment.cpp.o
+[1687/2742] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/IRTranslator.cpp.o
+[1688/2742] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/LegalizerHelper.cpp.o
+[1689/2742] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCExpr.cpp.o
+[1690/2742] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCGOFFStreamer.cpp.o
+[1691/2742] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/CombinerHelper.cpp.o
+[1692/2742] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCDwarf.cpp.o
+[1693/2742] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOModule.cpp.o
+[1694/2742] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCMachOStreamer.cpp.o
+[1695/2742] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOCodeGenerator.cpp.o
+[1696/2742] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOBackend.cpp.o
+[1697/2742] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ValueTracking.cpp.o
+[1698/2742] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTO.cpp.o
+[1699/2742] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/ThinLTOCodeGenerator.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+1122.50user 60.09system 1:16.28elapsed 1550%CPU (0avgtext+0avgdata 1010576maxresident)k
+48inputs+3368088outputs (9101major+34315233minor)pagefaults 0swaps
