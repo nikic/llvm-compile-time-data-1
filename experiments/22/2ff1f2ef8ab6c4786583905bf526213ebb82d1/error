@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[837/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PatchableFunction.cpp.o
+[838/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MBFIWrapper.cpp.o
+[839/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRPrintingPass.cpp.o
+[840/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/NonRelocatableStringpool.cpp.o
+[841/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ModuloSchedule.cpp.o
+[842/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRPrinter.cpp.o
+[843/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MacroFusion.cpp.o
+[844/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/OptimizePHIs.cpp.o
+[845/2746] Building X86GenRegisterInfo.inc...
+[846/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PostRAHazardRecognizer.cpp.o
+[847/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PeepholeOptimizer.cpp.o
+[848/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PHIElimination.cpp.o
+[849/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PHIEliminationUtils.cpp.o
+[850/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PostRASchedulerList.cpp.o
+[851/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PreISelIntrinsicLowering.cpp.o
+[852/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ProcessImplicitDefs.cpp.o
+[853/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PseudoProbeInserter.cpp.o
+[854/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RDFGraph.cpp.o
+[855/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RDFLiveness.cpp.o
+[856/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PrologEpilogInserter.cpp.o
+[857/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PseudoSourceValue.cpp.o
+[858/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RDFRegisters.cpp.o
+[859/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ReachingDefAnalysis.cpp.o
+[860/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocBase.cpp.o
+[861/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocBasic.cpp.o
+[862/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocEvictionAdvisor.cpp.o
+[863/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocFast.cpp.o
+[864/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocGreedy.cpp.o
+[865/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocPBQP.cpp.o
+[866/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocPriorityAdvisor.cpp.o
+[867/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocScore.cpp.o
+[868/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterClassInfo.cpp.o
+[869/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterPressure.cpp.o
+[870/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterCoalescer.cpp.o
+[871/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterScavenging.cpp.o
+[872/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCEmptyBasicBlocks.cpp.o
+[873/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RemoveRedundantDebugValues.cpp.o
+[874/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RenameIndependentSubregs.cpp.o
+[875/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineStableHash.cpp.o
+[876/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRVRegNamerUtils.cpp.o
+[877/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRNamerPass.cpp.o
+[878/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRCanonicalizerPass.cpp.o
+[879/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterUsageInfo.cpp.o
+[880/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegUsageInfoCollector.cpp.o
+[881/2746] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VectorCombine.cpp.o
+[882/2746] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o
+[883/2746] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/Vectorize.cpp.o
+[884/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterBank.cpp.o
+[885/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterBankInfo.cpp.o
+[886/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SafeStackLayout.cpp.o
+[887/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SafeStack.cpp.o
+[888/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScheduleDAGInstrs.cpp.o
+[889/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScheduleDAGPrinter.cpp.o
+[890/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ResetMachineFunctionPass.cpp.o
+[891/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScheduleDAG.cpp.o
+[892/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScoreboardHazardRecognizer.cpp.o
+[893/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SelectOptimize.cpp.o
+[894/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ShadowStackGCLowering.cpp.o
+[895/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SlotIndexes.cpp.o
+[896/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SjLjEHPrepare.cpp.o
+[897/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackColoring.cpp.o
+[898/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ShrinkWrap.cpp.o
+[899/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackFrameLayoutAnalysisPass.cpp.o
+[900/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SplitKit.cpp.o
+[901/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackMaps.cpp.o
+[902/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SanitizerBinaryMetadata.cpp.o
+[903/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SpillPlacement.cpp.o
+[904/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackMapLivenessAnalysis.cpp.o
+[905/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackProtector.cpp.o
+[906/2746] Building X86GenFoldTables.inc...
+[907/2746] Building X86GenFastISel.inc...
+[908/2746] Building X86GenDAGISel.inc...
+[909/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetOptionsImpl.cpp.o
+[910/2746] Building X86GenGlobalISel.inc...
+[911/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetFrameLoweringImpl.cpp.o
+[912/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetSubtargetInfo.cpp.o
+[913/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TailDuplication.cpp.o
+[914/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackSlotColoring.cpp.o
+[915/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SwitchLoweringUtils.cpp.o
+[916/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetSchedule.cpp.o
+[917/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TailDuplicator.cpp.o
+[918/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetPassConfig.cpp.o
+[919/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SwiftErrorValueTracking.cpp.o
+[920/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ValueTypes.cpp.o
+[921/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetRegisterInfo.cpp.o
+[922/2746] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h: In constructor ‘llvm::VPScalarIVStepsRecipe::VPScalarIVStepsRecipe(llvm::VPValue*, llvm::VPValue*, llvm::Instruction::BinaryOps, llvm::FastMathFlags)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:2811:9: error: class ‘llvm::VPScalarIVStepsRecipe’ does not have any field named ‘InductionOpcode’
+ 2811 |         InductionOpcode(Opcode) {}
+      |         ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h: In member function ‘virtual llvm::VPScalarIVStepsRecipe* llvm::VPScalarIVStepsRecipe::clone()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:2825:39: error: ‘InductionOpcode’ was not declared in this scope
+ 2825 |         getOperand(0), getOperand(1), InductionOpcode,
+      |                                       ^~~~~~~~~~~~~~~
+[923/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetInstrInfo.cpp.o
+[924/2746] Building X86GenInstrInfo.inc...
+[925/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/UnreachableBlockElim.cpp.o
+[926/2746] Building X86GenSubtargetInfo.inc...
+[927/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetLoweringBase.cpp.o
+[928/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetLoweringObjectFileImpl.cpp.o
+[929/2746] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:57:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h: In constructor ‘llvm::VPScalarIVStepsRecipe::VPScalarIVStepsRecipe(llvm::VPValue*, llvm::VPValue*, llvm::Instruction::BinaryOps, llvm::FastMathFlags)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:2811:9: error: class ‘llvm::VPScalarIVStepsRecipe’ does not have any field named ‘InductionOpcode’
+ 2811 |         InductionOpcode(Opcode) {}
+      |         ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h: In member function ‘virtual llvm::VPScalarIVStepsRecipe* llvm::VPScalarIVStepsRecipe::clone()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:2825:39: error: ‘InductionOpcode’ was not declared in this scope
+ 2825 |         getOperand(0), getOperand(1), InductionOpcode,
+      |                                       ^~~~~~~~~~~~~~~
+[930/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugValues/LiveDebugValues.cpp.o
+[931/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/WasmEHPrepare.cpp.o
+[932/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/VirtRegMap.cpp.o
+[933/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/XRayInstrumentation.cpp.o
+[934/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TypePromotion.cpp.o
+[935/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TwoAddressInstructionPass.cpp.o
+[936/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/VLIWMachineScheduler.cpp.o
+[937/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/WinEHPrepare.cpp.o
+[938/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/WindowScheduler.cpp.o
+[939/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugValues/VarLocBasedImpl.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+161.48user 12.22system 0:13.94elapsed 1245%CPU (0avgtext+0avgdata 835068maxresident)k
+0inputs+667304outputs (4155major+7122587minor)pagefaults 0swaps
