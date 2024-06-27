@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[918/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandLargeFpConvert.cpp.o
+[919/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandMemCmp.cpp.o
+[920/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandPostRAPseudos.cpp.o
+[921/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandVectorPredication.cpp.o
+[922/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FaultMaps.cpp.o
+[923/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FEntryInserter.cpp.o
+[924/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FinalizeISel.cpp.o
+[925/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FixupStatepointCallerSaved.cpp.o
+[926/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FuncletLayout.cpp.o
+[927/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCMetadataPrinter.cpp.o
+[928/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandReductions.cpp.o
+[929/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionAnalysis.cpp.o
+[930/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCMetadata.cpp.o
+[931/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCRootLowering.cpp.o
+[932/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GlobalMerge.cpp.o
+[933/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/HardwareLoops.cpp.o
+[934/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ImplicitNullChecks.cpp.o
+[935/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/IndirectBrExpandPass.cpp.o
+[936/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/IfConversion.cpp.o
+[937/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/InitUndef.cpp.o
+[938/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/InlineSpiller.cpp.o
+[939/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/InterferenceCache.cpp.o
+[940/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/JMCInstrumenter.cpp.o
+[941/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/InterleavedLoadCombinePass.cpp.o
+[942/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/IntrinsicLowering.cpp.o
+[943/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/KCFI.cpp.o
+[944/2746] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/DiagnosticIDs.cpp.o
+[945/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/InterleavedAccessPass.cpp.o
+[946/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LatencyPriorityQueue.cpp.o
+[947/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LazyMachineBlockFrequencyInfo.cpp.o
+[948/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugVariables.cpp.o
+[949/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LexicalScopes.cpp.o
+[950/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveIntervals.cpp.o
+[951/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveInterval.cpp.o
+[952/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveIntervalUnion.cpp.o
+[953/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LivePhysRegs.cpp.o
+[954/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveIntervalCalc.cpp.o
+[955/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRangeEdit.cpp.o
+[956/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRangeCalc.cpp.o
+[957/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRangeShrink.cpp.o
+[958/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRegMatrix.cpp.o
+[959/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRegUnits.cpp.o
+[960/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LLVMTargetMachine.cpp.o
+[961/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LowLevelTypeUtils.cpp.o
+[962/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveStacks.cpp.o
+[963/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveVariables.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LiveVariables.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LiveVariables.cpp:28:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::LiveVariables::recomputeForSingleDefVirtReg(llvm::Register)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::LiveVariables::addNewBlock(llvm::MachineBasicBlock*, llvm::MachineBasicBlock*, llvm::MachineBasicBlock*, std::vector<llvm::SparseBitVector<> >&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+[964/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LocalStackSlotAllocation.cpp.o
+[965/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LoopTraversal.cpp.o
+[966/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LowerEmuTLS.cpp.o
+[967/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockFrequencyInfo.cpp.o
+[968/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBranchProbabilityInfo.cpp.o
+[969/2746] Building X86GenDisassemblerTables.inc...
+[970/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBasicBlock.cpp.o
+[971/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCFGPrinter.cpp.o
+[972/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCombiner.cpp.o
+[973/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineConvergenceVerifier.cpp.o
+[974/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCSE.cpp.o
+[975/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCopyPropagation.cpp.o
+[976/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCheckDebugify.cpp.o
+[977/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDominanceFrontier.cpp.o
+[978/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDominators.cpp.o
+[979/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFrameInfo.cpp.o
+[980/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCycleAnalysis.cpp.o
+[981/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDebugify.cpp.o
+[982/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunction.cpp.o
+[983/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPass.cpp.o
+[984/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPrinterPass.cpp.o
+[985/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineModuleInfoImpls.cpp.o
+[986/2746] Building X86GenAsmMatcher.inc...
+[987/2746] Building X86GenFastISel.inc...
+[988/2746] Building X86GenGlobalISel.inc...
+[989/2746] Building X86GenDAGISel.inc...
+[990/2746] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/HIPUtility.cpp.o
+[991/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDomTreeUpdater.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDomTreeUpdater.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDomTreeUpdater.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDomTreeUpdater.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDomTreeUpdater.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineDomTreeUpdater.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineDomTreeUpdater.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineDomTreeUpdater.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePostDominators.h:53:3: error: ‘llvm::MachinePostDominatorTree::MachinePostDominatorTree(llvm::MachineFunction&)’ cannot be overloaded with ‘llvm::MachinePostDominatorTree::MachinePostDominatorTree(llvm::MachineFunction&)’
+   53 |   MachinePostDominatorTree(MachineFunction &MF) { recalculate(MF); }
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePostDominators.h:51:12: note: previous declaration ‘llvm::MachinePostDominatorTree::MachinePostDominatorTree(llvm::MachineFunction&)’
+   51 |   explicit MachinePostDominatorTree(MachineFunction &MF) { recalculate(MF); }
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~
+[992/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLoopUtils.cpp.o
+[993/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstrBundle.cpp.o
+[994/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineModuleSlotTracker.cpp.o
+[995/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineOptimizationRemarkEmitter.cpp.o
+[996/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLateInstrsCleanup.cpp.o
+[997/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineModuleInfo.cpp.o
+[998/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineOperand.cpp.o
+[999/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionSplitter.cpp.o
+[1000/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockPlacement.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockPlacement.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockPlacement.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockPlacement.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockPlacement.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineBlockPlacement.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineBlockPlacement.cpp:44:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePostDominators.h:53:3: error: ‘llvm::MachinePostDominatorTree::MachinePostDominatorTree(llvm::MachineFunction&)’ cannot be overloaded with ‘llvm::MachinePostDominatorTree::MachinePostDominatorTree(llvm::MachineFunction&)’
+   53 |   MachinePostDominatorTree(MachineFunction &MF) { recalculate(MF); }
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePostDominators.h:51:12: note: previous declaration ‘llvm::MachinePostDominatorTree::MachinePostDominatorTree(llvm::MachineFunction&)’
+   51 |   explicit MachinePostDominatorTree(MachineFunction &MF) { recalculate(MF); }
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~
+[1001/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLoopInfo.cpp.o
+[1002/2746] Building X86GenInstrInfo.inc...
+[1003/2746] Building X86GenSubtargetInfo.inc...
+[1004/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLICM.cpp.o
+[1005/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o
+[1006/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachinePassManager.cpp.o
+[1007/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineOutliner.cpp.o
+[1008/2746] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachinePipeliner.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+107.70user 9.56system 0:12.11elapsed 968%CPU (0avgtext+0avgdata 835468maxresident)k
+0inputs+747760outputs (8515major+5718419minor)pagefaults 0swaps
