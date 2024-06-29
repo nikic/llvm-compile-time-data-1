@@ -1,0 +1,133 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+[144/2603] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/raw_socket_stream.cpp.o
+[145/2603] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RWMutex.cpp.o
+[146/2603] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/raw_ostream.cpp.o
+[147/2603] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Memory.cpp.o
+[148/2603] Building ASM object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_sse2_x86-64_unix.S.o
+[149/2603] Building ASM object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_sse41_x86-64_unix.S.o
+[150/2603] Building ASM object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_avx2_x86-64_unix.S.o
+[151/2603] Building ASM object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_avx512_x86-64_unix.S.o
+[152/2603] Building C object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3.c.o
+[153/2603] Building C object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_dispatch.c.o
+[154/2603] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/YAMLTraits.cpp.o
+[155/2603] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/YAMLParser.cpp.o
+[156/2603] Building C object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_neon.c.o
+[157/2603] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Process.cpp.o
+[158/2603] Building C object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_portable.c.o
+[159/2603] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Program.cpp.o
+[160/2603] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Threading.cpp.o
+[161/2603] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Path.cpp.o
+[162/2603] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/Error.cpp.o
+[163/2603] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/StringMatcher.cpp.o
+[164/2603] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/DetailedRecordsBackend.cpp.o
+[165/2603] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Signals.cpp.o
+[166/2603] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/TableGenBackendSkeleton.cpp.o
+[167/2603] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/TableGenBackend.cpp.o
+[168/2603] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/Parser.cpp.o
+[169/2603] Generating VCSRevision.h
+[170/2603] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/TableGen.cpp.o
+[171/2603] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/Main.cpp.o
+[172/2603] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/TGLexer.cpp.o
+[173/2603] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/Attributes.cpp.o
+[174/2603] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/VirtualFileSystem.cpp.o
+[175/2603] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/SetTheory.cpp.o
+[176/2603] Linking CXX static library lib/libLLVMSupport.a
+[177/2603] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/ARMTargetDefEmitter.cpp.o
+[178/2603] Building CXX object lib/Extensions/CMakeFiles/LLVMExtensions.dir/Extensions.cpp.o
+[179/2603] Linking CXX static library lib/libLLVMExtensions.a
+[180/2603] Building CXX object lib/Option/CMakeFiles/LLVMOption.dir/Arg.cpp.o
+[181/2603] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/VTEmitter.cpp.o
+[182/2603] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/RISCVTargetDefEmitter.cpp.o
+[183/2603] Building CXX object utils/TableGen/Basic/CMakeFiles/obj.LLVMTableGenBasic.dir/SDNodeProperties.cpp.o
+[184/2603] Building CXX object lib/Option/CMakeFiles/LLVMOption.dir/Option.cpp.o
+[185/2603] Building CXX object lib/Option/CMakeFiles/LLVMOption.dir/ArgList.cpp.o
+[186/2603] Building CXX object lib/Bitstream/Reader/CMakeFiles/LLVMBitstreamReader.dir/BitstreamReader.cpp.o
+[187/2603] Linking CXX static library lib/libLLVMBitstreamReader.a
+[188/2603] Building CXX object utils/TableGen/Basic/CMakeFiles/obj.LLVMTableGenBasic.dir/CodeGenIntrinsics.cpp.o
+[189/2603] Building CXX object lib/DebugInfo/MSF/CMakeFiles/LLVMDebugInfoMSF.dir/MSFError.cpp.o
+[190/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/CodeViewError.cpp.o
+[191/2603] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/TGParser.cpp.o
+[192/2603] Building CXX object lib/DebugInfo/MSF/CMakeFiles/LLVMDebugInfoMSF.dir/MSFCommon.cpp.o
+[193/2603] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/DirectiveEmitter.cpp.o
+[194/2603] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/IntrinsicEmitter.cpp.o
+[195/2603] Building CXX object lib/DebugInfo/MSF/CMakeFiles/LLVMDebugInfoMSF.dir/MappedBlockStream.cpp.o
+[196/2603] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/Record.cpp.o
+[197/2603] Linking CXX static library lib/libLLVMTableGen.a
+[198/2603] Building CXX object lib/Option/CMakeFiles/LLVMOption.dir/OptTable.cpp.o
+[199/2603] Linking CXX static library lib/libLLVMOption.a
+[200/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/AppendingTypeTableBuilder.cpp.o
+[201/2603] Building CXX object lib/DebugInfo/MSF/CMakeFiles/LLVMDebugInfoMSF.dir/MSFBuilder.cpp.o
+[202/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/CodeViewRecordIO.cpp.o
+[203/2603] Linking CXX static library lib/libLLVMDebugInfoMSF.a
+[204/2603] Linking CXX executable bin/llvm-min-tblgen
+FAILED: bin/llvm-min-tblgen 
+: && /var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -fuse-ld=lld -Wl,--color-diagnostics -flto=thin -Wl,--thinlto-cache-dir=/tmp/llvm-project-build-stage2/lto.cache    -Wl,--gc-sections utils/TableGen/Basic/CMakeFiles/obj.LLVMTableGenBasic.dir/CodeGenIntrinsics.cpp.o utils/TableGen/Basic/CMakeFiles/obj.LLVMTableGenBasic.dir/SDNodeProperties.cpp.o utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/TableGen.cpp.o utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/ARMTargetDefEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/Attributes.cpp.o utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/DirectiveEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/IntrinsicEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/RISCVTargetDefEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/VTEmitter.cpp.o -o bin/llvm-min-tblgen  -Wl,-rpath,"\$ORIGIN/../lib"  lib/libLLVMSupport.a  lib/libLLVMTableGen.a  lib/libLLVMSupport.a  -lrt  -ldl  -lm  lib/libLLVMDemangle.a && :
+munmap_chunk(): invalid pointer
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace.
+Stack dump:
+0.	Running pass "function<eager-inv>(float2int,lower-constant-intrinsics,chr,loop(loop-rotate<header-duplication;no-prepare-for-lto>,loop-deletion),loop-distribute,inject-tli-mappings,loop-vectorize<no-interleave-forced-only;no-vectorize-forced-only;>,infer-alignment,loop-load-elim,instcombine<max-iterations=1;no-use-loop-info;no-verify-fixpoint>,simplifycfg<bonus-inst-threshold=1;forward-switch-cond;switch-range-to-icmp;switch-to-lookup;no-keep-loops;hoist-common-insts;sink-common-insts;speculate-blocks;simplify-cond-branch>,slp-vectorizer,vector-combine,instcombine<max-iterations=1;no-use-loop-info;no-verify-fixpoint>,loop-unroll<O3>,transform-warning,sroa<preserve-cfg>,infer-alignment,instcombine<max-iterations=1;no-use-loop-info;no-verify-fixpoint>,loop-mssa(licm<allowspeculation>),alignment-from-assumptions,loop-sink,instsimplify,div-rem-pairs,tailcallelim,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-sink-common-insts;speculate-blocks;simplify-cond-branch>)" on module "lib/libLLVMSupport.a(APInt.cpp.o at 700008)"
+1.	Running pass "loop-vectorize<no-interleave-forced-only;no-vectorize-forced-only;>" on function "_ZNSt3_V28__rotateIPcEET_S2_S2_S2_St26random_access_iterator_tag"
+ #0 0x0000558c30001fc0 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x60efc0)
+ #1 0x0000558c2ffff57e SignalHandler(int) Signals.cpp:0:0
+ #2 0x00007ff299d66520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+ #3 0x00007ff299dba9fc __pthread_kill_implementation ./nptl/./nptl/pthread_kill.c:44:76
+ #4 0x00007ff299dba9fc __pthread_kill_internal ./nptl/./nptl/pthread_kill.c:78:10
+ #5 0x00007ff299dba9fc pthread_kill ./nptl/./nptl/pthread_kill.c:89:10
+ #6 0x00007ff299d66476 gsignal ./signal/../sysdeps/posix/raise.c:27:6
+ #7 0x00007ff299d4c7f3 abort ./stdlib/./stdlib/abort.c:81:7
+ #8 0x00007ff299dad676 __libc_message ./libio/../sysdeps/posix/libc_fatal.c:155:5
+ #9 0x00007ff299dc4cfc ./malloc/./malloc/malloc.c:5668:3
+#10 0x00007ff299dc4fdc munmap_chunk ./malloc/./malloc/malloc.c:3048:3
+#11 0x00007ff299dc949a __libc_free ./malloc/./malloc/malloc.c:3394:3
+#12 0x0000558c322ba065 llvm::MemoryDepChecker::isDependent(llvm::PointerIntPair<llvm::Value*, 1u, bool, llvm::PointerLikeTypeTraits<llvm::Value*>, llvm::PointerIntPairInfo<llvm::Value*, 1u, llvm::PointerLikeTypeTraits<llvm::Value*> > > const&, unsigned int, llvm::PointerIntPair<llvm::Value*, 1u, bool, llvm::PointerLikeTypeTraits<llvm::Value*>, llvm::PointerIntPairInfo<llvm::Value*, 1u, llvm::PointerLikeTypeTraits<llvm::Value*> > > const&, unsigned int, llvm::DenseMap<llvm::Value*, llvm::SmallVector<llvm::Value const*, 16u>, llvm::DenseMapInfo<llvm::Value*, void>, llvm::detail::DenseMapPair<llvm::Value*, llvm::SmallVector<llvm::Value const*, 16u> > > const&) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x28c7065)
+#13 0x0000558c322c27b6 llvm::MemoryDepChecker::areDepsSafe(llvm::EquivalenceClasses<llvm::PointerIntPair<llvm::Value*, 1u, bool, llvm::PointerLikeTypeTraits<llvm::Value*>, llvm::PointerIntPairInfo<llvm::Value*, 1u, llvm::PointerLikeTypeTraits<llvm::Value*> > >, std::less<llvm::PointerIntPair<llvm::Value*, 1u, bool, llvm::PointerLikeTypeTraits<llvm::Value*>, llvm::PointerIntPairInfo<llvm::Value*, 1u, llvm::PointerLikeTypeTraits<llvm::Value*> > > > >&, llvm::SmallVector<llvm::PointerIntPair<llvm::Value*, 1u, bool, llvm::PointerLikeTypeTraits<llvm::Value*>, llvm::PointerIntPairInfo<llvm::Value*, 1u, llvm::PointerLikeTypeTraits<llvm::Value*> > >, 8u>&, llvm::DenseMap<llvm::Value*, llvm::SmallVector<llvm::Value const*, 16u>, llvm::DenseMapInfo<llvm::Value*, void>, llvm::detail::DenseMapPair<llvm::Value*, llvm::SmallVector<llvm::Value const*, 16u> > > const&) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x28cf7b6)
+#14 0x0000558c322c78b1 llvm::LoopAccessInfo::analyzeLoop(llvm::AAResults*, llvm::LoopInfo*, llvm::TargetLibraryInfo const*, llvm::DominatorTree*) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x28d48b1)
+#15 0x0000558c322c7e62 llvm::LoopAccessInfo::LoopAccessInfo(llvm::Loop*, llvm::ScalarEvolution*, llvm::TargetTransformInfo const*, llvm::TargetLibraryInfo const*, llvm::AAResults*, llvm::DominatorTree*, llvm::LoopInfo*) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x28d4e62)
+#16 0x0000558c322c8004 llvm::LoopAccessInfoManager::getInfo(llvm::Loop&) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x28d5004)
+#17 0x0000558c31ed57d7 llvm::LoopVectorizationLegality::canVectorizeMemory() (/tmp/llvm-project-build-stage1/bin/ld.lld+0x24e27d7)
+#18 0x0000558c31edc188 llvm::LoopVectorizationLegality::canVectorize(bool) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x24e9188)
+#19 0x0000558c31dba755 llvm::LoopVectorizePass::processLoop(llvm::Loop*) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x23c7755)
+#20 0x0000558c31dbe762 llvm::LoopVectorizePass::runImpl(llvm::Function&, llvm::ScalarEvolution&, llvm::LoopInfo&, llvm::TargetTransformInfo&, llvm::DominatorTree&, llvm::BlockFrequencyInfo*, llvm::TargetLibraryInfo*, llvm::DemandedBits&, llvm::AssumptionCache&, llvm::LoopAccessInfoManager&, llvm::OptimizationRemarkEmitter&, llvm::ProfileSummaryInfo*) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x23cb762)
+#21 0x0000558c31dbf515 llvm::LoopVectorizePass::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x23cc515)
+#22 0x0000558c30dfaa96 llvm::detail::PassModel<llvm::Function, llvm::LoopVectorizePass, llvm::AnalysisManager<llvm::Function> >::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) crtstuff.c:0:0
+#23 0x0000558c32b12c25 llvm::PassManager<llvm::Function, llvm::AnalysisManager<llvm::Function> >::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x311fc25)
+#24 0x0000558c30510376 llvm::detail::PassModel<llvm::Function, llvm::PassManager<llvm::Function, llvm::AnalysisManager<llvm::Function> >, llvm::AnalysisManager<llvm::Function> >::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) crtstuff.c:0:0
+#25 0x0000558c32b10fda llvm::ModuleToFunctionPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x311dfda)
+#26 0x0000558c30510c96 llvm::detail::PassModel<llvm::Module, llvm::ModuleToFunctionPassAdaptor, llvm::AnalysisManager<llvm::Module> >::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) crtstuff.c:0:0
+#27 0x0000558c32b0de35 llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module> >::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x311ae35)
+#28 0x0000558c30de570e runNewPMPasses(llvm::lto::Config const&, llvm::Module&, llvm::TargetMachine*, unsigned int, bool, llvm::ModuleSummaryIndex*, llvm::ModuleSummaryIndex const*) LTOBackend.cpp:0:0
+#29 0x0000558c30de99b9 llvm::lto::thinBackend(llvm::lto::Config const&, unsigned int, std::function<llvm::Expected<std::unique_ptr<llvm::CachedFileStream, std::default_delete<llvm::CachedFileStream> > > (unsigned int, llvm::Twine const&)>, llvm::Module&, llvm::ModuleSummaryIndex const&, llvm::DenseMap<llvm::StringRef, std::unordered_map<unsigned long, llvm::GlobalValueSummary::ImportKind, std::hash<unsigned long>, std::equal_to<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValueSummary::ImportKind> > >, llvm::DenseMapInfo<llvm::StringRef, void>, llvm::detail::DenseMapPair<llvm::StringRef, std::unordered_map<unsigned long, llvm::GlobalValueSummary::ImportKind, std::hash<unsigned long>, std::equal_to<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValueSummary::ImportKind> > > > > const&, llvm::DenseMap<unsigned long, llvm::GlobalValueSummary*, llvm::DenseMapInfo<unsigned long, void>, llvm::detail::DenseMapPair<unsigned long, llvm::GlobalValueSummary*> > const&, llvm::MapVector<llvm::StringRef, llvm::BitcodeModule, llvm::DenseMap<llvm::StringRef, unsigned int, llvm::DenseMapInfo<llvm::StringRef, void>, llvm::detail::DenseMapPair<llvm::StringRef, unsigned int> >, llvm::SmallVector<std::pair<llvm::StringRef, llvm::BitcodeModule>, 0u> >*, std::vector<unsigned char, std::allocator<unsigned char> > const&) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x13f69b9)
+#30 0x0000558c30dc2b0b (anonymous namespace)::InProcessThinBackend::runThinLTOBackendThread(std::function<llvm::Expected<std::unique_ptr<llvm::CachedFileStream, std::default_delete<llvm::CachedFileStream> > > (unsigned int, llvm::Twine const&)>, std::function<llvm::Expected<std::function<llvm::Expected<std::unique_ptr<llvm::CachedFileStream, std::default_delete<llvm::CachedFileStream> > > (unsigned int, llvm::Twine const&)> > (unsigned int, llvm::StringRef, llvm::Twine const&)>, unsigned int, llvm::BitcodeModule, llvm::ModuleSummaryIndex&, llvm::DenseMap<llvm::StringRef, std::unordered_map<unsigned long, llvm::GlobalValueSummary::ImportKind, std::hash<unsigned long>, std::equal_to<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValueSummary::ImportKind> > >, llvm::DenseMapInfo<llvm::StringRef, void>, llvm::detail::DenseMapPair<llvm::StringRef, std::unordered_map<unsigned long, llvm::GlobalValueSummary::ImportKind, std::hash<unsigned long>, std::equal_to<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValueSummary::ImportKind> > > > > const&, llvm::DenseMap<llvm::ValueInfo, llvm::GlobalValueSummary::ImportKind, llvm::DenseMapInfo<llvm::ValueInfo, void>, llvm::detail::DenseMapPair<llvm::ValueInfo, llvm::GlobalValueSummary::ImportKind> > const&, std::map<unsigned long, llvm::GlobalValue::LinkageTypes, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValue::LinkageTypes> > > const&, llvm::DenseMap<unsigned long, llvm::GlobalValueSummary*, llvm::DenseMapInfo<unsigned long, void>, llvm::detail::DenseMapPair<unsigned long, llvm::GlobalValueSummary*> > const&, llvm::MapVector<llvm::StringRef, llvm::BitcodeModule, llvm::DenseMap<llvm::StringRef, unsigned int, llvm::DenseMapInfo<llvm::StringRef, void>, llvm::detail::DenseMapPair<llvm::StringRef, unsigned int> >, llvm::SmallVector<std::pair<llvm::StringRef, llvm::BitcodeModule>, 0u> >&)::'lambda'(std::function<llvm::Expected<std::unique_ptr<llvm::CachedFileStream, std::default_delete<llvm::CachedFileStream> > > (unsigned int, llvm::Twine const&)>)::operator()(std::function<llvm::Expected<std::unique_ptr<llvm::CachedFileStream, std::default_delete<llvm::CachedFileStream> > > (unsigned int, llvm::Twine const&)>) const LTO.cpp:0:0
+#31 0x0000558c30dd908e std::_Function_handler<void (), std::_Bind<(anonymous namespace)::InProcessThinBackend::start(unsigned int, llvm::BitcodeModule, llvm::DenseMap<llvm::StringRef, std::unordered_map<unsigned long, llvm::GlobalValueSummary::ImportKind, std::hash<unsigned long>, std::equal_to<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValueSummary::ImportKind> > >, llvm::DenseMapInfo<llvm::StringRef, void>, llvm::detail::DenseMapPair<llvm::StringRef, std::unordered_map<unsigned long, llvm::GlobalValueSummary::ImportKind, std::hash<unsigned long>, std::equal_to<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValueSummary::ImportKind> > > > > const&, llvm::DenseMap<llvm::ValueInfo, llvm::GlobalValueSummary::ImportKind, llvm::DenseMapInfo<llvm::ValueInfo, void>, llvm::detail::DenseMapPair<llvm::ValueInfo, llvm::GlobalValueSummary::ImportKind> > const&, std::map<unsigned long, llvm::GlobalValue::LinkageTypes, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValue::LinkageTypes> > > const&, llvm::MapVector<llvm::StringRef, llvm::BitcodeModule, llvm::DenseMap<llvm::StringRef, unsigned int, llvm::DenseMapInfo<llvm::StringRef, void>, llvm::detail::DenseMapPair<llvm::StringRef, unsigned int> >, llvm::SmallVector<std::pair<llvm::StringRef, llvm::BitcodeModule>, 0u> >&)::'lambda'(llvm::BitcodeModule, llvm::ModuleSummaryIndex&, llvm::DenseMap<llvm::StringRef, std::unordered_map<unsigned long, llvm::GlobalValueSummary::ImportKind, std::hash<unsigned long>, std::equal_to<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValueSummary::ImportKind> > >, llvm::DenseMapInfo<llvm::StringRef, void>, llvm::detail::DenseMapPair<llvm::StringRef, std::unordered_map<unsigned long, llvm::GlobalValueSummary::ImportKind, std::hash<unsigned long>, std::equal_to<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValueSummary::ImportKind> > > > > const&, llvm::DenseMap<llvm::ValueInfo, llvm::GlobalValueSummary::ImportKind, llvm::DenseMapInfo<llvm::ValueInfo, void>, llvm::detail::DenseMapPair<llvm::ValueInfo, llvm::GlobalValueSummary::ImportKind> > const&, std::map<unsigned long, llvm::GlobalValue::LinkageTypes, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValue::LinkageTypes> > > const&, llvm::DenseMap<unsigned long, llvm::GlobalValueSummary*, llvm::DenseMapInfo<unsigned long, void>, llvm::detail::DenseMapPair<unsigned long, llvm::GlobalValueSummary*> > const&, llvm::MapVector<llvm::StringRef, llvm::BitcodeModule, llvm::DenseMap<llvm::StringRef, unsigned int, llvm::DenseMapInfo<llvm::StringRef, void>, llvm::detail::DenseMapPair<llvm::StringRef, unsigned int> >, llvm::SmallVector<std::pair<llvm::StringRef, llvm::BitcodeModule>, 0u> >&) (llvm::BitcodeModule, std::reference_wrapper<llvm::ModuleSummaryIndex>, std::reference_wrapper<llvm::DenseMap<llvm::StringRef, std::unordered_map<unsigned long, llvm::GlobalValueSummary::ImportKind, std::hash<unsigned long>, std::equal_to<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValueSummary::ImportKind> > >, llvm::DenseMapInfo<llvm::StringRef, void>, llvm::detail::DenseMapPair<llvm::StringRef, std::unordered_map<unsigned long, llvm::GlobalValueSummary::ImportKind, std::hash<unsigned long>, std::equal_to<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValueSummary::ImportKind> > > > > const>, std::reference_wrapper<llvm::DenseMap<llvm::ValueInfo, llvm::GlobalValueSummary::ImportKind, llvm::DenseMapInfo<llvm::ValueInfo, void>, llvm::detail::DenseMapPair<llvm::ValueInfo, llvm::GlobalValueSummary::ImportKind> > const>, std::reference_wrapper<std::map<unsigned long, llvm::GlobalValue::LinkageTypes, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, llvm::GlobalValue::LinkageTypes> > > const>, std::reference_wrapper<llvm::DenseMap<unsigned long, llvm::GlobalValueSummary*, llvm::DenseMapInfo<unsigned long, void>, llvm::detail::DenseMapPair<unsigned long, llvm::GlobalValueSummary*> > const>, std::reference_wrapper<llvm::MapVector<llvm::StringRef, llvm::BitcodeModule, llvm::DenseMap<llvm::StringRef, unsigned int, llvm::DenseMapInfo<llvm::StringRef, void>, llvm::detail::DenseMapPair<llvm::StringRef, unsigned int> >, llvm::SmallVector<std::pair<llvm::StringRef, llvm::BitcodeModule>, 0u> > >)> >::_M_invoke(std::_Any_data const&) LTO.cpp:0:0
+#32 0x0000558c303ed1c2 std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::thread::_Invoker<std::tuple<std::function<void ()> > >, void> >::_M_invoke(std::_Any_data const&) crtstuff.c:0:0
+#33 0x0000558c3004abdd std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) crtstuff.c:0:0
+#34 0x00007ff299dbdee8 __pthread_once_slow ./nptl/./nptl/pthread_once.c:118:7
+#35 0x0000558c303eedc7 std::__future_base::_Deferred_state<std::thread::_Invoker<std::tuple<std::function<void ()> > >, void>::_M_complete_async() crtstuff.c:0:0
+#36 0x0000558c303ee1e3 std::_Function_handler<void (), std::shared_future<void> llvm::ThreadPoolInterface::asyncImpl<void>(std::function<void ()>, llvm::ThreadPoolTaskGroup*)::'lambda'()>::_M_invoke(std::_Any_data const&) crtstuff.c:0:0
+#37 0x0000558c32c46719 llvm::StdThreadPool::processTasks(llvm::ThreadPoolTaskGroup*) (/tmp/llvm-project-build-stage1/bin/ld.lld+0x3253719)
+#38 0x0000558c32c470be void* llvm::thread::ThreadProxy<std::tuple<llvm::StdThreadPool::grow(int)::'lambda'()> >(void*) ThreadPool.cpp:0:0
+#39 0x00007ff299db8ac3 start_thread ./nptl/./nptl/pthread_create.c:442:8
+#40 0x00007ff299e4a850 ./misc/../sysdeps/unix/sysv/linux/x86_64/clone3.S:83:0
+clang++: error: unable to execute command: Aborted (core dumped)
+clang++: error: linker command failed due to signal (use -v to see invocation)
+[205/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/DebugSubsection.cpp.o
+[206/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/ContinuationRecordBuilder.cpp.o
+[207/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/DebugChecksumsSubsection.cpp.o
+[208/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/CVSymbolVisitor.cpp.o
+[209/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/DebugInlineeLinesSubsection.cpp.o
+[210/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/DebugCrossExSubsection.cpp.o
+[211/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/DebugLinesSubsection.cpp.o
+[212/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/DebugFrameDataSubsection.cpp.o
+[213/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/DebugSubsectionRecord.cpp.o
+[214/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/DebugStringTableSubsection.cpp.o
+[215/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/DebugCrossImpSubsection.cpp.o
+[216/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/CVTypeVisitor.cpp.o
+[217/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/DebugSymbolRVASubsection.cpp.o
+[218/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/DebugSubsectionVisitor.cpp.o
+[219/2603] Building CXX object lib/DebugInfo/CodeView/CMakeFiles/LLVMDebugInfoCodeView.dir/DebugSymbolsSubsection.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
