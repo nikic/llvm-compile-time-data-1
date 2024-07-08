@@ -1,0 +1,136 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+      |                                      ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:57:35: note: in expansion of macro ‘HANDLE_METADATA_LEAF’
+   57 | #define HANDLE_MDNODE_LEAF(CLASS) HANDLE_METADATA_LEAF(CLASS)
+      |                                   ^~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:67:47: note: in expansion of macro ‘HANDLE_MDNODE_LEAF’
+   67 | #define HANDLE_SPECIALIZED_MDNODE_LEAF(CLASS) HANDLE_MDNODE_LEAF(CLASS)
+      |                                               ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:46:3: note: in expansion of macro ‘HANDLE_SPECIALIZED_MDNODE_LEAF’
+   46 |   HANDLE_SPECIALIZED_MDNODE_LEAF(CLASS)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:110:1: note: in expansion of macro ‘HANDLE_SPECIALIZED_MDNODE_LEAF_UNIQUABLE’
+  110 | HANDLE_SPECIALIZED_MDNODE_LEAF_UNIQUABLE(DILocalVariable)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/AsmWriter.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugProgramInstruction.h:472:21: error: could not convert ‘{<expression error>, 0}’ from ‘<brace-enclosed initializer list>’ to ‘llvm::DbgVariableFragmentInfo’
+  472 |       return {*Sz, 0};
+      |                     ^
+      |                     |
+      |                     <brace-enclosed initializer list>
+[820/2746] Building X86GenInstrInfo.inc...
+[821/2746] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Frontend/Offloading/Utility.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugProgramInstruction.h: In member function ‘llvm::DbgVariableFragmentInfo llvm::DbgVariableRecord::getFragmentOrEntireVariable() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugProgramInstruction.h:471:32: error: invalid use of incomplete type ‘class llvm::DILocalVariable’
+  471 |     if (auto Sz = getVariable()->getSizeInBits())
+      |                                ^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/TrackingMDRef.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugLoc.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugProgramInstruction.h:54,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Frontend/Offloading/Utility.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:110:42: note: forward declaration of ‘class llvm::DILocalVariable’
+  110 | HANDLE_SPECIALIZED_MDNODE_LEAF_UNIQUABLE(DILocalVariable)
+      |                                          ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.h:151:38: note: in definition of macro ‘HANDLE_METADATA’
+  151 | #define HANDLE_METADATA(CLASS) class CLASS;
+      |                                      ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:57:35: note: in expansion of macro ‘HANDLE_METADATA_LEAF’
+   57 | #define HANDLE_MDNODE_LEAF(CLASS) HANDLE_METADATA_LEAF(CLASS)
+      |                                   ^~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:67:47: note: in expansion of macro ‘HANDLE_MDNODE_LEAF’
+   67 | #define HANDLE_SPECIALIZED_MDNODE_LEAF(CLASS) HANDLE_MDNODE_LEAF(CLASS)
+      |                                               ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:46:3: note: in expansion of macro ‘HANDLE_SPECIALIZED_MDNODE_LEAF’
+   46 |   HANDLE_SPECIALIZED_MDNODE_LEAF(CLASS)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:110:1: note: in expansion of macro ‘HANDLE_SPECIALIZED_MDNODE_LEAF_UNIQUABLE’
+  110 | HANDLE_SPECIALIZED_MDNODE_LEAF_UNIQUABLE(DILocalVariable)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Frontend/Offloading/Utility.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugProgramInstruction.h:472:21: error: could not convert ‘{<expression error>, 0}’ from ‘<brace-enclosed initializer list>’ to ‘llvm::DbgVariableFragmentInfo’
+  472 |       return {*Sz, 0};
+      |                     ^
+      |                     |
+      |                     <brace-enclosed initializer list>
+[822/2746] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendUtil.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantRange.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ModuleSummaryIndex.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/CodeGen/BackendUtil.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendUtil.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugProgramInstruction.h: In member function ‘llvm::DbgVariableFragmentInfo llvm::DbgVariableRecord::getFragmentOrEntireVariable() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugProgramInstruction.h:471:32: error: invalid use of incomplete type ‘class llvm::DILocalVariable’
+  471 |     if (auto Sz = getVariable()->getSizeInBits())
+      |                                ^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/TrackingMDRef.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugLoc.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugProgramInstruction.h:54,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantRange.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ModuleSummaryIndex.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/CodeGen/BackendUtil.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendUtil.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:110:42: note: forward declaration of ‘class llvm::DILocalVariable’
+  110 | HANDLE_SPECIALIZED_MDNODE_LEAF_UNIQUABLE(DILocalVariable)
+      |                                          ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.h:151:38: note: in definition of macro ‘HANDLE_METADATA’
+  151 | #define HANDLE_METADATA(CLASS) class CLASS;
+      |                                      ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:57:35: note: in expansion of macro ‘HANDLE_METADATA_LEAF’
+   57 | #define HANDLE_MDNODE_LEAF(CLASS) HANDLE_METADATA_LEAF(CLASS)
+      |                                   ^~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:67:47: note: in expansion of macro ‘HANDLE_MDNODE_LEAF’
+   67 | #define HANDLE_SPECIALIZED_MDNODE_LEAF(CLASS) HANDLE_MDNODE_LEAF(CLASS)
+      |                                               ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:46:3: note: in expansion of macro ‘HANDLE_SPECIALIZED_MDNODE_LEAF’
+   46 |   HANDLE_SPECIALIZED_MDNODE_LEAF(CLASS)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Metadata.def:110:1: note: in expansion of macro ‘HANDLE_SPECIALIZED_MDNODE_LEAF_UNIQUABLE’
+  110 | HANDLE_SPECIALIZED_MDNODE_LEAF_UNIQUABLE(DILocalVariable)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantRange.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ModuleSummaryIndex.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/CodeGen/BackendUtil.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendUtil.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugProgramInstruction.h:472:21: error: could not convert ‘{<expression error>, 0}’ from ‘<brace-enclosed initializer list>’ to ‘llvm::DbgVariableFragmentInfo’
+  472 |       return {*Sz, 0};
+      |                     ^
+      |                     |
+      |                     <brace-enclosed initializer list>
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+84.78user 7.37system 0:10.25elapsed 898%CPU (0avgtext+0avgdata 1306800maxresident)k
+0inputs+678792outputs (2403major+5359652minor)pagefaults 0swaps
