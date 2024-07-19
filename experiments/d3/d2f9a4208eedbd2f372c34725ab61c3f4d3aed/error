@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2604/2751] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/CommonLinkerContext.cpp.o
+[2605/2751] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DriverDispatcher.cpp.o
+[2606/2751] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Filesystem.cpp.o
+[2607/2751] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Reproduce.cpp.o
+[2608/2751] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DWARF.cpp.o
+[2609/2751] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/ErrorHandler.cpp.o
+[2610/2751] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Memory.cpp.o
+[2611/2751] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Strings.cpp.o
+[2612/2751] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/TargetOptionsCommandFlags.cpp.o
+[2613/2751] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Timer.cpp.o
+[2614/2751] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Version.cpp.o
+[2615/2751] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld.cpp.o
+[2616/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Chunks.cpp.o
+[2617/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/CallGraphSort.cpp.o
+[2618/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/COFFLinkerContext.cpp.o
+[2619/2751] Linking CXX static library lib/libclangDriver.a
+[2620/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DebugTypes.cpp.o
+[2621/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DLL.cpp.o
+[2622/2751] Linking CXX static library lib/libclangFormat.a
+[2623/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DriverUtils.cpp.o
+[2624/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/ICF.cpp.o
+[2625/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LLDMapFile.cpp.o
+[2626/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Driver.cpp.o
+[2627/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MarkLive.cpp.o
+[2628/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MapFile.cpp.o
+[2629/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MinGW.cpp.o
+[2630/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Symbols.cpp.o
+[2631/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LTO.cpp.o
+[2632/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/PDB.cpp.o
+[2633/2751] Linking CXX static library lib/libLLVMAsmPrinter.a
+[2634/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/InputFiles.cpp.o
+[2635/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/AArch64ErrataFix.cpp.o
+[2636/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/SymbolTable.cpp.o
+[2637/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AArch64.cpp.o
+[2638/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AMDGPU.cpp.o
+[2639/2751] Linking CXX static library lib/liblldCommon.a
+[2640/2751] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Writer.cpp.o
+[2641/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AVR.cpp.o
+[2642/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/ARM.cpp.o
+[2643/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/Hexagon.cpp.o
+[2644/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/LoongArch.cpp.o
+[2645/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/Mips.cpp.o
+[2646/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/MipsArchTree.cpp.o
+[2647/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/MSP430.cpp.o
+[2648/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/PPC.cpp.o
+[2649/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/PPC64.cpp.o
+[2650/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/SPARCV9.cpp.o
+[2651/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/RISCV.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/lld/ELF/Arch/RISCV.cpp: In function ‘void mergeAtomic(llvm::DenseMapBase<llvm::DenseMap<unsigned int, unsigned int>, unsigned int, unsigned int, llvm::DenseMapInfo<unsigned int>, llvm::detail::DenseMapPair<unsigned int, unsigned int> >::iterator, const lld::elf::InputSectionBase*, const lld::elf::InputSectionBase*, llvm::RISCVAttrs::RISCVAtomicAbiTag, llvm::RISCVAttrs::RISCVAtomicAbiTag)’:
+/var/llvm-compile-time-tracker/llvm-project/lld/ELF/Arch/RISCV.cpp:1123:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1123 |     switch (newTag) {
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/lld/ELF/Arch/RISCV.cpp:1135:3: note: here
+ 1135 |   case RISCVAtomicAbiTag::A6S:
+      |   ^~~~
+/var/llvm-compile-time-tracker/llvm-project/lld/ELF/Arch/RISCV.cpp:1136:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1136 |     switch (newTag) {
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/lld/ELF/Arch/RISCV.cpp:1148:3: note: here
+ 1148 |   case RISCVAtomicAbiTag::A7:
+      |   ^~~~
+[2652/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/SystemZ.cpp.o
+[2653/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/X86.cpp.o
+[2654/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/X86_64.cpp.o
+[2655/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ARMErrataFix.cpp.o
+[2656/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/CallGraphSort.cpp.o
+[2657/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/DWARF.cpp.o
+[2658/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/DriverUtils.cpp.o
+[2659/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/EhFrame.cpp.o
+[2660/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Driver.cpp.o
+[2661/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ICF.cpp.o
+[2662/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputSection.cpp.o
+[2663/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/LinkerScript.cpp.o
+[2664/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/MapFile.cpp.o
+[2665/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/MarkLive.cpp.o
+[2666/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/OutputSections.cpp.o
+[2667/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ScriptLexer.cpp.o
+[2668/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ScriptParser.cpp.o
+[2669/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputFiles.cpp.o
+[2670/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/LTO.cpp.o
+[2671/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Relocations.cpp.o
+[2672/2751] Linking CXX static library lib/libLLVMSelectionDAG.a
+[2673/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SymbolTable.cpp.o
+[2674/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Symbols.cpp.o
+[2675/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Target.cpp.o
+[2676/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Thunks.cpp.o
+[2677/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SyntheticSections.cpp.o
+[2678/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64.cpp.o
+[2679/2751] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Writer.cpp.o
+[2680/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64_32.cpp.o
+[2681/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/X86_64.cpp.o
+[2682/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ConcatOutputSection.cpp.o
+[2683/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Driver.cpp.o
+[2684/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Dwarf.cpp.o
+[2685/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/EhFrame.cpp.o
+[2686/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ExportTrie.cpp.o
+[2687/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o
+[2688/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MapFile.cpp.o
+[2689/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MarkLive.cpp.o
+[2690/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/DriverUtils.cpp.o
+[2691/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ICF.cpp.o
+[2692/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ObjC.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ObjC.cpp:737:1: warning: ‘{anonymous}::ObjcCategoryMerger::PointerListInfo {anonymous}::ObjcCategoryMerger::parseProtocolListInfo(const lld::macho::ConcatInputSection*, uint32_t, {anonymous}::ObjcCategoryMerger::SourceLanguage)’ defined but not used [-Wunused-function]
+  737 | ObjcCategoryMerger::parseProtocolListInfo(const ConcatInputSection *isec,
+      | ^~~~~~~~~~~~~~~~~~
+[2693/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputFiles.cpp.o
+[2694/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/LTO.cpp.o
+[2695/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSection.cpp.o
+[2696/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64Common.cpp.o
+[2697/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSegment.cpp.o
+[2698/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Relocations.cpp.o
+[2699/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SectionPriorities.cpp.o
+[2700/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Target.cpp.o
+[2701/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SymbolTable.cpp.o
+[2702/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Symbols.cpp.o
+[2703/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SyntheticSections.cpp.o
+[2704/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/UnwindInfoSection.cpp.o
+[2705/2751] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Writer.cpp.o
+[2706/2751] Building CXX object tools/lld/MinGW/CMakeFiles/lldMinGW.dir/Driver.cpp.o
+[2707/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Driver.cpp.o
+[2708/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputChunks.cpp.o
+[2709/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputFiles.cpp.o
+[2710/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/LTO.cpp.o
+[2711/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MapFile.cpp.o
+[2712/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MarkLive.cpp.o
+[2713/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSegment.cpp.o
+[2714/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Relocations.cpp.o
+[2715/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSections.cpp.o
+[2716/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SymbolTable.cpp.o
+[2717/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Symbols.cpp.o
+[2718/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SyntheticSections.cpp.o
+[2719/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/WriterUtils.cpp.o
+[2720/2751] Linking CXX static library lib/libLLVMGlobalISel.a
+[2721/2751] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Writer.cpp.o
+[2722/2751] Linking CXX static library lib/libclangAST.a
+[2723/2751] Linking CXX static library lib/libLLVMX86CodeGen.a
+[2724/2751] Linking CXX static library lib/libclangEdit.a
+[2725/2751] Linking CXX static library lib/libclangInstallAPI.a
+[2726/2751] Linking CXX static library lib/libclangASTMatchers.a
+[2727/2751] Linking CXX static library lib/libclangAnalysis.a
+[2728/2751] Linking CXX static library lib/libclangSema.a
+[2729/2751] Linking CXX static library lib/libclangParse.a
+[2730/2751] Linking CXX static library lib/libclangSerialization.a
+[2731/2751] Linking CXX static library lib/libclangFrontend.a
+[2732/2751] Linking CXX static library lib/libclangRewriteFrontend.a
+[2733/2751] Linking CXX static library lib/libclangIndex.a
+[2734/2751] Linking CXX static library lib/libclangExtractAPI.a
+[2735/2751] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/SwapByteOrder.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:50,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SLPVectorizer.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/bit.h: In instantiation of ‘T llvm::bit_ceil(T) [with T = llvm::TypeSize]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:15537:19:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/bit.h:343:22: error: static assertion failed: Only unsigned integral types are allowed.
+  343 |   static_assert(std::is_unsigned_v<T>,
+      |                 ~~~~~^~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/bit.h:343:22: note: ‘std::is_unsigned_v<llvm::TypeSize>’ evaluates to false
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/bit.h:346:12: error: could not convert ‘1’ from ‘int’ to ‘llvm::TypeSize’
+  346 |     return 1;
+      |            ^
+      |            |
+      |            int
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/bit.h:347:10: error: no matching function for call to ‘llvm::TypeSize::TypeSize(int)’
+  347 |   return T(1) << llvm::bit_width<T>(Value - 1u);
+      |          ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/MemoryLocation.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/AliasAnalysis.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:34:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeSize.h:339:13: note: candidate: ‘constexpr llvm::TypeSize::TypeSize(llvm::details::FixedOrScalableQuantity<llvm::TypeSize, long unsigned int>::ScalarTy, bool)’
+  339 |   constexpr TypeSize(ScalarTy Quantity, bool Scalable)
+      |             ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeSize.h:339:13: note:   candidate expects 2 arguments, 1 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeSize.h:335:3: note: candidate: ‘llvm::TypeSize::TypeSize(const llvm::details::FixedOrScalableQuantity<llvm::TypeSize, long unsigned int>&)’
+  335 |   TypeSize(const FixedOrScalableQuantity<TypeSize, uint64_t> &V)
+      |   ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeSize.h:335:63: note:   no known conversion for argument 1 from ‘int’ to ‘const llvm::details::FixedOrScalableQuantity<llvm::TypeSize, long unsigned int>&’
+  335 |   TypeSize(const FixedOrScalableQuantity<TypeSize, uint64_t> &V)
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeSize.h:334:7: note: candidate: ‘constexpr llvm::TypeSize::TypeSize(const llvm::TypeSize&)’
+  334 | class TypeSize : public details::FixedOrScalableQuantity<TypeSize, uint64_t> {
+      |       ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeSize.h:334:7: note:   no known conversion for argument 1 from ‘int’ to ‘const llvm::TypeSize&’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeSize.h:334:7: note: candidate: ‘constexpr llvm::TypeSize::TypeSize(llvm::TypeSize&&)’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeSize.h:334:7: note:   no known conversion for argument 1 from ‘int’ to ‘llvm::TypeSize&&’
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/SwapByteOrder.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:50,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SLPVectorizer.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/bit.h:347:43: error: could not convert ‘(Value.llvm::TypeSize::operator llvm::details::FixedOrScalableQuantity<llvm::TypeSize, long unsigned int>::ScalarTy() - 1)’ from ‘llvm::details::FixedOrScalableQuantity<llvm::TypeSize, long unsigned int>::ScalarTy’ {aka ‘long unsigned int’} to ‘llvm::TypeSize’
+  347 |   return T(1) << llvm::bit_width<T>(Value - 1u);
+      |                                     ~~~~~~^~~~
+      |                                           |
+      |                                           llvm::details::FixedOrScalableQuantity<llvm::TypeSize, long unsigned int>::ScalarTy {aka long unsigned int}
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+119.03user 18.41system 0:10.52elapsed 1305%CPU (0avgtext+0avgdata 844992maxresident)k
+0inputs+4877632outputs (5514major+8274053minor)pagefaults 0swaps
