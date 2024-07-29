@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+  639 | class AccessAnalysis {
+      |       ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:652:7: note:                 ‘class {anonymous}::AccessAnalysis’
+  652 | class AccessAnalysis {
+      |       ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1279:40: error: qualified-id in declaration before ‘(’ token
+ 1279 | void AccessAnalysis::processMemAccesses() {
+      |                                        ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1404:75: error: a function-definition is not allowed here before ‘{’ token
+ 1404 |                            PredicatedScalarEvolution &PSE, const Loop *L) {
+      |                                                                           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1455:19: error: qualified-id in declaration before ‘(’ token
+ 1455 | llvm::getPtrStride(PredicatedScalarEvolution &PSE, Type *AccessTy, Value *Ptr,
+      |                   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1554:41: error: qualified-id in declaration before ‘(’ token
+ 1554 | std::optional<int> llvm::getPointersDiff(Type *ElemTyA, Value *PtrA,
+      |                                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1619:27: error: qualified-id in declaration before ‘(’ token
+ 1619 | bool llvm::sortPtrAccesses(ArrayRef<Value *> VL, Type *ElemTy,
+      |                           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1659:31: error: qualified-id in declaration before ‘(’ token
+ 1659 | bool llvm::isConsecutiveAccess(Value *A, Value *B, const DataLayout &DL,
+      |                               ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1673:33: error: qualified-id in declaration before ‘(’ token
+ 1673 | void MemoryDepChecker::addAccess(StoreInst *SI) {
+      |                                 ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1682:33: error: qualified-id in declaration before ‘(’ token
+ 1682 | void MemoryDepChecker::addAccess(LoadInst *LI) {
+      |                                 ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1692:53: error: qualified-id in declaration before ‘(’ token
+ 1692 | MemoryDepChecker::Dependence::isSafeForVectorization(DepType Type) {
+      |                                                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1710:46: error: qualified-id in declaration before ‘(’ token
+ 1710 | bool MemoryDepChecker::Dependence::isBackward() const {
+      |                                              ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1727:54: error: qualified-id in declaration before ‘(’ token
+ 1727 | bool MemoryDepChecker::Dependence::isPossiblyBackward() const {
+      |                                                      ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1731:45: error: qualified-id in declaration before ‘(’ token
+ 1731 | bool MemoryDepChecker::Dependence::isForward() const {
+      |                                             ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1748:52: error: qualified-id in declaration before ‘(’ token
+ 1748 | bool MemoryDepChecker::couldPreventStoreLoadForward(uint64_t Distance,
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1792:37: error: qualified-id in declaration before ‘(’ token
+ 1792 | void MemoryDepChecker::mergeInStatus(VectorizationSafetyStatus S) {
+      |                                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1812:61: error: a function-definition is not allowed here before ‘{’ token
+ 1812 |                                      uint64_t TypeByteSize) {
+      |                                                             ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1867:66: error: a function-definition is not allowed here before ‘{’ token
+ 1867 |                                           uint64_t TypeByteSize) {
+      |                                                                  ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1899:53: error: qualified-id in declaration before ‘(’ token
+ 1899 | MemoryDepChecker::getDependenceDistanceStrideAndSize(
+      |                                                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2030:30: error: qualified-id in declaration before ‘(’ token
+ 2030 | MemoryDepChecker::isDependent(const MemAccessInfo &A, unsigned AIdx,
+      |                              ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2271:35: error: qualified-id in declaration before ‘(’ token
+ 2271 | bool MemoryDepChecker::areDepsSafe(const DepCandidates &AccessSets,
+      |                                   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2348:43: error: qualified-id in declaration before ‘(’ token
+ 2348 | MemoryDepChecker::getInstructionsForAccess(Value *Ptr, bool IsWrite) const {
+      |                                           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2359:50: error: qualified-id in declaration before ‘[’ token
+ 2359 | const char *MemoryDepChecker::Dependence::DepName[] = {
+      |                                                  ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2369:41: error: qualified-id in declaration before ‘(’ token
+ 2369 | void MemoryDepChecker::Dependence::print(
+      |                                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2377:36: error: qualified-id in declaration before ‘(’ token
+ 2377 | bool LoopAccessInfo::canAnalyzeLoop() {
+      |                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2415:33: error: qualified-id in declaration before ‘(’ token
+ 2415 | bool LoopAccessInfo::analyzeLoop(AAResults *AA, const LoopInfo *LI,
+      |                                 ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2729:48: error: qualified-id in declaration before ‘(’ token
+ 2729 | void LoopAccessInfo::emitUnsafeDependenceRemark() {
+      |                                                ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2798:43: error: qualified-id in declaration before ‘(’ token
+ 2798 | bool LoopAccessInfo::blockNeedsPredication(BasicBlock *BB, Loop *TheLoop,
+      |                                           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2808:31: error: qualified-id in declaration before ‘(’ token
+ 2808 | LoopAccessInfo::recordAnalysis(StringRef RemarkName, const Instruction *I) {
+      |                               ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2827:33: error: qualified-id in declaration before ‘(’ token
+ 2827 | bool LoopAccessInfo::isInvariant(Value *V) const {
+      |                                 ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2840:70: error: a function-definition is not allowed here before ‘{’ token
+ 2840 | static unsigned getGEPInductionOperand(const GetElementPtrInst *Gep) {
+      |                                                                      ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2867:77: error: a function-definition is not allowed here before ‘{’ token
+ 2867 | static Value *stripGetElementPtr(Value *Ptr, ScalarEvolution *SE, Loop *Lp) {
+      |                                                                             ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2885:84: error: a function-definition is not allowed here before ‘{’ token
+ 2885 | static const SCEV *getStrideFromPointer(Value *Ptr, ScalarEvolution *SE, Loop *Lp) {
+      |                                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:2955:42: error: qualified-id in declaration before ‘(’ token
+ 2955 | void LoopAccessInfo::collectStridedAccess(Value *MemAccess) {
+      |                                          ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3028:37: error: expected primary-expression before ‘*’ token
+ 3028 | LoopAccessInfo::LoopAccessInfo(Loop *L, ScalarEvolution *SE,
+      |                                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3028:38: error: ‘L’ was not declared in this scope
+ 3028 | LoopAccessInfo::LoopAccessInfo(Loop *L, ScalarEvolution *SE,
+      |                                      ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3028:57: error: expected primary-expression before ‘*’ token
+ 3028 | LoopAccessInfo::LoopAccessInfo(Loop *L, ScalarEvolution *SE,
+      |                                                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3029:32: error: expected primary-expression before ‘const’
+ 3029 |                                const TargetTransformInfo *TTI,
+      |                                ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3030:32: error: expected primary-expression before ‘const’
+ 3030 |                                const TargetLibraryInfo *TLI, AAResults *AA,
+      |                                ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3030:72: error: expected primary-expression before ‘*’ token
+ 3030 |                                const TargetLibraryInfo *TLI, AAResults *AA,
+      |                                                                        ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3030:73: error: ‘AA’ was not declared in this scope
+ 3030 |                                const TargetLibraryInfo *TLI, AAResults *AA,
+      |                                                                         ^~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3031:46: error: expected primary-expression before ‘*’ token
+ 3031 |                                DominatorTree *DT, LoopInfo *LI, bool ExpensiveChecks)
+      |                                              ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3031:47: error: ‘DT’ was not declared in this scope
+ 3031 |                                DominatorTree *DT, LoopInfo *LI, bool ExpensiveChecks)
+      |                                               ^~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3031:60: error: expected primary-expression before ‘*’ token
+ 3031 |                                DominatorTree *DT, LoopInfo *LI, bool ExpensiveChecks)
+      |                                                            ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3031:61: error: ‘LI’ was not declared in this scope
+ 3031 |                                DominatorTree *DT, LoopInfo *LI, bool ExpensiveChecks)
+      |                                                             ^~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3031:65: error: expected primary-expression before ‘bool’
+ 3031 |                                DominatorTree *DT, LoopInfo *LI, bool ExpensiveChecks)
+      |                                                                 ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3031:85: error: cannot call constructor ‘llvm::LoopAccessInfo::LoopAccessInfo’ directly [-fpermissive]
+ 3031 |                                DominatorTree *DT, LoopInfo *LI, bool ExpensiveChecks)
+      |                                                                                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3031:85: note: for a function-style cast, remove the redundant ‘::LoopAccessInfo’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3057:27: error: qualified-id in declaration before ‘(’ token
+ 3057 | void LoopAccessInfo::print(raw_ostream &OS, unsigned Depth) const {
+      |                           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3105:53: error: qualified-id in declaration before ‘(’ token
+ 3105 | const LoopAccessInfo &LoopAccessInfoManager::getInfo(Loop &L) {
+      |                                                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3114:34: error: qualified-id in declaration before ‘(’ token
+ 3114 | void LoopAccessInfoManager::clear() {
+      |                                  ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3133:39: error: qualified-id in declaration before ‘(’ token
+ 3133 | bool LoopAccessInfoManager::invalidate(
+      |                                       ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3151:46: error: qualified-id in declaration before ‘(’ token
+ 3151 | LoopAccessInfoManager LoopAccessAnalysis::run(Function &F,
+      |                                              ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3162:36: error: qualified-id in declaration before ‘;’ token
+ 3162 | AnalysisKey LoopAccessAnalysis::Key;
+      |                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:3162:37: error: expected ‘}’ at end of input
+ 3162 | AnalysisKey LoopAccessAnalysis::Key;
+      |                                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1126:85: note: to match this ‘{’
+ 1126 |                                      Value *&UncomputablePtr, bool ShouldCheckWrap) {
+      |                                                                                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1138:12: warning: control reaches end of non-void function [-Wreturn-type]
+ 1138 |   unsigned ASId = 0;
+      |            ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:1038:1: warning: ‘llvm::SmallVector<llvm::PointerIntPair<const llvm::SCEV*, 1, bool> > findForkedPointer(llvm::PredicatedScalarEvolution&, const llvm::DenseMap<llvm::Value*, const llvm::SCEV*>&, llvm::Value*, const llvm::Loop*)’ defined but not used [-Wunused-function]
+ 1038 | findForkedPointer(PredicatedScalarEvolution &PSE,
+      | ^~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:843:13: warning: ‘void visitPointers(llvm::Value*, const llvm::Loop&, llvm::function_ref<void(llvm::Value*)>)’ defined but not used [-Wunused-function]
+  843 | static void visitPointers(Value *StartPtr, const Loop &InnermostLoop,
+      |             ^~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:831:13: warning: ‘bool isNoWrap(llvm::PredicatedScalarEvolution&, const llvm::DenseMap<llvm::Value*, const llvm::SCEV*>&, llvm::Value*, llvm::Type*, llvm::Loop*)’ defined but not used [-Wunused-function]
+  831 | static bool isNoWrap(PredicatedScalarEvolution &PSE,
+      |             ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/LoopAccessAnalysis.cpp:813:13: warning: ‘bool hasComputableBounds(llvm::PredicatedScalarEvolution&, llvm::Value*, const llvm::SCEV*, llvm::Loop*, bool)’ defined but not used [-Wunused-function]
+  813 | static bool hasComputableBounds(PredicatedScalarEvolution &PSE, Value *Ptr,
+      |             ^~~~~~~~~~~~~~~~~~~
+[1767/2757] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ObjectFile.cpp.o
+[1768/2757] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Object.cpp.o
+[1769/2757] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ConstantFolding.cpp.o
+[1770/2757] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SimpleLoopUnswitch.cpp.o
+[1771/2757] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TargetTransformInfo.cpp.o
+[1772/2757] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/VectorUtils.cpp.o
+[1773/2757] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/InstructionSimplify.cpp.o
+[1774/2757] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[1775/2757] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOModule.cpp.o
+[1776/2757] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOCodeGenerator.cpp.o
+[1777/2757] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ValueTracking.cpp.o
+[1778/2757] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOBackend.cpp.o
+[1779/2757] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o
+[1780/2757] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/ThinLTOCodeGenerator.cpp.o
+[1781/2757] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTO.cpp.o
+[1782/2757] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolution.cpp.o
+[1783/2757] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+619.31user 28.89system 0:50.33elapsed 1287%CPU (0avgtext+0avgdata 1263268maxresident)k
+0inputs+1954840outputs (2475major+17240371minor)pagefaults 0swaps
