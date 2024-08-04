@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected ‘)’ before ‘return’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:8: note: to match this ‘(’
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |        ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:57: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ErrorHandling.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/SuffixTree.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/SuffixTree.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h: In instantiation of ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, llvm::Align) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; long unsigned int GrowthDelay = 128; size_t = long unsigned int]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:218:20:   required from ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, size_t) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; long unsigned int GrowthDelay = 128; size_t = long unsigned int]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AllocatorBase.h:53:51:   required from ‘void* llvm::AllocatorBase<DerivedT>::Allocate(size_t, size_t) [with DerivedT = llvm::BumpPtrAllocatorImpl<>; size_t = long unsigned int]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AllocatorBase.h:76:37:   required from ‘T* llvm::AllocatorBase<DerivedT>::Allocate(size_t) [with T = llvm::SuffixTreeLeafNode; DerivedT = llvm::BumpPtrAllocatorImpl<>; size_t = long unsigned int]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:441:61:   required from ‘T* llvm::SpecificBumpPtrAllocator<T>::Allocate(size_t) [with T = llvm::SuffixTreeLeafNode; size_t = long unsigned int]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/SuffixTree.cpp:61:44:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:237:43: warning: statement has no effect [-Wunused-value]
+  237 | #define LLVM_LIKELY(EXPR) __builtin_expect((bool)(EXPR), true)
+      |                           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:9: note: in expansion of macro ‘LLVM_LIKELY’
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |         ^~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/SuffixTree.h:36,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/SuffixTree.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h: In member function ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, llvm::Align) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; long unsigned int GrowthDelay = 128]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:181:3: warning: control reaches end of non-void function [-Wreturn-type]
+  181 |   }
+      |   ^
+[118/2759] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFloat.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FoldingSet.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFloat.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h: In member function ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, llvm::Align)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:52: error: expected ‘;’ before ‘{’ token
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected primary-expression before ‘return’
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected ‘)’ before ‘return’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:8: note: to match this ‘(’
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |        ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:57: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |                                                         ^
+[119/2759] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/TypeSize.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/TypeSize.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/TypeSize.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/TypeSize.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/TypeSize.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/TypeSize.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/StringSaver.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CommandLine.h:31,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/TypeSize.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h: In member function ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, llvm::Align)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:52: error: expected ‘;’ before ‘{’ token
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected primary-expression before ‘return’
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected ‘)’ before ‘return’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:8: note: to match this ‘(’
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |        ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:57: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |                                                         ^
+[120/2759] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RandomNumberGenerator.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/RandomNumberGenerator.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/RandomNumberGenerator.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/RandomNumberGenerator.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/RandomNumberGenerator.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/RandomNumberGenerator.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/StringSaver.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CommandLine.h:31,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/RandomNumberGenerator.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h: In member function ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, llvm::Align)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:52: error: expected ‘;’ before ‘{’ token
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected primary-expression before ‘return’
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected ‘)’ before ‘return’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:8: note: to match this ‘(’
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |        ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:57: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |                                                         ^
+[121/2759] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Statistic.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/Statistic.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/Statistic.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/Statistic.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/Statistic.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Statistic.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/StringSaver.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CommandLine.h:31,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Statistic.cpp:28:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h: In member function ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, llvm::Align)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:52: error: expected ‘;’ before ‘{’ token
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected primary-expression before ‘return’
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected ‘)’ before ‘return’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:8: note: to match this ‘(’
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |        ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:57: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Statistic.h:30,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Statistic.cpp:23:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h: In instantiation of ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, llvm::Align) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; long unsigned int GrowthDelay = 128; size_t = long unsigned int]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:218:20:   required from ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, size_t) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; long unsigned int GrowthDelay = 128; size_t = long unsigned int]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLParser.h:143:26:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:237:43: warning: statement has no effect [-Wunused-value]
+  237 | #define LLVM_LIKELY(EXPR) __builtin_expect((bool)(EXPR), true)
+      |                           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:9: note: in expansion of macro ‘LLVM_LIKELY’
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |         ^~~~~~~~~~~
+[122/2759] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/Parser.cpp.o
+FAILED: lib/TableGen/CMakeFiles/LLVMTableGen.dir/Parser.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/TableGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/TableGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/TableGen/CMakeFiles/LLVMTableGen.dir/Parser.cpp.o -MF lib/TableGen/CMakeFiles/LLVMTableGen.dir/Parser.cpp.o.d -o lib/TableGen/CMakeFiles/LLVMTableGen.dir/Parser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/TableGen/Parser.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FoldingSet.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TableGen/Record.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TableGen/Error.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/TableGen/TGParser.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/TableGen/Parser.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h: In member function ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, llvm::Align)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:52: error: expected ‘;’ before ‘{’ token
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected primary-expression before ‘return’
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected ‘)’ before ‘return’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:8: note: to match this ‘(’
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |        ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:57: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |                                                         ^
+[123/2759] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CommandLine.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/StringSaver.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CommandLine.h:31,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CommandLine.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h: In member function ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, llvm::Align)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:52: error: expected ‘;’ before ‘{’ token
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected primary-expression before ‘return’
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected ‘)’ before ‘return’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:8: note: to match this ‘(’
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |        ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:57: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |                                                         ^
+[124/2759] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Timer.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/Timer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/Timer.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/Timer.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/Timer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Timer.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/StringSaver.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CommandLine.h:31,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Timer.cpp:20:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h: In member function ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, llvm::Align)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:52: error: expected ‘;’ before ‘{’ token
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected primary-expression before ‘return’
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:5: error: expected ‘)’ before ‘return’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:8: note: to match this ‘(’
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |        ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:180:57: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  180 |     return AllocateSlow(Size, SizeToAllocate, Alignment);
+      |                                                         ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringRef.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringMapEntry.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Timer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Timer.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h: In instantiation of ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, llvm::Align) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; long unsigned int GrowthDelay = 128; size_t = long unsigned int]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:218:20:   required from ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold, GrowthDelay>::Allocate(size_t, size_t) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; long unsigned int GrowthDelay = 128; size_t = long unsigned int]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLParser.h:143:26:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:237:43: warning: statement has no effect [-Wunused-value]
+  237 | #define LLVM_LIKELY(EXPR) __builtin_expect((bool)(EXPR), true)
+      |                           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:169:9: note: in expansion of macro ‘LLVM_LIKELY’
+  169 |     if (LLVM_LIKELY(AllocEndPtr <= uintptr_t(End)) {
+      |         ^~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+9.90user 1.15system 0:01.10elapsed 1000%CPU (0avgtext+0avgdata 228476maxresident)k
+0inputs+91720outputs (28major+681635minor)pagefaults 0swaps
