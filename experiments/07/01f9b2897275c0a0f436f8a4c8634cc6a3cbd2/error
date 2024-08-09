@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int SlabSize, long unsigned int SizeThreshold, long unsigned int GrowthDelay> class llvm::BumpPtrAllocatorImpl’
+  174 |   using PoolAllocTy = llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator>;
+      |                                                                       ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: note:   expected a constant of type ‘long unsigned int’, got ‘llvm::MallocAllocator’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: error: template argument 2 is invalid
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:186:37: error: ‘PoolAllocTy’ has not been declared
+  186 |     void *operator new(size_t Meta, PoolAllocTy &Alloc, size_t Data) {
+      |                                     ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:202:3: error: ‘PoolAllocTy’ does not name a type
+  202 |   PoolAllocTy Allocator;
+      |   ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: In static member function ‘static void* clang::interp::Program::Global::operator new(size_t, int&, size_t)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:187:20: error: request for member ‘Allocate’ in ‘Alloc’, which is of non-class type ‘int’
+  187 |       return Alloc.Allocate(Meta + Data, alignof(void *));
+      |                    ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: In member function ‘clang::interp::Descriptor* clang::interp::Program::allocateDescriptor(Ts&& ...)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:218:17: error: ‘Allocator’ was not declared in this scope; did you mean ‘alloca’?
+  218 |     return new (Allocator) Descriptor(std::forward<Ts>(Args)...);
+      |                 ^~~~~~~~~
+      |                 alloca
+[2318/2759] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Expr.cpp.o
+[2319/2759] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/EvaluationResult.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/EvaluationResult.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/EvaluationResult.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/EvaluationResult.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/EvaluationResult.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/EvaluationResult.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/InterpState.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/EvaluationResult.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:91:71: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int SlabSize, long unsigned int SizeThreshold, long unsigned int GrowthDelay> class llvm::BumpPtrAllocatorImpl’
+   91 |   using PoolAllocTy = llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator>;
+      |                                                                       ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:91:71: note:   expected a constant of type ‘long unsigned int’, got ‘llvm::MallocAllocator’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:91:71: error: template argument 2 is invalid
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:92:3: error: ‘PoolAllocTy’ does not name a type
+   92 |   PoolAllocTy DescAllocator;
+      |   ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h: In member function ‘clang::interp::Descriptor* clang::interp::DynamicAllocator::allocateDescriptor(Ts&& ...)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:96:17: error: ‘DescAllocator’ was not declared in this scope; did you mean ‘deallocate’?
+   96 |     return new (DescAllocator) Descriptor(std::forward<Ts>(Args)...);
+      |                 ^~~~~~~~~~~~~
+      |                 deallocate
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/InterpFrame.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/InterpState.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/EvaluationResult.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int SlabSize, long unsigned int SizeThreshold, long unsigned int GrowthDelay> class llvm::BumpPtrAllocatorImpl’
+  174 |   using PoolAllocTy = llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator>;
+      |                                                                       ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: note:   expected a constant of type ‘long unsigned int’, got ‘llvm::MallocAllocator’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: error: template argument 2 is invalid
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:186:37: error: ‘PoolAllocTy’ has not been declared
+  186 |     void *operator new(size_t Meta, PoolAllocTy &Alloc, size_t Data) {
+      |                                     ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:202:3: error: ‘PoolAllocTy’ does not name a type
+  202 |   PoolAllocTy Allocator;
+      |   ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: In static member function ‘static void* clang::interp::Program::Global::operator new(size_t, int&, size_t)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:187:20: error: request for member ‘Allocate’ in ‘Alloc’, which is of non-class type ‘int’
+  187 |       return Alloc.Allocate(Meta + Data, alignof(void *));
+      |                    ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: In member function ‘clang::interp::Descriptor* clang::interp::Program::allocateDescriptor(Ts&& ...)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:218:17: error: ‘Allocator’ was not declared in this scope; did you mean ‘alloca’?
+  218 |     return new (Allocator) Descriptor(std::forward<Ts>(Args)...);
+      |                 ^~~~~~~~~
+      |                 alloca
+[2320/2759] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/EvalEmitter.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/EvalEmitter.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/EvalEmitter.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/EvalEmitter.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/EvalEmitter.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/EvalEmitter.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/InterpState.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/EvalEmitter.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/EvalEmitter.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:91:71: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int SlabSize, long unsigned int SizeThreshold, long unsigned int GrowthDelay> class llvm::BumpPtrAllocatorImpl’
+   91 |   using PoolAllocTy = llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator>;
+      |                                                                       ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:91:71: note:   expected a constant of type ‘long unsigned int’, got ‘llvm::MallocAllocator’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:91:71: error: template argument 2 is invalid
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:92:3: error: ‘PoolAllocTy’ does not name a type
+   92 |   PoolAllocTy DescAllocator;
+      |   ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h: In member function ‘clang::interp::Descriptor* clang::interp::DynamicAllocator::allocateDescriptor(Ts&& ...)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:96:17: error: ‘DescAllocator’ was not declared in this scope; did you mean ‘deallocate’?
+   96 |     return new (DescAllocator) Descriptor(std::forward<Ts>(Args)...);
+      |                 ^~~~~~~~~~~~~
+      |                 deallocate
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/InterpFrame.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/InterpState.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/EvalEmitter.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/EvalEmitter.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int SlabSize, long unsigned int SizeThreshold, long unsigned int GrowthDelay> class llvm::BumpPtrAllocatorImpl’
+  174 |   using PoolAllocTy = llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator>;
+      |                                                                       ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: note:   expected a constant of type ‘long unsigned int’, got ‘llvm::MallocAllocator’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: error: template argument 2 is invalid
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:186:37: error: ‘PoolAllocTy’ has not been declared
+  186 |     void *operator new(size_t Meta, PoolAllocTy &Alloc, size_t Data) {
+      |                                     ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:202:3: error: ‘PoolAllocTy’ does not name a type
+  202 |   PoolAllocTy Allocator;
+      |   ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: In static member function ‘static void* clang::interp::Program::Global::operator new(size_t, int&, size_t)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:187:20: error: request for member ‘Allocate’ in ‘Alloc’, which is of non-class type ‘int’
+  187 |       return Alloc.Allocate(Meta + Data, alignof(void *));
+      |                    ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: In member function ‘clang::interp::Descriptor* clang::interp::Program::allocateDescriptor(Ts&& ...)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:218:17: error: ‘Allocator’ was not declared in this scope; did you mean ‘alloca’?
+  218 |     return new (Allocator) Descriptor(std::forward<Ts>(Args)...);
+      |                 ^~~~~~~~~
+      |                 alloca
+[2321/2759] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/InterpBuiltin.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/InterpBuiltin.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/InterpBuiltin.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/InterpBuiltin.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/InterpBuiltin.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/InterpBuiltin.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/ByteCodeEmitter.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Compiler.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/InterpBuiltin.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int SlabSize, long unsigned int SizeThreshold, long unsigned int GrowthDelay> class llvm::BumpPtrAllocatorImpl’
+  174 |   using PoolAllocTy = llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator>;
+      |                                                                       ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: note:   expected a constant of type ‘long unsigned int’, got ‘llvm::MallocAllocator’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: error: template argument 2 is invalid
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:186:37: error: ‘PoolAllocTy’ has not been declared
+  186 |     void *operator new(size_t Meta, PoolAllocTy &Alloc, size_t Data) {
+      |                                     ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:202:3: error: ‘PoolAllocTy’ does not name a type
+  202 |   PoolAllocTy Allocator;
+      |   ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: In static member function ‘static void* clang::interp::Program::Global::operator new(size_t, int&, size_t)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:187:20: error: request for member ‘Allocate’ in ‘Alloc’, which is of non-class type ‘int’
+  187 |       return Alloc.Allocate(Meta + Data, alignof(void *));
+      |                    ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: In member function ‘clang::interp::Descriptor* clang::interp::Program::allocateDescriptor(Ts&& ...)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:218:17: error: ‘Allocator’ was not declared in this scope; did you mean ‘alloca’?
+  218 |     return new (Allocator) Descriptor(std::forward<Ts>(Args)...);
+      |                 ^~~~~~~~~
+      |                 alloca
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/InterpState.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/EvalEmitter.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Compiler.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/InterpBuiltin.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:91:71: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int SlabSize, long unsigned int SizeThreshold, long unsigned int GrowthDelay> class llvm::BumpPtrAllocatorImpl’
+   91 |   using PoolAllocTy = llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator>;
+      |                                                                       ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:91:71: note:   expected a constant of type ‘long unsigned int’, got ‘llvm::MallocAllocator’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:91:71: error: template argument 2 is invalid
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:92:3: error: ‘PoolAllocTy’ does not name a type
+   92 |   PoolAllocTy DescAllocator;
+      |   ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h: In member function ‘clang::interp::Descriptor* clang::interp::DynamicAllocator::allocateDescriptor(Ts&& ...)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:96:17: error: ‘DescAllocator’ was not declared in this scope; did you mean ‘deallocate’?
+   96 |     return new (DescAllocator) Descriptor(std::forward<Ts>(Args)...);
+      |                 ^~~~~~~~~~~~~
+      |                 deallocate
+[2322/2759] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ParentMapContext.cpp.o
+[2323/2759] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/Interp.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/Interp.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/Interp.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/Interp.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Interp/Interp.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Interp.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Interp.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Interp.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:91:71: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int SlabSize, long unsigned int SizeThreshold, long unsigned int GrowthDelay> class llvm::BumpPtrAllocatorImpl’
+   91 |   using PoolAllocTy = llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator>;
+      |                                                                       ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:91:71: note:   expected a constant of type ‘long unsigned int’, got ‘llvm::MallocAllocator’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:91:71: error: template argument 2 is invalid
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:92:3: error: ‘PoolAllocTy’ does not name a type
+   92 |   PoolAllocTy DescAllocator;
+      |   ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h: In member function ‘clang::interp::Descriptor* clang::interp::DynamicAllocator::allocateDescriptor(Ts&& ...)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/DynamicAllocator.h:96:17: error: ‘DescAllocator’ was not declared in this scope; did you mean ‘deallocate’?
+   96 |     return new (DescAllocator) Descriptor(std::forward<Ts>(Args)...);
+      |                 ^~~~~~~~~~~~~
+      |                 deallocate
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/InterpFrame.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Interp.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Interp.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int SlabSize, long unsigned int SizeThreshold, long unsigned int GrowthDelay> class llvm::BumpPtrAllocatorImpl’
+  174 |   using PoolAllocTy = llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator>;
+      |                                                                       ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: note:   expected a constant of type ‘long unsigned int’, got ‘llvm::MallocAllocator’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:174:71: error: template argument 2 is invalid
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:186:37: error: ‘PoolAllocTy’ has not been declared
+  186 |     void *operator new(size_t Meta, PoolAllocTy &Alloc, size_t Data) {
+      |                                     ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:202:3: error: ‘PoolAllocTy’ does not name a type
+  202 |   PoolAllocTy Allocator;
+      |   ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: In static member function ‘static void* clang::interp::Program::Global::operator new(size_t, int&, size_t)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:187:20: error: request for member ‘Allocate’ in ‘Alloc’, which is of non-class type ‘int’
+  187 |       return Alloc.Allocate(Meta + Data, alignof(void *));
+      |                    ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h: In member function ‘clang::interp::Descriptor* clang::interp::Program::allocateDescriptor(Ts&& ...)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Interp/Program.h:218:17: error: ‘Allocator’ was not declared in this scope; did you mean ‘alloca’?
+  218 |     return new (Allocator) Descriptor(std::forward<Ts>(Args)...);
+      |                 ^~~~~~~~~
+      |                 alloca
+[2324/2759] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o
+[2325/2759] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/AttrImpl.cpp.o
+[2326/2759] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+3933.12user 195.68system 4:25.15elapsed 1557%CPU (0avgtext+0avgdata 1839224maxresident)k
+0inputs+10935344outputs (37785major+120998959minor)pagefaults 0swaps
