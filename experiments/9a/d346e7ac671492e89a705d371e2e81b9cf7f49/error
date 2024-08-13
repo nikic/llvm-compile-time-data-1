@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineBlockPlacement.cpp:3659:26:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:713:43: error: invalid conversion from ‘const llvm::MachineFunction*’ to ‘int’ [-fpermissive]
+  713 |       verifyBlockNumberEpoch(BB->getParent());
+      |                              ~~~~~~~~~~~~~^~
+      |                                           |
+      |                                           const llvm::MachineFunction*
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:39: note:   initializing argument 1 of ‘void llvm::LoopInfoBase<N, M>::verifyBlockNumberEpoch(int) const [with BlockT = llvm::MachineBasicBlock; LoopT = llvm::MachineLoop]’
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ~~~~~~~~^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/simple_ilist.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ilist.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LivePhysRegs.h:33,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchFolding.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineBlockPlacement.cpp:27:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ilist_iterator.h: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ilist_iterator.h:177:15: warning: inline function ‘bool llvm::operator!=(const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::MachineInstr, true, true, void, false, void>, false, true>&, const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::MachineInstr, true, true, void, false, void>, false, true>&)’ used but never defined
+  177 |   friend bool operator!=(const ilist_iterator &LHS, const ilist_iterator &RHS) {
+      |               ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ilist_iterator.h:177:15: warning: inline function ‘bool llvm::operator!=(const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::SDNode, false, false, void, false, void>, false, true>&, const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::SDNode, false, false, void, false, void>, false, true>&)’ used but never defined
+[1029/2770] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPass.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPass.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPass.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPass.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPass.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineFunctionPass.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineFunctionPass.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:31: error: ‘ParentT’ has not been declared
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In member function ‘void llvm::LoopInfoBase<N, M>::releaseMemory()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:576:5: error: ‘ParentPtr’ was not declared in this scope
+  576 |     ParentPtr = nullptr;
+      |     ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In instantiation of ‘LoopT* llvm::LoopInfoBase<N, M>::getLoopFor(const BlockT*) const [with BlockT = llvm::BasicBlock; LoopT = llvm::Loop]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:456:30:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:644:43: error: invalid conversion from ‘const llvm::Function*’ to ‘int’ [-fpermissive]
+  644 |       verifyBlockNumberEpoch(BB->getParent());
+      |                              ~~~~~~~~~~~~~^~
+      |                                           |
+      |                                           const llvm::Function*
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:39: note:   initializing argument 1 of ‘void llvm::LoopInfoBase<N, M>::verifyBlockNumberEpoch(int) const [with BlockT = llvm::BasicBlock; LoopT = llvm::Loop]’
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ~~~~~~~~^~~~~~~~
+[1030/2770] Building X86GenSubtargetInfo.inc...
+[1031/2770] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicTargetTransformInfo.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/BasicTTIImpl.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicTargetTransformInfo.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:31: error: ‘ParentT’ has not been declared
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In member function ‘void llvm::LoopInfoBase<N, M>::releaseMemory()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:576:5: error: ‘ParentPtr’ was not declared in this scope
+  576 |     ParentPtr = nullptr;
+      |     ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In instantiation of ‘LoopT* llvm::LoopInfoBase<N, M>::getLoopFor(const BlockT*) const [with BlockT = llvm::BasicBlock; LoopT = llvm::Loop]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:456:30:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:644:43: error: invalid conversion from ‘const llvm::Function*’ to ‘int’ [-fpermissive]
+  644 |       verifyBlockNumberEpoch(BB->getParent());
+      |                              ~~~~~~~~~~~~~^~
+      |                                           |
+      |                                           const llvm::Function*
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:39: note:   initializing argument 1 of ‘void llvm::LoopInfoBase<N, M>::verifyBlockNumberEpoch(int) const [with BlockT = llvm::BasicBlock; LoopT = llvm::Loop]’
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ~~~~~~~~^~~~~~~~
+[1032/2770] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLoopInfo.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLoopInfo.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLoopInfo.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLoopInfo.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLoopInfo.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineLoopInfo.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineLoopInfo.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:31: error: ‘ParentT’ has not been declared
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In member function ‘void llvm::LoopInfoBase<N, M>::releaseMemory()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:576:5: error: ‘ParentPtr’ was not declared in this scope
+  576 |     ParentPtr = nullptr;
+      |     ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In instantiation of ‘LoopT* llvm::LoopInfoBase<N, M>::getLoopFor(const BlockT*) const [with BlockT = llvm::MachineBasicBlock; LoopT = llvm::MachineLoop]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineLoopInfo.cpp:31:22:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:644:43: error: invalid conversion from ‘const llvm::MachineFunction*’ to ‘int’ [-fpermissive]
+  644 |       verifyBlockNumberEpoch(BB->getParent());
+      |                              ~~~~~~~~~~~~~^~
+      |                                           |
+      |                                           const llvm::MachineFunction*
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:39: note:   initializing argument 1 of ‘void llvm::LoopInfoBase<N, M>::verifyBlockNumberEpoch(int) const [with BlockT = llvm::MachineBasicBlock; LoopT = llvm::MachineLoop]’
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ~~~~~~~~^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In instantiation of ‘void llvm::LoopInfoBase<N, M>::changeLoopFor(const BlockT*, LoopT*) [with BlockT = llvm::MachineBasicBlock; LoopT = llvm::MachineLoop]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineLoopInfo.cpp:31:22:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:713:43: error: invalid conversion from ‘const llvm::MachineFunction*’ to ‘int’ [-fpermissive]
+  713 |       verifyBlockNumberEpoch(BB->getParent());
+      |                              ~~~~~~~~~~~~~^~
+      |                                           |
+      |                                           const llvm::MachineFunction*
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:39: note:   initializing argument 1 of ‘void llvm::LoopInfoBase<N, M>::verifyBlockNumberEpoch(int) const [with BlockT = llvm::MachineBasicBlock; LoopT = llvm::MachineLoop]’
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ~~~~~~~~^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In instantiation of ‘void llvm::LoopInfoBase<N, M>::removeBlock(BlockT*) [with BlockT = llvm::MachineBasicBlock; LoopT = llvm::MachineLoop]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineLoopInfo.cpp:31:22:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:751:43: error: invalid conversion from ‘llvm::MachineFunction*’ to ‘int’ [-fpermissive]
+  751 |       verifyBlockNumberEpoch(BB->getParent());
+      |                              ~~~~~~~~~~~~~^~
+      |                                           |
+      |                                           llvm::MachineFunction*
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:39: note:   initializing argument 1 of ‘void llvm::LoopInfoBase<N, M>::verifyBlockNumberEpoch(int) const [with BlockT = llvm::MachineBasicBlock; LoopT = llvm::MachineLoop]’
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ~~~~~~~~^~~~~~~~
+[1033/2770] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLICM.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLICM.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLICM.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLICM.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLICM.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineLICM.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineLICM.cpp:32:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:31: error: ‘ParentT’ has not been declared
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In member function ‘void llvm::LoopInfoBase<N, M>::releaseMemory()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:576:5: error: ‘ParentPtr’ was not declared in this scope
+  576 |     ParentPtr = nullptr;
+      |     ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In instantiation of ‘LoopT* llvm::LoopInfoBase<N, M>::getLoopFor(const BlockT*) const [with BlockT = llvm::MachineBasicBlock; LoopT = llvm::MachineLoop]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineLICM.cpp:594:44:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:644:43: error: invalid conversion from ‘const llvm::MachineFunction*’ to ‘int’ [-fpermissive]
+  644 |       verifyBlockNumberEpoch(BB->getParent());
+      |                              ~~~~~~~~~~~~~^~
+      |                                           |
+      |                                           const llvm::MachineFunction*
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:39: note:   initializing argument 1 of ‘void llvm::LoopInfoBase<N, M>::verifyBlockNumberEpoch(int) const [with BlockT = llvm::MachineBasicBlock; LoopT = llvm::MachineLoop]’
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ~~~~~~~~^~~~~~~~
+[1034/2770] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBasicBlock.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBasicBlock.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBasicBlock.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBasicBlock.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBasicBlock.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineBasicBlock.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineBasicBlock.cpp:23:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:31: error: ‘ParentT’ has not been declared
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In member function ‘void llvm::LoopInfoBase<N, M>::releaseMemory()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:576:5: error: ‘ParentPtr’ was not declared in this scope
+  576 |     ParentPtr = nullptr;
+      |     ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In instantiation of ‘LoopT* llvm::LoopInfoBase<N, M>::getLoopFor(const BlockT*) const [with BlockT = llvm::MachineBasicBlock; LoopT = llvm::MachineLoop]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineBasicBlock.cpp:1353:43:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:644:43: error: invalid conversion from ‘const llvm::MachineFunction*’ to ‘int’ [-fpermissive]
+  644 |       verifyBlockNumberEpoch(BB->getParent());
+      |                              ~~~~~~~~~~~~~^~
+      |                                           |
+      |                                           const llvm::MachineFunction*
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:39: note:   initializing argument 1 of ‘void llvm::LoopInfoBase<N, M>::verifyBlockNumberEpoch(int) const [with BlockT = llvm::MachineBasicBlock; LoopT = llvm::MachineLoop]’
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ~~~~~~~~^~~~~~~~
+[1035/2770] Building X86GenInstrInfo.inc...
+[1036/2770] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LLVMTargetMachine.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LLVMTargetMachine.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LLVMTargetMachine.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LLVMTargetMachine.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LLVMTargetMachine.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LLVMTargetMachine.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/BasicTTIImpl.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LLVMTargetMachine.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:31: error: ‘ParentT’ has not been declared
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In member function ‘void llvm::LoopInfoBase<N, M>::releaseMemory()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:576:5: error: ‘ParentPtr’ was not declared in this scope
+  576 |     ParentPtr = nullptr;
+      |     ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In instantiation of ‘LoopT* llvm::LoopInfoBase<N, M>::getLoopFor(const BlockT*) const [with BlockT = llvm::BasicBlock; LoopT = llvm::Loop]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:456:30:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:644:43: error: invalid conversion from ‘const llvm::Function*’ to ‘int’ [-fpermissive]
+  644 |       verifyBlockNumberEpoch(BB->getParent());
+      |                              ~~~~~~~~~~~~~^~
+      |                                           |
+      |                                           const llvm::Function*
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:39: note:   initializing argument 1 of ‘void llvm::LoopInfoBase<N, M>::verifyBlockNumberEpoch(int) const [with BlockT = llvm::BasicBlock; LoopT = llvm::Loop]’
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ~~~~~~~~^~~~~~~~
+[1037/2770] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:28:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:31: error: ‘ParentT’ has not been declared
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In member function ‘void llvm::LoopInfoBase<N, M>::releaseMemory()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:576:5: error: ‘ParentPtr’ was not declared in this scope
+  576 |     ParentPtr = nullptr;
+      |     ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h: In instantiation of ‘LoopT* llvm::LoopInfoBase<N, M>::getLoopFor(const BlockT*) const [with BlockT = llvm::BasicBlock; LoopT = llvm::Loop]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:456:30:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:644:43: error: invalid conversion from ‘const llvm::Function*’ to ‘int’ [-fpermissive]
+  644 |       verifyBlockNumberEpoch(BB->getParent());
+      |                              ~~~~~~~~~~~~~^~
+      |                                           |
+      |                                           const llvm::Function*
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:621:39: note:   initializing argument 1 of ‘void llvm::LoopInfoBase<N, M>::verifyBlockNumberEpoch(int) const [with BlockT = llvm::BasicBlock; LoopT = llvm::Loop]’
+  621 |   void verifyBlockNumberEpoch(ParentT BBParent) const {
+      |                               ~~~~~~~~^~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+106.64user 10.17system 0:09.18elapsed 1272%CPU (0avgtext+0avgdata 903020maxresident)k
+8inputs+878312outputs (2526major+6009139minor)pagefaults 0swaps
