@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:18995:33: error: qualified-id in declaration before ‘(’ token
+18995 | bool Sema::NeedToCaptureVariable(ValueDecl *Var, SourceLocation Loc) {
+      |                                 ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19003:38: error: qualified-id in declaration before ‘(’ token
+19003 | QualType Sema::getCapturedDeclRefType(ValueDecl *Var, SourceLocation Loc) {
+      |                                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19016:11: error: expected identifier before ‘{’ token
+19016 | namespace {
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19025:3: error: invalid declaration of member template in local class
+19025 |   template<typename RefExpr>
+      |   ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19048:77: error: a function-definition is not allowed here before ‘{’ token
+19048 |                                                       NonOdrUseReason NOUR) {
+      |                                                                             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19369:54: error: qualified-id in declaration before ‘(’ token
+19369 | ExprResult Sema::CheckLValueToRValueConversionOperand(Expr *E) {
+      |                                                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19392:41: error: qualified-id in declaration before ‘(’ token
+19392 | ExprResult Sema::ActOnConstantExpression(ExprResult Res) {
+      |                                         ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19405:33: error: qualified-id in declaration before ‘(’ token
+19405 | void Sema::CleanupVarDeclMarking() {
+      |                                 ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19431:61: error: a function-definition is not allowed here before ‘{’ token
+19431 |                                    ValueDecl *Var, Expr *E) {
+      |                                                             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19464:65: error: a function-definition is not allowed here before ‘{’ token
+19464 |     llvm::DenseMap<const VarDecl *, int> &RefsMinusAssignments) {
+      |                                                                 ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19634:67: error: a function-definition is not allowed here before ‘{’ token
+19634 |                                         BindingDecl *BD, Expr *E) {
+      |                                                                   ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19653:34: error: qualified-id in declaration before ‘(’ token
+19653 | void Sema::MarkVariableReferenced(SourceLocation Loc, VarDecl *Var) {
+      |                                  ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19663:43: error: a function-definition is not allowed here before ‘{’ token
+19663 |     Sema &SemaRef, ValueDecl *D, Expr *E) {
+      |                                           ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19710:80: error: a function-definition is not allowed here before ‘{’ token
+19710 |                    llvm::DenseMap<const VarDecl *, int> &RefsMinusAssignments) {
+      |                                                                                ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19753:33: error: qualified-id in declaration before ‘(’ token
+19753 | void Sema::MarkDeclRefReferenced(DeclRefExpr *E, const Expr *Base) {
+      |                                 ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19775:32: error: qualified-id in declaration before ‘(’ token
+19775 | void Sema::MarkMemberReferenced(MemberExpr *E) {
+      |                                ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19794:42: error: qualified-id in declaration before ‘(’ token
+19794 | void Sema::MarkFunctionParmPackReferenced(FunctionParmPackExpr *E) {
+      |                                          ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19804:33: error: qualified-id in declaration before ‘(’ token
+19804 | void Sema::MarkAnyDeclReferenced(SourceLocation Loc, Decl *D,
+      |                                 ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19819:11: error: expected identifier before ‘{’ token
+19819 | namespace {
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19840:6: error: ‘MarkReferencedDecls’ has not been declared
+19840 | bool MarkReferencedDecls::TraverseTemplateArgument(
+      |      ^~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19840:51: error: qualified-id in declaration before ‘(’ token
+19840 | bool MarkReferencedDecls::TraverseTemplateArgument(
+      |                                                   ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19857:44: error: qualified-id in declaration before ‘(’ token
+19857 | void Sema::MarkDeclarationsReferencedInType(SourceLocation Loc, QualType T) {
+      |                                            ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19862:11: error: expected identifier before ‘{’ token
+19862 | namespace {
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19911:44: error: qualified-id in declaration before ‘(’ token
+19911 | void Sema::MarkDeclarationsReferencedInExpr(Expr *E,
+      |                                            ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19922:27: error: qualified-id in declaration before ‘(’ token
+19922 | bool Sema::DiagIfReachable(SourceLocation Loc, ArrayRef<const Stmt *> Stmts,
+      |                           ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19965:31: error: qualified-id in declaration before ‘(’ token
+19965 | bool Sema::DiagRuntimeBehavior(SourceLocation Loc, ArrayRef<const Stmt*> Stmts,
+      |                               ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19992:31: error: qualified-id in declaration before ‘(’ token
+19992 | bool Sema::DiagRuntimeBehavior(SourceLocation Loc, const Stmt *Statement,
+      |                               ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:19998:31: error: qualified-id in declaration before ‘(’ token
+19998 | bool Sema::CheckCallReturnType(QualType ReturnType, SourceLocation Loc,
+      |                               ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20041:41: error: qualified-id in declaration before ‘(’ token
+20041 | void Sema::DiagnoseAssignmentAsCondition(Expr *E) {
+      |                                         ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20097:43: error: qualified-id in declaration before ‘(’ token
+20097 | void Sema::DiagnoseEqualityWithExtraParens(ParenExpr *ParenE) {
+      |                                           ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20124:39: error: qualified-id in declaration before ‘(’ token
+20124 | ExprResult Sema::CheckBooleanCondition(SourceLocation Loc, Expr *E,
+      |                                       ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20155:43: error: qualified-id in declaration before ‘(’ token
+20155 | Sema::ConditionResult Sema::ActOnCondition(Scope *S, SourceLocation Loc,
+      |                                           ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20192:11: error: expected identifier before ‘{’ token
+20192 | namespace {
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20214:5: error: invalid declaration of member template in local class
+20214 |     template <class T> ExprResult rebuildSugarExpr(T *E) {
+      |     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp: In member function ‘clang::ExprResult clang::Sema::BuildCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, clang::MultiExprArg, clang::SourceLocation, clang::Expr*, bool, bool)::RebuildUnknownAnyFunction::VisitParenExpr(clang::ParenExpr*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20227:14: error: ‘rebuildSugarExpr’ was not declared in this scope
+20227 |       return rebuildSugarExpr(E);
+      |              ^~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp: In member function ‘clang::ExprResult clang::Sema::BuildCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, clang::MultiExprArg, clang::SourceLocation, clang::Expr*, bool, bool)::RebuildUnknownAnyFunction::VisitUnaryExtension(clang::UnaryOperator*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20231:14: error: ‘rebuildSugarExpr’ was not declared in this scope
+20231 |       return rebuildSugarExpr(E);
+      |              ^~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp: In member function ‘clang::ExprResult clang::Sema::BuildCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, clang::MultiExprArg, clang::SourceLocation, clang::Expr*, bool, bool)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20272:74: error: a function-definition is not allowed here before ‘{’ token
+20272 | static ExprResult rebuildUnknownAnyFunction(Sema &S, Expr *FunctionExpr) {
+      |                                                                          ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20278:11: error: expected identifier before ‘{’ token
+20278 | namespace {
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20309:5: error: invalid declaration of member template in local class
+20309 |     template <class T> ExprResult rebuildSugarExpr(T *E) {
+      |     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp: In member function ‘clang::ExprResult clang::Sema::BuildCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, clang::MultiExprArg, clang::SourceLocation, clang::Expr*, bool, bool)::RebuildUnknownAnyExpr::VisitParenExpr(clang::ParenExpr*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20321:14: error: ‘rebuildSugarExpr’ was not declared in this scope
+20321 |       return rebuildSugarExpr(E);
+      |              ^~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp: In member function ‘clang::ExprResult clang::Sema::BuildCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, clang::MultiExprArg, clang::SourceLocation, clang::Expr*, bool, bool)::RebuildUnknownAnyExpr::VisitUnaryExtension(clang::UnaryOperator*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20325:14: error: ‘rebuildSugarExpr’ was not declared in this scope
+20325 |       return rebuildSugarExpr(E);
+      |              ^~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp: In member function ‘clang::ExprResult clang::Sema::BuildCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, clang::MultiExprArg, clang::SourceLocation, clang::Expr*, bool, bool)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20369:12: error: ‘RebuildUnknownAnyExpr’ has not been declared
+20369 | ExprResult RebuildUnknownAnyExpr::VisitCallExpr(CallExpr *E) {
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20369:48: error: qualified-id in declaration before ‘(’ token
+20369 | ExprResult RebuildUnknownAnyExpr::VisitCallExpr(CallExpr *E) {
+      |                                                ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20471:12: error: ‘RebuildUnknownAnyExpr’ has not been declared
+20471 | ExprResult RebuildUnknownAnyExpr::VisitObjCMessageExpr(ObjCMessageExpr *E) {
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20471:55: error: qualified-id in declaration before ‘(’ token
+20471 | ExprResult RebuildUnknownAnyExpr::VisitObjCMessageExpr(ObjCMessageExpr *E) {
+      |                                                       ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20492:12: error: ‘RebuildUnknownAnyExpr’ has not been declared
+20492 | ExprResult RebuildUnknownAnyExpr::VisitImplicitCastExpr(ImplicitCastExpr *E) {
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20492:56: error: qualified-id in declaration before ‘(’ token
+20492 | ExprResult RebuildUnknownAnyExpr::VisitImplicitCastExpr(ImplicitCastExpr *E) {
+      |                                                        ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20529:12: error: ‘RebuildUnknownAnyExpr’ has not been declared
+20529 | ExprResult RebuildUnknownAnyExpr::resolveDecl(Expr *E, ValueDecl *VD) {
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20529:46: error: qualified-id in declaration before ‘(’ token
+20529 | ExprResult RebuildUnknownAnyExpr::resolveDecl(Expr *E, ValueDecl *VD) {
+      |                                              ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20618:37: error: qualified-id in declaration before ‘(’ token
+20618 | ExprResult Sema::checkUnknownAnyCast(SourceRange TypeRange, QualType CastType,
+      |                                     ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20638:39: error: qualified-id in declaration before ‘(’ token
+20638 | ExprResult Sema::forceUnknownAnyToType(Expr *E, QualType ToType) {
+      |                                       ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20642:36: error: qualified-id in declaration before ‘(’ token
+20642 | ExprResult Sema::checkUnknownAnyArg(SourceLocation callLoc,
+      |                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20665:60: error: a function-definition is not allowed here before ‘{’ token
+20665 | static ExprResult diagnoseUnknownAnyExpr(Sema &S, Expr *E) {
+      |                                                            ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20708:38: error: qualified-id in declaration before ‘(’ token
+20708 | ExprResult Sema::CheckPlaceholderExpr(Expr *E) {
+      |                                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20897:31: error: qualified-id in declaration before ‘(’ token
+20897 | bool Sema::CheckCaseExpression(Expr *E) {
+      |                               ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20905:36: error: qualified-id in declaration before ‘(’ token
+20905 | ExprResult Sema::CreateRecoveryExpr(SourceLocation Begin, SourceLocation End,
+      |                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20919:2: error: expected ‘}’ at end of input
+20919 | }
+      |  ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:6403:52: note: to match this ‘{’
+ 6403 |                                bool AllowRecovery) {
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:3200:13: warning: ‘void diagnoseUncapturableValueReferenceOrBinding(clang::Sema&, clang::SourceLocation, clang::ValueDecl*)’ declared ‘static’ but never defined [-Wunused-function]
+ 3200 | static void diagnoseUncapturableValueReferenceOrBinding(Sema &S,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:6053:19: warning: ‘clang::ExprResult rebuildUnknownAnyFunction(clang::Sema&, clang::Expr*)’ declared ‘static’ but never defined [-Wunused-function]
+ 6053 | static ExprResult rebuildUnknownAnyFunction(Sema &S, Expr *fn);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp: In member function ‘clang::ExprResult clang::Sema::BuildCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, clang::MultiExprArg, clang::SourceLocation, clang::Expr*, bool, bool)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:20919:2: warning: control reaches end of non-void function [-Wreturn-type]
+20919 | }
+      |  ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:6053:19: warning: ‘clang::ExprResult rebuildUnknownAnyFunction(clang::Sema&, clang::Expr*)’ used but never defined
+ 6053 | static ExprResult rebuildUnknownAnyFunction(Sema &S, Expr *fn);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:4751:13: warning: ‘bool checkArithmeticOnObjCPointer(clang::Sema&, clang::SourceLocation, clang::Expr*)’ defined but not used [-Wunused-function]
+ 4751 | static bool checkArithmeticOnObjCPointer(Sema &S,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+125.40user 19.34system 0:14.08elapsed 1027%CPU (0avgtext+0avgdata 1221408maxresident)k
+0inputs+5066328outputs (38782major+8791980minor)pagefaults 0swaps
