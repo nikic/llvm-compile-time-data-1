@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2432/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaHexagon.cpp.o
+[2433/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaInit.cpp.o
+[2434/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLambda.cpp.o
+[2435/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprMember.cpp.o
+[2436/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLoongArch.cpp.o
+[2437/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaM68k.cpp.o
+[2438/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaMIPS.cpp.o
+[2439/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaMSP430.cpp.o
+[2440/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprObjC.cpp.o
+[2441/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaNVPTX.cpp.o
+[2442/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLookup.cpp.o
+[2443/2772] Linking CXX executable bin/lld
+[2444/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaObjC.cpp.o
+[2445/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaModule.cpp.o
+[2446/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenACC.cpp.o
+[2447/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenCL.cpp.o
+[2448/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOverload.cpp.o
+[2449/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaPPC.cpp.o
+[2450/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaObjCProperty.cpp.o
+[2451/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaPseudoObject.cpp.o
+[2452/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAvailability.cpp.o
+FAILED: tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAvailability.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAvailability.cpp.o -MF tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAvailability.cpp.o.d -o tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAvailability.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp: In member function ‘virtual bool {anonymous}::DiagnoseUnguardedAvailability::VisitObjCMessageExpr(clang::ObjCMessageExpr*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:806:32: error: invalid use of incomplete type ‘class clang::ObjCMessageExpr’
+  806 |     if (ObjCMethodDecl *D = Msg->getMethodDecl()) {
+      |                                ^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:13:
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:232:17: note: forward declaration of ‘class clang::ObjCMessageExpr’
+  232 | OBJCMESSAGEEXPR(ObjCMessageExpr, Expr)
+      |                 ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTFwd.h:23:35: note: in definition of macro ‘STMT’
+   23 | #define STMT(DERIVED, BASE) class DERIVED;
+      |                                   ^~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:38:28: note: in expansion of macro ‘VALUESTMT’
+   38 | #  define EXPR(Type, Base) VALUESTMT(Type, Base)
+      |                            ^~~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:230:39: note: in expansion of macro ‘EXPR’
+  230 | #  define OBJCMESSAGEEXPR(Type, Base) EXPR(Type, Base)
+      |                                       ^~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:232:1: note: in expansion of macro ‘OBJCMESSAGEEXPR’
+  232 | OBJCMESSAGEEXPR(ObjCMessageExpr, Expr)
+      | ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:808:32: error: invalid use of incomplete type ‘class clang::ObjCMessageExpr’
+  808 |       QualType ReceiverTy = Msg->getClassReceiver();
+      |                                ^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:13:
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:232:17: note: forward declaration of ‘class clang::ObjCMessageExpr’
+  232 | OBJCMESSAGEEXPR(ObjCMessageExpr, Expr)
+      |                 ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTFwd.h:23:35: note: in definition of macro ‘STMT’
+   23 | #define STMT(DERIVED, BASE) class DERIVED;
+      |                                   ^~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:38:28: note: in expansion of macro ‘VALUESTMT’
+   38 | #  define EXPR(Type, Base) VALUESTMT(Type, Base)
+      |                            ^~~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:230:39: note: in expansion of macro ‘EXPR’
+  230 | #  define OBJCMESSAGEEXPR(Type, Base) EXPR(Type, Base)
+      |                                       ^~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:232:1: note: in expansion of macro ‘OBJCMESSAGEEXPR’
+  232 | OBJCMESSAGEEXPR(ObjCMessageExpr, Expr)
+      | ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:813:29: error: invalid use of incomplete type ‘class clang::ObjCMessageExpr’
+  813 |           D, SourceRange(Msg->getSelectorStartLoc(), Msg->getEndLoc()), ID);
+      |                             ^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:13:
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:232:17: note: forward declaration of ‘class clang::ObjCMessageExpr’
+  232 | OBJCMESSAGEEXPR(ObjCMessageExpr, Expr)
+      |                 ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTFwd.h:23:35: note: in definition of macro ‘STMT’
+   23 | #define STMT(DERIVED, BASE) class DERIVED;
+      |                                   ^~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:38:28: note: in expansion of macro ‘VALUESTMT’
+   38 | #  define EXPR(Type, Base) VALUESTMT(Type, Base)
+      |                            ^~~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:230:39: note: in expansion of macro ‘EXPR’
+  230 | #  define OBJCMESSAGEEXPR(Type, Base) EXPR(Type, Base)
+      |                                       ^~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:232:1: note: in expansion of macro ‘OBJCMESSAGEEXPR’
+  232 | OBJCMESSAGEEXPR(ObjCMessageExpr, Expr)
+      | ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:813:57: error: invalid use of incomplete type ‘class clang::ObjCMessageExpr’
+  813 |           D, SourceRange(Msg->getSelectorStartLoc(), Msg->getEndLoc()), ID);
+      |                                                         ^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:13:
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:232:17: note: forward declaration of ‘class clang::ObjCMessageExpr’
+  232 | OBJCMESSAGEEXPR(ObjCMessageExpr, Expr)
+      |                 ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTFwd.h:23:35: note: in definition of macro ‘STMT’
+   23 | #define STMT(DERIVED, BASE) class DERIVED;
+      |                                   ^~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:38:28: note: in expansion of macro ‘VALUESTMT’
+   38 | #  define EXPR(Type, Base) VALUESTMT(Type, Base)
+      |                            ^~~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:230:39: note: in expansion of macro ‘EXPR’
+  230 | #  define OBJCMESSAGEEXPR(Type, Base) EXPR(Type, Base)
+      |                                       ^~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:232:1: note: in expansion of macro ‘OBJCMESSAGEEXPR’
+  232 | OBJCMESSAGEEXPR(ObjCMessageExpr, Expr)
+      | ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp: In member function ‘virtual bool {anonymous}::DiagnoseUnguardedAvailability::VisitObjCAvailabilityCheckExpr(clang::ObjCAvailabilityCheckExpr*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:831:19: error: invalid use of incomplete type ‘class clang::ObjCAvailabilityCheckExpr’
+  831 |     SemaRef.Diag(E->getBeginLoc(), diag::warn_at_available_unchecked_use)
+      |                   ^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:13:
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:280:27: note: forward declaration of ‘class clang::ObjCAvailabilityCheckExpr’
+  280 | OBJCAVAILABILITYCHECKEXPR(ObjCAvailabilityCheckExpr, Expr)
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTFwd.h:23:35: note: in definition of macro ‘STMT’
+   23 | #define STMT(DERIVED, BASE) class DERIVED;
+      |                                   ^~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:38:28: note: in expansion of macro ‘VALUESTMT’
+   38 | #  define EXPR(Type, Base) VALUESTMT(Type, Base)
+      |                            ^~~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:278:49: note: in expansion of macro ‘EXPR’
+  278 | #  define OBJCAVAILABILITYCHECKEXPR(Type, Base) EXPR(Type, Base)
+      |                                                 ^~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:280:1: note: in expansion of macro ‘OBJCAVAILABILITYCHECKEXPR’
+  280 | OBJCAVAILABILITYCHECKEXPR(ObjCAvailabilityCheckExpr, Expr)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp: In member function ‘virtual bool {anonymous}::DiagnoseUnguardedAvailability::TraverseIfStmt(clang::IfStmt*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:994:20: error: invalid use of incomplete type ‘class clang::ObjCAvailabilityCheckExpr’
+  994 |     CondVersion = E->getVersion();
+      |                    ^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:13:
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:280:27: note: forward declaration of ‘class clang::ObjCAvailabilityCheckExpr’
+  280 | OBJCAVAILABILITYCHECKEXPR(ObjCAvailabilityCheckExpr, Expr)
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTFwd.h:23:35: note: in definition of macro ‘STMT’
+   23 | #define STMT(DERIVED, BASE) class DERIVED;
+      |                                   ^~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:38:28: note: in expansion of macro ‘VALUESTMT’
+   38 | #  define EXPR(Type, Base) VALUESTMT(Type, Base)
+      |                            ^~~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:278:49: note: in expansion of macro ‘EXPR’
+  278 | #  define OBJCAVAILABILITYCHECKEXPR(Type, Base) EXPR(Type, Base)
+      |                                                 ^~~~
+/tmp/llvm-project-build-stage1/tools/clang/include/clang/AST/StmtNodes.inc:280:1: note: in expansion of macro ‘OBJCAVAILABILITYCHECKEXPR’
+  280 | OBJCAVAILABILITYCHECKEXPR(ObjCAvailabilityCheckExpr, Expr)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/AttrIterator.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h: In instantiation of ‘static bool llvm::isa_impl<To, From, Enabler>::doit(const From&) [with To = clang::ObjCAvailabilityCheckExpr; From = clang::Expr; Enabler = void]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:110:36:   required from ‘static bool llvm::isa_impl_cl<To, const From*>::doit(const From*) [with To = clang::ObjCAvailabilityCheckExpr; From = clang::Expr]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:137:41:   required from ‘static bool llvm::isa_impl_wrap<To, FromTy, FromTy>::doit(const FromTy&) [with To = clang::ObjCAvailabilityCheckExpr; FromTy = const clang::Expr*]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:129:13:   required from ‘static bool llvm::isa_impl_wrap<To, From, SimpleFrom>::doit(const From&) [with To = clang::ObjCAvailabilityCheckExpr; From = clang::Expr* const; SimpleFrom = const clang::Expr*]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:257:62:   required from ‘static bool llvm::CastIsPossible<To, From, Enable>::isPossible(const From&) [with To = clang::ObjCAvailabilityCheckExpr; From = clang::Expr*; Enable = void]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:493:26:   required from ‘static llvm::CastInfo<To, From, Enable>::CastReturnType llvm::CastInfo<To, From, Enable>::doCastIfPossible(const From&) [with To = clang::ObjCAvailabilityCheckExpr; From = clang::Expr*; Enable = void; llvm::CastInfo<To, From, Enable>::CastReturnType = clang::ObjCAvailabilityCheckExpr*]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:663:48:   required from ‘decltype(auto) llvm::dyn_cast(From*) [with To = clang::ObjCAvailabilityCheckExpr; From = clang::Expr]’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:993:52:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:64:64: error: incomplete type ‘clang::ObjCAvailabilityCheckExpr’ used in nested name specifier
+   64 |   static inline bool doit(const From &Val) { return To::classof(&Val); }
+      |                                                     ~~~~~~~~~~~^~~~~~
+[2453/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaRISCV.cpp.o
+[2454/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaStmtAsm.cpp.o
+[2455/2772] Building CXX object tools/clang/lib/ASTMatchers/CMakeFiles/obj.clangASTMatchers.dir/GtestMatchers.cpp.o
+[2456/2772] Building CXX object tools/clang/lib/ASTMatchers/CMakeFiles/obj.clangASTMatchers.dir/ASTMatchFinder.cpp.o
+[2457/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/AnalysisBasedWarnings.cpp.o
+[2458/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaHLSL.cpp.o
+[2459/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclObjC.cpp.o
+[2460/2772] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DynamicRecursiveASTVisitor.cpp.o
+[2461/2772] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDebugInfo.cpp.o
+[2462/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCodeComplete.cpp.o
+[2463/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclAttr.cpp.o
+[2464/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaConcept.cpp.o
+[2465/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaStmt.cpp.o
+[2466/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclCXX.cpp.o
+[2467/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprCXX.cpp.o
+[2468/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o
+[2469/2772] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenMP.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/APNumericStorage.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaOpenMP.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:14:
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:23:21,
+    inlined from ‘bool checkOMPArraySectionConstantForReduction(clang::ASTContext&, const clang::ArraySectionExpr*, bool&, llvm::SmallVectorImpl<llvm::APSInt>&)’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:18257:45,
+    inlined from ‘bool actOnOMPReductionKindClause(clang::Sema&, {anonymous}::DSAStackTy*, clang::OpenMPClauseKind, llvm::ArrayRef<clang::Expr*>, clang::SourceLocation, clang::SourceLocation, clang::SourceLocation, clang::SourceLocation, clang::CXXScopeSpec&, const clang::DeclarationNameInfo&, llvm::ArrayRef<clang::Expr*>, {anonymous}::ReductionData&)’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:18634:68:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:170:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  170 |       delete[] U.pVal;
+      |                  ^~~~
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:23:21,
+    inlined from ‘bool checkOMPArraySectionConstantForReduction(clang::ASTContext&, const clang::ArraySectionExpr*, bool&, llvm::SmallVectorImpl<llvm::APSInt>&)’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:18276:45,
+    inlined from ‘bool actOnOMPReductionKindClause(clang::Sema&, {anonymous}::DSAStackTy*, clang::OpenMPClauseKind, llvm::ArrayRef<clang::Expr*>, clang::SourceLocation, clang::SourceLocation, clang::SourceLocation, clang::SourceLocation, clang::CXXScopeSpec&, const clang::DeclarationNameInfo&, llvm::ArrayRef<clang::Expr*>, {anonymous}::ReductionData&)’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:18634:68:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:170:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  170 |       delete[] U.pVal;
+      |                  ^~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+324.01user 21.95system 0:45.16elapsed 766%CPU (0avgtext+0avgdata 1915792maxresident)k
+0inputs+3699944outputs (38018major+11999457minor)pagefaults 0swaps
