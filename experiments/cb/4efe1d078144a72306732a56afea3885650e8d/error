@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2497/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DiscriminateMemOps.cpp.o
+[2498/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CodeGenPassBuilder.cpp.o
+[2499/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerTileCopy.cpp.o
+[2500/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TileConfig.cpp.o
+[2501/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AsmPrinter.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSectionMachO.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86AsmPrinter.cpp:43:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/BinaryFormat/MachO.h: In function ‘unsigned int llvm::MachO::CPU_SUBTYPE_ARM64E_WITH_PTRAUTH_VERSION(unsigned int, bool)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/BinaryFormat/MachO.h:1664: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+ 1664 |          (PtrAuthKernelABIVersion ? CPU_SUBTYPE_ARM64E_KERNEL_PTRAUTH_ABI_MASK
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1665 |                                   : 0) |
+      | 
+[2502/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastPreTileConfig.cpp.o
+[2503/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ArgumentStackSlotRebase.cpp.o
+[2504/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastTileConfig.cpp.o
+[2505/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupLEAs.cpp.o
+[2506/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastISel.cpp.o
+[2507/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupBWInsts.cpp.o
+[2508/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupInstTuning.cpp.o
+[2509/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AvoidStoreForwardingBlocks.cpp.o
+[2510/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PreTileConfig.cpp.o
+[2511/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ExpandPseudo.cpp.o
+[2512/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DynAllocaExpander.cpp.o
+[2513/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FloatingPoint.cpp.o
+[2514/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupVectorConstants.cpp.o
+[2515/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FlagsCopyLowering.cpp.o
+[2516/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86IndirectThunks.cpp.o
+[2517/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FrameLowering.cpp.o
+[2518/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86IndirectBranchTracking.cpp.o
+[2519/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstCombineIntrinsic.cpp.o
+[2520/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelLoweringCall.cpp.o
+[2521/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelLowering.cpp.o
+[2522/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InterleavedAccess.cpp.o
+[2523/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstrFoldTables.cpp.o
+[2524/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelDAGToDAG.cpp.o
+[2525/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupSetCC.cpp.o
+[2526/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MachineFunctionInfo.cpp.o
+[2527/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstrFMA3Info.cpp.o
+[2528/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstrInfo.cpp.o
+[2529/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ShuffleDecodeConstantPool.cpp.o
+[2530/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InsertPrefetch.cpp.o
+[2531/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CompressEVEX.cpp.o
+[2532/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LoadValueInjectionLoadHardening.cpp.o
+[2533/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LoadValueInjectionRetHardening.cpp.o
+[2534/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MCInstLower.cpp.o
+[2535/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86OptimizeLEAs.cpp.o
+[2536/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86RegisterInfo.cpp.o
+[2537/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SelectionDAGInfo.cpp.o
+[2538/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PartialReduction.cpp.o
+[2539/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MacroFusion.cpp.o
+[2540/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PadShortFunction.cpp.o
+[2541/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SpeculativeLoadHardening.cpp.o
+[2542/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetObjectFile.cpp.o
+[2543/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86WinEHState.cpp.o
+[2544/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ReturnThunks.cpp.o
+[2545/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SpeculativeExecutionSideEffectSuppression.cpp.o
+[2546/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86Subtarget.cpp.o
+[2547/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetMachine.cpp.o
+[2548/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetTransformInfo.cpp.o
+[2549/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86VZeroUpper.cpp.o
+[2550/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InsertWait.cpp.o
+[2551/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86WinFixupBufferSecurityCheck.cpp.o
+[2552/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86CallLowering.cpp.o
+[2553/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86RegisterBankInfo.cpp.o
+[2554/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86LegalizerInfo.cpp.o
+[2555/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ShuffleDecode.cpp.o
+[2556/2776] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86InstructionSelector.cpp.o
+[2557/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86IntelInstPrinter.cpp.o
+[2558/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86InstPrinterCommon.cpp.o
+[2559/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCAsmInfo.cpp.o
+[2560/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86EncodingOptimization.cpp.o
+[2561/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86InstComments.cpp.o
+[2562/2776] Building CXX object lib/Target/X86/TargetInfo/CMakeFiles/LLVMX86Info.dir/X86TargetInfo.cpp.o
+[2563/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ATTInstPrinter.cpp.o
+[2564/2776] Building CXX object lib/Target/X86/AsmParser/CMakeFiles/LLVMX86AsmParser.dir/X86AsmParser.cpp.o
+[2565/2776] Building CXX object lib/Target/X86/Disassembler/CMakeFiles/LLVMX86Disassembler.dir/X86Disassembler.cpp.o
+[2566/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86AsmBackend.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/MCTargetDesc/X86AsmBackend.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/BinaryFormat/MachO.h: In function ‘unsigned int llvm::MachO::CPU_SUBTYPE_ARM64E_WITH_PTRAUTH_VERSION(unsigned int, bool)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/BinaryFormat/MachO.h:1664:35: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+ 1664 |          (PtrAuthKernelABIVersion ? CPU_SUBTYPE_ARM64E_KERNEL_PTRAUTH_ABI_MASK
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1665 |                                   : 0) |
+      |                                   ~~~
+[2567/2776] Building CXX object tools/llvm-ar/CMakeFiles/llvm-ar.dir/llvm-ar-driver.cpp.o
+[2568/2776] Building CXX object tools/llvm-ar/CMakeFiles/llvm-ar.dir/llvm-ar.cpp.o
+[2569/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCCodeEmitter.cpp.o
+[2570/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MnemonicTables.cpp.o
+[2571/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ELFObjectWriter.cpp.o
+[2572/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFObjectWriter.cpp.o
+[2573/2776] Building CXX object tools/gold/CMakeFiles/LLVMgold.dir/gold-plugin.cpp.o
+[2574/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MachObjectWriter.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/MCTargetDesc/X86MachObjectWriter.cpp:12:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/BinaryFormat/MachO.h: In function ‘unsigned int llvm::MachO::CPU_SUBTYPE_ARM64E_WITH_PTRAUTH_VERSION(unsigned int, bool)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/BinaryFormat/MachO.h:1664:35: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+ 1664 |          (PtrAuthKernelABIVersion ? CPU_SUBTYPE_ARM64E_KERNEL_PTRAUTH_ABI_MASK
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1665 |                                   : 0) |
+      |                                   ~~~
+[2575/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFStreamer.cpp.o
+[2576/2776] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/clang-driver.cpp.o
+[2577/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCTargetDesc.cpp.o
+[2578/2776] Linking CXX static library lib/libLLVMX86Info.a
+[2579/2776] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFTargetStreamer.cpp.o
+[2580/2776] Linking CXX static library lib/libLLVMX86Desc.a
+[2581/2776] Linking CXX static library lib/libLLVMX86Disassembler.a
+[2582/2776] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1gen_reproducer_main.cpp.o
+[2583/2776] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInvocation.cpp.o
+[2584/2776] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1as_main.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSectionMachO.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/tools/driver/cc1as_main.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/BinaryFormat/MachO.h: In function ‘unsigned int llvm::MachO::CPU_SUBTYPE_ARM64E_WITH_PTRAUTH_VERSION(unsigned int, bool)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/BinaryFormat/MachO.h:1664:35: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+ 1664 |          (PtrAuthKernelABIVersion ? CPU_SUBTYPE_ARM64E_KERNEL_PTRAUTH_ABI_MASK
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1665 |                                   : 0) |
+      |                                   ~~~
+[2585/2776] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2586/2776] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/driver.cpp.o
+[2587/2776] Linking CXX static library lib/libLLVMMCParser.a
+[2588/2776] Linking CXX static library lib/libLLVMX86AsmParser.a
+[2589/2776] Linking CXX static library lib/libLLVMObject.a
+[2590/2776] Linking CXX static library lib/libLLVMDlltoolDriver.a
+[2591/2776] Linking CXX static library lib/libLLVMLibDriver.a
+[2592/2776] Linking CXX static library lib/libLLVMDebugInfoDWARF.a
+[2593/2776] Linking CXX static library lib/libLLVMTextAPIBinaryReader.a
+[2594/2776] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/HIPUtility.cpp.o
+[2595/2776] Linking CXX static library lib/libLLVMDebugInfoPDB.a
+[2596/2776] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1_main.cpp.o
+[2597/2776] Linking CXX static library lib/libLLVMSymbolize.a
+[2598/2776] Linking CXX static library lib/libLLVMProfileData.a
+[2599/2776] Linking CXX static library lib/libLLVMCoverage.a
+[2600/2776] Linking CXX static library lib/libLLVMAnalysis.a
+[2601/2776] Linking CXX executable bin/llvm-ar
+[2602/2776] Linking CXX static library lib/libLLVMFrontendDriver.a
+[2603/2776] Linking CXX static library lib/libLLVMIRPrinter.a
+[2604/2776] Generating ../../bin/llvm-ranlib
+[2605/2776] Linking CXX static library lib/libLLVMTarget.a
+[2606/2776] Linking CXX static library lib/libLLVMBitWriter.a
+[2607/2776] Linking CXX static library lib/libLLVMTransformUtils.a
+[2608/2776] Linking CXX static library lib/libLLVMFrontendOffloading.a
+[2609/2776] Linking CXX static library lib/libLLVMAggressiveInstCombine.a
+[2610/2776] Linking CXX static library lib/libLLVMLinker.a
+[2611/2776] Linking CXX static library lib/libLLVMObjCARCOpts.a
+[2612/2776] Linking CXX static library lib/libLLVMHipStdPar.a
+[2613/2776] Linking CXX static library lib/libLLVMInstCombine.a
+[2614/2776] Linking CXX static library lib/libLLVMInstrumentation.a
+[2615/2776] Linking CXX static library lib/libLLVMScalarOpts.a
+[2616/2776] Linking CXX static library lib/libLLVMFrontendOpenMP.a
+[2617/2776] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -DHAS_LOGF128 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:7249:73: error: expected ‘{’ before ‘q’
+ 7249 |   auto GetInstructionForCost = [](const VPRecipeBase *R) -> Instruction q {
+      |                                                                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:7249:73: warning: no return statement in function returning non-void [-Wreturn-type]
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp: In static member function ‘static llvm::Instruction planContainsAdditionalSimplifications(llvm::VPlan&, llvm::ElementCount, llvm::VPCostContext&, llvm::Loop*, llvm::LoopVectorizationCostModel&)::<lambda(const llvm::VPRecipeBase*)>::_FUN(const llvm::VPRecipeBase*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:7249:73: error: ‘llvm::Instruction::~Instruction()’ is protected within this context
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugProgramInstruction.h:55,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Dominators.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/DomTreeUpdater.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:38,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:57:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instruction.h:161:3: note: declared protected here
+  161 |   ~Instruction(); // Use deleteValue() to delete a generic Instruction.
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp: In function ‘bool planContainsAdditionalSimplifications(llvm::VPlan&, llvm::ElementCount, llvm::VPCostContext&, llvm::Loop*, llvm::LoopVectorizationCostModel&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:7249:73: error: expected ‘,’ or ‘;’ before ‘q’
+ 7249 |   auto GetInstructionForCost = [](const VPRecipeBase *R) -> Instruction q {
+      |                                                                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:7270:50: error: ‘llvm::Instruction::~Instruction()’ is protected within this context
+ 7270 |       if (Instruction *UI = GetInstructionForCost(&R))
+      |                             ~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugProgramInstruction.h:55,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Dominators.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/DomTreeUpdater.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:38,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:57:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instruction.h:161:3: note: declared protected here
+  161 |   ~Instruction(); // Use deleteValue() to delete a generic Instruction.
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:7270:50: error: cannot convert ‘llvm::Instruction’ to ‘llvm::Instruction*’ in initialization
+ 7270 |       if (Instruction *UI = GetInstructionForCost(&R))
+      |                             ~~~~~~~~~~~~~~~~~~~~~^~~~
+      |                                                  |
+      |                                                  llvm::Instruction
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:7245:1: warning: ‘bool planContainsAdditionalSimplifications(llvm::VPlan&, llvm::ElementCount, llvm::VPCostContext&, llvm::Loop*, llvm::LoopVectorizationCostModel&)’ defined but not used [-Wunused-function]
+ 7245 | planContainsAdditionalSimplifications(VPlan &Plan, ElementCount VF,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2618/2776] Linking CXX static library lib/libclangBasic.a
+[2619/2776] Linking CXX static library lib/libLLVMCodeGen.a
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+120.74user 19.17system 0:09.99elapsed 1399%CPU (0avgtext+0avgdata 910408maxresident)k
+0inputs+3900032outputs (5623major+8327417minor)pagefaults 0swaps
