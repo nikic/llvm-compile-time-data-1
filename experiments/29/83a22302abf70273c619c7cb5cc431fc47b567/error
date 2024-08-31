@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1091/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRCanonicalizerPass.cpp.o
+[1092/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocEvictionAdvisor.cpp.o
+[1093/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocBase.cpp.o
+[1094/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRPrinter.cpp.o
+[1095/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachinePipeliner.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/WindowScheduler.h:45,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePipeliner.h:52,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachinePipeliner.cpp:32:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1096/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PrologEpilogInserter.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/PrologEpilogInserter.cpp:34:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1097/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterBank.cpp.o
+[1098/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocScore.cpp.o
+[1099/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterBankInfo.cpp.o
+[1100/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocPriorityAdvisor.cpp.o
+[1101/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RDFGraph.cpp.o
+[1102/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RDFLiveness.cpp.o
+[1103/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SafeStackLayout.cpp.o
+[1104/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterUsageInfo.cpp.o
+[1105/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterPressure.cpp.o
+[1106/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocFast.cpp.o
+[1107/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterScavenging.cpp.o
+[1108/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegUsageInfoCollector.cpp.o
+[1109/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RenameIndependentSubregs.cpp.o
+[1110/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ResetMachineFunctionPass.cpp.o
+[1111/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SanitizerBinaryMetadata.cpp.o
+[1112/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocPBQP.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/RegAllocPBQP.cpp:52:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1113/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocGreedy.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/RegAllocGreedy.cpp:47:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1114/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterCoalescer.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/RegisterCoalescer.cpp:32:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1115/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScoreboardHazardRecognizer.cpp.o
+[1116/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScheduleDAG.cpp.o
+[1117/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScheduleDAGPrinter.cpp.o
+[1118/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SlotIndexes.cpp.o
+[1119/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SpillPlacement.cpp.o
+[1120/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ShadowStackGCLowering.cpp.o
+[1121/2769] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ThinLTOBitcodeWriter.cpp.o
+[1122/2769] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoadStoreVectorizer.cpp.o
+[1123/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SjLjEHPrepare.cpp.o
+[1124/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SafeStack.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SafeStack.cpp:28:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1125/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackMapLivenessAnalysis.cpp.o
+[1126/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScheduleDAGInstrs.cpp.o
+[1127/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ShrinkWrap.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/ShrinkWrap.cpp:64:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1128/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TailDuplication.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LazyMachineBlockFrequencyInfo.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/TailDuplication.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1129/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetFrameLoweringImpl.cpp.o
+[1130/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackMaps.cpp.o
+[1131/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetSchedule.cpp.o
+[1132/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetSubtargetInfo.cpp.o
+[1133/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackFrameLayoutAnalysisPass.cpp.o
+[1134/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SelectOptimize.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SelectOptimize.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1135/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ValueTypes.cpp.o
+[1136/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackSlotColoring.cpp.o
+[1137/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SplitKit.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SplitKit.cpp:23:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1138/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SwiftErrorValueTracking.cpp.o
+[1139/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SwitchLoweringUtils.cpp.o
+[1140/2769] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/WholeProgramDevirt.cpp.o
+[1141/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetOptionsImpl.cpp.o
+[1142/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TailDuplicator.cpp.o
+[1143/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackColoring.cpp.o
+[1144/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackProtector.cpp.o
+[1145/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetInstrInfo.cpp.o
+[1146/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetPassConfig.cpp.o
+[1147/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/WasmEHPrepare.cpp.o
+[1148/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugValues/LiveDebugValues.cpp.o
+[1149/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetLoweringObjectFileImpl.cpp.o
+[1150/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/VirtRegMap.cpp.o
+[1151/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetLoweringBase.cpp.o
+[1152/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/UnreachableBlockElim.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/UnreachableBlockElim.cpp:28:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1153/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/XRayInstrumentation.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/XRayInstrumentation.cpp:23:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1154/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetRegisterInfo.cpp.o
+[1155/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/VLIWMachineScheduler.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/VLIWMachineScheduler.cpp:20:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1156/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TypePromotion.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/TypePromotion.cpp:21:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1157/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TwoAddressInstructionPass.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/TwoAddressInstructionPass.cpp:45:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1158/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/WinEHPrepare.cpp.o
+[1159/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeTypesGeneric.cpp.o
+[1160/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/WindowScheduler.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineLoopInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/WindowScheduler.h:45,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/WindowScheduler.cpp:38:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning is a GCC extension
+   62 | #warning initial allocator with stdvector? And below. Then again, how to determine size?
+      |  ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GenericLoopInfo.h:62:2: warning: #warning initial allocator with stdvector? And below. Then again, how to determine size? [-Wcpp]
+[1161/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugValues/InstrRefBasedImpl.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugValues/InstrRefBasedImpl.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugValues/InstrRefBasedImpl.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugValues/InstrRefBasedImpl.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugValues/InstrRefBasedImpl.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LiveDebugValues/InstrRefBasedImpl.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LiveDebugValues/InstrRefBasedImpl.cpp: In member function ‘void LiveDebugValues::InstrRefBasedLDV::buildMLocValueMap(llvm::MachineFunction&, LiveDebugValues::FuncValueTable&, LiveDebugValues::FuncValueTable&, llvm::SmallVectorImpl<llvm::SmallDenseMap<LiveDebugValues::LocIdx, LiveDebugValues::ValueIDNum> >&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LiveDebugValues/InstrRefBasedImpl.cpp:2669:12: error: ‘class std::priority_queue<unsigned int, std::vector<unsigned int, std::allocator<unsigned int> >, std::greater<unsigned int> >’ has no member named ‘reserve’
+ 2669 |   Worklist.reserve(BBToOrder.size());
+      |            ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LiveDebugValues/InstrRefBasedImpl.cpp:2670:11: error: ‘class std::priority_queue<unsigned int, std::vector<unsigned int, std::allocator<unsigned int> >, std::greater<unsigned int> >’ has no member named ‘reserve’
+ 2670 |   Pending.reserve(BBToOrder.size());
+      |           ^~~~~~~
+[1162/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeFloatTypes.cpp.o
+[1163/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeTypes.cpp.o
+[1164/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/ResourcePriorityQueue.cpp.o
+[1165/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/InstrEmitter.cpp.o
+[1166/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/FunctionLoweringInfo.cpp.o
+[1167/2769] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugValues/VarLocBasedImpl.cpp.o
+[1168/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/ScheduleDAGFast.cpp.o
+[1169/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/ScheduleDAGVLIW.cpp.o
+[1170/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/FastISel.cpp.o
+[1171/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeVectorOps.cpp.o
+[1172/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/ScheduleDAGSDNodes.cpp.o
+[1173/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeDAG.cpp.o
+[1174/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeIntegerTypes.cpp.o
+[1175/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/ScheduleDAGRRList.cpp.o
+[1176/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeVectorTypes.cpp.o
+[1177/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGBuilder.cpp.o
+[1178/2769] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/DAGCombiner.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+870.02user 46.37system 1:07.52elapsed 1357%CPU (0avgtext+0avgdata 1008340maxresident)k
+3400inputs+3045312outputs (2444major+27944066minor)pagefaults 0swaps
