@@ -1,0 +1,205 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+ 1147 |                   typename unordered_map<int, int>::size_type = {},
+      |                            ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:819:12: note: template is declared here
+  818 |   template<typename, unsigned = 0>
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  819 |     struct extent;
+      |            ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:832:43: error: too few template arguments for class template 'extent'
+  832 |     : public __and_<is_array<_Tp>, __not_<extent<_Tp>>>
+      |                                           ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:130:14: note: in instantiation of template class 'std::__is_array_unknown_bounds<std::allocator<std::pair<const int, int>>>' requested here
+  130 |     : public conditional<_B1::value, _B1, _B2>::type
+      |              ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:135:14: note: in instantiation of template class 'std::__or_<std::is_void<std::allocator<std::pair<const int, int>>>, std::__is_array_unknown_bounds<std::allocator<std::pair<const int, int>>>>' requested here
+  135 |     : public conditional<_B1::value, _B1, __or_<_B2, _B3, _Bn...>>::type
+      |              ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:135:14: note: in instantiation of template class 'std::__or_<std::is_function<std::allocator<std::pair<const int, int>>>, std::is_void<std::allocator<std::pair<const int, int>>>, std::__is_array_unknown_bounds<std::allocator<std::pair<const int, int>>>>' requested here
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:233:24: note: in instantiation of template class 'std::__or_<std::is_reference<std::allocator<std::pair<const int, int>>>, std::is_function<std::allocator<std::pair<const int, int>>>, std::is_void<std::allocator<std::pair<const int, int>>>, std::__is_array_unknown_bounds<std::allocator<std::pair<const int, int>>>>' requested here
+  233 |     constexpr typename __or_<
+      |                        ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:964:21: note: while substituting deduced template arguments into function template '__is_complete_or_unbounded' [with _TypeIdentity = __type_identity<allocator<pair<const int, int>>>, _NestedType = (no value)]
+  964 |       static_assert(std::__is_complete_or_unbounded(__type_identity<_Tp>{}),
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:153:14: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+  153 |     : public conditional<_B1::value, _B2, _B1>::type
+      |              ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:158:14: note: in instantiation of template class 'std::__and_<std::is_default_constructible<std::hash<int>>, std::is_default_constructible<std::allocator<std::pair<const int, int>>>>' requested here
+  158 |     : public conditional<_B1::value, __and_<_B2, _B3, _Bn...>, _B1>::type
+      |              ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/hashtable.h:58:37: note: in instantiation of template class 'std::__and_<std::is_default_constructible<std::equal_to<int>>, std::is_default_constructible<std::hash<int>>, std::is_default_constructible<std::allocator<std::pair<const int, int>>>>' requested here
+   58 |       = _Enable_default_constructor<__and_<is_default_constructible<_Equal>,
+      |                                     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/hashtable.h:199:15: note: in instantiation of template type alias '_Hashtable_enable_default_ctor' requested here
+  199 |       private _Hashtable_enable_default_ctor<_Equal, _Hash, _Alloc>
+      |               ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h:105:18: note: in instantiation of template class 'std::_Hashtable<int, std::pair<const int, int>, std::allocator<std::pair<const int, int>>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>>' requested here
+  105 |       _Hashtable _M_h;
+      |                  ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h:1147:14: note: in instantiation of template class 'std::unordered_map<int, int>' requested here
+ 1147 |                   typename unordered_map<int, int>::size_type = {},
+      |                            ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:819:12: note: template is declared here
+  818 |   template<typename, unsigned = 0>
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  819 |     struct extent;
+      |            ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:832:43: error: too few template arguments for class template 'extent'
+  832 |     : public __and_<is_array<_Tp>, __not_<extent<_Tp>>>
+      |                                           ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:130:14: note: in instantiation of template class 'std::__is_array_unknown_bounds<std::__detail::_Mod_range_hashing>' requested here
+  130 |     : public conditional<_B1::value, _B1, _B2>::type
+      |              ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:135:14: note: in instantiation of template class 'std::__or_<std::is_void<std::__detail::_Mod_range_hashing>, std::__is_array_unknown_bounds<std::__detail::_Mod_range_hashing>>' requested here
+  135 |     : public conditional<_B1::value, _B1, __or_<_B2, _B3, _Bn...>>::type
+      |              ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:135:14: note: in instantiation of template class 'std::__or_<std::is_function<std::__detail::_Mod_range_hashing>, std::is_void<std::__detail::_Mod_range_hashing>, std::__is_array_unknown_bounds<std::__detail::_Mod_range_hashing>>' requested here
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:233:24: note: in instantiation of template class 'std::__or_<std::is_reference<std::__detail::_Mod_range_hashing>, std::is_function<std::__detail::_Mod_range_hashing>, std::is_void<std::__detail::_Mod_range_hashing>, std::__is_array_unknown_bounds<std::__detail::_Mod_range_hashing>>' requested here
+  233 |     constexpr typename __or_<
+      |                        ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:1034:21: note: while substituting deduced template arguments into function template '__is_complete_or_unbounded' [with _TypeIdentity = __type_identity<_Mod_range_hashing>, _NestedType = (no value)]
+ 1034 |       static_assert(std::__is_complete_or_unbounded(__type_identity<_Tp>{}),
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/hashtable.h:340:21: note: in instantiation of template class 'std::is_nothrow_default_constructible<std::__detail::_Mod_range_hashing>' requested here
+  340 |       static_assert(is_nothrow_default_constructible<_RangeHash>::value,
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h:105:18: note: in instantiation of template class 'std::_Hashtable<int, std::pair<const int, int>, std::allocator<std::pair<const int, int>>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>>' requested here
+  105 |       _Hashtable _M_h;
+      |                  ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h:1147:14: note: in instantiation of template class 'std::unordered_map<int, int>' requested here
+ 1147 |                   typename unordered_map<int, int>::size_type = {},
+      |                            ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:819:12: note: template is declared here
+  818 |   template<typename, unsigned = 0>
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  819 |     struct extent;
+      |            ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:832:43: error: too few template arguments for class template 'extent'
+  832 |     : public __and_<is_array<_Tp>, __not_<extent<_Tp>>>
+      |                                           ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:130:14: note: in instantiation of template class 'std::__is_array_unknown_bounds<std::__detail::_Select1st>' requested here
+  130 |     : public conditional<_B1::value, _B1, _B2>::type
+      |              ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:135:14: note: in instantiation of template class 'std::__or_<std::is_void<std::__detail::_Select1st>, std::__is_array_unknown_bounds<std::__detail::_Select1st>>' requested here
+  135 |     : public conditional<_B1::value, _B1, __or_<_B2, _B3, _Bn...>>::type
+      |              ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:135:14: note: in instantiation of template class 'std::__or_<std::is_function<std::__detail::_Select1st>, std::is_void<std::__detail::_Select1st>, std::__is_array_unknown_bounds<std::__detail::_Select1st>>' requested here
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:233:24: note: in instantiation of template class 'std::__or_<std::is_reference<std::__detail::_Select1st>, std::is_function<std::__detail::_Select1st>, std::is_void<std::__detail::_Select1st>, std::__is_array_unknown_bounds<std::__detail::_Select1st>>' requested here
+  233 |     constexpr typename __or_<
+      |                        ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:1034:21: note: while substituting deduced template arguments into function template '__is_complete_or_unbounded' [with _TypeIdentity = __type_identity<_Select1st>, _NestedType = (no value)]
+ 1034 |       static_assert(std::__is_complete_or_unbounded(__type_identity<_Tp>{}),
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/hashtable.h:349:21: note: in instantiation of template class 'std::is_nothrow_default_constructible<std::__detail::_Select1st>' requested here
+  349 |       static_assert(is_nothrow_default_constructible<_ExtractKey>::value,
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h:105:18: note: in instantiation of template class 'std::_Hashtable<int, std::pair<const int, int>, std::allocator<std::pair<const int, int>>, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>>' requested here
+  105 |       _Hashtable _M_h;
+      |                  ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h:1147:14: note: in instantiation of template class 'std::unordered_map<int, int>' requested here
+ 1147 |                   typename unordered_map<int, int>::size_type = {},
+      |                            ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits:819:12: note: template is declared here
+  818 |   template<typename, unsigned = 0>
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  819 |     struct extent;
+      |            ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:52:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/algorithm:74:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_algorithm_defs.h:13:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional:61:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/unordered_map:47:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h:1242:22: error: template parameter redefines default argument
+ 1242 |            typename _Hash = hash<_Key>,
+      |                             ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h:1242:22: note: previous default template argument defined here
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h:1243:22: error: template parameter redefines default argument
+ 1243 |            typename _Pred = equal_to<_Key>,
+      |                             ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h:1243:22: note: previous default template argument defined here
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h:1244:23: error: template parameter redefines default argument
+ 1244 |            typename _Alloc = allocator<std::pair<const _Key, _Tp>>>
+      |                              ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h:1244:23: note: previous default template argument defined here
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:52:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/algorithm:74:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_algorithm_defs.h:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional:1003:68: error: too few template arguments for class template 'equal_to'
+ 1003 |   template<typename _ForwardIterator1, typename _BinaryPredicate = equal_to<>>
+      |                                                                    ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_function.h:365:12: note: template is declared here
+  364 |   template<typename _Tp>
+      |   ~~~~~~~~~~~~~~~~~~~~~~
+  365 |     struct equal_to : public binary_function<_Tp, _Tp, bool>
+      |            ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:52:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/algorithm:74:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_algorithm_defs.h:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional:1112:33: error: too few template arguments for class template 'equal_to'
+ 1112 |            typename _BinaryPredicate = equal_to<>>
+      |                                        ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_function.h:365:12: note: template is declared here
+  364 |   template<typename _Tp>
+      |   ~~~~~~~~~~~~~~~~~~~~~~
+  365 |     struct equal_to : public binary_function<_Tp, _Tp, bool>
+      |            ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:52:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/algorithm:74:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_algorithm_defs.h:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional:1112:14: error: template parameter missing a default argument
+ 1112 |            typename _BinaryPredicate = equal_to<>>
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional:1111:9: note: previous default template argument defined here
+ 1111 |              = hash<typename iterator_traits<_RAIter>::value_type>,
+      |                ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional:1168:33: error: too few template arguments for class template 'equal_to'
+ 1168 |            typename _BinaryPredicate = equal_to<>>
+      |                                        ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_function.h:365:12: note: template is declared here
+  364 |   template<typename _Tp>
+      |   ~~~~~~~~~~~~~~~~~~~~~~
+  365 |     struct equal_to : public binary_function<_Tp, _Tp, bool>
+      |            ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:52:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/algorithm:74:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_algorithm_defs.h:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional:1168:14: error: template parameter missing a default argument
+ 1168 |            typename _BinaryPredicate = equal_to<>>
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional:1167:9: note: previous default template argument defined here
+ 1167 |              = hash<typename iterator_traits<_RAIter>::value_type>,
+      |                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
