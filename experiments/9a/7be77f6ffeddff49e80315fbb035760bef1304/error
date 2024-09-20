@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2613/2778] Linking CXX static library lib/libLLVMHipStdPar.a
+[2614/2778] Linking CXX static library lib/libLLVMInstCombine.a
+[2615/2778] Linking CXX static library lib/libLLVMVectorize.a
+[2616/2778] Linking CXX static library lib/libLLVMInstrumentation.a
+[2617/2778] Linking CXX static library lib/libLLVMScalarOpts.a
+[2618/2778] Linking CXX static library lib/libLLVMFrontendOpenMP.a
+[2619/2778] Linking CXX static library lib/libLLVMipo.a
+[2620/2778] Linking CXX static library lib/libclangBasic.a
+[2621/2778] Linking CXX static library lib/libLLVMCoroutines.a
+[2622/2778] Linking CXX static library lib/libclangAPINotes.a
+[2623/2778] Linking CXX static library lib/libclangLex.a
+[2624/2778] Linking CXX static library lib/libclangRewrite.a
+[2625/2778] Linking CXX static library lib/libclangToolingCore.a
+[2626/2778] Linking CXX static library lib/libclangToolingInclusions.a
+[2627/2778] Linking CXX static library lib/libLLVMCodeGen.a
+[2628/2778] Linking CXX static library lib/libclangDriver.a
+[2629/2778] Generating VCSVersion.inc
+[2630/2778] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld-driver.cpp.o
+[2631/2778] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DriverDispatcher.cpp.o
+[2632/2778] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Args.cpp.o
+[2633/2778] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/CommonLinkerContext.cpp.o
+[2634/2778] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DWARF.cpp.o
+[2635/2778] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Filesystem.cpp.o
+[2636/2778] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Memory.cpp.o
+[2637/2778] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Reproduce.cpp.o
+[2638/2778] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Strings.cpp.o
+[2639/2778] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/TargetOptionsCommandFlags.cpp.o
+[2640/2778] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/ErrorHandler.cpp.o
+[2641/2778] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Version.cpp.o
+[2642/2778] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Timer.cpp.o
+[2643/2778] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld.cpp.o
+[2644/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/COFFLinkerContext.cpp.o
+[2645/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/CallGraphSort.cpp.o
+[2646/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Chunks.cpp.o
+[2647/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DLL.cpp.o
+[2648/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DebugTypes.cpp.o
+[2649/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Driver.cpp.o
+[2650/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DriverUtils.cpp.o
+[2651/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/ICF.cpp.o
+[2652/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LLDMapFile.cpp.o
+[2653/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LTO.cpp.o
+[2654/2778] Linking CXX static library lib/liblldCommon.a
+[2655/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MinGW.cpp.o
+[2656/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Symbols.cpp.o
+[2657/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/AArch64ErrataFix.cpp.o
+[2658/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/PDB.cpp.o
+[2659/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Writer.cpp.o
+[2660/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AArch64.cpp.o
+[2661/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/InputFiles.cpp.o
+[2662/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/SymbolTable.cpp.o
+[2663/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MarkLive.cpp.o
+[2664/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AMDGPU.cpp.o
+[2665/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AVR.cpp.o
+[2666/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/ARM.cpp.o
+[2667/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/Hexagon.cpp.o
+[2668/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/LoongArch.cpp.o
+[2669/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/MipsArchTree.cpp.o
+[2670/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/Mips.cpp.o
+[2671/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/MSP430.cpp.o
+[2672/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/PPC.cpp.o
+[2673/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/PPC64.cpp.o
+[2674/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/RISCV.cpp.o
+[2675/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/SPARCV9.cpp.o
+[2676/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/SystemZ.cpp.o
+[2677/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/X86.cpp.o
+[2678/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/X86_64.cpp.o
+[2679/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ARMErrataFix.cpp.o
+[2680/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/CallGraphSort.cpp.o
+[2681/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/DWARF.cpp.o
+[2682/2778] Linking CXX static library lib/libLLVMAsmPrinter.a
+[2683/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/DriverUtils.cpp.o
+[2684/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/EhFrame.cpp.o
+[2685/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/LinkerScript.cpp.o
+[2686/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/MapFile.cpp.o
+[2687/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/MarkLive.cpp.o
+[2688/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputSection.cpp.o
+[2689/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/OutputSections.cpp.o
+[2690/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/LTO.cpp.o
+[2691/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Relocations.cpp.o
+[2692/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputFiles.cpp.o
+[2693/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ScriptLexer.cpp.o
+[2694/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Driver.cpp.o
+[2695/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SymbolTable.cpp.o
+[2696/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ScriptParser.cpp.o
+[2697/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Symbols.cpp.o
+[2698/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Target.cpp.o
+[2699/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SyntheticSections.cpp.o
+[2700/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Thunks.cpp.o
+[2701/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64Common.cpp.o
+[2702/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64_32.cpp.o
+[2703/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Writer.cpp.o
+[2704/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64.cpp.o
+[2705/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/X86_64.cpp.o
+[2706/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/EhFrame.cpp.o
+[2707/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ICF.cpp.o
+[2708/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ConcatOutputSection.cpp.o
+[2709/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Dwarf.cpp.o
+[2710/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ExportTrie.cpp.o
+[2711/2778] Linking CXX static library lib/libLLVMPasses.a
+[2712/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Driver.cpp.o
+[2713/2778] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ICF.cpp.o
+[2714/2778] Linking CXX static library lib/libLLVMSelectionDAG.a
+[2715/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o
+[2716/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/DriverUtils.cpp.o
+[2717/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSection.cpp.o
+[2718/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MarkLive.cpp.o
+[2719/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MapFile.cpp.o
+[2720/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ObjC.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ObjC.cpp:715:1: warning: ‘{anonymous}::ObjcCategoryMerger::PointerListInfo {anonymous}::ObjcCategoryMerger::parseProtocolListInfo(const lld::macho::ConcatInputSection*, uint32_t, {anonymous}::ObjcCategoryMerger::SourceLanguage)’ defined but not used [-Wunused-function]
+  715 | ObjcCategoryMerger::parseProtocolListInfo(const ConcatInputSection *isec,
+      | ^~~~~~~~~~~~~~~~~~
+[2721/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputFiles.cpp.o
+[2722/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSegment.cpp.o
+[2723/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/LTO.cpp.o
+[2724/2778] Linking CXX static library lib/libclangFormat.a
+[2725/2778] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MapFile.cpp.o
+[2726/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Relocations.cpp.o
+[2727/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SectionPriorities.cpp.o
+[2728/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/BPSectionOrderer.cpp.o
+[2729/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Sections.cpp.o
+[2730/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SymbolTable.cpp.o
+[2731/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Target.cpp.o
+[2732/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Symbols.cpp.o
+[2733/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SyntheticSections.cpp.o
+[2734/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/UnwindInfoSection.cpp.o
+[2735/2778] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Writer.cpp.o
+[2736/2778] Building CXX object tools/lld/MinGW/CMakeFiles/lldMinGW.dir/Driver.cpp.o
+[2737/2778] Linking CXX static library lib/libLLVMLTO.a
+[2738/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Driver.cpp.o
+[2739/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputChunks.cpp.o
+[2740/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputFiles.cpp.o
+[2741/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/LTO.cpp.o
+[2742/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MapFile.cpp.o
+[2743/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MarkLive.cpp.o
+[2744/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSections.cpp.o
+[2745/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSegment.cpp.o
+[2746/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Relocations.cpp.o
+[2747/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SymbolTable.cpp.o
+[2748/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Symbols.cpp.o
+[2749/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/WriterUtils.cpp.o
+[2750/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SyntheticSections.cpp.o
+[2751/2778] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Writer.cpp.o
+[2752/2778] Linking CXX static library lib/libLLVMGlobalISel.a
+[2753/2778] Linking CXX static library lib/libclangAST.a
+[2754/2778] Linking CXX static library lib/libclangEdit.a
+[2755/2778] Linking CXX static library lib/libclangInstallAPI.a
+[2756/2778] Linking CXX static library lib/libclangASTMatchers.a
+[2757/2778] Linking CXX static library lib/libLLVMX86CodeGen.a
+[2758/2778] Linking CXX static library lib/liblldWasm.a
+[2759/2778] Linking CXX static library lib/libclangAnalysis.a
+[2760/2778] Linking CXX static library lib/liblldCOFF.a
+[2761/2778] Linking CXX static library lib/liblldMachO.a
+[2762/2778] Linking CXX static library lib/liblldMinGW.a
+[2763/2778] Linking CXX static library lib/liblldELF.a
+[2764/2778] Linking CXX shared module lib/LLVMgold.so
+[2765/2778] Linking CXX executable bin/lld
+[2766/2778] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiateDecl.cpp.o
+FAILED: tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiateDecl.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiateDecl.cpp.o -MF tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiateDecl.cpp.o.d -o tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiateDecl.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaTemplateInstantiateDecl.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaTemplateInstantiateDecl.cpp: In member function ‘bool clang::Sema::InstantiateDefaultArgument(clang::SourceLocation, clang::FunctionDecl*, clang::ParmVarDecl*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaTemplateInstantiateDecl.cpp:4703:77: error: no matching function for call to ‘clang::Sema::getTemplateInstantiationArgs(clang::FunctionDecl*&, clang::DeclContext*, bool, const std::nullopt_t&, bool, std::nullptr_t, bool, bool, bool)’
+ 4703 |   MultiLevelTemplateArgumentList TemplateArgs = getTemplateInstantiationArgs(
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+ 4704 |       FD, FD->getLexicalDeclContext(),
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                       
+ 4705 |       /*Final=*/false, /*Innermost=*/std::nullopt,
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                           
+ 4706 |       /*RelativeToPrimary=*/true, /*Pattern=*/nullptr,
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                       
+ 4707 |       /*ForConstraintInstantiation=*/false, /*SkipForSpecialization=*/false,
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ 4708 |       /*ForDefaultArgumentSubstitution=*/true);
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                               
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Lookup.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaInternal.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/CoroutineStmtBuilder.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/TreeTransform.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaTemplateInstantiateDecl.cpp:12:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:13087:34: note: candidate: ‘clang::MultiLevelTemplateArgumentList clang::Sema::getTemplateInstantiationArgs(const clang::NamedDecl*, const clang::DeclContext*, bool, std::optional<llvm::ArrayRef<clang::TemplateArgument> >, bool, bool)’
+13087 |   MultiLevelTemplateArgumentList getTemplateInstantiationArgs(
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:13087:34: note:   candidate expects 6 arguments, 9 provided
+[2767/2778] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiate.cpp.o
+FAILED: tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiate.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiate.cpp.o -MF tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiate.cpp.o.d -o tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiate.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaTemplateInstantiate.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaTemplateInstantiate.cpp: In member function ‘clang::CXXRecordDecl::LambdaDependencyKind {anonymous}::TemplateInstantiator::ComputeLambdaDependency(clang::sema::LambdaScopeInfo*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaTemplateInstantiate.cpp:2101:40: error: ‘getEnclosingTypeAliasTemplateDecl’ is not a member of ‘{anonymous}::TemplateInstArgsHelpers’; did you mean ‘{anonymous}::getEnclosingTypeAliasTemplateDecl’?
+ 2101 |               TemplateInstArgsHelpers::getEnclosingTypeAliasTemplateDecl(
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaTemplateInstantiate.cpp:123:1: note: ‘{anonymous}::getEnclosingTypeAliasTemplateDecl’ declared here
+  123 | getEnclosingTypeAliasTemplateDecl(Sema &SemaRef) {
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaTemplateInstantiate.cpp:2103:49: error: ‘isLambdaEnclosedByTypeAliasDecl’ is not a member of ‘{anonymous}::TemplateInstArgsHelpers’; did you mean ‘{anonymous}::isLambdaEnclosedByTypeAliasDecl’?
+ 2103 |           TypeAlias && TemplateInstArgsHelpers::isLambdaEnclosedByTypeAliasDecl(
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaTemplateInstantiate.cpp:151:6: note: ‘{anonymous}::isLambdaEnclosedByTypeAliasDecl’ declared here
+  151 | bool isLambdaEnclosedByTypeAliasDecl(
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+131.10user 19.83system 0:13.59elapsed 1110%CPU (0avgtext+0avgdata 1185312maxresident)k
+0inputs+5090472outputs (39167major+9124160minor)pagefaults 0swaps
