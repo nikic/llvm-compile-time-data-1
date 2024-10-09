@@ -1,0 +1,205 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+[1463/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ModuleSummaryAnalysis.cpp.o
+[1464/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TensorSpec.cpp.o
+[1465/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TrainingLogger.cpp.o
+[1466/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ValueLatticeUtils.cpp.o
+[1467/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/StackLifetime.cpp.o
+[1468/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ValueLattice.cpp.o
+[1469/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TypeBasedAliasAnalysis.cpp.o
+[1470/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScopedNoAliasAA.cpp.o
+[1471/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/SyntheticCountsUtils.cpp.o
+[1472/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/DXContainerPSVInfo.cpp.o
+[1473/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TypeMetadataUtils.cpp.o
+[1474/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/UniformityAnalysis.cpp.o
+[1475/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TargetLibraryInfo.cpp.o
+[1476/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/ConstantPools.cpp.o
+[1477/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TargetTransformInfo.cpp.o
+[1478/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/GOFFObjectWriter.cpp.o
+[1479/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/StackSafetyAnalysis.cpp.o
+[1480/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoCOFF.cpp.o
+[1481/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoDarwin.cpp.o
+[1482/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmBackend.cpp.o
+[1483/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoGOFF.cpp.o
+[1484/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoWasm.cpp.o
+[1485/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmMacro.cpp.o
+[1486/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCCodeEmitter.cpp.o
+[1487/2679] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/UpdateCompilerUsed.cpp.o
+[1488/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfo.cpp.o
+[1489/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoXCOFF.cpp.o
+[1490/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/ELFObjectWriter.cpp.o
+[1491/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoELF.cpp.o
+[1492/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/VectorUtils.cpp.o
+[1493/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCELFObjectTargetWriter.cpp.o
+[1494/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAssembler.cpp.o
+[1495/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCDXContainerStreamer.cpp.o
+[1496/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCDXContainerWriter.cpp.o
+[1497/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCCodeView.cpp.o
+[1498/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmStreamer.cpp.o
+[1499/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCELFStreamer.cpp.o
+[1500/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInst.cpp.o
+[1501/2679] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOModule.cpp.o
+[1502/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCDwarf.cpp.o
+[1503/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCExpr.cpp.o
+[1504/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCLabel.cpp.o
+[1505/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCFragment.cpp.o
+[1506/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInstPrinter.cpp.o
+[1507/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ValueTracking.cpp.o
+[1508/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInstrAnalysis.cpp.o
+[1509/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInstrDesc.cpp.o
+[1510/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInstrInfo.cpp.o
+[1511/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCGOFFStreamer.cpp.o
+[1512/2679] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOCodeGenerator.cpp.o
+[1513/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCContext.cpp.o
+[1514/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCLinkerOptimizationHint.cpp.o
+[1515/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSchedule.cpp.o
+[1516/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCMachObjectTargetWriter.cpp.o
+[1517/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCRegisterInfo.cpp.o
+[1518/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionCOFF.cpp.o
+[1519/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCObjectWriter.cpp.o
+[1520/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCNullStreamer.cpp.o
+[1521/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionDXContainer.cpp.o
+[1522/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionELF.cpp.o
+[1523/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionWasm.cpp.o
+[1524/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCObjectFileInfo.cpp.o
+[1525/2679] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolution.cpp.o
+[1526/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionMachO.cpp.o
+[1527/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSection.cpp.o
+[1528/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionXCOFF.cpp.o
+[1529/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCMachOStreamer.cpp.o
+[1530/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSubtargetInfo.cpp.o
+[1531/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCObjectStreamer.cpp.o
+[1532/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCTargetOptions.cpp.o
+[1533/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCValue.cpp.o
+[1534/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSymbolELF.cpp.o
+[1535/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSymbolXCOFF.cpp.o
+[1536/2679] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOBackend.cpp.o
+[1537/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCWasmObjectTargetWriter.cpp.o
+[1538/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSPIRVStreamer.cpp.o
+[1539/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCTargetOptionsCommandFlags.cpp.o
+[1540/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCWinEH.cpp.o
+[1541/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCPseudoProbe.cpp.o
+[1542/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSymbol.cpp.o
+[1543/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCXCOFFObjectTargetWriter.cpp.o
+[1544/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/StringTableBuilder.cpp.o
+[1545/2679] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/ThinLTOCodeGenerator.cpp.o
+[1546/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCWasmStreamer.cpp.o
+[1547/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/SPIRVObjectWriter.cpp.o
+[1548/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCStreamer.cpp.o
+[1549/2679] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTO.cpp.o
+[1550/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCXCOFFStreamer.cpp.o
+[1551/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmLexer.cpp.o
+[1552/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/GOFFAsmParser.cpp.o
+[1553/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCWinCOFFStreamer.cpp.o
+[1554/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/MCAsmLexer.cpp.o
+[1555/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCWin64EH.cpp.o
+[1556/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/TargetRegistry.cpp.o
+[1557/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MachObjectWriter.cpp.o
+[1558/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/MCAsmParser.cpp.o
+[1559/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/XCOFFAsmParser.cpp.o
+[1560/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/COFFAsmParser.cpp.o
+[1561/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/WinCOFFObjectWriter.cpp.o
+[1562/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/XCOFFObjectWriter.cpp.o
+[1563/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/COFFMasmParser.cpp.o
+[1564/2679] Building CXX object lib/MC/MCDisassembler/CMakeFiles/LLVMMCDisassembler.dir/MCDisassembler.cpp.o
+[1565/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/MCAsmParserExtension.cpp.o
+[1566/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/MCTargetAsmParser.cpp.o
+[1567/2679] Building CXX object lib/MC/MCDisassembler/CMakeFiles/LLVMMCDisassembler.dir/MCSymbolizer.cpp.o
+[1568/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/ELFAsmParser.cpp.o
+[1569/2679] Building CXX object lib/MC/MCDisassembler/CMakeFiles/LLVMMCDisassembler.dir/MCRelocationInfo.cpp.o
+[1570/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/DarwinAsmParser.cpp.o
+[1571/2679] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/WasmObjectWriter.cpp.o
+[1572/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/WasmAsmParser.cpp.o
+[1573/2679] Building CXX object lib/MC/MCDisassembler/CMakeFiles/LLVMMCDisassembler.dir/MCExternalSymbolizer.cpp.o
+[1574/2679] Building CXX object lib/MC/MCDisassembler/CMakeFiles/LLVMMCDisassembler.dir/Disassembler.cpp.o
+[1575/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Decompressor.cpp.o
+[1576/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/COFFModuleDefinition.cpp.o
+[1577/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Archive.cpp.o
+[1578/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/DXContainer.cpp.o
+[1579/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/FaultMapParser.cpp.o
+[1580/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Error.cpp.o
+[1581/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/COFFImportFile.cpp.o
+[1582/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Binary.cpp.o
+[1583/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[1584/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/COFFObjectFile.cpp.o
+[1585/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/GOFFObjectFile.cpp.o
+[1586/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/BuildID.cpp.o
+[1587/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ArchiveWriter.cpp.o
+[1588/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Minidump.cpp.o
+[1589/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/IRObjectFile.cpp.o
+[1590/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Object.cpp.o
+[1591/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/MachOUniversal.cpp.o
+[1592/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ObjectFile.cpp.o
+[1593/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/SymbolicFile.cpp.o
+[1594/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/IRSymtab.cpp.o
+[1595/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/WindowsMachineFlag.cpp.o
+[1596/2679] Linking CXX static library lib/libLLVMRemarks.a
+[1597/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/RelocationResolver.cpp.o
+[1598/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/TapiFile.cpp.o
+[1599/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/TapiUniversal.cpp.o
+[1600/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/RecordStreamer.cpp.o
+[1601/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ModuleSymbolTable.cpp.o
+[1602/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/SymbolSize.cpp.o
+[1603/2679] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/MasmParser.cpp.o
+[1604/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/OffloadBinary.cpp.o
+[1605/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/MachOObjectFile.cpp.o
+[1606/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/MachOUniversalWriter.cpp.o
+[1607/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/XCOFFObjectFile.cpp.o
+[1608/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFAddressRange.cpp.o
+[1609/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFAbbreviationDeclaration.cpp.o
+[1610/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFDataExtractor.cpp.o
+[1611/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFCompileUnit.cpp.o
+[1612/2679] Linking CXX executable bin/llvm-tblgen
+FAILED: bin/llvm-tblgen 
+: && /var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -fuse-ld=lld -Wl,--color-diagnostics -flto=thin -Wl,--thinlto-cache-dir=/tmp/llvm-project-build-stage2/lto.cache    -Wl,--gc-sections utils/TableGen/Basic/CMakeFiles/obj.LLVMTableGenBasic.dir/CodeGenIntrinsics.cpp.o utils/TableGen/Basic/CMakeFiles/obj.LLVMTableGenBasic.dir/SDNodeProperties.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/CodeExpander.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/CombinerUtils.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/CXXPredicates.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/GlobalISelMatchTable.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/GlobalISelMatchTableExecutorEmitter.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/PatternParser.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/Patterns.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/AsmWriterInst.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenDAGPatterns.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenHwModes.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenInstAlias.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenInstruction.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenRegisters.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenSchedule.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenTarget.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/DAGISelMatcher.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/InfoByHwMode.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/OptEmitter.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/PredicateExpander.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/SubtargetFeatureInfo.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/Types.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/Utils.cpp.o utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/VarLenCodeEmitterGen.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/ARMTargetDefEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/AsmMatcherEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/AsmWriterEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/Attributes.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/CallingConvEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/CodeEmitterGen.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/CodeGenMapTable.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/CompressInstEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/CTagsEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/DAGISelEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/DAGISelMatcherEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/DAGISelMatcherGen.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/DAGISelMatcherOpt.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/DecoderEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/DFAEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/DFAPacketizerEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/DirectiveEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/DisassemblerEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/DXILEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/ExegesisEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/FastISelEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/GlobalISelCombinerEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/GlobalISelEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/InstrDocsEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/InstrInfoEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/IntrinsicEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/MacroFusionPredicatorEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/OptionParserEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/OptionRSTEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/PseudoLoweringEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/RegisterBankEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/RegisterInfoEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/RISCVTargetDefEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/SearchableTableEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/SubtargetEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/TableGen.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/VTEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/WebAssemblyDisassemblerEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86InstrMappingEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86DisassemblerTables.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86FoldTablesEmitter.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86MnemonicTables.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86ModRMFilters.cpp.o utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86RecognizableInstr.cpp.o -o bin/llvm-tblgen  -Wl,-rpath,"\$ORIGIN/../lib:"  lib/libLLVMCodeGenTypes.a  lib/libLLVMSupport.a  lib/libLLVMTableGen.a  lib/libLLVMSupport.a  -lrt  -ldl  -lm  lib/libLLVMDemangle.a && :
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace.
+Stack dump:
+0.	Running pass 'Function Pass Manager' on module 'utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/GlobalISelMatchTable.cpp.o'.
+1.	Running pass 'Remove Loads Into Fake Uses' on function '@_ZNK4llvm2gi18SameOperandMatcher20emitPredicateOpcodesERNS0_10MatchTableERNS0_11RuleMatcherE'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  ld.lld    0x0000564cc829b630 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  ld.lld    0x0000564cc8298bee
+2  libc.so.6 0x00007fe6f9185520
+3  ld.lld    0x0000564cc93d5db8 llvm::MachineInstr::getMF() const + 8
+4  ld.lld    0x0000564cc93809c5 llvm::ilist_traits<llvm::MachineInstr>::removeNodeFromList(llvm::MachineInstr*) + 21
+5  ld.lld    0x0000564cc93d5e72 llvm::MachineInstr::eraseFromParent() + 82
+6  ld.lld    0x0000564cc97ae15d
+7  ld.lld    0x0000564cc93cbf3f
+8  ld.lld    0x0000564ccaf22bd1 llvm::FPPassManager::runOnFunction(llvm::Function&) + 1665
+9  ld.lld    0x0000564ccaf22d94 llvm::FPPassManager::runOnModule(llvm::Module&) + 52
+10 ld.lld    0x0000564ccaf2380b llvm::legacy::PassManagerImpl::run(llvm::Module&) + 1131
+11 ld.lld    0x0000564cc9115fa4
+12 ld.lld    0x0000564cc91171e3 llvm::lto::thinBackend(llvm::lto::Config const&, unsigned int, std::function<llvm::Expected<std::unique_ptr<llvm::CachedFileStream, std::default_delete<llvm::CachedFileStream>>> (unsigned int, llvm::Twine const&)>, llvm::Module&, llvm::ModuleSummaryIndex const&, llvm::FunctionImporter::ImportMapTy const&, llvm::DenseMap<unsigned long, llvm::GlobalValueSummary*, llvm::DenseMapInfo<unsigned long, void>, llvm::detail::DenseMapPair<unsigned long, llvm::GlobalValueSummary*>> const&, llvm::MapVector<llvm::StringRef, llvm::BitcodeModule, llvm::DenseMap<llvm::StringRef, unsigned int, llvm::DenseMapInfo<llvm::StringRef, void>, llvm::detail::DenseMapPair<llvm::StringRef, unsigned int>>, llvm::SmallVector<std::pair<llvm::StringRef, llvm::BitcodeModule>, 0u>>*, bool, std::vector<unsigned char, std::allocator<unsigned char>> const&) + 2739
+13 ld.lld    0x0000564cc90ee399
+14 ld.lld    0x0000564cc91069a7
+15 ld.lld    0x0000564cc90ece92
+16 ld.lld    0x0000564cc82e692d
+17 libc.so.6 0x00007fe6f91dcee8
+18 ld.lld    0x0000564cc90ed1b7
+19 ld.lld    0x0000564cc90ed993
+20 ld.lld    0x0000564ccb0c6917 llvm::StdThreadPool::processTasks(llvm::ThreadPoolTaskGroup*) + 503
+21 ld.lld    0x0000564ccb0c72a3
+22 libc.so.6 0x00007fe6f91d7ac3
+23 libc.so.6 0x00007fe6f9269850
+clang++: error: unable to execute command: Segmentation fault (core dumped)
+clang++: error: linker command failed due to signal (use -v to see invocation)
+[1613/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/WindowsResource.cpp.o
+[1614/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFDebugAbbrev.cpp.o
+[1615/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ELFObjectFile.cpp.o
+[1616/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/WasmObjectFile.cpp.o
+[1617/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFDebugAddr.cpp.o
+[1618/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFDebugAranges.cpp.o
+[1619/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFDebugArangeSet.cpp.o
+[1620/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFAcceleratorTable.cpp.o
+[1621/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFDebugInfoEntry.cpp.o
+[1622/2679] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ELF.cpp.o
+[1623/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFDebugLoc.cpp.o
+[1624/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFDebugFrame.cpp.o
+[1625/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFTypePrinter.cpp.o
+[1626/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFDebugLine.cpp.o
+[1627/2679] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFContext.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
