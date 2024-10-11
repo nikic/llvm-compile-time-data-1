@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2275/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCoroutine.cpp.o
+[2276/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaConcept.cpp.o
+[2277/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclObjC.cpp.o
+[2278/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExceptionSpec.cpp.o
+[2279/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCUDA.cpp.o
+[2280/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDecl.cpp.o
+[2281/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclCXX.cpp.o
+[2282/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprMember.cpp.o
+[2283/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclAttr.cpp.o
+[2284/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaFunctionEffects.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaFunctionEffects.cpp: In member function ‘bool clang::Sema::FunctionEffectDiff::shouldDiagnoseConversion(clang::QualType, const clang::FunctionEffectsRef&, clang::QualType, const clang::FunctionEffectsRef&) const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaFunctionEffects.cpp:1504:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1504 |     switch (DiffKind) {
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaFunctionEffects.cpp:1516:3: note: here
+ 1516 |   case FunctionEffect::Kind::Blocking:
+      |   ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaFunctionEffects.cpp: In member function ‘bool clang::Sema::FunctionEffectDiff::shouldDiagnoseRedeclaration(const clang::FunctionDecl&, const clang::FunctionEffectsRef&, const clang::FunctionDecl&, const clang::FunctionEffectsRef&) const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaFunctionEffects.cpp:1530:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1530 |     switch (DiffKind) {
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaFunctionEffects.cpp:1539:3: note: here
+ 1539 |   case FunctionEffect::Kind::Blocking:
+      |   ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaFunctionEffects.cpp: In member function ‘clang::Sema::FunctionEffectDiff::OverrideResult clang::Sema::FunctionEffectDiff::shouldDiagnoseMethodOverride(const clang::CXXMethodDecl&, const clang::FunctionEffectsRef&, const clang::CXXMethodDecl&, const clang::FunctionEffectsRef&) const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaFunctionEffects.cpp:1553:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1553 |     switch (DiffKind) {
+      |     ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaFunctionEffects.cpp:1569:3: note: here
+ 1569 |   case FunctionEffect::Kind::Blocking:
+      |   ^~~~
+[2285/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaHLSL.cpp.o
+[2286/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaHexagon.cpp.o
+[2287/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprCXX.cpp.o
+[2288/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaInit.cpp.o
+[2289/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLambda.cpp.o
+[2290/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o
+[2291/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLoongArch.cpp.o
+[2292/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaM68k.cpp.o
+[2293/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaMIPS.cpp.o
+[2294/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaMSP430.cpp.o
+[2295/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprObjC.cpp.o
+[2296/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaNVPTX.cpp.o
+[2297/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaFixItUtils.cpp.o
+[2298/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenACC.cpp.o
+[2299/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenCL.cpp.o
+[2300/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLookup.cpp.o
+[2301/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaModule.cpp.o
+[2302/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOverload.cpp.o
+[2303/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaObjCProperty.cpp.o
+[2304/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaPPC.cpp.o
+[2305/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaObjC.cpp.o
+[2306/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaRISCV.cpp.o
+[2307/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaStmtAttr.cpp.o
+[2308/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaSYCL.cpp.o
+[2309/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaSwift.cpp.o
+[2310/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaSystemZ.cpp.o
+[2311/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaPseudoObject.cpp.o
+[2312/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenMP.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/APNumericStorage.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaOpenMP.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:14:
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:23:21,
+    inlined from ‘bool checkOMPArraySectionConstantForReduction(clang::ASTContext&, const clang::ArraySectionExpr*, bool&, llvm::SmallVectorImpl<llvm::APSInt>&)’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:18336:45,
+    inlined from ‘bool actOnOMPReductionKindClause(clang::Sema&, {anonymous}::DSAStackTy*, clang::OpenMPClauseKind, llvm::ArrayRef<clang::Expr*>, clang::SourceLocation, clang::SourceLocation, clang::SourceLocation, clang::SourceLocation, clang::CXXScopeSpec&, const clang::DeclarationNameInfo&, llvm::ArrayRef<clang::Expr*>, {anonymous}::ReductionData&)’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:18713:68:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:185:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  185 |       delete[] U.pVal;
+      |                  ^~~~
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:23:21,
+    inlined from ‘bool checkOMPArraySectionConstantForReduction(clang::ASTContext&, const clang::ArraySectionExpr*, bool&, llvm::SmallVectorImpl<llvm::APSInt>&)’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:18355:45,
+    inlined from ‘bool actOnOMPReductionKindClause(clang::Sema&, {anonymous}::DSAStackTy*, clang::OpenMPClauseKind, llvm::ArrayRef<clang::Expr*>, clang::SourceLocation, clang::SourceLocation, clang::SourceLocation, clang::SourceLocation, clang::CXXScopeSpec&, const clang::DeclarationNameInfo&, llvm::ArrayRef<clang::Expr*>, {anonymous}::ReductionData&)’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaOpenMP.cpp:18713:68:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:185:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  185 |       delete[] U.pVal;
+      |                  ^~~~
+[2313/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaStmt.cpp.o
+[2314/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaStmtAsm.cpp.o
+[2315/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplate.cpp.o
+[2316/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateVariadic.cpp.o
+[2317/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateDeduction.cpp.o
+[2318/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiate.cpp.o
+[2319/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaWasm.cpp.o
+[2320/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaX86.cpp.o
+[2321/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/TypeLocBuilder.cpp.o
+[2322/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateDeductionGuide.cpp.o
+[2323/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiateDecl.cpp.o
+[2324/2824] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaType.cpp.o
+[2325/2824] Building CXX object tools/gold/CMakeFiles/LLVMgold.dir/gold-plugin.cpp.o
+[2326/2824] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/StandardInstrumentations.cpp.o
+[2327/2824] Building CXX object lib/AsmParser/CMakeFiles/LLVMAsmParser.dir/LLParser.cpp.o
+[2328/2824] Linking CXX static library lib/libLLVMAsmParser.a
+[2329/2824] Linking CXX static library lib/libLLVMIRReader.a
+[2330/2824] Linking CXX static library lib/libLLVMObject.a
+[2331/2824] Linking CXX static library lib/libLLVMDlltoolDriver.a
+[2332/2824] Linking CXX static library lib/libLLVMDebugInfoDWARF.a
+[2333/2824] Linking CXX static library lib/libLLVMDebugInfoPDB.a
+[2334/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o
+[2335/2824] Linking CXX static library lib/libLLVMSymbolize.a
+[2336/2824] Linking CXX static library lib/libLLVMTextAPIBinaryReader.a
+[2337/2824] Linking CXX static library lib/libLLVMLibDriver.a
+[2338/2824] Linking CXX static library lib/libLLVMProfileData.a
+[2339/2824] Linking CXX static library lib/libLLVMAnalysis.a
+[2340/2824] Linking CXX executable bin/llvm-ar
+[2341/2824] Linking CXX static library lib/libLLVMBitWriter.a
+[2342/2824] Linking CXX static library lib/libLLVMIRPrinter.a
+[2343/2824] Linking CXX static library lib/libLLVMCGData.a
+[2344/2824] Linking CXX static library lib/libLLVMFrontendDriver.a
+[2345/2824] Linking CXX static library lib/libLLVMTarget.a
+[2346/2824] Linking CXX static library lib/libLLVMSandboxIR.a
+[2347/2824] Linking CXX static library lib/libLLVMTransformUtils.a
+[2348/2824] Linking CXX static library lib/libLLVMFrontendOffloading.a
+[2349/2824] Linking CXX static library lib/libLLVMCoverage.a
+[2350/2824] Linking CXX static library lib/libLLVMInstrumentation.a
+[2351/2824] Linking CXX static library lib/libLLVMAggressiveInstCombine.a
+[2352/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfoImpl.cpp.o
+[2353/2824] Linking CXX static library lib/libLLVMVectorize.a
+[2354/2824] Linking CXX static library lib/libLLVMInstCombine.a
+[2355/2824] Linking CXX static library lib/libLLVMObjCARCOpts.a
+[2356/2824] Linking CXX static library lib/libLLVMHipStdPar.a
+[2357/2824] Linking CXX static library lib/libLLVMLinker.a
+[2358/2824] Generating ../../bin/llvm-ranlib
+[2359/2824] Linking CXX static library lib/libLLVMScalarOpts.a
+[2360/2824] Linking CXX static library lib/libLLVMCodeGen.a
+[2361/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGAtomic.cpp.o
+[2362/2824] Linking CXX static library lib/libLLVMSelectionDAG.a
+[2363/2824] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilderPipelines.cpp.o
+[2364/2824] Linking CXX static library lib/libLLVMAsmPrinter.a
+[2365/2824] Linking CXX static library lib/libLLVMFrontendOpenMP.a
+[2366/2824] Linking CXX static library lib/libLLVMGlobalISel.a
+[2367/2824] Generating VCSVersion.inc
+[2368/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64Common.cpp.o
+[2369/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Args.cpp.o
+[2370/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/CommonLinkerContext.cpp.o
+[2371/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DriverDispatcher.cpp.o
+[2372/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DWARF.cpp.o
+[2373/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/ErrorHandler.cpp.o
+[2374/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Filesystem.cpp.o
+[2375/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Memory.cpp.o
+[2376/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Reproduce.cpp.o
+[2377/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Strings.cpp.o
+[2378/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/TargetOptionsCommandFlags.cpp.o
+[2379/2824] Linking CXX static library lib/libLLVMipo.a
+[2380/2824] Linking CXX static library lib/libclangBasic.a
+[2381/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Timer.cpp.o
+[2382/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Version.cpp.o
+[2383/2824] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld.cpp.o
+[2384/2824] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld-driver.cpp.o
+[2385/2824] Linking CXX static library lib/liblldCommon.a
+[2386/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Chunks.cpp.o
+[2387/2824] Linking CXX static library lib/libLLVMCoroutines.a
+[2388/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/CallGraphSort.cpp.o
+[2389/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/COFFLinkerContext.cpp.o
+[2390/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DLL.cpp.o
+[2391/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DebugTypes.cpp.o
+[2392/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DriverUtils.cpp.o
+[2393/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/ICF.cpp.o
+[2394/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LLDMapFile.cpp.o
+[2395/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o
+[2396/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MapFile.cpp.o
+[2397/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MarkLive.cpp.o
+[2398/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MinGW.cpp.o
+[2399/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/PDB.cpp.o
+[2400/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o
+[2401/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Symbols.cpp.o
+[2402/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Writer.cpp.o
+[2403/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp: In member function ‘llvm::Value* clang::CodeGen::CodeGenFunction::EmitHLSLBuiltinExpr(unsigned int, const clang::CallExpr*, clang::CodeGen::ReturnValueSlot)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp:18885:41: error: ‘getDeclaration’ is not a member of ‘llvm::Intrinsic’; did you mean ‘getOrInsertDeclaration’?
+18885 |       return EmitRuntimeCall(Intrinsic::getDeclaration(
+      |                                         ^~~~~~~~~~~~~~
+      |                                         getOrInsertDeclaration
+[2404/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/AArch64ErrataFix.cpp.o
+[2405/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCXX.cpp.o
+[2406/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCXXABI.cpp.o
+[2407/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o
+[2408/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o
+[2409/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCleanup.cpp.o
+[2410/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LTO.cpp.o
+[2411/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGClass.cpp.o
+[2412/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/SymbolTable.cpp.o
+[2413/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCoroutine.cpp.o
+[2414/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/InputFiles.cpp.o
+[2415/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Driver.cpp.o
+[2416/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCall.cpp.o
+[2417/2824] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o
+[2418/2824] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelLowering.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86ISelLowering.cpp: In function ‘llvm::SDValue LowerShift(llvm::SDValue, const llvm::X86Subtarget&, llvm::SelectionDAG&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/X86ISelLowering.cpp:29987: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+29987 |       unsigned LogicalOpc = Opc == ISD::SRA ? ISD::SRL : Opc;
+      | 
+[2419/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDebugInfo.cpp.o
+[2420/2824] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilder.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+3648.68user 184.97system 4:09.81elapsed 1534%CPU (0avgtext+0avgdata 1838628maxresident)k
+8inputs+10710208outputs (5223major+112859114minor)pagefaults 0swaps
