@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2637/2824] Linking CXX static library lib/libLLVMLibDriver.a
+[2638/2824] Linking CXX static library lib/libLLVMDebugInfoDWARF.a
+[2639/2824] Linking CXX static library lib/libLLVMTextAPIBinaryReader.a
+[2640/2824] Linking CXX static library lib/libLLVMDebugInfoPDB.a
+[2641/2824] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/driver.cpp.o
+[2642/2824] Linking CXX static library lib/libLLVMSymbolize.a
+[2643/2824] Linking CXX static library lib/libLLVMProfileData.a
+[2644/2824] Linking CXX static library lib/libLLVMCoverage.a
+[2645/2824] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1_main.cpp.o
+[2646/2824] Linking CXX executable bin/llvm-ar
+[2647/2824] Generating ../../bin/llvm-ranlib
+[2648/2824] Linking CXX static library lib/libLLVMAnalysis.a
+[2649/2824] Linking CXX static library lib/libLLVMIRPrinter.a
+[2650/2824] Linking CXX static library lib/libLLVMFrontendDriver.a
+[2651/2824] Linking CXX static library lib/libLLVMTarget.a
+[2652/2824] Linking CXX static library lib/libLLVMSandboxIR.a
+[2653/2824] Linking CXX static library lib/libLLVMBitWriter.a
+[2654/2824] Linking CXX static library lib/libLLVMCGData.a
+[2655/2824] Linking CXX static library lib/libLLVMTransformUtils.a
+[2656/2824] Linking CXX static library lib/libLLVMHipStdPar.a
+[2657/2824] Linking CXX static library lib/libLLVMFrontendOffloading.a
+[2658/2824] Linking CXX static library lib/libLLVMAggressiveInstCombine.a
+[2659/2824] Linking CXX static library lib/libLLVMLinker.a
+[2660/2824] Linking CXX static library lib/libLLVMObjCARCOpts.a
+[2661/2824] Linking CXX static library lib/libLLVMInstCombine.a
+[2662/2824] Linking CXX static library lib/libLLVMInstrumentation.a
+[2663/2824] Linking CXX static library lib/libLLVMVectorize.a
+[2664/2824] Linking CXX static library lib/libLLVMScalarOpts.a
+[2665/2824] Linking CXX static library lib/libLLVMFrontendOpenMP.a
+[2666/2824] Linking CXX static library lib/libLLVMipo.a
+[2667/2824] Linking CXX static library lib/libclangBasic.a
+[2668/2824] Linking CXX static library lib/libclangAPINotes.a
+[2669/2824] Linking CXX static library lib/libLLVMCoroutines.a
+[2670/2824] Linking CXX static library lib/libclangLex.a
+[2671/2824] Linking CXX static library lib/libclangRewrite.a
+[2672/2824] Linking CXX static library lib/libclangToolingCore.a
+[2673/2824] Linking CXX static library lib/libLLVMCodeGen.a
+[2674/2824] Linking CXX static library lib/libclangToolingInclusions.a
+[2675/2824] Generating VCSVersion.inc
+[2676/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Args.cpp.o
+[2677/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/CommonLinkerContext.cpp.o
+[2678/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DriverDispatcher.cpp.o
+[2679/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/TargetOptionsCommandFlags.cpp.o
+[2680/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DWARF.cpp.o
+[2681/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Filesystem.cpp.o
+[2682/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Memory.cpp.o
+[2683/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Strings.cpp.o
+[2684/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64Common.cpp.o
+[2685/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/ErrorHandler.cpp.o
+[2686/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Version.cpp.o
+[2687/2824] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld-driver.cpp.o
+[2688/2824] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld.cpp.o
+[2689/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Timer.cpp.o
+[2690/2824] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Reproduce.cpp.o
+[2691/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Chunks.cpp.o
+[2692/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/CallGraphSort.cpp.o
+[2693/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/COFFLinkerContext.cpp.o
+[2694/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DLL.cpp.o
+[2695/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DebugTypes.cpp.o
+[2696/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/ICF.cpp.o
+[2697/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Driver.cpp.o
+[2698/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LLDMapFile.cpp.o
+[2699/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MarkLive.cpp.o
+[2700/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MapFile.cpp.o
+[2701/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MinGW.cpp.o
+[2702/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/InputFiles.cpp.o
+[2703/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LTO.cpp.o
+[2704/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/PDB.cpp.o
+[2705/2824] Linking CXX static library lib/liblldCommon.a
+[2706/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Symbols.cpp.o
+[2707/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Writer.cpp.o
+[2708/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/AArch64ErrataFix.cpp.o
+[2709/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AArch64.cpp.o
+[2710/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AMDGPU.cpp.o
+[2711/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/SymbolTable.cpp.o
+[2712/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AVR.cpp.o
+[2713/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/ARM.cpp.o
+[2714/2824] Linking CXX static library lib/libclangFormat.a
+[2715/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/Hexagon.cpp.o
+[2716/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/LoongArch.cpp.o
+[2717/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/Mips.cpp.o
+[2718/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/MipsArchTree.cpp.o
+[2719/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/MSP430.cpp.o
+[2720/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/PPC.cpp.o
+[2721/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/PPC64.cpp.o
+[2722/2824] Linking CXX static library lib/libclangDriver.a
+[2723/2824] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DriverUtils.cpp.o
+[2724/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/RISCV.cpp.o
+[2725/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/SPARCV9.cpp.o
+[2726/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/SystemZ.cpp.o
+[2727/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/X86.cpp.o
+[2728/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/X86_64.cpp.o
+[2729/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ARMErrataFix.cpp.o
+[2730/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/CallGraphSort.cpp.o
+[2731/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/DWARF.cpp.o
+[2732/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/DriverUtils.cpp.o
+[2733/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/EhFrame.cpp.o
+[2734/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Driver.cpp.o
+[2735/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ICF.cpp.o
+[2736/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputSection.cpp.o
+[2737/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/LinkerScript.cpp.o
+[2738/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/OutputSections.cpp.o
+[2739/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/LTO.cpp.o
+[2740/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/MarkLive.cpp.o
+[2741/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ScriptLexer.cpp.o
+[2742/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputFiles.cpp.o
+[2743/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SymbolTable.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/lld/ELF/SymbolTable.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/lld/ELF/SymbolTable.cpp:340:33: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+  340 |     assignWildcard(pat, isLocal ? VER_NDX_LOCAL : ver->id, ver->name);
+      |                         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[2744/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ScriptParser.cpp.o
+[2745/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Symbols.cpp.o
+[2746/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Target.cpp.o
+[2747/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Thunks.cpp.o
+[2748/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64.cpp.o
+[2749/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SyntheticSections.cpp.o
+[2750/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Writer.cpp.o
+[2751/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64_32.cpp.o
+[2752/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/X86_64.cpp.o
+[2753/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ConcatOutputSection.cpp.o
+[2754/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Dwarf.cpp.o
+[2755/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/EhFrame.cpp.o
+[2756/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ExportTrie.cpp.o
+[2757/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/MapFile.cpp.o
+[2758/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ICF.cpp.o
+[2759/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Driver.cpp.o
+[2760/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/DriverUtils.cpp.o
+[2761/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o
+[2762/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MapFile.cpp.o
+[2763/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MarkLive.cpp.o
+[2764/2824] Linking CXX static library lib/libLLVMSelectionDAG.a
+[2765/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/LTO.cpp.o
+[2766/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputFiles.cpp.o
+[2767/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSegment.cpp.o
+[2768/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ObjC.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ObjC.cpp:715:1: warning: ‘{anonymous}::ObjcCategoryMerger::PointerListInfo {anonymous}::ObjcCategoryMerger::parseProtocolListInfo(const lld::macho::ConcatInputSection*, uint32_t, {anonymous}::ObjcCategoryMerger::SourceLanguage)’ defined but not used [-Wunused-function]
+  715 | ObjcCategoryMerger::parseProtocolListInfo(const ConcatInputSection *isec,
+      | ^~~~~~~~~~~~~~~~~~
+[2769/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Sections.cpp.o
+[2770/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSection.cpp.o
+[2771/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Relocations.cpp.o
+[2772/2824] Linking CXX static library lib/libLLVMPasses.a
+[2773/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/BPSectionOrderer.cpp.o
+[2774/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SectionPriorities.cpp.o
+[2775/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SymbolTable.cpp.o
+[2776/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Symbols.cpp.o
+[2777/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SyntheticSections.cpp.o
+[2778/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Target.cpp.o
+[2779/2824] Building CXX object tools/lld/MinGW/CMakeFiles/lldMinGW.dir/Driver.cpp.o
+[2780/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Writer.cpp.o
+[2781/2824] Linking CXX static library lib/libLLVMAsmPrinter.a
+[2782/2824] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/UnwindInfoSection.cpp.o
+[2783/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Driver.cpp.o
+[2784/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputChunks.cpp.o
+[2785/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSegment.cpp.o
+[2786/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputFiles.cpp.o
+[2787/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/LTO.cpp.o
+[2788/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MarkLive.cpp.o
+[2789/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MapFile.cpp.o
+[2790/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Relocations.cpp.o
+[2791/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSections.cpp.o
+[2792/2824] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Relocations.cpp.o
+[2793/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SymbolTable.cpp.o
+[2794/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/WriterUtils.cpp.o
+[2795/2824] Linking CXX static library lib/libLLVMLTO.a
+[2796/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SyntheticSections.cpp.o
+[2797/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Symbols.cpp.o
+[2798/2824] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Writer.cpp.o
+[2799/2824] Linking CXX static library lib/libLLVMGlobalISel.a
+[2800/2824] Linking CXX static library lib/libclangAST.a
+[2801/2824] Linking CXX static library lib/libclangEdit.a
+[2802/2824] Linking CXX static library lib/libclangInstallAPI.a
+[2803/2824] Linking CXX static library lib/libLLVMX86CodeGen.a
+[2804/2824] Linking CXX static library lib/libclangASTMatchers.a
+[2805/2824] Linking CXX static library lib/liblldWasm.a
+[2806/2824] Linking CXX static library lib/liblldCOFF.a
+[2807/2824] Linking CXX static library lib/liblldMachO.a
+[2808/2824] Linking CXX static library lib/liblldELF.a
+[2809/2824] Linking CXX static library lib/liblldMinGW.a
+[2810/2824] Linking CXX static library lib/libclangAnalysis.a
+[2811/2824] Linking CXX static library lib/libclangSema.a
+[2812/2824] Linking CXX static library lib/libclangParse.a
+[2813/2824] Linking CXX static library lib/libclangSerialization.a
+[2814/2824] Linking CXX static library lib/libclangFrontend.a
+[2815/2824] Linking CXX static library lib/libclangRewriteFrontend.a
+[2816/2824] Linking CXX static library lib/libclangIndex.a
+[2817/2824] Linking CXX static library lib/libclangExtractAPI.a
+[2818/2824] Linking CXX shared module lib/LLVMgold.so
+[2819/2824] Linking CXX executable bin/lld
+[2820/2824] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp: In member function ‘llvm::Value* clang::CodeGen::CodeGenFunction::EmitHLSLBuiltinExpr(unsigned int, const clang::CallExpr*, clang::CodeGen::ReturnValueSlot)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp:18885:41: error: ‘getDeclaration’ is not a member of ‘llvm::Intrinsic’; did you mean ‘getOrInsertDeclaration’?
+18885 |       return EmitRuntimeCall(Intrinsic::getDeclaration(
+      |                                         ^~~~~~~~~~~~~~
+      |                                         getOrInsertDeclaration
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+129.61user 20.75system 0:14.53elapsed 1034%CPU (0avgtext+0avgdata 1411388maxresident)k
+16inputs+5603240outputs (39746major+9137554minor)pagefaults 0swaps
