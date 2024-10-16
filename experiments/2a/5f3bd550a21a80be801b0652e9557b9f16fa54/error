@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2180/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64Common.cpp.o
+[2181/2826] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Args.cpp.o
+[2182/2826] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/CommonLinkerContext.cpp.o
+[2183/2826] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DriverDispatcher.cpp.o
+[2184/2826] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DWARF.cpp.o
+[2185/2826] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/ErrorHandler.cpp.o
+[2186/2826] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Filesystem.cpp.o
+[2187/2826] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Memory.cpp.o
+[2188/2826] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Reproduce.cpp.o
+[2189/2826] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Strings.cpp.o
+[2190/2826] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/TargetOptionsCommandFlags.cpp.o
+[2191/2826] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Timer.cpp.o
+[2192/2826] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Version.cpp.o
+[2193/2826] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld.cpp.o
+[2194/2826] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld-driver.cpp.o
+[2195/2826] Linking CXX static library lib/liblldCommon.a
+[2196/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/CallGraphSort.cpp.o
+[2197/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/COFFLinkerContext.cpp.o
+[2198/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Chunks.cpp.o
+[2199/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DebugTypes.cpp.o
+[2200/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DLL.cpp.o
+[2201/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DriverUtils.cpp.o
+[2202/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Driver.cpp.o
+[2203/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/ICF.cpp.o
+[2204/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/InputFiles.cpp.o
+[2205/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LLDMapFile.cpp.o
+[2206/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LTO.cpp.o
+[2207/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MapFile.cpp.o
+[2208/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MarkLive.cpp.o
+[2209/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MinGW.cpp.o
+[2210/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/PDB.cpp.o
+[2211/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/SymbolTable.cpp.o
+[2212/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Symbols.cpp.o
+[2213/2826] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Writer.cpp.o
+[2214/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/AArch64ErrataFix.cpp.o
+[2215/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AArch64.cpp.o
+[2216/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AMDGPU.cpp.o
+[2217/2826] Linking CXX static library lib/liblldCOFF.a
+[2218/2826] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTentative.cpp.o
+[2219/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/ARM.cpp.o
+[2220/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AVR.cpp.o
+[2221/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/LoongArch.cpp.o
+[2222/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/Hexagon.cpp.o
+[2223/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/MipsArchTree.cpp.o
+[2224/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/MSP430.cpp.o
+[2225/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/Mips.cpp.o
+[2226/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/PPC64.cpp.o
+[2227/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/PPC.cpp.o
+[2228/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/SPARCV9.cpp.o
+[2229/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/SystemZ.cpp.o
+[2230/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/RISCV.cpp.o
+[2231/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/X86.cpp.o
+[2232/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/X86_64.cpp.o
+[2233/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ARMErrataFix.cpp.o
+[2234/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/CallGraphSort.cpp.o
+[2235/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/DWARF.cpp.o
+[2236/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Driver.cpp.o
+[2237/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/DriverUtils.cpp.o
+[2238/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/EhFrame.cpp.o
+[2239/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ICF.cpp.o
+[2240/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputFiles.cpp.o
+[2241/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputSection.cpp.o
+[2242/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/LTO.cpp.o
+[2243/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/LinkerScript.cpp.o
+[2244/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/MapFile.cpp.o
+[2245/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/MarkLive.cpp.o
+[2246/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/OutputSections.cpp.o
+[2247/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Relocations.cpp.o
+[2248/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ScriptLexer.cpp.o
+[2249/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ScriptParser.cpp.o
+[2250/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SymbolTable.cpp.o
+[2251/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Symbols.cpp.o
+[2252/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SyntheticSections.cpp.o
+[2253/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Target.cpp.o
+[2254/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Thunks.cpp.o
+[2255/2826] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Writer.cpp.o
+[2256/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64.cpp.o
+[2257/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64_32.cpp.o
+[2258/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/X86_64.cpp.o
+[2259/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ConcatOutputSection.cpp.o
+[2260/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Driver.cpp.o
+[2261/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/DriverUtils.cpp.o
+[2262/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Dwarf.cpp.o
+[2263/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/EhFrame.cpp.o
+[2264/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ExportTrie.cpp.o
+[2265/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ICF.cpp.o
+[2266/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputFiles.cpp.o
+[2267/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o
+[2268/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MapFile.cpp.o
+[2269/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MarkLive.cpp.o
+[2270/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/LTO.cpp.o
+[2271/2826] Linking CXX static library lib/liblldELF.a
+[2272/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSection.cpp.o
+[2273/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ObjC.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ObjC.cpp:715:1: warning: ‘{anonymous}::ObjcCategoryMerger::PointerListInfo {anonymous}::ObjcCategoryMerger::parseProtocolListInfo(const lld::macho::ConcatInputSection*, uint32_t, {anonymous}::ObjcCategoryMerger::SourceLanguage)’ defined but not used [-Wunused-function]
+  715 | ObjcCategoryMerger::parseProtocolListInfo(const ConcatInputSection *isec,
+      | ^~~~~~~~~~~~~~~~~~
+[2274/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSegment.cpp.o
+[2275/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Relocations.cpp.o
+[2276/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/BPSectionOrderer.cpp.o
+[2277/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SectionPriorities.cpp.o
+[2278/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Sections.cpp.o
+[2279/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SymbolTable.cpp.o
+[2280/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Symbols.cpp.o
+[2281/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SyntheticSections.cpp.o
+[2282/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Target.cpp.o
+[2283/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/UnwindInfoSection.cpp.o
+[2284/2826] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Writer.cpp.o
+[2285/2826] Building CXX object tools/lld/MinGW/CMakeFiles/lldMinGW.dir/Driver.cpp.o
+[2286/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Driver.cpp.o
+[2287/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputChunks.cpp.o
+[2288/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputFiles.cpp.o
+[2289/2826] Linking CXX static library lib/liblldMinGW.a
+[2290/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/LTO.cpp.o
+[2291/2826] Linking CXX static library lib/liblldMachO.a
+[2292/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MapFile.cpp.o
+[2293/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MarkLive.cpp.o
+[2294/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSections.cpp.o
+[2295/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSegment.cpp.o
+[2296/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Relocations.cpp.o
+[2297/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SymbolTable.cpp.o
+[2298/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Writer.cpp.o
+[2299/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/WriterUtils.cpp.o
+[2300/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SyntheticSections.cpp.o
+[2301/2826] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Symbols.cpp.o
+[2302/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/AttrDocTable.cpp.o
+[2303/2826] Linking CXX shared module lib/LLVMgold.so
+[2304/2826] Linking CXX static library lib/libclangBasic.a
+[2305/2826] Linking CXX static library lib/liblldWasm.a
+[2306/2826] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTemplate.cpp.o
+[2307/2826] Linking CXX static library lib/libclangAPINotes.a
+[2308/2826] Linking CXX static library lib/libclangLex.a
+[2309/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/CommentBriefParser.cpp.o
+[2310/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/CommentCommandTraits.cpp.o
+[2311/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/CommentLexer.cpp.o
+[2312/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/CommentParser.cpp.o
+[2313/2826] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmt.cpp.o
+[2314/2826] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o
+[2315/2826] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmtAsm.cpp.o
+[2316/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTTypeTraits.cpp.o
+[2317/2826] Linking CXX executable bin/lld
+[2318/2826] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/Parser.cpp.o
+[2319/2826] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenACC.cpp.o
+[2320/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Availability.cpp.o
+[2321/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTStructuralEquivalence.cpp.o
+[2322/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Comment.cpp.o
+[2323/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ComparisonCategories.cpp.o
+[2324/2826] Building CXX object tools/clang/lib/ASTMatchers/CMakeFiles/obj.clangASTMatchers.dir/GtestMatchers.cpp.o
+[2325/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DataCollection.cpp.o
+[2326/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ComputeDependence.cpp.o
+[2327/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclGroup.cpp.o
+[2328/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/CXXInheritance.cpp.o
+[2329/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTImporterLookupTable.cpp.o
+[2330/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclarationName.cpp.o
+[2331/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclFriend.cpp.o
+[2332/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTDumper.cpp.o
+[2333/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclOpenMP.cpp.o
+[2334/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/CommentSema.cpp.o
+[2335/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclTemplate.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclTemplate.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclTemplate.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclTemplate.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclTemplate.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/DeclTemplate.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/DeclTemplate.cpp:1176:1: error: no declaration matches ‘llvm::ArrayRef<clang::TemplateArgument> clang::ClassTemplatePartialSpecializationDecl::getInjectedTemplateArgs()’
+ 1176 | ClassTemplatePartialSpecializationDecl::getInjectedTemplateArgs() {
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/DeclTemplate.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:2141:30: note: candidate is: ‘llvm::ArrayRef<clang::TemplateArgument> clang::ClassTemplatePartialSpecializationDecl::getInjectedTemplateArgs() const’
+ 2141 |   ArrayRef<TemplateArgument> getInjectedTemplateArgs() const {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:2086:7: note: ‘class clang::ClassTemplatePartialSpecializationDecl’ defined here
+ 2086 | class ClassTemplatePartialSpecializationDecl
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/DeclTemplate.cpp:1540:1: error: no declaration matches ‘llvm::ArrayRef<clang::TemplateArgument> clang::VarTemplatePartialSpecializationDecl::getInjectedTemplateArgs()’
+ 1540 | VarTemplatePartialSpecializationDecl::getInjectedTemplateArgs() {
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/DeclTemplate.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:2920:30: note: candidate is: ‘llvm::ArrayRef<clang::TemplateArgument> clang::VarTemplatePartialSpecializationDecl::getInjectedTemplateArgs() const’
+ 2920 |   ArrayRef<TemplateArgument> getInjectedTemplateArgs() const {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:2864:7: note: ‘class clang::VarTemplatePartialSpecializationDecl’ defined here
+ 2864 | class VarTemplatePartialSpecializationDecl
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2336/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclObjC.cpp.o
+[2337/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConcepts.cpp.o
+[2338/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprClassification.cpp.o
+[2339/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclBase.cpp.o
+[2340/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Decl.cpp.o
+[2341/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclCXX.cpp.o
+[2342/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprObjC.cpp.o
+[2343/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DeclPrinter.cpp.o
+[2344/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExternalASTMerger.cpp.o
+[2345/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprCXX.cpp.o
+[2346/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTImporter.cpp.o
+[2347/2826] Building CXX object tools/clang/lib/ASTMatchers/CMakeFiles/obj.clangASTMatchers.dir/ASTMatchFinder.cpp.o
+[2348/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Expr.cpp.o
+[2349/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ParentMapContext.cpp.o
+[2350/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o
+[2351/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/AttrImpl.cpp.o
+[2352/2826] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+447.91user 27.51system 0:38.41elapsed 1237%CPU (0avgtext+0avgdata 1291940maxresident)k
+8inputs+3395416outputs (38580major+15608219minor)pagefaults 0swaps
