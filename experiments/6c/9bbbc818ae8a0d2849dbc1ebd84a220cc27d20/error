@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantFold.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantFolder.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IRBuilder.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Instruction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ModRef.h:56:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::ModRefInfo)’
+   56 | raw_ostream &operator<<(raw_ostream &OS, ModRefInfo MR);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ModRef.h:56:53: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘llvm::ModRefInfo’
+   56 | raw_ostream &operator<<(raw_ostream &OS, ModRefInfo MR);
+      |                                          ~~~~~~~~~~~^~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ModRef.h:271:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::MemoryEffects)’
+  271 | raw_ostream &operator<<(raw_ostream &OS, MemoryEffects RMRB);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ModRef.h:271:56: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘llvm::MemoryEffects’ {aka ‘llvm::MemoryEffectsBase<llvm::IRMemLocation>’}
+  271 | raw_ostream &operator<<(raw_ostream &OS, MemoryEffects RMRB);
+      |                                          ~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DerivedTypes.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantFold.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantFolder.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IRBuilder.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Instruction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Type.h:487:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::Type&)’
+  487 | inline raw_ostream &operator<<(raw_ostream &OS, const Type &T) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Type.h:487:61: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘const llvm::Type&’
+  487 | inline raw_ostream &operator<<(raw_ostream &OS, const Type &T) {
+      |                                                 ~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantFold.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantFolder.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IRBuilder.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Instruction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/FMF.h:123:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::FastMathFlags)’
+  123 | inline raw_ostream &operator<<(raw_ostream &O, FastMathFlags FMF) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/FMF.h:123:62: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘llvm::FastMathFlags’
+  123 | inline raw_ostream &operator<<(raw_ostream &O, FastMathFlags FMF) {
+      |                                                ~~~~~~~~~~~~~~^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantFold.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantFolder.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IRBuilder.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Instruction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:1043:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::CmpInst::Predicate)’
+ 1043 | raw_ostream &operator<<(raw_ostream &OS, CmpInst::Predicate Pred);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:1043:61: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘llvm::CmpInst::Predicate’
+ 1043 | raw_ostream &operator<<(raw_ostream &OS, CmpInst::Predicate Pred);
+      |                                          ~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantFolder.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IRBuilder.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Instruction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:2152:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::APInt&)’
+ 2152 | inline raw_ostream &operator<<(raw_ostream &OS, const APInt &I) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:2152:62: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘const llvm::APInt&’
+ 2152 | inline raw_ostream &operator<<(raw_ostream &OS, const APInt &I) {
+      |                                                 ~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantFolder.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IRBuilder.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Instruction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:63:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::RoundingMode)’
+   63 | inline raw_ostream &operator << (raw_ostream &OS, RoundingMode RM) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:63:64: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘llvm::RoundingMode’
+   63 | inline raw_ostream &operator << (raw_ostream &OS, RoundingMode RM) {
+      |                                                   ~~~~~~~~~~~~~^~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:183:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::DenormalMode)’
+  183 | inline raw_ostream& operator<<(raw_ostream &OS, DenormalMode Mode) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:183:62: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘llvm::DenormalMode’
+  183 | inline raw_ostream& operator<<(raw_ostream &OS, DenormalMode Mode) {
+      |                                                 ~~~~~~~~~~~~~^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:280:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::FPClassTest)’
+  280 | raw_ostream &operator<<(raw_ostream &OS, FPClassTest Mask);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:280:54: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘llvm::FPClassTest’
+  280 | raw_ostream &operator<<(raw_ostream &OS, FPClassTest Mask);
+      |                                          ~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantFolder.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IRBuilder.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Instruction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:1600:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::APFloat&)’
+ 1600 | inline raw_ostream &operator<<(raw_ostream &OS, const APFloat &V) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:1600:64: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘const llvm::APFloat&’
+ 1600 | inline raw_ostream &operator<<(raw_ostream &OS, const APFloat &V) {
+      |                                                 ~~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantFolder.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IRBuilder.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Instruction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantRange.h:603:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::ConstantRange&)’
+  603 | inline raw_ostream &operator<<(raw_ostream &OS, const ConstantRange &CR) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantRange.h:603:70: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘const llvm::ConstantRange&’
+  603 | inline raw_ostream &operator<<(raw_ostream &OS, const ConstantRange &CR) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Tracker.h:47,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Context.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Constant.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Instruction.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Comdat.h:71:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::Comdat&)’
+   71 | inline raw_ostream &operator<<(raw_ostream &OS, const Comdat &C) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Comdat.h:71:63: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘const llvm::Comdat&’
+   71 | inline raw_ostream &operator<<(raw_ostream &OS, const Comdat &C) {
+      |                                                 ~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Tracker.h:47,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Context.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Constant.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Instruction.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:1075:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::Module&)’
+ 1075 | inline raw_ostream &operator<<(raw_ostream &O, const Module &M) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:1075:62: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘const llvm::Module&’
+ 1075 | inline raw_ostream &operator<<(raw_ostream &O, const Module &M) {
+      |                                                ~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/AliasAnalysis.h:42,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Utils.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:11:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/MemoryLocation.h:213:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::LocationSize)’
+  213 | inline raw_ostream &operator<<(raw_ostream &OS, LocationSize Size) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/MemoryLocation.h:213:62: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘llvm::LocationSize’
+  213 | inline raw_ostream &operator<<(raw_ostream &OS, LocationSize Size) {
+      |                                                 ~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Utils.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:11:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/AliasAnalysis.h:145:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::AliasResult)’
+  145 | raw_ostream &operator<<(raw_ostream &OS, AliasResult AR);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/AliasAnalysis.h:145:54: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘llvm::AliasResult’
+  145 | raw_ostream &operator<<(raw_ostream &OS, AliasResult AR);
+      |                                          ~~~~~~~~~~~~^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopAccessAnalysis.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Utils.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:11:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolution.h:196:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::SCEV&)’
+  196 | inline raw_ostream &operator<<(raw_ostream &OS, const SCEV &S) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolution.h:196:61: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘const llvm::SCEV&’
+  196 | inline raw_ostream &operator<<(raw_ostream &OS, const SCEV &S) {
+      |                                                 ~~~~~~~~~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolution.h:251:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::SCEVPredicate&)’
+  251 | inline raw_ostream &operator<<(raw_ostream &OS, const SCEVPredicate &P) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolution.h:251:70: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘const llvm::SCEVPredicate&’
+  251 | inline raw_ostream &operator<<(raw_ostream &OS, const SCEVPredicate &P) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/WithCache.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ValueTracking.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/SandboxIR/Utils.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:11:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/KnownBits.h:532:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::KnownBits&)’
+  532 | inline raw_ostream &operator<<(raw_ostream &OS, const KnownBits &Known) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/KnownBits.h:532:66: note:   no known conversion for argument 2 from ‘llvm::sandboxir::Value’ to ‘const llvm::KnownBits&’
+  532 | inline raw_ostream &operator<<(raw_ostream &OS, const KnownBits &Known) {
+      |                                                 ~~~~~~~~~~~~~~~~~^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:33:13: warning: ‘void llvm::sandboxir::dumpBndl(llvm::ArrayRef<llvm::sandboxir::Value*>)’ defined but not used [-Wunused-function]
+   33 | static void dumpBndl(ArrayRef<Value *> Bndl) {
+      |             ^~~~~~~~
+[2415/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/HIPAMD.cpp.o
+[2416/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/Fuchsia.cpp.o
+[2417/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/HLSL.cpp.o
+[2418/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/Hexagon.cpp.o
+[2419/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/Hurd.cpp.o
+[2420/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/MipsLinux.cpp.o
+[2421/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/MinGW.cpp.o
+[2422/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/MSVC.cpp.o
+[2423/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/NaCl.cpp.o
+[2424/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/Linux.cpp.o
+[2425/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/MSP430.cpp.o
+[2426/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/OHOS.cpp.o
+[2427/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/NetBSD.cpp.o
+[2428/2831] Building X86GenSubtargetInfo.inc...
+[2429/2831] Building X86GenInstrInfo.inc...
+[2430/2831] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2431/2831] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/HIPUtility.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+103.99user 15.04system 0:09.23elapsed 1289%CPU (0avgtext+0avgdata 932524maxresident)k
+0inputs+2553816outputs (2574major+7069706minor)pagefaults 0swaps
