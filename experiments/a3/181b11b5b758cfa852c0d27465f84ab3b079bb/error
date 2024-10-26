@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+-- Looking for setenv
+-- Looking for setenv - found
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC - Failed
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM_TV_NSEC
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM_TV_NSEC - Success
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Looking for pthread_getname_np
+-- Looking for pthread_getname_np - found
+-- Looking for pthread_setname_np
+-- Looking for pthread_setname_np - found
+-- Looking for pthread_get_name_np
+-- Looking for pthread_get_name_np - not found
+-- Looking for pthread_set_name_np
+-- Looking for pthread_set_name_np - not found
+-- Looking for dlopen
+-- Looking for dlopen - found
+-- Looking for dladdr
+-- Looking for dladdr - found
+-- Looking for proc_pid_rusage
+-- Looking for proc_pid_rusage - not found
+-- Performing Test HAVE_CXX_ATOMICS_WITHOUT_LIB
+-- Performing Test HAVE_CXX_ATOMICS_WITHOUT_LIB - Success
+-- Performing Test HAVE_CXX_ATOMICS64_WITHOUT_LIB
+-- Performing Test HAVE_CXX_ATOMICS64_WITHOUT_LIB - Success
+-- Performing Test LLVM_HAS_ATOMICS
+-- Performing Test LLVM_HAS_ATOMICS - Success
+-- LLVM host triple: x86_64-unknown-linux-gnu
+-- Native target architecture is X86
+-- Threads enabled.
+-- Doxygen disabled.
+-- Ninja version: 1.10.1
+-- Could NOT find OCaml (missing: OCAMLFIND OCAML_VERSION OCAML_STDLIB_PATH) 
+-- Could NOT find OCaml (missing: OCAMLFIND OCAML_VERSION OCAML_STDLIB_PATH) 
+-- OCaml bindings disabled.
+-- Could NOT find Python module pygments
+-- Could NOT find Python module pygments.lexers.c_cpp
+-- Found Python module yaml
+-- LLVM default target triple: x86_64-unknown-linux-gnu
+-- Performing Test CXX_SUPPORTS_CUSTOM_LINKER
+-- Performing Test CXX_SUPPORTS_CUSTOM_LINKER - Success
+-- Performing Test C_SUPPORTS_FPIC
+-- Performing Test C_SUPPORTS_FPIC - Success
+-- Performing Test CXX_SUPPORTS_FPIC
+-- Performing Test CXX_SUPPORTS_FPIC - Success
+-- Building with -fPIC
+-- Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION
+-- Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION - Success
+-- Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION
+-- Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION - Success
+-- Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG
+-- Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG - Success
+-- Performing Test C_SUPPORTS_CXX98_COMPAT_EXTRA_SEMI_FLAG
+-- Performing Test C_SUPPORTS_CXX98_COMPAT_EXTRA_SEMI_FLAG - Failed
+-- Performing Test CXX_SUPPORTS_CXX98_COMPAT_EXTRA_SEMI_FLAG
+-- Performing Test CXX_SUPPORTS_CXX98_COMPAT_EXTRA_SEMI_FLAG - Failed
+-- Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG
+-- Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG - Success
+-- Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL
+-- Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL - Success
+-- Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP
+-- Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP - Failed
+-- Performing Test C_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG
+-- Performing Test C_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG - Failed
+-- Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG
+-- Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG - Success
+-- Performing Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS
+-- Performing Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS - Failed
+-- Looking for os_signpost_interval_begin
+-- Looking for os_signpost_interval_begin - not found
+-- Linker detection: GNU Gold
+-- Performing Test HAS_WERROR_GLOBAL_CTORS
+-- Performing Test HAS_WERROR_GLOBAL_CTORS - Failed
+-- Looking for __x86_64__
+-- Looking for __x86_64__ - found
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- Looking for logf128
+-- Looking for logf128 - found
+-- Targeting X86
+-- LLD version: 20.0.0
+-- Looking for sys/resource.h
+-- Looking for sys/resource.h - found
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - found
+-- Looking for dladdr
+-- Looking for dladdr - found
+-- Clang version: 20.0.0git
+-- Looking for include file sys/inotify.h
+-- Looking for include file sys/inotify.h - found
+-- Performing Test HAVE_LINKER_FLAG_LONG_PLT
+-- Performing Test HAVE_LINKER_FLAG_LONG_PLT - Success
+-- Registering ExampleIRTransforms as a pass plugin (static build: OFF)
+-- Registering Bye as a pass plugin (static build: OFF)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/llvm-project-build-stage1
+ninja: Entering directory `/tmp/llvm-project-build-stage1'
+[1/2831] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/Demangle.cpp.o
+[2/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ABIBreak.cpp.o
+[3/2831] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/RustDemangle.cpp.o
+[4/2831] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/DLangDemangle.cpp.o
+[5/2831] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangle.cpp.o
+[6/2831] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o
+[7/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AutoConvert.cpp.o
+[8/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMWinEH.cpp.o
+[9/2831] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o
+[10/2831] Linking CXX static library lib/libLLVMDemangle.a
+[11/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BuryPointer.cpp.o
+[12/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APSInt.cpp.o
+[13/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o
+[14/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamError.cpp.o
+[15/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BranchProbability.cpp.o
+[16/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/COM.cpp.o
+[17/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Base64.cpp.o
+[18/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMBuildAttrs.cpp.o
+[19/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BlockFrequency.cpp.o
+[20/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CRC.cpp.o
+[21/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertUTF.cpp.o
+[22/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamRef.cpp.o
+[23/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamWriter.cpp.o
+[24/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CrashRecoveryContext.cpp.o
+[25/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamReader.cpp.o
+[26/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/circular_raw_ostream.cpp.o
+[27/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o
+[28/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Chrono.cpp.o
+[29/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/LockFileManager.cpp.o
+[30/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DeltaAlgorithm.cpp.o
+[31/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DeltaTree.cpp.o
+[32/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DivisionByConstantInfo.cpp.o
+[33/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o
+[34/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CSKYAttributes.cpp.o
+[35/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o
+[36/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Compression.cpp.o
+[37/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o
+[38/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertEBCDIC.cpp.o
+[39/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertUTFWrapper.cpp.o
+[40/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Caching.cpp.o
+[41/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ExtensibleRTTI.cpp.o
+[42/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DynamicAPInt.cpp.o
+[43/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DJB.cpp.o
+[44/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CSKYAttributeParser.cpp.o
+[45/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ELFAttributes.cpp.o
+[46/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Debug.cpp.o
+[47/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CodeGenCoverage.cpp.o
+[48/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CommandLine.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CommandLine.cpp: In function ‘void ExpandBasePaths(llvm::StringRef, llvm::StringSaver&, const char*&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CommandLine.cpp:1127:54: error: call of overloaded ‘StringRef(const llvm::StringLiteral&)’ is ambiguous
+ 1127 |   for (StringRef::size_type TokenPos = ArgString.find(Token);
+      |                                        ~~~~~~~~~~~~~~^~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringMapEntry.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CommandLine.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CommandLine.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringRef.h:103:28: note: candidate: ‘constexpr llvm::StringRef::StringRef(std::string_view)’
+  103 |     /*implicit*/ constexpr StringRef(std::string_view Str) : Base(Str) {}
+      |                            ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringRef.h:51:26: note: candidate: ‘constexpr llvm::StringRef::StringRef(const llvm::StringRef&)’
+   51 |   class LLVM_GSL_POINTER StringRef : public std::string_view {
+      |                          ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringRef.h:313:41: note:   initializing argument 1 of ‘size_t llvm::StringRef::find(llvm::StringRef, size_t) const’
+  313 |     [[nodiscard]] size_t find(StringRef Str, size_t From = 0) const;
+      |                               ~~~~~~~~~~^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CommandLine.cpp:1129:33: error: call of overloaded ‘StringRef(const llvm::StringLiteral&)’ is ambiguous
+ 1129 |        TokenPos = ArgString.find(Token, StartPos)) {
+      |                   ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringMapEntry.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CommandLine.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CommandLine.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringRef.h:103:28: note: candidate: ‘constexpr llvm::StringRef::StringRef(std::string_view)’
+  103 |     /*implicit*/ constexpr StringRef(std::string_view Str) : Base(Str) {}
+      |                            ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringRef.h:51:26: note: candidate: ‘constexpr llvm::StringRef::StringRef(const llvm::StringRef&)’
+   51 |   class LLVM_GSL_POINTER StringRef : public std::string_view {
+      |                          ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringRef.h:313:41: note:   initializing argument 1 of ‘size_t llvm::StringRef::find(llvm::StringRef, size_t) const’
+  313 |     [[nodiscard]] size_t find(StringRef Str, size_t From = 0) const;
+      |                               ~~~~~~~~~~^~~
+[49/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o
+[50/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DataExtractor.cpp.o
+[51/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ErrorHandling.cpp.o
+[52/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DAGDeltaAlgorithm.cpp.o
+[53/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Error.cpp.o
+[54/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FloatingPointMode.cpp.o
+[55/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DebugCounter.cpp.o
+[56/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ExponentialBackoff.cpp.o
+[57/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FormattedStream.cpp.o
+[58/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FormatVariadic.cpp.o
+[59/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FoldingSet.cpp.o
+[60/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FileOutputBuffer.cpp.o
+[61/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FileUtilities.cpp.o
+[62/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FileCollector.cpp.o
+[63/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ELFAttributeParser.cpp.o
+[64/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+[65/2831] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+35.01user 2.96system 0:02.75elapsed 1381%CPU (0avgtext+0avgdata 272764maxresident)k
+0inputs+204568outputs (30major+1677777minor)pagefaults 0swaps
