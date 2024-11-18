@@ -1,0 +1,205 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O3 stage2" failed
+
+STDOUT:
+[30/671] Linking CXX executable tools/not
+[31/671] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/myGetTickCount.cpp.o
+[32/671] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/myAddExeFlag.cpp.o
+[33/671] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/myWindows/mySplitCommandLine.cpp.o
+[34/671] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/ConsoleClose.cpp.o
+[35/671] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/BenchCon.cpp.o
+FAILED: CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/BenchCon.cpp.o 
+/tmp/llvm-test-suite-build/tools/timeit --summary CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/BenchCon.cpp.o.time /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG  -O3   -w -Werror=date-time -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -Wno-error=narrowing -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -MD -MT CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/BenchCon.cpp.o -MF CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/BenchCon.cpp.o.d -o CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/BenchCon.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/7zip/UI/Console/BenchCon.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG -O3 -w -Werror=date-time -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -Wno-error=narrowing -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -MD -MT CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/BenchCon.cpp.o -MF CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/BenchCon.cpp.o.d -o CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/BenchCon.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/7zip/UI/Console/BenchCon.cpp
+1.	<eof> parser at end of file
+2.	Optimizer
+3.	Running pass "function<eager-inv>(float2int,lower-constant-intrinsics,chr,loop(loop-rotate<header-duplication;no-prepare-for-lto>,loop-deletion),loop-distribute,inject-tli-mappings,loop-vectorize<no-interleave-forced-only;no-vectorize-forced-only;>,infer-alignment,loop-load-elim,instcombine<max-iterations=1;no-verify-fixpoint>,simplifycfg<bonus-inst-threshold=1;forward-switch-cond;switch-range-to-icmp;switch-to-lookup;no-keep-loops;hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,slp-vectorizer,vector-combine,instcombine<max-iterations=1;no-verify-fixpoint>,loop-unroll<O3>,transform-warning,sroa<preserve-cfg>,infer-alignment,instcombine<max-iterations=1;no-verify-fixpoint>,loop-mssa(licm<allowspeculation>),alignment-from-assumptions,loop-sink,instsimplify,div-rem-pairs,tailcallelim,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;speculate-unpredictables>)" on module "/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/7zip/UI/Console/BenchCon.cpp"
+4.	Running pass "loop-vectorize<no-interleave-forced-only;no-vectorize-forced-only;>" on function "_ZL12PrintResultsP8_IO_FILERK10CBenchInfoyR14CTotalBenchRes"
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x000055d2edd233a8 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 40
+1  clang++   0x000055d2edd2083e llvm::sys::RunSignalHandlers() + 238
+2  clang++   0x000055d2edc84e47
+3  libc.so.6 0x00007fa8627cf520
+4  clang++   0x000055d2ecbdd014
+5  clang++   0x000055d2ecf646ee llvm::RecurrenceDescriptor::AddReductionVar(llvm::PHINode*, llvm::RecurKind, llvm::Loop*, llvm::FastMathFlags, llvm::RecurrenceDescriptor&, llvm::DemandedBits*, llvm::AssumptionCache*, llvm::DominatorTree*, llvm::ScalarEvolution*) + 1342
+6  clang++   0x000055d2ecf66ee0 llvm::RecurrenceDescriptor::isReductionPHI(llvm::PHINode*, llvm::Loop*, llvm::RecurrenceDescriptor&, llvm::DemandedBits*, llvm::AssumptionCache*, llvm::DominatorTree*, llvm::ScalarEvolution*) + 336
+7  clang++   0x000055d2ef5057d2 llvm::LoopVectorizationLegality::canVectorizeInstrs() + 674
+8  clang++   0x000055d2ef50c983 llvm::LoopVectorizationLegality::canVectorize(bool) + 275
+9  clang++   0x000055d2ef4e2968 llvm::LoopVectorizePass::processLoop(llvm::Loop*) + 984
+10 clang++   0x000055d2ef4eb5d7 llvm::LoopVectorizePass::runImpl(llvm::Function&) + 327
+11 clang++   0x000055d2ef4ebb1a llvm::LoopVectorizePass::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 666
+12 clang++   0x000055d2ef3ef75d
+13 clang++   0x000055d2ed7fad0b llvm::PassManager<llvm::Function, llvm::AnalysisManager<llvm::Function>>::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 587
+14 clang++   0x000055d2ecd9862d
+15 clang++   0x000055d2ed7ff0cd llvm::ModuleToFunctionPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 349
+16 clang++   0x000055d2ecd9838d
+17 clang++   0x000055d2ed7f9f5a llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 1290
+18 clang++   0x000055d2ee5f9158
+19 clang++   0x000055d2ee5ee531 clang::EmitBackendOutput(clang::DiagnosticsEngine&, clang::HeaderSearchOptions const&, clang::CodeGenOptions const&, clang::TargetOptions const&, clang::LangOptions const&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>, clang::BackendConsumer*) + 3905
+20 clang++   0x000055d2ee60927d clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 2989
+21 clang++   0x000055d2efc45e69 clang::ParseAST(clang::Sema&, bool, bool) + 937
+22 clang++   0x000055d2eeb43894 clang::FrontendAction::Execute() + 84
+23 clang++   0x000055d2eea34fa0 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 1216
+24 clang++   0x000055d2eec473a2 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 738
+25 clang++   0x000055d2eca6b224 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7988
+26 clang++   0x000055d2eca677bf
+27 clang++   0x000055d2ee897169
+28 clang++   0x000055d2edc84a08 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 136
+29 clang++   0x000055d2ee896db4 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const + 356
+30 clang++   0x000055d2ee8589c0 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 560
+31 clang++   0x000055d2ee87519c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 732
+32 clang++   0x000055d2eca66cb9 clang_main(int, char**, llvm::ToolContext const&) + 7209
+33 clang++   0x000055d2eca7701a main + 90
+34 libc.so.6 0x00007fa8627b6d90
+35 libc.so.6 0x00007fa8627b6e40 __libc_start_main + 128
+36 clang++   0x000055d2eca595e5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 20.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage2/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/BenchCon-1b6c0c.cpp
+clang++: note: diagnostic msg: /tmp/BenchCon-1b6c0c.sh
+clang++: note: diagnostic msg: 
+
+********************
+[36/671] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/ExtractCallbackConsole.cpp.o
+[37/671] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/MainAr.cpp.o
+[38/671] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/OpenCallbackConsole.cpp.o
+[39/671] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/PercentPrinter.cpp.o
+FAILED: CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/PercentPrinter.cpp.o 
+/tmp/llvm-test-suite-build/tools/timeit --summary CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/PercentPrinter.cpp.o.time /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG  -O3   -w -Werror=date-time -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -Wno-error=narrowing -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -MD -MT CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/PercentPrinter.cpp.o -MF CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/PercentPrinter.cpp.o.d -o CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/PercentPrinter.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/7zip/UI/Console/PercentPrinter.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG -O3 -w -Werror=date-time -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -Wno-error=narrowing -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -MD -MT CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/PercentPrinter.cpp.o -MF CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/PercentPrinter.cpp.o.d -o CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/PercentPrinter.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/7zip/UI/Console/PercentPrinter.cpp
+1.	<eof> parser at end of file
+2.	Optimizer
+3.	Running pass "function<eager-inv>(float2int,lower-constant-intrinsics,chr,loop(loop-rotate<header-duplication;no-prepare-for-lto>,loop-deletion),loop-distribute,inject-tli-mappings,loop-vectorize<no-interleave-forced-only;no-vectorize-forced-only;>,infer-alignment,loop-load-elim,instcombine<max-iterations=1;no-verify-fixpoint>,simplifycfg<bonus-inst-threshold=1;forward-switch-cond;switch-range-to-icmp;switch-to-lookup;no-keep-loops;hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,slp-vectorizer,vector-combine,instcombine<max-iterations=1;no-verify-fixpoint>,loop-unroll<O3>,transform-warning,sroa<preserve-cfg>,infer-alignment,instcombine<max-iterations=1;no-verify-fixpoint>,loop-mssa(licm<allowspeculation>),alignment-from-assumptions,loop-sink,instsimplify,div-rem-pairs,tailcallelim,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;speculate-unpredictables>)" on module "/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/7zip/UI/Console/PercentPrinter.cpp"
+4.	Running pass "loop-vectorize<no-interleave-forced-only;no-vectorize-forced-only;>" on function "_ZN15CPercentPrinter12RePrintRatioEv"
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x0000563cc9ab13a8 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 40
+1  clang++   0x0000563cc9aae83e llvm::sys::RunSignalHandlers() + 238
+2  clang++   0x0000563cc9a12e47
+3  libc.so.6 0x00007fdb87017520
+4  clang++   0x0000563cc896b014
+5  clang++   0x0000563cc8cf26ee llvm::RecurrenceDescriptor::AddReductionVar(llvm::PHINode*, llvm::RecurKind, llvm::Loop*, llvm::FastMathFlags, llvm::RecurrenceDescriptor&, llvm::DemandedBits*, llvm::AssumptionCache*, llvm::DominatorTree*, llvm::ScalarEvolution*) + 1342
+6  clang++   0x0000563cc8cf4ee0 llvm::RecurrenceDescriptor::isReductionPHI(llvm::PHINode*, llvm::Loop*, llvm::RecurrenceDescriptor&, llvm::DemandedBits*, llvm::AssumptionCache*, llvm::DominatorTree*, llvm::ScalarEvolution*) + 336
+7  clang++   0x0000563ccb2937d2 llvm::LoopVectorizationLegality::canVectorizeInstrs() + 674
+8  clang++   0x0000563ccb29a983 llvm::LoopVectorizationLegality::canVectorize(bool) + 275
+9  clang++   0x0000563ccb270968 llvm::LoopVectorizePass::processLoop(llvm::Loop*) + 984
+10 clang++   0x0000563ccb2795d7 llvm::LoopVectorizePass::runImpl(llvm::Function&) + 327
+11 clang++   0x0000563ccb279b1a llvm::LoopVectorizePass::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 666
+12 clang++   0x0000563ccb17d75d
+13 clang++   0x0000563cc9588d0b llvm::PassManager<llvm::Function, llvm::AnalysisManager<llvm::Function>>::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 587
+14 clang++   0x0000563cc8b2662d
+15 clang++   0x0000563cc958d0cd llvm::ModuleToFunctionPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 349
+16 clang++   0x0000563cc8b2638d
+17 clang++   0x0000563cc9587f5a llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 1290
+18 clang++   0x0000563cca387158
+19 clang++   0x0000563cca37c531 clang::EmitBackendOutput(clang::DiagnosticsEngine&, clang::HeaderSearchOptions const&, clang::CodeGenOptions const&, clang::TargetOptions const&, clang::LangOptions const&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>, clang::BackendConsumer*) + 3905
+20 clang++   0x0000563cca39727d clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 2989
+21 clang++   0x0000563ccb9d3e69 clang::ParseAST(clang::Sema&, bool, bool) + 937
+22 clang++   0x0000563cca8d1894 clang::FrontendAction::Execute() + 84
+23 clang++   0x0000563cca7c2fa0 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 1216
+24 clang++   0x0000563cca9d53a2 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 738
+25 clang++   0x0000563cc87f9224 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7988
+26 clang++   0x0000563cc87f57bf
+27 clang++   0x0000563cca625169
+28 clang++   0x0000563cc9a12a08 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 136
+29 clang++   0x0000563cca624db4 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const + 356
+30 clang++   0x0000563cca5e69c0 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 560
+31 clang++   0x0000563cca60319c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 732
+32 clang++   0x0000563cc87f4cb9 clang_main(int, char**, llvm::ToolContext const&) + 7209
+33 clang++   0x0000563cc880501a main + 90
+34 libc.so.6 0x00007fdb86ffed90
+35 libc.so.6 0x00007fdb86ffee40 __libc_start_main + 128
+36 clang++   0x0000563cc87e75e5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 20.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage2/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/PercentPrinter-be0e04.cpp
+clang++: note: diagnostic msg: /tmp/PercentPrinter-be0e04.sh
+clang++: note: diagnostic msg: 
+
+********************
+[40/671] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/List.cpp.o
+FAILED: CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/List.cpp.o 
+/tmp/llvm-test-suite-build/tools/timeit --summary CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/List.cpp.o.time /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG  -O3   -w -Werror=date-time -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -Wno-error=narrowing -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -MD -MT CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/List.cpp.o -MF CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/List.cpp.o.d -o CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/List.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/7zip/UI/Console/List.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG -O3 -w -Werror=date-time -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -Wno-error=narrowing -DBREAK_HANDLER -DUNICODE -D_UNICODE -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/C -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/myWindows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/include_windows -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP -I. -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DNDEBUG -D_REENTRANT -DENV_UNIX -D_7ZIP_LARGE_PAGES -pthread -MD -MT CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/List.cpp.o -MF CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/List.cpp.o.d -o CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/List.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/7zip/UI/Console/List.cpp
+1.	<eof> parser at end of file
+2.	Optimizer
+3.	Running pass "function<eager-inv>(float2int,lower-constant-intrinsics,chr,loop(loop-rotate<header-duplication;no-prepare-for-lto>,loop-deletion),loop-distribute,inject-tli-mappings,loop-vectorize<no-interleave-forced-only;no-vectorize-forced-only;>,infer-alignment,loop-load-elim,instcombine<max-iterations=1;no-verify-fixpoint>,simplifycfg<bonus-inst-threshold=1;forward-switch-cond;switch-range-to-icmp;switch-to-lookup;no-keep-loops;hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,slp-vectorizer,vector-combine,instcombine<max-iterations=1;no-verify-fixpoint>,loop-unroll<O3>,transform-warning,sroa<preserve-cfg>,infer-alignment,instcombine<max-iterations=1;no-verify-fixpoint>,loop-mssa(licm<allowspeculation>),alignment-from-assumptions,loop-sink,instsimplify,div-rem-pairs,tailcallelim,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;speculate-unpredictables>)" on module "/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/7zip/CPP/7zip/UI/Console/List.cpp"
+4.	Running pass "loop-vectorize<no-interleave-forced-only;no-vectorize-forced-only;>" on function "_ZN13CFieldPrinter10PrintTitleEv"
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x000055f69dfe43a8 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 40
+1  clang++   0x000055f69dfe183e llvm::sys::RunSignalHandlers() + 238
+2  clang++   0x000055f69df45e47
+3  libc.so.6 0x00007f3181b06520
+4  clang++   0x000055f69ce9e014
+5  clang++   0x000055f69d2256ee llvm::RecurrenceDescriptor::AddReductionVar(llvm::PHINode*, llvm::RecurKind, llvm::Loop*, llvm::FastMathFlags, llvm::RecurrenceDescriptor&, llvm::DemandedBits*, llvm::AssumptionCache*, llvm::DominatorTree*, llvm::ScalarEvolution*) + 1342
+6  clang++   0x000055f69d227ee0 llvm::RecurrenceDescriptor::isReductionPHI(llvm::PHINode*, llvm::Loop*, llvm::RecurrenceDescriptor&, llvm::DemandedBits*, llvm::AssumptionCache*, llvm::DominatorTree*, llvm::ScalarEvolution*) + 336
+7  clang++   0x000055f69f7c67d2 llvm::LoopVectorizationLegality::canVectorizeInstrs() + 674
+8  clang++   0x000055f69f7cd983 llvm::LoopVectorizationLegality::canVectorize(bool) + 275
+9  clang++   0x000055f69f7a3968 llvm::LoopVectorizePass::processLoop(llvm::Loop*) + 984
+10 clang++   0x000055f69f7ac5d7 llvm::LoopVectorizePass::runImpl(llvm::Function&) + 327
+11 clang++   0x000055f69f7acb1a llvm::LoopVectorizePass::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 666
+12 clang++   0x000055f69f6b075d
+13 clang++   0x000055f69dabbd0b llvm::PassManager<llvm::Function, llvm::AnalysisManager<llvm::Function>>::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 587
+14 clang++   0x000055f69d05962d
+15 clang++   0x000055f69dac00cd llvm::ModuleToFunctionPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 349
+16 clang++   0x000055f69d05938d
+17 clang++   0x000055f69dabaf5a llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 1290
+18 clang++   0x000055f69e8ba158
+19 clang++   0x000055f69e8af531 clang::EmitBackendOutput(clang::DiagnosticsEngine&, clang::HeaderSearchOptions const&, clang::CodeGenOptions const&, clang::TargetOptions const&, clang::LangOptions const&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>, clang::BackendConsumer*) + 3905
+20 clang++   0x000055f69e8ca27d clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 2989
+21 clang++   0x000055f69ff06e69 clang::ParseAST(clang::Sema&, bool, bool) + 937
+22 clang++   0x000055f69ee04894 clang::FrontendAction::Execute() + 84
+23 clang++   0x000055f69ecf5fa0 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 1216
+24 clang++   0x000055f69ef083a2 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 738
+25 clang++   0x000055f69cd2c224 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7988
+26 clang++   0x000055f69cd287bf
+27 clang++   0x000055f69eb58169
+28 clang++   0x000055f69df45a08 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 136
+29 clang++   0x000055f69eb57db4 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const + 356
+30 clang++   0x000055f69eb199c0 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 560
+31 clang++   0x000055f69eb3619c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 732
+32 clang++   0x000055f69cd27cb9 clang_main(int, char**, llvm::ToolContext const&) + 7209
+33 clang++   0x000055f69cd3801a main + 90
+34 libc.so.6 0x00007f3181aedd90
+35 libc.so.6 0x00007f3181aede40 __libc_start_main + 128
+36 clang++   0x000055f69cd1a5e5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 20.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage2/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/List-c0a23f.cpp
+clang++: note: diagnostic msg: /tmp/List-c0a23f.sh
+clang++: note: diagnostic msg: 
+
+********************
+[41/671] Building CXX object CTMark/7zip/CMakeFiles/7zip-benchmark.dir/CPP/7zip/UI/Console/Main.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
