@@ -1,0 +1,205 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+[90/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/PrettyStackTrace.cpp.o
+[91/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RewriteBuffer.cpp.o
+[92/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/PluginLoader.cpp.o
+[93/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MemoryBuffer.cpp.o
+[94/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Regex.cpp.o
+[95/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RewriteRope.cpp.o
+[96/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RISCVAttributes.cpp.o
+[97/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/JSON.cpp.o
+[98/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RISCVISAUtils.cpp.o
+[99/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/PGOOptions.cpp.o
+[100/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SHA1.cpp.o
+[101/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Parallel.cpp.o
+[102/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RISCVAttributeParser.cpp.o
+[103/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ScaledNumber.cpp.o
+[104/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Signposts.cpp.o
+[105/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SmallPtrSet.cpp.o
+[106/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SHA256.cpp.o
+[107/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SmallVector.cpp.o
+[108/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RandomNumberGenerator.cpp.o
+[109/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SlowDynamicAPInt.cpp.o
+[110/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SipHash.cpp.o
+[111/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SuffixTreeNode.cpp.o
+[112/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/StringMap.cpp.o
+[113/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/StringExtras.cpp.o
+[114/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SystemUtils.cpp.o
+[115/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/StringSaver.cpp.o
+[116/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ScopedPrinter.cpp.o
+[117/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SourceMgr.cpp.o
+[118/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SuffixTree.cpp.o
+[119/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ToolOutputFile.cpp.o
+[120/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/TarWriter.cpp.o
+[121/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/UnicodeCaseFold.cpp.o
+[122/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/StringRef.cpp.o
+[123/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Unicode.cpp.o
+[124/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/UnicodeNameToCodepointGenerated.cpp.o
+[125/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Twine.cpp.o
+[126/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Statistic.cpp.o
+[127/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/TypeSize.cpp.o
+[128/2711] Building C object lib/Support/CMakeFiles/LLVMSupport.dir/regerror.c.o
+[129/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ThreadPool.cpp.o
+[130/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SpecialCaseList.cpp.o
+[131/2711] Building C object lib/Support/CMakeFiles/LLVMSupport.dir/regfree.c.o
+[132/2711] Building C object lib/Support/CMakeFiles/LLVMSupport.dir/regstrlcpy.c.o
+[133/2711] Building C object lib/Support/CMakeFiles/LLVMSupport.dir/regcomp.c.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/regcomp.c.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/regcomp.c.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/regcomp.c.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/regcomp.c.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/regcomp.c
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/regcomp.c.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/regcomp.c.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/regcomp.c.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/regcomp.c
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/regcomp.c:436:1: Generating code for declaration 'p_ere_exp'
+4.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/regcomp.c:450:13: LLVM IR generation of compound statement ('{}')
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang     0x000055c9aacbdc00 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang     0x000055c9aacbbad4 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang     0x000055c9aac0d568
+3  libc.so.6 0x00007fe9d9b6d520
+4  libc.so.6 0x00007fe9d9cd17cd
+5  clang     0x000055c9ad996170 clang::Expr::EvaluateKnownConstInt(clang::ASTContext const&, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic>>*) const + 1600
+6  clang     0x000055c9aafc6019 clang::CodeGen::CodeGenFunction::EmitCaseStmt(clang::CaseStmt const&, llvm::ArrayRef<clang::Attr const*>) + 121
+7  clang     0x000055c9aafcb585 clang::CodeGen::CodeGenFunction::EmitSimpleStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) + 693
+8  clang     0x000055c9aafc3026 clang::CodeGen::CodeGenFunction::EmitStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) + 102
+9  clang     0x000055c9aafcae01 clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 177
+10 clang     0x000055c9aafcb200 clang::CodeGen::CodeGenFunction::EmitCompoundStmt(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 416
+11 clang     0x000055c9aafcb504 clang::CodeGen::CodeGenFunction::EmitSimpleStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) + 564
+12 clang     0x000055c9aafc3026 clang::CodeGen::CodeGenFunction::EmitStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) + 102
+13 clang     0x000055c9aafc4d11 clang::CodeGen::CodeGenFunction::EmitSwitchStmt(clang::SwitchStmt const&) + 1841
+14 clang     0x000055c9aafcae01 clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 177
+15 clang     0x000055c9ab02c584 clang::CodeGen::CodeGenFunction::EmitFunctionBody(clang::Stmt const*) + 324
+16 clang     0x000055c9ab0405ef clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 815
+17 clang     0x000055c9ab08db7c clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 396
+18 clang     0x000055c9ab089215 clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 613
+19 clang     0x000055c9ab093610 clang::CodeGen::CodeGenModule::EmitDeferred() + 288
+20 clang     0x000055c9ab093628 clang::CodeGen::CodeGenModule::EmitDeferred() + 312
+21 clang     0x000055c9ab094474 clang::CodeGen::CodeGenModule::Release() + 116
+22 clang     0x000055c9ab5c4ee6
+23 clang     0x000055c9ab5c2a9d clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 957
+24 clang     0x000055c9ac8e00ec clang::ParseAST(clang::Sema&, bool, bool) + 1164
+25 clang     0x000055c9ab8aafa1 clang::FrontendAction::Execute() + 209
+26 clang     0x000055c9ab81e3bb clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 571
+27 clang     0x000055c9ab97e4af clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 351
+28 clang     0x000055c9a996c491 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8273
+29 clang     0x000055c9a9964312
+30 clang     0x000055c9ab60dead
+31 clang     0x000055c9aac0d9b7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+32 clang     0x000055c9ab60e247
+33 clang     0x000055c9ab5d41f1 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+34 clang     0x000055c9ab5d528d clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 269
+35 clang     0x000055c9ab5e77dc clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 364
+36 clang     0x000055c9a996887a clang_main(int, char**, llvm::ToolContext const&) + 8058
+37 clang     0x000055c9a988e29b main + 107
+38 libc.so.6 0x00007fe9d9b54d90
+39 libc.so.6 0x00007fe9d9b54e40 __libc_start_main + 128
+40 clang     0x000055c9a9963d75 _start + 37
+clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 20.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/regcomp-1a0350.c
+clang: note: diagnostic msg: /tmp/regcomp-1a0350.sh
+clang: note: diagnostic msg: 
+
+********************
+[134/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/TrieRawHashMap.cpp.o
+[135/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/VersionTuple.cpp.o
+[136/2711] Building C object lib/Support/CMakeFiles/LLVMSupport.dir/regexec.c.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/regexec.c.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/regexec.c.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/regexec.c.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/regexec.c.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/regexec.c
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/regexec.c.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/regexec.c.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/regexec.c.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/regexec.c
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/regengine.inc:913:1 <Spelling=/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/regengine.inc:51:14>: Generating code for declaration 'sstep'
+4.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/regengine.inc:927:64: LLVM IR generation of compound statement ('{}')
+5.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/regengine.inc:929:18: LLVM IR generation of compound statement ('{}')
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang     0x0000561575c48c00 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang     0x0000561575c46ad4 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang     0x0000561575b98568
+3  libc.so.6 0x00007f5e37790520
+4  libc.so.6 0x00007f5e378f4c42
+5  clang     0x0000561578921170 clang::Expr::EvaluateKnownConstInt(clang::ASTContext const&, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic>>*) const + 1600
+6  clang     0x0000561575f51019 clang::CodeGen::CodeGenFunction::EmitCaseStmt(clang::CaseStmt const&, llvm::ArrayRef<clang::Attr const*>) + 121
+7  clang     0x0000561575f56585 clang::CodeGen::CodeGenFunction::EmitSimpleStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) + 693
+8  clang     0x0000561575f4e026 clang::CodeGen::CodeGenFunction::EmitStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) + 102
+9  clang     0x0000561575f55e01 clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 177
+10 clang     0x0000561575f56200 clang::CodeGen::CodeGenFunction::EmitCompoundStmt(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 416
+11 clang     0x0000561575f56504 clang::CodeGen::CodeGenFunction::EmitSimpleStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) + 564
+12 clang     0x0000561575f4e026 clang::CodeGen::CodeGenFunction::EmitStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) + 102
+13 clang     0x0000561575f4fd11 clang::CodeGen::CodeGenFunction::EmitSwitchStmt(clang::SwitchStmt const&) + 1841
+14 clang     0x0000561575f55e01 clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 177
+15 clang     0x0000561575f56200 clang::CodeGen::CodeGenFunction::EmitCompoundStmt(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 416
+16 clang     0x0000561575f56504 clang::CodeGen::CodeGenFunction::EmitSimpleStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) + 564
+17 clang     0x0000561575f4e026 clang::CodeGen::CodeGenFunction::EmitStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) + 102
+18 clang     0x0000561575f52ce6 clang::CodeGen::CodeGenFunction::EmitForStmt(clang::ForStmt const&, llvm::ArrayRef<clang::Attr const*>) + 2294
+19 clang     0x0000561575f55e01 clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 177
+20 clang     0x0000561575fb7584 clang::CodeGen::CodeGenFunction::EmitFunctionBody(clang::Stmt const*) + 324
+21 clang     0x0000561575fcb5ef clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 815
+22 clang     0x0000561576018b7c clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 396
+23 clang     0x0000561576014215 clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 613
+24 clang     0x000056157601e610 clang::CodeGen::CodeGenModule::EmitDeferred() + 288
+25 clang     0x000056157601e628 clang::CodeGen::CodeGenModule::EmitDeferred() + 312
+26 clang     0x000056157601e628 clang::CodeGen::CodeGenModule::EmitDeferred() + 312
+27 clang     0x000056157601f474 clang::CodeGen::CodeGenModule::Release() + 116
+28 clang     0x000056157654fee6
+29 clang     0x000056157654da9d clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 957
+30 clang     0x000056157786b0ec clang::ParseAST(clang::Sema&, bool, bool) + 1164
+31 clang     0x0000561576835fa1 clang::FrontendAction::Execute() + 209
+32 clang     0x00005615767a93bb clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 571
+33 clang     0x00005615769094af clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 351
+34 clang     0x00005615748f7491 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8273
+35 clang     0x00005615748ef312
+36 clang     0x0000561576598ead
+37 clang     0x0000561575b989b7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+38 clang     0x0000561576599247
+39 clang     0x000056157655f1f1 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+40 clang     0x000056157656028d clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 269
+41 clang     0x00005615765727dc clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 364
+42 clang     0x00005615748f387a clang_main(int, char**, llvm::ToolContext const&) + 8058
+43 clang     0x000056157481929b main + 107
+44 libc.so.6 0x00007f5e37777d90
+45 libc.so.6 0x00007f5e37777e40 __libc_start_main + 128
+46 clang     0x00005615748eed75 _start + 37
+clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 20.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/regexec-d8e2df.c
+clang: note: diagnostic msg: /tmp/regexec-d8e2df.sh
+clang: note: diagnostic msg: 
+
+********************
+[137/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/UnicodeNameToCodepoint.cpp.o
+[138/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/raw_os_ostream.cpp.o
+[139/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Timer.cpp.o
+[140/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Z3Solver.cpp.o
+[141/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/TimeProfiler.cpp.o
+[142/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/xxhash.cpp.o
+[143/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/WithColor.cpp.o
+[144/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/raw_socket_stream.cpp.o
+[145/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/raw_ostream.cpp.o
+[146/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/YAMLTraits.cpp.o
+[147/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/YAMLParser.cpp.o
+[148/2711] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/VirtualFileSystem.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
