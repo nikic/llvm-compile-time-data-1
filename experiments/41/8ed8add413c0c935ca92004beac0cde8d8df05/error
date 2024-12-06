@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+  139 |       if (Bits[Idx] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:139:15: warning: array subscript 4294967295 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  139 |       if (Bits[Idx] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+[1853/2857] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PDBStringTable.cpp.o
+[1854/2857] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PDBStringTableBuilder.cpp.o
+[1855/2857] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PublicsStream.cpp.o
+[1856/2857] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/GSIStreamBuilder.cpp.o
+[1857/2857] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/RawError.cpp.o
+[1858/2857] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/SymbolCache.cpp.o
+[1859/2857] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/SymbolStream.cpp.o
+[1860/2857] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/TpiHashing.cpp.o
+[1861/2857] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/TpiStream.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/HashTable.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/TpiStream.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/PDB/Native/TpiStream.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘llvm::Error llvm::pdb::HashTable<ValueT>::load(llvm::BinaryStreamReader&) [with ValueT = llvm::support::detail::packed_endian_specific_integral<unsigned int, llvm::endianness::little, 1>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+[1862/2857] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/TpiStreamBuilder.cpp.o
+[1863/2857] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/Markup.cpp.o
+[1864/2857] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/DIPrinter.cpp.o
+[1865/2857] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/SymbolizableObjectFile.cpp.o
+[1866/2857] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/MarkupFilter.cpp.o
+[1867/2857] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/Symbolize.cpp.o
+[1868/2857] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/Target.cpp.o
+[1869/2857] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetIntrinsicInfo.cpp.o
+[1870/2857] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetLoweringObjectFile.cpp.o
+[1871/2857] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetMachine.cpp.o
+[1872/2857] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetMachineC.cpp.o
+[1873/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/Argument.cpp.o
+[1874/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/BasicBlock.cpp.o
+[1875/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/Constant.cpp.o
+[1876/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/Context.cpp.o
+[1877/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/Instruction.cpp.o
+[1878/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/Function.cpp.o
+[1879/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/Module.cpp.o
+[1880/2857] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CallGraph.cpp.o
+[1881/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/PassManager.cpp.o
+[1882/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/Pass.cpp.o
+[1883/2857] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/FunctionComparator.cpp.o
+[1884/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/Region.cpp.o
+[1885/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/Tracker.cpp.o
+[1886/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/Type.cpp.o
+[1887/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/User.cpp.o
+[1888/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/Use.cpp.o
+[1889/2857] Building CXX object lib/SandboxIR/CMakeFiles/LLVMSandboxIR.dir/Value.cpp.o
+[1890/2857] Building CXX object lib/AsmParser/CMakeFiles/LLVMAsmParser.dir/LLLexer.cpp.o
+[1891/2857] Building CXX object lib/AsmParser/CMakeFiles/LLVMAsmParser.dir/LLParser.cpp.o
+[1892/2857] Building CXX object lib/AsmParser/CMakeFiles/LLVMAsmParser.dir/Parser.cpp.o
+[1893/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/GCOV.cpp.o
+[1894/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/InstrProf.cpp.o
+[1895/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/InstrProfCorrelator.cpp.o
+[1896/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/InstrProfReader.cpp.o
+[1897/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/InstrProfWriter.cpp.o
+[1898/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/ItaniumManglingCanonicalizer.cpp.o
+[1899/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/MemProf.cpp.o
+[1900/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/MemProfReader.cpp.o
+[1901/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/PGOCtxProfReader.cpp.o
+[1902/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/PGOCtxProfWriter.cpp.o
+[1903/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/ProfileSummaryBuilder.cpp.o
+[1904/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/SampleProf.cpp.o
+[1905/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/SampleProfReader.cpp.o
+[1906/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/SampleProfWriter.cpp.o
+[1907/2857] Building CXX object lib/ProfileData/Coverage/CMakeFiles/LLVMCoverage.dir/CoverageMapping.cpp.o
+[1908/2857] Building CXX object lib/ProfileData/Coverage/CMakeFiles/LLVMCoverage.dir/CoverageMappingWriter.cpp.o
+[1909/2857] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/OptimizationLevel.cpp.o
+[1910/2857] Building CXX object lib/ProfileData/CMakeFiles/LLVMProfileData.dir/SymbolRemappingReader.cpp.o
+[1911/2857] Building CXX object lib/ProfileData/Coverage/CMakeFiles/LLVMCoverage.dir/CoverageMappingReader.cpp.o
+[1912/2857] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilderBindings.cpp.o
+[1913/2857] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/CodeGenPassBuilder.cpp.o
+[1914/2857] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilder.cpp.o
+[1915/2857] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassPlugin.cpp.o
+[1916/2857] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilderPipelines.cpp.o
+[1917/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/ARMTargetParserCommon.cpp.o
+[1918/2857] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/StandardInstrumentations.cpp.o
+[1919/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/AArch64TargetParser.cpp.o
+[1920/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/ARMTargetParser.cpp.o
+[1921/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/CSKYTargetParser.cpp.o
+[1922/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/Host.cpp.o
+[1923/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/LoongArchTargetParser.cpp.o
+[1924/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/RISCVTargetParser.cpp.o
+[1925/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/RISCVISAInfo.cpp.o
+[1926/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/TargetParser.cpp.o
+[1927/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/SubtargetFeature.cpp.o
+[1928/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/PPCTargetParser.cpp.o
+[1929/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/X86TargetParser.cpp.o
+[1930/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/ArchitectureSet.cpp.o
+[1931/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/InterfaceFile.cpp.o
+[1932/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/TextStubV5.cpp.o
+[1933/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/Architecture.cpp.o
+[1934/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/PackedVersion.cpp.o
+[1935/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/Platform.cpp.o
+[1936/2857] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CloneDetection.cpp.o
+[1937/2857] Building CXX object lib/TargetParser/CMakeFiles/LLVMTargetParser.dir/Triple.cpp.o
+[1938/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/RecordsSlice.cpp.o
+[1939/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/Symbol.cpp.o
+[1940/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/SymbolSet.cpp.o
+[1941/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/RecordVisitor.cpp.o
+[1942/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/Target.cpp.o
+[1943/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/TextStub.cpp.o
+[1944/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/TextAPIError.cpp.o
+[1945/2857] Linking CXX static library lib/libLLVMTargetParser.a
+[1946/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/TextStubCommon.cpp.o
+[1947/2857] Building CXX object lib/TextAPI/CMakeFiles/LLVMTextAPI.dir/Utils.cpp.o
+[1948/2857] Building CXX object lib/ToolDrivers/llvm-dlltool/CMakeFiles/LLVMDlltoolDriver.dir/DlltoolDriver.cpp.o
+[1949/2857] Building CXX object lib/ToolDrivers/llvm-lib/CMakeFiles/LLVMLibDriver.dir/LibDriver.cpp.o
+[1950/2857] Building CXX object lib/WindowsDriver/CMakeFiles/LLVMWindowsDriver.dir/MSVCPaths.cpp.o
+[1951/2857] Building CXX object tools/clang/lib/APINotes/CMakeFiles/obj.clangAPINotes.dir/APINotesTypes.cpp.o
+[1952/2857] Linking CXX static library lib/libLLVMBinaryFormat.a
+[1953/2857] Building CXX object tools/clang/lib/APINotes/CMakeFiles/obj.clangAPINotes.dir/APINotesYAMLCompiler.cpp.o
+[1954/2857] Linking CXX static library lib/libLLVMWindowsDriver.a
+[1955/2857] Building CXX object tools/clang/lib/APINotes/CMakeFiles/obj.clangAPINotes.dir/APINotesManager.cpp.o
+[1956/2857] Building CXX object tools/clang/lib/APINotes/CMakeFiles/obj.clangAPINotes.dir/APINotesReader.cpp.o
+[1957/2857] Linking CXX static library lib/libLLVMTextAPI.a
+[1958/2857] Building CXX object tools/clang/lib/APINotes/CMakeFiles/obj.clangAPINotes.dir/APINotesWriter.cpp.o
+[1959/2857] Generating VCSVersion.inc
+[1960/2857] Linking CXX static library lib/libLLVMMC.a
+[1961/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/ASTSourceDescriptor.cpp.o
+[1962/2857] Linking CXX static library lib/libLLVMMCDisassembler.a
+[1963/2857] Linking CXX static library lib/libLLVMCore.a
+[1964/2857] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/AnalysisDeclContext.cpp.o
+[1965/2857] Linking CXX static library lib/libLLVMBitReader.a
+[1966/2857] Linking CXX static library lib/libLLVMFrontendHLSL.a
+[1967/2857] Linking CXX static library lib/libLLVMCFGuard.a
+[1968/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/CLWarnings.cpp.o
+[1969/2857] Linking CXX static library lib/libLLVMAsmParser.a
+[1970/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/CharInfo.cpp.o
+[1971/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/CodeGenOptions.cpp.o
+[1972/2857] Linking CXX static library lib/libLLVMIRReader.a
+[1973/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Cuda.cpp.o
+[1974/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/DarwinSDKInfo.cpp.o
+[1975/2857] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/IntervalPartition.cpp.o
+[1976/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/DiagnosticOptions.cpp.o
+[1977/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/ExpressionTraits.cpp.o
+[1978/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/FileEntry.cpp.o
+[1979/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/FileManager.cpp.o
+[1980/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/FileSystemStatCache.cpp.o
+[1981/2857] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/Consumed.cpp.o
+[1982/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/DiagnosticIDs.cpp.o
+[1983/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/LangOptions.cpp.o
+[1984/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/LangStandards.cpp.o
+[1985/2857] Building X86GenSubtargetInfo.inc...
+[1986/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/MakeSupport.cpp.o
+[1987/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/ObjCRuntime.cpp.o
+[1988/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Builtins.cpp.o
+FAILED: tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Builtins.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Basic -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Builtins.cpp.o -MF tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Builtins.cpp.o.d -o tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Builtins.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Builtins.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Builtins.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Builtins.h:137:3: error: ‘#pragma’ is not allowed here
+  137 |   _Pragma("GCC diagnostic push")                                               \
+      |   ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Builtins.h:149:3: note: in expansion of macro ‘CLANG_BUILTIN_DETAIL_STR_TABLE’
+  149 |   CLANG_BUILTIN_DETAIL_STR_TABLE(#ID "\0" TYPE "\0" ATTRS "\0" /*FEATURE*/ "\0")
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Builtins.cpp:34:9: note: in expansion of macro ‘CLANG_BUILTIN_STR_TABLE’
+   34 |         CLANG_BUILTIN_STR_TABLE("not a builtin function", "", "")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Builtins.cpp: In member function ‘std::pair<const char*, const clang::Builtin::Info&> clang::Builtin::Context::getStrTableAndInfo(unsigned int) const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Builtins.cpp:48:65: error: could not convert ‘{<expression error>, <expression error>}’ from ‘<brace-enclosed initializer list>’ to ‘std::pair<const char*, const clang::Builtin::Info&>’
+   48 |     return {BuiltinStorage.StringTable, BuiltinStorage.Infos[ID]};
+      |                                                                 ^
+      |                                                                 |
+      |                                                                 <brace-enclosed initializer list>
+[1989/2857] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/ObjCNoReturn.cpp.o
+[1990/2857] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/MergeFunctions.cpp.o
+[1991/2857] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/LiveVariables.cpp.o
+[1992/2857] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/MacroExpansionContext.cpp.o
+[1993/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/OpenMPKinds.cpp.o
+[1994/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/OpenCLOptions.cpp.o
+[1995/2857] Building X86GenInstrInfo.inc...
+[1996/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/IdentifierTable.cpp.o
+[1997/2857] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/PostOrderCFGView.cpp.o
+[1998/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Diagnostic.cpp.o
+[1999/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Module.cpp.o
+[2000/2857] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/HeaderSearch.cpp.o
+[2001/2857] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/PathDiagnostic.cpp.o
+[2002/2857] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2003/2857] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexDecl.cpp.o
+[2004/2857] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/Attributes.cpp.o
+[2005/2857] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/ExprMutationAnalyzer.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+158.64user 14.14system 0:14.08elapsed 1227%CPU (0avgtext+0avgdata 935504maxresident)k
+0inputs+1087112outputs (2696major+7692865minor)pagefaults 0swaps
