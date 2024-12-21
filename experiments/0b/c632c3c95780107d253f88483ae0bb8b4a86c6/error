@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[1703/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ObjCARCAliasAnalysis.cpp.o
+[1704/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ObjCARCAnalysisUtils.cpp.o
+[1705/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ObjCARCInstKind.cpp.o
+[1706/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/OverflowInstAnalysis.cpp.o
+[1707/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/PhiValues.cpp.o
+[1708/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/OptimizationRemarkEmitter.cpp.o
+[1709/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/PHITransAddr.cpp.o
+[1710/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/PostDominators.cpp.o
+[1711/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ProfileSummaryInfo.cpp.o
+[1712/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/PtrUseVisitor.cpp.o
+[1713/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/RegionInfo.cpp.o
+[1714/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/RegionPass.cpp.o
+[1715/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ReplayInlineAdvisor.cpp.o
+[1716/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolutionAliasAnalysis.cpp.o
+[1717/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/RegionPrinter.cpp.o
+[1718/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolutionNormalization.cpp.o
+[1719/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/StackLifetime.cpp.o
+[1720/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TFLiteUtils.cpp.o
+[1721/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolution.cpp.o
+[1722/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/StructuralHash.cpp.o
+[1723/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/StackSafetyAnalysis.cpp.o
+[1724/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/SyntheticCountsUtils.cpp.o
+[1725/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TensorSpec.cpp.o
+[1726/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TargetLibraryInfo.cpp.o
+[1727/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TrainingLogger.cpp.o
+[1728/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TargetTransformInfo.cpp.o
+[1729/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/Trace.cpp.o
+[1730/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TypeBasedAliasAnalysis.cpp.o
+[1731/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScalarEvolutionDivision.cpp.o
+[1732/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/TypeMetadataUtils.cpp.o
+[1733/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/UniformityAnalysis.cpp.o
+[1734/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ScopedNoAliasAA.cpp.o
+[1735/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ValueLattice.cpp.o
+[1736/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ValueLatticeUtils.cpp.o
+[1737/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ValueTracking.cpp.o
+[1738/2860] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOModule.cpp.o
+[1739/2860] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOCodeGenerator.cpp.o
+[1740/2860] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTO.cpp.o
+[1741/2860] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOBackend.cpp.o
+[1742/2860] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/UpdateCompilerUsed.cpp.o
+[1743/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/ConstantPools.cpp.o
+[1744/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/DXContainerPSVInfo.cpp.o
+[1745/2860] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/VectorUtils.cpp.o
+[1746/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/GOFFObjectWriter.cpp.o
+[1747/2860] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/ThinLTOCodeGenerator.cpp.o
+[1748/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/ELFObjectWriter.cpp.o
+[1749/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmBackend.cpp.o
+[1750/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoCOFF.cpp.o
+[1751/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCCodeEmitter.cpp.o
+[1752/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfo.cpp.o
+[1753/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoDarwin.cpp.o
+[1754/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoELF.cpp.o
+[1755/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoGOFF.cpp.o
+[1756/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoXCOFF.cpp.o
+[1757/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoWasm.cpp.o
+[1758/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmMacro.cpp.o
+[1759/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCContext.cpp.o
+[1760/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCDwarf.cpp.o
+[1761/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmStreamer.cpp.o
+[1762/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCDXContainerStreamer.cpp.o
+[1763/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCDXContainerWriter.cpp.o
+[1764/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInstPrinter.cpp.o
+[1765/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInstrDesc.cpp.o
+[1766/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInst.cpp.o
+[1767/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInstrInfo.cpp.o
+[1768/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCLabel.cpp.o
+[1769/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInstrAnalysis.cpp.o
+[1770/2860] Building X86GenFastISel.inc...
+[1771/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCELFObjectTargetWriter.cpp.o
+[1772/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCLinkerOptimizationHint.cpp.o
+[1773/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCRegisterInfo.cpp.o
+[1774/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSchedule.cpp.o
+[1775/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCMachObjectTargetWriter.cpp.o
+[1776/2860] Building X86GenGlobalISel.inc...
+[1777/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCNullStreamer.cpp.o
+[1778/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCObjectWriter.cpp.o
+[1779/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCFragment.cpp.o
+[1780/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAssembler.cpp.o
+FAILED: lib/MC/CMakeFiles/LLVMMC.dir/MCAssembler.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/MC -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/MC/CMakeFiles/LLVMMC.dir/MCAssembler.cpp.o -MF lib/MC/CMakeFiles/LLVMMC.dir/MCAssembler.cpp.o.d -o lib/MC/CMakeFiles/LLVMMC.dir/MCAssembler.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp: In function ‘void writeFragment(llvm::raw_ostream&, const llvm::MCAssembler&, const llvm::MCFragment&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:678:20: error: ‘FT_CompactEncodedInst’ is not a member of ‘llvm::MCFragment’
+  678 |   case MCFragment::FT_CompactEncodedInst:
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:679:14: error: ‘EmittedCompactEncodedInstFragments’ is not a member of ‘{anonymous}::stats’
+  679 |     ++stats::EmittedCompactEncodedInstFragments;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:680:26: error: ‘MCCompactEncodedInstFragment’ was not declared in this scope
+  680 |     OS << StringRef(cast<MCCompactEncodedInstFragment>(F).getContents().data(),
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:680:55: error: no matching function for call to ‘cast<<expression error> >(const llvm::MCFragment&)’
+  680 |     OS << StringRef(cast<MCCompactEncodedInstFragment>(F).getContents().data(),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:32:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:565:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::cast(const From&)’
+  565 | [[nodiscard]] inline decltype(auto) cast(const From &Val) {
+      |                                     ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:565:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:680:55: error: template argument 1 is invalid
+  680 |     OS << StringRef(cast<MCCompactEncodedInstFragment>(F).getContents().data(),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:32:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:571:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::cast(From&)’
+  571 | [[nodiscard]] inline decltype(auto) cast(From &Val) {
+      |                                     ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:571:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:680:55: error: template argument 1 is invalid
+  680 |     OS << StringRef(cast<MCCompactEncodedInstFragment>(F).getContents().data(),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:32:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:577:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::cast(From*)’
+  577 | [[nodiscard]] inline decltype(auto) cast(From *Val) {
+      |                                     ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:577:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:680:55: error: template argument 1 is invalid
+  680 |     OS << StringRef(cast<MCCompactEncodedInstFragment>(F).getContents().data(),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:32:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:583:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::cast(std::unique_ptr<From>&&)’
+  583 | [[nodiscard]] inline decltype(auto) cast(std::unique_ptr<From> &&Val) {
+      |                                     ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:583:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:680:55: error: template argument 1 is invalid
+  680 |     OS << StringRef(cast<MCCompactEncodedInstFragment>(F).getContents().data(),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:681:55: error: no matching function for call to ‘cast<MCCompactEncodedInstFragment>(const llvm::MCFragment&)’
+  681 |                     cast<MCCompactEncodedInstFragment>(F).getContents().size());
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCAssembler.cpp:32:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:565:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::cast(const From&)’
+  565 | [[nodiscard]] inline decltype(auto) cast(const From &Val) {
+      |                                     ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:565:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:571:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::cast(From&)’
+  571 | [[nodiscard]] inline decltype(auto) cast(From &Val) {
+      |                                     ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:571:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:577:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::cast(From*)’
+  577 | [[nodiscard]] inline decltype(auto) cast(From *Val) {
+      |                                     ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:577:37: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:583:37: note: candidate: ‘template<class To, class From> decltype(auto) llvm::cast(std::unique_ptr<From>&&)’
+  583 | [[nodiscard]] inline decltype(auto) cast(std::unique_ptr<From> &&Val) {
+      |                                     ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:583:37: note:   template argument deduction/substitution failed:
+[1781/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCELFStreamer.cpp.o
+FAILED: lib/MC/CMakeFiles/LLVMMC.dir/MCELFStreamer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/MC -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/MC/CMakeFiles/LLVMMC.dir/MCELFStreamer.cpp.o -MF lib/MC/CMakeFiles/LLVMMC.dir/MCELFStreamer.cpp.o.d -o lib/MC/CMakeFiles/LLVMMC.dir/MCELFStreamer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCELFStreamer.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCELFStreamer.cpp: In member function ‘virtual void llvm::MCELFStreamer::emitInstToData(const llvm::MCInst&, const llvm::MCSubtargetInfo&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCELFStreamer.cpp:550:65: error: cannot convert ‘llvm::MutableArrayRef<char>’ to ‘llvm::SmallVectorImpl<char>&’
+  550 |   Assembler.getEmitter().encodeInstruction(Inst, DF->getContents(),
+      |                                                  ~~~~~~~~~~~~~~~^~
+      |                                                                 |
+      |                                                                 llvm::MutableArrayRef<char>
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCELFStreamer.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCCodeEmitter.h:34:77: note:   initializing argument 2 of ‘virtual void llvm::MCCodeEmitter::encodeInstruction(const llvm::MCInst&, llvm::SmallVectorImpl<char>&, llvm::SmallVectorImpl<llvm::MCFixup>&, const llvm::MCSubtargetInfo&) const’
+   34 |   virtual void encodeInstruction(const MCInst &Inst, SmallVectorImpl<char> &CB,
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~~~^~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCELFStreamer.cpp:563:22: error: ‘Code’ was not declared in this scope
+  563 |   DF->appendContents(Code);
+      |                      ^~~~
+[1782/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionCOFF.cpp.o
+[1783/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCGOFFStreamer.cpp.o
+[1784/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCObjectStreamer.cpp.o
+FAILED: lib/MC/CMakeFiles/LLVMMC.dir/MCObjectStreamer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/MC -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/MC/CMakeFiles/LLVMMC.dir/MCObjectStreamer.cpp.o -MF lib/MC/CMakeFiles/LLVMMC.dir/MCObjectStreamer.cpp.o.d -o lib/MC/CMakeFiles/LLVMMC.dir/MCObjectStreamer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCObjectStreamer.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCObjectStreamer.cpp: In member function ‘virtual void llvm::MCObjectStreamer::emitBytes(llvm::StringRef)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCObjectStreamer.cpp:557:3: error: ‘flushPendingLabels’ was not declared in this scope
+  557 |   flushPendingLabels(DF, DF->getContents().size());
+      |   ^~~~~~~~~~~~~~~~~~
+[1785/2860] Building X86GenDAGISel.inc...
+[1786/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionDXContainer.cpp.o
+[1787/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCMachOStreamer.cpp.o
+FAILED: lib/MC/CMakeFiles/LLVMMC.dir/MCMachOStreamer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/MC -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/MC/CMakeFiles/LLVMMC.dir/MCMachOStreamer.cpp.o -MF lib/MC/CMakeFiles/LLVMMC.dir/MCMachOStreamer.cpp.o.d -o lib/MC/CMakeFiles/LLVMMC.dir/MCMachOStreamer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCMachOStreamer.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCMachOStreamer.cpp: In member function ‘void {anonymous}::MCMachOStreamer::finalizeCGProfile()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCMachOStreamer.cpp:524:11: error: ‘class llvm::MCAssembler’ has no member named ‘CGProfile’
+  524 |       Asm.CGProfile.size() * (2 * sizeof(uint32_t) + sizeof(uint64_t));
+      |           ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCMachOStreamer.cpp:525:3: error: ‘Frag’ was not declared in this scope
+  525 |   Frag->getContentsForAppending().append(SectionBytes, 0);
+      |   ^~~~
+[1788/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCCodeView.cpp.o
+FAILED: lib/MC/CMakeFiles/LLVMMC.dir/MCCodeView.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/MC -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/MC/CMakeFiles/LLVMMC.dir/MCCodeView.cpp.o -MF lib/MC/CMakeFiles/LLVMMC.dir/MCCodeView.cpp.o.d -o lib/MC/CMakeFiles/LLVMMC.dir/MCCodeView.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCCodeView.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCCodeView.cpp: In member function ‘void llvm::CodeViewContext::encodeDefRange(const llvm::MCAssembler&, llvm::MCCVDefRangeFragment&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCCodeView.cpp:625:20: error: ‘Layout’ was not declared in this scope
+  625 |   MCContext &Ctx = Layout.getAssembler().getContext();
+      |                    ^~~~~~
+[1789/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCExpr.cpp.o
+[1790/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionWasm.cpp.o
+[1791/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCObjectFileInfo.cpp.o
+[1792/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionELF.cpp.o
+[1793/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionMachO.cpp.o
+[1794/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSection.cpp.o
+[1795/2860] Building X86GenSubtargetInfo.inc...
+[1796/2860] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCPseudoProbe.cpp.o
+[1797/2860] Building X86GenInstrInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+80.00user 11.03system 0:06.98elapsed 1302%CPU (0avgtext+0avgdata 935860maxresident)k
+0inputs+1004664outputs (2611major+5689235minor)pagefaults 0swaps
