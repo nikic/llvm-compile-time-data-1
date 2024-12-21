@@ -1,0 +1,208 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+  238 |   SmallVectorImpl<char> &getContents() { return Contents; }
+      |                                                 ^~~~~~~~
+      |                                                 getContents
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In member function ‘const llvm::SmallVectorImpl<char>& llvm::MCEncodedFragmentWithFixups<FixupsSize>::getContents() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:239:61: error: ‘Contents’ was not declared in this scope; did you mean ‘getContents’?
+  239 |   const SmallVectorImpl<char> &getContents() const { return Contents; }
+      |                                                             ^~~~~~~~
+      |                                                             getContents
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCCompactEncodedInstFragment::MCCompactEncodedInstFragment(llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:281:39: error: ‘FT_CompactEncodedInst’ was not declared in this scope
+  281 |       : MCEncodedFragmentWithContents(FT_CompactEncodedInst, true, Sec) {
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In static member function ‘static bool llvm::MCCompactEncodedInstFragment::classof(const llvm::MCFragment*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:285:40: error: ‘FT_CompactEncodedInst’ is not a member of ‘llvm::MCFragment’
+  285 |     return F->getKind() == MCFragment::FT_CompactEncodedInst;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCRelaxableFragment::MCRelaxableFragment(const llvm::MCInst&, const llvm::MCSubtargetInfo&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:299:67: error: no matching function for call to ‘llvm::MCEncodedFragmentWithFixups<1>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool)’
+  299 |       : MCEncodedFragmentWithFixups(FT_Relaxable, true), Inst(Inst) {
+      |                                                                   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:228:3: note: candidate: ‘llvm::MCEncodedFragmentWithFixups<FixupsSize>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool, llvm::MCSection*) [with unsigned int FixupsSize = 1]’
+  228 |   MCEncodedFragmentWithFixups(MCFragment::FragmentType FType,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:228:3: note:   candidate expects 3 arguments, 2 provided
+[977/2860] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchFolding.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbol.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineInstr.h:30,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LivePhysRegs.h:33,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchFolding.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchFolding.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCEncodedFragmentWithContents::MCEncodedFragmentWithContents(llvm::MCFragment::FragmentType, bool, llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:188:54: error: no matching function for call to ‘llvm::MCEncodedFragment::MCEncodedFragment(llvm::MCFragment::FragmentType&, bool&, llvm::MCSection*&)’
+  188 |       : MCEncodedFragment(FType, HasInstructions, Sec) {}
+      |                                                      ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:128:3: note: candidate: ‘llvm::MCEncodedFragment::MCEncodedFragment(llvm::MCFragment::FragmentType, bool)’
+  128 |   MCEncodedFragment(MCFragment::FragmentType FType, bool HasInstructions)
+      |   ^~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:128:3: note:   candidate expects 2 arguments, 3 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In member function ‘llvm::SmallVectorImpl<char>& llvm::MCEncodedFragmentWithFixups<FixupsSize>::getContents()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:238:49: error: ‘Contents’ was not declared in this scope; did you mean ‘getContents’?
+  238 |   SmallVectorImpl<char> &getContents() { return Contents; }
+      |                                                 ^~~~~~~~
+      |                                                 getContents
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In member function ‘const llvm::SmallVectorImpl<char>& llvm::MCEncodedFragmentWithFixups<FixupsSize>::getContents() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:239:61: error: ‘Contents’ was not declared in this scope; did you mean ‘getContents’?
+  239 |   const SmallVectorImpl<char> &getContents() const { return Contents; }
+      |                                                             ^~~~~~~~
+      |                                                             getContents
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCCompactEncodedInstFragment::MCCompactEncodedInstFragment(llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:281:39: error: ‘FT_CompactEncodedInst’ was not declared in this scope
+  281 |       : MCEncodedFragmentWithContents(FT_CompactEncodedInst, true, Sec) {
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In static member function ‘static bool llvm::MCCompactEncodedInstFragment::classof(const llvm::MCFragment*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:285:40: error: ‘FT_CompactEncodedInst’ is not a member of ‘llvm::MCFragment’
+  285 |     return F->getKind() == MCFragment::FT_CompactEncodedInst;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCRelaxableFragment::MCRelaxableFragment(const llvm::MCInst&, const llvm::MCSubtargetInfo&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:299:67: error: no matching function for call to ‘llvm::MCEncodedFragmentWithFixups<1>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool)’
+  299 |       : MCEncodedFragmentWithFixups(FT_Relaxable, true), Inst(Inst) {
+      |                                                                   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:228:3: note: candidate: ‘llvm::MCEncodedFragmentWithFixups<FixupsSize>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool, llvm::MCSection*) [with unsigned int FixupsSize = 1]’
+  228 |   MCEncodedFragmentWithFixups(MCFragment::FragmentType FType,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:228:3: note:   candidate expects 3 arguments, 2 provided
+[978/2860] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CallingConvLower.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbol.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineInstr.h:30,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetFrameLowering.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CallingConvLower.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCEncodedFragmentWithContents::MCEncodedFragmentWithContents(llvm::MCFragment::FragmentType, bool, llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:188:54: error: no matching function for call to ‘llvm::MCEncodedFragment::MCEncodedFragment(llvm::MCFragment::FragmentType&, bool&, llvm::MCSection*&)’
+  188 |       : MCEncodedFragment(FType, HasInstructions, Sec) {}
+      |                                                      ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:128:3: note: candidate: ‘llvm::MCEncodedFragment::MCEncodedFragment(llvm::MCFragment::FragmentType, bool)’
+  128 |   MCEncodedFragment(MCFragment::FragmentType FType, bool HasInstructions)
+      |   ^~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:128:3: note:   candidate expects 2 arguments, 3 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In member function ‘llvm::SmallVectorImpl<char>& llvm::MCEncodedFragmentWithFixups<FixupsSize>::getContents()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:238:49: error: ‘Contents’ was not declared in this scope; did you mean ‘getContents’?
+  238 |   SmallVectorImpl<char> &getContents() { return Contents; }
+      |                                                 ^~~~~~~~
+      |                                                 getContents
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In member function ‘const llvm::SmallVectorImpl<char>& llvm::MCEncodedFragmentWithFixups<FixupsSize>::getContents() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:239:61: error: ‘Contents’ was not declared in this scope; did you mean ‘getContents’?
+  239 |   const SmallVectorImpl<char> &getContents() const { return Contents; }
+      |                                                             ^~~~~~~~
+      |                                                             getContents
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCCompactEncodedInstFragment::MCCompactEncodedInstFragment(llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:281:39: error: ‘FT_CompactEncodedInst’ was not declared in this scope
+  281 |       : MCEncodedFragmentWithContents(FT_CompactEncodedInst, true, Sec) {
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In static member function ‘static bool llvm::MCCompactEncodedInstFragment::classof(const llvm::MCFragment*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:285:40: error: ‘FT_CompactEncodedInst’ is not a member of ‘llvm::MCFragment’
+  285 |     return F->getKind() == MCFragment::FT_CompactEncodedInst;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCRelaxableFragment::MCRelaxableFragment(const llvm::MCInst&, const llvm::MCSubtargetInfo&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:299:67: error: no matching function for call to ‘llvm::MCEncodedFragmentWithFixups<1>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool)’
+  299 |       : MCEncodedFragmentWithFixups(FT_Relaxable, true), Inst(Inst) {
+      |                                                                   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:228:3: note: candidate: ‘llvm::MCEncodedFragmentWithFixups<FixupsSize>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool, llvm::MCSection*) [with unsigned int FixupsSize = 1]’
+  228 |   MCEncodedFragmentWithFixups(MCFragment::FragmentType FType,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:228:3: note:   candidate expects 3 arguments, 2 provided
+[979/2860] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/Analysis.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbol.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineInstr.h:30,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/Analysis.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCEncodedFragmentWithContents::MCEncodedFragmentWithContents(llvm::MCFragment::FragmentType, bool, llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:188:54: error: no matching function for call to ‘llvm::MCEncodedFragment::MCEncodedFragment(llvm::MCFragment::FragmentType&, bool&, llvm::MCSection*&)’
+  188 |       : MCEncodedFragment(FType, HasInstructions, Sec) {}
+      |                                                      ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:128:3: note: candidate: ‘llvm::MCEncodedFragment::MCEncodedFragment(llvm::MCFragment::FragmentType, bool)’
+  128 |   MCEncodedFragment(MCFragment::FragmentType FType, bool HasInstructions)
+      |   ^~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:128:3: note:   candidate expects 2 arguments, 3 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In member function ‘llvm::SmallVectorImpl<char>& llvm::MCEncodedFragmentWithFixups<FixupsSize>::getContents()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:238:49: error: ‘Contents’ was not declared in this scope; did you mean ‘getContents’?
+  238 |   SmallVectorImpl<char> &getContents() { return Contents; }
+      |                                                 ^~~~~~~~
+      |                                                 getContents
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In member function ‘const llvm::SmallVectorImpl<char>& llvm::MCEncodedFragmentWithFixups<FixupsSize>::getContents() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:239:61: error: ‘Contents’ was not declared in this scope; did you mean ‘getContents’?
+  239 |   const SmallVectorImpl<char> &getContents() const { return Contents; }
+      |                                                             ^~~~~~~~
+      |                                                             getContents
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCCompactEncodedInstFragment::MCCompactEncodedInstFragment(llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:281:39: error: ‘FT_CompactEncodedInst’ was not declared in this scope
+  281 |       : MCEncodedFragmentWithContents(FT_CompactEncodedInst, true, Sec) {
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In static member function ‘static bool llvm::MCCompactEncodedInstFragment::classof(const llvm::MCFragment*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:285:40: error: ‘FT_CompactEncodedInst’ is not a member of ‘llvm::MCFragment’
+  285 |     return F->getKind() == MCFragment::FT_CompactEncodedInst;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCRelaxableFragment::MCRelaxableFragment(const llvm::MCInst&, const llvm::MCSubtargetInfo&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:299:67: error: no matching function for call to ‘llvm::MCEncodedFragmentWithFixups<1>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool)’
+  299 |       : MCEncodedFragmentWithFixups(FT_Relaxable, true), Inst(Inst) {
+      |                                                                   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:228:3: note: candidate: ‘llvm::MCEncodedFragmentWithFixups<FixupsSize>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool, llvm::MCSection*) [with unsigned int FixupsSize = 1]’
+  228 |   MCEncodedFragmentWithFixups(MCFragment::FragmentType FType,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:228:3: note:   candidate expects 3 arguments, 2 provided
+[980/2860] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicTargetTransformInfo.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCSymbol.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineInstr.h:30,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineBasicBlock.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineRegisterInfo.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:33,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/BasicTTIImpl.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicTargetTransformInfo.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCEncodedFragmentWithContents::MCEncodedFragmentWithContents(llvm::MCFragment::FragmentType, bool, llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:188:54: error: no matching function for call to ‘llvm::MCEncodedFragment::MCEncodedFragment(llvm::MCFragment::FragmentType&, bool&, llvm::MCSection*&)’
+  188 |       : MCEncodedFragment(FType, HasInstructions, Sec) {}
+      |                                                      ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:128:3: note: candidate: ‘llvm::MCEncodedFragment::MCEncodedFragment(llvm::MCFragment::FragmentType, bool)’
+  128 |   MCEncodedFragment(MCFragment::FragmentType FType, bool HasInstructions)
+      |   ^~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:128:3: note:   candidate expects 2 arguments, 3 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In member function ‘llvm::SmallVectorImpl<char>& llvm::MCEncodedFragmentWithFixups<FixupsSize>::getContents()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:238:49: error: ‘Contents’ was not declared in this scope; did you mean ‘getContents’?
+  238 |   SmallVectorImpl<char> &getContents() { return Contents; }
+      |                                                 ^~~~~~~~
+      |                                                 getContents
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In member function ‘const llvm::SmallVectorImpl<char>& llvm::MCEncodedFragmentWithFixups<FixupsSize>::getContents() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:239:61: error: ‘Contents’ was not declared in this scope; did you mean ‘getContents’?
+  239 |   const SmallVectorImpl<char> &getContents() const { return Contents; }
+      |                                                             ^~~~~~~~
+      |                                                             getContents
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCCompactEncodedInstFragment::MCCompactEncodedInstFragment(llvm::MCSection*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:281:39: error: ‘FT_CompactEncodedInst’ was not declared in this scope
+  281 |       : MCEncodedFragmentWithContents(FT_CompactEncodedInst, true, Sec) {
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In static member function ‘static bool llvm::MCCompactEncodedInstFragment::classof(const llvm::MCFragment*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:285:40: error: ‘FT_CompactEncodedInst’ is not a member of ‘llvm::MCFragment’
+  285 |     return F->getKind() == MCFragment::FT_CompactEncodedInst;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h: In constructor ‘llvm::MCRelaxableFragment::MCRelaxableFragment(const llvm::MCInst&, const llvm::MCSubtargetInfo&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:299:67: error: no matching function for call to ‘llvm::MCEncodedFragmentWithFixups<1>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool)’
+  299 |       : MCEncodedFragmentWithFixups(FT_Relaxable, true), Inst(Inst) {
+      |                                                                   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:228:3: note: candidate: ‘llvm::MCEncodedFragmentWithFixups<FixupsSize>::MCEncodedFragmentWithFixups(llvm::MCFragment::FragmentType, bool, llvm::MCSection*) [with unsigned int FixupsSize = 1]’
+  228 |   MCEncodedFragmentWithFixups(MCFragment::FragmentType FType,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCFragment.h:228:3: note:   candidate expects 3 arguments, 2 provided
+[981/2860] Building X86GenSubtargetInfo.inc...
+[982/2860] Building X86GenInstrInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Command exited with non-zero status 1
+99.49user 9.27system 0:08.28elapsed 1313%CPU (0avgtext+0avgdata 935924maxresident)k
+0inputs+837952outputs (2504major+5848203minor)pagefaults 0swaps
