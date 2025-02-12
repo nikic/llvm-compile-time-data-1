@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+      |                                                 ~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DerivedTypes.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/AliasAnalysis.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:34:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Type.h:500:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::Type&)’
+  500 | inline raw_ostream &operator<<(raw_ostream &OS, const Type &T) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Type.h:500:61: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘const llvm::Type&’
+  500 | inline raw_ostream &operator<<(raw_ostream &OS, const Type &T) {
+      |                                                 ~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:34:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/AliasAnalysis.h:145:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::AliasResult)’
+  145 | raw_ostream &operator<<(raw_ostream &OS, AliasResult AR);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/AliasAnalysis.h:145:54: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘llvm::AliasResult’
+  145 | raw_ostream &operator<<(raw_ostream &OS, AliasResult AR);
+      |                                          ~~~~~~~~~~~~^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/CodeMetrics.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:36:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/InstructionCost.h:278:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::InstructionCost&)’
+  278 | inline raw_ostream &operator<<(raw_ostream &OS, const InstructionCost &V) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/InstructionCost.h:278:72: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘const llvm::InstructionCost&’
+  278 | inline raw_ostream &operator<<(raw_ostream &OS, const InstructionCost &V) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/DemandedBits.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:38:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:2152:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::APInt&)’
+ 2152 | inline raw_ostream &operator<<(raw_ostream &OS, const APInt &I) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:2152:62: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘const llvm::APInt&’
+ 2152 | inline raw_ostream &operator<<(raw_ostream &OS, const APInt &I) {
+      |                                                 ~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IntrinsicInst.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/IVDescriptors.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:40:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:63:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::RoundingMode)’
+   63 | inline raw_ostream &operator << (raw_ostream &OS, RoundingMode RM) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:63:64: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘llvm::RoundingMode’
+   63 | inline raw_ostream &operator << (raw_ostream &OS, RoundingMode RM) {
+      |                                                   ~~~~~~~~~~~~~^~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:183:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::DenormalMode)’
+  183 | inline raw_ostream& operator<<(raw_ostream &OS, DenormalMode Mode) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:183:62: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘llvm::DenormalMode’
+  183 | inline raw_ostream& operator<<(raw_ostream &OS, DenormalMode Mode) {
+      |                                                 ~~~~~~~~~~~~~^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:280:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::FPClassTest)’
+  280 | raw_ostream &operator<<(raw_ostream &OS, FPClassTest Mask);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:280:54: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘llvm::FPClassTest’
+  280 | raw_ostream &operator<<(raw_ostream &OS, FPClassTest Mask);
+      |                                          ~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IntrinsicInst.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/IVDescriptors.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:40:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:1627:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::APFloat&)’
+ 1627 | inline raw_ostream &operator<<(raw_ostream &OS, const APFloat &V) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:1627:64: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘const llvm::APFloat&’
+ 1627 | inline raw_ostream &operator<<(raw_ostream &OS, const APFloat &V) {
+      |                                                 ~~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantRange.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IntrinsicInst.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/IVDescriptors.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:40:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/FMF.h:137:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::FastMathFlags)’
+  137 | inline raw_ostream &operator<<(raw_ostream &O, FastMathFlags FMF) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/FMF.h:137:62: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘llvm::FastMathFlags’
+  137 | inline raw_ostream &operator<<(raw_ostream &O, FastMathFlags FMF) {
+      |                                                ~~~~~~~~~~~~~~^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantRange.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IntrinsicInst.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/IVDescriptors.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:40:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:1003:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::CmpInst::Predicate)’
+ 1003 | raw_ostream &operator<<(raw_ostream &OS, CmpInst::Predicate Pred);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:1003:61: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘llvm::CmpInst::Predicate’
+ 1003 | raw_ostream &operator<<(raw_ostream &OS, CmpInst::Predicate Pred);
+      |                                          ~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IntrinsicInst.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/IVDescriptors.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:40:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantRange.h:603:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::ConstantRange&)’
+  603 | inline raw_ostream &operator<<(raw_ostream &OS, const ConstantRange &CR) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantRange.h:603:70: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘const llvm::ConstantRange&’
+  603 | inline raw_ostream &operator<<(raw_ostream &OS, const ConstantRange &CR) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopAccessAnalysis.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:41:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolution.h:196:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::SCEV&)’
+  196 | inline raw_ostream &operator<<(raw_ostream &OS, const SCEV &S) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolution.h:196:61: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘const llvm::SCEV&’
+  196 | inline raw_ostream &operator<<(raw_ostream &OS, const SCEV &S) {
+      |                                                 ~~~~~~~~~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolution.h:251:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::SCEVPredicate&)’
+  251 | inline raw_ostream &operator<<(raw_ostream &OS, const SCEVPredicate &P) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolution.h:251:70: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘const llvm::SCEVPredicate&’
+  251 | inline raw_ostream &operator<<(raw_ostream &OS, const SCEVPredicate &P) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/BlockFrequencyInfo.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/OptimizationRemarkEmitter.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:44:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Printable.h:45:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::Printable&)’
+   45 | inline raw_ostream &operator<<(raw_ostream &OS, const Printable &P) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Printable.h:45:66: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘const llvm::Printable&’
+   45 | inline raw_ostream &operator<<(raw_ostream &OS, const Printable &P) {
+      |                                                 ~~~~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetLibraryInfo.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:47:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Comdat.h:71:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::Comdat&)’
+   71 | inline raw_ostream &operator<<(raw_ostream &OS, const Comdat &C) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Comdat.h:71:63: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘const llvm::Comdat&’
+   71 | inline raw_ostream &operator<<(raw_ostream &OS, const Comdat &C) {
+      |                                                 ~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetLibraryInfo.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:47:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:1078:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::Module&)’
+ 1078 | inline raw_ostream &operator<<(raw_ostream &O, const Module &M) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:1078:62: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘const llvm::Module&’
+ 1078 | inline raw_ostream &operator<<(raw_ostream &O, const Module &M) {
+      |                                                ~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TargetParser/Triple.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetLibraryInfo.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:47:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/VersionTuple.h:191:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::VersionTuple&)’
+  191 | raw_ostream &operator<<(raw_ostream &Out, const VersionTuple &V);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/VersionTuple.h:191:63: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘const llvm::VersionTuple&’
+  191 | raw_ostream &operator<<(raw_ostream &Out, const VersionTuple &V);
+      |                                           ~~~~~~~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetTransformInfo.h:31,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:48:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BranchProbability.h:200:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::BranchProbability)’
+  200 | inline raw_ostream &operator<<(raw_ostream &OS, BranchProbability Prob) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BranchProbability.h:200:67: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘llvm::BranchProbability’
+  200 | inline raw_ostream &operator<<(raw_ostream &OS, BranchProbability Prob) {
+      |                                                 ~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/WithCache.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ValueTracking.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:49:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/KnownBits.h:532:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::KnownBits&)’
+  532 | inline raw_ostream &operator<<(raw_ostream &OS, const KnownBits &Known) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/KnownBits.h:532:66: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘const llvm::KnownBits&’
+  532 | inline raw_ostream &operator<<(raw_ostream &OS, const KnownBits &Known) {
+      |                                                 ~~~~~~~~~~~~~~~~~^~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/FileSystem.h:33,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/GraphWriter.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:84:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Chrono.h:80:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::sys::TimePoint<>)’
+   80 | raw_ostream &operator<<(raw_ostream &OS, sys::TimePoint<> TP);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Chrono.h:80:59: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘llvm::sys::TimePoint<>’ {aka ‘std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >’}
+   80 | raw_ostream &operator<<(raw_ostream &OS, sys::TimePoint<> TP);
+      |                                          ~~~~~~~~~~~~~~~~~^~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Chrono.h:81:14: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::sys::UtcTime<>)’
+   81 | raw_ostream &operator<<(raw_ostream &OS, sys::UtcTime<> TP);
+      |              ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Chrono.h:81:57: note:   no known conversion for argument 2 from ‘llvm::slpvectorizer::BoUpSLP::ScheduleData’ to ‘llvm::sys::UtcTime<>’ {aka ‘std::chrono::time_point<llvm::sys::UtcClock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >’}
+   81 | raw_ostream &operator<<(raw_ostream &OS, sys::UtcTime<> TP);
+      |                                          ~~~~~~~~~~~~~~~^~
+[2809/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/MultiplexConsumer.cpp.o
+[2810/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/HeaderIncludeGen.cpp.o
+[2811/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTMerge.cpp.o
+[2812/2920] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/GeneratePCH.cpp.o
+[2813/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/DependencyFile.cpp.o
+[2814/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ChainedIncludesSource.cpp.o
+[2815/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTUnit.cpp.o
+[2816/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInstance.cpp.o
+[2817/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CreateInvocationFromCommandLine.cpp.o
+[2818/2920] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ASTWriter.cpp.o
+[2819/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/FrontendActions.cpp.o
+[2820/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/InitPreprocessor.cpp.o
+[2821/2920] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ASTReader.cpp.o
+[2822/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ModuleDependencyCollector.cpp.o
+[2823/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/FrontendAction.cpp.o
+[2824/2920] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInvocation.cpp.o
+[2825/2920] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/HIPUtility.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+211.77user 31.05system 0:16.86elapsed 1440%CPU (0avgtext+0avgdata 994212maxresident)k
+0inputs+8619272outputs (5265major+13079630minor)pagefaults 0swaps
