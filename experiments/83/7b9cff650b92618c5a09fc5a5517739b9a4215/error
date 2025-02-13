@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2702/2889] Linking CXX static library lib/libLLVMDlltoolDriver.a
+[2703/2889] Linking CXX static library lib/libLLVMLibDriver.a
+[2704/2889] Linking CXX static library lib/libLLVMDebugInfoDWARF.a
+[2705/2889] Linking CXX static library lib/libLLVMTextAPIBinaryReader.a
+[2706/2889] Linking CXX static library lib/libLLVMDebugInfoPDB.a
+[2707/2889] Linking CXX static library lib/libLLVMSymbolize.a
+[2708/2889] Linking CXX static library lib/libLLVMProfileData.a
+[2709/2889] Linking CXX static library lib/libLLVMCoverage.a
+[2710/2889] Linking CXX executable bin/llvm-ar
+[2711/2889] Generating ../../bin/llvm-ranlib
+[2712/2889] Linking CXX static library lib/libLLVMAnalysis.a
+[2713/2889] Linking CXX static library lib/libLLVMIRPrinter.a
+[2714/2889] Linking CXX static library lib/libLLVMFrontendDriver.a
+[2715/2889] Linking CXX static library lib/libLLVMFrontendAtomic.a
+[2716/2889] Linking CXX static library lib/libLLVMTarget.a
+[2717/2889] Linking CXX static library lib/libLLVMBitWriter.a
+[2718/2889] Linking CXX static library lib/libLLVMSandboxIR.a
+[2719/2889] Linking CXX static library lib/libLLVMCGData.a
+[2720/2889] Linking CXX static library lib/libLLVMTransformUtils.a
+[2721/2889] Linking CXX static library lib/libLLVMHipStdPar.a
+[2722/2889] Linking CXX static library lib/libLLVMAggressiveInstCombine.a
+[2723/2889] Linking CXX static library lib/libLLVMLinker.a
+[2724/2889] Linking CXX static library lib/libLLVMObjCARCOpts.a
+[2725/2889] Linking CXX static library lib/libLLVMFrontendOffloading.a
+[2726/2889] Linking CXX static library lib/libLLVMVectorize.a
+[2727/2889] Linking CXX static library lib/libLLVMInstCombine.a
+[2728/2889] Linking CXX static library lib/libLLVMInstrumentation.a
+[2729/2889] Linking CXX static library lib/libLLVMScalarOpts.a
+[2730/2889] Linking CXX static library lib/libLLVMFrontendOpenMP.a
+[2731/2889] Linking CXX static library lib/libLLVMipo.a
+[2732/2889] Linking CXX static library lib/libclangBasic.a
+[2733/2889] Linking CXX static library lib/libclangAPINotes.a
+[2734/2889] Linking CXX static library lib/libLLVMCoroutines.a
+[2735/2889] Linking CXX static library lib/libclangLex.a
+[2736/2889] Linking CXX static library lib/libclangRewrite.a
+[2737/2889] Linking CXX static library lib/libLLVMCodeGen.a
+[2738/2889] Linking CXX static library lib/libclangToolingCore.a
+[2739/2889] Generating VCSVersion.inc
+[2740/2889] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Memory.cpp.o
+[2741/2889] Building CXX object tools/lld/MinGW/CMakeFiles/lldMinGW.dir/Driver.cpp.o
+[2742/2889] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Args.cpp.o
+[2743/2889] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/CommonLinkerContext.cpp.o
+[2744/2889] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DriverDispatcher.cpp.o
+[2745/2889] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DWARF.cpp.o
+[2746/2889] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Filesystem.cpp.o
+[2747/2889] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Reproduce.cpp.o
+[2748/2889] Linking CXX static library lib/libclangToolingInclusions.a
+[2749/2889] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/ErrorHandler.cpp.o
+[2750/2889] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Version.cpp.o
+[2751/2889] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/TargetOptionsCommandFlags.cpp.o
+[2752/2889] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Timer.cpp.o
+[2753/2889] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Strings.cpp.o
+[2754/2889] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld-driver.cpp.o
+[2755/2889] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld.cpp.o
+[2756/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/CallGraphSort.cpp.o
+[2757/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Chunks.cpp.o
+[2758/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/COFFLinkerContext.cpp.o
+[2759/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DebugTypes.cpp.o
+[2760/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DLL.cpp.o
+[2761/2889] Linking CXX static library lib/libLLVMAsmPrinter.a
+[2762/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DriverUtils.cpp.o
+[2763/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/ICF.cpp.o
+[2764/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MapFile.cpp.o
+[2765/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Driver.cpp.o
+[2766/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MarkLive.cpp.o
+[2767/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MinGW.cpp.o
+[2768/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Symbols.cpp.o
+[2769/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/InputFiles.cpp.o
+[2770/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/PDB.cpp.o
+[2771/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Writer.cpp.o
+[2772/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LLDMapFile.cpp.o
+[2773/2889] Linking CXX static library lib/liblldCommon.a
+[2774/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LTO.cpp.o
+[2775/2889] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/SymbolTable.cpp.o
+[2776/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/AArch64ErrataFix.cpp.o
+[2777/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AArch64.cpp.o
+[2778/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AMDGPU.cpp.o
+[2779/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/ARM.cpp.o
+[2780/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AVR.cpp.o
+[2781/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/Hexagon.cpp.o
+[2782/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/LoongArch.cpp.o
+[2783/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/MipsArchTree.cpp.o
+[2784/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/MSP430.cpp.o
+[2785/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/Mips.cpp.o
+[2786/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/PPC.cpp.o
+[2787/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/RISCV.cpp.o
+[2788/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/SPARCV9.cpp.o
+[2789/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/SystemZ.cpp.o
+[2790/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/X86.cpp.o
+[2791/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/X86_64.cpp.o
+[2792/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ARMErrataFix.cpp.o
+[2793/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/CallGraphSort.cpp.o
+[2794/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/BPSectionOrderer.cpp.o
+[2795/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/DWARF.cpp.o
+[2796/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/DriverUtils.cpp.o
+[2797/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/EhFrame.cpp.o
+[2798/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ICF.cpp.o
+[2799/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/MarkLive.cpp.o
+[2800/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Driver.cpp.o
+[2801/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputSection.cpp.o
+[2802/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/LinkerScript.cpp.o
+[2803/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/MapFile.cpp.o
+[2804/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ScriptLexer.cpp.o
+[2805/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/OutputSections.cpp.o
+[2806/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SymbolTable.cpp.o
+[2807/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputFiles.cpp.o
+[2808/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/LTO.cpp.o
+[2809/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ScriptParser.cpp.o
+[2810/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Symbols.cpp.o
+[2811/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Thunks.cpp.o
+[2812/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Target.cpp.o
+[2813/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64.cpp.o
+[2814/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/X86_64.cpp.o
+[2815/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SyntheticSections.cpp.o
+[2816/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64Common.cpp.o
+[2817/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64_32.cpp.o
+[2818/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ConcatOutputSection.cpp.o
+[2819/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Writer.cpp.o
+[2820/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Dwarf.cpp.o
+[2821/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/EhFrame.cpp.o
+[2822/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ExportTrie.cpp.o
+[2823/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o
+[2824/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ICF.cpp.o
+[2825/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Driver.cpp.o
+[2826/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/DriverUtils.cpp.o
+[2827/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MapFile.cpp.o
+[2828/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSection.cpp.o
+[2829/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MarkLive.cpp.o
+[2830/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ObjC.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ObjC.cpp:724:1: warning: ‘{anonymous}::ObjcCategoryMerger::PointerListInfo {anonymous}::ObjcCategoryMerger::parseProtocolListInfo(const lld::macho::ConcatInputSection*, uint32_t, {anonymous}::ObjcCategoryMerger::SourceLanguage)’ defined but not used [-Wunused-function]
+  724 | ObjcCategoryMerger::parseProtocolListInfo(const ConcatInputSection *isec,
+      | ^~~~~~~~~~~~~~~~~~
+[2831/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSegment.cpp.o
+[2832/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputFiles.cpp.o
+[2833/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/LTO.cpp.o
+[2834/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Relocations.cpp.o
+[2835/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Target.cpp.o
+[2836/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Sections.cpp.o
+[2837/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SectionPriorities.cpp.o
+[2838/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Symbols.cpp.o
+[2839/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/BPSectionOrderer.cpp.o
+[2840/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SymbolTable.cpp.o
+[2841/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SyntheticSections.cpp.o
+[2842/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/UnwindInfoSection.cpp.o
+[2843/2889] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Writer.cpp.o
+[2844/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/PPC64.cpp.o
+[2845/2889] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Relocations.cpp.o
+[2846/2889] Linking CXX static library lib/libclangDriver.a
+[2847/2889] Linking CXX static library lib/libLLVMSelectionDAG.a
+[2848/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/LTO.cpp.o
+[2849/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MapFile.cpp.o
+[2850/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Driver.cpp.o
+[2851/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputChunks.cpp.o
+[2852/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputFiles.cpp.o
+[2853/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MarkLive.cpp.o
+[2854/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSections.cpp.o
+[2855/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSegment.cpp.o
+[2856/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Symbols.cpp.o
+[2857/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Relocations.cpp.o
+[2858/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SymbolTable.cpp.o
+[2859/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SyntheticSections.cpp.o
+[2860/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/WriterUtils.cpp.o
+[2861/2889] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Writer.cpp.o
+[2862/2889] Linking CXX static library lib/libclangFormat.a
+[2863/2889] Linking CXX static library lib/libLLVMGlobalISel.a
+[2864/2889] Linking CXX static library lib/libLLVMPasses.a
+[2865/2889] Linking CXX static library lib/libLLVMLTO.a
+[2866/2889] Linking CXX static library lib/libclangAST.a
+[2867/2889] Linking CXX static library lib/libclangEdit.a
+[2868/2889] Linking CXX static library lib/libclangInstallAPI.a
+[2869/2889] Linking CXX static library lib/libclangASTMatchers.a
+[2870/2889] Linking CXX static library lib/libLLVMX86CodeGen.a
+[2871/2889] Linking CXX static library lib/libclangAnalysis.a
+[2872/2889] Linking CXX static library lib/liblldWasm.a
+[2873/2889] Linking CXX static library lib/liblldCOFF.a
+[2874/2889] Linking CXX static library lib/liblldMinGW.a
+[2875/2889] Linking CXX static library lib/liblldMachO.a
+[2876/2889] Linking CXX static library lib/liblldELF.a
+[2877/2889] Linking CXX static library lib/libclangSema.a
+[2878/2889] Linking CXX static library lib/libclangParse.a
+[2879/2889] Linking CXX static library lib/libclangSerialization.a
+[2880/2889] Linking CXX static library lib/libclangFrontend.a
+[2881/2889] Linking CXX static library lib/libclangRewriteFrontend.a
+[2882/2889] Linking CXX static library lib/libclangIndex.a
+[2883/2889] Linking CXX static library lib/libclangExtractAPI.a
+[2884/2889] Linking CXX static library lib/libclangCodeGen.a
+[2885/2889] Linking CXX static library lib/libclangFrontendTool.a
+[2886/2889] Linking CXX shared module lib/LLVMgold.so
+[2887/2889] Linking CXX executable bin/lld
+FAILED: bin/lld 
+: && /usr/bin/c++ -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -fuse-ld=gold   -Wl,--export-dynamic tools/lld/tools/lld/CMakeFiles/lld.dir/lld.cpp.o tools/lld/tools/lld/CMakeFiles/lld.dir/lld-driver.cpp.o -o bin/lld  -Wl,-rpath,"\$ORIGIN/../lib:"  lib/libLLVMSupport.a  lib/libLLVMTargetParser.a  lib/liblldCommon.a  lib/liblldCOFF.a  lib/liblldELF.a  lib/liblldMachO.a  lib/liblldMinGW.a  lib/liblldWasm.a  lib/liblldCOFF.a  lib/libLLVMLibDriver.a  lib/libLLVMWindowsDriver.a  lib/libLLVMWindowsManifest.a  lib/liblldCommon.a  lib/libLLVMOption.a  lib/libLLVMX86CodeGen.a  lib/libLLVMAsmPrinter.a  lib/libLLVMGlobalISel.a  lib/libLLVMSelectionDAG.a  lib/libLLVMX86AsmParser.a  lib/libLLVMX86Desc.a  lib/libLLVMX86Disassembler.a  lib/libLLVMMCDisassembler.a  lib/libLLVMX86Info.a  lib/libLLVMLTO.a  lib/libLLVMExtensions.a  lib/libLLVMPasses.a  lib/libLLVMCodeGen.a  lib/libLLVMCGData.a  lib/libLLVMCodeGenTypes.a  lib/libLLVMTarget.a  lib/libLLVMObjCARCOpts.a  lib/libLLVMCFGuard.a  lib/libLLVMIRPrinter.a  lib/libLLVMCoroutines.a  lib/libLLVMipo.a  lib/libLLVMBitWriter.a  lib/libLLVMInstrumentation.a  lib/libLLVMLinker.a  lib/libLLVMFrontendOpenMP.a  lib/libLLVMScalarOpts.a  lib/libLLVMAggressiveInstCombine.a  lib/libLLVMInstCombine.a  lib/libLLVMFrontendOffloading.a  lib/libLLVMFrontendAtomic.a  lib/libLLVMHipStdPar.a  lib/libLLVMVectorize.a  lib/libLLVMTransformUtils.a  lib/libLLVMSandboxIR.a  lib/libLLVMAnalysis.a  lib/libLLVMProfileData.a  lib/libLLVMSymbolize.a  lib/libLLVMDebugInfoDWARF.a  lib/libLLVMDebugInfoPDB.a  lib/libLLVMDebugInfoCodeView.a  lib/libLLVMDebugInfoMSF.a  lib/libLLVMObject.a  lib/libLLVMTextAPI.a  lib/libLLVMMCParser.a  lib/libLLVMMC.a  lib/libLLVMIRReader.a  lib/libLLVMBitReader.a  lib/libLLVMAsmParser.a  lib/libLLVMCore.a  lib/libLLVMRemarks.a  lib/libLLVMBitstreamReader.a  lib/libLLVMBinaryFormat.a  lib/libLLVMTargetParser.a  lib/libLLVMDebugInfoBTF.a  lib/libLLVMSupport.a  -lrt  -ldl  -lm  lib/libLLVMDemangle.a && cd /tmp/llvm-project-build-stage1/tools/lld/tools/lld && /usr/bin/cmake -E create_symlink lld /tmp/llvm-project-build-stage1/./bin/lld-link && cd /tmp/llvm-project-build-stage1/tools/lld/tools/lld && /usr/bin/cmake -E create_symlink lld /tmp/llvm-project-build-stage1/./bin/ld.lld && cd /tmp/llvm-project-build-stage1/tools/lld/tools/lld && /usr/bin/cmake -E create_symlink lld /tmp/llvm-project-build-stage1/./bin/ld64.lld && cd /tmp/llvm-project-build-stage1/tools/lld/tools/lld && /usr/bin/cmake -E create_symlink lld /tmp/llvm-project-build-stage1/./bin/wasm-ld
+lib/libLLVMVectorize.a(SLPVectorizer.cpp.o):SLPVectorizer.cpp:function getSameOpcode(llvm::ArrayRef<llvm::Value*>, llvm::TargetLibraryInfo const&)::{lambda(llvm::ArrayRef<std::unique_ptr<(anonymous namespace)::InterchangeableInstruction, std::default_delete<(anonymous namespace)::InterchangeableInstruction> > >)#2}::operator()(llvm::ArrayRef<std::unique_ptr<(anonymous namespace)::InterchangeableInstruction, std::default_delete<(anonymous namespace)::InterchangeableInstruction> > >) const: error: undefined reference to 'llvm::Value::dump() const'
+collect2: error: ld returned 1 exit status
+[2888/2889] Linking CXX executable bin/clang-21
+FAILED: bin/clang-21 
+: && /usr/bin/c++ -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG -fuse-ld=gold   -Wl,--export-dynamic tools/clang/tools/driver/CMakeFiles/clang.dir/driver.cpp.o tools/clang/tools/driver/CMakeFiles/clang.dir/cc1_main.cpp.o tools/clang/tools/driver/CMakeFiles/clang.dir/cc1as_main.cpp.o tools/clang/tools/driver/CMakeFiles/clang.dir/cc1gen_reproducer_main.cpp.o tools/clang/tools/driver/CMakeFiles/clang.dir/clang-driver.cpp.o -o bin/clang-21  -Wl,-rpath,"\$ORIGIN/../lib:"  lib/libLLVMX86CodeGen.a  lib/libLLVMX86AsmParser.a  lib/libLLVMX86Desc.a  lib/libLLVMX86Disassembler.a  lib/libLLVMX86Info.a  lib/libLLVMAnalysis.a  lib/libLLVMCodeGen.a  lib/libLLVMCore.a  lib/libLLVMipo.a  lib/libLLVMAggressiveInstCombine.a  lib/libLLVMInstCombine.a  lib/libLLVMInstrumentation.a  lib/libLLVMMC.a  lib/libLLVMMCParser.a  lib/libLLVMObjCARCOpts.a  lib/libLLVMOption.a  lib/libLLVMScalarOpts.a  lib/libLLVMSupport.a  lib/libLLVMTargetParser.a  lib/libLLVMTransformUtils.a  lib/libLLVMVectorize.a  lib/libclangBasic.a  lib/libclangCodeGen.a  lib/libclangDriver.a  lib/libclangFrontend.a  lib/libclangFrontendTool.a  lib/libclangSerialization.a  lib/libLLVMAsmPrinter.a  lib/libLLVMGlobalISel.a  lib/libLLVMSelectionDAG.a  lib/libLLVMMCDisassembler.a  lib/libclangCodeGen.a  lib/libLLVMCoverage.a  lib/libLLVMFrontendDriver.a  lib/libLLVMLTO.a  lib/libLLVMExtensions.a  lib/libLLVMPasses.a  lib/libLLVMCodeGen.a  lib/libLLVMCodeGenTypes.a  lib/libLLVMCGData.a  lib/libLLVMObjCARCOpts.a  lib/libLLVMCFGuard.a  lib/libLLVMIRPrinter.a  lib/libLLVMTarget.a  lib/libLLVMCoroutines.a  lib/libLLVMipo.a  lib/libLLVMInstrumentation.a  lib/libLLVMVectorize.a  lib/libLLVMSandboxIR.a  lib/libLLVMBitWriter.a  lib/libLLVMLinker.a  lib/libLLVMHipStdPar.a  lib/libclangExtractAPI.a  lib/libclangIndex.a  lib/libclangFormat.a  lib/libclangToolingInclusions.a  lib/libclangToolingCore.a  lib/libclangInstallAPI.a  lib/libLLVMTextAPIBinaryReader.a  lib/libclangRewriteFrontend.a  lib/libclangFrontend.a  lib/libclangDriver.a  lib/libLLVMWindowsDriver.a  lib/libLLVMOption.a  lib/libclangParse.a  lib/libclangSerialization.a  lib/libclangSema.a  lib/libclangAnalysis.a  lib/libclangASTMatchers.a  lib/libLLVMFrontendHLSL.a  lib/libclangAPINotes.a  lib/libclangSupport.a  lib/libclangEdit.a  lib/libclangAST.a  lib/libclangRewrite.a  lib/libclangLex.a  lib/libclangBasic.a  lib/libLLVMFrontendOpenMP.a  lib/libLLVMScalarOpts.a  lib/libLLVMAggressiveInstCombine.a  lib/libLLVMInstCombine.a  lib/libLLVMFrontendOffloading.a  lib/libLLVMTransformUtils.a  lib/libLLVMFrontendAtomic.a  lib/libLLVMAnalysis.a  lib/libLLVMProfileData.a  lib/libLLVMSymbolize.a  lib/libLLVMDebugInfoDWARF.a  lib/libLLVMDebugInfoPDB.a  lib/libLLVMDebugInfoCodeView.a  lib/libLLVMDebugInfoMSF.a  lib/libLLVMDebugInfoBTF.a  lib/libLLVMObject.a  lib/libLLVMMCParser.a  lib/libLLVMMC.a  lib/libLLVMIRReader.a  lib/libLLVMBitReader.a  lib/libLLVMAsmParser.a  lib/libLLVMTextAPI.a  lib/libLLVMCore.a  lib/libLLVMBinaryFormat.a  lib/libLLVMTargetParser.a  lib/libLLVMRemarks.a  lib/libLLVMBitstreamReader.a  lib/libLLVMSupport.a  lib/libLLVMDemangle.a  -lrt  -ldl  -lm && :
+lib/libLLVMVectorize.a(SLPVectorizer.cpp.o):SLPVectorizer.cpp:function getSameOpcode(llvm::ArrayRef<llvm::Value*>, llvm::TargetLibraryInfo const&)::{lambda(llvm::ArrayRef<std::unique_ptr<(anonymous namespace)::InterchangeableInstruction, std::default_delete<(anonymous namespace)::InterchangeableInstruction> > >)#2}::operator()(llvm::ArrayRef<std::unique_ptr<(anonymous namespace)::InterchangeableInstruction, std::default_delete<(anonymous namespace)::InterchangeableInstruction> > >) const: error: undefined reference to 'llvm::Value::dump() const'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+122.60user 19.77system 0:11.86elapsed 1199%CPU (0avgtext+0avgdata 874372maxresident)k
+0inputs+6095400outputs (74170major+8325995minor)pagefaults 0swaps
