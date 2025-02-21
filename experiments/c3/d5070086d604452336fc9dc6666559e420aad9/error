@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[1743/2927] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ValueTracking.cpp.o
+[1744/2927] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOCodeGenerator.cpp.o
+[1745/2927] Building X86GenDAGISel.inc...
+[1746/2927] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/VectorUtils.cpp.o
+[1747/2927] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOBackend.cpp.o
+[1748/2927] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTO.cpp.o
+[1749/2927] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/LTOModule.cpp.o
+[1750/2927] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/UpdateCompilerUsed.cpp.o
+[1751/2927] Building CXX object lib/LTO/CMakeFiles/LLVMLTO.dir/ThinLTOCodeGenerator.cpp.o
+[1752/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/ConstantPools.cpp.o
+[1753/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/ELFObjectWriter.cpp.o
+[1754/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/GOFFObjectWriter.cpp.o
+[1755/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/DXContainerPSVInfo.cpp.o
+[1756/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmBackend.cpp.o
+[1757/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/DXContainerRootSignature.cpp.o
+[1758/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfo.cpp.o
+[1759/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoCOFF.cpp.o
+[1760/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoDarwin.cpp.o
+[1761/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoELF.cpp.o
+[1762/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoGOFF.cpp.o
+[1763/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoWasm.cpp.o
+[1764/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmInfoXCOFF.cpp.o
+[1765/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmMacro.cpp.o
+[1766/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAsmStreamer.cpp.o
+[1767/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCAssembler.cpp.o
+[1768/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCCodeEmitter.cpp.o
+[1769/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCCodeView.cpp.o
+[1770/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCContext.cpp.o
+[1771/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCDXContainerStreamer.cpp.o
+[1772/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCDwarf.cpp.o
+[1773/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCDXContainerWriter.cpp.o
+[1774/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCELFObjectTargetWriter.cpp.o
+[1775/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCELFStreamer.cpp.o
+[1776/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCExpr.cpp.o
+[1777/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInstrAnalysis.cpp.o
+[1778/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCFragment.cpp.o
+[1779/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCGOFFStreamer.cpp.o
+[1780/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInst.cpp.o
+[1781/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInstrDesc.cpp.o
+[1782/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInstrInfo.cpp.o
+[1783/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCLabel.cpp.o
+[1784/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCLinkerOptimizationHint.cpp.o
+[1785/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCMachObjectTargetWriter.cpp.o
+[1786/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCMachOStreamer.cpp.o
+[1787/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCNullStreamer.cpp.o
+[1788/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCInstPrinter.cpp.o
+[1789/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCObjectFileInfo.cpp.o
+[1790/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCObjectStreamer.cpp.o
+[1791/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCObjectWriter.cpp.o
+[1792/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCRegisterInfo.cpp.o
+[1793/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCPseudoProbe.cpp.o
+[1794/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSchedule.cpp.o
+[1795/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSection.cpp.o
+[1796/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionCOFF.cpp.o
+[1797/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionDXContainer.cpp.o
+[1798/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionELF.cpp.o
+[1799/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionMachO.cpp.o
+[1800/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionWasm.cpp.o
+[1801/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSectionXCOFF.cpp.o
+[1802/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCStreamer.cpp.o
+[1803/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSymbolELF.cpp.o
+[1804/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSubtargetInfo.cpp.o
+[1805/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSymbol.cpp.o
+[1806/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSPIRVStreamer.cpp.o
+[1807/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCSymbolXCOFF.cpp.o
+[1808/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCTargetOptions.cpp.o
+[1809/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCWasmObjectTargetWriter.cpp.o
+[1810/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCWasmStreamer.cpp.o
+[1811/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCTargetOptionsCommandFlags.cpp.o
+[1812/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCWin64EH.cpp.o
+[1813/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCWinEH.cpp.o
+[1814/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCXCOFFObjectTargetWriter.cpp.o
+[1815/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCXCOFFStreamer.cpp.o
+[1816/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/SPIRVObjectWriter.cpp.o
+[1817/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCValue.cpp.o
+[1818/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MachObjectWriter.cpp.o
+[1819/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/StringTableBuilder.cpp.o
+[1820/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/MCWinCOFFStreamer.cpp.o
+[1821/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/TargetRegistry.cpp.o
+[1822/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/WinCOFFObjectWriter.cpp.o
+[1823/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/WasmObjectWriter.cpp.o
+[1824/2927] Building CXX object lib/MC/CMakeFiles/LLVMMC.dir/XCOFFObjectWriter.cpp.o
+[1825/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmLexer.cpp.o
+[1826/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/COFFAsmParser.cpp.o
+[1827/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/COFFMasmParser.cpp.o
+[1828/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/MCAsmLexer.cpp.o
+[1829/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/DarwinAsmParser.cpp.o
+[1830/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/MCAsmParser.cpp.o
+[1831/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/MCAsmParserExtension.cpp.o
+[1832/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/GOFFAsmParser.cpp.o
+[1833/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/MCTargetAsmParser.cpp.o
+[1834/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/ELFAsmParser.cpp.o
+[1835/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/MasmParser.cpp.o
+[1836/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/WasmAsmParser.cpp.o
+[1837/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/XCOFFAsmParser.cpp.o
+[1838/2927] Building CXX object lib/MC/MCDisassembler/CMakeFiles/LLVMMCDisassembler.dir/Disassembler.cpp.o
+[1839/2927] Building CXX object lib/MC/MCDisassembler/CMakeFiles/LLVMMCDisassembler.dir/MCDisassembler.cpp.o
+[1840/2927] Building CXX object lib/MC/MCDisassembler/CMakeFiles/LLVMMCDisassembler.dir/MCExternalSymbolizer.cpp.o
+[1841/2927] Building CXX object lib/MC/MCDisassembler/CMakeFiles/LLVMMCDisassembler.dir/MCRelocationInfo.cpp.o
+[1842/2927] Building CXX object lib/MC/MCDisassembler/CMakeFiles/LLVMMCDisassembler.dir/MCSymbolizer.cpp.o
+[1843/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Archive.cpp.o
+[1844/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Binary.cpp.o
+[1845/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/COFFImportFile.cpp.o
+[1846/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ArchiveWriter.cpp.o
+[1847/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/COFFModuleDefinition.cpp.o
+[1848/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Decompressor.cpp.o
+[1849/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/COFFObjectFile.cpp.o
+[1850/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ELF.cpp.o
+[1851/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/DXContainer.cpp.o
+[1852/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Error.cpp.o
+[1853/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/GOFFObjectFile.cpp.o
+[1854/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/FaultMapParser.cpp.o
+[1855/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/IRObjectFile.cpp.o
+[1856/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/IRSymtab.cpp.o
+[1857/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/MachOObjectFile.cpp.o
+[1858/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/MachOUniversal.cpp.o
+[1859/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Minidump.cpp.o
+[1860/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ModuleSymbolTable.cpp.o
+[1861/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/Object.cpp.o
+[1862/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ObjectFile.cpp.o
+[1863/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/RecordStreamer.cpp.o
+[1864/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/BuildID.cpp.o
+[1865/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/SymbolicFile.cpp.o
+[1866/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/RelocationResolver.cpp.o
+[1867/2927] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/CoroEarly.cpp.o
+[1868/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/TapiFile.cpp.o
+[1869/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/TapiUniversal.cpp.o
+[1870/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/MachOUniversalWriter.cpp.o
+[1871/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/WindowsMachineFlag.cpp.o
+[1872/2927] Building X86GenSubtargetInfo.inc...
+[1873/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/XCOFFObjectFile.cpp.o
+[1874/2927] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/ArchiveEmitter.cpp.o
+[1875/2927] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/ArchiveYAML.cpp.o
+[1876/2927] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/CodeViewYAMLDebugSections.cpp.o
+[1877/2927] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SimplifyCFG.cpp.o
+FAILED: lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SimplifyCFG.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Utils -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SimplifyCFG.cpp.o -MF lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SimplifyCFG.cpp.o.d -o lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/SimplifyCFG.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp: In function ‘bool sinkCommonCodeFromPredecessors(llvm::BasicBlock*, llvm::DomTreeUpdater*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp:2503:3: error: reference to ‘LockstepReverseIterator’ is ambiguous
+ 2503 |   LockstepReverseIterator<true> LRI(UnconditionalPreds);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp:1787:7: note: candidates are: ‘class {anonymous}::LockstepReverseIterator’
+ 1787 | class LockstepReverseIterator {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp:77:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/LockstepReverseIterator.h:41:7: note:                 ‘template<bool EarlyFailure> class llvm::LockstepReverseIterator’
+   41 | class LockstepReverseIterator
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp:2503:33: error: ‘LRI’ was not declared in this scope
+ 2503 |   LockstepReverseIterator<true> LRI(UnconditionalPreds);
+      |                                 ^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp:2533:44: error: reference to ‘LockstepReverseIterator’ is ambiguous
+ 2533 |     auto ProfitableToSinkInstruction = [&](LockstepReverseIterator<true> &LRI) {
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp:1787:7: note: candidates are: ‘class {anonymous}::LockstepReverseIterator’
+ 1787 | class LockstepReverseIterator {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp:77:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/LockstepReverseIterator.h:41:7: note:                 ‘template<bool EarlyFailure> class llvm::LockstepReverseIterator’
+   41 | class LockstepReverseIterator
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp:2533:44: error: ‘LockstepReverseIterator’ has not been declared
+ 2533 |     auto ProfitableToSinkInstruction = [&](LockstepReverseIterator<true> &LRI) {
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp:2533:67: error: expected ‘,’ or ‘...’ before ‘<’ token
+ 2533 |     auto ProfitableToSinkInstruction = [&](LockstepReverseIterator<true> &LRI) {
+      |                                                                   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Utils/SimplifyCFG.cpp:2206:13: warning: ‘bool canSinkInstructions(llvm::ArrayRef<llvm::Instruction*>, llvm::DenseMap<const llvm::Use*, llvm::SmallVector<llvm::Value*, 4> >&)’ defined but not used [-Wunused-function]
+ 2206 | static bool canSinkInstructions(
+      |             ^~~~~~~~~~~~~~~~~~~
+[1878/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/OffloadBinary.cpp.o
+[1879/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/SymbolSize.cpp.o
+[1880/2927] Building X86GenInstrInfo.inc...
+[1881/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/WindowsResource.cpp.o
+[1882/2927] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/CoroFrame.cpp.o
+[1883/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/WasmObjectFile.cpp.o
+[1884/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[1885/2927] Building CXX object lib/Object/CMakeFiles/LLVMObject.dir/ELFObjectFile.cpp.o
+[1886/2927] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfoImpl.cpp.o
+[1887/2927] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o
+[1888/2927] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o
+[1889/2927] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGAtomic.cpp.o
+[1890/2927] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o
+[1891/2927] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o
+[1892/2927] Building CXX object lib/ObjectYAML/CMakeFiles/LLVMObjectYAML.dir/CodeViewYAMLSymbols.cpp.o
+[1893/2927] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/MemProfContextDisambiguation.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp: In instantiation of ‘void {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::assignStackNodesPostOrder({anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::ContextNode*, llvm::DenseSet<const {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::ContextNode*>&, llvm::DenseMap<long unsigned int, std::vector<{anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::CallContextInfo> >&, llvm::DenseMap<{anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::CallInfo, {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::CallInfo>&) [with DerivedCCG = {anonymous}::ModuleCallsiteContextGraph; FuncTy = llvm::Function; CallTy = llvm::Instruction*]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp:1952:5:   required from ‘void {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::updateStackNodes() [with DerivedCCG = {anonymous}::ModuleCallsiteContextGraph; FuncTy = llvm::Function; CallTy = llvm::Instruction*]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp:2111:19:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp:1581:8: warning: variable ‘PrevIterCreatedNode’ set but not used [-Wunused-but-set-variable]
+ 1581 |   bool PrevIterCreatedNode = false;
+      |        ^~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp: In instantiation of ‘void {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::assignStackNodesPostOrder({anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::ContextNode*, llvm::DenseSet<const {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::ContextNode*>&, llvm::DenseMap<long unsigned int, std::vector<{anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::CallContextInfo> >&, llvm::DenseMap<{anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::CallInfo, {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::CallInfo>&) [with DerivedCCG = {anonymous}::IndexCallsiteContextGraph; FuncTy = llvm::FunctionSummary; CallTy = {anonymous}::IndexCall]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp:1952:5:   required from ‘void {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::updateStackNodes() [with DerivedCCG = {anonymous}::IndexCallsiteContextGraph; FuncTy = llvm::FunctionSummary; CallTy = {anonymous}::IndexCall]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp:2210:19:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp:1581:8: warning: variable ‘PrevIterCreatedNode’ set but not used [-Wunused-but-set-variable]
+[1894/2927] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+211.98user 13.21system 0:51.87elapsed 434%CPU (0avgtext+0avgdata 2530252maxresident)k
+0inputs+1068648outputs (2533major+7889524minor)pagefaults 0swaps
