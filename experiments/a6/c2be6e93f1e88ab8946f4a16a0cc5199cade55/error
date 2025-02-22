@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note: candidate: ‘template<class Pattern> bool llvm::PatternMatch::match(llvm::ArrayRef<int>, const Pattern&)’
+   53 | template <typename Pattern> bool match(ArrayRef<int> Mask, const Pattern &P) {
+      |                                  ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12837:18: note:   cannot convert ‘LHS’ (type ‘llvm::SCEVUse’) to type ‘llvm::ArrayRef<int>’
+12837 |     return match(LHS, m_scev_SExt(m_SCEV(Op))) &&
+      |                  ^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:82:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note: candidate: ‘template<class Val, class Pattern> bool llvm::SCEVPatternMatch::match(const llvm::SCEV*, const Pattern&)’
+   22 | bool match(const SCEV *S, const Pattern &P) {
+      |      ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12837:17: note:   couldn’t deduce template parameter ‘Val’
+12837 |     return match(LHS, m_scev_SExt(m_SCEV(Op))) &&
+      |            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12838:17: error: no matching function for call to ‘match(llvm::SCEVUse&, llvm::SCEVPatternMatch::SCEVUnaryExpr_match<llvm::SCEVZeroExtendExpr, llvm::SCEVPatternMatch::specificscev_ty>)’
+12838 |            match(RHS, m_scev_ZExt(m_Specific(Op)));
+      |            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:49:48: note: candidate: ‘template<class Val, class Pattern> bool llvm::PatternMatch::match(Val*, const Pattern&)’
+   49 | template <typename Val, typename Pattern> bool match(Val *V, const Pattern &P) {
+      |                                                ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:49:48: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12838:17: note:   mismatched types ‘Val*’ and ‘llvm::SCEVUse’
+12838 |            match(RHS, m_scev_ZExt(m_Specific(Op)));
+      |            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note: candidate: ‘template<class Pattern> bool llvm::PatternMatch::match(llvm::ArrayRef<int>, const Pattern&)’
+   53 | template <typename Pattern> bool match(ArrayRef<int> Mask, const Pattern &P) {
+      |                                  ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12838:18: note:   cannot convert ‘RHS’ (type ‘llvm::SCEVUse’) to type ‘llvm::ArrayRef<int>’
+12838 |            match(RHS, m_scev_ZExt(m_Specific(Op)));
+      |                  ^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:82:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note: candidate: ‘template<class Val, class Pattern> bool llvm::SCEVPatternMatch::match(const llvm::SCEV*, const Pattern&)’
+   22 | bool match(const SCEV *S, const Pattern &P) {
+      |      ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12838:17: note:   couldn’t deduce template parameter ‘Val’
+12838 |            match(RHS, m_scev_ZExt(m_Specific(Op)));
+      |            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12845:17: error: no matching function for call to ‘match(llvm::SCEVUse&, llvm::SCEVPatternMatch::SCEVUnaryExpr_match<llvm::SCEVZeroExtendExpr, llvm::SCEVPatternMatch::bind_ty<const llvm::SCEV> >)’
+12845 |     return match(LHS, m_scev_ZExt(m_SCEV(Op))) &&
+      |            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:49:48: note: candidate: ‘template<class Val, class Pattern> bool llvm::PatternMatch::match(Val*, const Pattern&)’
+   49 | template <typename Val, typename Pattern> bool match(Val *V, const Pattern &P) {
+      |                                                ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:49:48: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12845:17: note:   mismatched types ‘Val*’ and ‘llvm::SCEVUse’
+12845 |     return match(LHS, m_scev_ZExt(m_SCEV(Op))) &&
+      |            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note: candidate: ‘template<class Pattern> bool llvm::PatternMatch::match(llvm::ArrayRef<int>, const Pattern&)’
+   53 | template <typename Pattern> bool match(ArrayRef<int> Mask, const Pattern &P) {
+      |                                  ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12845:18: note:   cannot convert ‘LHS’ (type ‘llvm::SCEVUse’) to type ‘llvm::ArrayRef<int>’
+12845 |     return match(LHS, m_scev_ZExt(m_SCEV(Op))) &&
+      |                  ^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:82:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note: candidate: ‘template<class Val, class Pattern> bool llvm::SCEVPatternMatch::match(const llvm::SCEV*, const Pattern&)’
+   22 | bool match(const SCEV *S, const Pattern &P) {
+      |      ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12845:17: note:   couldn’t deduce template parameter ‘Val’
+12845 |     return match(LHS, m_scev_ZExt(m_SCEV(Op))) &&
+      |            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12846:17: error: no matching function for call to ‘match(llvm::SCEVUse&, llvm::SCEVPatternMatch::SCEVUnaryExpr_match<llvm::SCEVSignExtendExpr, llvm::SCEVPatternMatch::specificscev_ty>)’
+12846 |            match(RHS, m_scev_SExt(m_Specific(Op)));
+      |            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:49:48: note: candidate: ‘template<class Val, class Pattern> bool llvm::PatternMatch::match(Val*, const Pattern&)’
+   49 | template <typename Val, typename Pattern> bool match(Val *V, const Pattern &P) {
+      |                                                ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:49:48: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12846:17: note:   mismatched types ‘Val*’ and ‘llvm::SCEVUse’
+12846 |            match(RHS, m_scev_SExt(m_Specific(Op)));
+      |            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note: candidate: ‘template<class Pattern> bool llvm::PatternMatch::match(llvm::ArrayRef<int>, const Pattern&)’
+   53 | template <typename Pattern> bool match(ArrayRef<int> Mask, const Pattern &P) {
+      |                                  ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12846:18: note:   cannot convert ‘RHS’ (type ‘llvm::SCEVUse’) to type ‘llvm::ArrayRef<int>’
+12846 |            match(RHS, m_scev_SExt(m_Specific(Op)));
+      |                  ^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:82:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note: candidate: ‘template<class Val, class Pattern> bool llvm::SCEVPatternMatch::match(const llvm::SCEV*, const Pattern&)’
+   22 | bool match(const SCEV *S, const Pattern &P) {
+      |      ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:12846:17: note:   couldn’t deduce template parameter ‘Val’
+12846 |            match(RHS, m_scev_SExt(m_Specific(Op)));
+      |            ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:15540:17: error: no matching function for call to ‘match(const llvm::SCEVUse&, llvm::SCEVPatternMatch::SCEVBinaryExpr_match<llvm::SCEVAddExpr, llvm::SCEVPatternMatch::bind_ty<const llvm::SCEVConstant>, llvm::SCEVPatternMatch::bind_ty<const llvm::SCEVUnknown> >)’
+15540 |       if (!match(LHS,
+      |            ~~~~~^~~~~
+15541 |                  m_scev_Add(m_SCEVConstant(C1), m_SCEVUnknown(LHSUnknown))) ||
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:49:48: note: candidate: ‘template<class Val, class Pattern> bool llvm::PatternMatch::match(Val*, const Pattern&)’
+   49 | template <typename Val, typename Pattern> bool match(Val *V, const Pattern &P) {
+      |                                                ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:49:48: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:15540:17: note:   mismatched types ‘Val*’ and ‘llvm::SCEVUse’
+15540 |       if (!match(LHS,
+      |            ~~~~~^~~~~
+15541 |                  m_scev_Add(m_SCEVConstant(C1), m_SCEVUnknown(LHSUnknown))) ||
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note: candidate: ‘template<class Pattern> bool llvm::PatternMatch::match(llvm::ArrayRef<int>, const Pattern&)’
+   53 | template <typename Pattern> bool match(ArrayRef<int> Mask, const Pattern &P) {
+      |                                  ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:15540:18: note:   cannot convert ‘LHS’ (type ‘const llvm::SCEVUse’) to type ‘llvm::ArrayRef<int>’
+15540 |       if (!match(LHS,
+      |                  ^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:82:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note: candidate: ‘template<class Val, class Pattern> bool llvm::SCEVPatternMatch::match(const llvm::SCEV*, const Pattern&)’
+   22 | bool match(const SCEV *S, const Pattern &P) {
+      |      ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:15540:17: note:   couldn’t deduce template parameter ‘Val’
+15540 |       if (!match(LHS,
+      |            ~~~~~^~~~~
+15541 |                  m_scev_Add(m_SCEVConstant(C1), m_SCEVUnknown(LHSUnknown))) ||
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:15649:47: error: no matching function for call to ‘match(llvm::SCEVUse&, llvm::SCEVPatternMatch::cst_pred_ty<llvm::SCEVPatternMatch::is_zero>)’
+15649 |     if (Predicate == CmpInst::ICMP_EQ && match(RHS, m_scev_Zero())) {
+      |                                          ~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:49:48: note: candidate: ‘template<class Val, class Pattern> bool llvm::PatternMatch::match(Val*, const Pattern&)’
+   49 | template <typename Val, typename Pattern> bool match(Val *V, const Pattern &P) {
+      |                                                ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:49:48: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:15649:47: note:   mismatched types ‘Val*’ and ‘llvm::SCEVUse’
+15649 |     if (Predicate == CmpInst::ICMP_EQ && match(RHS, m_scev_Zero())) {
+      |                                          ~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note: candidate: ‘template<class Pattern> bool llvm::PatternMatch::match(llvm::ArrayRef<int>, const Pattern&)’
+   53 | template <typename Pattern> bool match(ArrayRef<int> Mask, const Pattern &P) {
+      |                                  ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:15649:48: note:   cannot convert ‘RHS’ (type ‘llvm::SCEVUse’) to type ‘llvm::ArrayRef<int>’
+15649 |     if (Predicate == CmpInst::ICMP_EQ && match(RHS, m_scev_Zero())) {
+      |                                                ^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:82:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note: candidate: ‘template<class Val, class Pattern> bool llvm::SCEVPatternMatch::match(const llvm::SCEV*, const Pattern&)’
+   22 | bool match(const SCEV *S, const Pattern &P) {
+      |      ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:15649:47: note:   couldn’t deduce template parameter ‘Val’
+15649 |     if (Predicate == CmpInst::ICMP_EQ && match(RHS, m_scev_Zero())) {
+      |                                          ~~~~~^~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:15828:18: error: no matching function for call to ‘match(llvm::SCEVUse&, llvm::SCEVPatternMatch::cst_pred_ty<llvm::SCEVPatternMatch::is_zero>)’
+15828 |         if (match(RHS, m_scev_Zero())) {
+      |             ~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:49:48: note: candidate: ‘template<class Val, class Pattern> bool llvm::PatternMatch::match(Val*, const Pattern&)’
+   49 | template <typename Val, typename Pattern> bool match(Val *V, const Pattern &P) {
+      |                                                ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:49:48: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:15828:18: note:   mismatched types ‘Val*’ and ‘llvm::SCEVUse’
+15828 |         if (match(RHS, m_scev_Zero())) {
+      |             ~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:106:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note: candidate: ‘template<class Pattern> bool llvm::PatternMatch::match(llvm::ArrayRef<int>, const Pattern&)’
+   53 | template <typename Pattern> bool match(ArrayRef<int> Mask, const Pattern &P) {
+      |                                  ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PatternMatch.h:53:34: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:15828:19: note:   cannot convert ‘RHS’ (type ‘llvm::SCEVUse’) to type ‘llvm::ArrayRef<int>’
+15828 |         if (match(RHS, m_scev_Zero())) {
+      |                   ^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:82:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note: candidate: ‘template<class Val, class Pattern> bool llvm::SCEVPatternMatch::match(const llvm::SCEV*, const Pattern&)’
+   22 | bool match(const SCEV *S, const Pattern &P) {
+      |      ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolutionPatternMatch.h:22:6: note:   template argument deduction/substitution failed:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ScalarEvolution.cpp:15828:18: note:   couldn’t deduce template parameter ‘Val’
+15828 |         if (match(RHS, m_scev_Zero())) {
+      |             ~~~~~^~~~~~~~~~~~~~~~~~~~
+[2628/2927] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/MacroExpander.cpp.o
+[2629/2927] Building CXX object tools/clang/lib/FrontendTool/CMakeFiles/obj.clangFrontendTool.dir/ExecuteCompilerInvocation.cpp.o
+[2630/2927] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexingAction.cpp.o
+[2631/2927] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/InterfaceStubFunctionsConsumer.cpp.o
+[2632/2927] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexBody.cpp.o
+[2633/2927] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexTypeSourceInfo.cpp.o
+[2634/2927] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/Frontend.cpp.o
+[2635/2927] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/Visitor.cpp.o
+[2636/2927] Building X86GenInstrInfo.inc...
+[2637/2927] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2638/2927] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInvocation.cpp.o
+[2639/2927] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/HIPUtility.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+121.41user 16.71system 0:09.76elapsed 1414%CPU (0avgtext+0avgdata 745416maxresident)k
+0inputs+3180168outputs (2704major+7574948minor)pagefaults 0swaps
