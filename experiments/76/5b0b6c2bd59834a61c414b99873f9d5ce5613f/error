@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2126/2927] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:379:35: error: declaration of ‘clang::TriviallyRelocatableSpecifier clang::CXXRecordDecl::DefinitionData::TriviallyRelocatableSpecifier’ changes meaning of ‘TriviallyRelocatableSpecifier’ [-fpermissive]
+  379 |     TriviallyRelocatableSpecifier TriviallyRelocatableSpecifier;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:151:7: note: ‘TriviallyRelocatableSpecifier’ declared here as ‘using TriviallyRelocatableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Relocatable>’
+  151 | using TriviallyRelocatableSpecifier =
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:381:26: error: declaration of ‘clang::ReplaceableSpecifier clang::CXXRecordDecl::DefinitionData::ReplaceableSpecifier’ changes meaning of ‘ReplaceableSpecifier’ [-fpermissive]
+  381 |     ReplaceableSpecifier ReplaceableSpecifier;
+      |                          ^~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:154:7: note: ‘ReplaceableSpecifier’ declared here as ‘using ReplaceableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Replaceable>’
+  154 | using ReplaceableSpecifier = BasicRelocatableOrReplaceableClassSpecifier<
+      |       ^~~~~~~~~~~~~~~~~~~~
+[2127/2927] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/DiagnosticIDs.cpp.o
+[2128/2927] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseAST.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseAST.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseAST.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseAST.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseAST.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseAST.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTLambda.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseAST.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:379:35: error: declaration of ‘clang::TriviallyRelocatableSpecifier clang::CXXRecordDecl::DefinitionData::TriviallyRelocatableSpecifier’ changes meaning of ‘TriviallyRelocatableSpecifier’ [-fpermissive]
+  379 |     TriviallyRelocatableSpecifier TriviallyRelocatableSpecifier;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTLambda.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseAST.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:151:7: note: ‘TriviallyRelocatableSpecifier’ declared here as ‘using TriviallyRelocatableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Relocatable>’
+  151 | using TriviallyRelocatableSpecifier =
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTLambda.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseAST.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:381:26: error: declaration of ‘clang::ReplaceableSpecifier clang::CXXRecordDecl::DefinitionData::ReplaceableSpecifier’ changes meaning of ‘ReplaceableSpecifier’ [-fpermissive]
+  381 |     ReplaceableSpecifier ReplaceableSpecifier;
+      |                          ^~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTLambda.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseAST.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:154:7: note: ‘ReplaceableSpecifier’ declared here as ‘using ReplaceableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Replaceable>’
+  154 | using ReplaceableSpecifier = BasicRelocatableOrReplaceableClassSpecifier<
+      |       ^~~~~~~~~~~~~~~~~~~~
+[2129/2927] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExpr.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExpr.cpp:25:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:379:35: error: declaration of ‘clang::TriviallyRelocatableSpecifier clang::CXXRecordDecl::DefinitionData::TriviallyRelocatableSpecifier’ changes meaning of ‘TriviallyRelocatableSpecifier’ [-fpermissive]
+  379 |     TriviallyRelocatableSpecifier TriviallyRelocatableSpecifier;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExpr.cpp:25:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:151:7: note: ‘TriviallyRelocatableSpecifier’ declared here as ‘using TriviallyRelocatableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Relocatable>’
+  151 | using TriviallyRelocatableSpecifier =
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExpr.cpp:25:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:381:26: error: declaration of ‘clang::ReplaceableSpecifier clang::CXXRecordDecl::DefinitionData::ReplaceableSpecifier’ changes meaning of ‘ReplaceableSpecifier’ [-fpermissive]
+  381 |     ReplaceableSpecifier ReplaceableSpecifier;
+      |                          ^~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExpr.cpp:25:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:154:7: note: ‘ReplaceableSpecifier’ declared here as ‘using ReplaceableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Replaceable>’
+  154 | using ReplaceableSpecifier = BasicRelocatableOrReplaceableClassSpecifier<
+      |       ^~~~~~~~~~~~~~~~~~~~
+[2130/2927] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDeclCXX.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDeclCXX.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDeclCXX.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDeclCXX.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDeclCXX.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseDeclCXX.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseDeclCXX.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:379:35: error: declaration of ‘clang::TriviallyRelocatableSpecifier clang::CXXRecordDecl::DefinitionData::TriviallyRelocatableSpecifier’ changes meaning of ‘TriviallyRelocatableSpecifier’ [-fpermissive]
+  379 |     TriviallyRelocatableSpecifier TriviallyRelocatableSpecifier;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseDeclCXX.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:151:7: note: ‘TriviallyRelocatableSpecifier’ declared here as ‘using TriviallyRelocatableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Relocatable>’
+  151 | using TriviallyRelocatableSpecifier =
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseDeclCXX.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:381:26: error: declaration of ‘clang::ReplaceableSpecifier clang::CXXRecordDecl::DefinitionData::ReplaceableSpecifier’ changes meaning of ‘ReplaceableSpecifier’ [-fpermissive]
+  381 |     ReplaceableSpecifier ReplaceableSpecifier;
+      |                          ^~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseDeclCXX.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:154:7: note: ‘ReplaceableSpecifier’ declared here as ‘using ReplaceableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Replaceable>’
+  154 | using ReplaceableSpecifier = BasicRelocatableOrReplaceableClassSpecifier<
+      |       ^~~~~~~~~~~~~~~~~~~~
+[2131/2927] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExprCXX.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExprCXX.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:379:35: error: declaration of ‘clang::TriviallyRelocatableSpecifier clang::CXXRecordDecl::DefinitionData::TriviallyRelocatableSpecifier’ changes meaning of ‘TriviallyRelocatableSpecifier’ [-fpermissive]
+  379 |     TriviallyRelocatableSpecifier TriviallyRelocatableSpecifier;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExprCXX.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:151:7: note: ‘TriviallyRelocatableSpecifier’ declared here as ‘using TriviallyRelocatableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Relocatable>’
+  151 | using TriviallyRelocatableSpecifier =
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExprCXX.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:381:26: error: declaration of ‘clang::ReplaceableSpecifier clang::CXXRecordDecl::DefinitionData::ReplaceableSpecifier’ changes meaning of ‘ReplaceableSpecifier’ [-fpermissive]
+  381 |     ReplaceableSpecifier ReplaceableSpecifier;
+      |                          ^~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExprCXX.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:154:7: note: ‘ReplaceableSpecifier’ declared here as ‘using ReplaceableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Replaceable>’
+  154 | using ReplaceableSpecifier = BasicRelocatableOrReplaceableClassSpecifier<
+      |       ^~~~~~~~~~~~~~~~~~~~
+[2132/2927] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendUtil.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/DeclSpec.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/CodeCompleteConsumer.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/ASTUnit.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/CodeGen/CodeGenAction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendConsumer.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendUtil.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:379:35: error: declaration of ‘clang::TriviallyRelocatableSpecifier clang::CXXRecordDecl::DefinitionData::TriviallyRelocatableSpecifier’ changes meaning of ‘TriviallyRelocatableSpecifier’ [-fpermissive]
+  379 |     TriviallyRelocatableSpecifier TriviallyRelocatableSpecifier;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/DeclSpec.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/CodeCompleteConsumer.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/ASTUnit.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/CodeGen/CodeGenAction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendConsumer.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendUtil.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:151:7: note: ‘TriviallyRelocatableSpecifier’ declared here as ‘using TriviallyRelocatableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Relocatable>’
+  151 | using TriviallyRelocatableSpecifier =
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/DeclSpec.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/CodeCompleteConsumer.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/ASTUnit.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/CodeGen/CodeGenAction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendConsumer.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendUtil.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:381:26: error: declaration of ‘clang::ReplaceableSpecifier clang::CXXRecordDecl::DefinitionData::ReplaceableSpecifier’ changes meaning of ‘ReplaceableSpecifier’ [-fpermissive]
+  381 |     ReplaceableSpecifier ReplaceableSpecifier;
+      |                          ^~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/DeclSpec.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/CodeCompleteConsumer.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/ASTUnit.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/FrontendAction.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/CodeGen/CodeGenAction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendConsumer.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendUtil.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:154:7: note: ‘ReplaceableSpecifier’ declared here as ‘using ReplaceableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Replaceable>’
+  154 | using ReplaceableSpecifier = BasicRelocatableOrReplaceableClassSpecifier<
+      |       ^~~~~~~~~~~~~~~~~~~~
+[2133/2927] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:379:35: error: declaration of ‘clang::TriviallyRelocatableSpecifier clang::CXXRecordDecl::DefinitionData::TriviallyRelocatableSpecifier’ changes meaning of ‘TriviallyRelocatableSpecifier’ [-fpermissive]
+  379 |     TriviallyRelocatableSpecifier TriviallyRelocatableSpecifier;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:151:7: note: ‘TriviallyRelocatableSpecifier’ declared here as ‘using TriviallyRelocatableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Relocatable>’
+  151 | using TriviallyRelocatableSpecifier =
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:381:26: error: declaration of ‘clang::ReplaceableSpecifier clang::CXXRecordDecl::DefinitionData::ReplaceableSpecifier’ changes meaning of ‘ReplaceableSpecifier’ [-fpermissive]
+  381 |     ReplaceableSpecifier ReplaceableSpecifier;
+      |                          ^~~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:154:7: note: ‘ReplaceableSpecifier’ declared here as ‘using ReplaceableSpecifier = class clang::BasicRelocatableOrReplaceableClassSpecifier<clang::RelocatableOrReplaceableClassSpecifierKind::Replaceable>’
+  154 | using ReplaceableSpecifier = BasicRelocatableOrReplaceableClassSpecifier<
+      |       ^~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+182.29user 14.21system 0:15.87elapsed 1238%CPU (0avgtext+0avgdata 1497748maxresident)k
+0inputs+1242576outputs (2711major+8169559minor)pagefaults 0swaps
