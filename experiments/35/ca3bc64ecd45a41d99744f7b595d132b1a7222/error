@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+[510/2787] Copying clang's bmi2intrin.h...
+[511/2787] Copying clang's bmiintrin.h...
+[512/2787] Copying clang's cetintrin.h...
+[513/2787] Copying clang's cldemoteintrin.h...
+[514/2787] Copying clang's clwbintrin.h...
+[515/2787] Copying clang's clflushoptintrin.h...
+[516/2787] Copying clang's clzerointrin.h...
+[517/2787] Copying clang's cmpccxaddintrin.h...
+[518/2787] Copying clang's crc32intrin.h...
+[519/2787] Copying clang's enqcmdintrin.h...
+[520/2787] Copying clang's emmintrin.h...
+[521/2787] Copying clang's f16cintrin.h...
+[522/2787] Copying clang's fma4intrin.h...
+[523/2787] Copying clang's fmaintrin.h...
+[524/2787] Copying clang's fxsrintrin.h...
+[525/2787] Copying clang's gfniintrin.h...
+[526/2787] Copying clang's hresetintrin.h...
+[527/2787] Copying clang's ia32intrin.h...
+[528/2787] Copying clang's immintrin.h...
+[529/2787] Copying clang's keylockerintrin.h...
+[530/2787] Copying clang's invpcidintrin.h...
+[531/2787] Copying clang's lwpintrin.h...
+[532/2787] Copying clang's lzcntintrin.h...
+[533/2787] Copying clang's mm3dnow.h...
+[534/2787] Copying clang's movrs_avx10_2_512intrin.h...
+[535/2787] Copying clang's mmintrin.h...
+[536/2787] Copying clang's movdirintrin.h...
+[537/2787] Copying clang's movrs_avx10_2intrin.h...
+[538/2787] Copying clang's movrsintrin.h...
+[539/2787] Copying clang's mwaitxintrin.h...
+[540/2787] Copying clang's nmmintrin.h...
+[541/2787] Copying clang's popcntintrin.h...
+[542/2787] Copying clang's pconfigintrin.h...
+[543/2787] Copying clang's pkuintrin.h...
+[544/2787] Copying clang's pmmintrin.h...
+[545/2787] Copying clang's prfchwintrin.h...
+[546/2787] Copying clang's ptwriteintrin.h...
+[547/2787] Copying clang's prfchiintrin.h...
+[548/2787] Copying clang's ptrauth.h...
+[549/2787] Copying clang's rdpruintrin.h...
+[550/2787] Copying clang's rtmintrin.h...
+[551/2787] Copying clang's raointintrin.h...
+[552/2787] Copying clang's rdseedintrin.h...
+[553/2787] Building RISCVTargetParserDef.inc...
+[554/2787] Copying clang's serializeintrin.h...
+[555/2787] Copying clang's shaintrin.h...
+[556/2787] Copying clang's sgxintrin.h...
+[557/2787] Copying clang's sha512intrin.h...
+[558/2787] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkLinker.cpp.o
+[559/2787] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkSerializer.cpp.o
+[560/2787] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenSchedule.cpp.o
+[561/2787] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkParser.cpp.o
+[562/2787] Building CXX object lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFContext.cpp.o
+[563/2787] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/GlobalISelMatchTable.cpp.o
+[564/2787] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/YAMLRemarkParser.cpp.o
+[565/2787] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/YAMLRemarkSerializer.cpp.o
+[566/2787] Building CXX object lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFParser.cpp.o
+[567/2787] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenDAGPatterns.cpp.o
+[568/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Assumptions.cpp.o
+[569/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/BuiltinGCs.cpp.o
+[570/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/AbstractCallSite.cpp.o
+[571/2787] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenRegisters.cpp.o
+[572/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Comdat.cpp.o
+[573/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConstantRangeList.cpp.o
+[574/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConstantFPRange.cpp.o
+[575/2787] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRPrintingPass.cpp.o
+[576/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConstantRange.cpp.o
+[577/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConstantFold.cpp.o
+[578/2787] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MacroFusion.cpp.o
+[579/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/BasicBlock.cpp.o
+[580/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Attributes.cpp.o
+[581/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/CycleInfo.cpp.o
+[582/2787] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/RegBankSelect.cpp.o
+[583/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConvergenceVerifier.cpp.o
+[584/2787] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/MachineIRBuilder.cpp.o
+[585/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DataLayout.cpp.o
+[586/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DiagnosticHandler.cpp.o
+[587/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/AutoUpgrade.cpp.o
+[588/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DiagnosticPrinter.cpp.o
+[589/2787] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/Utils.cpp.o
+[590/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DIExpressionOptimizer.cpp.o
+[591/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugProgramInstruction.cpp.o
+[592/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Core.cpp.o
+[593/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/GCStrategy.cpp.o
+[594/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/GVMaterializer.cpp.o
+[595/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DIBuilder.cpp.o
+[596/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Constants.cpp.o
+[597/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/AsmWriter.cpp.o
+[598/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugLoc.cpp.o
+[599/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/EHPersonalities.cpp.o
+[600/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DroppedVariableStats.cpp.o
+[601/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DiagnosticInfo.cpp.o
+[602/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DroppedVariableStatsIR.cpp.o
+[603/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o
+[604/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/FPEnv.cpp.o
+[605/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/SSAContext.cpp.o
+[606/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/IRPrintingPasses.cpp.o
+[607/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Function.cpp.o
+[608/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Dominators.cpp.o
+[609/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Globals.cpp.o
+[610/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/MDBuilder.cpp.o
+[611/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Intrinsics.cpp.o
+[612/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/MemoryModelRelaxationAnnotations.cpp.o
+[613/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/IRBuilder.cpp.o
+[614/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o
+[615/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMRemarkStreamer.cpp.o
+[616/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/InlineAsm.cpp.o
+[617/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Instruction.cpp.o
+[618/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Mangler.cpp.o
+[619/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/IntrinsicInst.cpp.o
+[620/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassInstrumentation.cpp.o
+[621/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/OptBisect.cpp.o
+[622/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassRegistry.cpp.o
+[623/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMContext.cpp.o
+[624/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LegacyPassManager.cpp.o
+[625/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassTimingInfo.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/PassTimingInfo.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/PassTimingInfo.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/PassTimingInfo.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/PassTimingInfo.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/PassTimingInfo.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/PassTimingInfo.cpp:20:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PassInstrumentation.h:56:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PassManager.h:46:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeName.h:45:49: error: constexpr variable 'TemplateParamsStart' must be initialized by a constant expression
+   45 |   LLVM_GET_TYPE_NAME_CONSTEXPR std::string_view TemplateParamsStart =
+      |                                                 ^
+   46 |       Name.substr(Name.find(Key));
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/PassTimingInfo.cpp:223:38: note: in instantiation of function template specialization 'llvm::getTypeName<llvm::TimePassesHandler>' requested here
+  223 |   dbgs() << "Dumping timers for " << getTypeName<TimePassesHandler>()
+      |                                      ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/char_traits.h:413:39: note: subexpression not valid in a constant expression
+  413 |         return static_cast<const char_type*>(__builtin_memchr(__s, __a, __n));
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/string_view.tcc:65:14: note: in call to 'find(&__PRETTY_FUNCTION__[0], 56, __elem0)'
+   65 |           __first = traits_type::find(__first, __len - __n + 1, __elem0);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string_view:399:48: note: in call to 'this->find(&"DesiredTypeName = "[0], 0, 18)'
+  399 |       { return this->find(__str._M_str, __pos, __str._M_len); }
+      |                                                ^~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeName.h:46:19: note: in call to 'Name.find(&Key, 0)'
+   46 |       Name.substr(Name.find(Key));
+      |                   ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeName.h:48:17: error: static assertion expression is not an integral constant expression
+   48 |   static_assert(!TemplateParamsStart.empty(),
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string_view:227:16: note: initializer of 'TemplateParamsStart' is not a constant expression
+  227 |       { return this->_M_len == 0; }
+      |                ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeName.h:48:18: note: in call to 'TemplateParamsStart.empty()'
+   48 |   static_assert(!TemplateParamsStart.empty(),
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeName.h:45:49: note: declared here
+   45 |   LLVM_GET_TYPE_NAME_CONSTEXPR std::string_view TemplateParamsStart =
+      |                                                 ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeName.h:55:49: error: constexpr variable 'SubstitutionKey' must be initialized by a constant expression
+   55 |   LLVM_GET_TYPE_NAME_CONSTEXPR std::string_view SubstitutionKey =
+      |                                                 ^
+   56 |       TemplateParamsStart.substr(Key.size());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string_view:212:16: note: initializer of 'TemplateParamsStart' is not a constant expression
+  212 |       { return this->_M_len; }
+      |                ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string_view:306:26: note: in call to 'this->size()'
+  306 |         __pos = std::__sv_check(size(), __pos, "basic_string_view::substr");
+      |                                 ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeName.h:56:7: note: in call to 'TemplateParamsStart.substr(18, 18446744073709551615)'
+   56 |       TemplateParamsStart.substr(Key.size());
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeName.h:45:49: note: declared here
+   45 |   LLVM_GET_TYPE_NAME_CONSTEXPR std::string_view TemplateParamsStart =
+      |                                                 ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeName.h:60:17: error: static assertion expression is not an integral constant expression
+   60 |   static_assert(!SubstitutionKey.empty() && SubstitutionKey.back() == ']',
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string_view:227:16: note: initializer of 'SubstitutionKey' is not a constant expression
+  227 |       { return this->_M_len == 0; }
+      |                ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeName.h:60:18: note: in call to 'SubstitutionKey.empty()'
+   60 |   static_assert(!SubstitutionKey.empty() && SubstitutionKey.back() == ']',
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/TypeName.h:55:49: note: declared here
+   55 |   LLVM_GET_TYPE_NAME_CONSTEXPR std::string_view SubstitutionKey =
+      |                                                 ^
+4 errors generated.
+[626/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Pass.cpp.o
+[627/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Operator.cpp.o
+[628/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ProfDataUtils.cpp.o
+[629/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Instructions.cpp.o
+[630/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PrintPasses.cpp.o
+[631/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ProfileSummary.cpp.o
+[632/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassManager.cpp.o
+[633/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ReplaceConstant.cpp.o
+[634/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ModuleSummaryIndex.cpp.o
+[635/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Module.cpp.o
+[636/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Statepoint.cpp.o
+[637/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PseudoProbe.cpp.o
+[638/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMContextImpl.cpp.o
+[639/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/SafepointIRVerifier.cpp.o
+[640/2787] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Metadata.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
