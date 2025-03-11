@@ -1,0 +1,192 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O3 stage2" failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/O3.cmake
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /tmp/llvm-project-build-stage2/bin/clang
+-- Check for working C compiler: /tmp/llvm-project-build-stage2/bin/clang - broken
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-test-suite-build/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-test-suite-build/CMakeFiles/CMakeError.log".
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+
+
+STDERR:
+CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "/tmp/llvm-project-build-stage2/bin/clang"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/ninja cmTC_cf898 && [1/2] Building C object CMakeFiles/cmTC_cf898.dir/testCCompiler.c.o
+    FAILED: CMakeFiles/cmTC_cf898.dir/testCCompiler.c.o 
+    /tmp/llvm-project-build-stage2/bin/clang    -o CMakeFiles/cmTC_cf898.dir/testCCompiler.c.o -c /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCCompiler.c
+    PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+    Stack dump:
+    0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang -o CMakeFiles/cmTC_cf898.dir/testCCompiler.c.o -c /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCCompiler.c
+    1.	<eof> parser at end of file
+    2.	/tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCCompiler.c:9:5: LLVM IR generation of declaration 'main'
+    3.	/tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCCompiler.c:9:5: Generating code for declaration 'main'
+    Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+    0  clang     0x000055ec3acfafb8 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 40
+    1  clang     0x000055ec3acf847e llvm::sys::RunSignalHandlers() + 238
+    2  clang     0x000055ec3ac5ced7
+    3  libc.so.6 0x00007f41f1198520
+    4  clang     0x000055ec3ac979a6 llvm::StringMapImpl::LookupBucketFor(llvm::StringRef, unsigned int) + 22
+    5  clang     0x000055ec3a7eff0d llvm::ValueSymbolTable::reinsertValue(llvm::Value*) + 189
+    6  clang     0x000055ec3a730219 llvm::Function::Function(llvm::FunctionType*, llvm::GlobalValue::LinkageTypes, unsigned int, llvm::Twine const&, llvm::Module*) + 617
+    7  clang     0x000055ec3af5a6d2 clang::CodeGen::CodeGenModule::GetOrCreateLLVMFunction(llvm::StringRef, llvm::Type*, clang::GlobalDecl, bool, bool, bool, llvm::AttributeList, clang::CodeGen::ForDefinition_t) + 1538
+    8  clang     0x000055ec3af6308f clang::CodeGen::CodeGenModule::GetAddrOfFunction(clang::GlobalDecl, llvm::Type*, bool, bool, clang::CodeGen::ForDefinition_t) + 239
+    9  clang     0x000055ec3af60439 clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 137
+    10 clang     0x000055ec3af56bb8 clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 1000
+    11 clang     0x000055ec3af5ca64 clang::CodeGen::CodeGenModule::EmitGlobal(clang::GlobalDecl) + 1508
+    12 clang     0x000055ec3af555d0 clang::CodeGen::CodeGenModule::EmitTopLevelDecl(clang::Decl*) + 144
+    13 clang     0x000055ec3b60f9fc
+    14 clang     0x000055ec3b6077ee clang::BackendConsumer::HandleTopLevelDecl(clang::DeclGroupRef) + 334
+    15 clang     0x000055ec3cc3eaaa clang::ParseAST(clang::Sema&, bool, bool) + 1162
+    16 clang     0x000055ec3bb224cd clang::FrontendAction::Execute() + 29
+    17 clang     0x000055ec3ba5ae20 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 1184
+    18 clang     0x000055ec3bc29ec2 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 738
+    19 clang     0x000055ec39a0a233 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8547
+    20 clang     0x000055ec39a0654f
+    21 clang     0x000055ec3b8b5e09
+    22 clang     0x000055ec3ac5ca98 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 136
+    23 clang     0x000055ec3b8b5a54 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const + 356
+    24 clang     0x000055ec3b873328 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 552
+    25 clang     0x000055ec3b892aac clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 732
+    26 clang     0x000055ec39a05aab clang_main(int, char**, llvm::ToolContext const&) + 7323
+    27 clang     0x000055ec39a1623a main + 90
+    28 libc.so.6 0x00007f41f117fd90
+    29 libc.so.6 0x00007f41f117fe40 __libc_start_main + 128
+    30 clang     0x000055ec399f8365 _start + 37
+    clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+    clang version 21.0.0git
+    Target: x86_64-unknown-linux-gnu
+    Thread model: posix
+    InstalledDir: /tmp/llvm-project-build-stage2/bin
+    clang: note: diagnostic msg: 
+    ********************
+    
+    PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+    Preprocessed source(s) and associated run script(s) are located at:
+    clang: note: diagnostic msg: /tmp/testCCompiler-e70718.c
+    clang: note: diagnostic msg: /tmp/testCCompiler-e70718.sh
+    clang: note: diagnostic msg: 
+    
+    ********************
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: loading 'build.ninja': No such file or directory
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O0-g stage2" failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/O0-g.cmake
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /tmp/llvm-project-build-stage2/bin/clang
+-- Check for working C compiler: /tmp/llvm-project-build-stage2/bin/clang - broken
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-test-suite-build/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-test-suite-build/CMakeFiles/CMakeError.log".
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+
+
+STDERR:
+CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "/tmp/llvm-project-build-stage2/bin/clang"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/ninja cmTC_26515 && [1/2] Building C object CMakeFiles/cmTC_26515.dir/testCCompiler.c.o
+    FAILED: CMakeFiles/cmTC_26515.dir/testCCompiler.c.o 
+    /tmp/llvm-project-build-stage2/bin/clang    -o CMakeFiles/cmTC_26515.dir/testCCompiler.c.o -c /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCCompiler.c
+    PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+    Stack dump:
+    0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang -o CMakeFiles/cmTC_26515.dir/testCCompiler.c.o -c /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCCompiler.c
+    1.	<eof> parser at end of file
+    2.	/tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCCompiler.c:9:5: LLVM IR generation of declaration 'main'
+    3.	/tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCCompiler.c:9:5: Generating code for declaration 'main'
+    Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+    0  clang     0x0000556f81c51fb8 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 40
+    1  clang     0x0000556f81c4f47e llvm::sys::RunSignalHandlers() + 238
+    2  clang     0x0000556f81bb3ed7
+    3  libc.so.6 0x00007f9a9c292520
+    4  clang     0x0000556f81bee9a6 llvm::StringMapImpl::LookupBucketFor(llvm::StringRef, unsigned int) + 22
+    5  clang     0x0000556f81746f0d llvm::ValueSymbolTable::reinsertValue(llvm::Value*) + 189
+    6  clang     0x0000556f81687219 llvm::Function::Function(llvm::FunctionType*, llvm::GlobalValue::LinkageTypes, unsigned int, llvm::Twine const&, llvm::Module*) + 617
+    7  clang     0x0000556f81eb16d2 clang::CodeGen::CodeGenModule::GetOrCreateLLVMFunction(llvm::StringRef, llvm::Type*, clang::GlobalDecl, bool, bool, bool, llvm::AttributeList, clang::CodeGen::ForDefinition_t) + 1538
+    8  clang     0x0000556f81eba08f clang::CodeGen::CodeGenModule::GetAddrOfFunction(clang::GlobalDecl, llvm::Type*, bool, bool, clang::CodeGen::ForDefinition_t) + 239
+    9  clang     0x0000556f81eb7439 clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 137
+    10 clang     0x0000556f81eadbb8 clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 1000
+    11 clang     0x0000556f81eb3a64 clang::CodeGen::CodeGenModule::EmitGlobal(clang::GlobalDecl) + 1508
+    12 clang     0x0000556f81eac5d0 clang::CodeGen::CodeGenModule::EmitTopLevelDecl(clang::Decl*) + 144
+    13 clang     0x0000556f825669fc
+    14 clang     0x0000556f8255e7ee clang::BackendConsumer::HandleTopLevelDecl(clang::DeclGroupRef) + 334
+    15 clang     0x0000556f83b95aaa clang::ParseAST(clang::Sema&, bool, bool) + 1162
+    16 clang     0x0000556f82a794cd clang::FrontendAction::Execute() + 29
+    17 clang     0x0000556f829b1e20 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 1184
+    18 clang     0x0000556f82b80ec2 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 738
+    19 clang     0x0000556f80961233 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8547
+    20 clang     0x0000556f8095d54f
+    21 clang     0x0000556f8280ce09
+    22 clang     0x0000556f81bb3a98 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 136
+    23 clang     0x0000556f8280ca54 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const + 356
+    24 clang     0x0000556f827ca328 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 552
+    25 clang     0x0000556f827e9aac clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 732
+    26 clang     0x0000556f8095caab clang_main(int, char**, llvm::ToolContext const&) + 7323
+    27 clang     0x0000556f8096d23a main + 90
+    28 libc.so.6 0x00007f9a9c279d90
+    29 libc.so.6 0x00007f9a9c279e40 __libc_start_main + 128
+    30 clang     0x0000556f8094f365 _start + 37
+    clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+    clang version 21.0.0git
+    Target: x86_64-unknown-linux-gnu
+    Thread model: posix
+    InstalledDir: /tmp/llvm-project-build-stage2/bin
+    clang: note: diagnostic msg: 
+    ********************
+    
+    PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+    Preprocessed source(s) and associated run script(s) are located at:
+    clang: note: diagnostic msg: /tmp/testCCompiler-358249.c
+    clang: note: diagnostic msg: /tmp/testCCompiler-358249.sh
+    clang: note: diagnostic msg: 
+    
+    ********************
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: loading 'build.ninja': No such file or directory
