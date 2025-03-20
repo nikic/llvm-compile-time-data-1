@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp: In member function ‘bool llvm::SLPVectorizerPass::vectorizeCmpInsts(llvm::iterator_range<T>, llvm::BasicBlock*, llvm::slpvectorizer::BoUpSLP&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:22945:11: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+22945 |     if (R.isDeleted(I))
+      |           ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:22950:15: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+22950 |         if (R.isDeleted(I))
+      |               ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:22956:11: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+22956 |     if (R.isDeleted(I))
+      |           ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:22976:12: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+22976 |     if (!R.isDeleted(V) && isValidElementType(getValueType(V)))
+      |            ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp: In member function ‘bool llvm::SLPVectorizerPass::vectorizeInserts(llvm::SLPVectorizerPass::InstSetVector&, llvm::BasicBlock*, llvm::slpvectorizer::BoUpSLP&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:23007:11: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+23007 |     if (R.isDeleted(I) || isa<CmpInst>(I))
+      |           ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:23017:11: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+23017 |     if (R.isDeleted(I))
+      |           ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:23020:11: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+23020 |     if (R.isDeleted(I) || isa<CmpInst>(I))
+      |           ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:23175:17: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+23175 |           if (R.isDeleted(I1) || R.isDeleted(I2))
+      |                 ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:23175:36: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+23175 |           if (R.isDeleted(I1) || R.isDeleted(I2))
+      |                                    ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp: In member function ‘bool llvm::SLPVectorizerPass::vectorizeChainsInBlock(llvm::BasicBlock*, llvm::slpvectorizer::BoUpSLP&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:23202:41: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+23202 |       if (!VisitedInstrs.count(P) && !R.isDeleted(P) &&
+      |                                         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:23242:28: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+23242 |           return !PHI || R.isDeleted(PHI);
+      |                            ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp: In member function ‘bool llvm::SLPVectorizerPass::vectorizeChainsInBlock(llvm::BasicBlock*, llvm::slpvectorizer::BoUpSLP&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:23284:11: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+23284 |     if (R.isDeleted(&*It))
+      |           ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:23333:24: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+23333 |           if (Res && R.isDeleted(P)) {
+      |                        ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:23409:17: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+23409 |       return !R.isDeleted(GEP);
+      |                 ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:23434:18: error: ‘class llvm::slpvectorizer::BoUpSLP’ has no member named ‘isDeleted’
+23434 |         return R.isDeleted(cast<Instruction>(I)) ||
+      |                  ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:23585:2: error: expected ‘}’ at end of input
+23585 | }
+      |  ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:1577:16: note: to match this ‘{’
+ 1577 | namespace llvm {
+      |                ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp: In instantiation of ‘llvm::slpvectorizer::BoUpSLP::ShuffleInstructionBuilder::adjustExtracts(const llvm::slpvectorizer::BoUpSLP::TreeEntry*, llvm::MutableArrayRef<int>, llvm::ArrayRef<std::optional<llvm::TargetTransformInfo::ShuffleKind> >, unsigned int, bool&)::<lambda(unsigned int, const auto:41&)> [with auto:41 = std::tuple<llvm::Value* const&, int&>]’:
+/usr/include/c++/11/bits/stl_numeric.h:169:22:   required from ‘_Tp std::accumulate(_InputIterator, _InputIterator, _Tp, _BinaryOperation) [with _InputIterator = llvm::detail::zip_shortest<llvm::Value* const*, int*>; _Tp = unsigned int; _BinaryOperation = llvm::slpvectorizer::BoUpSLP::ShuffleInstructionBuilder::adjustExtracts(const llvm::slpvectorizer::BoUpSLP::TreeEntry*, llvm::MutableArrayRef<int>, llvm::ArrayRef<std::optional<llvm::TargetTransformInfo::ShuffleKind> >, unsigned int, bool&)::<lambda(unsigned int, const auto:41&)>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:15638:42:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:15646:36: error: invalid use of incomplete type ‘struct llvm::slpvectorizer::BoUpSLP::TreeEntry’
+15646 |               VecOp = TEs.front()->VectorizedValue;
+      |                       ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:1687:10: note: forward declaration of ‘struct llvm::slpvectorizer::BoUpSLP::TreeEntry’
+ 1687 |   struct TreeEntry;
+      |          ^~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ReverseIteration.h:5,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SLPVectorizer.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h: In instantiation of ‘constexpr const int llvm::PointerLikeTypeTraits<llvm::slpvectorizer::BoUpSLP::TreeEntry*>::NumLowBitsAvailable’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h:101:56:   required from ‘constexpr const int llvm::PointerLikeTypeTraits<const llvm::slpvectorizer::BoUpSLP::TreeEntry*>::NumLowBitsAvailable’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:38:54:   required from ‘constexpr int llvm::pointer_union_detail::lowBitsAvailable() [with Ts = {llvm::Value*, const llvm::slpvectorizer::BoUpSLP::TreeEntry*}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:52:72:   required from ‘constexpr const int llvm::pointer_union_detail::PointerUnionUIntTraits<llvm::Value*, const llvm::slpvectorizer::BoUpSLP::TreeEntry*>::NumLowBitsAvailable’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:169:28:   required from ‘struct llvm::PointerIntPairInfo<void*, 1, llvm::pointer_union_detail::PointerUnionUIntTraits<llvm::Value*, const llvm::slpvectorizer::BoUpSLP::TreeEntry*> >’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:94:57:   required from ‘PointerTy llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::getPointer() const [with PointerTy = void*; unsigned int IntBits = 1; IntType = int; PtrTraits = llvm::pointer_union_detail::PointerUnionUIntTraits<llvm::Value*, const llvm::slpvectorizer::BoUpSLP::TreeEntry*>; Info = llvm::PointerIntPairInfo<void*, 1, llvm::pointer_union_detail::PointerUnionUIntTraits<llvm::Value*, const llvm::slpvectorizer::BoUpSLP::TreeEntry*> >]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:142:53:   required from ‘bool llvm::PointerUnion<PTs>::isNull() const [with PTs = {llvm::Value*, const llvm::slpvectorizer::BoUpSLP::TreeEntry*}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:11565:33:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h:61:28: error: invalid application of ‘__alignof__’ to incomplete type ‘llvm::slpvectorizer::BoUpSLP::TreeEntry’
+   61 |       detail::ConstantLog2<alignof(T)>::value;
+      |                            ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/TinyPtrVector.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/PassManager.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SLPVectorizer.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h: In instantiation of ‘struct llvm::PointerIntPairInfo<void*, 1, llvm::pointer_union_detail::PointerUnionUIntTraits<llvm::Value*, const llvm::slpvectorizer::BoUpSLP::TreeEntry*> >’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:94:57:   required from ‘PointerTy llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::getPointer() const [with PointerTy = void*; unsigned int IntBits = 1; IntType = int; PtrTraits = llvm::pointer_union_detail::PointerUnionUIntTraits<llvm::Value*, const llvm::slpvectorizer::BoUpSLP::TreeEntry*>; Info = llvm::PointerIntPairInfo<void*, 1, llvm::pointer_union_detail::PointerUnionUIntTraits<llvm::Value*, const llvm::slpvectorizer::BoUpSLP::TreeEntry*> >]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:142:53:   required from ‘bool llvm::PointerUnion<PTs>::isNull() const [with PTs = {llvm::Value*, const llvm::slpvectorizer::BoUpSLP::TreeEntry*}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:11565:33:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:169:48: error: non-constant condition for static assertion
+  169 |   static_assert(PtrTraits::NumLowBitsAvailable <
+      |                            ~~~~~~~~~~~~~~~~~~~~^
+  170 |                     std::numeric_limits<uintptr_t>::digits,
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:172:25: error: non-constant condition for static assertion
+  172 |   static_assert(IntBits <= PtrTraits::NumLowBitsAvailable,
+      |                 ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:174:8: error: enumerator value for ‘PointerBitMask’ is not an integer constant
+  174 |   enum MaskAndShiftConstants : uintptr_t {
+      |        ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:174:8: error: enumerator value for ‘IntShift’ is not an integer constant
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp: In instantiation of ‘llvm::slpvectorizer::BoUpSLP::reorderBottomToTop(bool)::<lambda(const auto:37&)> [with auto:37 = std::pair<unsigned int, llvm::slpvectorizer::BoUpSLP::TreeEntry*>]’:
+/usr/include/c++/11/bits/predefined_ops.h:318:23:   required from ‘bool __gnu_cxx::__ops::_Iter_pred<_Predicate>::operator()(_Iterator) [with _Iterator = std::pair<unsigned int, llvm::slpvectorizer::BoUpSLP::TreeEntry*>*; _Predicate = llvm::slpvectorizer::BoUpSLP::reorderBottomToTop(bool)::<lambda(const auto:37&)>]’
+/usr/include/c++/11/bits/stl_algobase.h:2069:14:   required from ‘_RandomAccessIterator std::__find_if(_RandomAccessIterator, _RandomAccessIterator, _Predicate, std::random_access_iterator_tag) [with _RandomAccessIterator = std::pair<unsigned int, llvm::slpvectorizer::BoUpSLP::TreeEntry*>*; _Predicate = __gnu_cxx::__ops::_Iter_pred<llvm::slpvectorizer::BoUpSLP::reorderBottomToTop(bool)::<lambda(const auto:37&)> >]’
+/usr/include/c++/11/bits/stl_algobase.h:2114:23:   required from ‘_Iterator std::__find_if(_Iterator, _Iterator, _Predicate) [with _Iterator = std::pair<unsigned int, llvm::slpvectorizer::BoUpSLP::TreeEntry*>*; _Predicate = __gnu_cxx::__ops::_Iter_pred<llvm::slpvectorizer::BoUpSLP::reorderBottomToTop(bool)::<lambda(const auto:37&)> >]’
+/usr/include/c++/11/bits/stl_algo.h:3910:28:   required from ‘_IIter std::find_if(_IIter, _IIter, _Predicate) [with _IIter = std::pair<unsigned int, llvm::slpvectorizer::BoUpSLP::TreeEntry*>*; _Predicate = llvm::slpvectorizer::BoUpSLP::reorderBottomToTop(bool)::<lambda(const auto:37&)>]’
+/usr/include/c++/11/bits/stl_algo.h:471:47:   required from ‘bool std::none_of(_IIter, _IIter, _Predicate) [with _IIter = std::pair<unsigned int, llvm::slpvectorizer::BoUpSLP::TreeEntry*>*; _Predicate = llvm::slpvectorizer::BoUpSLP::reorderBottomToTop(bool)::<lambda(const auto:37&)>]’
+/usr/include/c++/11/bits/stl_algo.h:490:27:   required from ‘bool std::any_of(_IIter, _IIter, _Predicate) [with _IIter = std::pair<unsigned int, llvm::slpvectorizer::BoUpSLP::TreeEntry*>*; _Predicate = llvm::slpvectorizer::BoUpSLP::reorderBottomToTop(bool)::<lambda(const auto:37&)>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1752:21:   required from ‘bool llvm::any_of(R&&, UnaryPredicate) [with R = llvm::SmallVector<std::pair<unsigned int, llvm::slpvectorizer::BoUpSLP::TreeEntry*> >&; UnaryPredicate = llvm::slpvectorizer::BoUpSLP::reorderBottomToTop(bool)::<lambda(const auto:37&)>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:6990:19:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:6991:60: error: invalid use of incomplete type ‘struct llvm::slpvectorizer::BoUpSLP::TreeEntry’
+ 6991 |                    [](const auto &Op) { return !Op.second->UserTreeIndex; }))
+      |                                                 ~~~~~~~~~~~^~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:1687:10: note: forward declaration of ‘struct llvm::slpvectorizer::BoUpSLP::TreeEntry’
+ 1687 |   struct TreeEntry;
+      |          ^~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/simple_ilist.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ilist.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/AliasAnalysis.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:34:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ilist_iterator.h:332:15: warning: inline function ‘bool llvm::operator!=(const llvm::ilist_iterator_w_bits<llvm::ilist_detail::node_options<llvm::Instruction, false, false, void, true, llvm::BasicBlock>, false, true>&, const llvm::ilist_iterator_w_bits<llvm::ilist_detail::node_options<llvm::Instruction, false, false, void, true, llvm::BasicBlock>, false, true>&)’ used but never defined
+  332 |   friend bool operator!=(const ilist_iterator_w_bits &LHS,
+      |               ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ilist_iterator.h:177:15: warning: inline function ‘bool llvm::operator!=(const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::BasicBlock, false, false, void, false, void>, false, true>&, const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::BasicBlock, false, false, void, false, void>, false, true>&)’ used but never defined
+  177 |   friend bool operator!=(const ilist_iterator &LHS, const ilist_iterator &RHS) {
+      |               ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ilist_iterator.h:177:15: warning: inline function ‘bool llvm::operator!=(const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::GlobalVariable, false, false, void, false, void>, false, true>&, const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::GlobalVariable, false, false, void, false, void>, false, true>&)’ used but never defined
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ilist_iterator.h:177:15: warning: inline function ‘bool llvm::operator!=(const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::Function, false, false, void, false, void>, false, true>&, const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::Function, false, false, void, false, void>, false, true>&)’ used but never defined
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ilist_iterator.h:177:15: warning: inline function ‘bool llvm::operator!=(const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::GlobalAlias, false, false, void, false, void>, false, true>&, const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::GlobalAlias, false, false, void, false, void>, false, true>&)’ used but never defined
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ilist_iterator.h:177:15: warning: inline function ‘bool llvm::operator!=(const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::GlobalIFunc, false, false, void, false, void>, false, true>&, const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::GlobalIFunc, false, false, void, false, void>, false, true>&)’ used but never defined
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ilist_iterator.h:177:15: warning: inline function ‘bool llvm::operator!=(const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::NamedMDNode, false, false, void, false, void>, false, true>&, const llvm::ilist_iterator<llvm::ilist_detail::node_options<llvm::NamedMDNode, false, false, void, false, void>, false, true>&)’ used but never defined
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:18578:6: warning: ‘bool llvm::extendSchedulingRegion(llvm::Value*, const {anonymous}::InstructionsState&)’ defined but not used [-Wunused-function]
+18578 | bool BoUpSLP::BlockScheduling::extendSchedulingRegion(
+      |      ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:18437:1: warning: ‘std::optional<llvm::slpvectorizer::BoUpSLP::ScheduleData*> llvm::tryScheduleBundle(llvm::ArrayRef<llvm::Value*>, llvm::slpvectorizer::BoUpSLP*, const {anonymous}::InstructionsState&)’ defined but not used [-Wunused-function]
+18437 | BoUpSLP::BlockScheduling::tryScheduleBundle(ArrayRef<Value *> VL, BoUpSLP *SLP,
+      | ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:13119:13: warning: ‘bool llvm::isLoadCombineCandidateImpl(llvm::Value*, unsigned int, llvm::TargetTransformInfo*, bool)’ defined but not used [-Wunused-function]
+13119 | static bool isLoadCombineCandidateImpl(Value *Root, unsigned NumElts,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:10528:1: warning: ‘std::pair<llvm::InstructionCost, llvm::InstructionCost> llvm::getGEPCosts(const llvm::TargetTransformInfo&, llvm::ArrayRef<llvm::Value*>, llvm::Value*, unsigned int, llvm::TargetTransformInfo::TargetCostKind, llvm::Type*, llvm::VectorType*)’ defined but not used [-Wunused-function]
+10528 | getGEPCosts(const TargetTransformInfo &TTI, ArrayRef<Value *> Ptrs,
+      | ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:10108:13: warning: ‘bool llvm::isAlternateInstruction(const llvm::Instruction*, const llvm::Instruction*, const llvm::Instruction*, const llvm::TargetLibraryInfo&)’ defined but not used [-Wunused-function]
+10108 | static bool isAlternateInstruction(const Instruction *I,
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:8956:1: warning: ‘std::pair<llvm::Instruction*, llvm::Instruction*> llvm::getMainAltOpsNoStateVL(llvm::ArrayRef<llvm::Value*>)’ defined but not used [-Wunused-function]
+ 8956 | getMainAltOpsNoStateVL(ArrayRef<Value *> VL) {
+      | ^~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:8443:1: warning: ‘std::pair<llvm::InstructionCost, llvm::InstructionCost> llvm::getVectorCallCosts(llvm::CallInst*, llvm::FixedVectorType*, llvm::TargetTransformInfo*, llvm::TargetLibraryInfo*, llvm::ArrayRef<llvm::Type*>)’ defined but not used [-Wunused-function]
+ 8443 | getVectorCallCosts(CallInst *CI, FixedVectorType *VecTy,
+      | ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:8418:1: warning: ‘llvm::SmallVector<llvm::Type*> llvm::buildIntrinsicArgTypes(const llvm::CallInst*, llvm::Intrinsic::ID, unsigned int, unsigned int, const llvm::TargetTransformInfo*)’ defined but not used [-Wunused-function]
+ 8418 | buildIntrinsicArgTypes(const CallInst *CI, const Intrinsic::ID ID,
+      | ^~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:7584:13: warning: ‘void llvm::gatherPossiblyVectorizableLoads(const llvm::slpvectorizer::BoUpSLP&, llvm::ArrayRef<llvm::Value*>, const llvm::DataLayout&, llvm::ScalarEvolution&, const llvm::TargetTransformInfo&, llvm::SmallVectorImpl<llvm::SmallVector<std::pair<llvm::LoadInst*, int> > >&, bool)’ defined but not used [-Wunused-function]
+ 7584 | static void gatherPossiblyVectorizableLoads(
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:6472:13: warning: ‘void llvm::combineOrders(llvm::MutableArrayRef<unsigned int>, llvm::ArrayRef<unsigned int>)’ defined but not used [-Wunused-function]
+ 6472 | static void combineOrders(MutableArrayRef<unsigned> Order,
+      |             ^~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:6432:13: warning: ‘bool llvm::isRepeatedNonIdentityClusteredMask(llvm::ArrayRef<int>, unsigned int)’ defined but not used [-Wunused-function]
+ 6432 | static bool isRepeatedNonIdentityClusteredMask(ArrayRef<int> Mask,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:5915:13: warning: ‘bool llvm::clusterSortPtrAccesses(llvm::ArrayRef<llvm::Value*>, llvm::ArrayRef<llvm::BasicBlock*>, llvm::Type*, const llvm::DataLayout&, llvm::ScalarEvolution&, llvm::SmallVectorImpl<unsigned int>&)’ defined but not used [-Wunused-function]
+ 5915 | static bool clusterSortPtrAccesses(ArrayRef<Value *> VL,
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:5489:24: warning: ‘llvm::InstructionCost llvm::getScalarizationOverhead(const llvm::TargetTransformInfo&, llvm::Type*, llvm::VectorType*, const llvm::APInt&, bool, bool, llvm::TargetTransformInfo::TargetCostKind, llvm::ArrayRef<llvm::Value*>)’ defined but not used [-Wunused-function]
+ 5489 | static InstructionCost getScalarizationOverhead(const TargetTransformInfo &TTI,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:5344:1: warning: ‘std::optional<llvm::Value*> llvm::calculateRtStride(llvm::ArrayRef<llvm::Value*>, llvm::Type*, const llvm::DataLayout&, llvm::ScalarEvolution&, llvm::SmallVectorImpl<unsigned int>&, llvm::Instruction*)’ defined but not used [-Wunused-function]
+ 5344 | calculateRtStride(ArrayRef<Value *> PointerOps, Type *ElemTy,
+      | ^~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:1562:23: warning: ‘llvm::SmallBitVector getAltInstrMask(llvm::ArrayRef<llvm::Value*>, unsigned int, unsigned int)’ defined but not used [-Wunused-function]
+ 1562 | static SmallBitVector getAltInstrMask(ArrayRef<Value *> VL, unsigned Opcode0,
+      |                       ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:1479:23: warning: ‘llvm::MemoryLocation getLocation(llvm::Instruction*)’ defined but not used [-Wunused-function]
+ 1479 | static MemoryLocation getLocation(Instruction *I) {
+      |                       ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:1450:13: warning: ‘bool doesInTreeUserNeedToExtract(llvm::Value*, llvm::Instruction*, llvm::TargetLibraryInfo*, const llvm::TargetTransformInfo*)’ defined but not used [-Wunused-function]
+ 1450 | static bool doesInTreeUserNeedToExtract(Value *Scalar, Instruction *UserInst,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:395:25: warning: ‘llvm::SmallVector<int> calculateShufflevectorMask(llvm::ArrayRef<llvm::Value*>)’ defined but not used [-Wunused-function]
+  395 | static SmallVector<int> calculateShufflevectorMask(ArrayRef<Value *> VL) {
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:343:17: warning: ‘unsigned int getShufflevectorNumGroups(llvm::ArrayRef<llvm::Value*>)’ defined but not used [-Wunused-function]
+  343 | static unsigned getShufflevectorNumGroups(ArrayRef<Value *> VL) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:275:17: warning: ‘unsigned int getFullVectorNumberOfElements(const llvm::TargetTransformInfo&, llvm::Type*, unsigned int)’ defined but not used [-Wunused-function]
+  275 | static unsigned getFullVectorNumberOfElements(const TargetTransformInfo &TTI,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+128.70user 19.57system 0:12.10elapsed 1225%CPU (0avgtext+0avgdata 785436maxresident)k
+16inputs+5144504outputs (6324major+8266541minor)pagefaults 0swaps
