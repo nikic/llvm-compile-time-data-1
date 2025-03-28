@@ -1,0 +1,162 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+-- The C compiler identification is Clang 21.0.0
+-- The CXX compiler identification is Clang 21.0.0
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: /tmp/llvm-project-build-stage1/bin/clang
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage1/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- bolt project is disabled
+-- clang project is enabled
+-- clang-tools-extra project is disabled
+-- compiler-rt project is disabled
+-- cross-project-tests project is disabled
+-- libc project is disabled
+-- libclc project is disabled
+-- lld project is disabled
+-- lldb project is disabled
+-- mlir project is disabled
+-- openmp project is disabled
+-- polly project is disabled
+-- pstl project is disabled
+-- flang project is disabled
+-- Found Python3: /usr/bin/python3.10 (found suitable version "3.10.12", minimum required is "3.0") found components: Interpreter 
+-- Performing Test LLVM_LIBSTDCXX_MIN
+-- Performing Test LLVM_LIBSTDCXX_MIN - Success
+-- Performing Test LLVM_LIBSTDCXX_SOFT_ERROR
+-- Performing Test LLVM_LIBSTDCXX_SOFT_ERROR - Success
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Looking for valgrind/valgrind.h
+-- Looking for valgrind/valgrind.h - not found
+-- Looking for FE_ALL_EXCEPT
+-- Looking for FE_ALL_EXCEPT - found
+-- Looking for FE_INEXACT
+-- Looking for FE_INEXACT - found
+-- Performing Test HAVE_BUILTIN_THREAD_POINTER
+-- Performing Test HAVE_BUILTIN_THREAD_POINTER - Success
+-- Looking for CrashReporterClient.h
+-- Looking for CrashReporterClient.h - not found
+-- Looking for linux/magic.h
+-- Looking for linux/magic.h - found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Looking for pthread_rwlock_init in pthread
+-- Looking for pthread_rwlock_init in pthread - found
+-- Looking for pthread_mutex_lock in pthread
+-- Looking for pthread_mutex_lock in pthread - found
+-- Looking for dlopen in dl
+-- Looking for dlopen in dl - found
+-- Looking for shm_open in rt
+-- Looking for shm_open in rt - found
+-- Looking for pfm_initialize in pfm
+-- Looking for pfm_initialize in pfm - not found
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
+-- Could NOT find LibXml2 (missing: LIBXML2_LIBRARY LIBXML2_INCLUDE_DIR) 
+-- Could NOT find LibEdit (missing: LibEdit_INCLUDE_DIRS LibEdit_LIBRARIES) 
+-- Looking for arc4random
+-- Looking for arc4random - not found
+-- Looking for backtrace
+-- Looking for backtrace - not found
+-- Could NOT find Backtrace (missing: Backtrace_LIBRARY) 
+-- Performing Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW
+-- Performing Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW - Success
+-- Looking for __register_frame
+-- Looking for __register_frame - not found
+-- Looking for __deregister_frame
+-- Looking for __deregister_frame - not found
+-- Looking for __unw_add_dynamic_fde
+-- Looking for __unw_add_dynamic_fde - not found
+-- Looking for _Unwind_Backtrace
+-- Looking for _Unwind_Backtrace - not found
+-- Looking for getpagesize
+-- Looking for getpagesize - not found
+-- Looking for sysconf
+-- Looking for sysconf - not found
+-- Looking for getrusage
+-- Looking for getrusage - not found
+-- Looking for isatty
+-- Looking for isatty - not found
+-- Looking for futimens
+-- Looking for futimens - not found
+-- Looking for futimes
+-- Looking for futimes - not found
+-- Looking for getauxval
+-- Looking for getauxval - not found
+-- Looking for sigaltstack
+-- Looking for sigaltstack - not found
+-- Looking for mallctl
+-- Looking for mallctl - not found
+-- Looking for mallinfo
+-- Looking for mallinfo - not found
+-- Looking for mallinfo2
+-- Looking for mallinfo2 - not found
+-- Looking for malloc_zone_statistics
+-- Looking for malloc_zone_statistics - not found
+-- Looking for posix_spawn
+-- Looking for posix_spawn - not found
+-- Looking for pread
+-- Looking for pread - not found
+-- Looking for sbrk
+-- Looking for sbrk - not found
+-- Looking for strerror_r
+-- Looking for strerror_r - not found
+-- Looking for strerror_s
+-- Looking for strerror_s - not found
+-- Looking for setenv
+-- Looking for setenv - not found
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC - Failed
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM_TV_NSEC
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM_TV_NSEC - Success
+-- Looking for pthread_getname_np
+-- Looking for pthread_getname_np - not found
+-- Looking for pthread_setname_np
+-- Looking for pthread_setname_np - not found
+-- Looking for pthread_get_name_np
+-- Looking for pthread_get_name_np - not found
+-- Looking for pthread_set_name_np
+-- Looking for pthread_set_name_np - not found
+-- Looking for dlopen
+-- Looking for dlopen - not found
+-- Looking for proc_pid_rusage
+-- Looking for proc_pid_rusage - not found
+-- Performing Test HAVE_CXX_ATOMICS_WITHOUT_LIB
+-- Performing Test HAVE_CXX_ATOMICS_WITHOUT_LIB - Success
+-- Performing Test HAVE_CXX_ATOMICS64_WITHOUT_LIB
+-- Performing Test HAVE_CXX_ATOMICS64_WITHOUT_LIB - Failed
+-- Looking for __atomic_load_8 in atomic
+-- Looking for __atomic_load_8 in atomic - found
+-- Performing Test HAVE_CXX_ATOMICS64_WITH_LIB
+-- Performing Test HAVE_CXX_ATOMICS64_WITH_LIB - Failed
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeError.log".
+
+
+STDERR:
+CMake Error at cmake/modules/CheckAtomic.cmake:77 (message):
+  Host compiler must support 64-bit std::atomic!
+Call Stack (most recent call first):
+  cmake/config-ix.cmake:442 (include)
+  CMakeLists.txt:987 (include)
+
+
