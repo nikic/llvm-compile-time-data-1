@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSL.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSL.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSL.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSL.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseHLSL.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/AttrIterator.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseHLSL.cpp:13:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::SubsumptionChecker]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::SubsumptionChecker; _Dp = std::default_delete<clang::SubsumptionChecker>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:14720:67:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::SubsumptionChecker’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2141/2955] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExprCXX.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DiagnosticIDs.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/NestedNameSpecifier.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CanonicalType.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExprCXX.cpp:12:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::SubsumptionChecker]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::SubsumptionChecker; _Dp = std::default_delete<clang::SubsumptionChecker>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:14720:67:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::SubsumptionChecker’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2142/2955] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDecl.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDecl.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDecl.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDecl.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDecl.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseDecl.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DiagnosticIDs.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/NestedNameSpecifier.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CanonicalType.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseDecl.cpp:13:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::SubsumptionChecker]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::SubsumptionChecker; _Dp = std::default_delete<clang::SubsumptionChecker>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:14720:67:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::SubsumptionChecker’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2143/2955] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenMP.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenMP.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenMP.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenMP.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenMP.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseOpenMP.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DiagnosticIDs.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/NestedNameSpecifier.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CanonicalType.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseOpenMP.cpp:13:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::SubsumptionChecker]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::SubsumptionChecker; _Dp = std::default_delete<clang::SubsumptionChecker>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:14720:67:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::SubsumptionChecker’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2144/2955] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseObjc.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseObjc.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseObjc.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseObjc.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseObjc.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseObjc.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DiagnosticIDs.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/NestedNameSpecifier.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CanonicalType.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseObjc.cpp:13:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::SubsumptionChecker]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::SubsumptionChecker; _Dp = std::default_delete<clang::SubsumptionChecker>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:14720:67:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::SubsumptionChecker’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2145/2955] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParsePragma.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParsePragma.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParsePragma.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParsePragma.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParsePragma.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParsePragma.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DiagnosticIDs.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/NestedNameSpecifier.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CanonicalType.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParsePragma.cpp:13:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::SubsumptionChecker]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::SubsumptionChecker; _Dp = std::default_delete<clang::SubsumptionChecker>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:14720:67:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::SubsumptionChecker’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2146/2955] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2147/2955] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTemplate.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTemplate.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTemplate.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTemplate.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTemplate.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseTemplate.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DiagnosticIDs.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/NestedNameSpecifier.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CanonicalType.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseTemplate.cpp:13:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::SubsumptionChecker]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::SubsumptionChecker; _Dp = std::default_delete<clang::SubsumptionChecker>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:14720:67:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::SubsumptionChecker’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2148/2955] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTentative.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTentative.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTentative.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTentative.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseTentative.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseTentative.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DiagnosticIDs.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DiagnosticParse.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseTentative.cpp:14:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::SubsumptionChecker]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::SubsumptionChecker; _Dp = std::default_delete<clang::SubsumptionChecker>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:14720:67:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::SubsumptionChecker’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2149/2955] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmt.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmt.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmt.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmt.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmt.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseStmt.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DirectoryEntry.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/FileEntry.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/SourceLocation.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/PrettyDeclStackTrace.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseStmt.cpp:14:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::SubsumptionChecker]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::SubsumptionChecker; _Dp = std::default_delete<clang::SubsumptionChecker>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:14720:67:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::SubsumptionChecker’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2150/2955] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmtAsm.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmtAsm.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmtAsm.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmtAsm.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmtAsm.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseStmtAsm.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DiagnosticIDs.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/NestedNameSpecifier.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CanonicalType.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseStmtAsm.cpp:13:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::SubsumptionChecker]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::SubsumptionChecker; _Dp = std::default_delete<clang::SubsumptionChecker>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:14720:67:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::SubsumptionChecker’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+[2151/2955] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/Parser.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/Parser.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/Parser.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/Parser.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/Parser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/Parser.cpp
+In file included from /usr/include/c++/11/memory:76,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Casting.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LLVM.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DiagnosticIDs.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/OpenACCKinds.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/Parser.cpp:13:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = clang::SubsumptionChecker]’:
+/usr/include/c++/11/bits/unique_ptr.h:361:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = clang::SubsumptionChecker; _Dp = std::default_delete<clang::SubsumptionChecker>]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:14720:67:   required from here
+/usr/include/c++/11/bits/unique_ptr.h:83:23: error: invalid application of ‘sizeof’ to incomplete type ‘clang::SubsumptionChecker’
+   83 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+168.66user 14.02system 0:13.97elapsed 1307%CPU (0avgtext+0avgdata 886076maxresident)k
+0inputs+1221176outputs (2543major+7682327minor)pagefaults 0swaps
