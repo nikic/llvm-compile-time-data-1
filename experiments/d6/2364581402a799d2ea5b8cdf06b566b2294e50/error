@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2798:31: error: ‘end’ was not declared in this scope
+ 2798 |   for (const auto &Combiner : SelectedCombiners) {
+      |                               ^~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2798:31: note: suggested alternatives:
+In file included from /usr/include/c++/11/array:41,
+                 from /usr/include/c++/11/tuple:39,
+                 from /usr/include/c++/11/functional:54,
+                 from /usr/include/c++/11/pstl/glue_algorithm_defs.h:13,
+                 from /usr/include/c++/11/algorithm:74,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:52,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Basic/CodeGenIntrinsics.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:29:
+/usr/include/c++/11/bits/range_access.h:110:37: note:   ‘std::end’
+  110 |   template<typename _Tp> const _Tp* end(const valarray<_Tp>&) noexcept;
+      |                                     ^~~
+In file included from /usr/include/c++/11/utility:76,
+                 from /usr/include/c++/11/optional:36,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLForwardCompat.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/SwapByteOrder.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:50,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Basic/CodeGenIntrinsics.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:29:
+/usr/include/c++/11/initializer_list:101:5: note:   ‘std::end’
+  101 |     end(initializer_list<_Tp> __ils) noexcept
+      |     ^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2799:11: error: reference to ‘Record’ is ambiguous
+ 2799 |     const Record *CombinerDef = RK.getDef(Combiner);
+      |           ^~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:51:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TableGen/Error.h:21:7: note: candidates are: ‘class llvm::llvm::Record’
+   21 | class Record;
+      |       ^~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Common/CodeGenInstruction.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:30:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TableGen/Record.h:1633:7: note:                 ‘class llvm::Record’
+ 1633 | class Record {
+      |       ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2800:10: error: ‘CombinerDef’ was not declared in this scope
+ 2800 |     if (!CombinerDef)
+      |          ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2802:45: error: ‘CombinerDef’ was not declared in this scope
+ 2802 |     GICombinerEmitter(RK, Target, Combiner, CombinerDef).run(OS);
+      |                                             ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2802:56: error: invalid cast to abstract class type ‘llvm::{anonymous}::GICombinerEmitter’
+ 2802 |     GICombinerEmitter(RK, Target, Combiner, CombinerDef).run(OS);
+      |                                                        ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2362:7: note:   because the following virtual functions are pure within ‘llvm::{anonymous}::GICombinerEmitter’:
+ 2362 | class GICombinerEmitter final : public GlobalISelMatchTableExecutorEmitter {
+      |       ^~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:37:
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Common/GlobalISel/GlobalISelMatchTableExecutorEmitter.h:180:21: note:     ‘virtual llvm::StringRef llvm::GlobalISelMatchTableExecutorEmitter::getClassName() const’
+  180 |   virtual StringRef getClassName() const = 0;
+      |                     ^~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Common/GlobalISel/GlobalISelMatchTableExecutorEmitter.h:190:16: note:     ‘virtual void llvm::GlobalISelMatchTableExecutorEmitter::emitMIPredicateFns(llvm::raw_ostream&)’
+  190 |   virtual void emitMIPredicateFns(raw_ostream &OS) = 0;
+      |                ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Common/GlobalISel/GlobalISelMatchTableExecutorEmitter.h:194:16: note:     ‘virtual void llvm::GlobalISelMatchTableExecutorEmitter::emitI64ImmPredicateFns(llvm::raw_ostream&)’
+  194 |   virtual void emitI64ImmPredicateFns(raw_ostream &OS) = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Common/GlobalISel/GlobalISelMatchTableExecutorEmitter.h:198:16: note:     ‘virtual void llvm::GlobalISelMatchTableExecutorEmitter::emitAPFloatImmPredicateFns(llvm::raw_ostream&)’
+  198 |   virtual void emitAPFloatImmPredicateFns(raw_ostream &OS) = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Common/GlobalISel/GlobalISelMatchTableExecutorEmitter.h:202:16: note:     ‘virtual void llvm::GlobalISelMatchTableExecutorEmitter::emitAPIntImmPredicateFns(llvm::raw_ostream&)’
+  202 |   virtual void emitAPIntImmPredicateFns(raw_ostream &OS) = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Common/GlobalISel/GlobalISelMatchTableExecutorEmitter.h:203:16: note:     ‘virtual void llvm::GlobalISelMatchTableExecutorEmitter::emitTestSimplePredicate(llvm::raw_ostream&)’
+  203 |   virtual void emitTestSimplePredicate(raw_ostream &OS) = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Common/GlobalISel/GlobalISelMatchTableExecutorEmitter.h:204:16: note:     ‘virtual void llvm::GlobalISelMatchTableExecutorEmitter::emitRunCustomAction(llvm::raw_ostream&)’
+  204 |   virtual void emitRunCustomAction(raw_ostream &OS) = 0;
+      |                ^~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2807:63: error: no matching function for call to ‘llvm::llvm::TableGen::Emitter::Opt::Opt(const char [25], void (&)(const int&, int&), const char [29])’
+ 2807 |                                 "Generate GlobalISel Combiner");
+      |                                                               ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:55:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TableGen/TableGenBackend.h:33:3: note: candidate: ‘llvm::llvm::TableGen::Emitter::Opt::Opt(llvm::llvm::StringRef, llvm::llvm::TableGen::Emitter::FnT, llvm::llvm::StringRef, bool)’
+   33 |   Opt(StringRef Name, FnT CB, StringRef Desc, bool ByDefault = false);
+      |   ^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TableGen/TableGenBackend.h:33:17: note:   no known conversion for argument 1 from ‘const char [25]’ to ‘llvm::llvm::StringRef’
+   33 |   Opt(StringRef Name, FnT CB, StringRef Desc, bool ByDefault = false);
+      |       ~~~~~~~~~~^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TableGen/TableGenBackend.h:32:8: note: candidate: ‘constexpr llvm::llvm::TableGen::Emitter::Opt::Opt(const llvm::llvm::TableGen::Emitter::Opt&)’
+   32 | struct Opt {
+      |        ^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TableGen/TableGenBackend.h:32:8: note:   candidate expects 1 argument, 3 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TableGen/TableGenBackend.h:32:8: note: candidate: ‘constexpr llvm::llvm::TableGen::Emitter::Opt::Opt(llvm::llvm::TableGen::Emitter::Opt&&)’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TableGen/TableGenBackend.h:32:8: note:   candidate expects 1 argument, 3 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2807:65: error: expected ‘}’ at end of input
+ 2807 |                                 "Generate GlobalISel Combiner");
+      |                                                                 ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:42:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/EquivalenceClasses.h:27:16: note: to match this ‘{’
+   27 | namespace llvm {
+      |                ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:57,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:50:
+/usr/include/c++/11/cmath: In instantiation of ‘_Tp llvm::std::__hypot3(_Tp, _Tp, _Tp) [with _Tp = double]’:
+/usr/include/c++/11/cmath:1873:33:   required from here
+/usr/include/c++/11/cmath:1860:31: error: call of overloaded ‘sqrt(double)’ is ambiguous
+ 1860 |         return __a * std::sqrt((__x / __a) * (__x / __a)
+      |                      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1861 |                                + (__y / __a) * (__y / __a)
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1862 |                                + (__z / __a) * (__z / __a));
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/cmath:463:3: note: candidate: ‘constexpr float llvm::std::sqrt(float)’
+  463 |   sqrt(float __x)
+      |   ^~~~
+/usr/include/c++/11/cmath:467:3: note: candidate: ‘constexpr long double llvm::std::sqrt(long double)’
+  467 |   sqrt(long double __x)
+      |   ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2806:31: warning: ‘llvm::X’ defined but not used [-Wunused-variable]
+ 2806 | static TableGen::Emitter::Opt X("gen-global-isel-combiner", EmitGICombiner,
+      |                               ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2632:1: warning: ‘llvm::{anonymous}::GICombinerEmitter::GICombinerEmitter(const int&, const llvm::CodeGenTarget&, int, const int*)’ defined but not used [-Wunused-function]
+ 2632 | GICombinerEmitter::GICombinerEmitter(const RecordKeeper &RK,
+      | ^~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2171:6: warning: ‘bool llvm::{anonymous}::isLiteralImm(const int&, unsigned int)’ defined but not used [-Wunused-function]
+ 2171 | bool isLiteralImm(const InstructionPattern &P, unsigned OpIdx) {
+      |      ^~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2128:6: warning: ‘bool llvm::{anonymous}::CombineRuleBuilder::emitBuiltinApplyPattern(llvm::CodeExpansions&, int&, const int&, llvm::StringMap<unsigned int>&)’ defined but not used [-Wunused-function]
+ 2128 | bool CombineRuleBuilder::emitBuiltinApplyPattern(
+      |      ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:2087:6: warning: ‘llvm::{anonymous}::CombineRuleBuilder::emitCodeGenInstructionApplyImmOperand’ defined but not used [-Wunused-variable]
+ 2087 | bool CombineRuleBuilder::emitCodeGenInstructionApplyImmOperand(
+      |      ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:1877:6: warning: ‘bool llvm::{anonymous}::CombineRuleBuilder::emitCXXMatchApply(...)’ defined but not used [-Wunused-function]
+ 1877 | bool CombineRuleBuilder::emitCXXMatchApply(CodeExpansions &CE, RuleMatcher &M,
+      |      ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:1827:6: warning: ‘bool llvm::{anonymous}::CombineRuleBuilder::emitApplyPatterns(llvm::CodeExpansions&, int&)’ defined but not used [-Wunused-function]
+ 1827 | bool CombineRuleBuilder::emitApplyPatterns(CodeExpansions &CE, RuleMatcher &M) {
+      |      ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:1693:6: warning: ‘bool llvm::{anonymous}::CombineRuleBuilder::emitPatFragMatchPattern(...)’ defined but not used [-Wunused-function]
+ 1693 | bool CombineRuleBuilder::emitPatFragMatchPattern(
+      |      ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:1555:6: warning: ‘bool llvm::{anonymous}::CombineRuleBuilder::emitMatchPattern(llvm::CodeExpansions&, const int&, const int&)’ defined but not used [-Wunused-function]
+ 1555 | bool CombineRuleBuilder::emitMatchPattern(CodeExpansions &CE,
+      |      ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:1512:6: warning: ‘bool llvm::{anonymous}::CombineRuleBuilder::parseDefs(const llvm::DagInit&)’ defined but not used [-Wunused-function]
+ 1512 | bool CombineRuleBuilder::parseDefs(const DagInit &Def) {
+      |      ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:1372:6: warning: ‘llvm::{anonymous}::CombineRuleBuilder::addFeaturePredicates’ defined but not used [-Wunused-variable]
+ 1372 | bool CombineRuleBuilder::addFeaturePredicates(RuleMatcher &M) {
+      |      ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:1017:6: warning: ‘llvm::{anonymous}::CombineRuleBuilder::addMatchPattern’ defined but not used [-Wunused-variable]
+ 1017 | bool CombineRuleBuilder::addMatchPattern(std::unique_ptr<Pattern> Pat) {
+      |      ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:991:6: warning: ‘llvm::{anonymous}::CombineRuleBuilder::addApplyPattern’ defined but not used [-Wunused-variable]
+  991 | bool CombineRuleBuilder::addApplyPattern(std::unique_ptr<Pattern> Pat) {
+      |      ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:820:6: warning: ‘bool llvm::{anonymous}::CombineRuleBuilder::emitRuleMatchers()’ defined but not used [-Wunused-function]
+  820 | bool CombineRuleBuilder::emitRuleMatchers() {
+      |      ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:795:6: warning: ‘bool llvm::{anonymous}::CombineRuleBuilder::parseAll()’ defined but not used [-Wunused-function]
+  795 | bool CombineRuleBuilder::parseAll() {
+      |      ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:501:6: warning: ‘void llvm::{anonymous}::CombineRuleOperandTypeChecker::getInstEqClasses(const int&, int&) const’ defined but not used [-Wunused-function]
+  501 | void CombineRuleOperandTypeChecker::getInstEqClasses(
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:290:6: warning: ‘llvm::{anonymous}::CombineRuleOperandTypeChecker::processApplyPattern’ defined but not used [-Wunused-variable]
+  290 | bool CombineRuleOperandTypeChecker::processApplyPattern(InstructionPattern &P) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:281:6: warning: ‘llvm::{anonymous}::CombineRuleOperandTypeChecker::processMatchPattern’ defined but not used [-Wunused-variable]
+  281 | bool CombineRuleOperandTypeChecker::processMatchPattern(InstructionPattern &P) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:111:6: warning: ‘void llvm::{anonymous}::declareTempRegExpansion(llvm::CodeExpansions&, unsigned int, int)’ defined but not used [-Wunused-function]
+  111 | void declareTempRegExpansion(CodeExpansions &CE, unsigned TempRegID,
+      |      ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:99:6: warning: ‘void llvm::{anonymous}::declareOperandExpansion(llvm::CodeExpansions&, const int&, int)’ defined but not used [-Wunused-function]
+   99 | void declareOperandExpansion(CodeExpansions &CE, const OperandMatcher &OM,
+      |      ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:92:6: warning: ‘void llvm::{anonymous}::declareInstExpansion(llvm::CodeExpansions&, const int&, int)’ defined but not used [-Wunused-function]
+   92 | void declareInstExpansion(CodeExpansions &CE, const BuildMIAction &A,
+      |      ^~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/GlobalISelCombinerEmitter.cpp:87:6: warning: ‘void llvm::{anonymous}::declareInstExpansion(llvm::CodeExpansions&, const int&, int)’ defined but not used [-Wunused-function]
+   87 | void declareInstExpansion(CodeExpansions &CE, const InstructionMatcher &IM,
+      |      ^~~~~~~~~~~~~~~~~~~~
+[1228/2955] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/IRNormalizer.cpp.o
+[1229/2955] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandReductions.cpp.o
+[1230/2955] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandVectorPredication.cpp.o
+[1231/2955] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/InjectTLIMappings.cpp.o
+[1232/2955] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ReplaceWithVeclib.cpp.o
+[1233/2955] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/HardwareLoops.cpp.o
+[1234/2955] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o
+[1235/2955] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeVectorOps.cpp.o
+[1236/2955] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenTargetMachineImpl.cpp.o
+[1237/2955] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeVectorTypes.cpp.o
+[1238/2955] Building CXX object lib/Transforms/Utils/CMakeFiles/LLVMTransformUtils.dir/InlineFunction.cpp.o
+[1239/2955] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/IRTranslator.cpp.o
+[1240/2955] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o
+[1241/2955] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/TargetLowering.cpp.o
+[1242/2955] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAG.cpp.o
+[1243/2955] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGBuilder.cpp.o
+[1244/2955] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/DAGCombiner.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+127.66user 6.74system 0:19.69elapsed 682%CPU (0avgtext+0avgdata 1104540maxresident)k
+0inputs+573968outputs (1257major+4258405minor)pagefaults 0swaps
