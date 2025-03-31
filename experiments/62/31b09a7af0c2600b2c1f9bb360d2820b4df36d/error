@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:8843:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::fixupDbgValue’ defined but not used [-Wunused-variable]
+ 8843 | bool CodeGenPrepare::fixupDbgValue(Instruction *I) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:8802:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizeBlock’ defined but not used [-Wunused-variable]
+ 8802 | bool CodeGenPrepare::optimizeBlock(BasicBlock &BB, ModifyDT &ModifiedDT) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:8782:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::makeBitReverse’ defined but not used [-Wunused-variable]
+ 8782 | bool CodeGenPrepare::makeBitReverse(Instruction &I) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:8594:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizeInst’ defined but not used [-Wunused-variable]
+ 8594 | bool CodeGenPrepare::optimizeInst(Instruction *I, ModifyDT &ModifiedDT) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:8529:13: warning: ‘llvm::optimizeBranch’ defined but not used [-Wunused-variable]
+ 8529 | static bool optimizeBranch(BranchInst *Branch, const TargetLowering &TLI,
+      |             ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:8424:13: warning: ‘bool llvm::tryUnmergingGEPsAcrossIndirectBr(llvm::GetElementPtrInst*, const int*)’ defined but not used [-Wunused-function]
+ 8424 | static bool tryUnmergingGEPsAcrossIndirectBr(GetElementPtrInst *GEPI,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:8263:13: warning: ‘llvm::splitMergedValStore’ defined but not used [-Wunused-variable]
+ 8263 | static bool splitMergedValStore(StoreInst &SI, const DataLayout &DL,
+      |             ^~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:8178:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizeExtractElementInst’ defined but not used [-Wunused-variable]
+ 8178 | bool CodeGenPrepare::optimizeExtractElementInst(Instruction *Inst) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:7847:6: warning: ‘bool llvm::{anonymous}::CodeGenPrepare::optimizeSwitchInst(llvm::SwitchInst*)’ defined but not used [-Wunused-function]
+ 7847 | bool CodeGenPrepare::optimizeSwitchInst(SwitchInst *SI) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:7644:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::tryToSinkFreeOperands’ defined but not used [-Wunused-variable]
+ 7644 | bool CodeGenPrepare::tryToSinkFreeOperands(Instruction *I) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:7604:6: warning: ‘bool llvm::{anonymous}::CodeGenPrepare::optimizeShuffleVectorInst(llvm::ShuffleVectorInst*)’ defined but not used [-Wunused-function]
+ 7604 | bool CodeGenPrepare::optimizeShuffleVectorInst(ShuffleVectorInst *SVI) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:7413:6: warning: ‘bool llvm::{anonymous}::CodeGenPrepare::optimizeSelectInst(llvm::SelectInst*)’ defined but not used [-Wunused-function]
+ 7413 | bool CodeGenPrepare::optimizeSelectInst(SelectInst *SI) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:7376:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizeFunnelShift’ defined but not used [-Wunused-variable]
+ 7376 | bool CodeGenPrepare::optimizeFunnelShift(IntrinsicInst *Fsh) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:7343:6: warning: ‘bool llvm::{anonymous}::CodeGenPrepare::optimizeShiftInst(llvm::BinaryOperator*)’ defined but not used [-Wunused-function]
+ 7343 | bool CodeGenPrepare::optimizeShiftInst(BinaryOperator *Shift) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:7283:13: warning: ‘bool llvm::isFormingBranchFromSelectProfitable(const int*, const llvm::llvm::TargetLowering*, llvm::SelectInst*)’ defined but not used [-Wunused-function]
+ 7283 | static bool isFormingBranchFromSelectProfitable(const TargetTransformInfo *TTI,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:7136:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizeLoadExt’ defined but not used [-Wunused-variable]
+ 7136 | bool CodeGenPrepare::optimizeLoadExt(LoadInst *Load) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:7009:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizeExtUses’ defined but not used [-Wunused-variable]
+ 7009 | bool CodeGenPrepare::optimizeExtUses(Instruction *I) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:6944:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::performAddressTypePromotion’ defined but not used [-Wunused-variable]
+ 6944 | bool CodeGenPrepare::performAddressTypePromotion(
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:6897:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizeExt’ defined but not used [-Wunused-variable]
+ 6897 | bool CodeGenPrepare::optimizeExt(Instruction *&Inst) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:6839:6: warning: ‘bool llvm::{anonymous}::CodeGenPrepare::canFormExtLd(int)’ defined but not used [-Wunused-function]
+ 6839 | bool CodeGenPrepare::canFormExtLd(
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:6815:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizePhiTypes’ defined but not used [-Wunused-variable]
+ 6815 | bool CodeGenPrepare::optimizePhiTypes(Function &F) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:6673:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizePhiType’ defined but not used [-Wunused-variable]
+ 6673 | bool CodeGenPrepare::optimizePhiType(
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:6552:6: warning: ‘bool llvm::{anonymous}::CodeGenPrepare::splitLargeGEPOffsets()’ defined but not used [-Wunused-function]
+ 6552 | bool CodeGenPrepare::splitLargeGEPOffsets() {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:6478:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::mergeSExts’ defined but not used [-Wunused-variable]
+ 6478 | bool CodeGenPrepare::mergeSExts(Function &F) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:6379:6: warning: ‘bool llvm::{anonymous}::CodeGenPrepare::tryToPromoteExts(llvm::{anonymous}::TypePromotionTransaction&, int)’ defined but not used [-Wunused-function]
+ 6379 | bool CodeGenPrepare::tryToPromoteExts(
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:6300:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizeInlineAsmInst’ defined but not used [-Wunused-variable]
+ 6300 | bool CodeGenPrepare::optimizeInlineAsmInst(CallInst *CS) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:6164:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizeGatherScatterInst’ defined but not used [-Wunused-variable]
+ 6164 | bool CodeGenPrepare::optimizeGatherScatterInst(Instruction *MemoryInst,
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:5749:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizeMemoryInst’ defined but not used [-Wunused-variable]
+ 5749 | bool CodeGenPrepare::optimizeMemoryInst(Instruction *MemoryInst, Value *Addr,
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:5724:13: warning: ‘llvm::IsNonLocalValue’ defined but not used [-Wunused-variable]
+ 5724 | static bool IsNonLocalValue(Value *V, BasicBlock *BB) {
+      |             ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:5638:6: warning: ‘llvm::{anonymous}::AddressingModeMatcher::isProfitableToFoldIntoAddressingMode’ defined but not used [-Wunused-variable]
+ 5638 | bool AddressingModeMatcher::isProfitableToFoldIntoAddressingMode(
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:5593:6: warning: ‘llvm::{anonymous}::AddressingModeMatcher::valueAlreadyLiveAtInst’ defined but not used [-Wunused-variable]
+ 5593 | bool AddressingModeMatcher::valueAlreadyLiveAtInst(Value *Val,
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:5505:13: warning: ‘llvm::FindAllMemoryUses’ defined but not used [-Wunused-variable]
+ 5505 | static bool FindAllMemoryUses(
+      |             ^~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:5480:13: warning: ‘llvm::IsOperandAMemoryOperand’ defined but not used [-Wunused-variable]
+ 5480 | static bool IsOperandAMemoryOperand(CallInst *CI, InlineAsm *IA, Value *OpVal,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:5398:6: warning: ‘llvm::{anonymous}::AddressingModeMatcher::matchAddr’ defined but not used [-Wunused-variable]
+ 5398 | bool AddressingModeMatcher::matchAddr(Value *Addr, unsigned Depth) {
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:5105:6: warning: ‘bool llvm::{anonymous}::AddressingModeMatcher::matchOperationAddr(llvm::User*, unsigned int, unsigned int, bool*)’ defined but not used [-Wunused-function]
+ 5105 | bool AddressingModeMatcher::matchOperationAddr(User *AddrInst, unsigned Opcode,
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:5077:6: warning: ‘bool llvm::{anonymous}::AddressingModeMatcher::isPromotionProfitable(unsigned int, unsigned int, int*) const’ defined but not used [-Wunused-function]
+ 5077 | bool AddressingModeMatcher::isPromotionProfitable(
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:4799:6: warning: ‘static bool llvm::{anonymous}::TypePromotionHelper::canGetThrough(const int*, int*, const int&, bool)’ defined but not used [-Wunused-function]
+ 4799 | bool TypePromotionHelper::canGetThrough(const Instruction *Inst,
+      |      ^~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:4651:13: warning: ‘bool llvm::isPromotedInstructionLegal(const llvm::llvm::TargetLowering&, const int&, int*)’ defined but not used [-Wunused-function]
+ 4651 | static bool isPromotedInstructionLegal(const TargetLowering &TLI,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:4620:13: warning: ‘llvm::MightBeFoldableInst’ defined but not used [-Wunused-variable]
+ 4620 | static bool MightBeFoldableInst(Instruction *I) {
+      |             ^~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:4494:6: warning: ‘llvm::{anonymous}::AddressingModeMatcher::matchScaledValue’ defined but not used [-Wunused-variable]
+ 4494 | bool AddressingModeMatcher::matchScaledValue(Value *ScaleReg, int64_t Scale,
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:3723:6: warning: ‘bool llvm::{anonymous}::TypePromotionTransaction::commit()’ defined but not used [-Wunused-function]
+ 3723 | bool TypePromotionTransaction::commit() {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:2872:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::dupRetToEnableTailCallOpts’ defined but not used [-Wunused-variable]
+ 2872 | bool CodeGenPrepare::dupRetToEnableTailCallOpts(BasicBlock *BB,
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:2810:13: warning: ‘bool llvm::isIntrinsicOrLFToBeTailCalled(const int*, const int*)’ defined but not used [-Wunused-function]
+ 2810 | static bool isIntrinsicOrLFToBeTailCalled(const TargetLibraryInfo *TLInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:2576:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizeCallInst’ defined but not used [-Wunused-variable]
+ 2576 | bool CodeGenPrepare::optimizeCallInst(CallInst *CI, ModifyDT &ModifiedDT) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:2494:13: warning: ‘llvm::despeculateCountZeros’ defined but not used [-Wunused-variable]
+ 2494 | static bool despeculateCountZeros(IntrinsicInst *CountZeros,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:2392:13: warning: ‘bool llvm::OptimizeExtractBits(llvm::BinaryOperator*, int*, const llvm::llvm::TargetLowering&, const int&)’ defined but not used [-Wunused-function]
+ 2392 | static bool OptimizeExtractBits(BinaryOperator *ShiftI, ConstantInt *CI,
+      |             ^~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:2207:13: warning: ‘llvm::sinkAndCmp0Expression’ defined but not used [-Wunused-variable]
+ 2207 | static bool sinkAndCmp0Expression(Instruction *AndI, const TargetLowering &TLI,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:2177:6: warning: ‘bool llvm::{anonymous}::CodeGenPrepare::optimizeCmp(llvm::CmpInst*, llvm::{anonymous}::ModifyDT&)’ defined but not used [-Wunused-function]
+ 2177 | bool CodeGenPrepare::optimizeCmp(CmpInst *Cmp, ModifyDT &ModifiedDT) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:2155:13: warning: ‘bool llvm::adjustIsPower2Test(llvm::CmpInst*, const llvm::llvm::TargetLowering&, const int&, const int&)’ defined but not used [-Wunused-function]
+ 2155 | static bool adjustIsPower2Test(CmpInst *Cmp, const TargetLowering &TLI,
+      |             ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:2146:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::optimizeURem’ defined but not used [-Wunused-variable]
+ 2146 | bool CodeGenPrepare::optimizeURem(Instruction *Rem) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:2068:13: warning: ‘llvm::foldURemOfLoopIncrement’ defined but not used [-Wunused-variable]
+ 2068 | static bool foldURemOfLoopIncrement(Instruction *Rem, const DataLayout *DL,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:1983:13: warning: ‘llvm::isRemOfLoopIncrementWithLoopInvariant’ defined but not used [-Wunused-variable]
+ 1983 | static bool isRemOfLoopIncrementWithLoopInvariant(
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:1950:13: warning: ‘bool llvm::foldFCmpToFPClassTest(llvm::CmpInst*, const llvm::llvm::TargetLowering&, const int&)’ defined but not used [-Wunused-function]
+ 1950 | static bool foldFCmpToFPClassTest(CmpInst *Cmp, const TargetLowering &TLI,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:1556:6: warning: ‘bool llvm::{anonymous}::CodeGenPrepare::replaceMathCmpWithIntrinsic(llvm::BinaryOperator*, int*, int*, llvm::CmpInst*, int)’ defined but not used [-Wunused-function]
+ 1556 | bool CodeGenPrepare::replaceMathCmpWithIntrinsic(BinaryOperator *BO,
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:1542:13: warning: ‘bool llvm::isIVIncrement(const int*, const int*)’ defined but not used [-Wunused-function]
+ 1542 | static bool isIVIncrement(const Value *V, const LoopInfo *LI) {
+      |             ^~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:1508:13: warning: ‘bool llvm::matchIncrement(const int*, int*&, int*&)’ defined but not used [-Wunused-function]
+ 1508 | static bool matchIncrement(const Instruction *IVInc, Instruction *&LHS,
+      |             ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:1465:13: warning: ‘bool llvm::OptimizeNoopCopyExpression(llvm::CastInst*, const llvm::llvm::TargetLowering&, const int&)’ defined but not used [-Wunused-function]
+ 1465 | static bool OptimizeNoopCopyExpression(CastInst *CI, const TargetLowering &TLI,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:1369:6: warning: ‘bool llvm::{anonymous}::CodeGenPrepare::simplifyOffsetableRelocate(llvm::llvm::GCStatepointInst&)’ defined but not used [-Wunused-function]
+ 1369 | bool CodeGenPrepare::simplifyOffsetableRelocate(GCStatepointInst &I) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:1046:6: warning: ‘bool llvm::{anonymous}::CodeGenPrepare::canMergeBlocks(const int*, const int*) const’ defined but not used [-Wunused-function]
+ 1046 | bool CodeGenPrepare::canMergeBlocks(const BasicBlock *BB,
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:959:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::isMergingEmptyBlockProfitable’ defined but not used [-Wunused-variable]
+  959 | bool CodeGenPrepare::isMergingEmptyBlockProfitable(BasicBlock *BB,
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:922:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::eliminateMostlyEmptyBlocks’ defined but not used [-Wunused-variable]
+  922 | bool CodeGenPrepare::eliminateMostlyEmptyBlocks(Function &F) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:832:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::eliminateFallThrough’ defined but not used [-Wunused-variable]
+  832 | bool CodeGenPrepare::eliminateFallThrough(Function &F, DominatorTree *DT) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:777:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::eliminateAssumptions’ defined but not used [-Wunused-variable]
+  777 | bool CodeGenPrepare::eliminateAssumptions(Function &F) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:577:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::_run’ defined but not used [-Wunused-variable]
+  577 | bool CodeGenPrepare::_run(Function &F) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:560:6: warning: ‘llvm::{anonymous}::CodeGenPrepare::run’ defined but not used [-Wunused-variable]
+  560 | bool CodeGenPrepare::run(Function &F, FunctionAnalysisManager &AM) {
+      |      ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenPrepare.cpp:508:6: warning: ‘llvm::{anonymous}::CodeGenPrepareLegacyPass::runOnFunction’ defined but not used [-Wunused-variable]
+  508 | bool CodeGenPrepareLegacyPass::runOnFunction(Function &F) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+101.03user 6.39system 0:11.91elapsed 901%CPU (0avgtext+0avgdata 598708maxresident)k
+24inputs+661928outputs (1270major+3284367minor)pagefaults 0swaps
