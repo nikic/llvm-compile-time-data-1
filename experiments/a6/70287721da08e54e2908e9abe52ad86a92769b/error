@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:107:12: note: enum 'std::_Optional_payload_base<unsigned long>' was explicitly specialized here
+  107 |     struct _Optional_payload_base
+      |            ^
+1 error generated.
+[12/2810] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Allocator.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Allocator.cpp:13:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Alignment.h:26:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:200:14: error: enumerator '_Storage' does not exist in instantiation of 'std'
+  200 |           constexpr _Storage() noexcept : _M_empty() { }
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:111:7: note: in instantiation of member function 'std::_Optional_payload_base<llvm::Align>::_Storage<llvm::Align>::_Storage' requested here
+  111 |       _Optional_payload_base() = default;
+      |       ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:303:7: note: in defaulted default constructor for 'std::_Optional_payload_base<llvm::Align>' first required here
+  303 |       _Optional_payload() = default;
+      |       ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:605:17: note: in defaulted default constructor for 'std::_Optional_payload<llvm::Align>' first required here
+  605 |       constexpr _Optional_base() = default;
+      |                 ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:696:17: note: in defaulted default constructor for 'std::_Optional_base<llvm::Align>' first required here
+  696 |       constexpr optional(nullopt_t) noexcept { }
+      |                 ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Alignment.h:131:47: note: in instantiation of member function 'std::optional<llvm::Align>::optional' requested here
+  131 |   constexpr MaybeAlign(std::nullopt_t None) : UP(None) {}
+      |                                               ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:107:12: note: enum 'std::_Optional_payload_base<llvm::Align>' was explicitly specialized here
+  107 |     struct _Optional_payload_base
+      |            ^
+1 error generated.
+[13/2810] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMWinEH.cpp.o
+[14/2810] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFixedPoint.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFixedPoint.cpp:14:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFixedPoint.h:19:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:18:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:24:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:204:6: error: enumerator '_Storage' does not exist in instantiation of 'std'
+  204 |             _Storage(in_place_t, _Args&&... __args)
+      |             ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:117:4: note: in instantiation of function template specialization 'std::_Optional_payload_base<unsigned long>::_Storage<unsigned long>::_Storage<unsigned long>' requested here
+  117 |         : _M_payload(__tag, std::forward<_Args>(__args)...),
+      |           ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:612:4: note: in instantiation of function template specialization 'std::_Optional_payload_base<unsigned long>::_Optional_payload_base<unsigned long>' requested here
+  612 |         : _M_payload(in_place, std::forward<_Args>(__args)...)
+      |           ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:706:4: note: in instantiation of function template specialization 'std::_Optional_base<unsigned long>::_Optional_base<unsigned long, false>' requested here
+  706 |         : _Base(std::in_place, std::forward<_Up>(__t)) { }
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:1533:38: note: in instantiation of function template specialization 'std::optional<unsigned long>::optional<unsigned long, true>' requested here
+ 1533 |     return (getActiveBits() <= 64) ? std::optional<uint64_t>(getZExtValue())
+      |                                      ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:107:12: note: enum 'std::_Optional_payload_base<unsigned long>' was explicitly specialized here
+  107 |     struct _Optional_payload_base
+      |            ^
+1 error generated.
+[15/2810] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APInt.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APInt.cpp:14:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:24:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:204:6: error: enumerator '_Storage' does not exist in instantiation of 'std'
+  204 |             _Storage(in_place_t, _Args&&... __args)
+      |             ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:117:4: note: in instantiation of function template specialization 'std::_Optional_payload_base<unsigned long>::_Storage<unsigned long>::_Storage<unsigned long>' requested here
+  117 |         : _M_payload(__tag, std::forward<_Args>(__args)...),
+      |           ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:612:4: note: in instantiation of function template specialization 'std::_Optional_payload_base<unsigned long>::_Optional_payload_base<unsigned long>' requested here
+  612 |         : _M_payload(in_place, std::forward<_Args>(__args)...)
+      |           ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:706:4: note: in instantiation of function template specialization 'std::_Optional_base<unsigned long>::_Optional_base<unsigned long, false>' requested here
+  706 |         : _Base(std::in_place, std::forward<_Up>(__t)) { }
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:1533:38: note: in instantiation of function template specialization 'std::optional<unsigned long>::optional<unsigned long, true>' requested here
+ 1533 |     return (getActiveBits() <= 64) ? std::optional<uint64_t>(getZExtValue())
+      |                                      ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:107:12: note: enum 'std::_Optional_payload_base<unsigned long>' was explicitly specialized here
+  107 |     struct _Optional_payload_base
+      |            ^
+1 error generated.
+[16/2810] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp:15:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AMDGPUMetadata.h:18:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringRef.h:13:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLFunctionalExtras.h:18:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLForwardCompat.h:20:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:204:6: error: enumerator '_Storage' does not exist in instantiation of 'std'
+  204 |             _Storage(in_place_t, _Args&&... __args)
+      |             ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:117:4: note: in instantiation of function template specialization 'std::_Optional_payload_base<unsigned long>::_Storage<unsigned long>::_Storage<unsigned long>' requested here
+  117 |         : _M_payload(__tag, std::forward<_Args>(__args)...),
+      |           ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:612:4: note: in instantiation of function template specialization 'std::_Optional_payload_base<unsigned long>::_Optional_payload_base<unsigned long>' requested here
+  612 |         : _M_payload(in_place, std::forward<_Args>(__args)...)
+      |           ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:706:4: note: in instantiation of function template specialization 'std::_Optional_base<unsigned long>::_Optional_base<unsigned long, false>' requested here
+  706 |         : _Base(std::in_place, std::forward<_Up>(__t)) { }
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:1533:38: note: in instantiation of function template specialization 'std::optional<unsigned long>::optional<unsigned long, true>' requested here
+ 1533 |     return (getActiveBits() <= 64) ? std::optional<uint64_t>(getZExtValue())
+      |                                      ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:107:12: note: enum 'std::_Optional_payload_base<unsigned long>' was explicitly specialized here
+  107 |     struct _Optional_payload_base
+      |            ^
+1 error generated.
+[17/2810] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/JSON.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/JSON.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/JSON.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/JSON.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/JSON.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/JSON.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/JSON.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:50:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLFunctionalExtras.h:18:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLForwardCompat.h:20:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:200:14: error: enumerator '_Storage' does not exist in instantiation of 'std'
+  200 |           constexpr _Storage() noexcept : _M_empty() { }
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:111:7: note: in instantiation of member function 'std::_Optional_payload_base<unsigned long>::_Storage<unsigned long>::_Storage' requested here
+  111 |       _Optional_payload_base() = default;
+      |       ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:303:7: note: in defaulted default constructor for 'std::_Optional_payload_base<unsigned long>' first required here
+  303 |       _Optional_payload() = default;
+      |       ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:605:17: note: in defaulted default constructor for 'std::_Optional_payload<unsigned long>' first required here
+  605 |       constexpr _Optional_base() = default;
+      |                 ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:696:17: note: in defaulted default constructor for 'std::_Optional_base<unsigned long>' first required here
+  696 |       constexpr optional(nullopt_t) noexcept { }
+      |                 ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Format.h:242:56: note: in instantiation of member function 'std::optional<unsigned long>::optional' requested here
+  242 |              std::optional<uint64_t> FirstByteOffset = std::nullopt,
+      |                                                        ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:107:12: note: enum 'std::_Optional_payload_base<unsigned long>' was explicitly specialized here
+  107 |     struct _Optional_payload_base
+      |            ^
+1 error generated.
+[18/2810] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFloat.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFloat.cpp:14:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:18:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:24:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:204:6: error: enumerator '_Storage' does not exist in instantiation of 'std'
+  204 |             _Storage(in_place_t, _Args&&... __args)
+      |             ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:117:4: note: in instantiation of function template specialization 'std::_Optional_payload_base<unsigned long>::_Storage<unsigned long>::_Storage<unsigned long>' requested here
+  117 |         : _M_payload(__tag, std::forward<_Args>(__args)...),
+      |           ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:612:4: note: in instantiation of function template specialization 'std::_Optional_payload_base<unsigned long>::_Optional_payload_base<unsigned long>' requested here
+  612 |         : _M_payload(in_place, std::forward<_Args>(__args)...)
+      |           ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:706:4: note: in instantiation of function template specialization 'std::_Optional_base<unsigned long>::_Optional_base<unsigned long, false>' requested here
+  706 |         : _Base(std::in_place, std::forward<_Up>(__t)) { }
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:1533:38: note: in instantiation of function template specialization 'std::optional<unsigned long>::optional<unsigned long, true>' requested here
+ 1533 |     return (getActiveBits() <= 64) ? std::optional<uint64_t>(getZExtValue())
+      |                                      ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:107:12: note: enum 'std::_Optional_payload_base<unsigned long>' was explicitly specialized here
+  107 |     struct _Optional_payload_base
+      |            ^
+1 error generated.
+[19/2810] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:50:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/SwapByteOrder.h:17:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLForwardCompat.h:20:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:200:14: error: enumerator '_Storage' does not exist in instantiation of 'std'
+  200 |           constexpr _Storage() noexcept : _M_empty() { }
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:111:7: note: in instantiation of member function 'std::_Optional_payload_base<unsigned long>::_Storage<unsigned long>::_Storage' requested here
+  111 |       _Optional_payload_base() = default;
+      |       ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:303:7: note: in defaulted default constructor for 'std::_Optional_payload_base<unsigned long>' first required here
+  303 |       _Optional_payload() = default;
+      |       ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:605:17: note: in defaulted default constructor for 'std::_Optional_payload<unsigned long>' first required here
+  605 |       constexpr _Optional_base() = default;
+      |                 ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:696:17: note: in defaulted default constructor for 'std::_Optional_base<unsigned long>' first required here
+  696 |       constexpr optional(nullopt_t) noexcept { }
+      |                 ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Format.h:242:56: note: in instantiation of member function 'std::optional<unsigned long>::optional' requested here
+  242 |              std::optional<uint64_t> FirstByteOffset = std::nullopt,
+      |                                                        ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:107:12: note: enum 'std::_Optional_payload_base<unsigned long>' was explicitly specialized here
+  107 |     struct _Optional_payload_base
+      |            ^
+1 error generated.
+[20/2810] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
