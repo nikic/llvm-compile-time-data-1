@@ -1,0 +1,211 @@
+MESSAGE: The process "sudo -u lctt-runner ./build_llvm_project_stage2.sh" exceeded the timeout of 1200 seconds.
+
+STDOUT:
+      |   ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: preferred type for bit-field 'FPEvalMethodKind' specified here
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:500:3: note: expanded from macro 'ENUM_LANGOPT'
+  500 |   LLVM_PREFERRED_TYPE(Type) \
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:698:47: note: expanded from macro 'LLVM_PREFERRED_TYPE'
+  698 | #define LLVM_PREFERRED_TYPE(T) __attribute__((preferred_type(T)))
+      |                                               ^
+1 warning generated.
+[2837/2848] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/UnwrappedLineParser.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Format/UnwrappedLineParser.cpp:15:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Format/UnwrappedLineParser.h:18:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Format/Macros.h:43:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Format/FormatToken.h:20:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Format/Format.h:17:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:663:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: warning: assigning value of preferred signed enum type 'FPEvalMethodKind' to unsigned bit-field 'FPEvalMethod'; negative enumerators of enum 'FPEvalMethodKind' will be converted to positive values [-Wpreferred-type-bitfield-enum-conversion]
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:661:10: note: expanded from macro 'ENUM_LANGOPT'
+  661 |     Name = static_cast<unsigned>(Value);                                       \
+      |          ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: consider making the bit-field type signed
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:501:3: note: expanded from macro 'ENUM_LANGOPT'
+  501 |   unsigned Name : Bits;
+      |   ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: preferred type for bit-field 'FPEvalMethodKind' specified here
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:500:3: note: expanded from macro 'ENUM_LANGOPT'
+  500 |   LLVM_PREFERRED_TYPE(Type) \
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:698:47: note: expanded from macro 'LLVM_PREFERRED_TYPE'
+  698 | #define LLVM_PREFERRED_TYPE(T) __attribute__((preferred_type(T)))
+      |                                               ^
+1 warning generated.
+[2838/2848] Linking CXX static library lib/libclangFormat.a
+[2839/2848] Linking CXX static library lib/libclangIndex.a
+[2840/2848] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1as_main.cpp.o
+[2841/2848] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/driver.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/tools/driver/driver.cpp:14:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Driver/Driver.h:20:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Driver/ToolChain.h:13:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:663:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: warning: assigning value of preferred signed enum type 'FPEvalMethodKind' to unsigned bit-field 'FPEvalMethod'; negative enumerators of enum 'FPEvalMethodKind' will be converted to positive values [-Wpreferred-type-bitfield-enum-conversion]
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:661:10: note: expanded from macro 'ENUM_LANGOPT'
+  661 |     Name = static_cast<unsigned>(Value);                                       \
+      |          ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: consider making the bit-field type signed
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:501:3: note: expanded from macro 'ENUM_LANGOPT'
+  501 |   unsigned Name : Bits;
+      |   ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: preferred type for bit-field 'FPEvalMethodKind' specified here
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:500:3: note: expanded from macro 'ENUM_LANGOPT'
+  500 |   LLVM_PREFERRED_TYPE(Type) \
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:698:47: note: expanded from macro 'LLVM_PREFERRED_TYPE'
+  698 | #define LLVM_PREFERRED_TYPE(T) __attribute__((preferred_type(T)))
+      |                                               ^
+1 warning generated.
+[2842/2848] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/Visitor.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/InstallAPI/Visitor.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/Visitor.h:16:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Mangle.h:16:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:20:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclBase.h:19:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclarationName.h:16:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:28:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:663:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: warning: assigning value of preferred signed enum type 'FPEvalMethodKind' to unsigned bit-field 'FPEvalMethod'; negative enumerators of enum 'FPEvalMethodKind' will be converted to positive values [-Wpreferred-type-bitfield-enum-conversion]
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:661:10: note: expanded from macro 'ENUM_LANGOPT'
+  661 |     Name = static_cast<unsigned>(Value);                                       \
+      |          ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: consider making the bit-field type signed
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:501:3: note: expanded from macro 'ENUM_LANGOPT'
+  501 |   unsigned Name : Bits;
+      |   ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: preferred type for bit-field 'FPEvalMethodKind' specified here
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:500:3: note: expanded from macro 'ENUM_LANGOPT'
+  500 |   LLVM_PREFERRED_TYPE(Type) \
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:698:47: note: expanded from macro 'LLVM_PREFERRED_TYPE'
+  698 | #define LLVM_PREFERRED_TYPE(T) __attribute__((preferred_type(T)))
+      |                                               ^
+1 warning generated.
+[2843/2848] Linking CXX static library lib/libclangInstallAPI.a
+[2844/2848] Linking CXX static library lib/libclangExtractAPI.a
+[2845/2848] Linking CXX static library lib/libclangFrontendTool.a
+[2846/2848] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1_main.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/tools/driver/cc1_main.cpp:16:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/TargetOptions.h:17:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/OpenCLOptions.h:17:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:663:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: warning: assigning value of preferred signed enum type 'FPEvalMethodKind' to unsigned bit-field 'FPEvalMethod'; negative enumerators of enum 'FPEvalMethodKind' will be converted to positive values [-Wpreferred-type-bitfield-enum-conversion]
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:661:10: note: expanded from macro 'ENUM_LANGOPT'
+  661 |     Name = static_cast<unsigned>(Value);                                       \
+      |          ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: consider making the bit-field type signed
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:501:3: note: expanded from macro 'ENUM_LANGOPT'
+  501 |   unsigned Name : Bits;
+      |   ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: preferred type for bit-field 'FPEvalMethodKind' specified here
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:500:3: note: expanded from macro 'ENUM_LANGOPT'
+  500 |   LLVM_PREFERRED_TYPE(Type) \
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:698:47: note: expanded from macro 'LLVM_PREFERRED_TYPE'
+  698 | #define LLVM_PREFERRED_TYPE(T) __attribute__((preferred_type(T)))
+      |                                               ^
+1 warning generated.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
