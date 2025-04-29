@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[1235/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/FunctionImport.cpp.o
+[1236/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/FunctionSpecialization.cpp.o
+[1237/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/GlobalDCE.cpp.o
+[1238/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/GlobalOpt.cpp.o
+[1239/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/GlobalSplit.cpp.o
+[1240/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/HotColdSplitting.cpp.o
+[1241/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/IROutliner.cpp.o
+[1242/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/IPO.cpp.o
+[1243/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/InferFunctionAttrs.cpp.o
+[1244/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/LoopExtractor.cpp.o
+[1245/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/Inliner.cpp.o
+[1246/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/Internalize.cpp.o
+[1247/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ModuleInliner.cpp.o
+[1248/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/LowerTypeTests.cpp.o
+[1249/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/OpenMPOpt.cpp.o
+[1250/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/MemProfContextDisambiguation.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp: In instantiation of ‘void {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::assignStackNodesPostOrder({anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::ContextNode*, llvm::DenseSet<const {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::ContextNode*>&, llvm::DenseMap<long unsigned int, std::vector<{anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::CallContextInfo> >&, llvm::DenseMap<{anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::CallInfo, {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::CallInfo>&) [with DerivedCCG = {anonymous}::ModuleCallsiteContextGraph; FuncTy = llvm::Function; CallTy = llvm::Instruction*]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp:2021:5:   required from ‘void {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::updateStackNodes() [with DerivedCCG = {anonymous}::ModuleCallsiteContextGraph; FuncTy = llvm::Function; CallTy = llvm::Instruction*]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp:2184:19:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp:1645:8: warning: variable ‘PrevIterCreatedNode’ set but not used [-Wunused-but-set-variable]
+ 1645 |   bool PrevIterCreatedNode = false;
+      |        ^~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp: In instantiation of ‘void {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::assignStackNodesPostOrder({anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::ContextNode*, llvm::DenseSet<const {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::ContextNode*>&, llvm::DenseMap<long unsigned int, std::vector<{anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::CallContextInfo> >&, llvm::DenseMap<{anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::CallInfo, {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::CallInfo>&) [with DerivedCCG = {anonymous}::IndexCallsiteContextGraph; FuncTy = llvm::FunctionSummary; CallTy = {anonymous}::IndexCall]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp:2021:5:   required from ‘void {anonymous}::CallsiteContextGraph<DerivedCCG, FuncTy, CallTy>::updateStackNodes() [with DerivedCCG = {anonymous}::IndexCallsiteContextGraph; FuncTy = llvm::FunctionSummary; CallTy = {anonymous}::IndexCall]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp:2287:19:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/IPO/MemProfContextDisambiguation.cpp:1645:8: warning: variable ‘PrevIterCreatedNode’ set but not used [-Wunused-but-set-variable]
+[1251/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/MergeFunctions.cpp.o
+[1252/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SampleContextTracker.cpp.o
+[1253/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SampleProfileProbe.cpp.o
+[1254/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/PartialInlining.cpp.o
+[1255/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SCCP.cpp.o
+[1256/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/StripDeadPrototypes.cpp.o
+[1257/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SampleProfile.cpp.o
+[1258/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SampleProfileMatcher.cpp.o
+[1259/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/StripSymbols.cpp.o
+[1260/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ThinLTOBitcodeWriter.cpp.o
+[1261/3114] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/WholeProgramDevirt.cpp.o
+[1262/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoadStoreVectorizer.cpp.o
+[1263/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopIdiomVectorize.cpp.o
+[1264/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/DependencyGraph.cpp.o
+[1265/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorizationLegality.cpp.o
+[1266/3114] Building X86GenGlobalISel.inc...
+[1267/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o
+[1268/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Interval.cpp.o
+[1269/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/RegionsFromMetadata.cpp.o
+[1270/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/SeedCollection.cpp.o
+[1271/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/TransactionAcceptOrRevert.cpp.o
+[1272/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/InstrMaps.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/InstrMaps.cpp:11:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SandboxVectorizer/Legality.h:185:33: warning: ‘maybe_unused’ attribute ignored [-Wattributes]
+  185 |   [[maybe_unused]] ResultReason Reason;
+      |                                 ^~~~~~
+[1273/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Legality.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SandboxVectorizer/Legality.h:185:33: warning: ‘maybe_unused’ attribute ignored [-Wattributes]
+  185 |   [[maybe_unused]] ResultReason Reason;
+      |                                 ^~~~~~
+[1274/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/BottomUpVec.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SandboxVectorizer/Passes/BottomUpVec.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Passes/BottomUpVec.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SandboxVectorizer/Legality.h:185:33: warning: ‘maybe_unused’ attribute ignored [-Wattributes]
+  185 |   [[maybe_unused]] ResultReason Reason;
+      |                                 ^~~~~~
+[1275/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/RegionsFromBBs.cpp.o
+[1276/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/TransactionSave.cpp.o
+[1277/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/SandboxVectorizer.cpp.o
+[1278/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Scheduler.cpp.o
+[1279/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/SeedCollector.cpp.o
+[1280/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/VecUtils.cpp.o
+[1281/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/Vectorize.cpp.o
+[1282/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o
+[1283/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanAnalysis.cpp.o
+[1284/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/SandboxVectorizerPassBuilder.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SandboxVectorizer/Passes/BottomUpVec.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/SandboxVectorizerPassBuilder.cpp:3:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SandboxVectorizer/Legality.h:185:33: warning: ‘maybe_unused’ attribute ignored [-Wattributes]
+  185 |   [[maybe_unused]] ResultReason Reason;
+      |                                 ^~~~~~
+[1285/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o
+[1286/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VectorCombine.cpp.o
+[1287/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanConstruction.cpp.o
+[1288/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o
+[1289/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanSLP.cpp.o
+[1290/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanTransforms.cpp.o
+[1291/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUnroll.cpp.o
+[1292/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanVerifier.cpp.o
+[1293/3114] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARC.cpp.o
+[1294/3114] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARCOpts.cpp.o
+[1295/3114] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARCExpand.cpp.o
+[1296/3114] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARCAPElim.cpp.o
+[1297/3114] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/DependencyAnalysis.cpp.o
+[1298/3114] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ProvenanceAnalysisEvaluator.cpp.o
+[1299/3114] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARCContract.cpp.o
+[1300/3114] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUtils.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUtils.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h: In instantiation of ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::all_of_tuple_elements(std::index_sequence<Idx ...>, Fn) const [with Fn = llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>::match(const llvm::VPRecipeBase*) const::<lambda(auto:25, unsigned int)>; long unsigned int ...Is = {}; Ops_t = std::tuple<>; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPCanonicalIVPHIRecipe}; std::index_sequence<Idx ...> = std::integer_sequence<long unsigned int>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:229:30:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPRecipeBase*) const [with Ops_t = std::tuple<>; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPCanonicalIVPHIRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:213:25:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPValue*) const [with Ops_t = std::tuple<>; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPCanonicalIVPHIRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:230:45:   required from ‘llvm::VPlanPatternMatch::Recipe_match<std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >, 0, false, llvm::VPScalarIVStepsRecipe>::match(const llvm::VPRecipeBase*) const::<lambda(auto:25, unsigned int)> [with auto:25 = llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:259:14:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::all_of_tuple_elements(std::index_sequence<Idx ...>, Fn) const [with Fn = llvm::VPlanPatternMatch::Recipe_match<std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >, 0, false, llvm::VPScalarIVStepsRecipe>::match(const llvm::VPRecipeBase*) const::<lambda(auto:25, unsigned int)>; long unsigned int ...Is = {0, 1}; Ops_t = std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPScalarIVStepsRecipe}; std::index_sequence<Idx ...> = std::integer_sequence<long unsigned int, 0, 1>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:229:30:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPRecipeBase*) const [with Ops_t = std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPScalarIVStepsRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:213:25:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPValue*) const [with Ops_t = std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPScalarIVStepsRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:29:17:   required from ‘bool llvm::VPlanPatternMatch::match(Val*, const Pattern&) [with Val = llvm::VPValue; Pattern = llvm::VPlanPatternMatch::Recipe_match<std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >, 0, false, llvm::VPScalarIVStepsRecipe>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUtils.cpp:65:18:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:258:61: warning: parameter ‘P’ set but not used [-Wunused-but-set-parameter]
+  258 |   bool all_of_tuple_elements(std::index_sequence<Is...>, Fn P) const {
+      |                                                          ~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h: In instantiation of ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::all_of_tuple_elements(std::index_sequence<Idx ...>, Fn) const [with Fn = llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>::match(const llvm::VPRecipeBase*) const::<lambda(auto:26, unsigned int)>; long unsigned int ...Is = {}; Ops_t = std::tuple<>; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPCanonicalIVPHIRecipe}; std::index_sequence<Idx ...> = std::integer_sequence<long unsigned int>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:235:33:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPRecipeBase*) const [with Ops_t = std::tuple<>; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPCanonicalIVPHIRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:213:25:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPValue*) const [with Ops_t = std::tuple<>; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPCanonicalIVPHIRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:230:45:   required from ‘llvm::VPlanPatternMatch::Recipe_match<std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >, 0, false, llvm::VPScalarIVStepsRecipe>::match(const llvm::VPRecipeBase*) const::<lambda(auto:25, unsigned int)> [with auto:25 = llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:259:14:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::all_of_tuple_elements(std::index_sequence<Idx ...>, Fn) const [with Fn = llvm::VPlanPatternMatch::Recipe_match<std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >, 0, false, llvm::VPScalarIVStepsRecipe>::match(const llvm::VPRecipeBase*) const::<lambda(auto:25, unsigned int)>; long unsigned int ...Is = {0, 1}; Ops_t = std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPScalarIVStepsRecipe}; std::index_sequence<Idx ...> = std::integer_sequence<long unsigned int, 0, 1>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:229:30:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPRecipeBase*) const [with Ops_t = std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPScalarIVStepsRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:213:25:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPValue*) const [with Ops_t = std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPScalarIVStepsRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:29:17:   required from ‘bool llvm::VPlanPatternMatch::match(Val*, const Pattern&) [with Val = llvm::VPValue; Pattern = llvm::VPlanPatternMatch::Recipe_match<std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >, 0, false, llvm::VPScalarIVStepsRecipe>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUtils.cpp:65:18:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:258:61: warning: parameter ‘P’ set but not used [-Wunused-but-set-parameter]
+[1301/3114] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ProvenanceAnalysis.cpp.o
+[1302/3114] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/PtrState.cpp.o
+[1303/3114] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/CoroAnnotationElide.cpp.o
+[1304/3114] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/CoroCleanup.cpp.o
+[1305/3114] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/CoroConditionalWrapper.cpp.o
+[1306/3114] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/Coroutines.cpp.o
+[1307/3114] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/CoroElide.cpp.o
+[1308/3114] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/SuspendCrossingInfo.cpp.o
+[1309/3114] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/SpillUtils.cpp.o
+[1310/3114] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/CoroEarly.cpp.o
+[1311/3114] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/CoroFrame.cpp.o
+[1312/3114] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/CoroSplit.cpp.o
+[1313/3114] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/MaterializationUtils.cpp.o
+[1314/3114] Building CXX object lib/Transforms/CFGuard/CMakeFiles/LLVMCFGuard.dir/CFGuard.cpp.o
+[1315/3114] Building CXX object lib/Transforms/HipStdPar/CMakeFiles/LLVMHipStdPar.dir/HipStdPar.cpp.o
+[1316/3114] Building CXX object lib/Linker/CMakeFiles/LLVMLinker.dir/IRMover.cpp.o
+[1317/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/AliasAnalysis.cpp.o
+[1318/3114] Building CXX object lib/Linker/CMakeFiles/LLVMLinker.dir/LinkModules.cpp.o
+[1319/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/Analysis.cpp.o
+[1320/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/AliasAnalysisEvaluator.cpp.o
+[1321/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/AliasSetTracker.cpp.o
+[1322/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/AssumptionCache.cpp.o
+[1323/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/AssumeBundleQueries.cpp.o
+[1324/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/BranchProbabilityInfo.cpp.o
+[1325/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/BlockFrequencyInfoImpl.cpp.o
+[1326/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/BlockFrequencyInfo.cpp.o
+[1327/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CFGSCCPrinter.cpp.o
+[1328/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CFG.cpp.o
+[1329/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CFGPrinter.cpp.o
+[1330/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/BasicAliasAnalysis.cpp.o
+[1331/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CallPrinter.cpp.o
+[1332/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CaptureTracking.cpp.o
+[1333/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CmpInstAnalysis.cpp.o
+[1334/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CodeMetrics.cpp.o
+[1335/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CostModel.cpp.o
+[1336/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CGSCCPassManager.cpp.o
+[1337/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CallGraph.cpp.o
+[1338/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CycleAnalysis.cpp.o
+[1339/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CtxProfAnalysis.cpp.o
+[1340/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/DDGPrinter.cpp.o
+[1341/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/DevelopmentModeInlineAdvisor.cpp.o
+[1342/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/DemandedBits.cpp.o
+[1343/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/DDG.cpp.o
+[1344/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/DependenceGraphBuilder.cpp.o
+[1345/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/Delinearization.cpp.o
+[1346/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/CallGraphSCCPass.cpp.o
+[1347/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/DomPrinter.cpp.o
+[1348/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/DomConditionCache.cpp.o
+[1349/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ConstraintSystem.cpp.o
+[1350/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/DomTreeUpdater.cpp.o
+[1351/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/DominanceFrontier.cpp.o
+[1352/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/DXILResource.cpp.o
+[1353/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/EphemeralValuesCache.cpp.o
+[1354/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/DependenceAnalysis.cpp.o
+[1355/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/DXILMetadataAnalysis.cpp.o
+[1356/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/FunctionPropertiesAnalysis.cpp.o
+[1357/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/GuardUtils.cpp.o
+[1358/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/HeatUtils.cpp.o
+[1359/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/IVDescriptors.cpp.o
+[1360/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/IVUsers.cpp.o
+[1361/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ConstantFolding.cpp.o
+FAILED: lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ConstantFolding.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -DHAS_LOGF128 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Analysis -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -ffp-exception-behavior=strict -MD -MT lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ConstantFolding.cpp.o -MF lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ConstantFolding.cpp.o.d -o lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ConstantFolding.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Analysis/ConstantFolding.cpp
+c++: error: unrecognized command-line option ‘-ffp-exception-behavior=strict’
+[1362/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/IRSimilarityIdentifier.cpp.o
+[1363/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/IndirectCallPromotionAnalysis.cpp.o
+[1364/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/ImportedFunctionsInliningStatistics.cpp.o
+[1365/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/InlineSizeEstimatorAnalysis.cpp.o
+[1366/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/GlobalsModRef.cpp.o
+[1367/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/InlineCost.cpp.o
+[1368/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/InlineOrder.cpp.o
+[1369/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/InlineAdvisor.cpp.o
+[1370/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/InstCount.cpp.o
+[1371/3114] Building CXX object lib/Analysis/CMakeFiles/LLVMAnalysis.dir/InstructionPrecedenceTracking.cpp.o
+[1372/3114] Building AArch64GenDAGISel.inc...
+[1373/3114] Building AArch64GenFastISel.inc...
+[1374/3114] Building AArch64GenGlobalISel.inc...
+[1375/3114] Building X86GenDAGISel.inc...
+[1376/3114] Building X86GenSubtargetInfo.inc...
+[1377/3114] Building X86GenInstrInfo.inc...
+[1378/3114] Building AArch64GenInstrInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+70.47user 7.07system 0:07.62elapsed 1017%CPU (0avgtext+0avgdata 729900maxresident)k
+0inputs+648256outputs (2716major+3961183minor)pagefaults 0swaps
