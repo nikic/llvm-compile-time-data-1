@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Targets/Mips.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:351:68: error: missing binary operator before token "("
+  351 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:357:68: error: missing binary operator before token "("
+  357 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:515,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/TargetDefines.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Targets.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Targets/OSTargets.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Targets/Mips.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Targets/Mips.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:351:68: error: missing binary operator before token "("
+  351 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:357:68: error: missing binary operator before token "("
+  357 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:676,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/TargetDefines.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Targets.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Targets/OSTargets.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Targets/Mips.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Basic/Targets/Mips.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:351:68: error: missing binary operator before token "("
+  351 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:357:68: error: missing binary operator before token "("
+  357 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+[2108/3115] Building CXX object tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/Lexer.cpp.o
+FAILED: tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/Lexer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Lex -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Lex -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/Lexer.cpp.o -MF tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/Lexer.cpp.o.d -o tools/clang/lib/Lex/CMakeFiles/obj.clangLex.dir/Lexer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/Lexer.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/Lexer.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:81:68: error: missing binary operator before token "("
+   81 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:88:68: error: missing binary operator before token "("
+   88 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:506,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/Lexer.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:351:68: error: missing binary operator before token "("
+  351 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:357:68: error: missing binary operator before token "("
+  357 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:515,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/Lexer.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:351:68: error: missing binary operator before token "("
+  351 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:357:68: error: missing binary operator before token "("
+  357 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:676,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Lex/Lexer.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Lex/Lexer.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:351:68: error: missing binary operator before token "("
+  351 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:357:68: error: missing binary operator before token "("
+  357 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+[2109/3115] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2110/3115] Building X86GenInstrInfo.inc...
+[2111/3115] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/ConstraintElimination.cpp.o
+[2112/3115] Building AArch64GenInstrInfo.inc...
+[2113/3115] Building AArch64GenSubtargetInfo.inc...
+[2114/3115] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclarationName.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclBase.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:81:68: error: missing binary operator before token "("
+   81 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:88:68: error: missing binary operator before token "("
+   88 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:506,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclarationName.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclBase.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:351:68: error: missing binary operator before token "("
+  351 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:357:68: error: missing binary operator before token "("
+  357 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:515,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclarationName.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclBase.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:351:68: error: missing binary operator before token "("
+  351 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:357:68: error: missing binary operator before token "("
+  357 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:676,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclarationName.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclBase.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDANV.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:351:68: error: missing binary operator before token "("
+  351 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:357:68: error: missing binary operator before token "("
+  357 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+[2115/3115] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclarationName.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclBase.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:81:68: error: missing binary operator before token "("
+   81 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:88:68: error: missing binary operator before token "("
+   88 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:506,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclarationName.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclBase.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:351:68: error: missing binary operator before token "("
+  351 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:357:68: error: missing binary operator before token "("
+  357 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:515,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclarationName.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclBase.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:351:68: error: missing binary operator before token "("
+  351 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:357:68: error: missing binary operator before token "("
+  357 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:676,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclarationName.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclBase.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:351:68: error: missing binary operator before token "("
+  351 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:357:68: error: missing binary operator before token "("
+  357 | #if defined(__clang__) && defined( __has_warning ) && __has_warning("-Wpreferred-type-bitfield-enum-conversion")
+      |                                                                    ^
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+129.30user 11.85system 0:11.66elapsed 1210%CPU (0avgtext+0avgdata 874912maxresident)k
+0inputs+1096288outputs (3178major+6425958minor)pagefaults 0swaps
