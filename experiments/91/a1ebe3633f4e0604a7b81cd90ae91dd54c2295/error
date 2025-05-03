@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:661:10: note: expanded from macro 'ENUM_LANGOPT'
+  661 |     Name = static_cast<unsigned>(Value);                                       \
+      |          ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: consider making the bit-field type signed
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:501:3: note: expanded from macro 'ENUM_LANGOPT'
+  501 |   unsigned Name : Bits;
+      |   ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: preferred type for bit-field 'FPEvalMethodKind' specified here
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:500:3: note: expanded from macro 'ENUM_LANGOPT'
+  500 |   LLVM_PREFERRED_TYPE(Type) \
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:708:47: note: expanded from macro 'LLVM_PREFERRED_TYPE'
+  708 | #define LLVM_PREFERRED_TYPE(T) __attribute__((preferred_type(T)))
+      |                                               ^
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -DLLVM_BUILD_STATIC -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/tools/clang/tools/driver -I/var/llvm-compile-time-tracker/llvm-project/clang/tools/driver -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage2/tools/clang/include -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -fno-common -Woverloaded-virtual -Wno-nested-anon-types -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/tools/driver/CMakeFiles/clang.dir/driver.cpp.o -MF tools/clang/tools/driver/CMakeFiles/clang.dir/driver.cpp.o.d -o tools/clang/tools/driver/CMakeFiles/clang.dir/driver.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/tools/driver/driver.cpp
+1.	/var/llvm-compile-time-tracker/llvm-project/clang/tools/driver/driver.cpp:75:49: current parser token ';'
+2.	/var/llvm-compile-time-tracker/llvm-project/clang/tools/driver/driver.cpp:62:74: parsing function body 'GetExecutablePath'
+3.	/var/llvm-compile-time-tracker/llvm-project/clang/tools/driver/driver.cpp:62:74: in compound statement ('{}')
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x000055b018d9dad0 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x000055b018d9b9c4 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x000055b018ced898
+3  libc.so.6 0x00007f850fe8e520
+4  clang++   0x000055b01bd753f1 bool clang::interp::CastPointerIntegral<(clang::interp::PrimType)6, clang::interp::Integral<64u, true>>(clang::interp::InterpState&, clang::interp::CodePtr) + 561
+5  clang++   0x000055b01c0c8e1f clang::interp::Compiler<clang::interp::EvalEmitter>::VisitCastExpr(clang::CastExpr const*) + 2383
+6  clang++   0x000055b01c0c804c clang::interp::Compiler<clang::interp::EvalEmitter>::visit(clang::Expr const*) + 172
+7  clang++   0x000055b01c0bd74c clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 604
+8  clang++   0x000055b01bcb5d3f clang::interp::EvalEmitter::interpretExpr(clang::Expr const*, bool, bool) + 143
+9  clang++   0x000055b01bc8af00 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 432
+10 clang++   0x000055b01bc0302f
+11 clang++   0x000055b01bc04ffc clang::Expr::isCXX11ConstantExpr(clang::ASTContext const&, clang::APValue*, clang::SourceLocation*) const + 780
+12 clang++   0x000055b01bc05554
+13 clang++   0x000055b01bc08445 clang::Expr::isIntegerConstantExpr(clang::ASTContext const&, clang::SourceLocation*) const + 117
+14 clang++   0x000055b01acd60df
+15 clang++   0x000055b01ace0071
+16 clang++   0x000055b01ace0d9f
+17 clang++   0x000055b01ace340a clang::Sema::BuildCStyleCastExpr(clang::SourceLocation, clang::TypeSourceInfo*, clang::SourceLocation, clang::Expr*) + 506
+18 clang++   0x000055b01ab4127b clang::Parser::ParseParenExpression(clang::Parser::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) + 4187
+19 clang++   0x000055b01ab35952 clang::Parser::ParseCastExpression(clang::Parser::CastParseKind, bool, bool&, clang::Parser::TypeCastState, bool, bool*) + 2338
+20 clang++   0x000055b01ab375fe clang::Parser::ParseCastExpression(clang::Parser::CastParseKind, bool, clang::Parser::TypeCastState, bool, bool*) + 62
+21 clang++   0x000055b01ab3782d clang::Parser::ParseAssignmentExpression(clang::Parser::TypeCastState) + 61
+22 clang++   0x000055b01aaefe34 clang::Parser::ParseDeclarationAfterDeclaratorAndAttributes(clang::Declarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::ForRangeInit*) + 1524
+23 clang++   0x000055b01aaf66f5 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::SourceLocation*, clang::Parser::ForRangeInit*) + 3893
+24 clang++   0x000055b01ab080ea clang::Parser::ParseSimpleDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, bool, clang::Parser::ForRangeInit*, clang::SourceLocation*) + 874
+25 clang++   0x000055b01ab08601 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, clang::SourceLocation*) + 289
+26 clang++   0x000055b01abbf0da clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) + 4522
+27 clang++   0x000055b01abbfa2d clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) + 365
+28 clang++   0x000055b01abc7c44 clang::Parser::ParseCompoundStatementBody(bool) + 1268
+29 clang++   0x000055b01abc86da clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) + 218
+30 clang++   0x000055b01aab90b0 clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) + 1072
+31 clang++   0x000055b01aaf6bf5 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::SourceLocation*, clang::Parser::ForRangeInit*) + 5173
+32 clang++   0x000055b01aab3764 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) + 1396
+33 clang++   0x000055b01aab425e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) + 894
+34 clang++   0x000055b01aabcbc2 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 738
+35 clang++   0x000055b01aabdb15 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 549
+36 clang++   0x000055b01aaad6da clang::ParseAST(clang::Sema&, bool, bool) + 586
+37 clang++   0x000055b0199cdbbe clang::FrontendAction::Execute() + 46
+38 clang++   0x000055b01993d90b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+39 clang++   0x000055b019aa4e7c clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+40 clang++   0x000055b017604cdc cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8492
+41 clang++   0x000055b0175fc152
+42 clang++   0x000055b01971344d
+43 clang++   0x000055b018cedcc7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+44 clang++   0x000055b0197137e7
+45 clang++   0x000055b0196d5e61 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+46 clang++   0x000055b0196d6ed9 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+47 clang++   0x000055b0196eacaf clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+48 clang++   0x000055b017600f71 clang_main(int, char**, llvm::ToolContext const&) + 8337
+49 clang++   0x000055b0174d75bb main + 107
+50 libc.so.6 0x00007f850fe75d90
+51 libc.so.6 0x00007f850fe75e40 __libc_start_main + 128
+52 clang++   0x000055b0175fbbb5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/driver-a648cd.cpp
+clang++: note: diagnostic msg: /tmp/driver-a648cd.sh
+clang++: note: diagnostic msg: 
+
+********************
+[2843/2850] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1as_main.cpp.o
+[2844/2850] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/Visitor.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/InstallAPI/Visitor.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/Visitor.h:16:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Mangle.h:16:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:20:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclBase.h:19:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclarationName.h:16:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:28:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:663:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: warning: assigning value of preferred signed enum type 'FPEvalMethodKind' to unsigned bit-field 'FPEvalMethod'; negative enumerators of enum 'FPEvalMethodKind' will be converted to positive values [-Wpreferred-type-bitfield-enum-conversion]
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:661:10: note: expanded from macro 'ENUM_LANGOPT'
+  661 |     Name = static_cast<unsigned>(Value);                                       \
+      |          ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: consider making the bit-field type signed
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:501:3: note: expanded from macro 'ENUM_LANGOPT'
+  501 |   unsigned Name : Bits;
+      |   ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: preferred type for bit-field 'FPEvalMethodKind' specified here
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:500:3: note: expanded from macro 'ENUM_LANGOPT'
+  500 |   LLVM_PREFERRED_TYPE(Type) \
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:708:47: note: expanded from macro 'LLVM_PREFERRED_TYPE'
+  708 | #define LLVM_PREFERRED_TYPE(T) __attribute__((preferred_type(T)))
+      |                                               ^
+1 warning generated.
+[2845/2850] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1_main.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/tools/driver/cc1_main.cpp:16:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/TargetOptions.h:17:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/OpenCLOptions.h:17:
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:663:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: warning: assigning value of preferred signed enum type 'FPEvalMethodKind' to unsigned bit-field 'FPEvalMethod'; negative enumerators of enum 'FPEvalMethodKind' will be converted to positive values [-Wpreferred-type-bitfield-enum-conversion]
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:661:10: note: expanded from macro 'ENUM_LANGOPT'
+  661 |     Name = static_cast<unsigned>(Value);                                       \
+      |          ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: consider making the bit-field type signed
+  350 | BENIGN_ENUM_LANGOPT(FPEvalMethod, FPEvalMethodKind, 3, FEM_UnsetOnCommandLine, "FP type used for floating point arithmetic")
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:501:3: note: expanded from macro 'ENUM_LANGOPT'
+  501 |   unsigned Name : Bits;
+      |   ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:350:1: note: preferred type for bit-field 'FPEvalMethodKind' specified here
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:67:6: note: expanded from macro 'BENIGN_ENUM_LANGOPT'
+   67 |      COMPATIBLE_ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.def:62:6: note: expanded from macro 'COMPATIBLE_ENUM_LANGOPT'
+   62 |      ENUM_LANGOPT(Name, Type, Bits, Default, Description)
+      |      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/LangOptions.h:500:3: note: expanded from macro 'ENUM_LANGOPT'
+  500 |   LLVM_PREFERRED_TYPE(Type) \
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:708:47: note: expanded from macro 'LLVM_PREFERRED_TYPE'
+  708 | #define LLVM_PREFERRED_TYPE(T) __attribute__((preferred_type(T)))
+      |                                               ^
+1 warning generated.
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
