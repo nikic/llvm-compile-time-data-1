@@ -1,0 +1,114 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: /tmp/llvm-project-build-stage1/bin/clang
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang - broken
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeError.log".
+
+
+STDERR:
+CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "/tmp/llvm-project-build-stage1/bin/clang"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/ninja cmTC_ad5c1 && [1/2] Building C object CMakeFiles/cmTC_ad5c1.dir/testCCompiler.c.o
+    FAILED: CMakeFiles/cmTC_ad5c1.dir/testCCompiler.c.o 
+    /tmp/llvm-project-build-stage1/bin/clang    -o CMakeFiles/cmTC_ad5c1.dir/testCCompiler.c.o -c /tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c
+    free(): invalid pointer
+    PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+    Stack dump:
+    0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang -o CMakeFiles/cmTC_ad5c1.dir/testCCompiler.c.o -c /tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c
+    1.	/tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c:11:28: current parser token ';'
+    2.	/tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c:11:1: parsing function body 'main'
+    3.	/tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c:11:1: in compound statement ('{}')
+    Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+    0  clang     0x0000563b9342bcf0 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+    1  clang     0x0000563b93429be4 llvm::sys::CleanupOnSignal(unsigned long) + 164
+    2  clang     0x0000563b9337b8a8
+    3  libc.so.6 0x00007f6e3182d520
+    4  libc.so.6 0x00007f6e318819fc pthread_kill + 300
+    5  libc.so.6 0x00007f6e3182d476 raise + 22
+    6  libc.so.6 0x00007f6e318137f3 abort + 211
+    7  libc.so.6 0x00007f6e31874677
+    8  libc.so.6 0x00007f6e3188bcfc
+    9  libc.so.6 0x00007f6e3188da44
+    10 libc.so.6 0x00007f6e31890453 free + 115
+    11 clang     0x0000563b965341c6 clang::interp::InterpState::~InterpState() + 86
+    12 clang     0x0000563b964240a6 clang::interp::EvalEmitter::~EvalEmitter() + 262
+    13 clang     0x0000563b963532d3 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 675
+    14 clang     0x0000563b962cad9f
+    15 clang     0x0000563b962cc845 clang::Expr::EvaluateForOverflow(clang::ASTContext const&) const + 901
+    16 clang     0x0000563b953aacf6 clang::Sema::CheckForIntOverflow(clang::Expr const*) + 102
+    17 clang     0x0000563b953e6db3 clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) + 227
+    18 clang     0x0000563b9579e330 clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) + 320
+    19 clang     0x0000563b95b071e5 clang::Sema::BuildReturnStmt(clang::SourceLocation, clang::Expr*, bool) + 1573
+    20 clang     0x0000563b95b08032 clang::Sema::ActOnReturnStmt(clang::SourceLocation, clang::Expr*, clang::Scope*) + 370
+    21 clang     0x0000563b9526d223 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) + 3651
+    22 clang     0x0000563b9526df1d clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) + 365
+    23 clang     0x0000563b95276654 clang::Parser::ParseCompoundStatementBody(bool) + 1268
+    24 clang     0x0000563b952770ea clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) + 218
+    25 clang     0x0000563b95166570 clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) + 1072
+    26 clang     0x0000563b951a42d5 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::SourceLocation*, clang::Parser::ForRangeInit*) + 5173
+    27 clang     0x0000563b95160c24 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) + 1396
+    28 clang     0x0000563b9516171e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) + 894
+    29 clang     0x0000563b9516a072 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 738
+    30 clang     0x0000563b9516afc5 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 549
+    31 clang     0x0000563b9516b4d4 clang::Parser::ParseFirstTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 68
+    32 clang     0x0000563b9515ab6b clang::ParseAST(clang::Sema&, bool, bool) + 539
+    33 clang     0x0000563b9406c86e clang::FrontendAction::Execute() + 46
+    34 clang     0x0000563b93fdccab clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+    35 clang     0x0000563b9414902c clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+    36 clang     0x0000563b91c84a26 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8758
+    37 clang     0x0000563b91c7b242
+    38 clang     0x0000563b93da0ead
+    39 clang     0x0000563b9337bcd7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+    40 clang     0x0000563b93da1247
+    41 clang     0x0000563b93d63841 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+    42 clang     0x0000563b93d648b9 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+    43 clang     0x0000563b93d786cf clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+    44 clang     0x0000563b91c800c1 clang_main(int, char**, llvm::ToolContext const&) + 8337
+    45 clang     0x0000563b91b55f1b main + 107
+    46 libc.so.6 0x00007f6e31814d90
+    47 libc.so.6 0x00007f6e31814e40 __libc_start_main + 128
+    48 clang     0x0000563b91c7aca5 _start + 37
+    clang: error: clang frontend command failed with exit code 134 (use -v to see invocation)
+    clang version 21.0.0git
+    Target: x86_64-unknown-linux-gnu
+    Thread model: posix
+    InstalledDir: /tmp/llvm-project-build-stage1/bin
+    clang: note: diagnostic msg: 
+    ********************
+    
+    PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+    Preprocessed source(s) and associated run script(s) are located at:
+    clang: note: diagnostic msg: /tmp/testCCompiler-3e3e44.c
+    clang: note: diagnostic msg: /tmp/testCCompiler-3e3e44.sh
+    clang: note: diagnostic msg: 
+    
+    ********************
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:46 (project)
+
+
