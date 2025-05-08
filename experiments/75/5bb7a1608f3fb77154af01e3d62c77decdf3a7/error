@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[1676/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeTypeUDT.cpp.o
+[1677/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeTypeVTShape.cpp.o
+[1678/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NamedStreamMap.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/HashTable.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/NamedStreamMap.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/PDB/Native/NamedStreamMap.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘llvm::Error llvm::pdb::NamedStreamMap::commit(llvm::BinaryStreamWriter&) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘uint32_t llvm::pdb::NamedStreamMap::calculateSerializedLength() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:139:15: warning: array subscript 4294967295 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  139 |       if (Bits[Idx] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:139:15: warning: array subscript 4294967295 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  139 |       if (Bits[Idx] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘llvm::StringMap<unsigned int> llvm::pdb::NamedStreamMap::entries() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘llvm::Error llvm::pdb::HashTable<ValueT>::load(llvm::BinaryStreamReader&) [with ValueT = llvm::support::detail::packed_endian_specific_integral<unsigned int, llvm::endianness::little, 1>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::pdb::HashTable<ValueT>::grow(TraitsT&) [with TraitsT = llvm::pdb::NamedStreamMapTraits; ValueT = llvm::support::detail::packed_endian_specific_integral<unsigned int, llvm::endianness::little, 1>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unnecessary-virtual-specifier’ may have been intended to silence earlier diagnostics
+[1679/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeSession.cpp.o
+[1680/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PDBFileBuilder.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/HashTable.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/PDBFileBuilder.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/PDB/Native/PDBFileBuilder.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::pdb::PDBFileBuilder::commitSrcHeaderBlock(llvm::WritableBinaryStream&, const llvm::msf::MSFLayout&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::pdb::HashTable<ValueT>::grow(TraitsT&) [with TraitsT = llvm::pdb::StringTableHashTraits; ValueT = llvm::pdb::SrcHeaderBlockEntry]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘llvm::Error llvm::pdb::PDBFileBuilder::finalizeMsfLayout()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:139:15: warning: array subscript 4294967295 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  139 |       if (Bits[Idx] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:139:15: warning: array subscript 4294967295 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  139 |       if (Bits[Idx] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unnecessary-virtual-specifier’ may have been intended to silence earlier diagnostics
+[1681/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PDBFile.cpp.o
+[1682/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PDBStringTable.cpp.o
+[1683/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PDBStringTableBuilder.cpp.o
+[1684/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PublicsStream.cpp.o
+[1685/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/GSIStreamBuilder.cpp.o
+[1686/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/RawError.cpp.o
+[1687/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/SymbolCache.cpp.o
+[1688/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/SymbolStream.cpp.o
+[1689/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/TpiHashing.cpp.o
+[1690/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/TpiStream.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/HashTable.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/TpiStream.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/PDB/Native/TpiStream.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘llvm::Error llvm::pdb::HashTable<ValueT>::load(llvm::BinaryStreamReader&) [with ValueT = llvm::support::detail::packed_endian_specific_integral<unsigned int, llvm::endianness::little, 1>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unnecessary-virtual-specifier’ may have been intended to silence earlier diagnostics
+[1691/3116] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/TpiStreamBuilder.cpp.o
+[1692/3116] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/DIPrinter.cpp.o
+[1693/3116] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/SymbolizableObjectFile.cpp.o
+[1694/3116] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/Markup.cpp.o
+[1695/3116] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/Symbolize.cpp.o
+[1696/3116] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/MarkupFilter.cpp.o
+[1697/3116] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetLoweringObjectFile.cpp.o
+[1698/3116] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/Target.cpp.o
+[1699/3116] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetMachine.cpp.o
+[1700/3116] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetMachineC.cpp.o
+[1701/3116] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUtils.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUtils.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h: In instantiation of ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::all_of_tuple_elements(std::index_sequence<Idx ...>, Fn) const [with Fn = llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>::match(const llvm::VPRecipeBase*) const::<lambda(auto:25, unsigned int)>; long unsigned int ...Is = {}; Ops_t = std::tuple<>; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPCanonicalIVPHIRecipe}; std::index_sequence<Idx ...> = std::integer_sequence<long unsigned int>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:229:30:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPRecipeBase*) const [with Ops_t = std::tuple<>; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPCanonicalIVPHIRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:213:25:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPValue*) const [with Ops_t = std::tuple<>; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPCanonicalIVPHIRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:230:45:   required from ‘llvm::VPlanPatternMatch::Recipe_match<std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >, 0, false, llvm::VPScalarIVStepsRecipe>::match(const llvm::VPRecipeBase*) const::<lambda(auto:25, unsigned int)> [with auto:25 = llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:259:14:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::all_of_tuple_elements(std::index_sequence<Idx ...>, Fn) const [with Fn = llvm::VPlanPatternMatch::Recipe_match<std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >, 0, false, llvm::VPScalarIVStepsRecipe>::match(const llvm::VPRecipeBase*) const::<lambda(auto:25, unsigned int)>; long unsigned int ...Is = {0, 1}; Ops_t = std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPScalarIVStepsRecipe}; std::index_sequence<Idx ...> = std::integer_sequence<long unsigned int, 0, 1>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:229:30:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPRecipeBase*) const [with Ops_t = std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPScalarIVStepsRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:213:25:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPValue*) const [with Ops_t = std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPScalarIVStepsRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:29:17:   required from ‘bool llvm::VPlanPatternMatch::match(Val*, const Pattern&) [with Val = llvm::VPValue; Pattern = llvm::VPlanPatternMatch::Recipe_match<std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >, 0, false, llvm::VPScalarIVStepsRecipe>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUtils.cpp:65:18:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:258:61: warning: parameter ‘P’ set but not used [-Wunused-but-set-parameter]
+  258 |   bool all_of_tuple_elements(std::index_sequence<Is...>, Fn P) const {
+      |                                                          ~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h: In instantiation of ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::all_of_tuple_elements(std::index_sequence<Idx ...>, Fn) const [with Fn = llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>::match(const llvm::VPRecipeBase*) const::<lambda(auto:26, unsigned int)>; long unsigned int ...Is = {}; Ops_t = std::tuple<>; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPCanonicalIVPHIRecipe}; std::index_sequence<Idx ...> = std::integer_sequence<long unsigned int>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:235:33:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPRecipeBase*) const [with Ops_t = std::tuple<>; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPCanonicalIVPHIRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:213:25:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPValue*) const [with Ops_t = std::tuple<>; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPCanonicalIVPHIRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:230:45:   required from ‘llvm::VPlanPatternMatch::Recipe_match<std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >, 0, false, llvm::VPScalarIVStepsRecipe>::match(const llvm::VPRecipeBase*) const::<lambda(auto:25, unsigned int)> [with auto:25 = llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:259:14:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::all_of_tuple_elements(std::index_sequence<Idx ...>, Fn) const [with Fn = llvm::VPlanPatternMatch::Recipe_match<std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >, 0, false, llvm::VPScalarIVStepsRecipe>::match(const llvm::VPRecipeBase*) const::<lambda(auto:25, unsigned int)>; long unsigned int ...Is = {0, 1}; Ops_t = std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPScalarIVStepsRecipe}; std::index_sequence<Idx ...> = std::integer_sequence<long unsigned int, 0, 1>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:229:30:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPRecipeBase*) const [with Ops_t = std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPScalarIVStepsRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:213:25:   required from ‘bool llvm::VPlanPatternMatch::Recipe_match<Ops_t, Opcode, Commutative, RecipeTys>::match(const llvm::VPValue*) const [with Ops_t = std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >; unsigned int Opcode = 0; bool Commutative = false; RecipeTys = {llvm::VPScalarIVStepsRecipe}]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:29:17:   required from ‘bool llvm::VPlanPatternMatch::match(Val*, const Pattern&) [with Val = llvm::VPValue; Pattern = llvm::VPlanPatternMatch::Recipe_match<std::tuple<llvm::VPlanPatternMatch::Recipe_match<std::tuple<>, 0, false, llvm::VPCanonicalIVPHIRecipe>, llvm::VPlanPatternMatch::int_pred_ty<llvm::VPlanPatternMatch::is_specific_int, 0> >, 0, false, llvm::VPScalarIVStepsRecipe>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUtils.cpp:65:18:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanPatternMatch.h:258:61: warning: parameter ‘P’ set but not used [-Wunused-but-set-parameter]
+cc1plus: note: unrecognized command-line option ‘-Wno-unnecessary-virtual-specifier’ may have been intended to silence earlier diagnostics
+[1702/3116] Building AArch64GenCallingConv.inc...
+[1703/3116] Building AArch64GenAsmWriter.inc...
+[1704/3116] Building AArch64GenAsmMatcher.inc...
+[1705/3116] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanVerifier.cpp.o
+[1706/3116] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanSLP.cpp.o
+[1707/3116] Building AArch64GenAsmWriter1.inc...
+[1708/3116] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wno-unnecessary-virtual-specifier -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanRecipes.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanRecipes.cpp: In function ‘void scalarizeInstruction(const llvm::Instruction*, llvm::VPReplicateRecipe*, const llvm::VPLane&, llvm::VPTransformState&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanRecipes.cpp:2591:9: error: ‘struct llvm::VPTransformState’ has no member named ‘addNewMetadata’
+ 2591 |   State.addNewMetadata(Cloned, Instr);
+      |         ^~~~~~~~~~~~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unnecessary-virtual-specifier’ may have been intended to silence earlier diagnostics
+[1709/3116] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wno-unnecessary-virtual-specifier -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.cpp: In constructor ‘llvm::VPTransformState::VPTransformState(const llvm::TargetTransformInfo*, llvm::ElementCount, llvm::LoopInfo*, llvm::DominatorTree*, llvm::AssumptionCache*, llvm::IRBuilderBase&, llvm::VPlan*, llvm::Loop*, llvm::Type*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.cpp:222:60: error: class ‘llvm::VPTransformState’ does not have any field named ‘ILV’
+  222 |     : TTI(TTI), VF(VF), CFG(DT), LI(LI), Builder(Builder), ILV(ILV), Plan(Plan),
+      |                                                            ^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.cpp:222:64: error: ‘ILV’ was not declared in this scope
+  222 |     : TTI(TTI), VF(VF), CFG(DT), LI(LI), Builder(Builder), ILV(ILV), Plan(Plan),
+      |                                                                ^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.cpp:223:45: error: class ‘llvm::VPTransformState’ does not have any field named ‘LVer’
+  223 |       CurrentParentLoop(CurrentParentLoop), LVer(nullptr), TypeAnalysis(CanonicalIVTy),
+      |                                             ^~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unnecessary-virtual-specifier’ may have been intended to silence earlier diagnostics
+[1710/3116] Building AArch64GenDisassemblerTables.inc...
+[1711/3116] Building X86GenSubtargetInfo.inc...
+[1712/3116] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUnroll.cpp.o
+[1713/3116] Building AArch64GenExegesis.inc...
+[1714/3116] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanAnalysis.cpp.o
+[1715/3116] Building AArch64GenMCCodeEmitter.inc...
+[1716/3116] Building AArch64GenDAGISel.inc...
+[1717/3116] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanConstruction.cpp.o
+[1718/3116] Building X86GenInstrInfo.inc...
+[1719/3116] Building AArch64GenFastISel.inc...
+[1720/3116] Building AArch64GenSubtargetInfo.inc...
+[1721/3116] Building AArch64GenGlobalISel.inc...
+[1722/3116] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[1723/3116] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanTransforms.cpp.o
+[1724/3116] Building AArch64GenInstrInfo.inc...
+[1725/3116] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:443 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+137.35user 10.11system 0:15.57elapsed 947%CPU (0avgtext+0avgdata 995968maxresident)k
+0inputs+841008outputs (2743major+5557394minor)pagefaults 0swaps
