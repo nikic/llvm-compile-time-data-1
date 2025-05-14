@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+1.	/tmp/llvm-project-build-stage1/lib/clang/21/include/emmintrin.h:2453:10 <Spelling=/tmp/llvm-project-build-stage1/lib/clang/21/include/emmintrin.h:72:46>: current parser token ')'
+2.	/tmp/llvm-project-build-stage1/lib/clang/21/include/emmintrin.h:2452:79: parsing function body '_mm_mul_su32'
+3.	/tmp/llvm-project-build-stage1/lib/clang/21/include/emmintrin.h:2452:79: in compound statement ('{}')
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang     0x0000558f929c6e60 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang     0x0000558f929c4d54 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang     0x0000558f92916bc8
+3  libc.so.6 0x00007ff248299520
+4  clang     0x0000558f95718947 clang::computeDependence(clang::ShuffleVectorExpr*) + 71
+5  clang     0x0000558f95857c7f clang::ShuffleVectorExpr::ShuffleVectorExpr(clang::ASTContext const&, llvm::ArrayRef<clang::Expr*>, clang::QualType, clang::SourceLocation, clang::SourceLocation) + 239
+6  clang     0x0000558f9496995e clang::Sema::BuiltinShuffleVector(clang::CallExpr*) + 1054
+7  clang     0x0000558f94998134 clang::Sema::CheckBuiltinFunctionCall(clang::FunctionDecl*, unsigned int, clang::CallExpr*) + 1028
+8  clang     0x0000558f94c92992 clang::Sema::BuildResolvedCallExpr(clang::Expr*, clang::NamedDecl*, clang::SourceLocation, llvm::ArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*, bool, clang::CallExpr::ADLCallKind) + 3602
+9  clang     0x0000558f94c52b3b clang::Sema::ActOnCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*) + 91
+10 clang     0x0000558f9478f364 clang::Parser::ParsePostfixExpressionSuffix(clang::ActionResult<clang::Expr*, true>) + 1252
+11 clang     0x0000558f947885a4 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 916
+12 clang     0x0000558f9478a54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+13 clang     0x0000558f9479448f clang::Parser::ParseParenExpression(clang::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) + 3839
+14 clang     0x0000558f94788b3f clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 2351
+15 clang     0x0000558f9478a54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+16 clang     0x0000558f9479448f clang::Parser::ParseParenExpression(clang::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) + 3839
+17 clang     0x0000558f94788b3f clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 2351
+18 clang     0x0000558f9478a54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+19 clang     0x0000558f9478a77d clang::Parser::ParseAssignmentExpression(clang::TypeCastState) + 61
+20 clang     0x0000558f9478aa6e clang::Parser::ParseExpressionList(llvm::SmallVectorImpl<clang::Expr*>&, llvm::function_ref<void ()>, bool, bool) + 126
+21 clang     0x0000558f9478fad5 clang::Parser::ParsePostfixExpressionSuffix(clang::ActionResult<clang::Expr*, true>) + 3157
+22 clang     0x0000558f947885a4 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 916
+23 clang     0x0000558f9478a54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+24 clang     0x0000558f9478a77d clang::Parser::ParseAssignmentExpression(clang::TypeCastState) + 61
+25 clang     0x0000558f9478a87a clang::Parser::ParseSimpleExpressionList(llvm::SmallVectorImpl<clang::Expr*>&) + 58
+26 clang     0x0000558f94794297 clang::Parser::ParseParenExpression(clang::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) + 3335
+27 clang     0x0000558f94788b3f clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 2351
+28 clang     0x0000558f9478a54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+29 clang     0x0000558f9479448f clang::Parser::ParseParenExpression(clang::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) + 3839
+30 clang     0x0000558f94788b3f clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 2351
+31 clang     0x0000558f9478a54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+32 clang     0x0000558f9478a77d clang::Parser::ParseAssignmentExpression(clang::TypeCastState) + 61
+33 clang     0x0000558f9478aa6e clang::Parser::ParseExpressionList(llvm::SmallVectorImpl<clang::Expr*>&, llvm::function_ref<void ()>, bool, bool) + 126
+34 clang     0x0000558f9478fad5 clang::Parser::ParsePostfixExpressionSuffix(clang::ActionResult<clang::Expr*, true>) + 3157
+35 clang     0x0000558f947885a4 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 916
+36 clang     0x0000558f9478a54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+37 clang     0x0000558f9479448f clang::Parser::ParseParenExpression(clang::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) + 3839
+38 clang     0x0000558f94788b3f clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 2351
+39 clang     0x0000558f9478a54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+40 clang     0x0000558f9478a77d clang::Parser::ParseAssignmentExpression(clang::TypeCastState) + 61
+41 clang     0x0000558f9478ee6d clang::Parser::ParseExpression(clang::TypeCastState) + 13
+42 clang     0x0000558f9480ffbd clang::Parser::ParseReturnStatement() + 141
+43 clang     0x0000558f9481553c clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) + 3660
+44 clang     0x0000558f9481623d clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) + 365
+45 clang     0x0000558f9481e034 clang::Parser::ParseCompoundStatementBody(bool) + 1316
+46 clang     0x0000558f9481eafa clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) + 218
+47 clang     0x0000558f9470acac clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) + 1084
+48 clang     0x0000558f94756877 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::SourceLocation*, clang::Parser::ForRangeInit*) + 5223
+49 clang     0x0000558f94703f1c clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) + 1404
+50 clang     0x0000558f94704a4e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) + 942
+51 clang     0x0000558f9470dbb2 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 802
+52 clang     0x0000558f9470f365 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 549
+53 clang     0x0000558f946fdc2a clang::ParseAST(clang::Sema&, bool, bool) + 586
+54 clang     0x0000558f9360e13e clang::FrontendAction::Execute() + 46
+55 clang     0x0000558f9357e13b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+56 clang     0x0000558f936eb89c clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+57 clang     0x0000558f9121f996 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8742
+58 clang     0x0000558f912161a2
+59 clang     0x0000558f93341ced
+60 clang     0x0000558f92916ff7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+61 clang     0x0000558f93342087
+62 clang     0x0000558f93304601 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+63 clang     0x0000558f93305679 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+64 clang     0x0000558f933194d7 clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 551
+65 clang     0x0000558f9121b041 clang_main(int, char**, llvm::ToolContext const&) + 8353
+66 clang     0x0000558f910f0e8b main + 107
+67 libc.so.6 0x00007ff248280d90
+68 libc.so.6 0x00007ff248280e40 __libc_start_main + 128
+69 clang     0x0000558f91215c05 _start + 37
+clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/blake3-66eccc.c
+clang: note: diagnostic msg: /tmp/blake3-66eccc.sh
+clang: note: diagnostic msg: 
+
+********************
+[156/2852] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/raw_socket_stream.cpp.o
+[157/2852] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Memory.cpp.o
+[158/2852] Building C object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_dispatch.c.o
+FAILED: lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_dispatch.c.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support/BLAKE3 -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BLAKE3 -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -MD -MT lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_dispatch.c.o -MF lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_dispatch.c.o.d -o lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_dispatch.c.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BLAKE3/blake3_dispatch.c
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support/BLAKE3 -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BLAKE3 -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -MD -MT lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_dispatch.c.o -MF lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_dispatch.c.o.d -o lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_dispatch.c.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BLAKE3/blake3_dispatch.c
+1.	/tmp/llvm-project-build-stage1/lib/clang/21/include/emmintrin.h:2453:10 <Spelling=/tmp/llvm-project-build-stage1/lib/clang/21/include/emmintrin.h:72:46>: current parser token ')'
+2.	/tmp/llvm-project-build-stage1/lib/clang/21/include/emmintrin.h:2452:79: parsing function body '_mm_mul_su32'
+3.	/tmp/llvm-project-build-stage1/lib/clang/21/include/emmintrin.h:2452:79: in compound statement ('{}')
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang     0x0000558ab063ae60 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang     0x0000558ab0638d54 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang     0x0000558ab058abc8
+3  libc.so.6 0x00007f1b600e7520
+4  clang     0x0000558ab338c947 clang::computeDependence(clang::ShuffleVectorExpr*) + 71
+5  clang     0x0000558ab34cbc7f clang::ShuffleVectorExpr::ShuffleVectorExpr(clang::ASTContext const&, llvm::ArrayRef<clang::Expr*>, clang::QualType, clang::SourceLocation, clang::SourceLocation) + 239
+6  clang     0x0000558ab25dd95e clang::Sema::BuiltinShuffleVector(clang::CallExpr*) + 1054
+7  clang     0x0000558ab260c134 clang::Sema::CheckBuiltinFunctionCall(clang::FunctionDecl*, unsigned int, clang::CallExpr*) + 1028
+8  clang     0x0000558ab2906992 clang::Sema::BuildResolvedCallExpr(clang::Expr*, clang::NamedDecl*, clang::SourceLocation, llvm::ArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*, bool, clang::CallExpr::ADLCallKind) + 3602
+9  clang     0x0000558ab28c6b3b clang::Sema::ActOnCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*) + 91
+10 clang     0x0000558ab2403364 clang::Parser::ParsePostfixExpressionSuffix(clang::ActionResult<clang::Expr*, true>) + 1252
+11 clang     0x0000558ab23fc5a4 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 916
+12 clang     0x0000558ab23fe54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+13 clang     0x0000558ab240848f clang::Parser::ParseParenExpression(clang::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) + 3839
+14 clang     0x0000558ab23fcb3f clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 2351
+15 clang     0x0000558ab23fe54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+16 clang     0x0000558ab240848f clang::Parser::ParseParenExpression(clang::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) + 3839
+17 clang     0x0000558ab23fcb3f clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 2351
+18 clang     0x0000558ab23fe54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+19 clang     0x0000558ab23fe77d clang::Parser::ParseAssignmentExpression(clang::TypeCastState) + 61
+20 clang     0x0000558ab23fea6e clang::Parser::ParseExpressionList(llvm::SmallVectorImpl<clang::Expr*>&, llvm::function_ref<void ()>, bool, bool) + 126
+21 clang     0x0000558ab2403ad5 clang::Parser::ParsePostfixExpressionSuffix(clang::ActionResult<clang::Expr*, true>) + 3157
+22 clang     0x0000558ab23fc5a4 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 916
+23 clang     0x0000558ab23fe54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+24 clang     0x0000558ab23fe77d clang::Parser::ParseAssignmentExpression(clang::TypeCastState) + 61
+25 clang     0x0000558ab23fe87a clang::Parser::ParseSimpleExpressionList(llvm::SmallVectorImpl<clang::Expr*>&) + 58
+26 clang     0x0000558ab2408297 clang::Parser::ParseParenExpression(clang::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) + 3335
+27 clang     0x0000558ab23fcb3f clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 2351
+28 clang     0x0000558ab23fe54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+29 clang     0x0000558ab240848f clang::Parser::ParseParenExpression(clang::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) + 3839
+30 clang     0x0000558ab23fcb3f clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 2351
+31 clang     0x0000558ab23fe54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+32 clang     0x0000558ab23fe77d clang::Parser::ParseAssignmentExpression(clang::TypeCastState) + 61
+33 clang     0x0000558ab23fea6e clang::Parser::ParseExpressionList(llvm::SmallVectorImpl<clang::Expr*>&, llvm::function_ref<void ()>, bool, bool) + 126
+34 clang     0x0000558ab2403ad5 clang::Parser::ParsePostfixExpressionSuffix(clang::ActionResult<clang::Expr*, true>) + 3157
+35 clang     0x0000558ab23fc5a4 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 916
+36 clang     0x0000558ab23fe54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+37 clang     0x0000558ab240848f clang::Parser::ParseParenExpression(clang::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) + 3839
+38 clang     0x0000558ab23fcb3f clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 2351
+39 clang     0x0000558ab23fe54e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+40 clang     0x0000558ab23fe77d clang::Parser::ParseAssignmentExpression(clang::TypeCastState) + 61
+41 clang     0x0000558ab2402e6d clang::Parser::ParseExpression(clang::TypeCastState) + 13
+42 clang     0x0000558ab2483fbd clang::Parser::ParseReturnStatement() + 141
+43 clang     0x0000558ab248953c clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) + 3660
+44 clang     0x0000558ab248a23d clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) + 365
+45 clang     0x0000558ab2492034 clang::Parser::ParseCompoundStatementBody(bool) + 1316
+46 clang     0x0000558ab2492afa clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) + 218
+47 clang     0x0000558ab237ecac clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) + 1084
+48 clang     0x0000558ab23ca877 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::SourceLocation*, clang::Parser::ForRangeInit*) + 5223
+49 clang     0x0000558ab2377f1c clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) + 1404
+50 clang     0x0000558ab2378a4e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) + 942
+51 clang     0x0000558ab2381bb2 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 802
+52 clang     0x0000558ab2383365 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 549
+53 clang     0x0000558ab2371c2a clang::ParseAST(clang::Sema&, bool, bool) + 586
+54 clang     0x0000558ab128213e clang::FrontendAction::Execute() + 46
+55 clang     0x0000558ab11f213b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+56 clang     0x0000558ab135f89c clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+57 clang     0x0000558aaee93996 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8742
+58 clang     0x0000558aaee8a1a2
+59 clang     0x0000558ab0fb5ced
+60 clang     0x0000558ab058aff7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+61 clang     0x0000558ab0fb6087
+62 clang     0x0000558ab0f78601 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+63 clang     0x0000558ab0f79679 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+64 clang     0x0000558ab0f8d4d7 clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 551
+65 clang     0x0000558aaee8f041 clang_main(int, char**, llvm::ToolContext const&) + 8353
+66 clang     0x0000558aaed64e8b main + 107
+67 libc.so.6 0x00007f1b600ced90
+68 libc.so.6 0x00007f1b600cee40 __libc_start_main + 128
+69 clang     0x0000558aaee89c05 _start + 37
+clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/blake3_dispatch-d5768b.c
+clang: note: diagnostic msg: /tmp/blake3_dispatch-d5768b.sh
+clang: note: diagnostic msg: 
+
+********************
+[159/2852] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/raw_ostream.cpp.o
+[160/2852] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/YAMLTraits.cpp.o
+[161/2852] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RWMutex.cpp.o
+[162/2852] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/YAMLParser.cpp.o
+[163/2852] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Threading.cpp.o
+[164/2852] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Process.cpp.o
+[165/2852] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Program.cpp.o
+[166/2852] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Path.cpp.o
+[167/2852] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/Error.cpp.o
+[168/2852] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Signals.cpp.o
+[169/2852] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/DetailedRecordsBackend.cpp.o
+[170/2852] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/VirtualFileSystem.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
