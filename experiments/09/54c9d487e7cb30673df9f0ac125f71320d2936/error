@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - found
+-- Looking for dladdr
+-- Looking for dladdr - found
+-- Clang version: 21.0.0git
+-- Looking for include file sys/inotify.h
+-- Looking for include file sys/inotify.h - found
+-- Performing Test HAVE_LINKER_FLAG_LONG_PLT
+-- Performing Test HAVE_LINKER_FLAG_LONG_PLT - Success
+-- Not building llvm-mt because libxml2 is not available
+-- Registering ExampleIRTransforms as a pass plugin (static build: OFF)
+-- Registering Bye as a pass plugin (static build: OFF)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/llvm-project-build-stage1
+ninja: Entering directory `/tmp/llvm-project-build-stage1'
+[1/3142] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/Demangle.cpp.o
+[2/3142] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/DLangDemangle.cpp.o
+[3/3142] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangle.cpp.o
+[4/3142] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o
+[5/3142] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/RustDemangle.cpp.o
+[6/3142] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o
+[7/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AutoConvert.cpp.o
+[8/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ABIBreak.cpp.o
+[9/3142] Linking CXX static library lib/libLLVMDemangle.a
+[10/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AArch64BuildAttributes.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/AArch64BuildAttributes.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/AArch64BuildAttributes.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/AArch64BuildAttributes.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/AArch64BuildAttributes.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AArch64BuildAttributes.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLFunctionalExtras.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AArch64BuildAttributes.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AArch64BuildAttributes.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[11/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMWinEH.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/ARMWinEH.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/ARMWinEH.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/ARMWinEH.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/ARMWinEH.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMWinEH.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ErrorHandling.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:50,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMWinEH.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMWinEH.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[12/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMBuildAttributes.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/ARMBuildAttributes.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/ARMBuildAttributes.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/ARMBuildAttributes.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/ARMBuildAttributes.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMBuildAttributes.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMBuildAttributes.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[13/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Allocator.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallVector.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Allocator.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Allocator.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[14/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FormatVariadic.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/FormatVariadic.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/FormatVariadic.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/FormatVariadic.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/FormatVariadic.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/FormatVariadic.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ErrorHandling.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:50,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/FormatVariadic.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/FormatVariadic.cpp:8:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[15/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AArch64AttributeParser.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/AArch64AttributeParser.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/AArch64AttributeParser.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/AArch64AttributeParser.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/AArch64AttributeParser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AArch64AttributeParser.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AArch64AttributeParser.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AArch64AttributeParser.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[16/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Base64.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/Base64.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/Base64.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/Base64.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/Base64.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Base64.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Base64.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Base64.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[17/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamError.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamError.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamError.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamError.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamError.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BinaryStreamError.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLFunctionalExtras.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BinaryStreamError.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BinaryStreamError.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[18/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APSInt.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/APSInt.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/APSInt.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/APSInt.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/APSInt.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APSInt.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APSInt.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[19/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFixedPoint.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFixedPoint.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFixedPoint.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[20/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamWriter.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamWriter.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamWriter.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamWriter.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamWriter.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BinaryStreamWriter.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ErrorHandling.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:50,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BinaryStreamWriter.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BinaryStreamWriter.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[21/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APInt.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APInt.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[22/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamReader.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamReader.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamReader.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamReader.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamReader.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BinaryStreamReader.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ErrorHandling.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:50,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BinaryStreamReader.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BinaryStreamReader.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[23/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamRef.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamRef.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamRef.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamRef.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamRef.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BinaryStreamRef.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ErrorHandling.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:50,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BinaryStreamRef.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BinaryStreamRef.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[24/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLFunctionalExtras.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AMDGPUMetadata.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[25/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFloat.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFloat.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[26/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+[27/3142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallVector.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:42,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Compiler.h:719:40: error: missing binary operator before token "("
+  719 | #if defined(__clang__) && __has_warning("-Wunnecessary-virtual-specifier")
+      |                                        ^
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:443 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+8.43user 0.97system 0:00.99elapsed 944%CPU (0avgtext+0avgdata 201432maxresident)k
+0inputs+78696outputs (5major+564057minor)pagefaults 0swaps
