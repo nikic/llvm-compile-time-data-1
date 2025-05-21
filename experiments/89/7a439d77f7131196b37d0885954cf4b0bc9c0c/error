@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+1 warning and 15 errors generated.
+[20/2877] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wno-unnecessary-virtual-specifier -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp
+warning: cast from 'const void *' to 'void *' drops const qualifier [-Wcast-qual]
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:47:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ADL.h:13:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator:66:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf_iterator.h:35:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/streambuf:41:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ios_base.h:41:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h:857:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.tcc:47:21: error: no matching constructor for initialization of '_Impl'
+   47 |       _M_impl = new _Impl(*__other._M_impl, 1);
+      |                     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h:576:5: note: candidate constructor not viable: requires 2 arguments, but 2 were provided
+  576 |     _Impl(const _Impl&, size_t);
+      |     ^     ~~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h:577:5: note: candidate constructor not viable: requires 2 arguments, but 2 were provided
+  577 |     _Impl(const char*, size_t);
+      |     ^     ~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h:578:5: note: candidate constructor not viable: requires 1 argument, but 2 were provided
+  578 |     _Impl(size_t) throw();
+      |     ^     ~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h:582:5: note: candidate constructor not viable: requires 1 argument, but 2 were provided
+  582 |     _Impl(const _Impl&);  // Not defined.
+      |     ^     ~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:47:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ADL.h:13:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator:66:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf_iterator.h:35:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/streambuf:41:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ios_base.h:41:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h:857:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.tcc:65:26: error: no matching constructor for initialization of '_Impl'
+   65 |       _Impl* __tmp = new _Impl(*_M_impl, 1);
+      |                          ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h:576:5: note: candidate constructor not viable: requires 2 arguments, but 2 were provided
+  576 |     _Impl(const _Impl&, size_t);
+      |     ^     ~~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h:577:5: note: candidate constructor not viable: requires 2 arguments, but 2 were provided
+  577 |     _Impl(const char*, size_t);
+      |     ^     ~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h:578:5: note: candidate constructor not viable: requires 1 argument, but 2 were provided
+  578 |     _Impl(size_t) throw();
+      |     ^     ~~~~~~
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h:582:5: note: candidate constructor not viable: requires 1 argument, but 2 were provided
+  582 |     _Impl(const _Impl&);  // Not defined.
+      |     ^     ~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:15:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttrParserCompact.h:14:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/DataExtractor.h:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:432:13: error: no matching constructor for initialization of 'ErrorList'
+  432 |         new ErrorList(E1.takePayload(), E2.takePayload())));
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:397:3: note: candidate constructor not viable: requires 2 arguments, but 2 were provided
+  397 |   ErrorList(std::unique_ptr<ErrorInfoBase> Payload1,
+      |   ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  398 |             std::unique_ptr<ErrorInfoBase> Payload2) {
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:406:3: note: candidate constructor not viable: requires 1 argument, but 2 were provided
+  406 |   ErrorList(ErrorList const &) = delete;
+      |   ^         ~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1387:40: error: no matching constructor for initialization of 'FileError'
+ 1387 |         std::unique_ptr<FileError>(new FileError(F, Line, std::move(Payload))));
+      |                                        ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1371:3: note: candidate constructor not viable: requires 3 arguments, but 3 were provided
+ 1371 |   FileError(const Twine &F, std::optional<size_t> LineNum,
+      |   ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1372 |             std::unique_ptr<ErrorInfoBase> E) {
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1340:16: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 3 were provided
+ 1340 | class LLVM_ABI FileError final : public ErrorInfo<FileError> {
+      |                ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1340:16: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 3 were provided
+ 1340 | class LLVM_ABI FileError final : public ErrorInfo<FileError> {
+      |                ^~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:53:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/algorithm:74:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_algorithm_defs.h:13:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional:59:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:152:33: error: no matching constructor for initialization of '(lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21)'
+  152 |             ::new (__dest._M_access()) _Functor(std::forward<_Fn>(__f));
+      |                                        ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:215:6: note: in instantiation of function template specialization 'std::_Function_base::_Base_manager<(lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21)>::_M_create<(lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21)>' requested here
+  215 |             _M_create(__functor, std::forward<_Fn>(__f), _Local_storage());
+      |             ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:449:21: note: in instantiation of function template specialization 'std::_Function_base::_Base_manager<(lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21)>::_M_init_functor<(lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21)>' requested here
+  449 |               _My_handler::_M_init_functor(_M_functor,
+      |                            ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:9: note: in instantiation of function template specialization 'std::function<int (const llvm::Error &)>::function<(lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21), void>' requested here
+ 1447 |         GetExitCode([=](const Error &) { return DefaultErrorExitCode; }) {}
+      |         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 1 was provided
+ 1447 |         GetExitCode([=](const Error &) { return DefaultErrorExitCode; }) {}
+      |                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 1 was provided
+ 1447 |         GetExitCode([=](const Error &) { return DefaultErrorExitCode; }) {}
+      |                     ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:53:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/algorithm:74:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_algorithm_defs.h:13:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional:59:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:152:33: error: no matching constructor for initialization of '(lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21)'
+  152 |             ::new (__dest._M_access()) _Functor(std::forward<_Fn>(__f));
+      |                                        ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:215:6: note: in instantiation of function template specialization 'std::_Function_base::_Base_manager<(lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21)>::_M_create<const (lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21) &>' requested here
+  215 |             _M_create(__functor, std::forward<_Fn>(__f), _Local_storage());
+      |             ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:198:8: note: in instantiation of function template specialization 'std::_Function_base::_Base_manager<(lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21)>::_M_init_functor<const (lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21) &>' requested here
+  198 |               _M_init_functor(__dest,
+      |               ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:282:13: note: in instantiation of member function 'std::_Function_base::_Base_manager<(lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21)>::_M_manager' requested here
+  282 |             _Base::_M_manager(__dest, __source, __op);
+      |                    ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:452:35: note: in instantiation of member function 'std::_Function_handler<int (const llvm::Error &), (lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21)>::_M_manager' requested here
+  452 |               _M_manager = &_My_handler::_M_manager;
+      |                                          ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:9: note: in instantiation of function template specialization 'std::function<int (const llvm::Error &)>::function<(lambda at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21), void>' requested here
+ 1447 |         GetExitCode([=](const Error &) { return DefaultErrorExitCode; }) {}
+      |         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 1 was provided
+ 1447 |         GetExitCode([=](const Error &) { return DefaultErrorExitCode; }) {}
+      |                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:1447:21: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 1 was provided
+ 1447 |         GetExitCode([=](const Error &) { return DefaultErrorExitCode; }) {}
+      |                     ^
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wno-unnecessary-virtual-specifier -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17 -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp
+1.	<eof> parser at end of file
+2.	/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringSwitch.h:52:12: instantiating function definition 'llvm::StringSwitch<const char *>::StringSwitch'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x000056020d7112f0 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x000056020d70f1e4 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x000056020d660c28
+3  libc.so.6 0x00007fb4b9d48520
+4  clang++   0x00005602100c26f0 clang::Sema::DiagnoseUnexpandedParameterPack(clang::Expr*, clang::Sema::UnexpandedParameterPackContext) + 32
+5  clang++   0x000056020f89c98b clang::Sema::BuildMemberInitializer(clang::ValueDecl*, clang::Expr*, clang::SourceLocation) + 123
+6  clang++   0x000056021009dfa2 clang::Sema::InstantiateMemInitializers(clang::CXXConstructorDecl*, clang::CXXConstructorDecl const*, clang::MultiLevelTemplateArgumentList const&) + 1058
+7  clang++   0x00005602100a4fcd clang::Sema::InstantiateFunctionDefinition(clang::SourceLocation, clang::FunctionDecl*, bool, bool, bool) + 3965
+8  clang++   0x00005602100a3140 clang::Sema::PerformPendingInstantiations(bool, bool) + 288
+9  clang++   0x000056020f60bdea
+10 clang++   0x000056020f60c644 clang::Sema::ActOnEndOfTranslationUnit() + 148
+11 clang++   0x000056020f467fed clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 1101
+12 clang++   0x000056020f45791a clang::ParseAST(clang::Sema&, bool, bool) + 586
+13 clang++   0x000056020e35667e clang::FrontendAction::Execute() + 46
+14 clang++   0x000056020e2c634b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+15 clang++   0x000056020e43321c clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+16 clang++   0x000056020bf61c36 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8758
+17 clang++   0x000056020bf58452
+18 clang++   0x000056020e0891ed
+19 clang++   0x000056020d661057 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+20 clang++   0x000056020e089587
+21 clang++   0x000056020e04b591 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+22 clang++   0x000056020e04c609 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+23 clang++   0x000056020e0608bf clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+24 clang++   0x000056020bf5d2d1 clang_main(int, char**, llvm::ToolContext const&) + 8337
+25 clang++   0x000056020be329cb main + 107
+26 libc.so.6 0x00007fb4b9d2fd90
+27 libc.so.6 0x00007fb4b9d2fe40 __libc_start_main + 128
+28 clang++   0x000056020bf57eb5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/ARMAttributeParser-b539bf.cpp
+clang++: note: diagnostic msg: /tmp/ARMAttributeParser-b539bf.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:443 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
