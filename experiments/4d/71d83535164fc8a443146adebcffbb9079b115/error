@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1171:1: note: candidate template ignored: requirement 'has_SequenceTraits<unsigned int>::value' was not satisfied [with T = unsigned int, Context = llvm::yaml::EmptyContext]
+ 1171 | yamlize(IO &io, T &Seq, bool, Context &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1005:25: error: no matching constructor for initialization of 'raw_svector_ostream'
+ 1005 |     raw_svector_ostream Buffer(Storage);
+      |                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:944:7: note: in instantiation of function template specialization 'llvm::yaml::yamlize<bool>' requested here
+  944 |       yamlize(*this, Val, Required, Ctx);
+      |       ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:926:11: note: in instantiation of function template specialization 'llvm::yaml::IO::processKeyWithDefault<bool, llvm::yaml::EmptyContext>' requested here
+  926 |     this->processKeyWithDefault(Key, Val, static_cast<const T &>(Default),
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:901:5: note: in instantiation of function template specialization 'llvm::yaml::IO::mapOptionalWithContext<bool, llvm::yaml::EmptyContext, bool>' requested here
+  901 |     mapOptionalWithContext(Key, Val, Default, Ctx);
+      |     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp:127:9: note: in instantiation of function template specialization 'llvm::yaml::IO::mapOptional<bool, bool>' requested here
+  127 |     YIO.mapOptional(Kernel::Arg::Key::IsConst, MD.mIsConst, false);
+      |         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:708:12: note: candidate constructor not viable: requires single argument 'O', but no arguments were provided
+  708 |   explicit raw_svector_ostream(SmallVectorImpl<char> &O)
+      |            ^                   ~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:692:16: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 0 were provided
+  692 | class LLVM_ABI raw_svector_ostream : public raw_pwrite_stream {
+      |                ^~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1005:25: error: no matching constructor for initialization of 'raw_svector_ostream'
+ 1005 |     raw_svector_ostream Buffer(Storage);
+      |                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:958:7: note: in instantiation of function template specialization 'llvm::yaml::yamlize<unsigned long>' requested here
+  958 |       yamlize(*this, Val, Required, Ctx);
+      |       ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:885:11: note: in instantiation of function template specialization 'llvm::yaml::IO::processKey<unsigned long, llvm::yaml::EmptyContext>' requested here
+  885 |     this->processKey(Key, Val, true, Ctx);
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp:137:9: note: in instantiation of function template specialization 'llvm::yaml::IO::mapRequired<unsigned long>' requested here
+  137 |     YIO.mapRequired(Kernel::CodeProps::Key::KernargSegmentSize,
+      |         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:708:12: note: candidate constructor not viable: requires single argument 'O', but no arguments were provided
+  708 |   explicit raw_svector_ostream(SmallVectorImpl<char> &O)
+      |            ^                   ~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:692:16: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 0 were provided
+  692 | class LLVM_ABI raw_svector_ostream : public raw_pwrite_stream {
+      |                ^~~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1005:25: error: no matching constructor for initialization of 'raw_svector_ostream'
+ 1005 |     raw_svector_ostream Buffer(Storage);
+      |                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:944:7: note: in instantiation of function template specialization 'llvm::yaml::yamlize<unsigned short>' requested here
+  944 |       yamlize(*this, Val, Required, Ctx);
+      |       ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:926:11: note: in instantiation of function template specialization 'llvm::yaml::IO::processKeyWithDefault<unsigned short, llvm::yaml::EmptyContext>' requested here
+  926 |     this->processKeyWithDefault(Key, Val, static_cast<const T &>(Default),
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:901:5: note: in instantiation of function template specialization 'llvm::yaml::IO::mapOptionalWithContext<unsigned short, llvm::yaml::EmptyContext, unsigned short>' requested here
+  901 |     mapOptionalWithContext(Key, Val, Default, Ctx);
+      |     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp:147:9: note: in instantiation of function template specialization 'llvm::yaml::IO::mapOptional<unsigned short, unsigned short>' requested here
+  147 |     YIO.mapOptional(Kernel::CodeProps::Key::NumSGPRs,
+      |         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:708:12: note: candidate constructor not viable: requires single argument 'O', but no arguments were provided
+  708 |   explicit raw_svector_ostream(SmallVectorImpl<char> &O)
+      |            ^                   ~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:692:16: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 0 were provided
+  692 | class LLVM_ABI raw_svector_ostream : public raw_pwrite_stream {
+      |                ^~~~~~~~~~~~~~~~~~~
+error: no matching function for call to 'yamlize'
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:885:11: note: in instantiation of function template specialization 'llvm::yaml::IO::processKey<std::basic_string<char>, llvm::yaml::EmptyContext>' requested here
+  885 |     this->processKey(Key, Val, true, Ctx);
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp:183:9: note: in instantiation of function template specialization 'llvm::yaml::IO::mapRequired<std::basic_string<char>>' requested here
+  183 |     YIO.mapRequired(Kernel::Key::Name, MD.mName);
+      |         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:982:1: note: candidate template ignored: requirement 'has_ScalarEnumerationTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = std::basic_string<char>]
+  982 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:990:1: note: candidate template ignored: requirement 'has_ScalarBitSetTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = std::basic_string<char>]
+  990 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1001:52: note: candidate template ignored: substitution failure [with T = std::basic_string<char>]
+ 1001 | std::enable_if_t<has_ScalarTraits<T>::value, void> yamlize(IO &io, T &Val, bool,
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1022:1: note: candidate template ignored: requirement 'has_BlockScalarTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = std::basic_string<char>]
+ 1022 | yamlize(IO &YamlIO, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1041:1: note: candidate template ignored: requirement 'has_TaggedScalarTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = std::basic_string<char>]
+ 1041 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1079:1: note: candidate template ignored: requirement 'validatedMappingTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, llvm::yaml::EmptyContext>::value' was not satisfied [with T = std::basic_string<char>, Context = llvm::yaml::EmptyContext]
+ 1079 | yamlize(IO &io, T &Val, bool, Context &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1120:1: note: candidate template ignored: requirement 'unvalidatedMappingTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, llvm::yaml::EmptyContext>::value' was not satisfied [with T = std::basic_string<char>, Context = llvm::yaml::EmptyContext]
+ 1120 | yamlize(IO &io, T &Val, bool, Context &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1136:1: note: candidate template ignored: requirement 'has_CustomMappingTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = std::basic_string<char>]
+ 1136 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1151:1: note: candidate template ignored: requirement 'has_PolymorphicTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = std::basic_string<char>]
+ 1151 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1165:1: note: candidate template ignored: requirement 'missingTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, llvm::yaml::EmptyContext>::value' was not satisfied [with T = std::basic_string<char>]
+ 1165 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1171:1: note: candidate template ignored: requirement 'has_SequenceTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = std::basic_string<char>, Context = llvm::yaml::EmptyContext]
+ 1171 | yamlize(IO &io, T &Seq, bool, Context &Ctx) {
+      | ^
+error: no matching function for call to 'yamlize'
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:944:7: note: in instantiation of function template specialization 'llvm::yaml::yamlize<std::vector<std::basic_string<char>>, llvm::yaml::EmptyContext>' requested here
+  944 |       yamlize(*this, Val, Required, Ctx);
+      |       ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:926:11: note: in instantiation of function template specialization 'llvm::yaml::IO::processKeyWithDefault<std::vector<std::basic_string<char>>, llvm::yaml::EmptyContext>' requested here
+  926 |     this->processKeyWithDefault(Key, Val, static_cast<const T &>(Default),
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:901:5: note: in instantiation of function template specialization 'llvm::yaml::IO::mapOptionalWithContext<std::vector<std::basic_string<char>>, llvm::yaml::EmptyContext, std::vector<std::basic_string<char>>>' requested here
+  901 |     mapOptionalWithContext(Key, Val, Default, Ctx);
+      |     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/AMDGPUMetadata.cpp:203:9: note: in instantiation of function template specialization 'llvm::yaml::IO::mapOptional<std::vector<std::basic_string<char>>, std::vector<std::basic_string<char>>>' requested here
+  203 |     YIO.mapOptional(Key::Printf, MD.mPrintf, std::vector<std::string>());
+      |         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:982:1: note: candidate template ignored: requirement 'has_ScalarEnumerationTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type]
+  982 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:990:1: note: candidate template ignored: requirement 'has_ScalarBitSetTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type]
+  990 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1001:52: note: candidate template ignored: substitution failure [with T = type]
+ 1001 | std::enable_if_t<has_ScalarTraits<T>::value, void> yamlize(IO &io, T &Val, bool,
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1022:1: note: candidate template ignored: requirement 'has_BlockScalarTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type]
+ 1022 | yamlize(IO &YamlIO, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1041:1: note: candidate template ignored: requirement 'has_TaggedScalarTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type]
+ 1041 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1079:1: note: candidate template ignored: requirement 'validatedMappingTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, llvm::yaml::EmptyContext>::value' was not satisfied [with T = type, Context = llvm::yaml::EmptyContext]
+ 1079 | yamlize(IO &io, T &Val, bool, Context &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1120:1: note: candidate template ignored: requirement 'unvalidatedMappingTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, llvm::yaml::EmptyContext>::value' was not satisfied [with T = type, Context = llvm::yaml::EmptyContext]
+ 1120 | yamlize(IO &io, T &Val, bool, Context &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1136:1: note: candidate template ignored: requirement 'has_CustomMappingTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type]
+ 1136 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1151:1: note: candidate template ignored: requirement 'has_PolymorphicTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type]
+ 1151 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1165:1: note: candidate template ignored: requirement 'missingTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, llvm::yaml::EmptyContext>::value' was not satisfied [with T = type]
+ 1165 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1171:1: note: candidate template ignored: requirement 'has_SequenceTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type, Context = llvm::yaml::EmptyContext]
+ 1171 | yamlize(IO &io, T &Seq, bool, Context &Ctx) {
+      | ^
+error: no matching function for call to 'yamlize'
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:982:1: note: candidate template ignored: requirement 'has_ScalarEnumerationTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type]
+  982 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:990:1: note: candidate template ignored: requirement 'has_ScalarBitSetTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type]
+  990 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1001:52: note: candidate template ignored: substitution failure [with T = type]
+ 1001 | std::enable_if_t<has_ScalarTraits<T>::value, void> yamlize(IO &io, T &Val, bool,
+      |                                                    ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1022:1: note: candidate template ignored: requirement 'has_BlockScalarTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type]
+ 1022 | yamlize(IO &YamlIO, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1041:1: note: candidate template ignored: requirement 'has_TaggedScalarTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type]
+ 1041 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1079:1: note: candidate template ignored: requirement 'validatedMappingTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, llvm::yaml::EmptyContext>::value' was not satisfied [with T = type, Context = llvm::yaml::EmptyContext]
+ 1079 | yamlize(IO &io, T &Val, bool, Context &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1120:1: note: candidate template ignored: requirement 'unvalidatedMappingTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, llvm::yaml::EmptyContext>::value' was not satisfied [with T = type, Context = llvm::yaml::EmptyContext]
+ 1120 | yamlize(IO &io, T &Val, bool, Context &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1136:1: note: candidate template ignored: requirement 'has_CustomMappingTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type]
+ 1136 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1151:1: note: candidate template ignored: requirement 'has_PolymorphicTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type]
+ 1151 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1165:1: note: candidate template ignored: requirement 'missingTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, llvm::yaml::EmptyContext>::value' was not satisfied [with T = type]
+ 1165 | yamlize(IO &io, T &Val, bool, EmptyContext &Ctx) {
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/YAMLTraits.h:1171:1: note: candidate template ignored: requirement 'has_SequenceTraits<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>::value' was not satisfied [with T = type, Context = llvm::yaml::EmptyContext]
+ 1171 | yamlize(IO &io, T &Seq, bool, Context &Ctx) {
+      | ^
+1 warning and 10 errors generated.
+[17/2877] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o
+warning: cast from 'const void *' to 'void *' drops const qualifier [-Wcast-qual]
+1 warning generated.
+[18/2877] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o
+warning: cast from 'const void *' to 'void *' drops const qualifier [-Wcast-qual]
+1 warning generated.
+[19/2877] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o
+warning: cast from 'const void *' to 'void *' drops const qualifier [-Wcast-qual]
+1 warning generated.
+[20/2877] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+warning: cast from 'const void *' to 'void *' drops const qualifier [-Wcast-qual]
+1 warning generated.
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:443 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
