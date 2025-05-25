@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+[437/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMContextImpl.cpp.o
+[438/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ReplaceConstant.cpp.o
+[439/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Module.cpp.o
+[440/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PseudoProbe.cpp.o
+[441/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Statepoint.cpp.o
+[442/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/VectorTypeUtils.cpp.o
+[443/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ValueSymbolTable.cpp.o
+[444/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/RuntimeLibcalls.cpp.o
+[445/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/StructuralHash.cpp.o
+[446/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/User.cpp.o
+[447/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/SafepointIRVerifier.cpp.o
+[448/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/TypeFinder.cpp.o
+[449/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/TypedPointerType.cpp.o
+[450/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/VFABIDemangler.cpp.o
+[451/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Type.cpp.o
+[452/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/VectorBuilder.cpp.o
+[453/2854] Building CXX object lib/IRReader/CMakeFiles/LLVMIRReader.dir/IRReader.cpp.o
+[454/2854] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/OutlinedHashTree.cpp.o
+[455/2854] Building CXX object lib/IRPrinter/CMakeFiles/LLVMIRPrinter.dir/IRPrintingPasses.cpp.o
+[456/2854] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/OutlinedHashTreeRecord.cpp.o
+[457/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o
+[458/2854] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/CodeGenDataWriter.cpp.o
+[459/2854] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/StableFunctionMap.cpp.o
+[460/2854] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/CodeGenDataReader.cpp.o
+[461/2854] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/StableFunctionMapRecord.cpp.o
+[462/2854] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/CodeGenData.cpp.o
+[463/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AllocationOrder.cpp.o
+[464/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Metadata.cpp.o
+[465/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BreakFalseDeps.cpp.o
+[466/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchRelaxation.cpp.o
+[467/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o
+[468/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockPathCloning.cpp.o
+[469/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o
+[470/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o
+[471/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o
+[472/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSectionsProfileReader.cpp.o
+[473/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallBrPrepare.cpp.o
+[474/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGen.cpp.o
+[475/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CalcSpillWeights.cpp.o
+[476/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CFGuardLongjmp.cpp.o
+[477/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o
+[478/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o
+[479/2854] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Verifier.cpp.o
+[480/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o
+[481/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/DeadMachineInstructionElim.cpp.o
+[482/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/DetectDeadLanes.cpp.o
+[483/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CFIFixup.cpp.o
+[484/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenCommonISel.cpp.o
+[485/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/DroppedVariableStatsMIR.cpp.o
+[486/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CommandFlags.cpp.o
+[487/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AssignmentTrackingAnalysis.cpp.o
+[488/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/EdgeBundles.cpp.o
+[489/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CFIInstrInserter.cpp.o
+[490/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CriticalAntiDepBreaker.cpp.o
+[491/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/DFAPacketizer.cpp.o
+[492/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/EarlyIfConversion.cpp.o
+[493/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/EHContGuardTargets.cpp.o
+[494/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/DwarfEHPrepare.cpp.o
+[495/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExecutionDomainFix.cpp.o
+[496/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandPostRAPseudos.cpp.o
+[497/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCMetadataPrinter.cpp.o
+[498/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FEntryInserter.cpp.o
+[499/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandLargeDivRem.cpp.o
+[500/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ComplexDeinterleavingPass.cpp.o
+[501/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandReductions.cpp.o
+[502/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FaultMaps.cpp.o
+[503/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandFp.cpp.o
+[504/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandVectorPredication.cpp.o
+[505/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCMetadata.cpp.o
+[506/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FuncletLayout.cpp.o
+[507/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ExpandMemCmp.cpp.o
+[508/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FinalizeISel.cpp.o
+[509/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionAnalysis.cpp.o
+[510/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/IndirectBrExpandPass.cpp.o
+[511/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FixupStatepointCallerSaved.cpp.o
+[512/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/InterferenceCache.cpp.o
+[513/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/IntrinsicLowering.cpp.o
+[514/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ImplicitNullChecks.cpp.o
+[515/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/InitUndef.cpp.o
+[516/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GlobalMerge.cpp.o
+[517/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/HardwareLoops.cpp.o
+[518/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GlobalMergeFunctions.cpp.o
+[519/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/JMCInstrumenter.cpp.o
+[520/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCRootLowering.cpp.o
+[521/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/IfConversion.cpp.o
+[522/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LazyMachineBlockFrequencyInfo.cpp.o
+[523/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/InlineSpiller.cpp.o
+[524/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenPrepare.cpp.o
+[525/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/InterleavedAccessPass.cpp.o
+[526/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LatencyPriorityQueue.cpp.o
+[527/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LexicalScopes.cpp.o
+[528/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/InterleavedLoadCombinePass.cpp.o
+[529/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveIntervalUnion.cpp.o
+[530/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/KCFI.cpp.o
+[531/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveInterval.cpp.o
+[532/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LivePhysRegs.cpp.o
+[533/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveIntervalCalc.cpp.o
+[534/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRangeCalc.cpp.o
+[535/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LowLevelTypeUtils.cpp.o
+[536/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRangeEdit.cpp.o
+[537/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LoopTraversal.cpp.o
+[538/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRegMatrix.cpp.o
+[539/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRegUnits.cpp.o
+[540/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveIntervals.cpp.o
+[541/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRangeShrink.cpp.o
+[542/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveStacks.cpp.o
+[543/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LocalStackSlotAllocation.cpp.o
+[544/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveVariables.cpp.o
+[545/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBranchProbabilityInfo.cpp.o
+[546/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugVariables.cpp.o
+[547/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LowerEmuTLS.cpp.o
+[548/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenTargetMachineImpl.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenTargetMachineImpl.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wno-unnecessary-virtual-specifier -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenTargetMachineImpl.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenTargetMachineImpl.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenTargetMachineImpl.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenTargetMachineImpl.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wno-unnecessary-virtual-specifier -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenTargetMachineImpl.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenTargetMachineImpl.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenTargetMachineImpl.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenTargetMachineImpl.cpp
+1.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenTargetMachineImpl.cpp:116:56: current parser token ')'
+2.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenTargetMachineImpl.cpp:113:62: parsing function body 'addPassesToGenerateCode'
+3.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CodeGenTargetMachineImpl.cpp:113:62: in compound statement ('{}')
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x0000556ce23fc950 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x0000556ce23fa844 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x0000556ce234c508
+3  libc.so.6 0x00007f8dcc417520
+4  clang++   0x0000556ce5685d8b clang::Type::getUnqualifiedDesugaredType() const + 123
+5  clang++   0x0000556ce4f8e168 clang::ASTContext::getUnqualifiedArrayType(clang::QualType, clang::Qualifiers&) const + 88
+6  clang++   0x0000556ce4841de5 clang::InitializationSequence::InitializeFrom(clang::Sema&, clang::InitializedEntity const&, clang::InitializationKind const&, llvm::MutableArrayRef<clang::Expr*>, bool, bool) + 2293
+7  clang++   0x0000556ce484c7dc clang::Sema::PerformCopyInitialization(clang::InitializedEntity const&, clang::SourceLocation, clang::ActionResult<clang::Expr*, true>, bool, bool) + 540
+8  clang++   0x0000556ce46b533a clang::Sema::GatherArgumentsForCall(clang::SourceLocation, clang::FunctionDecl*, clang::FunctionProtoType const*, unsigned int, llvm::ArrayRef<clang::Expr*>, llvm::SmallVectorImpl<clang::Expr*>&, clang::VariadicCallType, bool, bool) + 1146
+9  clang++   0x0000556ce46b5ed9 clang::Sema::ConvertArgumentsForCall(clang::CallExpr*, clang::Expr*, clang::FunctionDecl*, clang::FunctionProtoType const*, llvm::ArrayRef<clang::Expr*>, clang::SourceLocation, bool) + 665
+10 clang++   0x0000556ce4a8b960 clang::Sema::BuildCallToMemberFunction(clang::Scope*, clang::Expr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*, bool, bool) + 4272
+11 clang++   0x0000556ce46786eb clang::Sema::ActOnCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*) + 91
+12 clang++   0x0000556ce41c8227 clang::Parser::ParsePostfixExpressionSuffix(clang::ActionResult<clang::Expr*, true>) + 1255
+13 clang++   0x0000556ce41c1083 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypeCastState, bool, bool*) + 915
+14 clang++   0x0000556ce41c32ce clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypeCastState, bool, bool*) + 62
+15 clang++   0x0000556ce41c34fd clang::Parser::ParseAssignmentExpression(clang::TypeCastState) + 61
+16 clang++   0x0000556ce417b0f4 clang::Parser::ParseDeclarationAfterDeclaratorAndAttributes(clang::Declarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::ForRangeInit*) + 1188
+17 clang++   0x0000556ce418eed5 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::SourceLocation*, clang::Parser::ForRangeInit*) + 3893
+18 clang++   0x0000556ce4192f7a clang::Parser::ParseSimpleDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, bool, clang::Parser::ForRangeInit*, clang::SourceLocation*) + 874
+19 clang++   0x0000556ce4193491 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, clang::SourceLocation*) + 289
+20 clang++   0x0000556ce424ba9c clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) + 4684
+21 clang++   0x0000556ce424c3fd clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) + 365
+22 clang++   0x0000556ce4254094 clang::Parser::ParseCompoundStatementBody(bool) + 1268
+23 clang++   0x0000556ce4254b2a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) + 218
+24 clang++   0x0000556ce41442c0 clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) + 1072
+25 clang++   0x0000556ce418f3d5 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::SourceLocation*, clang::Parser::ForRangeInit*) + 5173
+26 clang++   0x0000556ce413e974 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) + 1396
+27 clang++   0x0000556ce413f46e clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) + 894
+28 clang++   0x0000556ce4147dc2 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 738
+29 clang++   0x0000556ce4148d15 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 549
+30 clang++   0x0000556ce41388ea clang::ParseAST(clang::Sema&, bool, bool) + 586
+31 clang++   0x0000556ce304206e clang::FrontendAction::Execute() + 46
+32 clang++   0x0000556ce2fb1e6b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+33 clang++   0x0000556ce311f19c clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+34 clang++   0x0000556ce0c50ea6 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8758
+35 clang++   0x0000556ce0c476c2
+36 clang++   0x0000556ce2d7445d
+37 clang++   0x0000556ce234c937 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+38 clang++   0x0000556ce2d747f7
+39 clang++   0x0000556ce2d36d81 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+40 clang++   0x0000556ce2d37df9 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+41 clang++   0x0000556ce2d4bc4f clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+42 clang++   0x0000556ce0c4c541 clang_main(int, char**, llvm::ToolContext const&) + 8337
+43 clang++   0x0000556ce0b224eb main + 107
+44 libc.so.6 0x00007f8dcc3fed90
+45 libc.so.6 0x00007f8dcc3fee40 __libc_start_main + 128
+46 clang++   0x0000556ce0c47125 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/CodeGenTargetMachineImpl-6e2dc7.cpp
+clang++: note: diagnostic msg: /tmp/CodeGenTargetMachineImpl-6e2dc7.sh
+clang++: note: diagnostic msg: 
+
+********************
+[549/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockFrequencyInfo.cpp.o
+[550/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCFGPrinter.cpp.o
+[551/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCombiner.cpp.o
+[552/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDominanceFrontier.cpp.o
+[553/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCheckDebugify.cpp.o
+[554/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFrameInfo.cpp.o
+[555/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCycleAnalysis.cpp.o
+[556/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineConvergenceVerifier.cpp.o
+[557/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDomTreeUpdater.cpp.o
+[558/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCSE.cpp.o
+[559/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCopyPropagation.cpp.o
+[560/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockPlacement.cpp.o
+[561/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDominators.cpp.o
+[562/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBasicBlock.cpp.o
+[563/2854] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDebugify.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:443 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
