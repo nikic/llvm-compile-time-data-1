@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[1685/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeCompilandSymbol.cpp.o
+[1686/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeEnumGlobals.cpp.o
+[1687/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeEnumLineNumbers.cpp.o
+[1688/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeEnumInjectedSources.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/HashTable.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/InjectedSourceStream.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/NativeEnumInjectedSources.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/PDB/Native/NativeEnumInjectedSources.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘virtual void llvm::pdb::NativeEnumInjectedSources::reset()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘virtual std::unique_ptr<llvm::pdb::IPDBInjectedSource, std::default_delete<llvm::pdb::IPDBInjectedSource> > llvm::pdb::NativeEnumInjectedSources::getChildAtIndex(uint32_t) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In constructor ‘llvm::pdb::NativeEnumInjectedSources::NativeEnumInjectedSources(llvm::pdb::PDBFile&, const llvm::pdb::InjectedSourceStream&, const llvm::pdb::PDBStringTable&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+[1689/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeEnumModules.cpp.o
+[1690/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeEnumTypes.cpp.o
+[1691/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeEnumSymbols.cpp.o
+[1692/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeExeSymbol.cpp.o
+[1693/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeLineNumber.cpp.o
+[1694/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeFunctionSymbol.cpp.o
+[1695/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeInlineSiteSymbol.cpp.o
+[1696/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativePublicSymbol.cpp.o
+[1697/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeSymbolEnumerator.cpp.o
+[1698/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeRawSymbol.cpp.o
+[1699/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeSourceFile.cpp.o
+[1700/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeTypeArray.cpp.o
+[1701/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeTypeEnum.cpp.o
+[1702/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeTypeFunctionSig.cpp.o
+[1703/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeTypeBuiltin.cpp.o
+[1704/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeTypePointer.cpp.o
+[1705/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeTypeTypedef.cpp.o
+[1706/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeTypeUDT.cpp.o
+[1707/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeTypeVTShape.cpp.o
+[1708/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PDBFile.cpp.o
+[1709/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PDBStringTableBuilder.cpp.o
+[1710/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PDBFileBuilder.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/HashTable.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/PDBFileBuilder.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/PDB/Native/PDBFileBuilder.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::pdb::PDBFileBuilder::commitSrcHeaderBlock(llvm::WritableBinaryStream&, const llvm::msf::MSFLayout&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::pdb::HashTable<ValueT>::grow(TraitsT&) [with TraitsT = llvm::pdb::StringTableHashTraits; ValueT = llvm::pdb::SrcHeaderBlockEntry]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘llvm::Error llvm::pdb::PDBFileBuilder::finalizeMsfLayout()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:139:15: warning: array subscript 4294967295 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  139 |       if (Bits[Idx] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:139:15: warning: array subscript 4294967295 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  139 |       if (Bits[Idx] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+[1711/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PDBStringTable.cpp.o
+[1712/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/PublicsStream.cpp.o
+[1713/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NamedStreamMap.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/HashTable.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/NamedStreamMap.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/PDB/Native/NamedStreamMap.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘llvm::Error llvm::pdb::NamedStreamMap::commit(llvm::BinaryStreamWriter&) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘uint32_t llvm::pdb::NamedStreamMap::calculateSerializedLength() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:139:15: warning: array subscript 4294967295 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  139 |       if (Bits[Idx] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:139:15: warning: array subscript 4294967295 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  139 |       if (Bits[Idx] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘llvm::StringMap<unsigned int> llvm::pdb::NamedStreamMap::entries() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘llvm::Error llvm::pdb::HashTable<ValueT>::load(llvm::BinaryStreamReader&) [with ValueT = llvm::support::detail::packed_endian_specific_integral<unsigned int, llvm::endianness::little, 1>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::pdb::HashTable<ValueT>::grow(TraitsT&) [with TraitsT = llvm::pdb::NamedStreamMapTraits; ValueT = llvm::support::detail::packed_endian_specific_integral<unsigned int, llvm::endianness::little, 1>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+[1714/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/RawError.cpp.o
+[1715/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/GSIStreamBuilder.cpp.o
+[1716/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/SymbolStream.cpp.o
+[1717/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/TpiHashing.cpp.o
+[1718/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/NativeSession.cpp.o
+[1719/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/SymbolCache.cpp.o
+[1720/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/TpiStreamBuilder.cpp.o
+[1721/3158] Building CXX object lib/DebugInfo/PDB/CMakeFiles/LLVMDebugInfoPDB.dir/Native/TpiStream.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/HashTable.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/DebugInfo/PDB/Native/TpiStream.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/DebugInfo/PDB/Native/TpiStream.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘llvm::Error llvm::pdb::HashTable<ValueT>::load(llvm::BinaryStreamReader&) [with ValueT = llvm::support::detail::packed_endian_specific_integral<unsigned int, llvm::endianness::little, 1>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+[1722/3158] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/MarkupFilter.cpp.o
+[1723/3158] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/SymbolizableObjectFile.cpp.o
+[1724/3158] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/Symbolize.cpp.o
+[1725/3158] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/Target.cpp.o
+[1726/3158] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetLoweringObjectFile.cpp.o
+[1727/3158] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetMachine.cpp.o
+[1728/3158] Building CXX object lib/Target/CMakeFiles/LLVMTarget.dir/TargetMachineC.cpp.o
+[1729/3158] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/DIPrinter.cpp.o
+[1730/3158] Building CXX object lib/DebugInfo/Symbolize/CMakeFiles/LLVMSymbolize.dir/Markup.cpp.o
+[1731/3158] Building AArch64GenFastISel.inc...
+[1732/3158] Building AArch64GenSDNodeInfo.inc...
+[1733/3158] Building AArch64GenMCPseudoLowering.inc...
+[1734/3158] Building X86GenFastISel.inc...
+[1735/3158] Building CXX object lib/Frontend/HLSL/CMakeFiles/LLVMFrontendHLSL.dir/HLSLRootSignature.cpp.o
+FAILED: lib/Frontend/HLSL/CMakeFiles/LLVMFrontendHLSL.dir/HLSLRootSignature.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Frontend/HLSL -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Frontend/HLSL -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Frontend/HLSL/CMakeFiles/LLVMFrontendHLSL.dir/HLSLRootSignature.cpp.o -MF lib/Frontend/HLSL/CMakeFiles/LLVMFrontendHLSL.dir/HLSLRootSignature.cpp.o.d -o lib/Frontend/HLSL/CMakeFiles/LLVMFrontendHLSL.dir/HLSLRootSignature.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Frontend/HLSL/HLSLRootSignature.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Frontend/HLSL/HLSLRootSignature.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Frontend/HLSL/HLSLRootSignature.h:212:10: error: declaration of ‘llvm::hlsl::rootsig::Filter llvm::hlsl::rootsig::StaticSampler::Filter’ changes meaning of ‘Filter’ [-fpermissive]
+  212 |   Filter Filter = Filter::Anisotropic;
+      |          ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Frontend/HLSL/HLSLRootSignature.h:84:12: note: ‘Filter’ declared here as ‘enum class llvm::hlsl::rootsig::Filter’
+   84 | enum class Filter {
+      |            ^~~~~~
+[1736/3158] Building AArch64GenCallingConv.inc...
+[1737/3158] Building X86GenGlobalISel.inc...
+[1738/3158] Building AArch64GenDisassemblerTables.inc...
+[1739/3158] Building AArch64GenExegesis.inc...
+[1740/3158] Building AArch64GenAsmWriter1.inc...
+[1741/3158] Building AArch64GenAsmWriter.inc...
+[1742/3158] Building AArch64GenAsmMatcher.inc...
+[1743/3158] Building X86GenDAGISel.inc...
+[1744/3158] Building AArch64GenMCCodeEmitter.inc...
+[1745/3158] Building AArch64GenPostLegalizeGICombiner.inc...
+[1746/3158] Building AArch64GenO0PreLegalizeGICombiner.inc...
+[1747/3158] Building AArch64GenGlobalISel.inc...
+[1748/3158] Building AArch64GenDAGISel.inc...
+[1749/3158] Building X86GenSubtargetInfo.inc...
+[1750/3158] Building X86GenInstrInfo.inc...
+[1751/3158] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[1752/3158] Building AArch64GenInstrInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:447 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+80.72user 8.42system 0:08.76elapsed 1017%CPU (0avgtext+0avgdata 723460maxresident)k
+0inputs+740832outputs (2825major+4419883minor)pagefaults 0swaps
