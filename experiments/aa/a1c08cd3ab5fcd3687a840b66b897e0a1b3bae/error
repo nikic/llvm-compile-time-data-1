@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2982/3149] Building CXX object lib/Target/AArch64/CMakeFiles/LLVMAArch64CodeGen.dir/AArch64StorePairSuppress.cpp.o
+[2983/3149] Building CXX object lib/Target/AArch64/CMakeFiles/LLVMAArch64CodeGen.dir/AArch64TargetObjectFile.cpp.o
+[2984/3149] Building CXX object lib/Target/AArch64/CMakeFiles/LLVMAArch64CodeGen.dir/SMEABIPass.cpp.o
+[2985/3149] Building CXX object lib/Target/AArch64/CMakeFiles/LLVMAArch64CodeGen.dir/AArch64Subtarget.cpp.o
+[2986/3149] Building CXX object lib/Target/AArch64/CMakeFiles/LLVMAArch64CodeGen.dir/AArch64TargetMachine.cpp.o
+[2987/3149] Building CXX object lib/Target/AArch64/CMakeFiles/LLVMAArch64CodeGen.dir/AArch64SIMDInstrOpt.cpp.o
+[2988/3149] Building CXX object lib/Target/AArch64/CMakeFiles/LLVMAArch64CodeGen.dir/SVEIntrinsicOpts.cpp.o
+[2989/3149] Building CXX object lib/Target/AArch64/Disassembler/CMakeFiles/LLVMAArch64Disassembler.dir/AArch64Disassembler.cpp.o
+[2990/3149] Building CXX object lib/Target/AArch64/CMakeFiles/LLVMAArch64CodeGen.dir/AArch64TargetTransformInfo.cpp.o
+[2991/3149] Building CXX object lib/Target/AArch64/AsmParser/CMakeFiles/LLVMAArch64AsmParser.dir/AArch64AsmParser.cpp.o
+[2992/3149] Building CXX object lib/Target/AArch64/MCTargetDesc/CMakeFiles/LLVMAArch64Desc.dir/AArch64AsmBackend.cpp.o
+[2993/3149] Building CXX object lib/Target/AArch64/MCTargetDesc/CMakeFiles/LLVMAArch64Desc.dir/AArch64ELFObjectWriter.cpp.o
+[2994/3149] Building CXX object lib/Target/AArch64/MCTargetDesc/CMakeFiles/LLVMAArch64Desc.dir/AArch64MCAsmInfo.cpp.o
+[2995/3149] Building CXX object lib/Target/AArch64/Disassembler/CMakeFiles/LLVMAArch64Disassembler.dir/AArch64ExternalSymbolizer.cpp.o
+[2996/3149] Building CXX object lib/Target/AArch64/MCTargetDesc/CMakeFiles/LLVMAArch64Desc.dir/AArch64MCExpr.cpp.o
+[2997/3149] Building CXX object lib/Target/AArch64/MCTargetDesc/CMakeFiles/LLVMAArch64Desc.dir/AArch64MachObjectWriter.cpp.o
+[2998/3149] Building CXX object lib/Target/AArch64/MCTargetDesc/CMakeFiles/LLVMAArch64Desc.dir/AArch64ELFStreamer.cpp.o
+In file included from /usr/include/c++/11/array:40,
+                 from /usr/include/c++/11/tuple:39,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMapInfo.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallVector.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/MC/MCELFStreamer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/AArch64/MCTargetDesc/AArch64ELFStreamer.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/AArch64/MCTargetDesc/AArch64ELFStreamer.cpp:15:
+In static member function ‘static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = const llvm::MCSymbol*; bool _IsMove = true]’,
+    inlined from ‘_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = true; _II = const llvm::MCSymbol**; _OI = const llvm::MCSymbol**]’ at /usr/include/c++/11/bits/stl_algobase.h:495:30,
+    inlined from ‘_OI std::__copy_move_a1(_II, _II, _OI) [with bool _IsMove = true; _II = const llvm::MCSymbol**; _OI = const llvm::MCSymbol**]’ at /usr/include/c++/11/bits/stl_algobase.h:522:42,
+    inlined from ‘_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = true; _II = const llvm::MCSymbol**; _OI = const llvm::MCSymbol**]’ at /usr/include/c++/11/bits/stl_algobase.h:529:31,
+    inlined from ‘_OI std::move(_II, _II, _OI) [with _II = const llvm::MCSymbol**; _OI = const llvm::MCSymbol**]’ at /usr/include/c++/11/bits/stl_algobase.h:652:38,
+    inlined from ‘llvm::SmallVectorImpl<T>& llvm::SmallVectorImpl<T>::operator=(llvm::SmallVectorImpl<T>&&) [with T = const llvm::MCSymbol*]’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallVector.h:1071:25,
+    inlined from ‘virtual void llvm::AArch64TargetELFStreamer::finish()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/AArch64/MCTargetDesc/AArch64ELFStreamer.cpp:512:31:
+/usr/include/c++/11/bits/stl_algobase.h:431:30: warning: ‘void* __builtin_memmove(void*, const void*, long unsigned int)’ reading between 8 and 34359738360 bytes from a region of size 0 [-Wstringop-overread]
+  431 |             __builtin_memmove(__result, __first, sizeof(_Tp) * _Num);
+      |             ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/AArch64/MCTargetDesc/AArch64ELFStreamer.cpp: In member function ‘virtual void llvm::AArch64TargetELFStreamer::finish()’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/AArch64/MCTargetDesc/AArch64ELFStreamer.cpp:489:40: note: at offset 16 into source object ‘NewSyms’ of size 16
+  489 |       SmallVector<const MCSymbol *, 0> NewSyms;
+      |                                        ^~~~~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unnecessary-virtual-specifier’ may have been intended to silence earlier diagnostics
+[2999/3149] Building CXX object tools/llvm-ar/CMakeFiles/llvm-ar.dir/llvm-ar-driver.cpp.o
+[3000/3149] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld-driver.cpp.o
+[3001/3149] Building CXX object tools/lld/tools/lld/CMakeFiles/lld.dir/lld.cpp.o
+[3002/3149] Building CXX object lib/Target/AArch64/MCTargetDesc/CMakeFiles/LLVMAArch64Desc.dir/AArch64InstPrinter.cpp.o
+[3003/3149] Building CXX object tools/llvm-ar/CMakeFiles/llvm-ar.dir/llvm-ar.cpp.o
+[3004/3149] Building CXX object lib/Target/AArch64/MCTargetDesc/CMakeFiles/LLVMAArch64Desc.dir/AArch64MCTargetDesc.cpp.o
+[3005/3149] Building CXX object lib/Target/AArch64/MCTargetDesc/CMakeFiles/LLVMAArch64Desc.dir/AArch64MCCodeEmitter.cpp.o
+[3006/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/CallGraphSort.cpp.o
+[3007/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Chunks.cpp.o
+[3008/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/COFFLinkerContext.cpp.o
+[3009/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DLL.cpp.o
+[3010/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DebugTypes.cpp.o
+[3011/3149] Building CXX object lib/Target/AArch64/MCTargetDesc/CMakeFiles/LLVMAArch64Desc.dir/AArch64TargetStreamer.cpp.o
+[3012/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/DriverUtils.cpp.o
+[3013/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/ICF.cpp.o
+[3014/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LLDMapFile.cpp.o
+[3015/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Driver.cpp.o
+[3016/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MapFile.cpp.o
+[3017/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MarkLive.cpp.o
+[3018/3149] Building CXX object lib/Target/AArch64/MCTargetDesc/CMakeFiles/LLVMAArch64Desc.dir/AArch64WinCOFFStreamer.cpp.o
+[3019/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/InputFiles.cpp.o
+[3020/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/MinGW.cpp.o
+[3021/3149] Building CXX object tools/gold/CMakeFiles/LLVMgold.dir/gold-plugin.cpp.o
+[3022/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/LTO.cpp.o
+[3023/3149] Building CXX object lib/Target/AArch64/TargetInfo/CMakeFiles/LLVMAArch64Info.dir/AArch64TargetInfo.cpp.o
+[3024/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/PDB.cpp.o
+[3025/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Symbols.cpp.o
+[3026/3149] Building CXX object lib/Target/AArch64/MCTargetDesc/CMakeFiles/LLVMAArch64Desc.dir/AArch64WinCOFFObjectWriter.cpp.o
+[3027/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/AArch64ErrataFix.cpp.o
+[3028/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/Writer.cpp.o
+[3029/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AMDGPU.cpp.o
+[3030/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AVR.cpp.o
+[3031/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/AArch64.cpp.o
+[3032/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/ARM.cpp.o
+[3033/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/Hexagon.cpp.o
+[3034/3149] Building CXX object tools/lld/COFF/CMakeFiles/lldCOFF.dir/SymbolTable.cpp.o
+[3035/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/LoongArch.cpp.o
+[3036/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/Mips.cpp.o
+[3037/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/MipsArchTree.cpp.o
+[3038/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/MSP430.cpp.o
+[3039/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/RISCV.cpp.o
+[3040/3149] Linking CXX static library lib/libLLVMAArch64Info.a
+[3041/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/SPARCV9.cpp.o
+[3042/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/SystemZ.cpp.o
+[3043/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/PPC64.cpp.o
+[3044/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/PPC.cpp.o
+[3045/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/X86.cpp.o
+[3046/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Arch/X86_64.cpp.o
+[3047/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ARMErrataFix.cpp.o
+[3048/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/BPSectionOrderer.cpp.o
+[3049/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/CallGraphSort.cpp.o
+[3050/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/DriverUtils.cpp.o
+[3051/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/EhFrame.cpp.o
+[3052/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/DWARF.cpp.o
+[3053/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ICF.cpp.o
+[3054/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputSection.cpp.o
+[3055/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/LinkerScript.cpp.o
+[3056/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Driver.cpp.o
+[3057/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/MapFile.cpp.o
+[3058/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputFiles.cpp.o
+[3059/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/LTO.cpp.o
+[3060/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/MarkLive.cpp.o
+[3061/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/OutputSections.cpp.o
+[3062/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Relocations.cpp.o
+[3063/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ScriptLexer.cpp.o
+[3064/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SymbolTable.cpp.o
+[3065/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/ScriptParser.cpp.o
+[3066/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Symbols.cpp.o
+[3067/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Target.cpp.o
+[3068/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Thunks.cpp.o
+[3069/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SyntheticSections.cpp.o
+[3070/3149] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Writer.cpp.o
+[3071/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64.cpp.o
+[3072/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/ARM64_32.cpp.o
+[3073/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/X86_64.cpp.o
+[3074/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ConcatOutputSection.cpp.o
+[3075/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Dwarf.cpp.o
+[3076/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/EhFrame.cpp.o
+[3077/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ExportTrie.cpp.o
+[3078/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Driver.cpp.o
+[3079/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/DriverUtils.cpp.o
+[3080/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ICF.cpp.o
+[3081/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o
+[3082/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MapFile.cpp.o
+[3083/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputFiles.cpp.o
+[3084/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MarkLive.cpp.o
+[3085/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSection.cpp.o
+[3086/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/LTO.cpp.o
+[3087/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ObjC.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ObjC.cpp:723:1: warning: ‘{anonymous}::ObjcCategoryMerger::PointerListInfo {anonymous}::ObjcCategoryMerger::parseProtocolListInfo(const lld::macho::ConcatInputSection*, uint32_t, {anonymous}::ObjcCategoryMerger::SourceLanguage)’ defined but not used [-Wunused-function]
+  723 | ObjcCategoryMerger::parseProtocolListInfo(const ConcatInputSection *isec,
+      | ^~~~~~~~~~~~~~~~~~
+cc1plus: note: unrecognized command-line option ‘-Wno-unnecessary-virtual-specifier’ may have been intended to silence earlier diagnostics
+[3088/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSegment.cpp.o
+[3089/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Relocations.cpp.o
+[3090/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Target.cpp.o
+[3091/3149] Linking CXX static library lib/libLLVMAArch64Desc.a
+[3092/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SymbolTable.cpp.o
+[3093/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/BPSectionOrderer.cpp.o
+[3094/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Symbols.cpp.o
+[3095/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Sections.cpp.o
+[3096/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SectionPriorities.cpp.o
+[3097/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/UnwindInfoSection.cpp.o
+[3098/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SyntheticSections.cpp.o
+[3099/3149] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Writer.cpp.o
+[3100/3149] Building CXX object tools/lld/MinGW/CMakeFiles/lldMinGW.dir/Driver.cpp.o
+[3101/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Driver.cpp.o
+[3102/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MapFile.cpp.o
+[3103/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/LTO.cpp.o
+[3104/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MarkLive.cpp.o
+[3105/3149] Linking CXX static library lib/libLLVMAArch64Disassembler.a
+[3106/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSections.cpp.o
+[3107/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputChunks.cpp.o
+[3108/3149] Linking CXX static library lib/libLLVMAArch64AsmParser.a
+[3109/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSegment.cpp.o
+[3110/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Relocations.cpp.o
+[3111/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SymbolTable.cpp.o
+[3112/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/WriterUtils.cpp.o
+[3113/3149] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/clang-driver.cpp.o
+[3114/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Symbols.cpp.o
+[3115/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SyntheticSections.cpp.o
+[3116/3149] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Writer.cpp.o
+[3117/3149] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1gen_reproducer_main.cpp.o
+[3118/3149] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/driver.cpp.o
+[3119/3149] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1_main.cpp.o
+[3120/3149] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1as_main.cpp.o
+[3121/3149] Linking CXX executable bin/llvm-ar
+[3122/3149] Generating ../../bin/llvm-ranlib
+[3123/3149] Building CXX object lib/Target/AArch64/CMakeFiles/LLVMAArch64CodeGen.dir/AArch64PostCoalescerPass.cpp.o
+[3124/3149] Linking CXX static library lib/libLLVMAArch64CodeGen.a
+[3125/3149] Linking CXX static library lib/liblldWasm.a
+[3126/3149] Linking CXX static library lib/liblldCOFF.a
+[3127/3149] Linking CXX static library lib/liblldMachO.a
+[3128/3149] Linking CXX static library lib/liblldMinGW.a
+[3129/3149] Linking CXX static library lib/liblldELF.a
+[3130/3149] Linking CXX shared module lib/LLVMgold.so
+[3131/3149] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/InterpBuiltin.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpBuiltin.cpp: In function ‘bool clang::interp::interp__builtin_addressof(clang::interp::InterpState&, clang::interp::CodePtr, const clang::interp::InterpFrame*, const clang::CallExpr*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpBuiltin.cpp:764:12: warning: unused variable ‘PtrT’ [-Wunused-variable]
+  764 |   PrimType PtrT = S.getContext().classify(Call->getArg(0)).value_or(PT_Ptr);
+      |            ^~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unnecessary-virtual-specifier’ may have been intended to silence earlier diagnostics
+[3132/3149] Linking CXX executable bin/lld
+[3133/3149] Linking CXX static library lib/libclangAST.a
+[3134/3149] Linking CXX static library lib/libclangEdit.a
+[3135/3149] Linking CXX static library lib/libclangInstallAPI.a
+[3136/3149] Linking CXX static library lib/libclangASTMatchers.a
+[3137/3149] Linking CXX static library lib/libclangAnalysis.a
+[3138/3149] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o
+FAILED: tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wno-unnecessary-virtual-specifier -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o -MF tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o.d -o tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/Sema.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/Sema.cpp: In destructor ‘clang::SemaBase::SemaDiagnosticBuilder::~SemaDiagnosticBuilder()’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/Sema.cpp:2070:28: error: expected primary-expression before ‘)’ token
+ 2070 |       if (IsWarningOrError))
+      |                            ^
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-unnecessary-virtual-specifier’ may have been intended to silence earlier diagnostics
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:447 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+115.75user 16.62system 0:12.16elapsed 1088%CPU (0avgtext+0avgdata 997936maxresident)k
+22032inputs+3672624outputs (47917major+7238926minor)pagefaults 0swaps
