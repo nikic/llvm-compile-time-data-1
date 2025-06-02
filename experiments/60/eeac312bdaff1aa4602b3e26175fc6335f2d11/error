@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+35 clang++   0x00005558cdc0731c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+36 clang++   0x00005558cdbfe792
+37 clang++   0x00005558cfd3bbfd
+38 clang++   0x00005558cf30b1b7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+39 clang++   0x00005558cfd3bf97
+40 clang++   0x00005558cfcfe0e1 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+41 clang++   0x00005558cfcff159 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+42 clang++   0x00005558cfd1340f clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+43 clang++   0x00005558cdc032c5 clang_main(int, char**, llvm::ToolContext const&) + 7493
+44 clang++   0x00005558cdad825b main + 107
+45 libc.so.6 0x00007ffad2d22d90
+46 libc.so.6 0x00007ffad2d22e40 __libc_start_main + 128
+47 clang++   0x00005558cdbfe1f5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/BinaryStreamWriter-c928c9.cpp
+clang++: note: diagnostic msg: /tmp/BinaryStreamWriter-c928c9.sh
+clang++: note: diagnostic msg: 
+
+********************
+[29/2893] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o
+[30/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertUTF.cpp.o
+[31/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertEBCDIC.cpp.o
+[32/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Chrono.cpp.o
+[33/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CrashRecoveryContext.cpp.o
+[34/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Compression.cpp.o
+[35/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CRC.cpp.o
+[36/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+[37/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CSKYAttributes.cpp.o
+[38/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Caching.cpp.o
+[39/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertUTFWrapper.cpp.o
+[40/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CachePruning.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17 -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CachePruning.cpp
+1.	<eof> parser at end of file
+2.	Optimizer
+3.	Running pass "require<globals-aa>,function(invalidate<aa>),require<profile-summary>,cgscc(devirt<4>(inline,function-attrs<skip-non-recursive-function-attrs>,argpromotion,openmp-opt-cgscc,function<eager-inv;no-rerun>(sroa<modify-cfg>,early-cse<memssa>,speculative-execution<only-if-divergent-target>,jump-threading,correlated-propagation,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,instcombine<max-iterations=1;no-verify-fixpoint>,aggressive-instcombine,libcalls-shrinkwrap,tailcallelim,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,reassociate,constraint-elimination,loop-mssa(loop-instsimplify,loop-simplifycfg,licm<no-allowspeculation>,loop-rotate<header-duplication;prepare-for-lto>,licm<allowspeculation>,simple-loop-unswitch<nontrivial;trivial>),simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,instcombine<max-iterations=1;no-verify-fixpoint>,loop(loop-idiom,indvars,extra-simple-loop-unswitch-passes,loop-deletion,loop-unroll-full),sroa<modify-cfg>,vector-combine,mldst-motion<no-split-footer-bb>,gvn<>,sccp,bdce,instcombine<max-iterations=1;no-verify-fixpoint>,jump-threading,correlated-propagation,adce,memcpyopt,dse,move-auto-init,loop-mssa(licm<allowspeculation>),coro-elide,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,instcombine<max-iterations=1;no-verify-fixpoint>),function-attrs,function(require<should-not-run-function-passes>))),function(invalidate<should-not-run-function-passes>),cgscc(devirt<4>())" on module "/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CachePruning.cpp"
+4.	Running pass "cgscc(devirt<4>(inline,function-attrs<skip-non-recursive-function-attrs>,argpromotion,openmp-opt-cgscc,function<eager-inv;no-rerun>(sroa<modify-cfg>,early-cse<memssa>,speculative-execution<only-if-divergent-target>,jump-threading,correlated-propagation,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,instcombine<max-iterations=1;no-verify-fixpoint>,aggressive-instcombine,libcalls-shrinkwrap,tailcallelim,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,reassociate,constraint-elimination,loop-mssa(loop-instsimplify,loop-simplifycfg,licm<no-allowspeculation>,loop-rotate<header-duplication;prepare-for-lto>,licm<allowspeculation>,simple-loop-unswitch<nontrivial;trivial>),simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,instcombine<max-iterations=1;no-verify-fixpoint>,loop(loop-idiom,indvars,extra-simple-loop-unswitch-passes,loop-deletion,loop-unroll-full),sroa<modify-cfg>,vector-combine,mldst-motion<no-split-footer-bb>,gvn<>,sccp,bdce,instcombine<max-iterations=1;no-verify-fixpoint>,jump-threading,correlated-propagation,adce,memcpyopt,dse,move-auto-init,loop-mssa(licm<allowspeculation>),coro-elide,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,instcombine<max-iterations=1;no-verify-fixpoint>),function-attrs,function(require<should-not-run-function-passes>)))" on module "/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CachePruning.cpp"
+5.	Running pass "jump-threading" on function "_ZN4llvm10pruneCacheENS_9StringRefENS_18CachePruningPolicyERKSt6vectorISt10unique_ptrINS_12MemoryBufferESt14default_deleteIS4_EESaIS7_EE"
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x00005643eee2f410 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x00005643eee2d304 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x00005643eed7ed88
+3  libc.so.6 0x00007fb05a66e520
+4  clang++   0x00005643ee76325f llvm::AttributeList::getAttributeAtIndex(unsigned int, llvm::Attribute::AttrKind) const + 15
+5  clang++   0x00005643ee835918 llvm::Argument::getRange() const + 56
+6  clang++   0x00005643edf77117 llvm::LazyValueInfoImpl::solveBlockValueNonLocal(llvm::Value*, llvm::BasicBlock*) + 1271
+7  clang++   0x00005643edf77495 llvm::LazyValueInfoImpl::solveBlockValueImpl(llvm::Value*, llvm::BasicBlock*) + 69
+8  clang++   0x00005643edf77875 llvm::LazyValueInfoImpl::solve() + 245
+9  clang++   0x00005643edf79328 llvm::LazyValueInfoImpl::getValueOnEdge(llvm::Value*, llvm::BasicBlock*, llvm::BasicBlock*, llvm::Instruction*) + 104
+10 clang++   0x00005643edf7a27c llvm::LazyValueInfo::getConstantOnEdge(llvm::Value*, llvm::BasicBlock*, llvm::BasicBlock*, llvm::Instruction*) + 92
+11 clang++   0x00005643f2511da8 llvm::JumpThreadingPass::evaluateOnPredecessorEdge(llvm::BasicBlock*, llvm::BasicBlock*, llvm::Value*, llvm::DataLayout const&, llvm::SmallPtrSet<llvm::Value*, 8u>&) + 264
+12 clang++   0x00005643f2511e9f llvm::JumpThreadingPass::evaluateOnPredecessorEdge(llvm::BasicBlock*, llvm::BasicBlock*, llvm::Value*, llvm::DataLayout const&, llvm::SmallPtrSet<llvm::Value*, 8u>&) + 511
+13 clang++   0x00005643f251cce0 llvm::JumpThreadingPass::maybethreadThroughTwoBasicBlocks(llvm::BasicBlock*, llvm::Value*) + 832
+14 clang++   0x00005643f251e716
+15 clang++   0x00005643f251fcf6
+16 clang++   0x00005643f2520b75 llvm::JumpThreadingPass::runImpl(llvm::Function&, llvm::AnalysisManager<llvm::Function>*, llvm::TargetLibraryInfo*, llvm::TargetTransformInfo*, llvm::LazyValueInfo*, llvm::AAResults*, std::unique_ptr<llvm::DomTreeUpdater, std::default_delete<llvm::DomTreeUpdater>>, std::optional<llvm::BlockFrequencyInfo*>, std::optional<llvm::BranchProbabilityInfo*>) + 1061
+17 clang++   0x00005643f25211d0 llvm::JumpThreadingPass::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 528
+18 clang++   0x00005643ef0b1116
+19 clang++   0x00005643ee8f2f78 llvm::PassManager<llvm::Function, llvm::AnalysisManager<llvm::Function>>::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 1144
+20 clang++   0x00005643ed6fa886
+21 clang++   0x00005643f27608ff llvm::CGSCCToFunctionPassAdaptor::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 1279
+22 clang++   0x00005643efe1e266
+23 clang++   0x00005643f275b47b llvm::PassManager<llvm::LazyCallGraph::SCC, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 363
+24 clang++   0x00005643efe1e1c6
+25 clang++   0x00005643f276198d llvm::DevirtSCCRepeatedPass::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 525
+26 clang++   0x00005643efe1e216
+27 clang++   0x00005643f275dc2f llvm::ModuleToPostOrderCGSCCPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 4031
+28 clang++   0x00005643efe1e176
+29 clang++   0x00005643ee8edad8 llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 1224
+30 clang++   0x00005643f05aa233 llvm::ModuleInlinerWrapperPass::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 627
+31 clang++   0x00005643efe1d6a6
+32 clang++   0x00005643ee8edad8 llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 1224
+33 clang++   0x00005643ef0be3fe
+34 clang++   0x00005643ef0c257d clang::emitBackendOutput(clang::CompilerInstance&, clang::CodeGenOptions&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>, clang::BackendConsumer*) + 2253
+35 clang++   0x00005643ef73ab43 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 1555
+36 clang++   0x00005643f0b95c2c clang::ParseAST(clang::Sema&, bool, bool) + 1164
+37 clang++   0x00005643efa7d69e clang::FrontendAction::Execute() + 46
+38 clang++   0x00005643ef9ec8bb clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+39 clang++   0x00005643efb587cc clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+40 clang++   0x00005643ed67b31c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+41 clang++   0x00005643ed672792
+42 clang++   0x00005643ef7afbfd
+43 clang++   0x00005643eed7f1b7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+44 clang++   0x00005643ef7aff97
+45 clang++   0x00005643ef7720e1 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+46 clang++   0x00005643ef773159 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+47 clang++   0x00005643ef78740f clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+48 clang++   0x00005643ed6772c5 clang_main(int, char**, llvm::ToolContext const&) + 7493
+49 clang++   0x00005643ed54c25b main + 107
+50 libc.so.6 0x00007fb05a655d90
+51 libc.so.6 0x00007fb05a655e40 __libc_start_main + 128
+52 clang++   0x00005643ed6721f5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/CachePruning-c4cfb8.cpp
+clang++: note: diagnostic msg: /tmp/CachePruning-c4cfb8.sh
+clang++: note: diagnostic msg: 
+
+********************
+[41/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CodeGenCoverage.cpp.o
+[42/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o
+[43/2893] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CommandLine.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17 -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CommandLine.cpp
+1.	<eof> parser at end of file
+2.	Optimizer
+3.	Running pass "require<globals-aa>,function(invalidate<aa>),require<profile-summary>,cgscc(devirt<4>(inline,function-attrs<skip-non-recursive-function-attrs>,argpromotion,openmp-opt-cgscc,function<eager-inv;no-rerun>(sroa<modify-cfg>,early-cse<memssa>,speculative-execution<only-if-divergent-target>,jump-threading,correlated-propagation,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,instcombine<max-iterations=1;no-verify-fixpoint>,aggressive-instcombine,libcalls-shrinkwrap,tailcallelim,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,reassociate,constraint-elimination,loop-mssa(loop-instsimplify,loop-simplifycfg,licm<no-allowspeculation>,loop-rotate<header-duplication;prepare-for-lto>,licm<allowspeculation>,simple-loop-unswitch<nontrivial;trivial>),simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,instcombine<max-iterations=1;no-verify-fixpoint>,loop(loop-idiom,indvars,extra-simple-loop-unswitch-passes,loop-deletion,loop-unroll-full),sroa<modify-cfg>,vector-combine,mldst-motion<no-split-footer-bb>,gvn<>,sccp,bdce,instcombine<max-iterations=1;no-verify-fixpoint>,jump-threading,correlated-propagation,adce,memcpyopt,dse,move-auto-init,loop-mssa(licm<allowspeculation>),coro-elide,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,instcombine<max-iterations=1;no-verify-fixpoint>),function-attrs,function(require<should-not-run-function-passes>))),function(invalidate<should-not-run-function-passes>),cgscc(devirt<4>())" on module "/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CommandLine.cpp"
+4.	Running pass "cgscc(devirt<4>(inline,function-attrs<skip-non-recursive-function-attrs>,argpromotion,openmp-opt-cgscc,function<eager-inv;no-rerun>(sroa<modify-cfg>,early-cse<memssa>,speculative-execution<only-if-divergent-target>,jump-threading,correlated-propagation,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,instcombine<max-iterations=1;no-verify-fixpoint>,aggressive-instcombine,libcalls-shrinkwrap,tailcallelim,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,reassociate,constraint-elimination,loop-mssa(loop-instsimplify,loop-simplifycfg,licm<no-allowspeculation>,loop-rotate<header-duplication;prepare-for-lto>,licm<allowspeculation>,simple-loop-unswitch<nontrivial;trivial>),simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;no-hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;no-sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,instcombine<max-iterations=1;no-verify-fixpoint>,loop(loop-idiom,indvars,extra-simple-loop-unswitch-passes,loop-deletion,loop-unroll-full),sroa<modify-cfg>,vector-combine,mldst-motion<no-split-footer-bb>,gvn<>,sccp,bdce,instcombine<max-iterations=1;no-verify-fixpoint>,jump-threading,correlated-propagation,adce,memcpyopt,dse,move-auto-init,loop-mssa(licm<allowspeculation>),coro-elide,simplifycfg<bonus-inst-threshold=1;no-forward-switch-cond;switch-range-to-icmp;no-switch-to-lookup;keep-loops;hoist-common-insts;no-hoist-loads-stores-with-cond-faulting;sink-common-insts;speculate-blocks;simplify-cond-branch;no-speculate-unpredictables>,instcombine<max-iterations=1;no-verify-fixpoint>),function-attrs,function(require<should-not-run-function-passes>)))" on module "/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CommandLine.cpp"
+5.	Running pass "jump-threading" on function "_ZL30tokenizeWindowsCommandLineImplN4llvm9StringRefERNS_11StringSaverENS_12function_refIFvS0_EEEbNS3_IFvvEEEb"
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x0000561ecd6e4410 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x0000561ecd6e2304 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x0000561ecd633d88
+3  libc.so.6 0x00007f02c5f6f520
+4  clang++   0x0000561ecd01825f llvm::AttributeList::getAttributeAtIndex(unsigned int, llvm::Attribute::AttrKind) const + 15
+5  clang++   0x0000561ecd0ea918 llvm::Argument::getRange() const + 56
+6  clang++   0x0000561ecc82c117 llvm::LazyValueInfoImpl::solveBlockValueNonLocal(llvm::Value*, llvm::BasicBlock*) + 1271
+7  clang++   0x0000561ecc82c495 llvm::LazyValueInfoImpl::solveBlockValueImpl(llvm::Value*, llvm::BasicBlock*) + 69
+8  clang++   0x0000561ecc82c875 llvm::LazyValueInfoImpl::solve() + 245
+9  clang++   0x0000561ecc82e328 llvm::LazyValueInfoImpl::getValueOnEdge(llvm::Value*, llvm::BasicBlock*, llvm::BasicBlock*, llvm::Instruction*) + 104
+10 clang++   0x0000561ecc82e6db llvm::LazyValueInfo::getPredicateOnEdge(llvm::CmpInst::Predicate, llvm::Value*, llvm::Constant*, llvm::BasicBlock*, llvm::BasicBlock*, llvm::Instruction*) + 123
+11 clang++   0x0000561ecc82ea00 llvm::LazyValueInfo::getPredicateAt(llvm::CmpInst::Predicate, llvm::Value*, llvm::Constant*, llvm::Instruction*, bool) + 400
+12 clang++   0x0000561ed0dd5114
+13 clang++   0x0000561ed0dd5b75 llvm::JumpThreadingPass::runImpl(llvm::Function&, llvm::AnalysisManager<llvm::Function>*, llvm::TargetLibraryInfo*, llvm::TargetTransformInfo*, llvm::LazyValueInfo*, llvm::AAResults*, std::unique_ptr<llvm::DomTreeUpdater, std::default_delete<llvm::DomTreeUpdater>>, std::optional<llvm::BlockFrequencyInfo*>, std::optional<llvm::BranchProbabilityInfo*>) + 1061
+14 clang++   0x0000561ed0dd61d0 llvm::JumpThreadingPass::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 528
+15 clang++   0x0000561ecd966116
+16 clang++   0x0000561ecd1a7f78 llvm::PassManager<llvm::Function, llvm::AnalysisManager<llvm::Function>>::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&) + 1144
+17 clang++   0x0000561ecbfaf886
+18 clang++   0x0000561ed10158ff llvm::CGSCCToFunctionPassAdaptor::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 1279
+19 clang++   0x0000561ece6d3266
+20 clang++   0x0000561ed101047b llvm::PassManager<llvm::LazyCallGraph::SCC, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 363
+21 clang++   0x0000561ece6d31c6
+22 clang++   0x0000561ed101698d llvm::DevirtSCCRepeatedPass::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&) + 525
+23 clang++   0x0000561ece6d3216
+24 clang++   0x0000561ed1012c2f llvm::ModuleToPostOrderCGSCCPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 4031
+25 clang++   0x0000561ece6d3176
+26 clang++   0x0000561ecd1a2ad8 llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 1224
+27 clang++   0x0000561ecee5f233 llvm::ModuleInlinerWrapperPass::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 627
+28 clang++   0x0000561ece6d26a6
+29 clang++   0x0000561ecd1a2ad8 llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&) + 1224
+30 clang++   0x0000561ecd9733fe
+31 clang++   0x0000561ecd97757d clang::emitBackendOutput(clang::CompilerInstance&, clang::CodeGenOptions&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>, clang::BackendConsumer*) + 2253
+32 clang++   0x0000561ecdfefb43 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 1555
+33 clang++   0x0000561ecf44ac2c clang::ParseAST(clang::Sema&, bool, bool) + 1164
+34 clang++   0x0000561ece33269e clang::FrontendAction::Execute() + 46
+35 clang++   0x0000561ece2a18bb clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+36 clang++   0x0000561ece40d7cc clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+37 clang++   0x0000561ecbf3031c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+38 clang++   0x0000561ecbf27792
+39 clang++   0x0000561ece064bfd
+40 clang++   0x0000561ecd6341b7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+41 clang++   0x0000561ece064f97
+42 clang++   0x0000561ece0270e1 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+43 clang++   0x0000561ece028159 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+44 clang++   0x0000561ece03c40f clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+45 clang++   0x0000561ecbf2c2c5 clang_main(int, char**, llvm::ToolContext const&) + 7493
+46 clang++   0x0000561ecbe0125b main + 107
+47 libc.so.6 0x00007f02c5f56d90
+48 libc.so.6 0x00007f02c5f56e40 __libc_start_main + 128
+49 clang++   0x0000561ecbf271f5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/CommandLine-345d62.cpp
+clang++: note: diagnostic msg: /tmp/CommandLine-345d62.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:447 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
