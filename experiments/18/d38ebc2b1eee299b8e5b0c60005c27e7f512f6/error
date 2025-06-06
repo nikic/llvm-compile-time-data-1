@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[589/3161] Building AArch64GenDisassemblerTables.inc...
+[590/3161] Building AArch64GenAsmMatcher.inc...
+[591/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMRemarkStreamer.cpp.o
+[592/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LegacyPassManager.cpp.o
+[593/3161] Building AArch64GenFastISel.inc...
+[594/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/MemoryModelRelaxationAnnotations.cpp.o
+[595/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/MDBuilder.cpp.o
+[596/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Mangler.cpp.o
+[597/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Module.cpp.o
+[598/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ModuleSummaryIndex.cpp.o
+[599/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Operator.cpp.o
+[600/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/OptBisect.cpp.o
+[601/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Pass.cpp.o
+[602/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassInstrumentation.cpp.o
+[603/3161] Building X86GenFastISel.inc...
+[604/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassManager.cpp.o
+[605/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassRegistry.cpp.o
+[606/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassTimingInfo.cpp.o
+[607/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PrintPasses.cpp.o
+[608/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/SafepointIRVerifier.cpp.o
+[609/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ProfDataUtils.cpp.o
+[610/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ProfileSummary.cpp.o
+[611/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PseudoProbe.cpp.o
+[612/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ReplaceConstant.cpp.o
+[613/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Statepoint.cpp.o
+[614/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/StructuralHash.cpp.o
+[615/3161] Building X86GenGlobalISel.inc...
+[616/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/TypeFinder.cpp.o
+[617/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Use.cpp.o
+[618/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/User.cpp.o
+[619/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/BasicBlock.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/BasicBlock.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/BasicBlock.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/BasicBlock.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/BasicBlock.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/BasicBlock.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/BasicBlock.cpp:27:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[620/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Attributes.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/Attributes.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/Attributes.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/Attributes.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/Attributes.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Attributes.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Attributes.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[621/3161] Building X86GenDAGISel.inc...
+[622/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Constants.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/Constants.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/Constants.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/Constants.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/Constants.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Constants.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Constants.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[623/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Globals.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/Globals.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/Globals.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/Globals.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/Globals.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Globals.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Globals.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[624/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DIBuilder.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/DIBuilder.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/DIBuilder.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/DIBuilder.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/DIBuilder.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DIBuilder.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DIBuilder.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[625/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfo.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfo.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[626/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/InlineAsm.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/InlineAsm.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/InlineAsm.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/InlineAsm.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/InlineAsm.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/InlineAsm.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/InlineAsm.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[627/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Instructions.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/Instructions.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/Instructions.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/Instructions.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/Instructions.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Instructions.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Instructions.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[628/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[629/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMContext.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/LLVMContext.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/LLVMContext.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/LLVMContext.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/LLVMContext.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContext.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContext.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[630/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Type.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/Type.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/Type.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/Type.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/Type.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Type.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Type.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[631/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/TypedPointerType.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/TypedPointerType.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/TypedPointerType.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/TypedPointerType.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/TypedPointerType.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/TypedPointerType.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/TypedPointerType.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[632/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMContextImpl.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/LLVMContextImpl.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/LLVMContextImpl.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/LLVMContextImpl.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/LLVMContextImpl.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[633/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Metadata.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/Metadata.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/Metadata.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/Metadata.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/Metadata.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Metadata.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Metadata.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[634/3161] Building X86GenSubtargetInfo.inc...
+[635/3161] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Value.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/Value.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h: In member function ‘unsigned int llvm::MDNodeKeyImpl<llvm::DILocation>::getHashValue() const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:9: error: ‘AtomGroup’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |         ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/LLVMContextImpl.h:358:22: error: ‘AtomRank’ was not declared in this scope
+  358 |     if (AtomGroup || AtomRank)
+      |                      ^~~~~~~~
+[636/3161] Building X86GenInstrInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:447 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+91.42user 6.86system 0:07.45elapsed 1318%CPU (0avgtext+0avgdata 723496maxresident)k
+0inputs+490888outputs (2675major+4545283minor)pagefaults 0swaps
