@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:89:5:   required from ‘llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::PointerIntPair(PointerTy, IntType) [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:5994:63:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h:61:28: error: invalid application of ‘__alignof__’ to incomplete type ‘clang::TypedefNameDecl’
+   61 |       detail::ConstantLog2<alignof(T)>::value;
+      |                            ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/FileEntry.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/FileManager.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ModuleFile.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ModuleCache.cpp:12:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h: In instantiation of ‘struct llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:111:28:   required from ‘void llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::setPointerAndInt(PointerTy, IntType) & [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:89:5:   required from ‘llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::PointerIntPair(PointerTy, IntType) [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:5994:63:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:169:48: error: non-constant condition for static assertion
+  169 |   static_assert(PtrTraits::NumLowBitsAvailable <
+      |                            ~~~~~~~~~~~~~~~~~~~~^
+  170 |                     std::numeric_limits<uintptr_t>::digits,
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:172:25: error: non-constant condition for static assertion
+  172 |   static_assert(IntBits <= PtrTraits::NumLowBitsAvailable,
+      |                 ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:174:8: error: enumerator value for ‘PointerBitMask’ is not an integer constant
+  174 |   enum MaskAndShiftConstants : uintptr_t {
+      |        ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:174:8: error: enumerator value for ‘IntShift’ is not an integer constant
+[3044/3164] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ASTCommon.cpp.o
+[3045/3164] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/GlobalModuleIndex.cpp.o
+FAILED: tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/GlobalModuleIndex.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Serialization -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/GlobalModuleIndex.cpp.o -MF tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/GlobalModuleIndex.cpp.o.d -o tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/GlobalModuleIndex.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/GlobalModuleIndex.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ReverseIteration.h:5,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/GlobalModuleIndex.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/GlobalModuleIndex.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h: In instantiation of ‘constexpr const int llvm::PointerLikeTypeTraits<clang::TypedefNameDecl*>::NumLowBitsAvailable’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h:101:56:   required from ‘constexpr const int llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>::NumLowBitsAvailable’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:169:28:   required from ‘struct llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:111:28:   required from ‘void llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::setPointerAndInt(PointerTy, IntType) & [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:89:5:   required from ‘llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::PointerIntPair(PointerTy, IntType) [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:5994:63:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h:61:28: error: invalid application of ‘__alignof__’ to incomplete type ‘clang::TypedefNameDecl’
+   61 |       detail::ConstantLog2<alignof(T)>::value;
+      |                            ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/MultiOnDiskHashTable.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ASTReaderInternals.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/GlobalModuleIndex.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h: In instantiation of ‘struct llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:111:28:   required from ‘void llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::setPointerAndInt(PointerTy, IntType) & [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:89:5:   required from ‘llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::PointerIntPair(PointerTy, IntType) [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:5994:63:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:169:48: error: non-constant condition for static assertion
+  169 |   static_assert(PtrTraits::NumLowBitsAvailable <
+      |                            ~~~~~~~~~~~~~~~~~~~~^
+  170 |                     std::numeric_limits<uintptr_t>::digits,
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:172:25: error: non-constant condition for static assertion
+  172 |   static_assert(IntBits <= PtrTraits::NumLowBitsAvailable,
+      |                 ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:174:8: error: enumerator value for ‘PointerBitMask’ is not an integer constant
+  174 |   enum MaskAndShiftConstants : uintptr_t {
+      |        ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:174:8: error: enumerator value for ‘IntShift’ is not an integer constant
+[3046/3164] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/ExprMutationAnalyzer.cpp.o
+[3047/3164] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ModuleFile.cpp.o
+FAILED: tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ModuleFile.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Serialization -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ModuleFile.cpp.o -MF tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ModuleFile.cpp.o.d -o tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ModuleFile.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ModuleFile.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringMap.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DirectoryEntry.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/FileManager.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ModuleFile.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ModuleFile.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h: In instantiation of ‘constexpr const int llvm::PointerLikeTypeTraits<clang::TypedefNameDecl*>::NumLowBitsAvailable’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h:101:56:   required from ‘constexpr const int llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>::NumLowBitsAvailable’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:169:28:   required from ‘struct llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:111:28:   required from ‘void llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::setPointerAndInt(PointerTy, IntType) & [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:89:5:   required from ‘llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::PointerIntPair(PointerTy, IntType) [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:5994:63:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h:61:28: error: invalid application of ‘__alignof__’ to incomplete type ‘clang::TypedefNameDecl’
+   61 |       detail::ConstantLog2<alignof(T)>::value;
+      |                            ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/FileEntry.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/FileManager.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ModuleFile.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ModuleFile.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h: In instantiation of ‘struct llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:111:28:   required from ‘void llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::setPointerAndInt(PointerTy, IntType) & [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:89:5:   required from ‘llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::PointerIntPair(PointerTy, IntType) [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:5994:63:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:169:48: error: non-constant condition for static assertion
+  169 |   static_assert(PtrTraits::NumLowBitsAvailable <
+      |                            ~~~~~~~~~~~~~~~~~~~~^
+  170 |                     std::numeric_limits<uintptr_t>::digits,
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:172:25: error: non-constant condition for static assertion
+  172 |   static_assert(IntBits <= PtrTraits::NumLowBitsAvailable,
+      |                 ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:174:8: error: enumerator value for ‘PointerBitMask’ is not an integer constant
+  174 |   enum MaskAndShiftConstants : uintptr_t {
+      |        ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:174:8: error: enumerator value for ‘IntShift’ is not an integer constant
+[3048/3164] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ModuleManager.cpp.o
+FAILED: tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ModuleManager.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Serialization -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -fno-strict-aliasing -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ModuleManager.cpp.o -MF tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ModuleManager.cpp.o.d -o tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ModuleManager.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ModuleManager.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringMap.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/DirectoryEntry.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/FileEntry.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/SourceLocation.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ModuleManager.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ModuleManager.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h: In instantiation of ‘constexpr const int llvm::PointerLikeTypeTraits<clang::TypedefNameDecl*>::NumLowBitsAvailable’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h:101:56:   required from ‘constexpr const int llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>::NumLowBitsAvailable’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:169:28:   required from ‘struct llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:111:28:   required from ‘void llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::setPointerAndInt(PointerTy, IntType) & [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:89:5:   required from ‘llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::PointerIntPair(PointerTy, IntType) [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:5994:63:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/PointerLikeTypeTraits.h:61:28: error: invalid application of ‘__alignof__’ to incomplete type ‘clang::TypedefNameDecl’
+   61 |       detail::ConstantLog2<alignof(T)>::value;
+      |                            ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerUnion.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/FileEntry.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/SourceLocation.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ModuleManager.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ModuleManager.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h: In instantiation of ‘struct llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:111:28:   required from ‘void llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::setPointerAndInt(PointerTy, IntType) & [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:89:5:   required from ‘llvm::PointerIntPair<PointerTy, IntBits, IntType, PtrTraits, Info>::PointerIntPair(PointerTy, IntType) [with PointerTy = const clang::TypedefNameDecl*; unsigned int IntBits = 3; IntType = unsigned int; PtrTraits = llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*>; Info = llvm::PointerIntPairInfo<const clang::TypedefNameDecl*, 3, llvm::PointerLikeTypeTraits<const clang::TypedefNameDecl*> >]’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:5994:63:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:169:48: error: non-constant condition for static assertion
+  169 |   static_assert(PtrTraits::NumLowBitsAvailable <
+      |                            ~~~~~~~~~~~~~~~~~~~~^
+  170 |                     std::numeric_limits<uintptr_t>::digits,
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:172:25: error: non-constant condition for static assertion
+  172 |   static_assert(IntBits <= PtrTraits::NumLowBitsAvailable,
+      |                 ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:174:8: error: enumerator value for ‘PointerBitMask’ is not an integer constant
+  174 |   enum MaskAndShiftConstants : uintptr_t {
+      |        ^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/PointerIntPair.h:174:8: error: enumerator value for ‘IntShift’ is not an integer constant
+[3049/3164] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/TemplateArgumentHasher.cpp.o
+[3050/3164] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/GeneratePCH.cpp.o
+[3051/3164] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/UnsafeBufferUsage.cpp.o
+[3052/3164] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ASTWriterStmt.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ASTWriterStmt.cpp:21:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:245:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  245 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:306:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  306 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[3053/3164] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ASTReaderStmt.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTRecordReader.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ASTReaderStmt.cpp:51:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:245:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  245 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:306:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  306 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[3054/3164] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ASTWriterDecl.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ASTWriterDecl.cpp:22:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:245:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  245 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:306:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  306 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[3055/3164] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTConsumers.cpp.o
+[3056/3164] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/RISCV.cpp.o
+[3057/3164] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ASTReaderDecl.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTRecordReader.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ASTReaderDecl.cpp:54:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:245:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  245 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:306:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  306 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[3058/3164] Building CXX object tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/ExtractAPIConsumer.cpp.o
+[3059/3164] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ASTWriter.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ASTWriter.cpp:75:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:245:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  245 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:306:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  306 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[3060/3164] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ASTReader.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTRecordReader.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Serialization/ASTReader.cpp:86:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:245:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  245 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:306:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  306 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:447 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+3152.15user 136.50system 3:35.50elapsed 1525%CPU (0avgtext+0avgdata 1884912maxresident)k
+0inputs+9084056outputs (46988major+87910733minor)pagefaults 0swaps
