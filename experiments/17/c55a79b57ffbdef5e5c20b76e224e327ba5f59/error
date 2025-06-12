@@ -1,0 +1,601 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh ReleaseLTO-g stage1 " failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/ReleaseLTO-g.cmake
+-- The C compiler identification is Clang 21.0.0
+-- The CXX compiler identification is Clang 21.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage1/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: unknown
+-- Adding directory CTMark
+-- Found Intl: built in to C library  
+-- Performing Test COMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS
+-- Performing Test COMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS - Success
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/llvm-test-suite-build
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+[1/671] Generating ../lit.cfg
+[2/671] Generating HashProgramOutput.sh
+[3/671] Generating timeit
+[4/671] Generating timeit-target
+[5/671] Generating modules/__init__.py
+[6/671] Generating __init__.py
+[7/671] Generating modules/codesize.py
+[8/671] Generating modules/compiletime.py
+[9/671] Generating modules/perf.py
+[10/671] Generating modules/hpmcount.py
+[11/671] Generating modules/microbenchmark.py
+[12/671] Generating modules/hash.py
+[13/671] Generating modules/remote.py
+[14/671] Generating modules/profilegen.py
+[15/671] Generating modules/run.py
+[16/671] Generating modules/run_under.py
+[17/671] Generating test.py
+[18/671] Generating modules/stats.py
+[19/671] Generating modules/timeit.py
+[20/671] Generating shellcommand.py
+[21/671] Generating testfile.py
+[22/671] Generating testplan.py
+[23/671] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[24/671] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/671] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+[26/671] Building CXX object tools/CMakeFiles/not.dir/not.cpp.o
+[27/671] Generating sqlite test inputs
+[28/671] Linking C executable tools/fpcmp-target
+FAILED: tools/fpcmp-target 
+: && /tmp/llvm-project-build-stage1/bin/clang -O3 -fomit-frame-pointer -flto -DNDEBUG -g  tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -o tools/fpcmp-target   && :
+clang: error: unable to execute command: Segmentation fault (core dumped)
+clang: error: linker command failed due to signal (use -v to see invocation)
+[29/671] Linking CXX executable tools/not
+FAILED: tools/not 
+: && /tmp/llvm-project-build-stage1/bin/clang++ -O3 -fomit-frame-pointer -flto -DNDEBUG -g  tools/CMakeFiles/not.dir/not.cpp.o -o tools/not   && :
+clang++: error: unable to execute command: Segmentation fault (core dumped)
+clang++: error: linker command failed due to signal (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O0-g stage1 " failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/O0-g.cmake
+-- The C compiler identification is Clang 21.0.0
+-- The CXX compiler identification is Clang 21.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage1/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: unknown
+-- Adding directory CTMark
+-- Found Intl: built in to C library  
+-- Performing Test COMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS
+-- Performing Test COMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS - Success
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/llvm-test-suite-build
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+[1/671] Generating ../lit.cfg
+[2/671] Generating timeit-target
+[3/671] Generating HashProgramOutput.sh
+[4/671] Generating timeit
+[5/671] Generating __init__.py
+[6/671] Generating modules/__init__.py
+[7/671] Generating modules/codesize.py
+[8/671] Generating modules/compiletime.py
+[9/671] Generating modules/microbenchmark.py
+[10/671] Generating modules/hash.py
+[11/671] Generating modules/perf.py
+[12/671] Generating modules/hpmcount.py
+[13/671] Generating modules/run.py
+[14/671] Generating modules/profilegen.py
+[15/671] Generating modules/remote.py
+[16/671] Generating modules/run_under.py
+[17/671] Generating modules/timeit.py
+[18/671] Generating modules/stats.py
+[19/671] Generating shellcommand.py
+[20/671] Generating test.py
+[21/671] Generating testplan.py
+[22/671] Generating testfile.py
+[23/671] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[24/671] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/671] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+FAILED: tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o 
+/tmp/llvm-project-build-stage1/bin/clang -DNDEBUG  -O0 -g   -w -Werror=date-time -MD -MT tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -MF tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o.d -o tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -c /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang -DNDEBUG -O0 -g -w -Werror=date-time -MD -MT tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -MF tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o.d -o tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -c /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c
+1.	<eof> parser at end of file
+2.	Code generation
+3.	Running pass 'Function Pass Manager' on module '/var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c'.
+4.	Running pass 'X86 Assembly Printer' on function '@load_file'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang     0x000055aa69bf8360 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang     0x000055aa69bf6254 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang     0x000055aa69b47c68
+3  libc.so.6 0x00007f95d49e5520
+4  clang     0x000055aa6aafd978 llvm::DwarfDebug::beginInstruction(llvm::MachineInstr const*) + 1720
+5  clang     0x000055aa6aac2941 llvm::AsmPrinter::emitFunctionBody() + 721
+6  clang     0x000055aa684414e9
+7  clang     0x000055aa6909e968
+8  clang     0x000055aa6965dd22 llvm::FPPassManager::runOnFunction(llvm::Function&) + 1666
+9  clang     0x000055aa6965dee4 llvm::FPPassManager::runOnModule(llvm::Module&) + 52
+10 clang     0x000055aa6965e954 llvm::legacy::PassManagerImpl::run(llvm::Module&) + 1124
+11 clang     0x000055aa69e8aa02
+12 clang     0x000055aa69e8b4e3 clang::emitBackendOutput(clang::CompilerInstance&, clang::CodeGenOptions&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>, clang::BackendConsumer*) + 2275
+13 clang     0x000055aa6a502a33 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 1555
+14 clang     0x000055aa6b965c4c clang::ParseAST(clang::Sema&, bool, bool) + 1164
+15 clang     0x000055aa6a846b8e clang::FrontendAction::Execute() + 46
+16 clang     0x000055aa6a7b5a1b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+17 clang     0x000055aa6a921ecc clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+18 clang     0x000055aa6843324c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+19 clang     0x000055aa6842a6b2
+20 clang     0x000055aa6a577c2d
+21 clang     0x000055aa69b48097 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+22 clang     0x000055aa6a577fc7
+23 clang     0x000055aa6a53a021 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+24 clang     0x000055aa6a53b099 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+25 clang     0x000055aa6a54f4df clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+26 clang     0x000055aa6842f1f5 clang_main(int, char**, llvm::ToolContext const&) + 7509
+27 clang     0x000055aa6833fc1b main + 107
+28 libc.so.6 0x00007f95d49ccd90
+29 libc.so.6 0x00007f95d49cce40 __libc_start_main + 128
+30 clang     0x000055aa6842a115 _start + 37
+clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/fpcmp-f8e0fb.c
+clang: note: diagnostic msg: /tmp/fpcmp-f8e0fb.sh
+clang: note: diagnostic msg: 
+
+********************
+[26/671] Generating sqlite test inputs
+[27/671] Building CXX object tools/CMakeFiles/not.dir/not.cpp.o
+FAILED: tools/CMakeFiles/not.dir/not.cpp.o 
+/tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG  -O0 -g   -w -Werror=date-time -MD -MT tools/CMakeFiles/not.dir/not.cpp.o -MF tools/CMakeFiles/not.dir/not.cpp.o.d -o tools/CMakeFiles/not.dir/not.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/tools/not.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG -O0 -g -w -Werror=date-time -MD -MT tools/CMakeFiles/not.dir/not.cpp.o -MF tools/CMakeFiles/not.dir/not.cpp.o.d -o tools/CMakeFiles/not.dir/not.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/tools/not.cpp
+1.	<eof> parser at end of file
+2.	Code generation
+3.	Running pass 'Function Pass Manager' on module '/var/llvm-compile-time-tracker/llvm-test-suite/tools/not.cpp'.
+4.	Running pass 'X86 Assembly Printer' on function '@main'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x0000560ff313b360 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x0000560ff3139254 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x0000560ff308ac68
+3  libc.so.6 0x00007f907a6fa520
+4  clang++   0x0000560ff4040978 llvm::DwarfDebug::beginInstruction(llvm::MachineInstr const*) + 1720
+5  clang++   0x0000560ff4005941 llvm::AsmPrinter::emitFunctionBody() + 721
+6  clang++   0x0000560ff19844e9
+7  clang++   0x0000560ff25e1968
+8  clang++   0x0000560ff2ba0d22 llvm::FPPassManager::runOnFunction(llvm::Function&) + 1666
+9  clang++   0x0000560ff2ba0ee4 llvm::FPPassManager::runOnModule(llvm::Module&) + 52
+10 clang++   0x0000560ff2ba1954 llvm::legacy::PassManagerImpl::run(llvm::Module&) + 1124
+11 clang++   0x0000560ff33cda02
+12 clang++   0x0000560ff33ce4e3 clang::emitBackendOutput(clang::CompilerInstance&, clang::CodeGenOptions&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>, clang::BackendConsumer*) + 2275
+13 clang++   0x0000560ff3a45a33 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 1555
+14 clang++   0x0000560ff4ea8c4c clang::ParseAST(clang::Sema&, bool, bool) + 1164
+15 clang++   0x0000560ff3d89b8e clang::FrontendAction::Execute() + 46
+16 clang++   0x0000560ff3cf8a1b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+17 clang++   0x0000560ff3e64ecc clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+18 clang++   0x0000560ff197624c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+19 clang++   0x0000560ff196d6b2
+20 clang++   0x0000560ff3abac2d
+21 clang++   0x0000560ff308b097 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+22 clang++   0x0000560ff3abafc7
+23 clang++   0x0000560ff3a7d021 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+24 clang++   0x0000560ff3a7e099 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+25 clang++   0x0000560ff3a924df clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+26 clang++   0x0000560ff19721f5 clang_main(int, char**, llvm::ToolContext const&) + 7509
+27 clang++   0x0000560ff1882c1b main + 107
+28 libc.so.6 0x00007f907a6e1d90
+29 libc.so.6 0x00007f907a6e1e40 __libc_start_main + 128
+30 clang++   0x0000560ff196d115 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/not-831a54.cpp
+clang++: note: diagnostic msg: /tmp/not-831a54.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O0-g stage1 aarch64" failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/O0-g.cmake
+-- The C compiler identification is Clang 21.0.0
+-- The CXX compiler identification is Clang 21.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage1/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: AArch64
+-- Adding directory CTMark
+-- Found Intl: built in to C library  
+-- Performing Test COMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS
+-- Performing Test COMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS - Success
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_LIBRARY TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_LIBRARY TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/llvm-test-suite-build
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+[1/671] Generating ../lit.cfg
+[2/671] Generating timeit-target
+[3/671] Generating HashProgramOutput.sh
+[4/671] Generating timeit
+[5/671] Generating __init__.py
+[6/671] Generating modules/compiletime.py
+[7/671] Generating modules/codesize.py
+[8/671] Generating modules/__init__.py
+[9/671] Generating modules/hash.py
+[10/671] Generating modules/hpmcount.py
+[11/671] Generating modules/perf.py
+[12/671] Generating modules/microbenchmark.py
+[13/671] Generating modules/profilegen.py
+[14/671] Generating modules/remote.py
+[15/671] Generating modules/run.py
+[16/671] Generating modules/run_under.py
+[17/671] Generating shellcommand.py
+[18/671] Generating modules/stats.py
+[19/671] Generating modules/timeit.py
+[20/671] Generating test.py
+[21/671] Generating testfile.py
+[22/671] Generating testplan.py
+[23/671] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[24/671] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/671] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+FAILED: tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o 
+/tmp/llvm-project-build-stage1/bin/clang --target=aarch64-linux-gnu -DNDEBUG  -O0 -g   -w -Werror=date-time -MD -MT tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -MF tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o.d -o tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -c /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang --target=aarch64-linux-gnu -DNDEBUG -O0 -g -w -Werror=date-time -MD -MT tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -MF tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o.d -o tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -c /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c
+1.	<eof> parser at end of file
+2.	Code generation
+3.	Running pass 'Function Pass Manager' on module '/var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c'.
+4.	Running pass 'AArch64 Assembly Printer' on function '@load_file'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang     0x000056258df36360 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang     0x000056258df34254 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang     0x000056258de85c68
+3  libc.so.6 0x00007fd1f4517520
+4  clang     0x000056258ee3b978 llvm::DwarfDebug::beginInstruction(llvm::MachineInstr const*) + 1720
+5  clang     0x000056258ee00941 llvm::AsmPrinter::emitFunctionBody() + 721
+6  clang     0x000056258cbe372d
+7  clang     0x000056258d3dc968
+8  clang     0x000056258d99bd22 llvm::FPPassManager::runOnFunction(llvm::Function&) + 1666
+9  clang     0x000056258d99bee4 llvm::FPPassManager::runOnModule(llvm::Module&) + 52
+10 clang     0x000056258d99c954 llvm::legacy::PassManagerImpl::run(llvm::Module&) + 1124
+11 clang     0x000056258e1c8a02
+12 clang     0x000056258e1c94e3 clang::emitBackendOutput(clang::CompilerInstance&, clang::CodeGenOptions&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>, clang::BackendConsumer*) + 2275
+13 clang     0x000056258e840a33 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 1555
+14 clang     0x000056258fca3c4c clang::ParseAST(clang::Sema&, bool, bool) + 1164
+15 clang     0x000056258eb84b8e clang::FrontendAction::Execute() + 46
+16 clang     0x000056258eaf3a1b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+17 clang     0x000056258ec5fecc clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+18 clang     0x000056258c77124c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+19 clang     0x000056258c7686b2
+20 clang     0x000056258e8b5c2d
+21 clang     0x000056258de86097 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+22 clang     0x000056258e8b5fc7
+23 clang     0x000056258e878021 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+24 clang     0x000056258e879099 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+25 clang     0x000056258e88d4df clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+26 clang     0x000056258c76d1f5 clang_main(int, char**, llvm::ToolContext const&) + 7509
+27 clang     0x000056258c67dc1b main + 107
+28 libc.so.6 0x00007fd1f44fed90
+29 libc.so.6 0x00007fd1f44fee40 __libc_start_main + 128
+30 clang     0x000056258c768115 _start + 37
+clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/fpcmp-3b71ce.c
+clang: note: diagnostic msg: /tmp/fpcmp-3b71ce.sh
+clang: note: diagnostic msg: 
+
+********************
+[26/671] Generating sqlite test inputs
+[27/671] Building CXX object tools/CMakeFiles/not.dir/not.cpp.o
+FAILED: tools/CMakeFiles/not.dir/not.cpp.o 
+/tmp/llvm-project-build-stage1/bin/clang++ --target=aarch64-linux-gnu -DNDEBUG  -O0 -g   -w -Werror=date-time -MD -MT tools/CMakeFiles/not.dir/not.cpp.o -MF tools/CMakeFiles/not.dir/not.cpp.o.d -o tools/CMakeFiles/not.dir/not.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/tools/not.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ --target=aarch64-linux-gnu -DNDEBUG -O0 -g -w -Werror=date-time -MD -MT tools/CMakeFiles/not.dir/not.cpp.o -MF tools/CMakeFiles/not.dir/not.cpp.o.d -o tools/CMakeFiles/not.dir/not.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/tools/not.cpp
+1.	<eof> parser at end of file
+2.	Code generation
+3.	Running pass 'Function Pass Manager' on module '/var/llvm-compile-time-tracker/llvm-test-suite/tools/not.cpp'.
+4.	Running pass 'AArch64 Assembly Printer' on function '@__cxx_global_var_init'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x0000557ac6ca7360 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x0000557ac6ca5254 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x0000557ac6bf6c68
+3  libc.so.6 0x00007f9f154ae520
+4  clang++   0x0000557ac7bac978 llvm::DwarfDebug::beginInstruction(llvm::MachineInstr const*) + 1720
+5  clang++   0x0000557ac7b71941 llvm::AsmPrinter::emitFunctionBody() + 721
+6  clang++   0x0000557ac595472d
+7  clang++   0x0000557ac614d968
+8  clang++   0x0000557ac670cd22 llvm::FPPassManager::runOnFunction(llvm::Function&) + 1666
+9  clang++   0x0000557ac670cee4 llvm::FPPassManager::runOnModule(llvm::Module&) + 52
+10 clang++   0x0000557ac670d954 llvm::legacy::PassManagerImpl::run(llvm::Module&) + 1124
+11 clang++   0x0000557ac6f39a02
+12 clang++   0x0000557ac6f3a4e3 clang::emitBackendOutput(clang::CompilerInstance&, clang::CodeGenOptions&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>, clang::BackendConsumer*) + 2275
+13 clang++   0x0000557ac75b1a33 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 1555
+14 clang++   0x0000557ac8a14c4c clang::ParseAST(clang::Sema&, bool, bool) + 1164
+15 clang++   0x0000557ac78f5b8e clang::FrontendAction::Execute() + 46
+16 clang++   0x0000557ac7864a1b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+17 clang++   0x0000557ac79d0ecc clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+18 clang++   0x0000557ac54e224c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+19 clang++   0x0000557ac54d96b2
+20 clang++   0x0000557ac7626c2d
+21 clang++   0x0000557ac6bf7097 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+22 clang++   0x0000557ac7626fc7
+23 clang++   0x0000557ac75e9021 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+24 clang++   0x0000557ac75ea099 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+25 clang++   0x0000557ac75fe4df clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+26 clang++   0x0000557ac54de1f5 clang_main(int, char**, llvm::ToolContext const&) + 7509
+27 clang++   0x0000557ac53eec1b main + 107
+28 libc.so.6 0x00007f9f15495d90
+29 libc.so.6 0x00007f9f15495e40 __libc_start_main + 128
+30 clang++   0x0000557ac54d9115 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/not-00cffd.cpp
+clang++: note: diagnostic msg: /tmp/not-00cffd.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O0-g stage2 " failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/O0-g.cmake
+-- The C compiler identification is Clang 21.0.0
+-- The CXX compiler identification is Clang 21.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /tmp/llvm-project-build-stage2/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage2/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: unknown
+-- Adding directory CTMark
+-- Found Intl: built in to C library  
+-- Performing Test COMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS
+-- Performing Test COMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS - Success
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/llvm-test-suite-build
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+[1/671] Generating ../lit.cfg
+[2/671] Generating timeit
+[3/671] Generating timeit-target
+[4/671] Generating HashProgramOutput.sh
+[5/671] Generating __init__.py
+[6/671] Generating modules/__init__.py
+[7/671] Generating modules/compiletime.py
+[8/671] Generating modules/codesize.py
+[9/671] Generating modules/hpmcount.py
+[10/671] Generating modules/hash.py
+[11/671] Generating modules/microbenchmark.py
+[12/671] Generating modules/perf.py
+[13/671] Generating modules/profilegen.py
+[14/671] Generating modules/remote.py
+[15/671] Generating modules/run.py
+[16/671] Generating modules/run_under.py
+[17/671] Generating modules/timeit.py
+[18/671] Generating shellcommand.py
+[19/671] Generating test.py
+[20/671] Generating modules/stats.py
+[21/671] Generating testplan.py
+[22/671] Generating testfile.py
+[23/671] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[24/671] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/671] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+FAILED: tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o 
+/tmp/llvm-project-build-stage2/bin/clang -DNDEBUG  -O0 -g   -w -Werror=date-time -MD -MT tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -MF tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o.d -o tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -c /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang -DNDEBUG -O0 -g -w -Werror=date-time -MD -MT tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -MF tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o.d -o tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -c /var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c
+1.	<eof> parser at end of file
+2.	Code generation
+3.	Running pass 'Function Pass Manager' on module '/var/llvm-compile-time-tracker/llvm-test-suite/tools/fpcmp.c'.
+4.	Running pass 'X86 Assembly Printer' on function '@load_file'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang     0x000056483bac5558 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 40
+1  clang     0x000056483bac2a1e llvm::sys::RunSignalHandlers() + 238
+2  clang     0x000056483ba268c7
+3  libc.so.6 0x00007f6c81196520
+4  clang     0x000056483cc241d8 llvm::DwarfDebug::beginInstruction(llvm::MachineInstr const*) + 392
+5  clang     0x000056483cbf75fd llvm::AsmPrinter::emitFunctionBody() + 2749
+6  clang     0x000056483a7a80c1
+7  clang     0x000056483afcb5d3 llvm::MachineFunctionPass::runOnFunction(llvm::Function&) + 995
+8  clang     0x000056483b5410e4 llvm::FPPassManager::runOnFunction(llvm::Function&) + 1348
+9  clang     0x000056483b54aa3c llvm::FPPassManager::runOnModule(llvm::Module&) + 44
+10 clang     0x000056483b5420dc llvm::legacy::PassManagerImpl::run(llvm::Module&) + 3164
+11 clang     0x000056483c2d1f3b clang::emitBackendOutput(clang::CompilerInstance&, clang::CodeGenOptions&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>, clang::BackendConsumer*) + 8187
+12 clang     0x000056483c2e8e60 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 2912
+13 clang     0x000056483dabca89 clang::ParseAST(clang::Sema&, bool, bool) + 937
+14 clang     0x000056483c90a4fd clang::FrontendAction::Execute() + 29
+15 clang     0x000056483c83e570 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 1200
+16 clang     0x000056483ca15f62 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 738
+17 clang     0x000056483a79b17e cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8398
+18 clang     0x000056483a79752f
+19 clang     0x000056483c67e209
+20 clang     0x000056483ba263c8 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 136
+21 clang     0x000056483c67de44 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const + 356
+22 clang     0x000056483c63ab98 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 552
+23 clang     0x000056483c65a0bb clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 763
+24 clang     0x000056483a796a9e clang_main(int, char**, llvm::ToolContext const&) + 7502
+25 clang     0x000056483a7a7d9a main + 90
+26 libc.so.6 0x00007f6c8117dd90
+27 libc.so.6 0x00007f6c8117de40 __libc_start_main + 128
+28 clang     0x000056483a7892a5 _start + 37
+clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage2/bin
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/fpcmp-949833.c
+clang: note: diagnostic msg: /tmp/fpcmp-949833.sh
+clang: note: diagnostic msg: 
+
+********************
+[26/671] Building CXX object tools/CMakeFiles/not.dir/not.cpp.o
+FAILED: tools/CMakeFiles/not.dir/not.cpp.o 
+/tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG  -O0 -g   -w -Werror=date-time -MD -MT tools/CMakeFiles/not.dir/not.cpp.o -MF tools/CMakeFiles/not.dir/not.cpp.o.d -o tools/CMakeFiles/not.dir/not.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/tools/not.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG -O0 -g -w -Werror=date-time -MD -MT tools/CMakeFiles/not.dir/not.cpp.o -MF tools/CMakeFiles/not.dir/not.cpp.o.d -o tools/CMakeFiles/not.dir/not.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/tools/not.cpp
+1.	<eof> parser at end of file
+2.	Code generation
+3.	Running pass 'Function Pass Manager' on module '/var/llvm-compile-time-tracker/llvm-test-suite/tools/not.cpp'.
+4.	Running pass 'X86 Assembly Printer' on function '@main'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x000055cc1939e558 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 40
+1  clang++   0x000055cc1939ba1e llvm::sys::RunSignalHandlers() + 238
+2  clang++   0x000055cc192ff8c7
+3  libc.so.6 0x00007f24ea631520
+4  clang++   0x000055cc1a4fd1d8 llvm::DwarfDebug::beginInstruction(llvm::MachineInstr const*) + 392
+5  clang++   0x000055cc1a4d05fd llvm::AsmPrinter::emitFunctionBody() + 2749
+6  clang++   0x000055cc180810c1
+7  clang++   0x000055cc188a45d3 llvm::MachineFunctionPass::runOnFunction(llvm::Function&) + 995
+8  clang++   0x000055cc18e1a0e4 llvm::FPPassManager::runOnFunction(llvm::Function&) + 1348
+9  clang++   0x000055cc18e23a3c llvm::FPPassManager::runOnModule(llvm::Module&) + 44
+10 clang++   0x000055cc18e1b0dc llvm::legacy::PassManagerImpl::run(llvm::Module&) + 3164
+11 clang++   0x000055cc19baaf3b clang::emitBackendOutput(clang::CompilerInstance&, clang::CodeGenOptions&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>, clang::BackendConsumer*) + 8187
+12 clang++   0x000055cc19bc1e60 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 2912
+13 clang++   0x000055cc1b395a89 clang::ParseAST(clang::Sema&, bool, bool) + 937
+14 clang++   0x000055cc1a1e34fd clang::FrontendAction::Execute() + 29
+15 clang++   0x000055cc1a117570 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 1200
+16 clang++   0x000055cc1a2eef62 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 738
+17 clang++   0x000055cc1807417e cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8398
+18 clang++   0x000055cc1807052f
+19 clang++   0x000055cc19f57209
+20 clang++   0x000055cc192ff3c8 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 136
+21 clang++   0x000055cc19f56e44 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const + 356
+22 clang++   0x000055cc19f13b98 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 552
+23 clang++   0x000055cc19f330bb clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 763
+24 clang++   0x000055cc1806fa9e clang_main(int, char**, llvm::ToolContext const&) + 7502
+25 clang++   0x000055cc18080d9a main + 90
+26 libc.so.6 0x00007f24ea618d90
+27 libc.so.6 0x00007f24ea618e40 __libc_start_main + 128
+28 clang++   0x000055cc180622a5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage2/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/not-9fdfe1.cpp
+clang++: note: diagnostic msg: /tmp/not-9fdfe1.sh
+clang++: note: diagnostic msg: 
+
+********************
+[27/671] Generating sqlite test inputs
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
