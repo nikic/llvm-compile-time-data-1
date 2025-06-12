@@ -1,0 +1,1640 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O3 stage1 " failed
+
+STDOUT:
+  |-ImplicitCastExpr 0x5588b4f16738 <line:972:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16558 <col:2> 'btScalar[6336]' lvalue Var 0x5588b2fd1e38 'Landscape04Nml' 'btScalar[6336]'
+  |-ImplicitCastExpr 0x5588b4f16750 <line:973:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16578 <col:2> 'btScalar[6732]' lvalue Var 0x5588b34d1aa8 'Landscape05Nml' 'btScalar[6732]'
+  |-ImplicitCastExpr 0x5588b4f167a8 <line:974:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16598 <col:2> 'btScalar[6930]' lvalue Var 0x5588b3a1b7d8 'Landscape06Nml' 'btScalar[6930]'
+  |-ImplicitCastExpr 0x5588b4f167c0 <line:975:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f165b8 <col:2> 'btScalar[6720]' lvalue Var 0x5588b3f681e8 'Landscape07Nml' 'btScalar[6720]'
+  `-ImplicitCastExpr 0x5588b4f167d8 <line:976:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x5588b4f165d8 <col:2> 'btScalar[6534]' lvalue Var 0x5588b449f158 'Landscape08Nml' 'btScalar[6534]'
+VarDecl 0x5588b4f16860 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:979:1, line:988:1> line:979:11 LandscapeTex 'btScalar *[8]' cinit
+`-InitListExpr 0x5588b4f16a48 <col:28, line:988:1> 'btScalar *[8]'
+  |-ImplicitCastExpr 0x5588b4f16a88 <line:980:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f168c8 <col:2> 'btScalar[4096]' lvalue Var 0x5588b4ab73b0 'Landscape01Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x5588b4f16aa8 <line:981:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f168e8 <col:2> 'btScalar[3960]' lvalue Var 0x5588b2753148 'Landscape02Tex' 'btScalar[3960]'
+  |-ImplicitCastExpr 0x5588b4f16ad0 <line:982:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16908 <col:2> 'btScalar[4096]' lvalue Var 0x5588b2cbf580 'Landscape03Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x5588b4f16b08 <line:983:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16928 <col:2> 'btScalar[4224]' lvalue Var 0x5588b30f89b8 'Landscape04Tex' 'btScalar[4224]'
+  |-ImplicitCastExpr 0x5588b4f16b20 <line:984:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16948 <col:2> 'btScalar[4488]' lvalue Var 0x5588b36112a8 'Landscape05Tex' 'btScalar[4488]'
+  |-ImplicitCastExpr 0x5588b4f16b78 <line:985:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16968 <col:2> 'btScalar[4620]' lvalue Var 0x5588b3b51800 'Landscape06Tex' 'btScalar[4620]'
+  |-ImplicitCastExpr 0x5588b4f16b90 <line:986:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16988 <col:2> 'btScalar[4480]' lvalue Var 0x5588b409abd8 'Landscape07Tex' 'btScalar[4480]'
+  `-ImplicitCastExpr 0x5588b4f16ba8 <line:987:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x5588b4f169a8 <col:2> 'btScalar[4356]' lvalue Var 0x5588b45e7168 'Landscape08Tex' 'btScalar[4356]'
+VarDecl 0x5588b4f16c68 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:990:1, line:999:1> line:990:18 LandscapeIdx 'unsigned short *[8]' cinit
+`-InitListExpr 0x5588b4f16e50 <col:35, line:999:1> 'unsigned short *[8]'
+  |-ImplicitCastExpr 0x5588b4f16e90 <line:991:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16cd0 <col:2> 'unsigned short[11718]' lvalue Var 0x5588b4be6528 'Landscape01Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x5588b4f16eb0 <line:992:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16cf0 <col:2> 'unsigned short[11310]' lvalue Var 0x5588b28f3320 'Landscape02Idx' 'unsigned short[11310]'
+  |-ImplicitCastExpr 0x5588b4f16ed8 <line:993:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16d10 <col:2> 'unsigned short[11718]' lvalue Var 0x5588b28c7b50 'Landscape03Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x5588b4f16f10 <line:994:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16d30 <col:2> 'unsigned short[12096]' lvalue Var 0x5588b3254580 'Landscape04Idx' 'unsigned short[12096]'
+  |-ImplicitCastExpr 0x5588b4f16f28 <line:995:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16d50 <col:2> 'unsigned short[12870]' lvalue Var 0x5588b376c1f0 'Landscape05Idx' 'unsigned short[12870]'
+  |-ImplicitCastExpr 0x5588b4f16f80 <line:996:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16d70 <col:2> 'unsigned short[13260]' lvalue Var 0x5588b3cbefc0 'Landscape06Idx' 'unsigned short[13260]'
+  |-ImplicitCastExpr 0x5588b4f16f98 <line:997:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5588b4f16d90 <col:2> 'unsigned short[12852]' lvalue Var 0x5588b41f27d0 'Landscape07Idx' 'unsigned short[12852]'
+  `-ImplicitCastExpr 0x5588b4f16fb0 <line:998:2> 'unsigned short *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x5588b4f16db0 <col:2> 'unsigned short[12480]' lvalue Var 0x5588b4727160 'Landscape08Idx' 'unsigned short[12480]'
+VarDecl 0x5588b4f185d0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1023:3, col:31> col:13 localInertia 'btVector3' callinit
+`-ExprWithCleanups 0x5588b4f18798 <col:13, col:31> 'btVector3'
+  `-CXXConstructExpr 0x5588b4f18758 <col:13, col:31> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+    |-MaterializeTemporaryExpr 0x5588b4f186e0 <col:26> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x5588b4f186c8 <col:26> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x5588b4f18638 <col:26> 'int' 0
+    |-MaterializeTemporaryExpr 0x5588b4f18710 <col:28> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x5588b4f186f8 <col:28> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x5588b4f18658 <col:28> 'int' 0
+    `-MaterializeTemporaryExpr 0x5588b4f18740 <col:30> 'const btScalar':'const float' lvalue
+      `-ImplicitCastExpr 0x5588b4f18728 <col:30> 'const btScalar':'const float' <IntegralToFloating>
+        `-IntegerLiteral 0x5588b4f18678 <col:30> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x5588b4f198e0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1049:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x5588b4f19a18 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x5588b4f199f8 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x5588b4f199e0 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x5588b4f199b8 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x5588b4f19988 <col:26> '<bound member function type>' .operator float * 0x5588b2045e48
+    |     `-DeclRefExpr 0x5588b4f19948 <col:26> 'btVector3' lvalue Var 0x5588b4f19158 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x5588b4f19968 <col:34> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x5588b4f1e460 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1130:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x5588b4f1e598 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x5588b4f1e578 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x5588b4f1e560 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x5588b4f1e538 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x5588b4f1e508 <col:26> '<bound member function type>' .operator float * 0x5588b2045e48
+    |     `-DeclRefExpr 0x5588b4f1e4c8 <col:26> 'btVector3' lvalue Var 0x5588b4f1d3b0 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x5588b4f1e4e8 <col:34> 'int' 0
+VarDecl 0x5588b20ef560 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x5588b20ef718 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x5588b20ef6e0 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x5588b20ef678 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x5588b20ef660 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x5588b20ef5c8 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x5588b20b2e78 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x5588b20ef6c0 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x5588b20ebac0 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x5588b20ebaa8 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x5588b20eba60 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x5588b20eba18 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x5588b20eb910 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x5588b20eb8f8 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x5588b20eb8d8 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x5588b20eba30 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x5588b20eb980 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x5588b20eb968 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x5588b20eb948 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x5588b20eba48 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x5588b20eb9f0 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x5588b20eb9d8 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x5588b20eb9b8 <col:69> 'int' 0
+VarDecl 0x5588b20ef560 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x5588b20ef718 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x5588b20ef6e0 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x5588b20ef678 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x5588b20ef660 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x5588b20ef5c8 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x5588b20b2e78 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x5588b20ef6c0 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x5588b20ebac0 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x5588b20ebaa8 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x5588b20eba60 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x5588b20eba18 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x5588b20eb910 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x5588b20eb8f8 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x5588b20eb8d8 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x5588b20eba30 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x5588b20eb980 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x5588b20eb968 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x5588b20eb948 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x5588b20eba48 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x5588b20eb9f0 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x5588b20eb9d8 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x5588b20eb9b8 <col:69> 'int' 0
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG -O3 -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:193:28: Generating code for declaration 'btTransform::getIdentity'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x00005588aa5c7790 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x00005588aa5c5684 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x00005588aa517268
+3  libc.so.6 0x00007f96e1694520
+4  clang++   0x00005588aa4f1d5c llvm::APInt::APInt(unsigned int, unsigned int, unsigned long const*) + 28
+5  clang++   0x00005588ad575d31
+6  clang++   0x00005588ad74175d
+7  clang++   0x00005588ad7414aa
+8  clang++   0x00005588ad741954
+9  clang++   0x00005588ad7414aa
+10 clang++   0x00005588ad7414aa
+11 clang++   0x00005588ad742f8e clang::interp::Pointer::toRValue(clang::interp::Context const&, clang::QualType) const + 430
+12 clang++   0x00005588ad55bb01
+13 clang++   0x00005588ad9882d3 clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 659
+14 clang++   0x00005588ad5781df clang::interp::EvalEmitter::interpretExpr(clang::Expr const*, bool, bool) + 143
+15 clang++   0x00005588ad547510 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 432
+16 clang++   0x00005588ad4bf5bf
+17 clang++   0x00005588ad4c34ed clang::Expr::EvaluateAsRValue(clang::Expr::EvalResult&, clang::ASTContext const&, bool) const + 1149
+18 clang++   0x00005588ad4c3648 clang::Expr::isEvaluatable(clang::ASTContext const&, clang::Expr::SideEffectsKind) const + 72
+19 clang++   0x00005588aaa379e1 clang::CodeGen::CodeGenFunction::EmitReturnStmt(clang::ReturnStmt const&) + 1153
+20 clang++   0x00005588aaa485ad clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 189
+21 clang++   0x00005588aaaa96b0 clang::CodeGen::CodeGenFunction::EmitFunctionBody(clang::Stmt const*) + 160
+22 clang++   0x00005588aaabdd83 clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 851
+23 clang++   0x00005588aab0c75d clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 397
+24 clang++   0x00005588aab07e1c clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 492
+25 clang++   0x00005588aab1237a clang::CodeGen::CodeGenModule::EmitDeferred() + 362
+26 clang++   0x00005588aab133c4 clang::CodeGen::CodeGenModule::Release() + 116
+27 clang++   0x00005588aaed6766
+28 clang++   0x00005588aaed3605 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 965
+29 clang++   0x00005588ac32b8cc clang::ParseAST(clang::Sema&, bool, bool) + 1164
+30 clang++   0x00005588ab21678e clang::FrontendAction::Execute() + 46
+31 clang++   0x00005588ab1859ab clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+32 clang++   0x00005588ab2f1afc clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+33 clang++   0x00005588a8e0bc5c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+34 clang++   0x00005588a8e030c2
+35 clang++   0x00005588aaf48cad
+36 clang++   0x00005588aa517697 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+37 clang++   0x00005588aaf49047
+38 clang++   0x00005588aaf0ae51 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+39 clang++   0x00005588aaf0bec9 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+40 clang++   0x00005588aaf2030f clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+41 clang++   0x00005588a8e07c05 clang_main(int, char**, llvm::ToolContext const&) + 7509
+42 clang++   0x00005588a8cdcb4b main + 107
+43 libc.so.6 0x00007f96e167bd90
+44 libc.so.6 0x00007f96e167be40 __libc_start_main + 128
+45 clang++   0x00005588a8e02b25 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-c3fe8c.cpp
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-c3fe8c.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh ReleaseThinLTO stage1 " failed
+
+STDOUT:
+  |-ImplicitCastExpr 0x557608c610d8 <line:972:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c60ef8 <col:2> 'btScalar[6336]' lvalue Var 0x557606d1c218 'Landscape04Nml' 'btScalar[6336]'
+  |-ImplicitCastExpr 0x557608c610f0 <line:973:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c60f18 <col:2> 'btScalar[6732]' lvalue Var 0x55760721be88 'Landscape05Nml' 'btScalar[6732]'
+  |-ImplicitCastExpr 0x557608c61148 <line:974:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c60f38 <col:2> 'btScalar[6930]' lvalue Var 0x557607765b78 'Landscape06Nml' 'btScalar[6930]'
+  |-ImplicitCastExpr 0x557608c61160 <line:975:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c60f58 <col:2> 'btScalar[6720]' lvalue Var 0x557607cb2988 'Landscape07Nml' 'btScalar[6720]'
+  `-ImplicitCastExpr 0x557608c61178 <line:976:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x557608c60f78 <col:2> 'btScalar[6534]' lvalue Var 0x5576081e98f8 'Landscape08Nml' 'btScalar[6534]'
+VarDecl 0x557608c61200 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:979:1, line:988:1> line:979:11 LandscapeTex 'btScalar *[8]' cinit
+`-InitListExpr 0x557608c613e8 <col:28, line:988:1> 'btScalar *[8]'
+  |-ImplicitCastExpr 0x557608c61428 <line:980:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c61268 <col:2> 'btScalar[4096]' lvalue Var 0x557608801b50 'Landscape01Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x557608c61448 <line:981:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c61288 <col:2> 'btScalar[3960]' lvalue Var 0x55760649d388 'Landscape02Tex' 'btScalar[3960]'
+  |-ImplicitCastExpr 0x557608c61470 <line:982:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c612a8 <col:2> 'btScalar[4096]' lvalue Var 0x557606a098a0 'Landscape03Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x557608c614a8 <line:983:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c612c8 <col:2> 'btScalar[4224]' lvalue Var 0x557606e42d98 'Landscape04Tex' 'btScalar[4224]'
+  |-ImplicitCastExpr 0x557608c614c0 <line:984:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c612e8 <col:2> 'btScalar[4488]' lvalue Var 0x55760735b688 'Landscape05Tex' 'btScalar[4488]'
+  |-ImplicitCastExpr 0x557608c61518 <line:985:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c61308 <col:2> 'btScalar[4620]' lvalue Var 0x55760789bba0 'Landscape06Tex' 'btScalar[4620]'
+  |-ImplicitCastExpr 0x557608c61530 <line:986:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c61328 <col:2> 'btScalar[4480]' lvalue Var 0x557607de5378 'Landscape07Tex' 'btScalar[4480]'
+  `-ImplicitCastExpr 0x557608c61548 <line:987:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x557608c61348 <col:2> 'btScalar[4356]' lvalue Var 0x557608331908 'Landscape08Tex' 'btScalar[4356]'
+VarDecl 0x557608c61608 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:990:1, line:999:1> line:990:18 LandscapeIdx 'unsigned short *[8]' cinit
+`-InitListExpr 0x557608c617f0 <col:35, line:999:1> 'unsigned short *[8]'
+  |-ImplicitCastExpr 0x557608c61830 <line:991:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c61670 <col:2> 'unsigned short[11718]' lvalue Var 0x557608930cc8 'Landscape01Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x557608c61850 <line:992:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c61690 <col:2> 'unsigned short[11310]' lvalue Var 0x55760663d6a0 'Landscape02Idx' 'unsigned short[11310]'
+  |-ImplicitCastExpr 0x557608c61878 <line:993:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c616b0 <col:2> 'unsigned short[11718]' lvalue Var 0x557606611ed0 'Landscape03Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x557608c618b0 <line:994:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c616d0 <col:2> 'unsigned short[12096]' lvalue Var 0x557606f9e960 'Landscape04Idx' 'unsigned short[12096]'
+  |-ImplicitCastExpr 0x557608c618c8 <line:995:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c616f0 <col:2> 'unsigned short[12870]' lvalue Var 0x5576074b6590 'Landscape05Idx' 'unsigned short[12870]'
+  |-ImplicitCastExpr 0x557608c61920 <line:996:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c61710 <col:2> 'unsigned short[13260]' lvalue Var 0x557607a09760 'Landscape06Idx' 'unsigned short[13260]'
+  |-ImplicitCastExpr 0x557608c61938 <line:997:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x557608c61730 <col:2> 'unsigned short[12852]' lvalue Var 0x557607f3cf70 'Landscape07Idx' 'unsigned short[12852]'
+  `-ImplicitCastExpr 0x557608c61950 <line:998:2> 'unsigned short *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x557608c61750 <col:2> 'unsigned short[12480]' lvalue Var 0x557608471900 'Landscape08Idx' 'unsigned short[12480]'
+VarDecl 0x557608c62f70 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1023:3, col:31> col:13 localInertia 'btVector3' callinit
+`-ExprWithCleanups 0x557608c63138 <col:13, col:31> 'btVector3'
+  `-CXXConstructExpr 0x557608c630f8 <col:13, col:31> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+    |-MaterializeTemporaryExpr 0x557608c63080 <col:26> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x557608c63068 <col:26> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x557608c62fd8 <col:26> 'int' 0
+    |-MaterializeTemporaryExpr 0x557608c630b0 <col:28> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x557608c63098 <col:28> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x557608c62ff8 <col:28> 'int' 0
+    `-MaterializeTemporaryExpr 0x557608c630e0 <col:30> 'const btScalar':'const float' lvalue
+      `-ImplicitCastExpr 0x557608c630c8 <col:30> 'const btScalar':'const float' <IntegralToFloating>
+        `-IntegerLiteral 0x557608c63018 <col:30> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x557608c64280 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1049:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x557608c643b8 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x557608c64398 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x557608c64380 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x557608c64358 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x557608c64328 <col:26> '<bound member function type>' .operator float * 0x557605d90e58
+    |     `-DeclRefExpr 0x557608c642e8 <col:26> 'btVector3' lvalue Var 0x557608c63af8 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x557608c64308 <col:34> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x557608c68e00 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1130:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x557608c68f38 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x557608c68f18 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x557608c68f00 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x557608c68ed8 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x557608c68ea8 <col:26> '<bound member function type>' .operator float * 0x557605d90e58
+    |     `-DeclRefExpr 0x557608c68e68 <col:26> 'btVector3' lvalue Var 0x557608c67d50 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x557608c68e88 <col:34> 'int' 0
+VarDecl 0x557605e38fb0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x557605e39168 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x557605e39130 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x557605e390c8 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x557605e390b0 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x557605e39018 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x557605dfeb48 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x557605e39110 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x557605e35510 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x557605e354f8 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x557605e354b0 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x557605e35468 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x557605e35360 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x557605e35348 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x557605e35328 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x557605e35480 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x557605e353d0 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x557605e353b8 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x557605e35398 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x557605e35498 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x557605e35440 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x557605e35428 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x557605e35408 <col:69> 'int' 0
+VarDecl 0x557605e38fb0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x557605e39168 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x557605e39130 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x557605e390c8 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x557605e390b0 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x557605e39018 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x557605dfeb48 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x557605e39110 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x557605e35510 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x557605e354f8 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x557605e354b0 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x557605e35468 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x557605e35360 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x557605e35348 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x557605e35328 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x557605e35480 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x557605e353d0 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x557605e353b8 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x557605e35398 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x557605e35498 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x557605e35440 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x557605e35428 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x557605e35408 <col:69> 'int' 0
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG -O3 -fomit-frame-pointer -flto=thin -DNDEBUG -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:193:28: Generating code for declaration 'btTransform::getIdentity'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x00005576000a6790 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x00005576000a4684 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x00005575ffff6268
+3  libc.so.6 0x00007f8b32dba520
+4  clang++   0x00005575fffd0d5c llvm::APInt::APInt(unsigned int, unsigned int, unsigned long const*) + 28
+5  clang++   0x0000557603054d31
+6  clang++   0x000055760322075d
+7  clang++   0x00005576032204aa
+8  clang++   0x0000557603220954
+9  clang++   0x00005576032204aa
+10 clang++   0x00005576032204aa
+11 clang++   0x0000557603221f8e clang::interp::Pointer::toRValue(clang::interp::Context const&, clang::QualType) const + 430
+12 clang++   0x000055760303ab01
+13 clang++   0x00005576034672d3 clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 659
+14 clang++   0x00005576030571df clang::interp::EvalEmitter::interpretExpr(clang::Expr const*, bool, bool) + 143
+15 clang++   0x0000557603026510 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 432
+16 clang++   0x0000557602f9e5bf
+17 clang++   0x0000557602fa24ed clang::Expr::EvaluateAsRValue(clang::Expr::EvalResult&, clang::ASTContext const&, bool) const + 1149
+18 clang++   0x0000557602fa2648 clang::Expr::isEvaluatable(clang::ASTContext const&, clang::Expr::SideEffectsKind) const + 72
+19 clang++   0x00005576005169e1 clang::CodeGen::CodeGenFunction::EmitReturnStmt(clang::ReturnStmt const&) + 1153
+20 clang++   0x00005576005275ad clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 189
+21 clang++   0x00005576005886b0 clang::CodeGen::CodeGenFunction::EmitFunctionBody(clang::Stmt const*) + 160
+22 clang++   0x000055760059cd83 clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 851
+23 clang++   0x00005576005eb75d clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 397
+24 clang++   0x00005576005e6e1c clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 492
+25 clang++   0x00005576005f137a clang::CodeGen::CodeGenModule::EmitDeferred() + 362
+26 clang++   0x00005576005f23c4 clang::CodeGen::CodeGenModule::Release() + 116
+27 clang++   0x00005576009b5766
+28 clang++   0x00005576009b2605 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 965
+29 clang++   0x0000557601e0a8cc clang::ParseAST(clang::Sema&, bool, bool) + 1164
+30 clang++   0x0000557600cf578e clang::FrontendAction::Execute() + 46
+31 clang++   0x0000557600c649ab clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+32 clang++   0x0000557600dd0afc clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+33 clang++   0x00005575fe8eac5c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+34 clang++   0x00005575fe8e20c2
+35 clang++   0x0000557600a27cad
+36 clang++   0x00005575ffff6697 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+37 clang++   0x0000557600a28047
+38 clang++   0x00005576009e9e51 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+39 clang++   0x00005576009eaec9 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+40 clang++   0x00005576009ff30f clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+41 clang++   0x00005575fe8e6c05 clang_main(int, char**, llvm::ToolContext const&) + 7509
+42 clang++   0x00005575fe7bbb4b main + 107
+43 libc.so.6 0x00007f8b32da1d90
+44 libc.so.6 0x00007f8b32da1e40 __libc_start_main + 128
+45 clang++   0x00005575fe8e1b25 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-2f8f34.cpp
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-2f8f34.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh ReleaseLTO-g stage1 " failed
+
+STDOUT:
+  | `-DeclRefExpr 0x56178ea42bf8 <col:2> 'btScalar[6336]' lvalue Var 0x56178cad6b28 'Landscape04Nml' 'btScalar[6336]'
+  |-ImplicitCastExpr 0x56178ea42df0 <line:973:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea42c18 <col:2> 'btScalar[6732]' lvalue Var 0x56178cfccc78 'Landscape05Nml' 'btScalar[6732]'
+  |-ImplicitCastExpr 0x56178ea42e48 <line:974:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea42c38 <col:2> 'btScalar[6930]' lvalue Var 0x56178d517b68 'Landscape06Nml' 'btScalar[6930]'
+  |-ImplicitCastExpr 0x56178ea42e60 <line:975:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea42c58 <col:2> 'btScalar[6720]' lvalue Var 0x56178da64d28 'Landscape07Nml' 'btScalar[6720]'
+  `-ImplicitCastExpr 0x56178ea42e78 <line:976:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x56178ea42c78 <col:2> 'btScalar[6534]' lvalue Var 0x56178df9cf08 'Landscape08Nml' 'btScalar[6534]'
+VarDecl 0x56178ea42f00 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:979:1, line:988:1> line:979:11 LandscapeTex 'btScalar *[8]' cinit
+`-InitListExpr 0x56178ea430e8 <col:28, line:988:1> 'btScalar *[8]'
+  |-ImplicitCastExpr 0x56178ea43128 <line:980:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea42f68 <col:2> 'btScalar[4096]' lvalue Var 0x56178e5b6060 'Landscape01Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x56178ea43148 <line:981:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea42f88 <col:2> 'btScalar[3960]' lvalue Var 0x56178c23ad58 'Landscape02Tex' 'btScalar[3960]'
+  |-ImplicitCastExpr 0x56178ea43170 <line:982:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea42fa8 <col:2> 'btScalar[4096]' lvalue Var 0x56178c7b9540 'Landscape03Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x56178ea431a8 <line:983:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea42fc8 <col:2> 'btScalar[4224]' lvalue Var 0x56178cc1d568 'Landscape04Tex' 'btScalar[4224]'
+  |-ImplicitCastExpr 0x56178ea431c0 <line:984:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea42fe8 <col:2> 'btScalar[4488]' lvalue Var 0x56178d11bb68 'Landscape05Tex' 'btScalar[4488]'
+  |-ImplicitCastExpr 0x56178ea43218 <line:985:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea43008 <col:2> 'btScalar[4620]' lvalue Var 0x56178d64db90 'Landscape06Tex' 'btScalar[4620]'
+  |-ImplicitCastExpr 0x56178ea43230 <line:986:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea43028 <col:2> 'btScalar[4480]' lvalue Var 0x56178db98408 'Landscape07Tex' 'btScalar[4480]'
+  `-ImplicitCastExpr 0x56178ea43248 <line:987:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x56178ea43048 <col:2> 'btScalar[4356]' lvalue Var 0x56178e0e56d8 'Landscape08Tex' 'btScalar[4356]'
+VarDecl 0x56178ea43308 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:990:1, line:999:1> line:990:18 LandscapeIdx 'unsigned short *[8]' cinit
+`-InitListExpr 0x56178ea434f0 <col:35, line:999:1> 'unsigned short *[8]'
+  |-ImplicitCastExpr 0x56178ea43530 <line:991:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea43370 <col:2> 'unsigned short[11718]' lvalue Var 0x56178e6e6988 'Landscape01Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x56178ea43550 <line:992:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea43390 <col:2> 'unsigned short[11310]' lvalue Var 0x56178c3edaf0 'Landscape02Idx' 'unsigned short[11310]'
+  |-ImplicitCastExpr 0x56178ea43578 <line:993:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea433b0 <col:2> 'unsigned short[11718]' lvalue Var 0x56178c3c8b00 'Landscape03Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x56178ea435b0 <line:994:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea433d0 <col:2> 'unsigned short[12096]' lvalue Var 0x56178cd4f740 'Landscape04Idx' 'unsigned short[12096]'
+  |-ImplicitCastExpr 0x56178ea435c8 <line:995:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea433f0 <col:2> 'unsigned short[12870]' lvalue Var 0x56178d2684a0 'Landscape05Idx' 'unsigned short[12870]'
+  |-ImplicitCastExpr 0x56178ea43620 <line:996:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea43410 <col:2> 'unsigned short[13260]' lvalue Var 0x56178d7bbb00 'Landscape06Idx' 'unsigned short[13260]'
+  |-ImplicitCastExpr 0x56178ea43638 <line:997:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x56178ea43430 <col:2> 'unsigned short[12852]' lvalue Var 0x56178dcf0580 'Landscape07Idx' 'unsigned short[12852]'
+  `-ImplicitCastExpr 0x56178ea43650 <line:998:2> 'unsigned short *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x56178ea43450 <col:2> 'unsigned short[12480]' lvalue Var 0x56178e225890 'Landscape08Idx' 'unsigned short[12480]'
+VarDecl 0x56178ea44c70 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1023:3, col:31> col:13 localInertia 'btVector3' callinit
+`-ExprWithCleanups 0x56178ea44e38 <col:13, col:31> 'btVector3'
+  `-CXXConstructExpr 0x56178ea44df8 <col:13, col:31> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+    |-MaterializeTemporaryExpr 0x56178ea44d80 <col:26> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x56178ea44d68 <col:26> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x56178ea44cd8 <col:26> 'int' 0
+    |-MaterializeTemporaryExpr 0x56178ea44db0 <col:28> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x56178ea44d98 <col:28> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x56178ea44cf8 <col:28> 'int' 0
+    `-MaterializeTemporaryExpr 0x56178ea44de0 <col:30> 'const btScalar':'const float' lvalue
+      `-ImplicitCastExpr 0x56178ea44dc8 <col:30> 'const btScalar':'const float' <IntegralToFloating>
+        `-IntegerLiteral 0x56178ea44d18 <col:30> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x56178ea45f80 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1049:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x56178ea460b8 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x56178ea46098 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x56178ea46080 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x56178ea46058 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x56178ea46028 <col:26> '<bound member function type>' .operator float * 0x56178bb36458
+    |     `-DeclRefExpr 0x56178ea45fe8 <col:26> 'btVector3' lvalue Var 0x56178ea457f8 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x56178ea46008 <col:34> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x56178ea4ab00 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1130:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x56178ea4ac38 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x56178ea4ac18 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x56178ea4ac00 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x56178ea4abd8 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x56178ea4aba8 <col:26> '<bound member function type>' .operator float * 0x56178bb36458
+    |     `-DeclRefExpr 0x56178ea4ab68 <col:26> 'btVector3' lvalue Var 0x56178ea49a50 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x56178ea4ab88 <col:34> 'int' 0
+VarDecl 0x56178bbd4490 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x56178bbd4648 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x56178bbd4610 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x56178bbd45a8 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x56178bbd4590 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x56178bbd44f8 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x56178bb97118 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x56178bbd45f0 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x56178bbd09e0 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x56178bbd09c8 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x56178bbd0980 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x56178bbd0938 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x56178bbd0830 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x56178bbd0818 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x56178bbd07f8 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x56178bbd0950 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x56178bbd08a0 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x56178bbd0888 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x56178bbd0868 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x56178bbd0968 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x56178bbd0910 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x56178bbd08f8 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x56178bbd08d8 <col:69> 'int' 0
+VarDecl 0x56178bbd4490 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x56178bbd4648 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x56178bbd4610 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x56178bbd45a8 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x56178bbd4590 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x56178bbd44f8 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x56178bb97118 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x56178bbd45f0 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x56178bbd09e0 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x56178bbd09c8 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x56178bbd0980 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x56178bbd0938 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x56178bbd0830 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x56178bbd0818 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x56178bbd07f8 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x56178bbd0950 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x56178bbd08a0 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x56178bbd0888 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x56178bbd0868 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x56178bbd0968 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x56178bbd0910 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x56178bbd08f8 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x56178bbd08d8 <col:69> 'int' 0
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG -O3 -fomit-frame-pointer -flto -DNDEBUG -g -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:193:28: Generating code for declaration 'btTransform::getIdentity'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x0000561784bbc790 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x0000561784bba684 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x0000561784b0c268
+3  libc.so.6 0x00007f62e9953520
+4  clang++   0x0000561784ae6d5c llvm::APInt::APInt(unsigned int, unsigned int, unsigned long const*) + 28
+5  clang++   0x0000561787b6ad31
+6  clang++   0x0000561787d3675d
+7  clang++   0x0000561787d364aa
+8  clang++   0x0000561787d36954
+9  clang++   0x0000561787d364aa
+10 clang++   0x0000561787d364aa
+11 clang++   0x0000561787d37f8e clang::interp::Pointer::toRValue(clang::interp::Context const&, clang::QualType) const + 430
+12 clang++   0x0000561787b50b01
+13 clang++   0x0000561787f7d2d3 clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 659
+14 clang++   0x0000561787b6d1df clang::interp::EvalEmitter::interpretExpr(clang::Expr const*, bool, bool) + 143
+15 clang++   0x0000561787b3c510 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 432
+16 clang++   0x0000561787ab45bf
+17 clang++   0x0000561787ab84ed clang::Expr::EvaluateAsRValue(clang::Expr::EvalResult&, clang::ASTContext const&, bool) const + 1149
+18 clang++   0x0000561787ab8648 clang::Expr::isEvaluatable(clang::ASTContext const&, clang::Expr::SideEffectsKind) const + 72
+19 clang++   0x000056178502c9e1 clang::CodeGen::CodeGenFunction::EmitReturnStmt(clang::ReturnStmt const&) + 1153
+20 clang++   0x000056178503d5ad clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 189
+21 clang++   0x000056178509e6b0 clang::CodeGen::CodeGenFunction::EmitFunctionBody(clang::Stmt const*) + 160
+22 clang++   0x00005617850b2d83 clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 851
+23 clang++   0x000056178510175d clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 397
+24 clang++   0x00005617850fce1c clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 492
+25 clang++   0x000056178510737a clang::CodeGen::CodeGenModule::EmitDeferred() + 362
+26 clang++   0x00005617851083c4 clang::CodeGen::CodeGenModule::Release() + 116
+27 clang++   0x00005617854cb766
+28 clang++   0x00005617854c8605 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 965
+29 clang++   0x00005617869208cc clang::ParseAST(clang::Sema&, bool, bool) + 1164
+30 clang++   0x000056178580b78e clang::FrontendAction::Execute() + 46
+31 clang++   0x000056178577a9ab clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+32 clang++   0x00005617858e6afc clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+33 clang++   0x0000561783400c5c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+34 clang++   0x00005617833f80c2
+35 clang++   0x000056178553dcad
+36 clang++   0x0000561784b0c697 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+37 clang++   0x000056178553e047
+38 clang++   0x00005617854ffe51 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+39 clang++   0x0000561785500ec9 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+40 clang++   0x000056178551530f clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+41 clang++   0x00005617833fcc05 clang_main(int, char**, llvm::ToolContext const&) + 7509
+42 clang++   0x00005617832d1b4b main + 107
+43 libc.so.6 0x00007f62e993ad90
+44 libc.so.6 0x00007f62e993ae40 __libc_start_main + 128
+45 clang++   0x00005617833f7b25 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-d6ef82.cpp
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-d6ef82.sh
+clang++: note: diagnostic msg: 
+
+********************
+[299/671] Linking CXX executable CTMark/7zip/7zip-benchmark
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O0-g stage1 " failed
+
+STDOUT:
+  |-ImplicitCastExpr 0x55b904c9a478 <line:972:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9a298 <col:2> 'btScalar[6336]' lvalue Var 0x55b902d44688 'Landscape04Nml' 'btScalar[6336]'
+  |-ImplicitCastExpr 0x55b904c9a490 <line:973:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9a2b8 <col:2> 'btScalar[6732]' lvalue Var 0x55b9032575e8 'Landscape05Nml' 'btScalar[6732]'
+  |-ImplicitCastExpr 0x55b904c9a4e8 <line:974:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9a2d8 <col:2> 'btScalar[6930]' lvalue Var 0x55b9037a2558 'Landscape06Nml' 'btScalar[6930]'
+  |-ImplicitCastExpr 0x55b904c9a500 <line:975:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9a2f8 <col:2> 'btScalar[6720]' lvalue Var 0x55b903d04798 'Landscape07Nml' 'btScalar[6720]'
+  `-ImplicitCastExpr 0x55b904c9a518 <line:976:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x55b904c9a318 <col:2> 'btScalar[6534]' lvalue Var 0x55b904238f08 'Landscape08Nml' 'btScalar[6534]'
+VarDecl 0x55b904c9a5a0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:979:1, line:988:1> line:979:11 LandscapeTex 'btScalar *[8]' cinit
+`-InitListExpr 0x55b904c9a788 <col:28, line:988:1> 'btScalar *[8]'
+  |-ImplicitCastExpr 0x55b904c9a7c8 <line:980:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9a608 <col:2> 'btScalar[4096]' lvalue Var 0x55b904852720 'Landscape01Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x55b904c9a7e8 <line:981:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9a628 <col:2> 'btScalar[3960]' lvalue Var 0x55b9024dfd38 'Landscape02Tex' 'btScalar[3960]'
+  |-ImplicitCastExpr 0x55b904c9a810 <line:982:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9a648 <col:2> 'btScalar[4096]' lvalue Var 0x55b902a435e8 'Landscape03Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x55b904c9a848 <line:983:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9a668 <col:2> 'btScalar[4224]' lvalue Var 0x55b902e98078 'Landscape04Tex' 'btScalar[4224]'
+  |-ImplicitCastExpr 0x55b904c9a860 <line:984:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9a688 <col:2> 'btScalar[4488]' lvalue Var 0x55b9033a66d8 'Landscape05Tex' 'btScalar[4488]'
+  |-ImplicitCastExpr 0x55b904c9a8b8 <line:985:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9a6a8 <col:2> 'btScalar[4620]' lvalue Var 0x55b9038e9d90 'Landscape06Tex' 'btScalar[4620]'
+  |-ImplicitCastExpr 0x55b904c9a8d0 <line:986:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9a6c8 <col:2> 'btScalar[4480]' lvalue Var 0x55b903e34408 'Landscape07Tex' 'btScalar[4480]'
+  `-ImplicitCastExpr 0x55b904c9a8e8 <line:987:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x55b904c9a6e8 <col:2> 'btScalar[4356]' lvalue Var 0x55b904381e58 'Landscape08Tex' 'btScalar[4356]'
+VarDecl 0x55b904c9a9a8 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:990:1, line:999:1> line:990:18 LandscapeIdx 'unsigned short *[8]' cinit
+`-InitListExpr 0x55b904c9ab90 <col:35, line:999:1> 'unsigned short *[8]'
+  |-ImplicitCastExpr 0x55b904c9abd0 <line:991:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9aa10 <col:2> 'unsigned short[11718]' lvalue Var 0x55b904983048 'Landscape01Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x55b904c9abf0 <line:992:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9aa30 <col:2> 'unsigned short[11310]' lvalue Var 0x55b9025d5820 'Landscape02Idx' 'unsigned short[11310]'
+  |-ImplicitCastExpr 0x55b904c9ac18 <line:993:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9aa50 <col:2> 'unsigned short[11718]' lvalue Var 0x55b902653df0 'Landscape03Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x55b904c9ac50 <line:994:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9aa70 <col:2> 'unsigned short[12096]' lvalue Var 0x55b902fda0b0 'Landscape04Idx' 'unsigned short[12096]'
+  |-ImplicitCastExpr 0x55b904c9ac68 <line:995:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9aa90 <col:2> 'unsigned short[12870]' lvalue Var 0x55b9034f2e90 'Landscape05Idx' 'unsigned short[12870]'
+  |-ImplicitCastExpr 0x55b904c9acc0 <line:996:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9aab0 <col:2> 'unsigned short[13260]' lvalue Var 0x55b903a5e750 'Landscape06Idx' 'unsigned short[13260]'
+  |-ImplicitCastExpr 0x55b904c9acd8 <line:997:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55b904c9aad0 <col:2> 'unsigned short[12852]' lvalue Var 0x55b903f8c580 'Landscape07Idx' 'unsigned short[12852]'
+  `-ImplicitCastExpr 0x55b904c9acf0 <line:998:2> 'unsigned short *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x55b904c9aaf0 <col:2> 'unsigned short[12480]' lvalue Var 0x55b9044c1f50 'Landscape08Idx' 'unsigned short[12480]'
+VarDecl 0x55b904c9c310 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1023:3, col:31> col:13 localInertia 'btVector3' callinit
+`-ExprWithCleanups 0x55b904c9c4d8 <col:13, col:31> 'btVector3'
+  `-CXXConstructExpr 0x55b904c9c498 <col:13, col:31> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+    |-MaterializeTemporaryExpr 0x55b904c9c420 <col:26> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x55b904c9c408 <col:26> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x55b904c9c378 <col:26> 'int' 0
+    |-MaterializeTemporaryExpr 0x55b904c9c450 <col:28> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x55b904c9c438 <col:28> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x55b904c9c398 <col:28> 'int' 0
+    `-MaterializeTemporaryExpr 0x55b904c9c480 <col:30> 'const btScalar':'const float' lvalue
+      `-ImplicitCastExpr 0x55b904c9c468 <col:30> 'const btScalar':'const float' <IntegralToFloating>
+        `-IntegerLiteral 0x55b904c9c3b8 <col:30> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x55b904c9d620 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1049:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x55b904c9d758 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x55b904c9d738 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x55b904c9d720 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x55b904c9d6f8 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x55b904c9d6c8 <col:26> '<bound member function type>' .operator float * 0x55b901dd8648
+    |     `-DeclRefExpr 0x55b904c9d688 <col:26> 'btVector3' lvalue Var 0x55b904c9ce98 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x55b904c9d6a8 <col:34> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x55b904ca21a0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1130:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x55b904ca22d8 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x55b904ca22b8 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x55b904ca22a0 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x55b904ca2278 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x55b904ca2248 <col:26> '<bound member function type>' .operator float * 0x55b901dd8648
+    |     `-DeclRefExpr 0x55b904ca2208 <col:26> 'btVector3' lvalue Var 0x55b904ca10f0 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x55b904ca2228 <col:34> 'int' 0
+VarDecl 0x55b901e730f0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x55b901e732a8 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x55b901e73270 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x55b901e73208 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x55b901e731f0 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x55b901e73158 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x55b901e390d8 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x55b901e73250 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x55b901e41bb0 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x55b901e41b98 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x55b901e41b50 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x55b901e41b08 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x55b901e41a00 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x55b901e419e8 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x55b901e419c8 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x55b901e41b20 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x55b901e41a70 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x55b901e41a58 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x55b901e41a38 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x55b901e41b38 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x55b901e41ae0 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x55b901e41ac8 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x55b901e41aa8 <col:69> 'int' 0
+VarDecl 0x55b901e730f0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x55b901e732a8 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x55b901e73270 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x55b901e73208 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x55b901e731f0 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x55b901e73158 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x55b901e390d8 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x55b901e73250 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x55b901e41bb0 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x55b901e41b98 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x55b901e41b50 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x55b901e41b08 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x55b901e41a00 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x55b901e419e8 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x55b901e419c8 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x55b901e41b20 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x55b901e41a70 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x55b901e41a58 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x55b901e41a38 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x55b901e41b38 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x55b901e41ae0 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x55b901e41ac8 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x55b901e41aa8 <col:69> 'int' 0
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DNDEBUG -O0 -g -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:193:28: Generating code for declaration 'btTransform::getIdentity'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x000055b8faf8d790 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x000055b8faf8b684 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x000055b8faedd268
+3  libc.so.6 0x00007f9f4ef92520
+4  clang++   0x000055b8faeb7d5c llvm::APInt::APInt(unsigned int, unsigned int, unsigned long const*) + 28
+5  clang++   0x000055b8fdf3bd31
+6  clang++   0x000055b8fe10775d
+7  clang++   0x000055b8fe1074aa
+8  clang++   0x000055b8fe107954
+9  clang++   0x000055b8fe1074aa
+10 clang++   0x000055b8fe1074aa
+11 clang++   0x000055b8fe108f8e clang::interp::Pointer::toRValue(clang::interp::Context const&, clang::QualType) const + 430
+12 clang++   0x000055b8fdf21b01
+13 clang++   0x000055b8fe34e2d3 clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 659
+14 clang++   0x000055b8fdf3e1df clang::interp::EvalEmitter::interpretExpr(clang::Expr const*, bool, bool) + 143
+15 clang++   0x000055b8fdf0d510 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 432
+16 clang++   0x000055b8fde855bf
+17 clang++   0x000055b8fde894ed clang::Expr::EvaluateAsRValue(clang::Expr::EvalResult&, clang::ASTContext const&, bool) const + 1149
+18 clang++   0x000055b8fde89648 clang::Expr::isEvaluatable(clang::ASTContext const&, clang::Expr::SideEffectsKind) const + 72
+19 clang++   0x000055b8fb3fd9e1 clang::CodeGen::CodeGenFunction::EmitReturnStmt(clang::ReturnStmt const&) + 1153
+20 clang++   0x000055b8fb40e5ad clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 189
+21 clang++   0x000055b8fb46f6b0 clang::CodeGen::CodeGenFunction::EmitFunctionBody(clang::Stmt const*) + 160
+22 clang++   0x000055b8fb483d83 clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 851
+23 clang++   0x000055b8fb4d275d clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 397
+24 clang++   0x000055b8fb4cde1c clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 492
+25 clang++   0x000055b8fb4d837a clang::CodeGen::CodeGenModule::EmitDeferred() + 362
+26 clang++   0x000055b8fb4d93c4 clang::CodeGen::CodeGenModule::Release() + 116
+27 clang++   0x000055b8fb89c766
+28 clang++   0x000055b8fb899605 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 965
+29 clang++   0x000055b8fccf18cc clang::ParseAST(clang::Sema&, bool, bool) + 1164
+30 clang++   0x000055b8fbbdc78e clang::FrontendAction::Execute() + 46
+31 clang++   0x000055b8fbb4b9ab clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+32 clang++   0x000055b8fbcb7afc clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+33 clang++   0x000055b8f97d1c5c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+34 clang++   0x000055b8f97c90c2
+35 clang++   0x000055b8fb90ecad
+36 clang++   0x000055b8faedd697 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+37 clang++   0x000055b8fb90f047
+38 clang++   0x000055b8fb8d0e51 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+39 clang++   0x000055b8fb8d1ec9 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+40 clang++   0x000055b8fb8e630f clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+41 clang++   0x000055b8f97cdc05 clang_main(int, char**, llvm::ToolContext const&) + 7509
+42 clang++   0x000055b8f96a2b4b main + 107
+43 libc.so.6 0x00007f9f4ef79d90
+44 libc.so.6 0x00007f9f4ef79e40 __libc_start_main + 128
+45 clang++   0x000055b8f97c8b25 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-0aaf29.cpp
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-0aaf29.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O3 stage1 aarch64" failed
+
+STDOUT:
+  |-ImplicitCastExpr 0x559d8f0d4bc8 <line:972:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d49e8 <col:2> 'btScalar[6336]' lvalue Var 0x559d8d197ff8 'Landscape04Nml' 'btScalar[6336]'
+  |-ImplicitCastExpr 0x559d8f0d4be0 <line:973:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d4a08 <col:2> 'btScalar[6732]' lvalue Var 0x559d8d68d2f8 'Landscape05Nml' 'btScalar[6732]'
+  |-ImplicitCastExpr 0x559d8f0d4c38 <line:974:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d4a28 <col:2> 'btScalar[6930]' lvalue Var 0x559d8dbd74c8 'Landscape06Nml' 'btScalar[6930]'
+  |-ImplicitCastExpr 0x559d8f0d4c50 <line:975:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d4a48 <col:2> 'btScalar[6720]' lvalue Var 0x559d8e122318 'Landscape07Nml' 'btScalar[6720]'
+  `-ImplicitCastExpr 0x559d8f0d4c68 <line:976:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x559d8f0d4a68 <col:2> 'btScalar[6534]' lvalue Var 0x559d8e65a248 'Landscape08Nml' 'btScalar[6534]'
+VarDecl 0x559d8f0d4cf0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:979:1, line:988:1> line:979:11 LandscapeTex 'btScalar *[8]' cinit
+`-InitListExpr 0x559d8f0d4ed8 <col:28, line:988:1> 'btScalar *[8]'
+  |-ImplicitCastExpr 0x559d8f0d4f18 <line:980:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d4d58 <col:2> 'btScalar[4096]' lvalue Var 0x559d8ec724a0 'Landscape01Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x559d8f0d4f38 <line:981:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d4d78 <col:2> 'btScalar[3960]' lvalue Var 0x559d8c8f6fb8 'Landscape02Tex' 'btScalar[3960]'
+  |-ImplicitCastExpr 0x559d8f0d4f60 <line:982:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d4d98 <col:2> 'btScalar[4096]' lvalue Var 0x559d8ce7a910 'Landscape03Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x559d8f0d4f98 <line:983:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d4db8 <col:2> 'btScalar[4224]' lvalue Var 0x559d8d2bda98 'Landscape04Tex' 'btScalar[4224]'
+  |-ImplicitCastExpr 0x559d8f0d4fb0 <line:984:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d4dd8 <col:2> 'btScalar[4488]' lvalue Var 0x559d8d7ccae8 'Landscape05Tex' 'btScalar[4488]'
+  |-ImplicitCastExpr 0x559d8f0d5008 <line:985:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d4df8 <col:2> 'btScalar[4620]' lvalue Var 0x559d8dd0d4f0 'Landscape06Tex' 'btScalar[4620]'
+  |-ImplicitCastExpr 0x559d8f0d5020 <line:986:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d4e18 <col:2> 'btScalar[4480]' lvalue Var 0x559d8e255cc8 'Landscape07Tex' 'btScalar[4480]'
+  `-ImplicitCastExpr 0x559d8f0d5038 <line:987:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x559d8f0d4e38 <col:2> 'btScalar[4356]' lvalue Var 0x559d8e7a2258 'Landscape08Tex' 'btScalar[4356]'
+VarDecl 0x559d8f0d50f8 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:990:1, line:999:1> line:990:18 LandscapeIdx 'unsigned short *[8]' cinit
+`-InitListExpr 0x559d8f0d52e0 <col:35, line:999:1> 'unsigned short *[8]'
+  |-ImplicitCastExpr 0x559d8f0d5320 <line:991:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d5160 <col:2> 'unsigned short[11718]' lvalue Var 0x559d8edaf618 'Landscape01Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x559d8f0d5340 <line:992:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d5180 <col:2> 'unsigned short[11310]' lvalue Var 0x559d8caae580 'Landscape02Idx' 'unsigned short[11310]'
+  |-ImplicitCastExpr 0x559d8f0d5368 <line:993:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d51a0 <col:2> 'unsigned short[11718]' lvalue Var 0x559d8ca81580 'Landscape03Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x559d8f0d53a0 <line:994:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d51c0 <col:2> 'unsigned short[12096]' lvalue Var 0x559d8d40fdb0 'Landscape04Idx' 'unsigned short[12096]'
+  |-ImplicitCastExpr 0x559d8f0d53b8 <line:995:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d51e0 <col:2> 'unsigned short[12870]' lvalue Var 0x559d8d927150 'Landscape05Idx' 'unsigned short[12870]'
+  |-ImplicitCastExpr 0x559d8f0d5410 <line:996:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d5200 <col:2> 'unsigned short[13260]' lvalue Var 0x559d8de790f0 'Landscape06Idx' 'unsigned short[13260]'
+  |-ImplicitCastExpr 0x559d8f0d5428 <line:997:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559d8f0d5220 <col:2> 'unsigned short[12852]' lvalue Var 0x559d8e3ad8c0 'Landscape07Idx' 'unsigned short[12852]'
+  `-ImplicitCastExpr 0x559d8f0d5440 <line:998:2> 'unsigned short *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x559d8f0d5240 <col:2> 'unsigned short[12480]' lvalue Var 0x559d8e8e2250 'Landscape08Idx' 'unsigned short[12480]'
+VarDecl 0x559d8f0d6a60 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1023:3, col:31> col:13 localInertia 'btVector3' callinit
+`-ExprWithCleanups 0x559d8f0d6c28 <col:13, col:31> 'btVector3'
+  `-CXXConstructExpr 0x559d8f0d6be8 <col:13, col:31> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+    |-MaterializeTemporaryExpr 0x559d8f0d6b70 <col:26> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x559d8f0d6b58 <col:26> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x559d8f0d6ac8 <col:26> 'int' 0
+    |-MaterializeTemporaryExpr 0x559d8f0d6ba0 <col:28> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x559d8f0d6b88 <col:28> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x559d8f0d6ae8 <col:28> 'int' 0
+    `-MaterializeTemporaryExpr 0x559d8f0d6bd0 <col:30> 'const btScalar':'const float' lvalue
+      `-ImplicitCastExpr 0x559d8f0d6bb8 <col:30> 'const btScalar':'const float' <IntegralToFloating>
+        `-IntegerLiteral 0x559d8f0d6b08 <col:30> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x559d8f0d7d70 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1049:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x559d8f0d7ea8 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x559d8f0d7e88 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x559d8f0d7e70 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x559d8f0d7e48 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x559d8f0d7e18 <col:26> '<bound member function type>' .operator float * 0x559d8c054bb8
+    |     `-DeclRefExpr 0x559d8f0d7dd8 <col:26> 'btVector3' lvalue Var 0x559d8f0d75e8 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x559d8f0d7df8 <col:34> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x559d8f0dc8f0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1130:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x559d8f0dca28 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x559d8f0dca08 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x559d8f0dc9f0 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x559d8f0dc9c8 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x559d8f0dc998 <col:26> '<bound member function type>' .operator float * 0x559d8c054bb8
+    |     `-DeclRefExpr 0x559d8f0dc958 <col:26> 'btVector3' lvalue Var 0x559d8f0db840 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x559d8f0dc978 <col:34> 'int' 0
+VarDecl 0x559d8c28c6b0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x559d8c28c898 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x559d8c28c860 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x559d8c28c7f8 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x559d8c28c7e0 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x559d8c28c750 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x559d8c24ecc8 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x559d8c28c840 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x559d8c288c20 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x559d8c288c08 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x559d8c288bc0 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x559d8c288b78 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x559d8c288a70 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x559d8c288a58 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x559d8c288a38 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x559d8c288b90 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x559d8c288ae0 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x559d8c288ac8 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x559d8c288aa8 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x559d8c288ba8 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x559d8c288b50 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x559d8c288b38 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x559d8c288b18 <col:69> 'int' 0
+VarDecl 0x559d8c28c6b0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x559d8c28c898 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x559d8c28c860 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x559d8c28c7f8 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x559d8c28c7e0 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x559d8c28c750 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x559d8c24ecc8 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x559d8c28c840 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x559d8c288c20 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x559d8c288c08 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x559d8c288bc0 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x559d8c288b78 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x559d8c288a70 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x559d8c288a58 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x559d8c288a38 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x559d8c288b90 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x559d8c288ae0 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x559d8c288ac8 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x559d8c288aa8 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x559d8c288ba8 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x559d8c288b50 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x559d8c288b38 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x559d8c288b18 <col:69> 'int' 0
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ --target=aarch64-linux-gnu -DNDEBUG -O3 -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:193:28: Generating code for declaration 'btTransform::getIdentity'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x0000559d860b2790 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x0000559d860b0684 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x0000559d86002268
+3  libc.so.6 0x00007fd334c02520
+4  clang++   0x0000559d85fdcd5c llvm::APInt::APInt(unsigned int, unsigned int, unsigned long const*) + 28
+5  clang++   0x0000559d89060d31
+6  clang++   0x0000559d8922c75d
+7  clang++   0x0000559d8922c4aa
+8  clang++   0x0000559d8922c954
+9  clang++   0x0000559d8922c4aa
+10 clang++   0x0000559d8922c4aa
+11 clang++   0x0000559d8922df8e clang::interp::Pointer::toRValue(clang::interp::Context const&, clang::QualType) const + 430
+12 clang++   0x0000559d89046b01
+13 clang++   0x0000559d894732d3 clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 659
+14 clang++   0x0000559d890631df clang::interp::EvalEmitter::interpretExpr(clang::Expr const*, bool, bool) + 143
+15 clang++   0x0000559d89032510 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 432
+16 clang++   0x0000559d88faa5bf
+17 clang++   0x0000559d88fae4ed clang::Expr::EvaluateAsRValue(clang::Expr::EvalResult&, clang::ASTContext const&, bool) const + 1149
+18 clang++   0x0000559d88fae648 clang::Expr::isEvaluatable(clang::ASTContext const&, clang::Expr::SideEffectsKind) const + 72
+19 clang++   0x0000559d865229e1 clang::CodeGen::CodeGenFunction::EmitReturnStmt(clang::ReturnStmt const&) + 1153
+20 clang++   0x0000559d865335ad clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 189
+21 clang++   0x0000559d865946b0 clang::CodeGen::CodeGenFunction::EmitFunctionBody(clang::Stmt const*) + 160
+22 clang++   0x0000559d865a8d83 clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 851
+23 clang++   0x0000559d865f775d clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 397
+24 clang++   0x0000559d865f2e1c clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 492
+25 clang++   0x0000559d865fd37a clang::CodeGen::CodeGenModule::EmitDeferred() + 362
+26 clang++   0x0000559d865fe3c4 clang::CodeGen::CodeGenModule::Release() + 116
+27 clang++   0x0000559d869c1766
+28 clang++   0x0000559d869be605 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 965
+29 clang++   0x0000559d87e168cc clang::ParseAST(clang::Sema&, bool, bool) + 1164
+30 clang++   0x0000559d86d0178e clang::FrontendAction::Execute() + 46
+31 clang++   0x0000559d86c709ab clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+32 clang++   0x0000559d86ddcafc clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+33 clang++   0x0000559d848f6c5c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+34 clang++   0x0000559d848ee0c2
+35 clang++   0x0000559d86a33cad
+36 clang++   0x0000559d86002697 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+37 clang++   0x0000559d86a34047
+38 clang++   0x0000559d869f5e51 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+39 clang++   0x0000559d869f6ec9 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+40 clang++   0x0000559d86a0b30f clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+41 clang++   0x0000559d848f2c05 clang_main(int, char**, llvm::ToolContext const&) + 7509
+42 clang++   0x0000559d847c7b4b main + 107
+43 libc.so.6 0x00007fd334be9d90
+44 libc.so.6 0x00007fd334be9e40 __libc_start_main + 128
+45 clang++   0x0000559d848edb25 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-daffeb.cpp
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-daffeb.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O0-g stage1 aarch64" failed
+
+STDOUT:
+  |-ImplicitCastExpr 0x55ba2ead4988 <line:972:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead47a8 <col:2> 'btScalar[6336]' lvalue Var 0x55ba2cba6238 'Landscape04Nml' 'btScalar[6336]'
+  |-ImplicitCastExpr 0x55ba2ead49a0 <line:973:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead47c8 <col:2> 'btScalar[6732]' lvalue Var 0x55ba2d09be08 'Landscape05Nml' 'btScalar[6732]'
+  |-ImplicitCastExpr 0x55ba2ead49f8 <line:974:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead47e8 <col:2> 'btScalar[6930]' lvalue Var 0x55ba2d5e73e8 'Landscape06Nml' 'btScalar[6930]'
+  |-ImplicitCastExpr 0x55ba2ead4a10 <line:975:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4808 <col:2> 'btScalar[6720]' lvalue Var 0x55ba2db33ce8 'Landscape07Nml' 'btScalar[6720]'
+  `-ImplicitCastExpr 0x55ba2ead4a28 <line:976:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x55ba2ead4828 <col:2> 'btScalar[6534]' lvalue Var 0x55ba2e080638 'Landscape08Nml' 'btScalar[6534]'
+VarDecl 0x55ba2ead4ab0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:979:1, line:988:1> line:979:11 LandscapeTex 'btScalar *[8]' cinit
+`-InitListExpr 0x55ba2ead4c98 <col:28, line:988:1> 'btScalar *[8]'
+  |-ImplicitCastExpr 0x55ba2ead4cd8 <line:980:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4b18 <col:2> 'btScalar[4096]' lvalue Var 0x55ba2e696670 'Landscape01Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x55ba2ead4cf8 <line:981:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4b38 <col:2> 'btScalar[3960]' lvalue Var 0x55ba2c323618 'Landscape02Tex' 'btScalar[3960]'
+  |-ImplicitCastExpr 0x55ba2ead4d20 <line:982:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4b58 <col:2> 'btScalar[4096]' lvalue Var 0x55ba2c888ba0 'Landscape03Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x55ba2ead4d58 <line:983:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4b78 <col:2> 'btScalar[4224]' lvalue Var 0x55ba2cccc268 'Landscape04Tex' 'btScalar[4224]'
+  |-ImplicitCastExpr 0x55ba2ead4d70 <line:984:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4b98 <col:2> 'btScalar[4488]' lvalue Var 0x55ba2d1db918 'Landscape05Tex' 'btScalar[4488]'
+  |-ImplicitCastExpr 0x55ba2ead4dc8 <line:985:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4bb8 <col:2> 'btScalar[4620]' lvalue Var 0x55ba2d71d410 'Landscape06Tex' 'btScalar[4620]'
+  |-ImplicitCastExpr 0x55ba2ead4de0 <line:986:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4bd8 <col:2> 'btScalar[4480]' lvalue Var 0x55ba2dc7ef18 'Landscape07Tex' 'btScalar[4480]'
+  `-ImplicitCastExpr 0x55ba2ead4df8 <line:987:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x55ba2ead4bf8 <col:2> 'btScalar[4356]' lvalue Var 0x55ba2e1c5f58 'Landscape08Tex' 'btScalar[4356]'
+VarDecl 0x55ba2ead4eb8 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:990:1, line:999:1> line:990:18 LandscapeIdx 'unsigned short *[8]' cinit
+`-InitListExpr 0x55ba2ead50a0 <col:35, line:999:1> 'unsigned short *[8]'
+  |-ImplicitCastExpr 0x55ba2ead50e0 <line:991:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4f20 <col:2> 'unsigned short[11718]' lvalue Var 0x55ba2e7c58a8 'Landscape01Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x55ba2ead5100 <line:992:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4f40 <col:2> 'unsigned short[11310]' lvalue Var 0x55ba2c4bcc00 'Landscape02Idx' 'unsigned short[11310]'
+  |-ImplicitCastExpr 0x55ba2ead5128 <line:993:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4f60 <col:2> 'unsigned short[11718]' lvalue Var 0x55ba2c497c30 'Landscape03Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x55ba2ead5160 <line:994:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4f80 <col:2> 'unsigned short[12096]' lvalue Var 0x55ba2ce1e8c0 'Landscape04Idx' 'unsigned short[12096]'
+  |-ImplicitCastExpr 0x55ba2ead5178 <line:995:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4fa0 <col:2> 'unsigned short[12870]' lvalue Var 0x55ba2d337170 'Landscape05Idx' 'unsigned short[12870]'
+  |-ImplicitCastExpr 0x55ba2ead51d0 <line:996:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4fc0 <col:2> 'unsigned short[13260]' lvalue Var 0x55ba2d88aac0 'Landscape06Idx' 'unsigned short[13260]'
+  |-ImplicitCastExpr 0x55ba2ead51e8 <line:997:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x55ba2ead4fe0 <col:2> 'unsigned short[12852]' lvalue Var 0x55ba2ddd8050 'Landscape07Idx' 'unsigned short[12852]'
+  `-ImplicitCastExpr 0x55ba2ead5200 <line:998:2> 'unsigned short *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x55ba2ead5000 <col:2> 'unsigned short[12480]' lvalue Var 0x55ba2e305ea0 'Landscape08Idx' 'unsigned short[12480]'
+VarDecl 0x55ba2ead6820 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1023:3, col:31> col:13 localInertia 'btVector3' callinit
+`-ExprWithCleanups 0x55ba2ead69e8 <col:13, col:31> 'btVector3'
+  `-CXXConstructExpr 0x55ba2ead69a8 <col:13, col:31> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+    |-MaterializeTemporaryExpr 0x55ba2ead6930 <col:26> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x55ba2ead6918 <col:26> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x55ba2ead6888 <col:26> 'int' 0
+    |-MaterializeTemporaryExpr 0x55ba2ead6960 <col:28> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x55ba2ead6948 <col:28> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x55ba2ead68a8 <col:28> 'int' 0
+    `-MaterializeTemporaryExpr 0x55ba2ead6990 <col:30> 'const btScalar':'const float' lvalue
+      `-ImplicitCastExpr 0x55ba2ead6978 <col:30> 'const btScalar':'const float' <IntegralToFloating>
+        `-IntegerLiteral 0x55ba2ead68c8 <col:30> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x55ba2ead7b30 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1049:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x55ba2ead7c68 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x55ba2ead7c48 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x55ba2ead7c30 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x55ba2ead7c08 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x55ba2ead7bd8 <col:26> '<bound member function type>' .operator float * 0x55ba2bbfd5a8
+    |     `-DeclRefExpr 0x55ba2ead7b98 <col:26> 'btVector3' lvalue Var 0x55ba2ead73a8 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x55ba2ead7bb8 <col:34> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x55ba2eadc6b0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1130:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x55ba2eadc7e8 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x55ba2eadc7c8 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x55ba2eadc7b0 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x55ba2eadc788 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x55ba2eadc758 <col:26> '<bound member function type>' .operator float * 0x55ba2bbfd5a8
+    |     `-DeclRefExpr 0x55ba2eadc718 <col:26> 'btVector3' lvalue Var 0x55ba2eadb600 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x55ba2eadc738 <col:34> 'int' 0
+VarDecl 0x55ba2bc9d5f0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x55ba2bc9d7a8 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x55ba2bc9d770 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x55ba2bc9d708 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x55ba2bc9d6f0 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x55ba2bc9d658 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x55ba2bc64cd8 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x55ba2bc9d750 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x55ba2bc99b30 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x55ba2bc99b18 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x55ba2bc99ad0 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x55ba2bc99a88 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x55ba2bc99980 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x55ba2bc99968 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x55ba2bc99948 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x55ba2bc99aa0 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x55ba2bc999f0 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x55ba2bc999d8 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x55ba2bc999b8 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x55ba2bc99ab8 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x55ba2bc99a60 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x55ba2bc99a48 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x55ba2bc99a28 <col:69> 'int' 0
+VarDecl 0x55ba2bc9d5f0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x55ba2bc9d7a8 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x55ba2bc9d770 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x55ba2bc9d708 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x55ba2bc9d6f0 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x55ba2bc9d658 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x55ba2bc64cd8 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x55ba2bc9d750 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x55ba2bc99b30 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x55ba2bc99b18 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x55ba2bc99ad0 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x55ba2bc99a88 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x55ba2bc99980 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x55ba2bc99968 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x55ba2bc99948 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x55ba2bc99aa0 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x55ba2bc999f0 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x55ba2bc999d8 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x55ba2bc999b8 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x55ba2bc99ab8 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x55ba2bc99a60 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x55ba2bc99a48 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x55ba2bc99a28 <col:69> 'int' 0
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ --target=aarch64-linux-gnu -DNDEBUG -O0 -g -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:193:28: Generating code for declaration 'btTransform::getIdentity'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x000055ba245ec790 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x000055ba245ea684 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x000055ba2453c268
+3  libc.so.6 0x00007fcc7b3f2520
+4  clang++   0x000055ba24516d5c llvm::APInt::APInt(unsigned int, unsigned int, unsigned long const*) + 28
+5  clang++   0x000055ba2759ad31
+6  clang++   0x000055ba2776675d
+7  clang++   0x000055ba277664aa
+8  clang++   0x000055ba27766954
+9  clang++   0x000055ba277664aa
+10 clang++   0x000055ba277664aa
+11 clang++   0x000055ba27767f8e clang::interp::Pointer::toRValue(clang::interp::Context const&, clang::QualType) const + 430
+12 clang++   0x000055ba27580b01
+13 clang++   0x000055ba279ad2d3 clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 659
+14 clang++   0x000055ba2759d1df clang::interp::EvalEmitter::interpretExpr(clang::Expr const*, bool, bool) + 143
+15 clang++   0x000055ba2756c510 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 432
+16 clang++   0x000055ba274e45bf
+17 clang++   0x000055ba274e84ed clang::Expr::EvaluateAsRValue(clang::Expr::EvalResult&, clang::ASTContext const&, bool) const + 1149
+18 clang++   0x000055ba274e8648 clang::Expr::isEvaluatable(clang::ASTContext const&, clang::Expr::SideEffectsKind) const + 72
+19 clang++   0x000055ba24a5c9e1 clang::CodeGen::CodeGenFunction::EmitReturnStmt(clang::ReturnStmt const&) + 1153
+20 clang++   0x000055ba24a6d5ad clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 189
+21 clang++   0x000055ba24ace6b0 clang::CodeGen::CodeGenFunction::EmitFunctionBody(clang::Stmt const*) + 160
+22 clang++   0x000055ba24ae2d83 clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 851
+23 clang++   0x000055ba24b3175d clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 397
+24 clang++   0x000055ba24b2ce1c clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 492
+25 clang++   0x000055ba24b3737a clang::CodeGen::CodeGenModule::EmitDeferred() + 362
+26 clang++   0x000055ba24b383c4 clang::CodeGen::CodeGenModule::Release() + 116
+27 clang++   0x000055ba24efb766
+28 clang++   0x000055ba24ef8605 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 965
+29 clang++   0x000055ba263508cc clang::ParseAST(clang::Sema&, bool, bool) + 1164
+30 clang++   0x000055ba2523b78e clang::FrontendAction::Execute() + 46
+31 clang++   0x000055ba251aa9ab clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+32 clang++   0x000055ba25316afc clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+33 clang++   0x000055ba22e30c5c cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7884
+34 clang++   0x000055ba22e280c2
+35 clang++   0x000055ba24f6dcad
+36 clang++   0x000055ba2453c697 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+37 clang++   0x000055ba24f6e047
+38 clang++   0x000055ba24f2fe51 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+39 clang++   0x000055ba24f30ec9 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+40 clang++   0x000055ba24f4530f clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+41 clang++   0x000055ba22e2cc05 clang_main(int, char**, llvm::ToolContext const&) + 7509
+42 clang++   0x000055ba22d01b4b main + 107
+43 libc.so.6 0x00007fcc7b3d9d90
+44 libc.so.6 0x00007fcc7b3d9e40 __libc_start_main + 128
+45 clang++   0x000055ba22e27b25 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: aarch64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-41b5d3.cpp
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-41b5d3.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O3 stage2 " failed
+
+STDOUT:
+  |-ImplicitCastExpr 0x5590589691b8 <line:970:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058968ff8 <col:2> 'btScalar[5940]' lvalue Var 0x559056076868 'Landscape02Nml' 'btScalar[5940]'
+  |-ImplicitCastExpr 0x5590589691e0 <line:971:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969018 <col:2> 'btScalar[6144]' lvalue Var 0x5590565ebe18 'Landscape03Nml' 'btScalar[6144]'
+  |-ImplicitCastExpr 0x559058969218 <line:972:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969038 <col:2> 'btScalar[6336]' lvalue Var 0x559056a24958 'Landscape04Nml' 'btScalar[6336]'
+  |-ImplicitCastExpr 0x559058969230 <line:973:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969058 <col:2> 'btScalar[6732]' lvalue Var 0x559056f245c8 'Landscape05Nml' 'btScalar[6732]'
+  |-ImplicitCastExpr 0x559058969288 <line:974:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969078 <col:2> 'btScalar[6930]' lvalue Var 0x55905746e2f8 'Landscape06Nml' 'btScalar[6930]'
+  |-ImplicitCastExpr 0x5590589692a0 <line:975:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969098 <col:2> 'btScalar[6720]' lvalue Var 0x5590579bb108 'Landscape07Nml' 'btScalar[6720]'
+  `-ImplicitCastExpr 0x5590589692b8 <line:976:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x5590589690b8 <col:2> 'btScalar[6534]' lvalue Var 0x559057ef2078 'Landscape08Nml' 'btScalar[6534]'
+VarDecl 0x559058969340 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:979:1, line:988:1> line:979:11 LandscapeTex 'btScalar *[8]' cinit
+`-InitListExpr 0x559058969528 <col:28, line:988:1> 'btScalar *[8]'
+  |-ImplicitCastExpr 0x559058969568 <line:980:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5590589693a8 <col:2> 'btScalar[4096]' lvalue Var 0x55905850a2d0 'Landscape01Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x559058969588 <line:981:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5590589693c8 <col:2> 'btScalar[3960]' lvalue Var 0x5590561a5828 'Landscape02Tex' 'btScalar[3960]'
+  |-ImplicitCastExpr 0x5590589695b0 <line:982:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5590589693e8 <col:2> 'btScalar[4096]' lvalue Var 0x559056711fe0 'Landscape03Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x5590589695e8 <line:983:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969408 <col:2> 'btScalar[4224]' lvalue Var 0x559056b4b4d8 'Landscape04Tex' 'btScalar[4224]'
+  |-ImplicitCastExpr 0x559058969600 <line:984:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969428 <col:2> 'btScalar[4488]' lvalue Var 0x559057063dc8 'Landscape05Tex' 'btScalar[4488]'
+  |-ImplicitCastExpr 0x559058969658 <line:985:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969448 <col:2> 'btScalar[4620]' lvalue Var 0x5590575a4320 'Landscape06Tex' 'btScalar[4620]'
+  |-ImplicitCastExpr 0x559058969670 <line:986:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969468 <col:2> 'btScalar[4480]' lvalue Var 0x559057aedaf8 'Landscape07Tex' 'btScalar[4480]'
+  `-ImplicitCastExpr 0x559058969688 <line:987:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x559058969488 <col:2> 'btScalar[4356]' lvalue Var 0x55905803a088 'Landscape08Tex' 'btScalar[4356]'
+VarDecl 0x559058969748 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:990:1, line:999:1> line:990:18 LandscapeIdx 'unsigned short *[8]' cinit
+`-InitListExpr 0x559058969930 <col:35, line:999:1> 'unsigned short *[8]'
+  |-ImplicitCastExpr 0x559058969970 <line:991:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5590589697b0 <col:2> 'unsigned short[11718]' lvalue Var 0x559058639448 'Landscape01Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x559058969990 <line:992:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5590589697d0 <col:2> 'unsigned short[11310]' lvalue Var 0x559056345b40 'Landscape02Idx' 'unsigned short[11310]'
+  |-ImplicitCastExpr 0x5590589699b8 <line:993:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5590589697f0 <col:2> 'unsigned short[11718]' lvalue Var 0x55905631a370 'Landscape03Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x5590589699f0 <line:994:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969810 <col:2> 'unsigned short[12096]' lvalue Var 0x559056ca70a0 'Landscape04Idx' 'unsigned short[12096]'
+  |-ImplicitCastExpr 0x559058969a08 <line:995:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969830 <col:2> 'unsigned short[12870]' lvalue Var 0x5590571bed10 'Landscape05Idx' 'unsigned short[12870]'
+  |-ImplicitCastExpr 0x559058969a60 <line:996:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969850 <col:2> 'unsigned short[13260]' lvalue Var 0x559057711ee0 'Landscape06Idx' 'unsigned short[13260]'
+  |-ImplicitCastExpr 0x559058969a78 <line:997:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x559058969870 <col:2> 'unsigned short[12852]' lvalue Var 0x559057c456f0 'Landscape07Idx' 'unsigned short[12852]'
+  `-ImplicitCastExpr 0x559058969a90 <line:998:2> 'unsigned short *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x559058969890 <col:2> 'unsigned short[12480]' lvalue Var 0x55905817a080 'Landscape08Idx' 'unsigned short[12480]'
+VarDecl 0x55905896b0b0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1023:3, col:31> col:13 localInertia 'btVector3' callinit
+`-ExprWithCleanups 0x55905896b278 <col:13, col:31> 'btVector3'
+  `-CXXConstructExpr 0x55905896b238 <col:13, col:31> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+    |-MaterializeTemporaryExpr 0x55905896b1c0 <col:26> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x55905896b1a8 <col:26> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x55905896b118 <col:26> 'int' 0
+    |-MaterializeTemporaryExpr 0x55905896b1f0 <col:28> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x55905896b1d8 <col:28> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x55905896b138 <col:28> 'int' 0
+    `-MaterializeTemporaryExpr 0x55905896b220 <col:30> 'const btScalar':'const float' lvalue
+      `-ImplicitCastExpr 0x55905896b208 <col:30> 'const btScalar':'const float' <IntegralToFloating>
+        `-IntegerLiteral 0x55905896b158 <col:30> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x55905896c3c0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1049:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x55905896c4f8 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x55905896c4d8 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x55905896c4c0 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x55905896c498 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x55905896c468 <col:26> '<bound member function type>' .operator float * 0x559055a9a508
+    |     `-DeclRefExpr 0x55905896c428 <col:26> 'btVector3' lvalue Var 0x55905896bc38 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x55905896c448 <col:34> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x559058970f40 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1130:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x559058971078 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x559058971058 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x559058971040 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x559058971018 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x559058970fe8 <col:26> '<bound member function type>' .operator float * 0x559055a9a508
+    |     `-DeclRefExpr 0x559058970fa8 <col:26> 'btVector3' lvalue Var 0x55905896fe90 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x559058970fc8 <col:34> 'int' 0
+VarDecl 0x559055b415e0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x559055b41798 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x559055b41760 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x559055b416f8 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x559055b416e0 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x559055b41648 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x559055b058c8 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x559055b41740 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x559055b3db40 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x559055b3db28 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x559055b3dae0 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x559055b3da98 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x559055b3d990 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x559055b3d978 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x559055b3d958 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x559055b3dab0 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x559055b3da00 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x559055b3d9e8 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x559055b3d9c8 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x559055b3dac8 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x559055b3da70 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x559055b3da58 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x559055b3da38 <col:69> 'int' 0
+VarDecl 0x559055b415e0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x559055b41798 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x559055b41760 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x559055b416f8 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x559055b416e0 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x559055b41648 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x559055b058c8 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x559055b41740 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x559055b3db40 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x559055b3db28 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x559055b3dae0 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x559055b3da98 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x559055b3d990 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x559055b3d978 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x559055b3d958 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x559055b3dab0 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x559055b3da00 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x559055b3d9e8 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x559055b3d9c8 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x559055b3dac8 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x559055b3da70 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x559055b3da58 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x559055b3da38 <col:69> 'int' 0
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG -O3 -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:193:28: Generating code for declaration 'btTransform::getIdentity'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x00005590503c4c68 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 40
+1  clang++   0x00005590503c212e llvm::sys::RunSignalHandlers() + 238
+2  clang++   0x0000559050326197
+3  libc.so.6 0x00007f2503638520
+4  clang++   0x00005590535f9ed9
+5  clang++   0x00005590537618b4
+6  clang++   0x0000559053762949
+7  clang++   0x000055905376314e
+8  clang++   0x00005590537624c1
+9  clang++   0x000055905376314e
+10 clang++   0x000055905376314e
+11 clang++   0x00005590537614c6 clang::interp::Pointer::toRValue(clang::interp::Context const&, clang::QualType) const + 294
+12 clang++   0x000055905347c917 bool clang::interp::EvalEmitter::emitRet<(clang::interp::PrimType)13>(clang::interp::SourceInfo const&) + 1287
+13 clang++   0x000055905346f1ce clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 670
+14 clang++   0x000055905341699b clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 1163
+15 clang++   0x0000559053335fe2
+16 clang++   0x0000559053331217 clang::Expr::EvaluateAsRValue(clang::Expr::EvalResult&, clang::ASTContext const&, bool) const + 775
+17 clang++   0x00005590507b3d42 clang::CodeGen::CodeGenFunction::EmitReturnStmt(clang::ReturnStmt const&) + 2242
+18 clang++   0x00005590507bec50 clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 592
+19 clang++   0x000055905079ba62 clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 3362
+20 clang++   0x000055905062d348 clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 744
+21 clang++   0x0000559050623804 clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 1236
+22 clang++   0x0000559050611eac clang::CodeGen::CodeGenModule::EmitDeferred() + 748
+23 clang++   0x000055905060db6a clang::CodeGen::CodeGenModule::Release() + 74
+24 clang++   0x0000559050bedacb
+25 clang++   0x0000559050be5d46 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 406
+26 clang++   0x00005590523b33d9 clang::ParseAST(clang::Sema&, bool, bool) + 937
+27 clang++   0x000055905124045d clang::FrontendAction::Execute() + 29
+28 clang++   0x0000559051174d50 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 1200
+29 clang++   0x000055905134c062 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 738
+30 clang++   0x000055904f0a176e cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8382
+31 clang++   0x000055904f09db2f
+32 clang++   0x0000559050fb4169
+33 clang++   0x0000559050325c98 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 136
+34 clang++   0x0000559050fb3da4 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const + 356
+35 clang++   0x0000559050f70ab8 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 552
+36 clang++   0x0000559050f8fd5b clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 763
+37 clang++   0x000055904f09d089 clang_main(int, char**, llvm::ToolContext const&) + 7481
+38 clang++   0x000055904f0ae36a main + 90
+39 libc.so.6 0x00007f250361fd90
+40 libc.so.6 0x00007f250361fe40 __libc_start_main + 128
+41 clang++   0x000055904f08f8a5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage2/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-abd562.cpp
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-abd562.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O0-g stage2 " failed
+
+STDOUT:
+  |-ImplicitCastExpr 0x563031403fb8 <line:970:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031403df8 <col:2> 'btScalar[5940]' lvalue Var 0x56302eaed528 'Landscape02Nml' 'btScalar[5940]'
+  |-ImplicitCastExpr 0x563031403fe0 <line:971:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031403e18 <col:2> 'btScalar[6144]' lvalue Var 0x56302f0871d8 'Landscape03Nml' 'btScalar[6144]'
+  |-ImplicitCastExpr 0x563031404018 <line:972:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031403e38 <col:2> 'btScalar[6336]' lvalue Var 0x56302f4ad048 'Landscape04Nml' 'btScalar[6336]'
+  |-ImplicitCastExpr 0x563031404030 <line:973:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031403e58 <col:2> 'btScalar[6732]' lvalue Var 0x56302f9bffa8 'Landscape05Nml' 'btScalar[6732]'
+  |-ImplicitCastExpr 0x563031404088 <line:974:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031403e78 <col:2> 'btScalar[6930]' lvalue Var 0x56302ff0b218 'Landscape06Nml' 'btScalar[6930]'
+  |-ImplicitCastExpr 0x5630314040a0 <line:975:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031403e98 <col:2> 'btScalar[6720]' lvalue Var 0x56303046d9d8 'Landscape07Nml' 'btScalar[6720]'
+  `-ImplicitCastExpr 0x5630314040b8 <line:976:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x563031403eb8 <col:2> 'btScalar[6534]' lvalue Var 0x5630309a2148 'Landscape08Nml' 'btScalar[6534]'
+VarDecl 0x563031404140 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:979:1, line:988:1> line:979:11 LandscapeTex 'btScalar *[8]' cinit
+`-InitListExpr 0x563031404328 <col:28, line:988:1> 'btScalar *[8]'
+  |-ImplicitCastExpr 0x563031404368 <line:980:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5630314041a8 <col:2> 'btScalar[4096]' lvalue Var 0x563030fbb960 'Landscape01Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x563031404388 <line:981:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5630314041c8 <col:2> 'btScalar[3960]' lvalue Var 0x56302ec484f8 'Landscape02Tex' 'btScalar[3960]'
+  |-ImplicitCastExpr 0x5630314043b0 <line:982:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5630314041e8 <col:2> 'btScalar[4096]' lvalue Var 0x56302f1ac2a8 'Landscape03Tex' 'btScalar[4096]'
+  |-ImplicitCastExpr 0x5630314043e8 <line:983:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031404208 <col:2> 'btScalar[4224]' lvalue Var 0x56302f600a38 'Landscape04Tex' 'btScalar[4224]'
+  |-ImplicitCastExpr 0x563031404400 <line:984:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031404228 <col:2> 'btScalar[4488]' lvalue Var 0x56302fb0f318 'Landscape05Tex' 'btScalar[4488]'
+  |-ImplicitCastExpr 0x563031404458 <line:985:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031404248 <col:2> 'btScalar[4620]' lvalue Var 0x563030052a50 'Landscape06Tex' 'btScalar[4620]'
+  |-ImplicitCastExpr 0x563031404470 <line:986:2> 'btScalar *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031404268 <col:2> 'btScalar[4480]' lvalue Var 0x56303059d648 'Landscape07Tex' 'btScalar[4480]'
+  `-ImplicitCastExpr 0x563031404488 <line:987:2> 'btScalar *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x563031404288 <col:2> 'btScalar[4356]' lvalue Var 0x563030aeb098 'Landscape08Tex' 'btScalar[4356]'
+VarDecl 0x563031404548 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:990:1, line:999:1> line:990:18 LandscapeIdx 'unsigned short *[8]' cinit
+`-InitListExpr 0x563031404730 <col:35, line:999:1> 'unsigned short *[8]'
+  |-ImplicitCastExpr 0x563031404770 <line:991:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5630314045b0 <col:2> 'unsigned short[11718]' lvalue Var 0x5630310ec288 'Landscape01Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x563031404790 <line:992:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5630314045d0 <col:2> 'unsigned short[11310]' lvalue Var 0x56302ed3eff0 'Landscape02Idx' 'unsigned short[11310]'
+  |-ImplicitCastExpr 0x5630314047b8 <line:993:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x5630314045f0 <col:2> 'unsigned short[11718]' lvalue Var 0x56302edbce40 'Landscape03Idx' 'unsigned short[11718]'
+  |-ImplicitCastExpr 0x5630314047f0 <line:994:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031404610 <col:2> 'unsigned short[12096]' lvalue Var 0x56302f742a70 'Landscape04Idx' 'unsigned short[12096]'
+  |-ImplicitCastExpr 0x563031404808 <line:995:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031404630 <col:2> 'unsigned short[12870]' lvalue Var 0x56302fc5bb50 'Landscape05Idx' 'unsigned short[12870]'
+  |-ImplicitCastExpr 0x563031404860 <line:996:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031404650 <col:2> 'unsigned short[13260]' lvalue Var 0x5630301c7990 'Landscape06Idx' 'unsigned short[13260]'
+  |-ImplicitCastExpr 0x563031404878 <line:997:2> 'unsigned short *' <ArrayToPointerDecay>
+  | `-DeclRefExpr 0x563031404670 <col:2> 'unsigned short[12852]' lvalue Var 0x5630306f57c0 'Landscape07Idx' 'unsigned short[12852]'
+  `-ImplicitCastExpr 0x563031404890 <line:998:2> 'unsigned short *' <ArrayToPointerDecay>
+    `-DeclRefExpr 0x563031404690 <col:2> 'unsigned short[12480]' lvalue Var 0x563030c2b190 'Landscape08Idx' 'unsigned short[12480]'
+VarDecl 0x563031405eb0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1023:3, col:31> col:13 localInertia 'btVector3' callinit
+`-ExprWithCleanups 0x563031406078 <col:13, col:31> 'btVector3'
+  `-CXXConstructExpr 0x563031406038 <col:13, col:31> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+    |-MaterializeTemporaryExpr 0x563031405fc0 <col:26> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x563031405fa8 <col:26> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x563031405f18 <col:26> 'int' 0
+    |-MaterializeTemporaryExpr 0x563031405ff0 <col:28> 'const btScalar':'const float' lvalue
+    | `-ImplicitCastExpr 0x563031405fd8 <col:28> 'const btScalar':'const float' <IntegralToFloating>
+    |   `-IntegerLiteral 0x563031405f38 <col:28> 'int' 0
+    `-MaterializeTemporaryExpr 0x563031406020 <col:30> 'const btScalar':'const float' lvalue
+      `-ImplicitCastExpr 0x563031406008 <col:30> 'const btScalar':'const float' <IntegralToFloating>
+        `-IntegerLiteral 0x563031405f58 <col:30> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x5630314071c0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1049:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x5630314072f8 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x5630314072d8 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x5630314072c0 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x563031407298 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x563031407268 <col:26> '<bound member function type>' .operator float * 0x56302e522ff8
+    |     `-DeclRefExpr 0x563031407228 <col:26> 'btVector3' lvalue Var 0x563031406a38 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x563031407248 <col:34> 'int' 0
+Allocating float: 8b
+Allocating float: 8b
+VarDecl 0x56303140bd40 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp:1130:3, col:35> col:15 used cubeSize 'const float' cinit
+`-ImplicitCastExpr 0x56303140be78 <col:26, col:35> 'btScalar':'float' <LValueToRValue>
+  `-ArraySubscriptExpr 0x56303140be58 <col:26, col:35> 'btScalar':'float' lvalue
+    |-ImplicitCastExpr 0x56303140be40 <col:26> 'btScalar *' <UserDefinedConversion>
+    | `-CXXMemberCallExpr 0x56303140be18 <col:26> 'btScalar *'
+    |   `-MemberExpr 0x56303140bde8 <col:26> '<bound member function type>' .operator float * 0x56302e522ff8
+    |     `-DeclRefExpr 0x56303140bda8 <col:26> 'btVector3' lvalue Var 0x56303140ac90 'boxSize' 'btVector3'
+    `-IntegerLiteral 0x56303140bdc8 <col:34> 'int' 0
+VarDecl 0x56302e5bdaa0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x56302e5bdc58 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x56302e5bdc20 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x56302e5bdbb8 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x56302e5bdba0 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x56302e5bdb08 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x56302e583a88 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x56302e5bdc00 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x56302e58c560 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x56302e58c548 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x56302e58c500 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x56302e58c4b8 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x56302e58c3b0 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x56302e58c398 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x56302e58c378 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x56302e58c4d0 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x56302e58c420 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x56302e58c408 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x56302e58c3e8 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x56302e58c4e8 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x56302e58c490 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x56302e58c478 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x56302e58c458 <col:69> 'int' 0
+VarDecl 0x56302e5bdaa0 </var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:195:3, col:72> col:28 used identityTransform 'const btTransform' static callinit
+`-ExprWithCleanups 0x56302e5bdc58 <col:28, col:72> 'const btTransform'
+  `-CXXConstructExpr 0x56302e5bdc20 <col:28, col:72> 'const btTransform' 'void (const btMatrix3x3 &, const btVector3 &)'
+    |-CallExpr 0x56302e5bdbb8 <col:46, col:71> 'const btMatrix3x3' lvalue
+    | `-ImplicitCastExpr 0x56302e5bdba0 <col:46, col:59> 'const btMatrix3x3 &(*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x56302e5bdb08 <col:46, col:59> 'const btMatrix3x3 &()' lvalue CXXMethod 0x56302e583a88 'getIdentity' 'const btMatrix3x3 &()'
+    |     `-NestedNameSpecifier TypeSpec 'btMatrix3x3'
+    `-CXXDefaultArgExpr 0x56302e5bdc00 <<invalid sloc>> 'const btVector3' lvalue
+      `-MaterializeTemporaryExpr 0x56302e58c560 <line:46:24, col:71> 'const btVector3' lvalue
+        `-ImplicitCastExpr 0x56302e58c548 <col:24, col:71> 'const btVector3' <NoOp>
+          `-CXXTemporaryObjectExpr 0x56302e58c500 <col:24, col:71> 'btVector3' 'void (const btScalar &, const btScalar &, const btScalar &)'
+            |-MaterializeTemporaryExpr 0x56302e58c4b8 <col:34, col:44> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x56302e58c3b0 <col:34, col:44> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x56302e58c398 <col:43> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x56302e58c378 <col:43> 'int' 0
+            |-MaterializeTemporaryExpr 0x56302e58c4d0 <col:47, col:57> 'const btScalar':'const float' lvalue
+            | `-CXXFunctionalCastExpr 0x56302e58c420 <col:47, col:57> 'btScalar':'float' functional cast to btScalar <NoOp>
+            |   `-ImplicitCastExpr 0x56302e58c408 <col:56> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+            |     `-IntegerLiteral 0x56302e58c3e8 <col:56> 'int' 0
+            `-MaterializeTemporaryExpr 0x56302e58c4e8 <col:60, col:70> 'const btScalar':'const float' lvalue
+              `-CXXFunctionalCastExpr 0x56302e58c490 <col:60, col:70> 'btScalar':'float' functional cast to btScalar <NoOp>
+                `-ImplicitCastExpr 0x56302e58c478 <col:69> 'btScalar':'float' <IntegralToFloating> part_of_explicit_cast
+                  `-IntegerLiteral 0x56302e58c458 <col:69> 'int' 0
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage2/bin/clang++ -DNDEBUG -O0 -g -w -Werror=date-time -I/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include -std=gnu++98 -DNO_TIME -MD -MT CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -MF CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o.d -o CTMark/Bullet/CMakeFiles/bullet.dir/BenchmarkDemo.cpp.o -c /var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/BenchmarkDemo.cpp
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	/var/llvm-compile-time-tracker/llvm-test-suite/CTMark/Bullet/include/LinearMath/btTransform.h:193:28: Generating code for declaration 'btTransform::getIdentity'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x00005630294fbc68 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 40
+1  clang++   0x00005630294f912e llvm::sys::RunSignalHandlers() + 238
+2  clang++   0x000056302945d197
+3  libc.so.6 0x00007f6a61e2b520
+4  clang++   0x000056302c730ed9
+5  clang++   0x000056302c8988b4
+6  clang++   0x000056302c899949
+7  clang++   0x000056302c89a14e
+8  clang++   0x000056302c8994c1
+9  clang++   0x000056302c89a14e
+10 clang++   0x000056302c89a14e
+11 clang++   0x000056302c8984c6 clang::interp::Pointer::toRValue(clang::interp::Context const&, clang::QualType) const + 294
+12 clang++   0x000056302c5b3917 bool clang::interp::EvalEmitter::emitRet<(clang::interp::PrimType)13>(clang::interp::SourceInfo const&) + 1287
+13 clang++   0x000056302c5a61ce clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 670
+14 clang++   0x000056302c54d99b clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 1163
+15 clang++   0x000056302c46cfe2
+16 clang++   0x000056302c468217 clang::Expr::EvaluateAsRValue(clang::Expr::EvalResult&, clang::ASTContext const&, bool) const + 775
+17 clang++   0x00005630298ead42 clang::CodeGen::CodeGenFunction::EmitReturnStmt(clang::ReturnStmt const&) + 2242
+18 clang++   0x00005630298f5c50 clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 592
+19 clang++   0x00005630298d2a62 clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 3362
+20 clang++   0x0000563029764348 clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 744
+21 clang++   0x000056302975a804 clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 1236
+22 clang++   0x0000563029748eac clang::CodeGen::CodeGenModule::EmitDeferred() + 748
+23 clang++   0x0000563029744b6a clang::CodeGen::CodeGenModule::Release() + 74
+24 clang++   0x0000563029d24acb
+25 clang++   0x0000563029d1cd46 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 406
+26 clang++   0x000056302b4ea3d9 clang::ParseAST(clang::Sema&, bool, bool) + 937
+27 clang++   0x000056302a37745d clang::FrontendAction::Execute() + 29
+28 clang++   0x000056302a2abd50 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 1200
+29 clang++   0x000056302a483062 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 738
+30 clang++   0x00005630281d876e cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8382
+31 clang++   0x00005630281d4b2f
+32 clang++   0x000056302a0eb169
+33 clang++   0x000056302945cc98 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 136
+34 clang++   0x000056302a0eada4 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const + 356
+35 clang++   0x000056302a0a7ab8 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 552
+36 clang++   0x000056302a0c6d5b clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 763
+37 clang++   0x00005630281d4089 clang_main(int, char**, llvm::ToolContext const&) + 7481
+38 clang++   0x00005630281e536a main + 90
+39 libc.so.6 0x00007f6a61e12d90
+40 libc.so.6 0x00007f6a61e12e40 __libc_start_main + 128
+41 clang++   0x00005630281c68a5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 21.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage2/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-1417a4.cpp
+clang++: note: diagnostic msg: /tmp/BenchmarkDemo-1417a4.sh
+clang++: note: diagnostic msg: 
+
+********************
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
