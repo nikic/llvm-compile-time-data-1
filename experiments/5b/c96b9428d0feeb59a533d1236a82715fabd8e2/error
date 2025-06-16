@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/Caching.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h: In function ‘void fluxsort(T*, size_t, size_t, CMPFUNC<T>)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:23:7: warning: ISO C++ forbids variable length array ‘swap’ [-Wvla]
+   23 |     T swap[nmemb];
+      |       ^~~~
+[30/3162] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CachePruning.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MemoryBuffer.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CachePruning.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CachePruning.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1635:8: error: extended character – is not valid in an identifier
+ 1635 | #ifdef EXPENSIVE_CHECKS–
+      |        ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:11,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MemoryBuffer.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CachePruning.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CachePruning.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h: In function ‘void quadsort(T*, size_t, size_t, CMPFUNC<T>)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h:76:7: warning: ISO C++ forbids variable length array ‘swap’ [-Wvla]
+   76 |     T swap[nmemb];
+      |       ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h:86:7: warning: ISO C++ forbids variable length array ‘swap’ [-Wvla]
+   86 |     T swap[nmemb];
+      |       ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/MemoryBuffer.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CachePruning.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CachePruning.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h: In function ‘void fluxsort(T*, size_t, size_t, CMPFUNC<T>)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:23:7: warning: ISO C++ forbids variable length array ‘swap’ [-Wvla]
+   23 |     T swap[nmemb];
+      |       ^~~~
+[31/3162] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1635:8: error: extended character – is not valid in an identifier
+ 1635 | #ifdef EXPENSIVE_CHECKS–
+      |        ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:11,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h: In function ‘void quadsort(T*, size_t, size_t, CMPFUNC<T>)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h:76:7: warning: ISO C++ forbids variable length array ‘swap’ [-Wvla]
+   76 |     T swap[nmemb];
+      |       ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h:86:7: warning: ISO C++ forbids variable length array ‘swap’ [-Wvla]
+   86 |     T swap[nmemb];
+      |       ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h: In function ‘void fluxsort(T*, size_t, size_t, CMPFUNC<T>)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:23:7: warning: ISO C++ forbids variable length array ‘swap’ [-Wvla]
+   23 |     T swap[nmemb];
+      |       ^~~~
+[32/3162] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1635:8: error: extended character – is not valid in an identifier
+ 1635 | #ifdef EXPENSIVE_CHECKS–
+      |        ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:11,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h: In function ‘void quadsort(T*, size_t, size_t, CMPFUNC<T>)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h:76:7: warning: ISO C++ forbids variable length array ‘swap’ [-Wvla]
+   76 |     T swap[nmemb];
+      |       ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h:86:7: warning: ISO C++ forbids variable length array ‘swap’ [-Wvla]
+   86 |     T swap[nmemb];
+      |       ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h: In function ‘void fluxsort(T*, size_t, size_t, CMPFUNC<T>)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:23:7: warning: ISO C++ forbids variable length array ‘swap’ [-Wvla]
+   23 |     T swap[nmemb];
+      |       ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h: In instantiation of ‘void llvm::sort(IteratorTy, IteratorTy, Compare) [with IteratorTy = __gnu_cxx::__normal_iterator<llvm::BPFunctionNode*, std::vector<llvm::BPFunctionNode> >; Compare = llvm::BalancedPartitioning::split(llvm::BalancedPartitioning::FunctionNodeRange, unsigned int) const::<lambda(auto:15&, auto:16&)>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:309:13:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1682:66: error: cannot convert ‘llvm::BalancedPartitioning::split(llvm::BalancedPartitioning::FunctionNodeRange, unsigned int) const::<lambda(auto:15&, auto:16&)>’ to ‘CMPFUNC<llvm::BPFunctionNode>’ {aka ‘int (*)(const llvm::BPFunctionNode*, const llvm::BPFunctionNode*)’}
+ 1682 |   fluxsort<ST>(&(*Start), std::distance(Start, End), sizeof(ST), Comp);
+      |                                                                  ^~~~
+      |                                                                  |
+      |                                                                  llvm::BalancedPartitioning::split(llvm::BalancedPartitioning::FunctionNodeRange, unsigned int) const::<lambda(auto:15&, auto:16&)>
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:15:63: note:   initializing argument 4 of ‘void fluxsort(T*, size_t, size_t, CMPFUNC<T>) [with T = llvm::BPFunctionNode; size_t = long unsigned int; CMPFUNC<T> = int (*)(const llvm::BPFunctionNode*, const llvm::BPFunctionNode*)]’
+   15 | void fluxsort(T *array, size_t nmemb, size_t size, CMPFUNC<T> cmp) noexcept {
+      |                                                    ~~~~~~~~~~~^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h: In instantiation of ‘void llvm::sort(IteratorTy, IteratorTy, Compare) [with IteratorTy = __gnu_cxx::__normal_iterator<llvm::BPFunctionNode*, std::vector<llvm::BPFunctionNode> >; Compare = llvm::BalancedPartitioning::bisect(llvm::BalancedPartitioning::FunctionNodeRange, unsigned int, unsigned int, unsigned int, std::optional<llvm::BalancedPartitioning::BPThreadPool>&) const::<lambda(const auto:8&, const auto:9&)>]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1687:13:   required from ‘void llvm::sort(Container&&, Compare) [with Container = const llvm::iterator_range<__gnu_cxx::__normal_iterator<llvm::BPFunctionNode*, std::vector<llvm::BPFunctionNode> > >&; Compare = llvm::BalancedPartitioning::bisect(llvm::BalancedPartitioning::FunctionNodeRange, unsigned int, unsigned int, unsigned int, std::optional<llvm::BalancedPartitioning::BPThreadPool>&) const::<lambda(const auto:8&, const auto:9&)>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:121:15:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1682:66: error: cannot convert ‘llvm::BalancedPartitioning::bisect(llvm::BalancedPartitioning::FunctionNodeRange, unsigned int, unsigned int, unsigned int, std::optional<llvm::BalancedPartitioning::BPThreadPool>&) const::<lambda(const auto:8&, const auto:9&)>’ to ‘CMPFUNC<llvm::BPFunctionNode>’ {aka ‘int (*)(const llvm::BPFunctionNode*, const llvm::BPFunctionNode*)’}
+ 1682 |   fluxsort<ST>(&(*Start), std::distance(Start, End), sizeof(ST), Comp);
+      |                                                                  ^~~~
+      |                                                                  |
+      |                                                                  llvm::BalancedPartitioning::bisect(llvm::BalancedPartitioning::FunctionNodeRange, unsigned int, unsigned int, unsigned int, std::optional<llvm::BalancedPartitioning::BPThreadPool>&) const::<lambda(const auto:8&, const auto:9&)>
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:15:63: note:   initializing argument 4 of ‘void fluxsort(T*, size_t, size_t, CMPFUNC<T>) [with T = llvm::BPFunctionNode; size_t = long unsigned int; CMPFUNC<T> = int (*)(const llvm::BPFunctionNode*, const llvm::BPFunctionNode*)]’
+   15 | void fluxsort(T *array, size_t nmemb, size_t size, CMPFUNC<T> cmp) noexcept {
+      |                                                    ~~~~~~~~~~~^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h: In instantiation of ‘void fluxsort(T*, size_t, size_t, CMPFUNC<T>) [with T = llvm::BPFunctionNode; size_t = long unsigned int; CMPFUNC<T> = int (*)(const llvm::BPFunctionNode*, const llvm::BPFunctionNode*)]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1682:15:   required from ‘void llvm::sort(IteratorTy, IteratorTy, Compare) [with IteratorTy = __gnu_cxx::__normal_iterator<llvm::BPFunctionNode*, std::vector<llvm::BPFunctionNode> >; Compare = llvm::BalancedPartitioning::split(llvm::BalancedPartitioning::FunctionNodeRange, unsigned int) const::<lambda(auto:15&, auto:16&)>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:309:13:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:23:7: warning: ISO C++ forbids variable length array [-Wvla]
+   23 |     T swap[nmemb];
+      |       ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:23:7: error: no matching function for call to ‘llvm::BPFunctionNode::BPFunctionNode()’
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:65:3: note: candidate: ‘llvm::BPFunctionNode::BPFunctionNode(llvm::BPFunctionNode::IDT, llvm::ArrayRef<unsigned int>)’
+   65 |   BPFunctionNode(IDT Id, ArrayRef<UtilityNodeT> UtilityNodes)
+      |   ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:65:3: note:   candidate expects 2 arguments, 0 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:57:7: note: candidate: ‘llvm::BPFunctionNode::BPFunctionNode(const llvm::BPFunctionNode&)’
+   57 | class BPFunctionNode {
+      |       ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:57:7: note:   candidate expects 1 argument, 0 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:57:7: note: candidate: ‘llvm::BPFunctionNode::BPFunctionNode(llvm::BPFunctionNode&&)’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:57:7: note:   candidate expects 1 argument, 0 provided
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:11,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h: In instantiation of ‘void quadsort(T*, size_t, size_t, CMPFUNC<T>) [with T = llvm::BPFunctionNode; size_t = long unsigned int; CMPFUNC<T> = int (*)(const llvm::BPFunctionNode*, const llvm::BPFunctionNode*)]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:20:13:   required from ‘void fluxsort(T*, size_t, size_t, CMPFUNC<T>) [with T = llvm::BPFunctionNode; size_t = long unsigned int; CMPFUNC<T> = int (*)(const llvm::BPFunctionNode*, const llvm::BPFunctionNode*)]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:1682:15:   required from ‘void llvm::sort(IteratorTy, IteratorTy, Compare) [with IteratorTy = __gnu_cxx::__normal_iterator<llvm::BPFunctionNode*, std::vector<llvm::BPFunctionNode> >; Compare = llvm::BalancedPartitioning::split(llvm::BalancedPartitioning::FunctionNodeRange, unsigned int) const::<lambda(auto:15&, auto:16&)>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:309:13:   required from here
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h:76:7: warning: ISO C++ forbids variable length array [-Wvla]
+   76 |     T swap[nmemb];
+      |       ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h:76:7: error: no matching function for call to ‘llvm::BPFunctionNode::BPFunctionNode()’
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:65:3: note: candidate: ‘llvm::BPFunctionNode::BPFunctionNode(llvm::BPFunctionNode::IDT, llvm::ArrayRef<unsigned int>)’
+   65 |   BPFunctionNode(IDT Id, ArrayRef<UtilityNodeT> UtilityNodes)
+      |   ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:65:3: note:   candidate expects 2 arguments, 0 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:57:7: note: candidate: ‘llvm::BPFunctionNode::BPFunctionNode(const llvm::BPFunctionNode&)’
+   57 | class BPFunctionNode {
+      |       ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:57:7: note:   candidate expects 1 argument, 0 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:57:7: note: candidate: ‘llvm::BPFunctionNode::BPFunctionNode(llvm::BPFunctionNode&&)’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:57:7: note:   candidate expects 1 argument, 0 provided
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/fluxsort.h:11,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h:86:7: warning: ISO C++ forbids variable length array [-Wvla]
+   86 |     T swap[nmemb];
+      |       ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/quadsort.h:86:7: error: no matching function for call to ‘llvm::BPFunctionNode::BPFunctionNode()’
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:65:3: note: candidate: ‘llvm::BPFunctionNode::BPFunctionNode(llvm::BPFunctionNode::IDT, llvm::ArrayRef<unsigned int>)’
+   65 |   BPFunctionNode(IDT Id, ArrayRef<UtilityNodeT> UtilityNodes)
+      |   ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:65:3: note:   candidate expects 2 arguments, 0 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:57:7: note: candidate: ‘llvm::BPFunctionNode::BPFunctionNode(const llvm::BPFunctionNode&)’
+   57 | class BPFunctionNode {
+      |       ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:57:7: note:   candidate expects 1 argument, 0 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:57:7: note: candidate: ‘llvm::BPFunctionNode::BPFunctionNode(llvm::BPFunctionNode&&)’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BalancedPartitioning.h:57:7: note:   candidate expects 1 argument, 0 provided
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:447 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+9.23user 1.06system 0:01.02elapsed 1005%CPU (0avgtext+0avgdata 201536maxresident)k
+48inputs+83232outputs (21major+607229minor)pagefaults 0swaps
