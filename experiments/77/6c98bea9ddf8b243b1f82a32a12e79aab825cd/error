@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/CodeGen/CodeGenAction.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendConsumer.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/BackendUtil.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/SourceLocationEncoding.h: In static member function ‘static clang::SourceLocationEncoding::RawLocEncoding clang::SourceLocationEncoding::encode(clang::SourceLocation, clang::SourceLocationEncoding::UIntTy, unsigned int, clang::SourceLocationSequence*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/SourceLocationEncoding.h:182:70: error: ‘Bits’ is not a member of ‘clang::SourceLocation’
+  182 |   Encoded |= (RawLocEncoding)BaseModuleFileIndex << (SourceLocation::Bits + 1);
+      |                                                                      ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/SourceLocationEncoding.h: In static member function ‘static std::pair<clang::SourceLocation, unsigned int> clang::SourceLocationEncoding::decode(clang::SourceLocationEncoding::RawLocEncoding, clang::SourceLocationSequence*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/SourceLocationEncoding.h:188:58: error: ‘Bits’ is not a member of ‘clang::SourceLocation’
+  188 |   unsigned ModuleFileIndex = Encoded >> (SourceLocation::Bits + 1);
+      |                                                          ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/SourceLocationEncoding.h:195:70: error: ‘Bits’ is not a member of ‘clang::SourceLocation’
+  195 |   Encoded &= llvm::maskTrailingOnes<RawLocEncoding>((SourceLocation::Bits + 1));
+      |                                                                      ^~~~
+[2710/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAVR.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Ownership.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaBase.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaAVR.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAVR.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2711/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/JumpDiagnostics.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/JumpDiagnostics.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2712/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAccess.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CXXInheritance.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAccess.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2713/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAMDGPU.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Ownership.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaBase.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaAMDGPU.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAMDGPU.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2714/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaBase.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Ownership.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaBase.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaBase.cpp:1:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2715/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaBPF.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Ownership.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaBase.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaBPF.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaBPF.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2716/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAPINotes.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/CheckExprLifetime.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAPINotes.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2717/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAttr.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/CheckExprLifetime.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAttr.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2718/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaBoundsSafety.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Initialization.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaBoundsSafety.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2719/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCXXScopeSpec.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaCXXScopeSpec.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2720/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/ParsedAttr.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Ownership.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/ParsedAttr.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/ParsedAttr.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2721/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/AnalysisBasedWarnings.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/AnalysisBasedWarnings.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2722/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAvailability.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaAvailability.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2723/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaARM.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaARM.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaARM.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2724/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCast.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CXXInheritance.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaCast.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2725/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/EvaluatedExprVisitor.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/UsedDeclVisitor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/Sema.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2726/3116] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaChecking.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/CheckExprLifetime.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaChecking.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:741:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  741 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:754:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  754 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:444 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+1386.72user 77.31system 1:38.34elapsed 1488%CPU (0avgtext+0avgdata 1376976maxresident)k
+29368inputs+6717176outputs (47097major+46265032minor)pagefaults 0swaps
