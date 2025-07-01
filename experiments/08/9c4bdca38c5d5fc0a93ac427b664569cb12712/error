@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp: In member function ‘clang::CXXOperatorSourceInfo* clang::ASTContext::getCXXOperatorSourceInfo(clang::SourceRange) const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:3207:55: error: no match for ‘operator=’ (operand types are ‘clang::SourceLocation’ and ‘clang::SourceLocation::UIntTy’ {aka ‘long unsigned int’})
+ 3207 |   TInfo->BeginOpNameLoc = R.getBegin().getRawEncoding();
+      |                                                       ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/NestedNameSpecifier.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CanonicalType.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/SourceLocation.h:89:7: note: candidate: ‘constexpr clang::SourceLocation& clang::SourceLocation::operator=(const clang::SourceLocation&)’
+   89 | class SourceLocation {
+      |       ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/SourceLocation.h:89:7: note:   no known conversion for argument 1 from ‘clang::SourceLocation::UIntTy’ {aka ‘long unsigned int’} to ‘const clang::SourceLocation&’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/SourceLocation.h:89:7: note: candidate: ‘constexpr clang::SourceLocation& clang::SourceLocation::operator=(clang::SourceLocation&&)’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/SourceLocation.h:89:7: note:   no known conversion for argument 1 from ‘clang::SourceLocation::UIntTy’ {aka ‘long unsigned int’} to ‘clang::SourceLocation&&’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:3208:51: error: no match for ‘operator=’ (operand types are ‘clang::SourceLocation’ and ‘clang::SourceLocation::UIntTy’ {aka ‘long unsigned int’})
+ 3208 |   TInfo->EndOpNameLoc = R.getEnd().getRawEncoding();
+      |                                                   ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/Diagnostic.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/NestedNameSpecifier.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CanonicalType.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/SourceLocation.h:89:7: note: candidate: ‘constexpr clang::SourceLocation& clang::SourceLocation::operator=(const clang::SourceLocation&)’
+   89 | class SourceLocation {
+      |       ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/SourceLocation.h:89:7: note:   no known conversion for argument 1 from ‘clang::SourceLocation::UIntTy’ {aka ‘long unsigned int’} to ‘const clang::SourceLocation&’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/SourceLocation.h:89:7: note: candidate: ‘constexpr clang::SourceLocation& clang::SourceLocation::operator=(clang::SourceLocation&&)’
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/SourceLocation.h:89:7: note:   no known conversion for argument 1 from ‘clang::SourceLocation::UIntTy’ {aka ‘long unsigned int’} to ‘clang::SourceLocation&&’
+[2510/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/MicrosoftCXXABI.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CXXInheritance.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/MicrosoftCXXABI.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2511/3172] Building AArch64GenSubtargetInfo.inc...
+[2512/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Mangle.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Mangle.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/Mangle.cpp:12:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2513/3172] Building AArch64GenInstrInfo.inc...
+[2514/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/NSAPI.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/NSAPI.cpp:12:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2515/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ParentMap.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ParentMap.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2516/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/OpenACCClause.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/OpenACCClause.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2517/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/PrintfFormatString.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/OSLog.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/PrintfFormatString.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2518/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/OSLog.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/OSLog.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/OSLog.cpp:3:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2519/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ODRHash.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclVisitor.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ODRHash.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2520/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ODRDiagsEmitter.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ODRDiagsEmitter.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ODRDiagsEmitter.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2521/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ItaniumMangle.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ItaniumMangle.cpp:20:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2522/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/JSONNodeDumper.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTTypeTraits.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTNodeTraverser.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/JSONNodeDumper.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/JSONNodeDumper.cpp:1:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2523/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/MicrosoftMangle.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CXXInheritance.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/MicrosoftMangle.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2524/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/QualTypeNames.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclTemplate.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/QualTypeNames.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2525/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/OpenMPClause.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/OpenMPClause.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/OpenMPClause.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+[2526/3172] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/DynamicAllocator.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:787:16: warning: width of ‘clang::Stmt::CXXOperatorCallExprBitfields::<anonymous>’ exceeds its type
+  787 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Stmt.h:800:16: warning: width of ‘clang::Stmt::CXXRewrittenBinaryOperatorBitfields::<anonymous>’ exceeds its type
+  800 |     unsigned : NumCallExprBits;
+      |                ^~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+257.74user 19.47system 0:26.37elapsed 1050%CPU (0avgtext+0avgdata 1256812maxresident)k
+0inputs+2731248outputs (3437major+10547077minor)pagefaults 0swaps
