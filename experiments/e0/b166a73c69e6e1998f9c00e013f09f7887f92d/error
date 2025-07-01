@@ -1,0 +1,70 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh ReleaseLTO-g stage1 " failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/ReleaseLTO-g.cmake
+-- The C compiler identification is Clang 21.0.0
+-- The CXX compiler identification is Clang 21.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage1/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- Check target operating system - Linux
+-- Check target system architecture: x86
+-- Check target system architecture: unknown
+-- Adding directory CTMark
+-- Found Intl: built in to C library  
+-- Performing Test COMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS
+-- Performing Test COMPILER_HAS_NO_DEFINE_TARGET_OS_MACROS - Success
+-- Found Tclsh: /bin/tclsh (found version "8.6") 
+-- Could NOT find TCL (missing: TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing: TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing: TK_LIBRARY TK_INCLUDE_PATH) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/llvm-test-suite-build
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+[1/671] Generating ../lit.cfg
+[2/671] Generating HashProgramOutput.sh
+[3/671] Generating timeit
+[4/671] Generating timeit-target
+[5/671] Generating __init__.py
+[6/671] Generating modules/__init__.py
+[7/671] Generating modules/codesize.py
+[8/671] Generating modules/compiletime.py
+[9/671] Generating modules/hash.py
+[10/671] Generating modules/microbenchmark.py
+[11/671] Generating modules/hpmcount.py
+[12/671] Generating modules/perf.py
+[13/671] Generating modules/profilegen.py
+[14/671] Generating modules/remote.py
+[15/671] Generating modules/run.py
+[16/671] Generating modules/run_under.py
+[17/671] Generating modules/timeit.py
+[18/671] Generating test.py
+[19/671] Generating modules/stats.py
+[20/671] Generating shellcommand.py
+[21/671] Generating testfile.py
+[22/671] Generating testplan.py
+[23/671] [TEST_SUITE_HOST_CC] Compiling host source fpcmp.c
+[24/671] [TEST_SUITE_HOST_CC] Linking host executable fpcmp
+[25/671] Building C object tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o
+[26/671] Linking C executable tools/fpcmp-target
+FAILED: tools/fpcmp-target 
+: && /tmp/llvm-project-build-stage1/bin/clang -O3 -fomit-frame-pointer -flto -DNDEBUG -g  tools/CMakeFiles/fpcmp-target.dir/fpcmp.c.o -o tools/fpcmp-target   && :
+/usr/bin/ld: error: LLVM gold plugin: Invalid record (Producer: 'LLVM21.0.0git' Reader: 'LLVM 21.0.0git')
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+[27/671] Building CXX object tools/CMakeFiles/not.dir/not.cpp.o
+[28/671] Generating sqlite test inputs
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
