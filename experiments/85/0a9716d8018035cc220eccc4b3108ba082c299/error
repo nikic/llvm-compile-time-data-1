@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+[23/2911] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/circular_raw_ostream.cpp.o
+[24/2911] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BranchProbability.cpp.o
+[25/2911] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o
+[26/2911] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -isystem /var/llvm-compile-time-tracker/llvm-project/llvm/../third-party/siphash/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -isystem /var/llvm-compile-time-tracker/llvm-project/llvm/../third-party/siphash/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17 -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp
+1.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:26:77: current parser token ')'
+2.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:24:50: parsing function body 'llvm::BPFunctionNode::dump'
+3.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/BalancedPartitioning.cpp:24:50: in compound statement ('{}')
+4.	/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/FormatVariadic.h:260:39: instantiating function definition 'llvm::formatv<const unsigned long &, llvm::iterator_range<const unsigned int *>, const std::optional<unsigned int> &>'
+5.	/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/FormatVariadic.h:253:13: instantiating function definition 'llvm::formatv<const unsigned long &, llvm::iterator_range<const unsigned int *>, const std::optional<unsigned int> &>'
+6.	/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/FormatVariadicDetails.h:115:8: instantiating class definition 'llvm::support::detail::uses_stream_operator<const std::optional<unsigned int> &>'
+7.	/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/FormatVariadicDetails.h:79:26: instantiating class definition 'llvm::support::detail::has_StreamOperator<const std::optional<unsigned int> &>'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x0000557bc565a3c0 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x0000557bc5657f74 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x0000557bc55a9678
+3  libc.so.6 0x00007f531b6d7520
+4  clang++   0x0000557bc838f41f clang::FunctionDecl::isVariadic() const + 15
+5  clang++   0x0000557bc7c800af
+6  clang++   0x0000557bc7c834a4 clang::isBetterOverloadCandidate(clang::Sema&, clang::OverloadCandidate const&, clang::OverloadCandidate const&, clang::SourceLocation, clang::OverloadCandidateSet::CandidateSetKind, bool) + 1636
+7  clang++   0x0000557bc7c8bfe4 clang::OverloadCandidateSet::BestViableFunctionImpl(clang::Sema&, clang::SourceLocation, clang::OverloadCandidate*&, llvm::SmallVectorImpl<clang::OverloadCandidate*>&) + 196
+8  clang++   0x0000557bc7ca8d94 clang::OverloadCandidateSet::BestViableFunction(clang::Sema&, clang::SourceLocation, clang::OverloadCandidate*&) + 596
+9  clang++   0x0000557bc7cc0320 clang::Sema::CreateOverloadedBinOp(clang::SourceLocation, clang::BinaryOperatorKind, clang::UnresolvedSetImpl const&, clang::Expr*, clang::Expr*, bool, bool, clang::FunctionDecl*) + 1392
+10 clang++   0x0000557bc7eeecbd
+11 clang++   0x0000557bc7f359d7
+12 clang++   0x0000557bc7f0f641
+13 clang++   0x0000557bc7f11879
+14 clang++   0x0000557bc7f17124
+15 clang++   0x0000557bc7f19618
+16 clang++   0x0000557bc7f3550e
+17 clang++   0x0000557bc7f170a0
+18 clang++   0x0000557bc7f3268d
+19 clang++   0x0000557bc7f101a6
+20 clang++   0x0000557bc7f395f7
+21 clang++   0x0000557bc7f11879
+22 clang++   0x0000557bc7f152c6 clang::Sema::SubstType(clang::TypeSourceInfo*, clang::MultiLevelTemplateArgumentList const&, clang::SourceLocation, clang::DeclarationName, bool) + 134
+23 clang++   0x0000557bc7f1a930 clang::Sema::SubstParmVarDecl(clang::ParmVarDecl*, clang::MultiLevelTemplateArgumentList const&, int, clang::UnsignedOrNone, bool, bool) + 128
+24 clang++   0x0000557bc7f2b963
+25 clang++   0x0000557bc7f2f685 clang::Sema::SubstParmTypes(clang::SourceLocation, llvm::ArrayRef<clang::ParmVarDecl*>, clang::FunctionType::ExtParameterInfo const*, clang::MultiLevelTemplateArgumentList const&, llvm::SmallVectorImpl<clang::QualType>&, llvm::SmallVectorImpl<clang::ParmVarDecl*>*, clang::Sema::ExtParameterInfoBuilder&) + 117
+26 clang++   0x0000557bc7e53d69 clang::Sema::SubstituteExplicitTemplateArguments(clang::FunctionTemplateDecl*, clang::TemplateArgumentListInfo&, llvm::SmallVectorImpl<clang::DeducedTemplateArgument>&, llvm::SmallVectorImpl<clang::QualType>&, clang::QualType*, clang::sema::TemplateDeductionInfo&) + 2601
+27 clang++   0x0000557bc7e54464
+28 clang++   0x0000557bc8b2c055 clang::StackExhaustionHandler::runWithSufficientStackSpace(clang::SourceLocation, llvm::function_ref<void ()>) + 69
+29 clang++   0x0000557bc7ea1897 clang::Sema::DeduceTemplateArguments(clang::FunctionTemplateDecl*, clang::TemplateArgumentListInfo*, llvm::ArrayRef<clang::Expr*>, clang::FunctionDecl*&, clang::sema::TemplateDeductionInfo&, bool, bool, bool, clang::QualType, clang::Expr::Classification, bool, llvm::function_ref<bool (llvm::ArrayRef<clang::QualType>, bool)>) + 1175
+30 clang++   0x0000557bc7ca4175
+31 clang++   0x0000557bc7ca4dcd
+32 clang++   0x0000557bc7ca5f97 clang::Sema::AddOverloadedCallCandidates(clang::UnresolvedLookupExpr*, llvm::ArrayRef<clang::Expr*>, clang::OverloadCandidateSet&, bool) + 583
+33 clang++   0x0000557bc7ca9bdb clang::Sema::buildOverloadedCallSet(clang::Scope*, clang::Expr*, clang::UnresolvedLookupExpr*, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::OverloadCandidateSet*, clang::ActionResult<clang::Expr*, true>*) + 347
+34 clang++   0x0000557bc7cbe8a6 clang::Sema::BuildOverloadedCallExpr(clang::Scope*, clang::Expr*, clang::UnresolvedLookupExpr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*, bool, bool) + 454
+35 clang++   0x0000557bc791f2b0 clang::Sema::BuildCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*, bool, bool) + 3248
+36 clang++   0x0000557bc792005b clang::Sema::ActOnCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*) + 91
+37 clang++   0x0000557bc7f249d4
+38 clang++   0x0000557bc7f0cb75
+39 clang++   0x0000557bc7f34f3b
+40 clang++   0x0000557bc7f21a9b
+41 clang++   0x0000557bc7f0cb75
+42 clang++   0x0000557bc7f21f38 clang::Sema::SubstInitializer(clang::Expr*, clang::MultiLevelTemplateArgumentList const&, bool) + 104
+43 clang++   0x0000557bc7f58a3b clang::Sema::InstantiateVariableInitializer(clang::VarDecl*, clang::VarDecl*, clang::MultiLevelTemplateArgumentList const&) + 379
+44 clang++   0x0000557bc7f9ed44 clang::Sema::BuildVariableInstantiation(clang::VarDecl*, clang::VarDecl*, clang::MultiLevelTemplateArgumentList const&, llvm::SmallVector<clang::Sema::LateInstantiatedAttribute, 1u>*, clang::DeclContext*, clang::LocalInstantiationScope*, bool, clang::VarTemplateSpecializationDecl*) + 1700
+45 clang++   0x0000557bc7fac97b clang::TemplateDeclInstantiator::VisitVarDecl(clang::VarDecl*, bool, llvm::ArrayRef<clang::BindingDecl*>*) + 523
+46 clang++   0x0000557bc7f161c8 clang::Sema::InstantiateClass(clang::SourceLocation, clang::CXXRecordDecl*, clang::CXXRecordDecl*, clang::MultiLevelTemplateArgumentList const&, clang::TemplateSpecializationKind, bool) + 1576
+47 clang++   0x0000557bc7f4cf1f clang::Sema::InstantiateClassTemplateSpecialization(clang::SourceLocation, clang::ClassTemplateSpecializationDecl*, clang::TemplateSpecializationKind, bool, bool) + 303
+48 clang++   0x0000557bc7fca632
+49 clang++   0x0000557bc8b2c055 clang::StackExhaustionHandler::runWithSufficientStackSpace(clang::SourceLocation, llvm::function_ref<void ()>) + 69
+50 clang++   0x0000557bc7fe214f clang::Sema::RequireCompleteTypeImpl(clang::SourceLocation, clang::QualType, clang::Sema::CompleteTypeKind, clang::Sema::TypeDiagnoser*) + 2319
+51 clang++   0x0000557bc7fe21a9 clang::Sema::RequireCompleteType(clang::SourceLocation, clang::QualType, clang::Sema::CompleteTypeKind, clang::Sema::TypeDiagnoser&) + 25
+52 clang++   0x0000557bc75ff39f clang::Sema::RequireCompleteDeclContext(clang::CXXScopeSpec&, clang::DeclContext*) + 223
+53 clang++   0x0000557bc7abc468 clang::Sema::LookupParsedName(clang::LookupResult&, clang::Scope*, clang::CXXScopeSpec*, clang::QualType, bool, bool) + 200
+54 clang++   0x0000557bc79370b2 clang::Sema::BuildQualifiedDeclarationNameExpr(clang::CXXScopeSpec&, clang::DeclarationNameInfo const&, bool, clang::TypeSourceInfo**) + 226
+55 clang++   0x0000557bc7f34dbf
+56 clang++   0x0000557bc7f21ae1
+57 clang++   0x0000557bc7f170a0
+58 clang++   0x0000557bc7f3268d
+59 clang++   0x0000557bc7f101a6
+60 clang++   0x0000557bc7f395f7
+61 clang++   0x0000557bc7f11879
+62 clang++   0x0000557bc7f152c6 clang::Sema::SubstType(clang::TypeSourceInfo*, clang::MultiLevelTemplateArgumentList const&, clang::SourceLocation, clang::DeclarationName, bool) + 134
+63 clang++   0x0000557bc7f1566d clang::Sema::SubstBaseSpecifiers(clang::CXXRecordDecl*, clang::CXXRecordDecl*, clang::MultiLevelTemplateArgumentList const&) + 845
+64 clang++   0x0000557bc7f1603b clang::Sema::InstantiateClass(clang::SourceLocation, clang::CXXRecordDecl*, clang::CXXRecordDecl*, clang::MultiLevelTemplateArgumentList const&, clang::TemplateSpecializationKind, bool) + 1179
+65 clang++   0x0000557bc7f4cf1f clang::Sema::InstantiateClassTemplateSpecialization(clang::SourceLocation, clang::ClassTemplateSpecializationDecl*, clang::TemplateSpecializationKind, bool, bool) + 303
+66 clang++   0x0000557bc7fca632
+67 clang++   0x0000557bc8b2c055 clang::StackExhaustionHandler::runWithSufficientStackSpace(clang::SourceLocation, llvm::function_ref<void ()>) + 69
+68 clang++   0x0000557bc7fe214f clang::Sema::RequireCompleteTypeImpl(clang::SourceLocation, clang::QualType, clang::Sema::CompleteTypeKind, clang::Sema::TypeDiagnoser*) + 2319
+69 clang++   0x0000557bc7fe21a9 clang::Sema::RequireCompleteType(clang::SourceLocation, clang::QualType, clang::Sema::CompleteTypeKind, clang::Sema::TypeDiagnoser&) + 25
+70 clang++   0x0000557bc75ff39f clang::Sema::RequireCompleteDeclContext(clang::CXXScopeSpec&, clang::DeclContext*) + 223
+71 clang++   0x0000557bc7abc468 clang::Sema::LookupParsedName(clang::LookupResult&, clang::Scope*, clang::CXXScopeSpec*, clang::QualType, bool, bool) + 200
+72 clang++   0x0000557bc79370b2 clang::Sema::BuildQualifiedDeclarationNameExpr(clang::CXXScopeSpec&, clang::DeclarationNameInfo const&, bool, clang::TypeSourceInfo**) + 226
+73 clang++   0x0000557bc7f34dbf
+74 clang++   0x0000557bc7f170a0
+75 clang++   0x0000557bc7f3268d
+76 clang++   0x0000557bc7f101a6
+77 clang++   0x0000557bc7f395f7
+78 clang++   0x0000557bc7f2ff84 clang::Sema::SubstFunctionDeclType(clang::TypeSourceInfo*, clang::MultiLevelTemplateArgumentList const&, clang::SourceLocation, clang::DeclarationName, clang::CXXRecordDecl*, clang::Qualifiers, bool) + 2228
+79 clang++   0x0000557bc7f571a1 clang::TemplateDeclInstantiator::SubstFunctionType(clang::FunctionDecl*, llvm::SmallVectorImpl<clang::ParmVarDecl*>&) + 305
+80 clang++   0x0000557bc7faebd7 clang::TemplateDeclInstantiator::VisitFunctionDecl(clang::FunctionDecl*, clang::TemplateParameterList*, clang::TemplateDeclInstantiator::RewriteKind) + 631
+81 clang++   0x0000557bc7fb989f
+82 clang++   0x0000557bc8b2c055 clang::StackExhaustionHandler::runWithSufficientStackSpace(clang::SourceLocation, llvm::function_ref<void ()>) + 69
+83 clang++   0x0000557bc7f56e61 clang::Sema::SubstDecl(clang::Decl*, clang::DeclContext*, clang::MultiLevelTemplateArgumentList const&) + 225
+84 clang++   0x0000557bc7ea7de4 clang::Sema::FinishTemplateArgumentDeduction(clang::FunctionTemplateDecl*, llvm::SmallVectorImpl<clang::DeducedTemplateArgument>&, unsigned int, clang::FunctionDecl*&, clang::sema::TemplateDeductionInfo&, llvm::SmallVectorImpl<clang::Sema::OriginalCallArg> const*, bool, bool, bool, llvm::function_ref<bool (bool)>) + 1620
+85 clang++   0x0000557bc7ea906e
+86 clang++   0x0000557bc8b2c055 clang::StackExhaustionHandler::runWithSufficientStackSpace(clang::SourceLocation, llvm::function_ref<void ()>) + 69
+87 clang++   0x0000557bc7ea39ec clang::Sema::DeduceTemplateArguments(clang::FunctionTemplateDecl*, clang::TemplateArgumentListInfo*, llvm::ArrayRef<clang::Expr*>, clang::FunctionDecl*&, clang::sema::TemplateDeductionInfo&, bool, bool, bool, clang::QualType, clang::Expr::Classification, bool, llvm::function_ref<bool (llvm::ArrayRef<clang::QualType>, bool)>) + 9708
+88 clang++   0x0000557bc7ca4175
+89 clang++   0x0000557bc7ca8b1f clang::OverloadCandidateSet::InjectNonDeducedTemplateCandidates(clang::Sema&) + 367
+90 clang++   0x0000557bc7ca8cdb clang::OverloadCandidateSet::BestViableFunction(clang::Sema&, clang::SourceLocation, clang::OverloadCandidate*&) + 411
+91 clang++   0x0000557bc7cbeb69 clang::Sema::BuildOverloadedCallExpr(clang::Scope*, clang::Expr*, clang::UnresolvedLookupExpr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*, bool, bool) + 1161
+92 clang++   0x0000557bc791f2b0 clang::Sema::BuildCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*, bool, bool) + 3248
+93 clang++   0x0000557bc792005b clang::Sema::ActOnCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*) + 91
+94 clang++   0x0000557bc7f249d4
+95 clang++   0x0000557bc7f20ceb
+96 clang++   0x0000557bc7f24944
+97 clang++   0x0000557bc7f21f38 clang::Sema::SubstInitializer(clang::Expr*, clang::MultiLevelTemplateArgumentList const&, bool) + 104
+98 clang++   0x0000557bc7f58a3b clang::Sema::InstantiateVariableInitializer(clang::VarDecl*, clang::VarDecl*, clang::MultiLevelTemplateArgumentList const&) + 379
+99 clang++   0x0000557bc7f9ed44 clang::Sema::BuildVariableInstantiation(clang::VarDecl*, clang::VarDecl*, clang::MultiLevelTemplateArgumentList const&, llvm::SmallVector<clang::Sema::LateInstantiatedAttribute, 1u>*, clang::DeclContext*, clang::LocalInstantiationScope*, bool, clang::VarTemplateSpecializationDecl*) + 1700
+100 clang++   0x0000557bc7fac97b clang::TemplateDeclInstantiator::VisitVarDecl(clang::VarDecl*, bool, llvm::ArrayRef<clang::BindingDecl*>*) + 523
+101 clang++   0x0000557bc7fb981f
+102 clang++   0x0000557bc8b2c055 clang::StackExhaustionHandler::runWithSufficientStackSpace(clang::SourceLocation, llvm::function_ref<void ()>) + 69
+103 clang++   0x0000557bc7f56e61 clang::Sema::SubstDecl(clang::Decl*, clang::DeclContext*, clang::MultiLevelTemplateArgumentList const&) + 225
+104 clang++   0x0000557bc7ef17f8
+105 clang++   0x0000557bc7f44fc7
+106 clang++   0x0000557bc7f4c8df clang::Sema::SubstStmt(clang::Stmt*, clang::MultiLevelTemplateArgumentList const&) + 111
+107 clang++   0x0000557bc7fa39b1 clang::Sema::InstantiateFunctionDefinition(clang::SourceLocation, clang::FunctionDecl*, bool, bool, bool) + 3953
+108 clang++   0x0000557bc8b2c055 clang::StackExhaustionHandler::runWithSufficientStackSpace(clang::SourceLocation, llvm::function_ref<void ()>) + 69
+109 clang++   0x0000557bc7e5500e clang::Sema::DeduceReturnType(clang::FunctionDecl*, clang::SourceLocation, bool) + 574
+110 clang++   0x0000557bc78ffbe4 clang::Sema::DiagnoseUseOfDecl(clang::NamedDecl*, llvm::ArrayRef<clang::SourceLocation>, clang::ObjCInterfaceDecl const*, bool, bool, clang::ObjCInterfaceDecl*, bool) + 3748
+111 clang++   0x0000557bc7cbdb32
+112 clang++   0x0000557bc7cbebfb clang::Sema::BuildOverloadedCallExpr(clang::Scope*, clang::Expr*, clang::UnresolvedLookupExpr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*, bool, bool) + 1307
+113 clang++   0x0000557bc791f2b0 clang::Sema::BuildCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*, bool, bool) + 3248
+114 clang++   0x0000557bc792005b clang::Sema::ActOnCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*) + 91
+115 clang++   0x0000557bc7f249d4
+116 clang++   0x0000557bc7f218d7
+117 clang++   0x0000557bc7f44fc7
+118 clang++   0x0000557bc7f4c8df clang::Sema::SubstStmt(clang::Stmt*, clang::MultiLevelTemplateArgumentList const&) + 111
+119 clang++   0x0000557bc7fa39b1 clang::Sema::InstantiateFunctionDefinition(clang::SourceLocation, clang::FunctionDecl*, bool, bool, bool) + 3953
+120 clang++   0x0000557bc8b2c055 clang::StackExhaustionHandler::runWithSufficientStackSpace(clang::SourceLocation, llvm::function_ref<void ()>) + 69
+121 clang++   0x0000557bc7e5500e clang::Sema::DeduceReturnType(clang::FunctionDecl*, clang::SourceLocation, bool) + 574
+122 clang++   0x0000557bc78ffbe4 clang::Sema::DiagnoseUseOfDecl(clang::NamedDecl*, llvm::ArrayRef<clang::SourceLocation>, clang::ObjCInterfaceDecl const*, bool, bool, clang::ObjCInterfaceDecl*, bool) + 3748
+123 clang++   0x0000557bc7cbdb32
+124 clang++   0x0000557bc7cbebfb clang::Sema::BuildOverloadedCallExpr(clang::Scope*, clang::Expr*, clang::UnresolvedLookupExpr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*, bool, bool) + 1307
+125 clang++   0x0000557bc791f2b0 clang::Sema::BuildCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*, bool, bool) + 3248
+126 clang++   0x0000557bc792005b clang::Sema::ActOnCallExpr(clang::Scope*, clang::Expr*, clang::SourceLocation, llvm::MutableArrayRef<clang::Expr*>, clang::SourceLocation, clang::Expr*) + 91
+127 clang++   0x0000557bc745affd clang::Parser::ParsePostfixExpressionSuffix(clang::ActionResult<clang::Expr*, true>) + 2749
+128 clang++   0x0000557bc7453be3 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypoCorrectionTypeBehavior, bool, bool*) + 899
+129 clang++   0x0000557bc7455b1e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypoCorrectionTypeBehavior, bool, bool*) + 62
+130 clang++   0x0000557bc7456e78 clang::Parser::ParseRHSOfBinaryExpression(clang::ActionResult<clang::Expr*, true>, clang::prec::Level) + 376
+131 clang++   0x0000557bc7459e2d clang::Parser::ParseExpression(clang::TypoCorrectionTypeBehavior) + 13
+132 clang++   0x0000557bc74f984f clang::Parser::ParseExprStatement(clang::Parser::ParsedStmtContext) + 79
+133 clang++   0x0000557bc74f0b9f clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) + 4511
+134 clang++   0x0000557bc74f15a1 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) + 369
+135 clang++   0x0000557bc74f9f54 clang::Parser::ParseCompoundStatementBody(bool) + 1268
+136 clang++   0x0000557bc74fa9fa clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) + 218
+137 clang++   0x0000557bc73d8d70 clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) + 1072
+138 clang++   0x0000557bc7422e25 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::SourceLocation*, clang::Parser::ForRangeInit*) + 5157
+139 clang++   0x0000557bc73d2dc4 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) + 1396
+140 clang++   0x0000557bc73d38be clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) + 878
+141 clang++   0x0000557bc73dc2b2 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 738
+142 clang++   0x0000557bc73dd21d clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 541
+143 clang++   0x0000557bc73cc2fa clang::ParseAST(clang::Sema&, bool, bool) + 586
+144 clang++   0x0000557bc62a253e clang::FrontendAction::Execute() + 46
+145 clang++   0x0000557bc6212efb clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+146 clang++   0x0000557bc63808ec clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+147 clang++   0x0000557bc3e75faa cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7178
+148 clang++   0x0000557bc3e6d7d2
+149 clang++   0x0000557bc5fdb5bd
+150 clang++   0x0000557bc55a9aa7 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+151 clang++   0x0000557bc5fdb957
+152 clang++   0x0000557bc5f9dd61 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+153 clang++   0x0000557bc5f9edd9 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+154 clang++   0x0000557bc5fb396f clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+155 clang++   0x0000557bc3e722f5 clang_main(int, char**, llvm::ToolContext const&) + 7509
+156 clang++   0x0000557bc3d7818b main + 107
+157 libc.so.6 0x00007f531b6bed90
+158 libc.so.6 0x00007f531b6bee40 __libc_start_main + 128
+159 clang++   0x0000557bc3e6d235 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 22.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/BalancedPartitioning-9a54bf.cpp
+clang++: note: diagnostic msg: /tmp/BalancedPartitioning-9a54bf.sh
+clang++: note: diagnostic msg: 
+
+********************
+[27/2911] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamWriter.cpp.o
+[28/2911] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamRef.cpp.o
+[29/2911] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o
+[30/2911] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o
+[31/2911] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+[32/2911] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Caching.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
