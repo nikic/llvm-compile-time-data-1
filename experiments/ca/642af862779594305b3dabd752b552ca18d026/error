@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘(’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected primary-expression before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘)’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘;’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:42: error: expected unqualified-id before ‘>’ token
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                                          ^
+[2364/3182] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Context.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Context.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Context.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Context.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Context.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:55:21: warning: conversion from ‘unsigned int’ to ‘unsigned char’ changes value from ‘4294967295’ to ‘255’ [-Woverflow]
+   55 |   unsigned char V = ~0u;
+      |                     ^~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h: In constructor ‘clang::interp::OptPrimType::OptPrimType(clang::interp::PrimType)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:43: error: ‘unsigend’ does not name a type; did you mean ‘unsigned’?
+   60 |   OptPrimType(PrimType T) : V(static_cast<unsigend char>(T)) {}
+      |                                           ^~~~~~~~
+      |                                           unsigned
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘>’ before ‘char’
+   60 |   OptPrimType(PrimType T) : V(static_cast<unsigend char>(T)) {}
+      |                                                    ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘(’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected primary-expression before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘)’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h: In member function ‘bool clang::interp::OptPrimType::operator==(clang::interp::PrimType) const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:29: error: ‘unsigend’ does not name a type; did you mean ‘unsigned’?
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                             ^~~~~~~~
+      |                             unsigned
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘>’ before ‘char’
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                                      ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘(’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected primary-expression before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘)’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘;’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:42: error: expected unqualified-id before ‘>’ token
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                                          ^
+[2365/3182] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Compiler.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Compiler.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Compiler.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Compiler.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Compiler.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Compiler.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/ByteCodeEmitter.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Compiler.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Compiler.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:55:21: warning: conversion from ‘unsigned int’ to ‘unsigned char’ changes value from ‘4294967295’ to ‘255’ [-Woverflow]
+   55 |   unsigned char V = ~0u;
+      |                     ^~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h: In constructor ‘clang::interp::OptPrimType::OptPrimType(clang::interp::PrimType)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:43: error: ‘unsigend’ does not name a type; did you mean ‘unsigned’?
+   60 |   OptPrimType(PrimType T) : V(static_cast<unsigend char>(T)) {}
+      |                                           ^~~~~~~~
+      |                                           unsigned
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘>’ before ‘char’
+   60 |   OptPrimType(PrimType T) : V(static_cast<unsigend char>(T)) {}
+      |                                                    ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘(’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected primary-expression before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘)’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h: In member function ‘bool clang::interp::OptPrimType::operator==(clang::interp::PrimType) const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:29: error: ‘unsigend’ does not name a type; did you mean ‘unsigned’?
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                             ^~~~~~~~
+      |                             unsigned
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘>’ before ‘char’
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                                      ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘(’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected primary-expression before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘)’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘;’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:42: error: expected unqualified-id before ‘>’ token
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                                          ^
+[2366/3182] Building AArch64GenInstrInfo.inc...
+[2367/3182] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/DynamicAllocator.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/DynamicAllocator.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/DynamicAllocator.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/DynamicAllocator.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/DynamicAllocator.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/DynamicAllocator.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/DynamicAllocator.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/DynamicAllocator.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:55:21: warning: conversion from ‘unsigned int’ to ‘unsigned char’ changes value from ‘4294967295’ to ‘255’ [-Woverflow]
+   55 |   unsigned char V = ~0u;
+      |                     ^~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h: In constructor ‘clang::interp::OptPrimType::OptPrimType(clang::interp::PrimType)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:43: error: ‘unsigend’ does not name a type; did you mean ‘unsigned’?
+   60 |   OptPrimType(PrimType T) : V(static_cast<unsigend char>(T)) {}
+      |                                           ^~~~~~~~
+      |                                           unsigned
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘>’ before ‘char’
+   60 |   OptPrimType(PrimType T) : V(static_cast<unsigend char>(T)) {}
+      |                                                    ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘(’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected primary-expression before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘)’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h: In member function ‘bool clang::interp::OptPrimType::operator==(clang::interp::PrimType) const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:29: error: ‘unsigend’ does not name a type; did you mean ‘unsigned’?
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                             ^~~~~~~~
+      |                             unsigned
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘>’ before ‘char’
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                                      ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘(’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected primary-expression before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘)’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘;’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:42: error: expected unqualified-id before ‘>’ token
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                                          ^
+[2368/3182] Building AArch64GenSubtargetInfo.inc...
+[2369/3182] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:55:21: warning: conversion from ‘unsigned int’ to ‘unsigned char’ changes value from ‘4294967295’ to ‘255’ [-Woverflow]
+   55 |   unsigned char V = ~0u;
+      |                     ^~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h: In constructor ‘clang::interp::OptPrimType::OptPrimType(clang::interp::PrimType)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:43: error: ‘unsigend’ does not name a type; did you mean ‘unsigned’?
+   60 |   OptPrimType(PrimType T) : V(static_cast<unsigend char>(T)) {}
+      |                                           ^~~~~~~~
+      |                                           unsigned
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘>’ before ‘char’
+   60 |   OptPrimType(PrimType T) : V(static_cast<unsigend char>(T)) {}
+      |                                                    ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘(’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected primary-expression before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘)’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h: In member function ‘bool clang::interp::OptPrimType::operator==(clang::interp::PrimType) const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:29: error: ‘unsigend’ does not name a type; did you mean ‘unsigned’?
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                             ^~~~~~~~
+      |                             unsigned
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘>’ before ‘char’
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                                      ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘(’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected primary-expression before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘)’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘;’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:42: error: expected unqualified-id before ‘>’ token
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                                          ^
+[2370/3182] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:55:21: warning: conversion from ‘unsigned int’ to ‘unsigned char’ changes value from ‘4294967295’ to ‘255’ [-Woverflow]
+   55 |   unsigned char V = ~0u;
+      |                     ^~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h: In constructor ‘clang::interp::OptPrimType::OptPrimType(clang::interp::PrimType)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:43: error: ‘unsigend’ does not name a type; did you mean ‘unsigned’?
+   60 |   OptPrimType(PrimType T) : V(static_cast<unsigend char>(T)) {}
+      |                                           ^~~~~~~~
+      |                                           unsigned
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘>’ before ‘char’
+   60 |   OptPrimType(PrimType T) : V(static_cast<unsigend char>(T)) {}
+      |                                                    ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘(’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected primary-expression before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:60:52: error: expected ‘)’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h: In member function ‘bool clang::interp::OptPrimType::operator==(clang::interp::PrimType) const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:29: error: ‘unsigend’ does not name a type; did you mean ‘unsigned’?
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                             ^~~~~~~~
+      |                             unsigned
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘>’ before ‘char’
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                                      ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘(’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected primary-expression before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘)’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:38: error: expected ‘;’ before ‘char’
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:77:42: error: expected unqualified-id before ‘>’ token
+   77 |     return V == static_cast<unsigend char>(PT);
+      |                                          ^
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+159.82user 13.88system 0:13.12elapsed 1323%CPU (0avgtext+0avgdata 949896maxresident)k
+8inputs+1249520outputs (3233major+7605320minor)pagefaults 0swaps
