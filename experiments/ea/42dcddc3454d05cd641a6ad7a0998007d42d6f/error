@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+   35 | enum PrimType : uint8_t {
+      |      ^~~~~~~~
+[2367/3182] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:55:35: warning: conversion from ‘unsigned int’ to ‘uint8_t’ {aka ‘unsigned char’} changes value from ‘4294967295’ to ‘255’ [-Woverflow]
+   55 |   static constexpr uint8_t None = ~0u;
+      |                                   ^~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h: In member function ‘constexpr clang::interp::OptPrimType::operator bool() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:63:58: error: ‘Non’ was not declared in this scope; did you mean ‘None’?
+   63 |   explicit constexpr operator bool() const { return V != Non; }
+      |                                                          ^~~
+      |                                                          None
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:27:17: error: different underlying type in enum ‘enum clang::interp::PrimType’
+   27 | enum PrimType : unsigned;
+      |                 ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:35:6: note: previous definition here
+   35 | enum PrimType : uint8_t {
+      |      ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:31:17: error: different underlying type in enum ‘enum clang::interp::PrimType’
+   31 | enum PrimType : uint32_t;
+      |                 ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:35:6: note: previous definition here
+   35 | enum PrimType : uint8_t {
+      |      ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/MemberPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpBlock.h:25:17: error: different underlying type in enum ‘enum clang::interp::PrimType’
+   25 | enum PrimType : unsigned;
+      |                 ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:35:6: note: previous definition here
+   35 | enum PrimType : uint8_t {
+      |      ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/MemberPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:32:17: error: different underlying type in enum ‘enum clang::interp::PrimType’
+   32 | enum PrimType : unsigned;
+      |                 ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:35:6: note: previous definition here
+   35 | enum PrimType : uint8_t {
+      |      ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:33:17: error: different underlying type in enum ‘enum clang::interp::PrimType’
+   33 | enum PrimType : unsigned;
+      |                 ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:35:6: note: previous definition here
+   35 | enum PrimType : uint8_t {
+      |      ^~~~~~~~
+[2368/3182] Building AArch64GenSubtargetInfo.inc...
+[2369/3182] Building AArch64GenInstrInfo.inc...
+[2370/3182] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:55:35: warning: conversion from ‘unsigned int’ to ‘uint8_t’ {aka ‘unsigned char’} changes value from ‘4294967295’ to ‘255’ [-Woverflow]
+   55 |   static constexpr uint8_t None = ~0u;
+      |                                   ^~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h: In member function ‘constexpr clang::interp::OptPrimType::operator bool() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:63:58: error: ‘Non’ was not declared in this scope; did you mean ‘None’?
+   63 |   explicit constexpr operator bool() const { return V != Non; }
+      |                                                          ^~~
+      |                                                          None
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:27:17: error: different underlying type in enum ‘enum clang::interp::PrimType’
+   27 | enum PrimType : unsigned;
+      |                 ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:35:6: note: previous definition here
+   35 | enum PrimType : uint8_t {
+      |      ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:31:17: error: different underlying type in enum ‘enum clang::interp::PrimType’
+   31 | enum PrimType : uint32_t;
+      |                 ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:35:6: note: previous definition here
+   35 | enum PrimType : uint8_t {
+      |      ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/MemberPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpBlock.h:25:17: error: different underlying type in enum ‘enum clang::interp::PrimType’
+   25 | enum PrimType : unsigned;
+      |                 ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:35:6: note: previous definition here
+   35 | enum PrimType : uint8_t {
+      |      ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/MemberPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:32:17: error: different underlying type in enum ‘enum clang::interp::PrimType’
+   32 | enum PrimType : unsigned;
+      |                 ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:35:6: note: previous definition here
+   35 | enum PrimType : uint8_t {
+      |      ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:33:17: error: different underlying type in enum ‘enum clang::interp::PrimType’
+   33 | enum PrimType : unsigned;
+      |                 ^~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/PrimType.h:35:6: note: previous definition here
+   35 | enum PrimType : uint8_t {
+      |      ^~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+171.33user 15.09system 0:13.61elapsed 1369%CPU (0avgtext+0avgdata 950688maxresident)k
+8048inputs+1963424outputs (3696major+8091930minor)pagefaults 0swaps
