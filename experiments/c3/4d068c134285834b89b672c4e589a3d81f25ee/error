@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+33 clang++   0x000055e4683f80f2 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7170
+34 clang++   0x000055e4683ef972
+35 clang++   0x000055e46a5572ad
+36 clang++   0x000055e469b27157 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+37 clang++   0x000055e46a557647
+38 clang++   0x000055e46a5196f1 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+39 clang++   0x000055e46a51a769 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+40 clang++   0x000055e46a52e3af clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+41 clang++   0x000055e4683f4445 clang_main(int, char**, llvm::ToolContext const&) + 7509
+42 clang++   0x000055e4682f9b2b main + 107
+43 libc.so.6 0x00007f9c9bad9d90
+44 libc.so.6 0x00007f9c9bad9e40 __libc_start_main + 128
+45 clang++   0x000055e4683ef3d5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 22.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/Demangle-33743f.cpp
+clang++: note: diagnostic msg: /tmp/Demangle-33743f.sh
+clang++: note: diagnostic msg: 
+
+********************
+[3/2909] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/DLangDemangle.cpp.o
+[4/2909] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o
+[5/2909] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/IntEqClasses.cpp.o
+[6/2909] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AArch64BuildAttributes.cpp.o
+[7/2909] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/RustDemangle.cpp.o
+[8/2909] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMBuildAttributes.cpp.o
+[9/2909] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APSInt.cpp.o
+[10/2909] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AArch64AttributeParser.cpp.o
+[11/2909] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangle.cpp.o
+[12/2909] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o
+[13/2909] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -D__SHORT_FILE__=\"ARMAttributeParser.cpp\" -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/../third-party/siphash/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -D__SHORT_FILE__=\"ARMAttributeParser.cpp\" -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/../third-party/siphash/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17 -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp
+1.	/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:882:5: current parser token 'if'
+2.	/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:37:1: parsing namespace 'llvm'
+3.	/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:777:1: parsing struct/union/class body 'llvm::DenseMap'
+4.	/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:873:27: parsing function body 'llvm::DenseMap::shrink_and_clear'
+5.	/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:873:27: in compound statement ('{}')
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x000055660e224a70 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x000055660e222624 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x000055660e173d28
+3  libc.so.6 0x00007f83ac65e520
+4  clang++   0x00005566115c6fa4 clang::interp::Block::removePointer(clang::interp::Pointer*) + 4
+5  clang++   0x0000556611366e68 clang::interp::Pointer::~Pointer() + 40
+6  clang++   0x00005566113634eb clang::interp::InterpStack::clearTo(unsigned long) + 171
+7  clang++   0x0000556611169110 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 768
+8  clang++   0x00005566110da2bf
+9  clang++   0x00005566110de05d clang::Expr::EvaluateAsRValue(clang::Expr::EvalResult&, clang::ASTContext const&, bool) const + 1229
+10 clang++   0x0000556610201bde
+11 clang++   0x000055661022f82b clang::Sema::CheckImplicitConversion(clang::Expr*, clang::QualType, clang::SourceLocation, bool*, bool) + 1323
+12 clang++   0x000055661023cc91
+13 clang++   0x000055661023dbdc
+14 clang++   0x000055661023fc0d clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) + 189
+15 clang++   0x00005566105c52fe clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) + 270
+16 clang++   0x00005566108cd29e clang::Sema::ActOnExprStmt(clang::ActionResult<clang::Expr*, true>, bool) + 62
+17 clang++   0x00005566100c94cc clang::Parser::ParseExprStatement(clang::Parser::ParsedStmtContext) + 220
+18 clang++   0x00005566100c078f clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) + 4511
+19 clang++   0x00005566100c1191 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) + 369
+20 clang++   0x00005566100c2938 clang::Parser::ParseStatement(clang::SourceLocation*, clang::Parser::ParsedStmtContext) + 104
+21 clang++   0x00005566100c2fc4 clang::Parser::ParseIfStatement(clang::SourceLocation*) + 1604
+22 clang++   0x00005566100c0456 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) + 3686
+23 clang++   0x00005566100c1191 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) + 369
+24 clang++   0x00005566100c9b44 clang::Parser::ParseCompoundStatementBody(bool) + 1268
+25 clang++   0x00005566100ca5ea clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) + 218
+26 clang++   0x000055660ffc2911 clang::Parser::ParseLexedMethodDef(clang::Parser::LexedMethod&) + 657
+27 clang++   0x000055660ffc255d clang::Parser::ParseLexedMethodDefs(clang::Parser::ParsingClass&) + 125
+28 clang++   0x0000556610018e4e clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) + 1662
+29 clang++   0x000055661001b2a8 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) + 5288
+30 clang++   0x000055660ffe2544 clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) + 3060
+31 clang++   0x00005566100d5da8 clang::Parser::ParseDeclarationAfterTemplate(clang::DeclaratorContext, clang::Parser::ParsedTemplateInfo&, clang::ParsingDeclRAIIObject&, clang::SourceLocation&, clang::ParsedAttributes&, clang::AccessSpecifier) + 1272
+32 clang++   0x00005566100e4285 clang::Parser::ParseTemplateDeclarationOrSpecialization(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::AccessSpecifier) + 1269
+33 clang++   0x00005566100e45b7 clang::Parser::ParseDeclarationStartingWithTemplate(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&) + 119
+34 clang++   0x000055660fff6511 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, clang::SourceLocation*) + 577
+35 clang++   0x000055660ffabc01 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 1089
+36 clang++   0x000055661001107b clang::Parser::ParseInnerNamespace(llvm::SmallVector<clang::Parser::InnerNamespaceInfo, 4u> const&, unsigned int, clang::SourceLocation&, clang::ParsedAttributes&, clang::BalancedDelimiterTracker&) + 475
+37 clang++   0x0000556610011dc8 clang::Parser::ParseNamespace(clang::DeclaratorContext, clang::SourceLocation&, clang::SourceLocation) + 3160
+38 clang++   0x000055660fff65c7 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, clang::SourceLocation*) + 759
+39 clang++   0x000055660ffabc01 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 1089
+40 clang++   0x000055660ffac9fd clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 541
+41 clang++   0x000055660ff9ba4a clang::ParseAST(clang::Sema&, bool, bool) + 586
+42 clang++   0x000055660ee6a57e clang::FrontendAction::Execute() + 46
+43 clang++   0x000055660eddaa7b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+44 clang++   0x000055660ef4892c clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+45 clang++   0x000055660ca450f2 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7170
+46 clang++   0x000055660ca3c972
+47 clang++   0x000055660eba42ad
+48 clang++   0x000055660e174157 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+49 clang++   0x000055660eba4647
+50 clang++   0x000055660eb666f1 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+51 clang++   0x000055660eb67769 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+52 clang++   0x000055660eb7b3af clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+53 clang++   0x000055660ca41445 clang_main(int, char**, llvm::ToolContext const&) + 7509
+54 clang++   0x000055660c946b2b main + 107
+55 libc.so.6 0x00007f83ac645d90
+56 libc.so.6 0x00007f83ac645e40 __libc_start_main + 128
+57 clang++   0x000055660ca3c3d5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 22.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/ARMAttributeParser-9a4342.cpp
+clang++: note: diagnostic msg: /tmp/ARMAttributeParser-9a4342.sh
+clang++: note: diagnostic msg: 
+
+********************
+[14/2909] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -D__SHORT_FILE__=\"APFloat.cpp\" -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/../third-party/siphash/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFloat.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DEXPERIMENTAL_KEY_INSTRUCTIONS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -D__SHORT_FILE__=\"APFloat.cpp\" -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/../third-party/siphash/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17 -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFloat.cpp
+1.	<eof> parser at end of file
+2.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFloat.cpp:54:11: LLVM IR generation of declaration 'llvm'
+3.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/APFloat.cpp:4902:16: Generating code for declaration 'llvm::detail::DoubleAPFloat::DoubleAPFloat'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x0000561a6abf3a70 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x0000561a6abf1624 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x0000561a6ab42d28
+3  libc.so.6 0x00007fc74a7c7520
+4  clang++   0x0000561a6df95fa4 clang::interp::Block::removePointer(clang::interp::Pointer*) + 4
+5  clang++   0x0000561a6dd35e68 clang::interp::Pointer::~Pointer() + 40
+6  clang++   0x0000561a6dd324eb clang::interp::InterpStack::clearTo(unsigned long) + 171
+7  clang++   0x0000561a6db38110 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 768
+8  clang++   0x0000561a6daa92bf
+9  clang++   0x0000561a6daad05d clang::Expr::EvaluateAsRValue(clang::Expr::EvalResult&, clang::ASTContext const&, bool) const + 1229
+10 clang++   0x0000561a6daad1b8 clang::Expr::isEvaluatable(clang::ASTContext const&, clang::Expr::SideEffectsKind) const + 72
+11 clang++   0x0000561a6af62093
+12 clang++   0x0000561a6af67c9c
+13 clang++   0x0000561a6af67bcf clang::CodeGen::CodeGenFunction::EmitScalarExpr(clang::Expr const*, bool) + 111
+14 clang++   0x0000561a6b44dfc4 clang::CodeGen::CodeGenFunction::EmitScalarInit(clang::Expr const*, clang::ValueDecl const*, clang::CodeGen::LValue, bool) + 1396
+15 clang++   0x0000561a6b44faa3 clang::CodeGen::CodeGenFunction::EmitExprAsInit(clang::Expr const*, clang::ValueDecl const*, clang::CodeGen::LValue, bool) + 515
+16 clang++   0x0000561a6b422fba clang::CodeGen::CodeGenFunction::EmitInitializerForField(clang::FieldDecl*, clang::CodeGen::LValue, clang::Expr*) + 490
+17 clang++   0x0000561a6b423528
+18 clang++   0x0000561a6b42ef84 clang::CodeGen::CodeGenFunction::EmitCtorPrologue(clang::CXXConstructorDecl const*, clang::CXXCtorType, clang::CodeGen::FunctionArgList&) + 2596
+19 clang++   0x0000561a6b433707 clang::CodeGen::CodeGenFunction::EmitConstructorBody(clang::CodeGen::FunctionArgList&) + 263
+20 clang++   0x0000561a6b0e552d clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 3261
+21 clang++   0x0000561a6b3ed4fb clang::CodeGen::CodeGenModule::codegenCXXStructor(clang::GlobalDecl) + 203
+22 clang++   0x0000561a6b199d49
+23 clang++   0x0000561a6b12ef5d clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 349
+24 clang++   0x0000561a6b12fbb8 clang::CodeGen::CodeGenModule::EmitGlobal(clang::GlobalDecl) + 2888
+25 clang++   0x0000561a6b19861b
+26 clang++   0x0000561a6b1392af clang::CodeGen::CodeGenModule::EmitDeclContext(clang::DeclContext const*) + 223
+27 clang++   0x0000561a6b1392af clang::CodeGen::CodeGenModule::EmitDeclContext(clang::DeclContext const*) + 223
+28 clang++   0x0000561a6b501010
+29 clang++   0x0000561a6b4ec317 clang::BackendConsumer::HandleTopLevelDecl(clang::DeclGroupRef) + 151
+30 clang++   0x0000561a6c96aa34 clang::ParseAST(clang::Sema&, bool, bool) + 564
+31 clang++   0x0000561a6b83957e clang::FrontendAction::Execute() + 46
+32 clang++   0x0000561a6b7a9a7b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+33 clang++   0x0000561a6b91792c clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+34 clang++   0x0000561a694140f2 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7170
+35 clang++   0x0000561a6940b972
+36 clang++   0x0000561a6b5732ad
+37 clang++   0x0000561a6ab43157 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+38 clang++   0x0000561a6b573647
+39 clang++   0x0000561a6b5356f1 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+40 clang++   0x0000561a6b536769 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+41 clang++   0x0000561a6b54a3af clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+42 clang++   0x0000561a69410445 clang_main(int, char**, llvm::ToolContext const&) + 7509
+43 clang++   0x0000561a69315b2b main + 107
+44 libc.so.6 0x00007fc74a7aed90
+45 libc.so.6 0x00007fc74a7aee40 __libc_start_main + 128
+46 clang++   0x0000561a6940b3d5 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 22.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/APFloat-ceed3f.cpp
+clang++: note: diagnostic msg: /tmp/APFloat-ceed3f.sh
+clang++: note: diagnostic msg: 
+
+********************
+[15/2909] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o
+[16/2909] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o
+[17/2909] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
