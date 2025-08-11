@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[2721/3180] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ModuleFile.cpp.o
+[2722/3180] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ModuleManager.cpp.o
+[2723/3180] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/PCHContainerOperations.cpp.o
+[2724/3180] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/ObjectFilePCHContainerReader.cpp.o
+[2725/3180] Building CXX object tools/clang/lib/Serialization/CMakeFiles/obj.clangSerialization.dir/TemplateArgumentHasher.cpp.o
+[2726/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ChainedDiagnosticConsumer.cpp.o
+[2727/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTMerge.cpp.o
+[2728/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTConsumers.cpp.o
+[2729/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ChainedIncludesSource.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/ChainedIncludesSource.cpp:23:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[2730/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInstance.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/CompilerInstance.cpp:40:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[2731/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CompilerInvocation.cpp.o
+[2732/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/DependencyFile.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/DependencyFile.cpp:22:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/DependencyFile.cpp:152:8: note:   by ‘virtual bool {anonymous}::DepCollectorASTListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  152 |   bool visitInputFile(StringRef Filename, bool IsSystem,
+      |        ^~~~~~~~~~~~~~
+[2733/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/FrontendOptions.cpp.o
+[2734/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/DiagnosticRenderer.cpp.o
+[2735/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/DependencyGraph.cpp.o
+[2736/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/HeaderIncludeGen.cpp.o
+[2737/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/FrontendAction.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/FrontendAction.cpp:40:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[2738/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTUnit.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/ASTUnit.cpp:60:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[2739/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/FrontendActions.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/FrontendActions.cpp:26:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:244:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  244 |   virtual bool visitInputFile(StringRef Filename, bool isSystem,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/FrontendActions.cpp:798:10: note:   by ‘virtual bool {anonymous}::DumpModuleInfoListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’
+  798 |     bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |          ^~~~~~~~~~~~~~
+[2740/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/LayoutOverrideSource.cpp.o
+[2741/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/LogDiagnosticPrinter.cpp.o
+[2742/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/MultiplexConsumer.cpp.o
+[2743/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/PrecompiledPreamble.cpp.o
+[2744/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ModuleDependencyCollector.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/ModuleDependencyCollector.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/ModuleDependencyCollector.cpp:35:8: note:   by ‘virtual bool {anonymous}::ModuleDependencyListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+   35 |   bool visitInputFile(StringRef Filename, bool IsSystem, bool IsOverridden,
+      |        ^~~~~~~~~~~~~~
+[2745/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/CreateInvocationFromCommandLine.cpp.o
+[2746/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/SARIFDiagnostic.cpp.o
+[2747/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/PrintPreprocessedOutput.cpp.o
+[2748/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/SerializedDiagnosticReader.cpp.o
+[2749/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/InitPreprocessor.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/InitPreprocessor.cpp:26:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[2750/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/TextDiagnosticBuffer.cpp.o
+[2751/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/TextDiagnosticPrinter.cpp.o
+[2752/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/SARIFDiagnosticPrinter.cpp.o
+[2753/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/VerifyDiagnosticConsumer.cpp.o
+[2754/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/TestModuleFileExtension.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/TestModuleFileExtension.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[2755/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/TextDiagnostic.cpp.o
+[2756/3180] Building CXX object tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/FixItRewriter.cpp.o
+[2757/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/SerializedDiagnosticPrinter.cpp.o
+[2758/3180] Building CXX object tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/RewriteMacros.cpp.o
+[2759/3180] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/InterfaceStubFunctionsConsumer.cpp.o
+[2760/3180] Building CXX object tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/HTMLPrint.cpp.o
+[2761/3180] Building CXX object tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/RewriteModernObjC.cpp.o
+[2762/3180] Building CXX object tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/FrontendActions.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/Rewrite/FrontendActions.cpp:22:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[2763/3180] Building CXX object tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/InclusionRewriter.cpp.o
+[2764/3180] Building CXX object tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/RewriteObjC.cpp.o
+[2765/3180] Building CXX object tools/clang/lib/Frontend/Rewrite/CMakeFiles/obj.clangRewriteFrontend.dir/RewriteTest.cpp.o
+[2766/3180] Building CXX object tools/clang/lib/FrontendTool/CMakeFiles/obj.clangFrontendTool.dir/ExecuteCompilerInvocation.cpp.o
+[2767/3180] Building CXX object tools/clang/lib/Tooling/Inclusions/CMakeFiles/obj.clangToolingInclusions.dir/HeaderIncludes.cpp.o
+[2768/3180] Building CXX object tools/clang/lib/Tooling/Core/CMakeFiles/obj.clangToolingCore.dir/Diagnostic.cpp.o
+[2769/3180] Building CXX object tools/clang/lib/Tooling/Inclusions/CMakeFiles/obj.clangToolingInclusions.dir/IncludeStyle.cpp.o
+[2770/3180] Building CXX object tools/clang/lib/Tooling/Inclusions/CMakeFiles/obj.clangToolingInclusions.dir/HeaderAnalysis.cpp.o
+[2771/3180] Building CXX object tools/clang/lib/Tooling/Core/CMakeFiles/obj.clangToolingCore.dir/Replacement.cpp.o
+[2772/3180] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexingAction.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Index/IndexingAction.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[2773/3180] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/CommentToXML.cpp.o
+[2774/3180] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexBody.cpp.o
+[2775/3180] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/FileIndexRecord.cpp.o
+[2776/3180] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexingContext.cpp.o
+[2777/3180] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexDecl.cpp.o
+[2778/3180] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexSymbol.cpp.o
+[2779/3180] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexTypeSourceInfo.cpp.o
+[2780/3180] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/USRGeneration.cpp.o
+[2781/3180] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/FileList.cpp.o
+[2782/3180] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/DylibVerifier.cpp.o
+[2783/3180] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/HeaderFile.cpp.o
+[2784/3180] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/Frontend.cpp.o
+[2785/3180] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/Library.cpp.o
+[2786/3180] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/Visitor.cpp.o
+[2787/3180] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/DiagnosticBuilderWrappers.cpp.o
+[2788/3180] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/BreakableToken.cpp.o
+[2789/3180] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/Format.cpp.o
+[2790/3180] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/FormatToken.cpp.o
+[2791/3180] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/FormatTokenLexer.cpp.o
+[2792/3180] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/IntegerLiteralSeparatorFixer.cpp.o
+[2793/3180] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/DefinitionBlockSeparator.cpp.o
+[2794/3180] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/MacroCallReconstructor.cpp.o
+[2795/3180] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/MatchFilePath.cpp.o
+[2796/3180] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/AffectedRangeManager.cpp.o
+[2797/3180] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/MacroExpander.cpp.o
+[2798/3180] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/ContinuationIndenter.cpp.o
+[2799/3180] Building X86GenSubtargetInfo.inc...
+[2800/3180] Building CXX object lib/Frontend/OpenMP/CMakeFiles/LLVMFrontendOpenMP.dir/OMPIRBuilder.cpp.o
+FAILED: lib/Frontend/OpenMP/CMakeFiles/LLVMFrontendOpenMP.dir/OMPIRBuilder.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Frontend/OpenMP -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Frontend/OpenMP -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Frontend/OpenMP/CMakeFiles/LLVMFrontendOpenMP.dir/OMPIRBuilder.cpp.o -MF lib/Frontend/OpenMP/CMakeFiles/LLVMFrontendOpenMP.dir/OMPIRBuilder.cpp.o.d -o lib/Frontend/OpenMP/CMakeFiles/LLVMFrontendOpenMP.dir/OMPIRBuilder.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Frontend/OpenMP/OMPIRBuilder.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Frontend/OpenMP/OMPIRBuilder.cpp: In member function ‘llvm::Error llvm::OpenMPIRBuilder::emitOffloadingArrays(llvm::OpenMPIRBuilder::InsertPointTy, llvm::OpenMPIRBuilder::InsertPointTy, llvm::OpenMPIRBuilder::MapInfosTy&, llvm::OpenMPIRBuilder::TargetDataInfo&, llvm::OpenMPIRBuilder::CustomMapperCallbackTy, bool, llvm::function_ref<void(unsigned int, llvm::Value*)>)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Frontend/OpenMP/OMPIRBuilder.cpp:9008:5: error: ‘restoreIPandDebugLoc’ was not declared in this scope
+ 9008 |     restoreIPandDebugLoc(Builder, CodeGenIP);
+      |     ^~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Frontend/OpenMP/OMPIRBuilder.cpp:9027:7: error: ‘restoreIPandDebugLoc’ was not declared in this scope
+ 9027 |       restoreIPandDebugLoc(Builder, CodeGenIP);
+      |       ^~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Frontend/OpenMP/OMPIRBuilder.cpp:9037:5: error: ‘restoreIPandDebugLoc’ was not declared in this scope
+ 9037 |     restoreIPandDebugLoc(Builder, CodeGenIP);
+      |     ^~~~~~~~~~~~~~~~~~~~
+[2801/3180] Building X86GenInstrInfo.inc...
+[2802/3180] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2803/3180] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/HIPUtility.cpp.o
+[2804/3180] Building AArch64GenInstrInfo.inc...
+[2805/3180] Building AArch64GenSubtargetInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+105.09user 12.03system 0:10.30elapsed 1136%CPU (0avgtext+0avgdata 724480maxresident)k
+0inputs+1332568outputs (2966major+5716481minor)pagefaults 0swaps
