@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LiveVariables.cpp:28:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::LiveVariables::VarInfo::print(llvm::raw_ostream&) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::LiveVariables::recomputeForSingleDefVirtReg(llvm::Register)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::LiveVariables::addNewBlock(llvm::MachineBasicBlock*, llvm::MachineBasicBlock*, llvm::MachineBasicBlock*, std::vector<llvm::SparseBitVector<> >&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+[726/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenTargetMachineImpl.cpp.o
+[727/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LoopTraversal.cpp.o
+[728/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LowLevelTypeUtils.cpp.o
+[729/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LowerEmuTLS.cpp.o
+[730/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBasicBlock.cpp.o
+[731/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockFrequencyInfo.cpp.o
+[732/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockPlacement.cpp.o
+[733/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBranchProbabilityInfo.cpp.o
+[734/3181] Building AArch64GenAsmWriter1.inc...
+[735/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCombiner.cpp.o
+[736/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCFGPrinter.cpp.o
+[737/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineConvergenceVerifier.cpp.o
+[738/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCSE.cpp.o
+[739/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCopyPropagation.cpp.o
+[740/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCheckDebugify.cpp.o
+[741/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDomTreeUpdater.cpp.o
+[742/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDominanceFrontier.cpp.o
+[743/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCycleAnalysis.cpp.o
+[744/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDominators.cpp.o
+[745/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDebugify.cpp.o
+[746/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPass.cpp.o
+[747/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPrinterPass.cpp.o
+[748/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionSplitter.cpp.o
+[749/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstrBundle.cpp.o
+[750/3181] Building X86GenFastISel.inc...
+[751/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLateInstrsCleanup.cpp.o
+[752/3181] Building X86GenGlobalISel.inc...
+[753/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLoopInfo.cpp.o
+[754/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLoopUtils.cpp.o
+[755/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineModuleInfo.cpp.o
+[756/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineModuleInfoImpls.cpp.o
+[757/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineModuleSlotTracker.cpp.o
+[758/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRegUnits.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRegUnits.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRegUnits.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRegUnits.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveRegUnits.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LiveRegUnits.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LiveRegUnits.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[759/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LivePhysRegs.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LivePhysRegs.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LivePhysRegs.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LivePhysRegs.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LivePhysRegs.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LivePhysRegs.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LivePhysRegs.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[760/3181] Building AArch64GenDAGISel.inc...
+[761/3181] Building X86GenDAGISel.inc...
+[762/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LocalStackSlotAllocation.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LocalStackSlotAllocation.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LocalStackSlotAllocation.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LocalStackSlotAllocation.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LocalStackSlotAllocation.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LocalStackSlotAllocation.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LocalStackSlotAllocation.cpp:22:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[763/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CallingConvLower.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CallingConvLower.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[764/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FinalizeISel.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FinalizeISel.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FinalizeISel.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FinalizeISel.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FinalizeISel.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/FinalizeISel.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/FinalizeISel.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[765/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFrameInfo.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFrameInfo.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFrameInfo.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFrameInfo.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFrameInfo.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineFrameInfo.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineFrameInfo.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[766/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CriticalAntiDepBreaker.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CriticalAntiDepBreaker.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CriticalAntiDepBreaker.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CriticalAntiDepBreaker.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CriticalAntiDepBreaker.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CriticalAntiDepBreaker.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CriticalAntiDepBreaker.cpp:20:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[767/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AggressiveAntiDepBreaker.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AggressiveAntiDepBreaker.cpp:21:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[768/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FixupStatepointCallerSaved.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FixupStatepointCallerSaved.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FixupStatepointCallerSaved.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FixupStatepointCallerSaved.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/FixupStatepointCallerSaved.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/FixupStatepointCallerSaved.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/FixupStatepointCallerSaved.cpp:26:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[769/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCRootLowering.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCRootLowering.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCRootLowering.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCRootLowering.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCRootLowering.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GCRootLowering.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/GCRootLowering.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[770/3181] Building X86GenSubtargetInfo.inc...
+[771/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunction.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunction.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunction.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunction.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunction.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineFunction.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineFunction.cpp:28:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[772/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLICM.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLICM.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLICM.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLICM.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineLICM.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineLICM.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineLICM.cpp:29:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[773/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineInstr.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineInstr.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineInstr.cpp:23:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[774/3181] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineOperand.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineOperand.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineOperand.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineOperand.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineOperand.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineOperand.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineOperand.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h: In static member function ‘static llvm::SmallVector<llvm::MachineBasicBlock*> llvm::MachineFrameInfo::constructSaveRestorePoints(llvm::ArrayRef<llvm::MachineBasicBlock*>, const llvm::DenseMap<llvm::MachineBasicBlock*, llvm::MachineBasicBlock*>&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:845:12: error: could not convert ‘Pts’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],6>’
+  845 |     return Pts;
+      |            ^~~
+      |            |
+      |            SmallVector<[...],4>
+[775/3181] Building X86GenInstrInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+100.72user 7.40system 0:08.17elapsed 1323%CPU (0avgtext+0avgdata 724416maxresident)k
+0inputs+560000outputs (2798major+4735891minor)pagefaults 0swaps
