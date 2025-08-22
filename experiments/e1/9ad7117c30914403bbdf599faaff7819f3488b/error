@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2454/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCUDA.cpp.o
+[2455/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprMember.cpp.o
+[2456/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprCXX.cpp.o
+[2457/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprObjC.cpp.o
+[2458/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaFixItUtils.cpp.o
+[2459/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaFunctionEffects.cpp.o
+[2460/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaHLSL.cpp.o
+[2461/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaHexagon.cpp.o
+[2462/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaInit.cpp.o
+[2463/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o
+[2464/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaM68k.cpp.o
+[2465/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaMSP430.cpp.o
+[2466/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLambda.cpp.o
+[2467/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLookup.cpp.o
+[2468/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaMIPS.cpp.o
+[2469/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLoongArch.cpp.o
+[2470/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaNVPTX.cpp.o
+[2471/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenACCClauseAppertainment.cpp.o
+[2472/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaModule.cpp.o
+[2473/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaObjC.cpp.o
+[2474/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaObjCProperty.cpp.o
+[2475/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenACC.cpp.o
+[2476/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenACCClause.cpp.o
+[2477/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenACCAtomic.cpp.o
+[2478/3192] Building AArch64GenRegisterInfo.inc...
+[2479/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenCL.cpp.o
+[2480/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOpenMP.cpp.o
+[2481/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaOverload.cpp.o
+[2482/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaPPC.cpp.o
+[2483/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaPseudoObject.cpp.o
+[2484/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaStmtAsm.cpp.o
+[2485/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaRISCV.cpp.o
+[2486/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaStmt.cpp.o
+[2487/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaSwift.cpp.o
+[2488/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaStmtAttr.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaStmtAttr.cpp: In function ‘clang::Attr* ProcessStmtAttribute(clang::Sema&, clang::Stmt*, const clang::ParsedAttr&, clang::SourceRange)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaStmtAttr.cpp:677:30: warning: enumerated mismatch in conditional expression: ‘clang::diag::<unnamed enum>’ vs ‘clang::diag::<unnamed enum>’ [-Wenum-compare]
+  676 |       S.Diag(A.getLoc(), A.isRegularKeywordAttribute()
+      |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  677 |                              ? diag::err_keyword_not_supported_on_target
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  678 |                              : diag::warn_unhandled_ms_attribute_ignored)
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2489/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaSPIRV.cpp.o
+[2490/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaSYCL.cpp.o
+[2491/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaSystemZ.cpp.o
+[2492/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateDeductionGuide.cpp.o
+[2493/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateDeduction.cpp.o
+[2494/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplate.cpp.o
+[2495/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateVariadic.cpp.o
+[2496/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTypeTraits.cpp.o
+[2497/3192] Building AArch64GenSystemOperands.inc...
+[2498/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiateDecl.cpp.o
+[2499/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaTemplateInstantiate.cpp.o
+[2500/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaType.cpp.o
+[2501/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCXXABI.cpp.o
+[2502/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaWasm.cpp.o
+[2503/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/TypeLocBuilder.cpp.o
+[2504/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o
+[2505/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGClass.cpp.o
+[2506/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCleanup.cpp.o
+[2507/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCoroutine.cpp.o
+[2508/3192] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaX86.cpp.o
+[2509/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDebugInfo.cpp.o
+[2510/3192] Building AArch64GenGlobalISel.inc...
+[2511/3192] Building X86GenSubtargetInfo.inc...
+[2512/3192] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2513/3192] Linking CXX static library lib/libLLVMMCParser.a
+[2514/3192] Linking CXX static library lib/libLLVMObject.a
+[2515/3192] Linking CXX static library lib/libLLVMObjectYAML.a
+[2516/3192] Linking CXX static library lib/libLLVMDebugInfoDWARF.a
+[2517/3192] Linking CXX static library lib/libLLVMDebugInfoGSYM.a
+[2518/3192] Linking CXX static library lib/libLLVMDebugInfoPDB.a
+[2519/3192] Linking CXX static library lib/libLLVMSymbolize.a
+[2520/3192] Linking CXX static library lib/libLLVMProfileData.a
+[2521/3192] Linking CXX static library lib/libLLVMAnalysis.a
+[2522/3192] Linking CXX static library lib/libLLVMIRPrinter.a
+[2523/3192] Linking CXX static library lib/libLLVMBitWriter.a
+[2524/3192] Linking CXX static library lib/libLLVMCGData.a
+[2525/3192] Linking CXX static library lib/libLLVMFrontendAtomic.a
+[2526/3192] Linking CXX static library lib/libLLVMTransformUtils.a
+[2527/3192] Linking CXX static library lib/libLLVMFrontendOffloading.a
+[2528/3192] Building X86GenInstrInfo.inc...
+[2529/3192] Linking CXX static library lib/libLLVMInstrumentation.a
+[2530/3192] Linking CXX static library lib/libLLVMAggressiveInstCombine.a
+[2531/3192] Linking CXX static library lib/libLLVMFrontendDriver.a
+[2532/3192] Linking CXX static library lib/libLLVMObjCARCOpts.a
+[2533/3192] Linking CXX static library lib/libLLVMInstCombine.a
+[2534/3192] Linking CXX static library lib/libLLVMHipStdPar.a
+[2535/3192] Linking CXX static library lib/libLLVMLinker.a
+[2536/3192] Linking CXX static library lib/libLLVMScalarOpts.a
+[2537/3192] Linking CXX static library lib/libLLVMTarget.a
+[2538/3192] Linking CXX static library lib/libLLVMFrontendOpenMP.a
+[2539/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AsmPrinter.cpp.o
+[2540/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ArgumentStackSlotRebase.cpp.o
+[2541/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AvoidTrailingCall.cpp.o
+[2542/3192] Linking CXX static library lib/libLLVMCodeGen.a
+[2543/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CallFrameOptimization.cpp.o
+[2544/3192] Linking CXX static library lib/libLLVMAsmPrinter.a
+[2545/3192] Linking CXX static library lib/libLLVMSelectionDAG.a
+[2546/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CallingConv.cpp.o
+[2547/3192] Linking CXX static library lib/libLLVMGlobalISel.a
+[2548/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CmovConversion.cpp.o
+[2549/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DomainReassignment.cpp.o
+[2550/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CodeGenPassBuilder.cpp.o
+[2551/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DiscriminateMemOps.cpp.o
+[2552/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerTileCopy.cpp.o
+[2553/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerAMXType.cpp.o
+[2554/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerAMXIntrinsics.cpp.o
+[2555/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TileConfig.cpp.o
+[2556/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastPreTileConfig.cpp.o
+[2557/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastTileConfig.cpp.o
+[2558/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PreTileConfig.cpp.o
+[2559/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ExpandPseudo.cpp.o
+[2560/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastISel.cpp.o
+[2561/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupBWInsts.cpp.o
+[2562/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupLEAs.cpp.o
+[2563/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupInstTuning.cpp.o
+[2564/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupVectorConstants.cpp.o
+[2565/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AvoidStoreForwardingBlocks.cpp.o
+[2566/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DynAllocaExpander.cpp.o
+[2567/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupSetCC.cpp.o
+[2568/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FlagsCopyLowering.cpp.o
+[2569/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FloatingPoint.cpp.o
+[2570/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FrameLowering.cpp.o
+[2571/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelDAGToDAG.cpp.o
+[2572/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelLowering.cpp.o
+[2573/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelLoweringCall.cpp.o
+[2574/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86IndirectBranchTracking.cpp.o
+[2575/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86IndirectThunks.cpp.o
+[2576/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InterleavedAccess.cpp.o
+[2577/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstCombineIntrinsic.cpp.o
+[2578/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InsertPrefetch.cpp.o
+[2579/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstrFMA3Info.cpp.o
+[2580/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstrFoldTables.cpp.o
+[2581/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstrInfo.cpp.o
+[2582/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CompressEVEX.cpp.o
+[2583/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LoadValueInjectionLoadHardening.cpp.o
+[2584/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LoadValueInjectionRetHardening.cpp.o
+[2585/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MachineFunctionInfo.cpp.o
+[2586/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MCInstLower.cpp.o
+[2587/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MacroFusion.cpp.o
+[2588/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86OptimizeLEAs.cpp.o
+[2589/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PartialReduction.cpp.o
+[2590/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PadShortFunction.cpp.o
+[2591/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86RegisterInfo.cpp.o
+[2592/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ReturnThunks.cpp.o
+[2593/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ShuffleDecodeConstantPool.cpp.o
+[2594/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SelectionDAGInfo.cpp.o
+[2595/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SpeculativeLoadHardening.cpp.o
+[2596/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86Subtarget.cpp.o
+[2597/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SpeculativeExecutionSideEffectSuppression.cpp.o
+[2598/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SuppressAPXForReloc.cpp.o
+[2599/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetMachine.cpp.o
+[2600/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetObjectFile.cpp.o
+[2601/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetTransformInfo.cpp.o
+[2602/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86VZeroUpper.cpp.o
+[2603/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86WinEHState.cpp.o
+[2604/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/ABIInfo.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/ABIInfo.cpp: In member function ‘const llvm::DataLayout& clang::CodeGen::ABIInfo::getDataLayout() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/ABIInfo.cpp:27:14: error: ‘class clang::CodeGen::CodeGenTypes’ has no member named ‘getDataLayout’
+   27 |   return CGT.getDataLayout();
+      |              ^~~~~~~~~~~~~
+[2605/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InsertWait.cpp.o
+[2606/3192] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86WinEHUnwindV2.cpp.o
+[2607/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGGPUBuiltin.cpp.o
+[2608/3192] Building AArch64GenInstrInfo.inc...
+[2609/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGException.cpp.o
+[2610/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprComplex.cpp.o
+[2611/3192] Building AArch64GenSubtargetInfo.inc...
+[2612/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprConstant.cpp.o
+[2613/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprCXX.cpp.o
+[2614/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDeclCXX.cpp.o
+[2615/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGHLSLBuiltins.cpp.o
+[2616/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprAgg.cpp.o
+[2617/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExpr.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExpr.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExpr.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExpr.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExpr.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGExpr.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGExpr.cpp: In member function ‘clang::CodeGen::RValue clang::CodeGen::CodeGenFunction::EmitLoadOfGlobalRegLValue(clang::CodeGen::LValue)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGExpr.cpp:2466:25: error: ‘class clang::CodeGen::CodeGenTypes’ has no member named ‘getDataLayout’
+ 2466 |     Ty = CGM.getTypes().getDataLayout().getIntPtrType(OrigTy);
+      |                         ^~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGExpr.cpp: In member function ‘void clang::CodeGen::CodeGenFunction::EmitStoreThroughGlobalRegLValue(clang::CodeGen::RValue, clang::CodeGen::LValue)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGExpr.cpp:2797:25: error: ‘class clang::CodeGen::CodeGenTypes’ has no member named ‘getDataLayout’
+ 2797 |     Ty = CGM.getTypes().getDataLayout().getIntPtrType(OrigTy);
+      |                         ^~~~~~~~~~~~~
+[2618/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGExprScalar.cpp.o
+[2619/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGDecl.cpp.o
+[2620/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGHLSLRuntime.cpp.o
+[2621/3192] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCall.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCall.cpp:844:13: warning: ‘bool shouldSignExtend(clang::QualType)’ defined but not used [-Wunused-function]
+  844 | static bool shouldSignExtend(QualType Ty) {
+      |             ^~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCall.cpp:835:17: warning: ‘clang::QualType getIntegerTypeForExtension(clang::ASTContext&, llvm::Type*, bool)’ defined but not used [-Wunused-function]
+  835 | static QualType getIntegerTypeForExtension(ASTContext &Ctx, llvm::Type *LLVMTy,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+244.98user 17.73system 0:20.64elapsed 1272%CPU (0avgtext+0avgdata 1290932maxresident)k
+0inputs+2226880outputs (3117major+9971579minor)pagefaults 0swaps
