@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+    inlined from ‘clang::interp::Pointer::toRValue(const clang::interp::Context&, clang::QualType) const::<lambda(clang::QualType, const clang::interp::Pointer&, clang::APValue&)>’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp:793:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:192:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  192 |       delete[] U.pVal;
+      |                  ^~~~
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:24:21,
+    inlined from ‘clang::interp::Pointer::toRValue(const clang::interp::Context&, clang::QualType) const::<lambda(clang::QualType, const clang::interp::Pointer&, clang::APValue&)>’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp:793:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:192:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  192 |       delete[] U.pVal;
+      |                  ^~~~
+[2724/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ParentMap.cpp.o
+[2725/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Compiler.cpp.o
+[2726/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/NestedNameSpecifier.cpp.o
+[2727/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ItaniumCXXABI.cpp.o
+[2728/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/RawCommentList.cpp.o
+[2729/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/OSLog.cpp.o
+[2730/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Disasm.cpp.o
+[2731/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o
+[2732/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/SelectorLocationsKind.cpp.o
+[2733/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/MicrosoftCXXABI.cpp.o
+[2734/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtCXX.cpp.o
+[2735/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtIterator.cpp.o
+[2736/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtObjC.cpp.o
+[2737/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtOpenACC.cpp.o
+[2738/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtOpenMP.cpp.o
+[2739/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/PrintfFormatString.cpp.o
+[2740/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Mangle.cpp.o
+[2741/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtViz.cpp.o
+[2742/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ODRHash.cpp.o
+[2743/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ODRDiagsEmitter.cpp.o
+[2744/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/RecordLayout.cpp.o
+[2745/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Randstruct.cpp.o
+[2746/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/QualTypeNames.cpp.o
+[2747/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ScanfFormatString.cpp.o
+[2748/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ItaniumMangle.cpp.o
+[2749/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/JSONNodeDumper.cpp.o
+[2750/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DynamicRecursiveASTVisitor.cpp.o
+[2751/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/MicrosoftMangle.cpp.o
+[2752/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TemplateName.cpp.o
+[2753/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TemplateBase.cpp.o
+[2754/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o
+[2755/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/VTTBuilder.cpp.o
+[2756/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtProfile.cpp.o
+[2757/3184] Building OpenCLBuiltins.inc...
+[2758/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Stmt.cpp.o
+[2759/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/RecordLayoutBuilder.cpp.o
+[2760/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TypeLoc.cpp.o
+[2761/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TypePrinter.cpp.o
+[2762/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/StmtPrinter.cpp.o
+[2763/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Type.cpp.o
+[2764/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/IdentifierResolver.cpp.o
+[2765/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/HeuristicResolver.cpp.o
+[2766/3184] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfoImpl.cpp.o
+[2767/3184] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o
+[2768/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/VTableBuilder.cpp.o
+[2769/3184] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGAtomic.cpp.o
+[2770/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Scope.cpp.o
+[2771/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/HLSLExternalSemaSource.cpp.o
+[2772/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/HLSLBuiltinTypeDeclBuilder.cpp.o
+[2773/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/TextNodeDumper.cpp.o
+[2774/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvalEmitter.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/APNumericStorage.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:9:
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:24:21,
+    inlined from ‘clang::APValue clang::interp::Boolean::toAPValue(const clang::ASTContext&) const’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Boolean.h:55:72,
+    inlined from ‘void clang::interp::EvalEmitter::updateGlobalTemporaries()’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:336:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:192:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  192 |       delete[] U.pVal;
+      |                  ^~~~
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:24:21,
+    inlined from ‘clang::APValue clang::interp::Boolean::toAPValue(const clang::ASTContext&) const’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Boolean.h:55:72,
+    inlined from ‘bool clang::interp::EvalEmitter::emitRet(const clang::interp::SourceInfo&) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Bool]’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:187:22,
+    inlined from ‘bool clang::interp::EvalEmitter::emitRet(const clang::interp::SourceInfo&) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Bool]’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:182:33,
+    inlined from ‘bool clang::interp::EvalEmitter::emitRet(clang::interp::PrimType, const clang::interp::SourceInfo&)’ at /tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:31762:7:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:192:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  192 |       delete[] U.pVal;
+      |                  ^~~~
+[2775/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/CheckExprLifetime.cpp.o
+[2776/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/CodeCompleteConsumer.cpp.o
+[2777/3184] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDANV.cpp.o
+[2778/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/ScopeInfo.cpp.o
+[2779/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/MultiplexExternalSemaSource.cpp.o
+[2780/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/DelayedDiagnostic.cpp.o
+[2781/3184] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o
+[2782/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/JumpDiagnostics.cpp.o
+[2783/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAVR.cpp.o
+[2784/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/AnalysisBasedWarnings.cpp.o
+[2785/3184] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o
+[2786/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/DeclSpec.cpp.o
+[2787/3184] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o
+[2788/3184] Linking CXX static library lib/libclangAST.a
+[2789/3184] Linking CXX static library lib/libclangASTMatchers.a
+[2790/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaConsumer.cpp.o
+[2791/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAMDGPU.cpp.o
+[2792/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAccess.cpp.o
+[2793/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaBPF.cpp.o
+[2794/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaBase.cpp.o
+[2795/3184] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/BackendUtil.cpp.o
+[2796/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/ParsedAttr.cpp.o
+[2797/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaBoundsSafety.cpp.o
+[2798/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAttr.cpp.o
+[2799/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaARM.cpp.o
+[2800/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAPINotes.cpp.o
+[2801/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCXXScopeSpec.cpp.o
+[2802/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaAvailability.cpp.o
+[2803/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDirectX.cpp.o
+[2804/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/Sema.cpp.o
+[2805/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCast.cpp.o
+[2806/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCoroutine.cpp.o
+[2807/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCUDA.cpp.o
+[2808/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExceptionSpec.cpp.o
+[2809/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaFixItUtils.cpp.o
+[2810/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaHexagon.cpp.o
+[2811/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDecl.cpp.o
+FAILED: tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDecl.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDecl.cpp.o -MF tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDecl.cpp.o.d -o tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDecl.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaDecl.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaDecl.cpp: In member function ‘void clang::Sema::CheckCompleteVariableDeclaration(clang::VarDecl*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaDecl.cpp:14951:38: error: cannot convert ‘const clang::RecordType*’ to ‘clang::CXXRecordDecl*’
+14951 |       FinalizeVarWithDestructor(var, recordType);
+      |                                      ^~~~~~~~~~
+      |                                      |
+      |                                      const clang::RecordType*
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/DelayedDiagnostic.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaDecl.cpp:42:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:5407:62: note:   initializing argument 2 of ‘void clang::Sema::FinalizeVarWithDestructor(clang::VarDecl*, clang::CXXRecordDecl*)’
+ 5407 |   void FinalizeVarWithDestructor(VarDecl *VD, CXXRecordDecl *DeclInit);
+      |                                               ~~~~~~~~~~~~~~~^~~~~~~~
+[2812/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclCXX.cpp.o
+FAILED: tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclCXX.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclCXX.cpp.o -MF tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclCXX.cpp.o.d -o tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclCXX.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaDeclCXX.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaDeclCXX.cpp:16325:6: error: no declaration matches ‘void clang::Sema::FinalizeVarWithDestructor(clang::VarDecl*, const clang::RecordType*)’
+16325 | void Sema::FinalizeVarWithDestructor(VarDecl *VD, const RecordType *Record) {
+      |      ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/EnterExpressionEvaluationContext.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaDeclCXX.cpp:38:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:5407:8: note: candidate is: ‘void clang::Sema::FinalizeVarWithDestructor(clang::VarDecl*, clang::CXXRecordDecl*)’
+ 5407 |   void FinalizeVarWithDestructor(VarDecl *VD, CXXRecordDecl *DeclInit);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:850:7: note: ‘class clang::Sema’ defined here
+  850 | class Sema final : public SemaBase {
+      |       ^~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaDeclCXX.cpp: In member function ‘clang::VarDecl* clang::Sema::BuildExceptionDeclaration(clang::Scope*, clang::TypeSourceInfo*, clang::SourceLocation, clang::SourceLocation, const clang::IdentifierInfo*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaDeclCXX.cpp:17377:43: error: cannot convert ‘const clang::RecordType*’ to ‘clang::CXXRecordDecl*’
+17377 |         FinalizeVarWithDestructor(ExDecl, recordType);
+      |                                           ^~~~~~~~~~
+      |                                           |
+      |                                           const clang::RecordType*
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/EnterExpressionEvaluationContext.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaDeclCXX.cpp:38:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:5407:62: note:   initializing argument 2 of ‘void clang::Sema::FinalizeVarWithDestructor(clang::VarDecl*, clang::CXXRecordDecl*)’
+ 5407 |   void FinalizeVarWithDestructor(VarDecl *VD, CXXRecordDecl *DeclInit);
+      |                                               ~~~~~~~~~~~~~~~^~~~~~~~
+[2813/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprMember.cpp.o
+[2814/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclObjC.cpp.o
+[2815/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaFunctionEffects.cpp.o
+[2816/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaCodeComplete.cpp.o
+[2817/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprObjC.cpp.o
+[2818/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaHLSL.cpp.o
+[2819/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o
+FAILED: tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o -MF tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o.d -o tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExpr.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp: In member function ‘clang::ExprResult clang::Sema::ActOnBlockStmtExpr(clang::SourceLocation, clang::Stmt*, clang::Scope*)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:16568:42: error: cannot convert ‘const clang::RecordType*’ to ‘clang::CXXRecordDecl*’
+16568 |           FinalizeVarWithDestructor(Var, Record);
+      |                                          ^~~~~~
+      |                                          |
+      |                                          const clang::RecordType*
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/CheckExprLifetime.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaExpr.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:5407:62: note:   initializing argument 2 of ‘void clang::Sema::FinalizeVarWithDestructor(clang::VarDecl*, clang::CXXRecordDecl*)’
+ 5407 |   void FinalizeVarWithDestructor(VarDecl *VD, CXXRecordDecl *DeclInit);
+      |                                               ~~~~~~~~~~~~~~~^~~~~~~~
+[2820/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaM68k.cpp.o
+[2821/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLoongArch.cpp.o
+[2822/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaDeclAttr.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaDeclAttr.cpp: In function ‘void ProcessDeclAttribute(clang::Sema&, clang::Scope*, clang::Decl*, const clang::ParsedAttr&, const clang::Sema::ProcessDeclAttributeOptions&)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Sema/SemaDeclAttr.cpp:6822:31: warning: enumerated mismatch in conditional expression: ‘clang::diag::<unnamed enum>’ vs ‘clang::diag::<unnamed enum>’ [-Wenum-compare]
+ 6821 |       S.Diag(AL.getLoc(), AL.isRegularKeywordAttribute()
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6822 |                               ? diag::err_keyword_not_supported_on_target
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6823 |                               : diag::warn_unhandled_ms_attribute_ignored)
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2823/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaChecking.cpp.o
+[2824/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLambda.cpp.o
+[2825/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaConcept.cpp.o
+[2826/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaExprCXX.cpp.o
+[2827/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaInit.cpp.o
+[2828/3184] Building CXX object tools/clang/lib/Sema/CMakeFiles/obj.clangSema.dir/SemaLookup.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+1354.95user 65.22system 1:34.34elapsed 1505%CPU (0avgtext+0avgdata 1551760maxresident)k
+0inputs+5739288outputs (47741major+40867958minor)pagefaults 0swaps
