@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:47:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ADL.h:13:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator:66:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf_iterator.h:35:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/streambuf:41:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ios_base.h:46:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error:452:5: error: constructor for 'std::system_error' must explicitly initialize the base class 'std::runtime_error' which does not have a default constructor
+  452 |     system_error(error_code __ec = error_code())
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdexcept:219:9: note: 'std::runtime_error' declared here
+  219 |   class runtime_error : public exception
+      |         ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:47:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ADL.h:13:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator:66:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf_iterator.h:35:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/streambuf:41:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ios_base.h:46:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error:455:5: error: constructor for 'std::system_error' must explicitly initialize the base class 'std::runtime_error' which does not have a default constructor
+  455 |     system_error(error_code __ec, const string& __what)
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdexcept:219:9: note: 'std::runtime_error' declared here
+  219 |   class runtime_error : public exception
+      |         ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:47:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ADL.h:13:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator:66:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf_iterator.h:35:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/streambuf:41:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ios_base.h:46:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error:458:5: error: constructor for 'std::system_error' must explicitly initialize the base class 'std::runtime_error' which does not have a default constructor
+  458 |     system_error(error_code __ec, const char* __what)
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdexcept:219:9: note: 'std::runtime_error' declared here
+  219 |   class runtime_error : public exception
+      |         ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:47:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ADL.h:13:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator:66:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf_iterator.h:35:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/streambuf:41:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ios_base.h:46:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error:464:5: error: constructor for 'std::system_error' must explicitly initialize the base class 'std::runtime_error' which does not have a default constructor
+  464 |     system_error(int __v, const error_category& __ecat)
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdexcept:219:9: note: 'std::runtime_error' declared here
+  219 |   class runtime_error : public exception
+      |         ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:47:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ADL.h:13:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator:66:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf_iterator.h:35:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/streambuf:41:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ios_base.h:46:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error:468:5: error: constructor for 'std::system_error' must explicitly initialize the base class 'std::runtime_error' which does not have a default constructor
+  468 |     system_error(int __v, const error_category& __ecat, const string& __what)
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdexcept:219:9: note: 'std::runtime_error' declared here
+  219 |   class runtime_error : public exception
+      |         ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMBuildAttributes.h:22:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttributes.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ArrayRef.h:12:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/Hashing.h:53:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/algorithm:74:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_algorithm_defs.h:13:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional:62:
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/vector:68:
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h:241:5: error: constructor for 'std::_Bit_iterator' must explicitly initialize the base class '_Bit_iterator_base' which does not have a default constructor
+  241 |     _Bit_iterator() : _Bit_iterator_base(0, 0) { }
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h:142:10: note: 'std::_Bit_iterator_base' declared here
+  142 |   struct _Bit_iterator_base
+      |          ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h:243:5: error: constructor for 'std::_Bit_iterator' must explicitly initialize the base class '_Bit_iterator_base' which does not have a default constructor
+  243 |     _Bit_iterator(_Bit_type * __x, unsigned int __y)
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h:142:10: note: 'std::_Bit_iterator_base' declared here
+  142 |   struct _Bit_iterator_base
+      |          ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h:334:5: error: constructor for 'std::_Bit_const_iterator' must explicitly initialize the base class '_Bit_iterator_base' which does not have a default constructor
+  334 |     _Bit_const_iterator() : _Bit_iterator_base(0, 0) { }
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h:142:10: note: 'std::_Bit_iterator_base' declared here
+  142 |   struct _Bit_iterator_base
+      |          ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h:336:5: error: constructor for 'std::_Bit_const_iterator' must explicitly initialize the base class '_Bit_iterator_base' which does not have a default constructor
+  336 |     _Bit_const_iterator(_Bit_type * __x, unsigned int __y)
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h:142:10: note: 'std::_Bit_iterator_base' declared here
+  142 |   struct _Bit_iterator_base
+      |          ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h:339:5: error: constructor for 'std::_Bit_const_iterator' must explicitly initialize the base class '_Bit_iterator_base' which does not have a default constructor
+  339 |     _Bit_const_iterator(const _Bit_iterator& __x)
+      |     ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h:142:10: note: 'std::_Bit_iterator_base' declared here
+  142 |   struct _Bit_iterator_base
+      |          ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:15:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttrParserCompact.h:14:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/DataExtractor.h:15:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:24:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:753:3: error: constructor for 'llvm::buffer_ostream' must explicitly initialize the base class 'raw_svector_ostream' which does not have a default constructor
+  753 |   buffer_ostream(raw_ostream &OS) : raw_svector_ostream(Buffer), OS(OS) {}
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:692:16: note: 'llvm::raw_svector_ostream' declared here
+  692 | class LLVM_ABI raw_svector_ostream : public raw_pwrite_stream {
+      |                ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:764:3: error: constructor for 'llvm::buffer_unique_ostream' must explicitly initialize the base class 'raw_svector_ostream' which does not have a default constructor
+  764 |   buffer_unique_ostream(std::unique_ptr<raw_ostream> OS)
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/raw_ostream.h:692:16: note: 'llvm::raw_svector_ostream' declared here
+  692 | class LLVM_ABI raw_svector_ostream : public raw_pwrite_stream {
+      |                ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:77:3: error: constructor for 'llvm::ARMAttributeParser' must explicitly initialize the base class 'ELFCompactAttrParser' which does not have a default constructor
+   77 |   ARMAttributeParser(ScopedPrinter *sw)
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttrParserCompact.h:26:16: note: 'llvm::ELFCompactAttrParser' declared here
+   26 | class LLVM_ABI ELFCompactAttrParser : public ELFAttributeParser {
+      |                ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:80:3: error: constructor for 'llvm::ARMAttributeParser' must explicitly initialize the base class 'ELFCompactAttrParser' which does not have a default constructor
+   80 |   ARMAttributeParser()
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttrParserCompact.h:26:16: note: 'llvm::ELFCompactAttrParser' declared here
+   26 | class LLVM_ABI ELFCompactAttrParser : public ELFAttributeParser {
+      |                ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:13:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:20:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:55:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/FormatVariadic.h:148:3: error: constructor for 'llvm::formatv_object<std::tuple<llvm::support::detail::provider_format_adapter<const unsigned int &>, llvm::support::detail::provider_format_adapter<const unsigned int &>, llvm::support::detail::provider_format_adapter<const unsigned int &>, llvm::support::detail::provider_format_adapter<const char *const &>>>' must explicitly initialize the base class 'formatv_object_base' which does not have a default constructor
+  148 |   formatv_object(StringRef Fmt, Tuple &&Params, bool Validate)
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/FormatVariadic.h:256:10: note: in instantiation of member function 'llvm::formatv_object<std::tuple<llvm::support::detail::provider_format_adapter<const unsigned int &>, llvm::support::detail::provider_format_adapter<const unsigned int &>, llvm::support::detail::provider_format_adapter<const unsigned int &>, llvm::support::detail::provider_format_adapter<const char *const &>>>::formatv_object' requested here
+  256 |   return formatv_object<decltype(Params)>(Fmt, std::move(Params), Validate);
+      |          ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/FormatVariadic.h:66:7: note: 'llvm::formatv_object_base' declared here
+   66 | class formatv_object_base {
+      |       ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/ARMAttributeParser.cpp:9:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ARMAttributeParser.h:15:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ELFAttrParserCompact.h:14:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/DataExtractor.h:15:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Error.h:23:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Format.h:106:3: error: constructor for 'llvm::format_object<float>' must explicitly initialize the base class 'format_object_base' which does not have a default constructor
+  106 |   format_object(const char *fmt, const Ts &... vals)
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Format.h:127:10: note: in instantiation of member function 'llvm::format_object<float>::format_object' requested here
+  127 |   return format_object<Ts...>(Fmt, Vals...);
+      |          ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:271:37: note: in instantiation of function template specialization 'llvm::format<float>' requested here
+  271 |     startLine() << Label << ": " << format("%5.1f", Value) << "\n";
+      |                                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Format.h:40:16: note: 'llvm::format_object_base' declared here
+   40 | class LLVM_ABI format_object_base {
+      |                ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Format.h:106:3: error: constructor for 'llvm::format_object<double>' must explicitly initialize the base class 'format_object_base' which does not have a default constructor
+  106 |   format_object(const char *fmt, const Ts &... vals)
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Format.h:127:10: note: in instantiation of member function 'llvm::format_object<double>::format_object' requested here
+  127 |   return format_object<Ts...>(Fmt, Vals...);
+      |          ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:275:37: note: in instantiation of function template specialization 'llvm::format<double>' requested here
+  275 |     startLine() << Label << ": " << format("%5.1f", Value) << "\n";
+      |                                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/Format.h:40:16: note: 'llvm::format_object_base' declared here
+   40 | class LLVM_ABI format_object_base {
+      |                ^
+17 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
