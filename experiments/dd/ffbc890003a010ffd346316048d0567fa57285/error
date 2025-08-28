@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2773/3185] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/FileIndexRecord.cpp.o
+[2774/3185] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexBody.cpp.o
+[2775/3185] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexingContext.cpp.o
+[2776/3185] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/CommentToXML.cpp.o
+[2777/3185] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexingAction.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/TargetInfo.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/CompilerInstance.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Index/IndexingAction.cpp:11:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Index/IndexingAction.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:255:16: warning: ‘virtual bool clang::ASTReaderListener::visitInputFile(llvm::StringRef, llvm::StringRef, bool, bool, bool)’ was hidden [-Woverloaded-virtual]
+  255 |   virtual bool visitInputFile(StringRef FilenameAsRequested, StringRef Filename,
+      |                ^~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Serialization/ASTReader.h:319:8: note:   by ‘virtual bool clang::ChainedASTReaderListener::visitInputFile(llvm::StringRef, bool, bool, bool)’
+  319 |   bool visitInputFile(StringRef Filename, bool isSystem,
+      |        ^~~~~~~~~~~~~~
+[2778/3185] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexDecl.cpp.o
+[2779/3185] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexSymbol.cpp.o
+[2780/3185] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/USRGeneration.cpp.o
+[2781/3185] Building CXX object tools/clang/lib/Index/CMakeFiles/obj.clangIndex.dir/IndexTypeSourceInfo.cpp.o
+[2782/3185] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/DylibVerifier.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TextAPI/Platform.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TextAPI/InterfaceFile.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/MachO.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/DylibVerifier.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/InstallAPI/DylibVerifier.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[2783/3185] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/FileList.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TextAPI/Platform.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TextAPI/InterfaceFile.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/MachO.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/HeaderFile.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/FileList.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/InstallAPI/FileList.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[2784/3185] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/Frontend.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/TargetInfo.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/CompilerInstance.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/Frontend.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/InstallAPI/Frontend.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[2785/3185] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/Library.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TextAPI/Platform.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TextAPI/InterfaceFile.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/MachO.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/HeaderFile.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/Library.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/InstallAPI/Library.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[2786/3185] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/HeaderFile.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TextAPI/Platform.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TextAPI/InterfaceFile.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/MachO.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/HeaderFile.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/InstallAPI/HeaderFile.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[2787/3185] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/DiagnosticBuilderWrappers.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TextAPI/Platform.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TextAPI/InterfaceFile.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/MachO.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/DylibVerifier.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/InstallAPI/DiagnosticBuilderWrappers.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/InstallAPI/DiagnosticBuilderWrappers.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[2788/3185] Building CXX object tools/clang/lib/InstallAPI/CMakeFiles/obj.clangInstallAPI.dir/Visitor.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/TargetInfo.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/InstallAPI/Visitor.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/InstallAPI/Visitor.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[2789/3185] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/QualifierAlignmentFixer.cpp.o
+[2790/3185] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/TokenAnalyzer.cpp.o
+[2791/3185] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/SortJavaScriptImports.cpp.o
+[2792/3185] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/TokenAnnotator.cpp.o
+[2793/3185] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/UnwrappedLineFormatter.cpp.o
+[2794/3185] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/UnwrappedLineParser.cpp.o
+[2795/3185] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/WhitespaceManager.cpp.o
+[2796/3185] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/UsingDeclarationsSorter.cpp.o
+[2797/3185] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvaluationResult.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvaluationResult.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvaluationResult.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvaluationResult.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvaluationResult.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp:19:11: error: no declaration matches ‘clang::APValue&& clang::interp::EvaluationResult::toAPValue() const’
+   19 | APValue&& EvaluationResult::toAPValue() const {
+      |           ^~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.h:90:11: note: candidate is: ‘clang::APValue clang::interp::EvaluationResult::toAPValue() const’
+   90 |   APValue toAPValue() const;
+      |           ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.h:32:7: note: ‘class clang::interp::EvaluationResult’ defined here
+   32 | class EvaluationResult final {
+      |       ^~~~~~~~~~~~~~~~
+[2798/3185] Building X86GenInstrInfo.inc...
+[2799/3185] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/HIPUtility.cpp.o
+[2800/3185] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/MC/MCParser/AsmParser.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[2801/3185] Building X86GenSubtargetInfo.inc...
+[2802/3185] Building AArch64GenInstrInfo.inc...
+[2803/3185] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Context.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/TargetInfo.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.cpp:20:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[2804/3185] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/InterpBuiltin.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Basic/TargetInfo.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpBuiltin.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[2805/3185] Building AArch64GenSubtargetInfo.inc...
+[2806/3185] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Disasm.cpp.o
+[2807/3185] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Compiler.cpp.o
+[2808/3185] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CXXInheritance.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.cpp:20:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[2809/3185] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvalEmitter.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/APNumericStorage.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Decl.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Descriptor.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:9:
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:24:21,
+    inlined from ‘clang::APValue clang::interp::Boolean::toAPValue(const clang::ASTContext&) const’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Boolean.h:55:72,
+    inlined from ‘void clang::interp::EvalEmitter::updateGlobalTemporaries()’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:336:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:192:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  192 |       delete[] U.pVal;
+      |                  ^~~~
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:24:21,
+    inlined from ‘clang::APValue clang::interp::Boolean::toAPValue(const clang::ASTContext&) const’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Boolean.h:55:72,
+    inlined from ‘bool clang::interp::EvalEmitter::emitRet(const clang::interp::SourceInfo&) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Bool]’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:187:23,
+    inlined from ‘bool clang::interp::EvalEmitter::emitRet(const clang::interp::SourceInfo&) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Bool]’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:182:33,
+    inlined from ‘bool clang::interp::EvalEmitter::emitRet(clang::interp::PrimType, const clang::interp::SourceInfo&)’ at /tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:31762:7:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:192:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  192 |       delete[] U.pVal;
+      |                  ^~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+175.31user 14.11system 0:24.25elapsed 780%CPU (0avgtext+0avgdata 1302904maxresident)k
+0inputs+1461592outputs (3438major+7378078minor)pagefaults 0swaps
