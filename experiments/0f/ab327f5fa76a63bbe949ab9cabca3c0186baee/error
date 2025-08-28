@@ -1,0 +1,107 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: /tmp/llvm-project-build-stage1/bin/clang
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang - broken
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeError.log".
+
+
+STDERR:
+CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "/tmp/llvm-project-build-stage1/bin/clang"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/ninja cmTC_73657 && [1/2] Building C object CMakeFiles/cmTC_73657.dir/testCCompiler.c.o
+    FAILED: CMakeFiles/cmTC_73657.dir/testCCompiler.c.o 
+    /tmp/llvm-project-build-stage1/bin/clang    -o CMakeFiles/cmTC_73657.dir/testCCompiler.c.o -c /tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c
+    PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+    Stack dump:
+    0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang -o CMakeFiles/cmTC_73657.dir/testCCompiler.c.o -c /tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c
+    1.	/tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c:11:28: current parser token ';'
+    2.	/tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c:11:1: parsing function body 'main'
+    3.	/tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c:11:1: in compound statement ('{}')
+    Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+    0  clang     0x000055dc82e7ed70 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+    1  clang     0x000055dc82e7c924 llvm::sys::CleanupOnSignal(unsigned long) + 164
+    2  clang     0x000055dc82dccf68
+    3  libc.so.6 0x00007fdeab9f2520
+    4  clang     0x000055dc85f8417b clang::interp::InterpState::maybeDiagnoseDanglingAllocations() + 43
+    5  clang     0x000055dc861bb52a clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 938
+    6  clang     0x000055dc85da0daa clang::interp::EvalEmitter::interpretExpr(clang::Expr const*, bool, bool) + 122
+    7  clang     0x000055dc85d8327a clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 426
+    8  clang     0x000055dc85cee5ef
+    9  clang     0x000055dc85cf097c clang::Expr::EvaluateForOverflow(clang::ASTContext const&) const + 828
+    10 clang     0x000055dc84e0d0d5 clang::Sema::CheckForIntOverflow(clang::Expr const*) + 101
+    11 clang     0x000055dc84e3e15b clang::Sema::CheckCompletedExpr(clang::Expr*, clang::SourceLocation, bool) + 219
+    12 clang     0x000055dc851d0e5e clang::Sema::ActOnFinishFullExpr(clang::Expr*, clang::SourceLocation, bool, bool, bool) + 270
+    13 clang     0x000055dc854f3037 clang::Sema::BuildReturnStmt(clang::SourceLocation, clang::Expr*, bool) + 2295
+    14 clang     0x000055dc854f3b92 clang::Sema::ActOnReturnStmt(clang::SourceLocation, clang::Expr*, clang::Scope*) + 338
+    15 clang     0x000055dc84cc7233 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&) + 3619
+    16 clang     0x000055dc84cc7f71 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) + 369
+    17 clang     0x000055dc84ccff94 clang::Parser::ParseCompoundStatementBody(bool) + 1284
+    18 clang     0x000055dc84cd0a3a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) + 218
+    19 clang     0x000055dc84bc125f clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) + 1743
+    20 clang     0x000055dc84c0b555 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::SourceLocation*, clang::Parser::ForRangeInit*) + 5157
+    21 clang     0x000055dc84bbaff2 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) + 1394
+    22 clang     0x000055dc84bbbaf3 clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) + 883
+    23 clang     0x000055dc84bc4912 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 738
+    24 clang     0x000055dc84bc58ad clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 541
+    25 clang     0x000055dc84bc5da4 clang::Parser::ParseFirstTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 68
+    26 clang     0x000055dc84b9fecb clang::ParseAST(clang::Sema&, bool, bool) + 539
+    27 clang     0x000055dc83a5e8b8 clang::FrontendAction::Execute() + 56
+    28 clang     0x000055dc839cf2bb clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+    29 clang     0x000055dc83b400ec clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 364
+    30 clang     0x000055dc81684d3a cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7162
+    31 clang     0x000055dc8167c602
+    32 clang     0x000055dc8379558d
+    33 clang     0x000055dc82dcd397 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+    34 clang     0x000055dc83795927
+    35 clang     0x000055dc83756f51 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 177
+    36 clang     0x000055dc83757fc9 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+    37 clang     0x000055dc8376ba4f clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 543
+    38 clang     0x000055dc816810db clang_main(int, char**, llvm::ToolContext const&) + 7515
+    39 clang     0x000055dc815855bb main + 107
+    40 libc.so.6 0x00007fdeab9d9d90
+    41 libc.so.6 0x00007fdeab9d9e40 __libc_start_main + 128
+    42 clang     0x000055dc8167c065 _start + 37
+    clang: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+    clang version 22.0.0git
+    Target: x86_64-unknown-linux-gnu
+    Thread model: posix
+    InstalledDir: /tmp/llvm-project-build-stage1/bin
+    clang: note: diagnostic msg: 
+    ********************
+    
+    PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+    Preprocessed source(s) and associated run script(s) are located at:
+    clang: note: diagnostic msg: /tmp/testCCompiler-b51ee1.c
+    clang: note: diagnostic msg: /tmp/testCCompiler-b51ee1.sh
+    clang: note: diagnostic msg: 
+    
+    ********************
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:46 (project)
+
+
