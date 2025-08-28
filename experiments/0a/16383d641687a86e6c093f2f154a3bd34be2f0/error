@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LiveVariables.cpp:28:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::LiveVariables::VarInfo::print(llvm::raw_ostream&) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::LiveVariables::recomputeForSingleDefVirtReg(llvm::Register)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::LiveVariables::addNewBlock(llvm::MachineBasicBlock*, llvm::MachineBasicBlock*, llvm::MachineBasicBlock*, std::vector<llvm::SparseBitVector<> >&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+[735/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LocalStackSlotAllocation.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LocalStackSlotAllocation.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[736/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenTargetMachineImpl.cpp.o
+[737/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LoopTraversal.cpp.o
+[738/3191] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/BDCE.cpp.o
+[739/3191] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/ConstantHoisting.cpp.o
+[740/3191] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/CallSiteSplitting.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/GenericDomTreeUpdater.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/DomTreeUpdater.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/CallSiteSplitting.cpp:60:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[741/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockFrequencyInfo.cpp.o
+[742/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBranchProbabilityInfo.cpp.o
+[743/3191] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/ConstraintElimination.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DebugInfo.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/ConstraintElimination.cpp:27:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[744/3191] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/CorrelatedValuePropagation.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/GenericDomTreeUpdater.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/DomTreeUpdater.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Scalar/CorrelatedValuePropagation.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[745/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBasicBlock.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LiveVariables.h:33,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineBasicBlock.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[746/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineBlockPlacement.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineDominators.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePostDominators.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineBlockPlacement.cpp:45:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[747/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCFGPrinter.cpp.o
+[748/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCycleAnalysis.cpp.o
+[749/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCombiner.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineDominators.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LazyMachineBlockFrequencyInfo.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineCombiner.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[750/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineConvergenceVerifier.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineDominators.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineConvergenceVerifier.cpp:11:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[751/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCopyPropagation.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineCopyPropagation.cpp:55:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[752/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCSE.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineCSE.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[753/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDebugify.cpp.o
+[754/3191] Building CXX object lib/ABI/CMakeFiles/LLVMABI.dir/Targets/BPF.cpp.o
+FAILED: lib/ABI/CMakeFiles/LLVMABI.dir/Targets/BPF.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/ABI -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/ABI/CMakeFiles/LLVMABI.dir/Targets/BPF.cpp.o -MF lib/ABI/CMakeFiles/LLVMABI.dir/Targets/BPF.cpp.o.d -o lib/ABI/CMakeFiles/LLVMABI.dir/Targets/BPF.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/BPF.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/BPF.cpp: In member function ‘llvm::abi::ABIArgInfo llvm::abi::BPFABIInfo::classifyArgumentType(const llvm::abi::Type*) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/BPF.cpp:57:37: error: no matching function for call to ‘llvm::abi::TypeBuilder::getArrayType(const llvm::abi::Type*&, int)’
+   57 |           CoerceTy = TB.getArrayType(RegTy, 2);
+      |                      ~~~~~~~~~~~~~~~^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ABI/ABIFunctionInfo.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/BPF.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ABI/Types.h:411:20: note: candidate: ‘const llvm::abi::ArrayType* llvm::abi::TypeBuilder::getArrayType(const llvm::abi::Type*, uint64_t, uint64_t, bool)’
+  411 |   const ArrayType *getArrayType(const Type *ElementType, uint64_t NumElements,
+      |                    ^~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ABI/Types.h:411:20: note:   candidate expects 4 arguments, 2 provided
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/BPF.cpp:70:18: error: ‘const class llvm::abi::IntegerType’ has no member named ‘isPromotableIntegerType’
+   70 |       if (IntTy->isPromotableIntegerType())
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+[755/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineCheckDebugify.cpp.o
+[756/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDomTreeUpdater.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/GenericDomTreeUpdater.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineDomTreeUpdater.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineDomTreeUpdater.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[757/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDominanceFrontier.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineDominators.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineDominanceFrontier.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[758/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineDominators.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineDominators.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/MachineDominators.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:280:43: warning: ‘template<class PointerType, unsigned int N> class llvm::DeprecatedSmallSet’ is deprecated: Use SmallPtrSet instead [-Wdeprecated-declarations]
+  280 | class SmallSet<PointeeType *, N> : public DeprecatedSmallSet<PointeeType *, N> {
+      |                                           ^~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SmallSet.h:277:5: note: declared here
+  277 |     DeprecatedSmallSet : public SmallPtrSet<PointerType, N> {};
+      |     ^~~~~~~~~~~~~~~~~~
+[759/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFrameInfo.cpp.o
+[760/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPrinterPass.cpp.o
+[761/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunctionPass.cpp.o
+[762/3191] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineFunction.cpp.o
+[763/3191] Building CXX object lib/ABI/CMakeFiles/LLVMABI.dir/ABITypeMapper.cpp.o
+[764/3191] Building AArch64GenAsmWriter1.inc...
+[765/3191] Building CXX object lib/ABI/CMakeFiles/LLVMABI.dir/Targets/X86.cpp.o
+FAILED: lib/ABI/CMakeFiles/LLVMABI.dir/Targets/X86.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/ABI -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/ABI/CMakeFiles/LLVMABI.dir/Targets/X86.cpp.o -MF lib/ABI/CMakeFiles/LLVMABI.dir/Targets/X86.cpp.o.d -o lib/ABI/CMakeFiles/LLVMABI.dir/Targets/X86.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/X86.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/X86.cpp: In member function ‘llvm::abi::ABIArgInfo llvm::abi::X86_64ABIInfo::classifyArgumentType(const llvm::abi::Type*, unsigned int, unsigned int&, unsigned int&, bool, bool) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/X86.cpp:612:53: error: ‘const class llvm::abi::IntegerType’ has no member named ‘isPromotableIntegerType’
+  612 |       if (Ty->isInteger() && cast<IntegerType>(Ty)->isPromotableIntegerType())
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/X86.cpp: In member function ‘llvm::abi::ABIArgInfo llvm::abi::X86_64ABIInfo::classifyReturnType(const llvm::abi::Type*) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/X86.cpp:721:20: error: ‘const class llvm::abi::IntegerType’ has no member named ‘isPromotableIntegerType’
+  721 |         if (IntTy->isPromotableIntegerType()) {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/X86.cpp: In member function ‘llvm::abi::ABIArgInfo llvm::abi::X86_64ABIInfo::getIndirectResult(const llvm::abi::Type*, unsigned int) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/X86.cpp:1307:55: error: ‘const class llvm::abi::IntegerType’ has no member named ‘isPromotableIntegerType’
+ 1307 |     return (Ty->isInteger() && cast<IntegerType>(Ty)->isPromotableIntegerType()
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/X86.cpp: In member function ‘llvm::abi::ABIArgInfo llvm::abi::X86_64ABIInfo::getIndirectReturnResult(const llvm::abi::Type*) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/ABI/Targets/X86.cpp:1364:18: error: ‘const class llvm::abi::IntegerType’ has no member named ‘isPromotableIntegerType’
+ 1364 |       if (IntTy->isPromotableIntegerType()) {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+[766/3191] Building X86GenFastISel.inc...
+[767/3191] Building X86GenGlobalISel.inc...
+[768/3191] Building AArch64GenDAGISel.inc...
+[769/3191] Building X86GenDAGISel.inc...
+[770/3191] Building X86GenSubtargetInfo.inc...
+[771/3191] Building X86GenInstrInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+57.01user 5.34system 0:05.76elapsed 1081%CPU (0avgtext+0avgdata 727192maxresident)k
+0inputs+451856outputs (2806major+3401592minor)pagefaults 0swaps
