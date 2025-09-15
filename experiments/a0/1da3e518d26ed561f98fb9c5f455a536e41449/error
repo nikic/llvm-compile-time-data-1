@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[271/3197] Building CXX object tools/clang/utils/TableGen/CMakeFiles/clang-tblgen.dir/ClangSACheckersEmitter.cpp.o
+[272/3197] Building CXX object tools/clang/utils/TableGen/CMakeFiles/clang-tblgen.dir/ClangDiagnosticsEmitter.cpp.o
+[273/3197] Building CXX object tools/clang/utils/TableGen/CMakeFiles/clang-tblgen.dir/ClangCommentCommandInfoEmitter.cpp.o
+[274/3197] Building CXX object tools/clang/utils/TableGen/CMakeFiles/clang-tblgen.dir/ClangOpcodesEmitter.cpp.o
+[275/3197] Building CXX object tools/clang/utils/TableGen/CMakeFiles/clang-tblgen.dir/ClangTypeNodesEmitter.cpp.o
+[276/3197] Building CXX object tools/clang/utils/TableGen/CMakeFiles/clang-tblgen.dir/ClangSyntaxEmitter.cpp.o
+[277/3197] Creating export file for LLVMgold
+[278/3197] Building CXX object tools/clang/utils/TableGen/CMakeFiles/clang-tblgen.dir/NeonEmitter.cpp.o
+[279/3197] Building CXX object tools/clang/utils/TableGen/CMakeFiles/clang-tblgen.dir/RISCVVEmitter.cpp.o
+[280/3197] Building CXX object tools/clang/lib/Support/CMakeFiles/obj.clangSupport.dir/RISCVVIntrinsicUtils.cpp.o
+[281/3197] Building CXX object tools/clang/utils/TableGen/CMakeFiles/clang-tblgen.dir/SveEmitter.cpp.o
+[282/3197] Building CXX object tools/clang/utils/TableGen/CMakeFiles/clang-tblgen.dir/TableGen.cpp.o
+[283/3197] Building CXX object tools/clang/utils/TableGen/CMakeFiles/clang-tblgen.dir/MveEmitter.cpp.o
+[284/3197] Linking CXX static library lib/libLLVMSupport.a
+[285/3197] Linking CXX static library lib/libLLVMFrontendDirective.a
+[286/3197] Linking CXX static library lib/libLLVMWindowsManifest.a
+[287/3197] Linking CXX static library lib/libLLVMExtensions.a
+[288/3197] Linking CXX static library lib/libclangSupport.a
+[289/3197] Linking CXX static library lib/libLLVMOption.a
+[290/3197] Linking CXX static library lib/libLLVMDebugInfoMSF.a
+[291/3197] Linking CXX static library lib/libLLVMTableGen.a
+[292/3197] Linking CXX static library lib/libLLVMBitstreamReader.a
+[293/3197] Linking CXX static library lib/libLLVMDebugInfoCodeView.a
+[294/3197] Linking CXX executable bin/llvm-min-tblgen
+[295/3197] Building GenVT.inc...
+[296/3197] Building Attributes.inc...
+[297/3197] Building IntrinsicsSPIRV.h...
+[298/3197] Building IntrinsicsPowerPC.h...
+[299/3197] Building IntrinsicsAMDGPU.h...
+[300/3197] Building IntrinsicsMips.h...
+[301/3197] Building IntrinsicsNVPTX.h...
+[302/3197] Building IntrinsicEnums.inc...
+[303/3197] Building IntrinsicsDirectX.h...
+[304/3197] Building IntrinsicsLoongArch.h...
+[305/3197] Building ACC.h.inc...
+[306/3197] Building ACC.inc...
+[307/3197] Building OMP.inc...
+[308/3197] Building IntrinsicsVE.h...
+[309/3197] Building OMP.h.inc...
+[310/3197] Building RuntimeLibcalls.inc...
+[311/3197] Building IntrinsicsHexagon.h...
+[312/3197] Building IntrinsicsRISCV.h...
+[313/3197] Building IntrinsicsBPF.h...
+[314/3197] Building IntrinsicImpl.inc...
+[315/3197] Building IntrinsicsAArch64.h...
+[316/3197] Building IntrinsicsARM.h...
+[317/3197] Building CXX object lib/CodeGenTypes/CMakeFiles/LLVMCodeGenTypes.dir/LowLevelType.cpp.o
+[318/3197] Linking CXX static library lib/libLLVMCodeGenTypes.a
+[319/3197] Building IntrinsicsS390.h...
+[320/3197] Building IntrinsicsR600.h...
+[321/3197] Building IntrinsicsWebAssembly.h...
+[322/3197] Building IntrinsicsX86.h...
+[323/3197] Building IntrinsicsXCore.h...
+[324/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/CodeEmitterGen.cpp.o
+[325/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/CTagsEmitter.cpp.o
+[326/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/AsmWriterEmitter.cpp.o
+[327/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/CallingConvEmitter.cpp.o
+[328/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/CodeGenMapTable.cpp.o
+[329/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/CompressInstEmitter.cpp.o
+[330/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DAGISelEmitter.cpp.o
+[331/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DAGISelMatcherOpt.cpp.o
+[332/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/AsmMatcherEmitter.cpp.o
+[333/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DAGISelMatcherEmitter.cpp.o
+[334/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DFAEmitter.cpp.o
+[335/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DFAPacketizerEmitter.cpp.o
+[336/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DAGISelMatcherGen.cpp.o
+[337/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DecoderEmitter.cpp.o
+[338/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DisassemblerEmitter.cpp.o
+[339/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/DXILEmitter.cpp.o
+[340/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/ExegesisEmitter.cpp.o
+[341/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/InstrDocsEmitter.cpp.o
+[342/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/llvm-tblgen.cpp.o
+[343/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/FastISelEmitter.cpp.o
+[344/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/GlobalISelCombinerEmitter.cpp.o
+[345/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/GlobalISelEmitter.cpp.o
+[346/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/MacroFusionPredicatorEmitter.cpp.o
+[347/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/InstrInfoEmitter.cpp.o
+[348/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/OptionParserEmitter.cpp.o
+[349/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/OptionRSTEmitter.cpp.o
+[350/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/PseudoLoweringEmitter.cpp.o
+[351/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/RegisterBankEmitter.cpp.o
+[352/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/SDNodeInfoEmitter.cpp.o
+[353/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/SearchableTableEmitter.cpp.o
+[354/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86ModRMFilters.cpp.o
+[355/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/RegisterInfoEmitter.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Common/CodeGenRegisters.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/RegisterInfoEmitter.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘void llvm::SparseBitVector<ElementSize>::SparseBitVectorIterator::AdvanceToNextNonZero() [with unsigned int ElementSize = 128]’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+[356/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/SubtargetEmitter.cpp.o
+[357/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/WebAssemblyDisassemblerEmitter.cpp.o
+[358/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86InstrMappingEmitter.cpp.o
+[359/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86DisassemblerTables.cpp.o
+[360/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86FoldTablesEmitter.cpp.o
+[361/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86MnemonicTables.cpp.o
+[362/3197] Building CXX object utils/TableGen/CMakeFiles/llvm-tblgen.dir/X86RecognizableInstr.cpp.o
+[363/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/CodeExpander.cpp.o
+[364/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/CombinerUtils.cpp.o
+[365/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/CXXPredicates.cpp.o
+[366/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/GlobalISelMatchTableExecutorEmitter.cpp.o
+[367/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/PatternParser.cpp.o
+[368/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/Patterns.cpp.o
+[369/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/AsmWriterInst.cpp.o
+[370/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenHwModes.cpp.o
+[371/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/GlobalISelMatchTable.cpp.o
+[372/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenInstAlias.cpp.o
+[373/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenInstruction.cpp.o
+[374/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenDAGPatterns.cpp.o
+[375/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenRegisters.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Common/CodeGenRegisters.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/utils/TableGen/Common/CodeGenRegisters.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In member function ‘unsigned int llvm::CodeGenRegister::getWeight(const llvm::CodeGenRegBank&) const’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h: In function ‘bool normalizeWeight(llvm::CodeGenRegister*, std::vector<{anonymous}::UberRegSet>&, std::vector<{anonymous}::UberRegSet*>&, llvm::BitVector&, llvm::CodeGenRegister::RegUnitList&, llvm::CodeGenRegBank&)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:130:15: warning: array subscript 2 is above array bounds of ‘const BitWord [2]’ {aka ‘const long unsigned int [2]’} [-Warray-bounds]
+  130 |       if (Bits[i] != 0)
+      |           ~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/SparseBitVector.h:55:11: note: while referencing ‘llvm::SparseBitVectorElement<128>::Bits’
+   55 |   BitWord Bits[BITWORDS_PER_ELEMENT];
+      |           ^~~~
+[376/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenSchedule.cpp.o
+[377/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/InfoByHwMode.cpp.o
+[378/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/Types.cpp.o
+[379/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenTarget.cpp.o
+[380/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/DAGISelMatcher.cpp.o
+[381/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/OptEmitter.cpp.o
+[382/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/SubtargetFeatureInfo.cpp.o
+[383/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/PredicateExpander.cpp.o
+[384/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/Utils.cpp.o
+[385/3197] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/BitstreamRemarkSerializer.cpp.o
+[386/3197] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/Remark.cpp.o
+[387/3197] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkFormat.cpp.o
+[388/3197] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/VarLenCodeEmitterGen.cpp.o
+[389/3197] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkLinker.cpp.o
+[390/3197] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkSerializer.cpp.o
+[391/3197] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkStringTable.cpp.o
+[392/3197] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkStreamer.cpp.o
+[393/3197] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/YAMLRemarkParser.cpp.o
+[394/3197] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/YAMLRemarkSerializer.cpp.o
+[395/3197] Building CXX object lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFParser.cpp.o
+[396/3197] Building CXX object lib/DebugInfo/BTF/CMakeFiles/LLVMDebugInfoBTF.dir/BTFContext.cpp.o
+[397/3197] Linking CXX static library lib/libLLVMDebugInfoBTF.a
+[398/3197] Building PPCGenTargetFeatures.inc...
+[399/3197] Linking CXX executable bin/llvm-tblgen
+[400/3197] Building ARMTargetParserDef.inc...
+[401/3197] Building AArch64TargetParserDef.inc...
+[402/3197] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkParser.cpp.o
+FAILED: lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkParser.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Remarks -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkParser.cpp.o -MF lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkParser.cpp.o.d -o lib/Remarks/CMakeFiles/LLVMRemarks.dir/RemarkParser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks/RemarkParser.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks/RemarkParser.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks/BitstreamRemarkParser.h: In member function ‘llvm::Error llvm::remarks::BitstreamBlockParserHelper<Derived>::parseRecord(unsigned int)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks/BitstreamRemarkParser.h:73:62: error: cannot convert ‘unsigned int’ to ‘llvm::StringRef’
+   73 |   Error parseRecord(unsigned Code) { return unexpectedRecord(Code); }
+      |                                                              ^~~~
+      |                                                              |
+      |                                                              unsigned int
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks/BitstreamRemarkParser.h:60:36: note:   initializing argument 1 of ‘llvm::Error llvm::remarks::BitstreamBlockParserHelperBase::unexpectedRecord(llvm::StringRef)’
+   60 |   Error unexpectedRecord(StringRef RecordName);
+      |                          ~~~~~~~~~~^~~~~~~~~~
+[403/3197] Building CXX object lib/Remarks/CMakeFiles/LLVMRemarks.dir/BitstreamRemarkParser.cpp.o
+FAILED: lib/Remarks/CMakeFiles/LLVMRemarks.dir/BitstreamRemarkParser.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Remarks -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Remarks/CMakeFiles/LLVMRemarks.dir/BitstreamRemarkParser.cpp.o -MF lib/Remarks/CMakeFiles/LLVMRemarks.dir/BitstreamRemarkParser.cpp.o.d -o lib/Remarks/CMakeFiles/LLVMRemarks.dir/BitstreamRemarkParser.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks/BitstreamRemarkParser.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks/BitstreamRemarkParser.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks/BitstreamRemarkParser.h: In member function ‘llvm::Error llvm::remarks::BitstreamBlockParserHelper<Derived>::parseRecord(unsigned int)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks/BitstreamRemarkParser.h:73:62: error: cannot convert ‘unsigned int’ to ‘llvm::StringRef’
+   73 |   Error parseRecord(unsigned Code) { return unexpectedRecord(Code); }
+      |                                                              ^~~~
+      |                                                              |
+      |                                                              unsigned int
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Remarks/BitstreamRemarkParser.h:60:36: note:   initializing argument 1 of ‘llvm::Error llvm::remarks::BitstreamBlockParserHelperBase::unexpectedRecord(llvm::StringRef)’
+   60 |   Error unexpectedRecord(StringRef RecordName);
+      |                          ~~~~~~~~~~^~~~~~~~~~
+[404/3197] Building X86GenExegesis.inc...
+[405/3197] Building X86GenCallingConv.inc...
+[406/3197] Building RISCVTargetParserDef.inc...
+[407/3197] Building X86GenRegisterBank.inc...
+[408/3197] Building X86GenMnemonicTables.inc...
+[409/3197] Building X86GenAsmWriter.inc...
+[410/3197] Building X86GenAsmWriter1.inc...
+[411/3197] Building X86GenFoldTables.inc...
+[412/3197] Building X86GenDisassemblerTables.inc...
+[413/3197] Building X86GenAsmMatcher.inc...
+[414/3197] Building X86GenInstrMapping.inc...
+[415/3197] Building X86GenGlobalISel.inc...
+[416/3197] Building X86GenFastISel.inc...
+[417/3197] Building X86GenDAGISel.inc...
+[418/3197] Building X86GenInstrInfo.inc...
+[419/3197] Building CXX object tools/clang/utils/TableGen/CMakeFiles/clang-tblgen.dir/ClangAttrEmitter.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+44.16user 3.43system 0:05.83elapsed 815%CPU (0avgtext+0avgdata 721240maxresident)k
+0inputs+287776outputs (1965major+2499029minor)pagefaults 0swaps
