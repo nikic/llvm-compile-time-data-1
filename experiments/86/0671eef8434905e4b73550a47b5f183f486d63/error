@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2362/3202] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCCodeEmitter.cpp.o
+[2363/3202] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MachObjectWriter.cpp.o
+[2364/3202] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MnemonicTables.cpp.o
+[2365/3202] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ELFObjectWriter.cpp.o
+[2366/3202] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFObjectWriter.cpp.o
+[2367/3202] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFStreamer.cpp.o
+[2368/3202] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFTargetStreamer.cpp.o
+[2369/3202] Building CXX object lib/Target/X86/TargetInfo/CMakeFiles/LLVMX86Info.dir/X86TargetInfo.cpp.o
+[2370/3202] Linking CXX static library lib/libLLVMX86Info.a
+[2371/3202] Linking CXX static library lib/libLLVMProfileData.a
+[2372/3202] Linking CXX static library lib/libLLVMX86Disassembler.a
+[2373/3202] Linking CXX static library lib/libLLVMX86Desc.a
+[2374/3202] Linking CXX static library lib/libLLVMX86AsmParser.a
+[2375/3202] Linking CXX static library lib/libLLVMAnalysis.a
+[2376/3202] Building CXX object tools/clang/lib/Basic/CMakeFiles/obj.clangBasic.dir/DiagnosticIDs.cpp.o
+[2377/3202] Linking CXX static library lib/libLLVMBitWriter.a
+[2378/3202] Linking CXX static library lib/libLLVMIRPrinter.a
+[2379/3202] Linking CXX static library lib/libLLVMCoverage.a
+[2380/3202] Linking CXX static library lib/libLLVMCGData.a
+[2381/3202] Linking CXX static library lib/libLLVMFrontendAtomic.a
+[2382/3202] Linking CXX static library lib/libLLVMSandboxIR.a
+[2383/3202] Linking CXX static library lib/libLLVMTarget.a
+[2384/3202] Linking CXX static library lib/libLLVMTextAPIBinaryReader.a
+[2385/3202] Linking CXX static library lib/libLLVMDlltoolDriver.a
+[2386/3202] Linking CXX static library lib/libLLVMTransformUtils.a
+[2387/3202] Linking CXX static library lib/libLLVMLibDriver.a
+[2388/3202] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDecl.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDecl.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDecl.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDecl.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDecl.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseDecl.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseDecl.cpp:23:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2389/3202] Linking CXX static library lib/libLLVMFrontendOffloading.a
+[2390/3202] Linking CXX static library lib/libLLVMInstrumentation.a
+[2391/3202] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDeclCXX.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDeclCXX.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDeclCXX.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDeclCXX.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseDeclCXX.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseDeclCXX.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseDeclCXX.cpp:24:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2392/3202] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseCXXInlineMethods.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseCXXInlineMethods.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseCXXInlineMethods.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseCXXInlineMethods.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseCXXInlineMethods.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseCXXInlineMethods.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseCXXInlineMethods.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2393/3202] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSL.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSL.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSL.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSL.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSL.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseHLSL.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseHLSL.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2394/3202] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSLRootSignature.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSLRootSignature.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSLRootSignature.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSLRootSignature.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseHLSLRootSignature.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseHLSLRootSignature.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseHLSLRootSignature.cpp:12:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2395/3202] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseAST.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseAST.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseAST.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseAST.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseAST.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseAST.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseAST.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2396/3202] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExpr.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExpr.cpp:25:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2397/3202] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExprCXX.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExprCXX.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExprCXX.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2398/3202] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseInit.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseInit.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseInit.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseInit.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseInit.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseInit.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseInit.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2399/3202] Building CXX object tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTUnit.cpp.o
+FAILED: tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTUnit.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Frontend -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTUnit.cpp.o -MF tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTUnit.cpp.o.d -o tools/clang/lib/Frontend/CMakeFiles/obj.clangFrontend.dir/ASTUnit.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/ASTUnit.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Analysis/CFG.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Analysis/AnalysisDeclContext.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Analysis/PathDiagnostic.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/StaticAnalyzer/Core/AnalyzerOptions.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/CompilerInvocation.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Frontend/CompilerInstance.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Frontend/ASTUnit.cpp:39:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2400/3202] Building AArch64GenSubtargetInfo.inc...
+[2401/3202] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CodeGenFunction.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2402/3202] Building AArch64GenInstrInfo.inc...
+[2403/3202] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBlocks.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CodeGenFunction.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBlocks.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBlocks.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2404/3202] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseObjc.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseObjc.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseObjc.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseObjc.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseObjc.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseObjc.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseObjc.cpp:20:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2405/3202] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenMP.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenMP.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenMP.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenMP.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenMP.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseOpenMP.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseOpenMP.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4680:13: error: explicit specialization in non-namespace scope ‘class clang::ConstantTemplateParamCastExpr’
+ 4680 |   template <>
+      |             ^
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:4681:22: error: template-id ‘getTrailingObjectsNonStrict<clang::CXXBaseSpecifier*>’ in declaration of primary template
+ 4681 |   CXXBaseSpecifier **getTrailingObjectsNonStrict<CXXBaseSpecifier *>() {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:450 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+213.11user 16.43system 0:18.20elapsed 1260%CPU (0avgtext+0avgdata 1144540maxresident)k
+0inputs+1764504outputs (3632major+9486097minor)pagefaults 0swaps
