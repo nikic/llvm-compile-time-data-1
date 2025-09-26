@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2865/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ExportTrie.cpp.o
+[2866/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ICF.cpp.o
+[2867/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o
+[2868/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputFiles.cpp.o
+[2869/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/LinkerOptimizationHints.cpp.o
+[2870/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/LTO.cpp.o
+[2871/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MapFile.cpp.o
+[2872/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MarkLive.cpp.o
+[2873/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSection.cpp.o
+[2874/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ObjC.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ObjC.cpp:723:1: warning: ‘{anonymous}::ObjcCategoryMerger::PointerListInfo {anonymous}::ObjcCategoryMerger::parseProtocolListInfo(const lld::macho::ConcatInputSection*, uint32_t, {anonymous}::ObjcCategoryMerger::SourceLanguage)’ defined but not used [-Wunused-function]
+  723 | ObjcCategoryMerger::parseProtocolListInfo(const ConcatInputSection *isec,
+      | ^~~~~~~~~~~~~~~~~~
+[2875/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSegment.cpp.o
+[2876/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Relocations.cpp.o
+[2877/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/BPSectionOrderer.cpp.o
+[2878/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SectionPriorities.cpp.o
+[2879/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Sections.cpp.o
+[2880/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SymbolTable.cpp.o
+[2881/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Symbols.cpp.o
+[2882/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Target.cpp.o
+[2883/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SyntheticSections.cpp.o
+[2884/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/UnwindInfoSection.cpp.o
+[2885/3204] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Writer.cpp.o
+[2886/3204] Building CXX object tools/lld/MinGW/CMakeFiles/lldMinGW.dir/Driver.cpp.o
+[2887/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Driver.cpp.o
+[2888/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/LTO.cpp.o
+[2889/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MapFile.cpp.o
+[2890/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputFiles.cpp.o
+[2891/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MarkLive.cpp.o
+[2892/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSections.cpp.o
+[2893/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSegment.cpp.o
+[2894/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Relocations.cpp.o
+[2895/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SymbolTable.cpp.o
+[2896/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Symbols.cpp.o
+[2897/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SyntheticSections.cpp.o
+[2898/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Writer.cpp.o
+[2899/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/Hexagon.cpp.o
+[2900/3204] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/WriterUtils.cpp.o
+[2901/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/RISCV.cpp.o
+[2902/3204] Linking CXX executable bin/llvm-ar
+[2903/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/NVPTX.cpp.o
+[2904/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/PPC.cpp.o
+[2905/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/SPIR.cpp.o
+[2906/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/SystemZ.cpp.o
+[2907/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/WebAssembly.cpp.o
+[2908/3204] Generating ../../bin/llvm-ranlib
+[2909/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/X86.cpp.o
+[2910/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetInfo.cpp.o
+[2911/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/AArch64.cpp.o
+[2912/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/AMDGPU.cpp.o
+[2913/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/ARC.cpp.o
+[2914/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/InterpState.cpp.o
+[2915/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/ARM.cpp.o
+[2916/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/AVR.cpp.o
+[2917/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/BPF.cpp.o
+[2918/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/DirectX.cpp.o
+[2919/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/CSKY.cpp.o
+[2920/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/Lanai.cpp.o
+[2921/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/LoongArch.cpp.o
+[2922/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/M68k.cpp.o
+[2923/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/Hexagon.cpp.o
+[2924/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/MSP430.cpp.o
+[2925/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/Mips.cpp.o
+[2926/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/NVPTX.cpp.o
+[2927/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/PPC.cpp.o
+[2928/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/SPIR.cpp.o
+[2929/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/Sparc.cpp.o
+[2930/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/SystemZ.cpp.o
+[2931/3204] Building CXX object lib/Target/AArch64/CMakeFiles/LLVMAArch64CodeGen.dir/AArch64PBQPRegAlloc.cpp.o
+[2932/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/TCE.cpp.o
+[2933/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/VE.cpp.o
+[2934/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/RISCV.cpp.o
+[2935/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/WebAssembly.cpp.o
+[2936/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TrapReasonBuilder.cpp.o
+[2937/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/X86.cpp.o
+[2938/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/XCore.cpp.o
+[2939/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CFGReachabilityAnalysis.cpp.o
+[2940/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/VarBypassDetector.cpp.o
+[2941/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/BodyFarm.cpp.o
+[2942/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CalledOnceCheck.cpp.o
+[2943/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CFG.cpp.o
+[2944/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/AnalysisDeclContext.cpp.o
+[2945/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CFGStmtMap.cpp.o
+[2946/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CallGraph.cpp.o
+[2947/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CloneDetection.cpp.o
+[2948/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CocoaConventions.cpp.o
+[2949/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/ConstructionContext.cpp.o
+[2950/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/CodeInjector.cpp.o
+[2951/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/Consumed.cpp.o
+[2952/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/Dominators.cpp.o
+[2953/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/ExprMutationAnalyzer.cpp.o
+[2954/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/FixitUtil.cpp.o
+[2955/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/IntervalPartition.cpp.o
+[2956/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/LifetimeAnnotations.cpp.o
+[2957/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/IssueHash.cpp.o
+[2958/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/LifetimeSafety.cpp.o
+[2959/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/LiveVariables.cpp.o
+[2960/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/MacroExpansionContext.cpp.o
+[2961/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/PostOrderCFGView.cpp.o
+[2962/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/ObjCNoReturn.cpp.o
+[2963/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/PathDiagnostic.cpp.o
+[2964/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/ProgramPoint.cpp.o
+[2965/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/ThreadSafetyCommon.cpp.o
+[2966/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/RetainSummaryManager.cpp.o
+[2967/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/ThreadSafety.cpp.o
+[2968/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/ThreadSafetyTIL.cpp.o
+[2969/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/ReachableCode.cpp.o
+[2970/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/ThreadSafetyLogical.cpp.o
+[2971/3204] Building CXX object tools/clang/lib/Edit/CMakeFiles/obj.clangEdit.dir/EditedSource.cpp.o
+[2972/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/UninitializedValues.cpp.o
+[2973/3204] Building CXX object tools/clang/lib/Analysis/CMakeFiles/obj.clangAnalysis.dir/UnsafeBufferUsage.cpp.o
+[2974/3204] Building CXX object tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/APIIgnoresList.cpp.o
+[2975/3204] Building CXX object tools/clang/lib/Edit/CMakeFiles/obj.clangEdit.dir/RewriteObjCFoundationAPI.cpp.o
+[2976/3204] Building CXX object tools/clang/lib/Edit/CMakeFiles/obj.clangEdit.dir/Commit.cpp.o
+[2977/3204] Building CXX object tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/Serialization/SymbolGraphSerializer.cpp.o
+[2978/3204] Building CXX object tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/ExtractAPIConsumer.cpp.o
+[2979/3204] Building CXX object tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/TypedefUnderlyingTypeResolver.cpp.o
+[2980/3204] Building CXX object tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/DeclarationFragments.cpp.o
+[2981/3204] Linking CXX static library lib/libLLVMAArch64CodeGen.a
+[2982/3204] Building CXX object tools/clang/lib/Rewrite/CMakeFiles/obj.clangRewrite.dir/HTMLRewrite.cpp.o
+[2983/3204] Building CXX object tools/clang/lib/ExtractAPI/CMakeFiles/obj.clangExtractAPI.dir/API.cpp.o
+[2984/3204] Building CXX object tools/clang/lib/Rewrite/CMakeFiles/obj.clangRewrite.dir/TokenRewriter.cpp.o
+[2985/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/Action.cpp.o
+[2986/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/DriverOptions.cpp.o
+[2987/3204] Building CXX object tools/clang/lib/Rewrite/CMakeFiles/obj.clangRewrite.dir/Rewriter.cpp.o
+[2988/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/Driver.cpp.o
+[2989/3204] Linking CXX static library lib/libclangRewrite.a
+[2990/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/Job.cpp.o
+[2991/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/Distro.cpp.o
+[2992/3204] Linking CXX static library lib/liblldWasm.a
+[2993/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/MultilibBuilder.cpp.o
+[2994/3204] Linking CXX static library lib/liblldCOFF.a
+[2995/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/OffloadBundler.cpp.o
+[2996/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/OptionUtils.cpp.o
+[2997/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/Multilib.cpp.o
+[2998/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/Compilation.cpp.o
+[2999/3204] Linking CXX static library lib/liblldMinGW.a
+[3000/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/Phases.cpp.o
+[3001/3204] Linking CXX static library lib/liblldMachO.a
+[3002/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/SanitizerArgs.cpp.o
+[3003/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/Tool.cpp.o
+[3004/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Pointer.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Pointer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Pointer.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Pointer.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Pointer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp: In member function ‘void clang::interp::Pointer::initializeElement(clang::interp::InterpState&, unsigned int) const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp:592:27: error: invalid use of incomplete type ‘class clang::interp::Program’
+  592 |         IM = (InitMap *)S.P.Allocate(InitMap::allocBytes(NumElems),
+      |                         ~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/FunctionPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Function.h:28:7: note: forward declaration of ‘class clang::interp::Program’
+   28 | class Program;
+      |       ^~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp:186:17: warning: ‘clang::QualType getPointeeOrElemType(clang::QualType)’ defined but not used [-Wunused-function]
+  186 | static QualType getPointeeOrElemType(QualType T) {
+      |                 ^~~~~~~~~~~~~~~~~~~~
+[3005/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/Arch/AArch64.cpp.o
+[3006/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChain.cpp.o
+[3007/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/Arch/ARM.cpp.o
+[3008/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/Arch/M68k.cpp.o
+[3009/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/Arch/CSKY.cpp.o
+[3010/3204] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/Arch/LoongArch.cpp.o
+[3011/3204] Linking CXX static library lib/liblldELF.a
+[3012/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/MemberPointer.cpp.o
+[3013/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/State.cpp.o
+[3014/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Program.cpp.o
+[3015/3204] Linking CXX shared module lib/LLVMgold.so
+[3016/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Compiler.cpp.o
+[3017/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Disasm.cpp.o
+[3018/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o
+[3019/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o
+[3020/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvalEmitter.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFixedPoint.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/APValue.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:9:
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:24:21,
+    inlined from ‘clang::APValue clang::interp::Boolean::toAPValue(const clang::ASTContext&) const’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Boolean.h:55:72,
+    inlined from ‘void clang::interp::EvalEmitter::updateGlobalTemporaries()’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:337:7:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:192:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  192 |       delete[] U.pVal;
+      |                  ^~~~
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:24:21,
+    inlined from ‘clang::APValue clang::interp::Boolean::toAPValue(const clang::ASTContext&) const’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Boolean.h:55:72,
+    inlined from ‘bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Bool]’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:185:23,
+    inlined from ‘bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Bool]’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:180:33,
+    inlined from ‘bool clang::interp::EvalEmitter::emitRet(clang::interp::PrimType, clang::interp::SourceInfo)’ at /tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:31876:7:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:192:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  192 |       delete[] U.pVal;
+      |                  ^~~~
+[3021/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+290.79user 21.73system 0:30.26elapsed 1032%CPU (0avgtext+0avgdata 1317968maxresident)k
+16inputs+3429352outputs (24930major+11340945minor)pagefaults 0swaps
