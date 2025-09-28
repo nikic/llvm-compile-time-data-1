@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGOpenMPRuntime.h:1054:24: warning: ‘virtual llvm::Value* clang::CodeGen::CGOpenMPRuntime::emitMessageClause(clang::CodeGen::CodeGenFunction&, const clang::OMPMessageClause*)’ was hidden [-Woverloaded-virtual]
+ 1054 |   virtual llvm::Value *emitMessageClause(CodeGenFunction &CGF,
+      |                        ^~~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CodeGenModule.cpp:24:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGOpenMPRuntimeGPU.h:166:16: note:   by ‘virtual llvm::Value* clang::CodeGen::CGOpenMPRuntimeGPU::emitMessageClause(clang::CodeGen::CodeGenFunction&, const clang::Expr*, clang::SourceLocation)’
+  166 |   llvm::Value *emitMessageClause(CodeGenFunction &CGF, const Expr *Message,
+      |                ^~~~~~~~~~~~~~~~~
+[2891/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ConstantInitBuilder.cpp.o
+[2892/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CodeGenTypes.cpp.o
+[2893/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CodeGenPGO.cpp.o
+[2894/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CodeGenTBAA.cpp.o
+[2895/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CoverageMappingGen.cpp.o
+[2896/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ItaniumCXXABI.cpp.o
+[2897/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/LinkInModulesPass.cpp.o
+[2898/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/HLSLBufferLayoutBuilder.cpp.o
+[2899/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ModuleBuilder.cpp.o
+[2900/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/MacroPPCallbacks.cpp.o
+[2901/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/PatternInit.cpp.o
+[2902/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/MicrosoftCXXABI.cpp.o
+[2903/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/SanitizerMetadata.cpp.o
+[2904/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/SwiftCallingConv.cpp.o
+[2905/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ObjectFilePCHContainerWriter.cpp.o
+[2906/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/Hexagon.cpp.o
+[2907/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/ARM.cpp.o
+[2908/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/AMDGPU.cpp.o
+[2909/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/NVPTX.cpp.o
+[2910/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/DirectX.cpp.o
+[2911/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/PPC.cpp.o
+[2912/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/RISCV.cpp.o
+[2913/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/SPIR.cpp.o
+[2914/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/SystemZ.cpp.o
+[2915/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/WebAssembly.cpp.o
+[2916/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetInfo.cpp.o
+[2917/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/TargetBuiltins/X86.cpp.o
+[2918/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/AArch64.cpp.o
+[2919/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/ARC.cpp.o
+[2920/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/AMDGPU.cpp.o
+[2921/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/AVR.cpp.o
+[2922/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/BPF.cpp.o
+[2923/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/CSKY.cpp.o
+[2924/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/ARM.cpp.o
+[2925/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/LoongArch.cpp.o
+[2926/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/DirectX.cpp.o
+[2927/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/Hexagon.cpp.o
+[2928/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/Lanai.cpp.o
+[2929/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/Mips.cpp.o
+[2930/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/M68k.cpp.o
+[2931/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/MSP430.cpp.o
+[2932/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/NVPTX.cpp.o
+[2933/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/SPIR.cpp.o
+[2934/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/RISCV.cpp.o
+[2935/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Pointer.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Pointer.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Pointer.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Pointer.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Pointer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h: In member function ‘bool clang::interp::Pointer::isZero() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:270:12: warning: enumeration value ‘Typeid’ not handled in switch [-Wswitch]
+  270 |     switch (StorageKind) {
+      |            ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp: In member function ‘size_t clang::interp::Pointer::computeOffsetForComparison() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp:403:8: error: ‘Storge’ has not been declared
+  403 |   case Storge::Degen:
+      |        ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp:393:10: warning: enumeration value ‘Degen’ not handled in switch [-Wswitch]
+  393 |   switch (StorageKind) {
+      |          ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h: In member function ‘bool clang::interp::Pointer::isZero() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:280:3: warning: control reaches end of non-void function [-Wreturn-type]
+  280 |   }
+      |   ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.cpp:186:17: warning: ‘clang::QualType getPointeeOrElemType(clang::QualType)’ defined but not used [-Wunused-function]
+  186 | static QualType getPointeeOrElemType(QualType T) {
+      |                 ^~~~~~~~~~~~~~~~~~~~
+[2936/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/VE.cpp.o
+[2937/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/WebAssembly.cpp.o
+[2938/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/PPC.cpp.o
+[2939/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/Sparc.cpp.o
+[2940/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/TCE.cpp.o
+[2941/3204] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/Targets/SystemZ.cpp.o
+[2942/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/State.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Program.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/State.cpp:11:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h: In member function ‘bool clang::interp::Pointer::isZero() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:270:12: warning: enumeration value ‘Typeid’ not handled in switch [-Wswitch]
+  270 |     switch (StorageKind) {
+      |            ^
+[2943/3204] Linking CXX shared module lib/LLVMgold.so
+[2944/3204] Linking CXX executable bin/lld
+[2945/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Program.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Program.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Program.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h: In member function ‘bool clang::interp::Pointer::isZero() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:270:12: warning: enumeration value ‘Typeid’ not handled in switch [-Wswitch]
+  270 |     switch (StorageKind) {
+      |            ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:280:3: warning: control reaches end of non-void function [-Wreturn-type]
+  280 |   }
+      |   ^
+[2946/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/MemberPointer.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/MemberPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/MemberPointer.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h: In member function ‘bool clang::interp::Pointer::isZero() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:270:12: warning: enumeration value ‘Typeid’ not handled in switch [-Wswitch]
+  270 |     switch (StorageKind) {
+      |            ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:280:3: warning: control reaches end of non-void function [-Wreturn-type]
+  280 |   }
+      |   ^
+[2947/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Compiler.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/MemberPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/ByteCodeEmitter.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Compiler.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Compiler.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h: In member function ‘bool clang::interp::Pointer::isZero() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:270:12: warning: enumeration value ‘Typeid’ not handled in switch [-Wswitch]
+  270 |     switch (StorageKind) {
+      |            ^
+[2948/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Disasm.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/MemberPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Disasm.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h: In member function ‘bool clang::interp::Pointer::isZero() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:270:12: warning: enumeration value ‘Typeid’ not handled in switch [-Wswitch]
+  270 |     switch (StorageKind) {
+      |            ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:280:3: warning: control reaches end of non-void function [-Wreturn-type]
+  280 |   }
+      |   ^
+[2949/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/MemberPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ExprConstant.cpp:35:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h: In member function ‘bool clang::interp::Pointer::isZero() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:270:12: warning: enumeration value ‘Typeid’ not handled in switch [-Wswitch]
+  270 |     switch (StorageKind) {
+      |            ^
+[2950/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/MemberPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTContext.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h: In member function ‘bool clang::interp::Pointer::isZero() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:270:12: warning: enumeration value ‘Typeid’ not handled in switch [-Wswitch]
+  270 |     switch (StorageKind) {
+      |            ^
+[2951/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvalEmitter.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/MemberPointer.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpStack.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Context.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpState.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h: In member function ‘bool clang::interp::Pointer::isZero() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:270:12: warning: enumeration value ‘Typeid’ not handled in switch [-Wswitch]
+  270 |     switch (StorageKind) {
+      |            ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:280:3: warning: control reaches end of non-void function [-Wreturn-type]
+  280 |   }
+      |   ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFixedPoint.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/APValue.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:9:
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:24:21,
+    inlined from ‘clang::APValue clang::interp::Boolean::toAPValue(const clang::ASTContext&) const’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Boolean.h:55:72,
+    inlined from ‘void clang::interp::EvalEmitter::updateGlobalTemporaries()’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:337:7:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:192:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  192 |       delete[] U.pVal;
+      |                  ^~~~
+In destructor ‘llvm::APInt::~APInt()’,
+    inlined from ‘llvm::APSInt::~APSInt()’ at /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APSInt.h:24:21,
+    inlined from ‘clang::APValue clang::interp::Boolean::toAPValue(const clang::ASTContext&) const’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Boolean.h:55:72,
+    inlined from ‘bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Bool]’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:185:23,
+    inlined from ‘bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Bool]’ at /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvalEmitter.cpp:180:33,
+    inlined from ‘bool clang::interp::EvalEmitter::emitRet(clang::interp::PrimType, clang::interp::SourceInfo)’ at /tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:31876:7:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APInt.h:192:18: warning: ‘void operator delete [](void*)’ called on a pointer to an unallocated object ‘1’ [-Wfree-nonheap-object]
+  192 |       delete[] U.pVal;
+      |                  ^~~~
+[2952/3204] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/InterpFrame.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h: In member function ‘bool clang::interp::Pointer::isZero() const’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:270:12: warning: enumeration value ‘Typeid’ not handled in switch [-Wswitch]
+  270 |     switch (StorageKind) {
+      |            ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Pointer.h:280:3: warning: control reaches end of non-void function [-Wreturn-type]
+  280 |   }
+      |   ^
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+291.60user 21.33system 0:30.47elapsed 1026%CPU (0avgtext+0avgdata 1304764maxresident)k
+8inputs+3565144outputs (47631major+11261783minor)pagefaults 0swaps
