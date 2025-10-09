@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+arg size:   96
+rvo:        0
+this arg:   1
+0     GetPtrThisField    16 
+16    DupPtr             
+24    GetParamPtr        48 
+40    GetPtrFieldPop     16 
+56    Call               0x560b992accb0 0 
+80    FinishInit         
+88    FinishInitPop      
+96    RetVoid            
+llvm::ArrayRef<unsigned char>::ArrayRef 0x560b992accb0
+frame size: 0
+arg size:   96
+rvo:        0
+this arg:   1
+0      GetParamPtr            48 
+16     GetPtrFieldPop         16 
+32     LoadPopPtr             
+40     InitThisFieldPtr       16 
+56     GetParamPtr            48 
+72     GetPtrFieldPop         80 
+88     LoadPopUint64          
+96     InitThisFieldUint64    80 
+112    RetVoid                
+CheckLoad: (Block) 0x560b99d79b50 {32, 32, 104}
+llvm::Error::operator bool 0x560b95075650
+frame size: 0
+arg size:   48
+rvo:        0
+this arg:   1
+llvm::Error::operator bool 0x560b95075650
+frame size: 0
+arg size:   48
+rvo:        0
+this arg:   1
+llvm::Error::operator bool 0x560b95075650
+frame size: 0
+arg size:   48
+rvo:        0
+this arg:   1
+bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Ptr]
+ltor
+final load!
+std::_Sp_make_shared_tag::_S_ti 0x560b947610f0
+frame size: 0
+arg size:   0
+rvo:        0
+this arg:   0
+std::_Sp_make_shared_tag::_S_ti 0x560b947610f0
+frame size: 0
+arg size:   0
+rvo:        0
+this arg:   0
+std::_Sp_make_shared_tag::_S_eq 0x560b994dae50
+frame size: 0
+arg size:   48
+rvo:        0
+this arg:   0
+CheckLoad: (Block) 0x560b99d79cd0 {rootptr(0), 0, 456}
+bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Ptr]
+llvm::Error::operator bool 0x560b95075650
+frame size: 0
+arg size:   48
+rvo:        0
+this arg:   1
+CheckLoad: (Block) 0x560b99d7a510 {rootptr(0), 0, 8}
+CheckLoad: (Block) 0x560b98e57e70 {rootptr(0), 0, 8}
+CheckLoad: (Block) 0x560b98e57e70 {rootptr(0), 0, 8}
+CheckLoad: (Block) 0x560b98e57e70 {rootptr(0), 0, 8}
+CheckLoad: (Block) 0x560b98e57e70 {rootptr(0), 0, 8}
+bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Ptr]
+CheckLoad: (Block) 0x560b99d7a620 {rootptr(0), 0, 312}
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+CheckLoad: (Block) 0x560b99d7a870 {32, 32, 272}
+bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Ptr]
+ltor
+final load!
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+clang::UnsignedOrNone clang::interp::Compiler<Emitter>::allocateLocal(clang::interp::DeclTy&&, clang::QualType, const clang::ValueDecl*, clang::interp::ScopeKind, bool) [with Emitter = clang::interp::EvalEmitter; clang::interp::DeclTy = llvm::PointerUnion<const clang::Decl*, const clang::Expr*>]
+llvm::codeview::CVRecord<llvm::codeview::SymbolKind>::CVRecord 0x560b992ac480
+frame size: 0
+arg size:   96
+rvo:        0
+this arg:   1
+0     GetPtrThisField    16 
+16    DupPtr             
+24    GetParamPtr        48 
+40    GetPtrFieldPop     16 
+56    Call               0x560b992accb0 0 
+80    FinishInit         
+88    FinishInitPop      
+96    RetVoid            
+llvm::ArrayRef<unsigned char>::ArrayRef 0x560b992accb0
+frame size: 0
+arg size:   96
+rvo:        0
+this arg:   1
+0      GetParamPtr            48 
+16     GetPtrFieldPop         16 
+32     LoadPopPtr             
+40     InitThisFieldPtr       16 
+56     GetParamPtr            48 
+72     GetPtrFieldPop         80 
+88     LoadPopUint64          
+96     InitThisFieldUint64    80 
+112    RetVoid                
+CheckLoad: (Block) 0x560b99d7aa50 {32, 32, 104}
+llvm::Error::operator bool 0x560b95075650
+frame size: 0
+arg size:   48
+rvo:        0
+this arg:   1
+llvm::Error::operator bool 0x560b95075650
+frame size: 0
+arg size:   48
+rvo:        0
+this arg:   1
+llvm::Error::operator bool 0x560b95075650
+frame size: 0
+arg size:   48
+rvo:        0
+this arg:   1
+bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Ptr]
+ltor
+final load!
+std::_Sp_make_shared_tag::_S_ti 0x560b947610f0
+frame size: 0
+arg size:   0
+rvo:        0
+this arg:   0
+std::_Sp_make_shared_tag::_S_ti 0x560b947610f0
+frame size: 0
+arg size:   0
+rvo:        0
+this arg:   0
+std::_Sp_make_shared_tag::_S_eq 0x560b994dae50
+frame size: 0
+arg size:   48
+rvo:        0
+this arg:   0
+CheckLoad: (Block) 0x560b99d7abd0 {rootptr(0), 0, 328}
+bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Ptr]
+llvm::Error::operator bool 0x560b95075650
+frame size: 0
+arg size:   48
+rvo:        0
+this arg:   1
+CheckLoad: (Block) 0x560b99e7b1f0 {rootptr(0), 0, 8}
+CheckLoad: (Block) 0x560b97eaf4c0 {rootptr(0), 0, 8}
+CheckLoad: (Block) 0x560b97eaf4c0 {rootptr(0), 0, 8}
+CheckLoad: (Block) 0x560b97eaf4c0 {rootptr(0), 0, 8}
+CheckLoad: (Block) 0x560b97eaf4c0 {rootptr(0), 0, 8}
+bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Ptr]
+CheckLoad: (Block) 0x560b99e7b300 {rootptr(0), 0, 304}
+bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Ptr]
+ltor
+final load!
+std::_Sp_make_shared_tag::_S_ti 0x560b947610f0
+frame size: 0
+arg size:   0
+rvo:        0
+this arg:   0
+std::_Sp_make_shared_tag::_S_ti 0x560b947610f0
+frame size: 0
+arg size:   0
+rvo:        0
+this arg:   0
+std::_Sp_make_shared_tag::_S_eq 0x560b994dae50
+frame size: 0
+arg size:   48
+rvo:        0
+this arg:   0
+CheckLoad: (Block) 0x560b99e7b550 {rootptr(0), 0, 328}
+bool clang::interp::EvalEmitter::emitRet(clang::interp::SourceInfo) [with clang::interp::PrimType <anonymous> = clang::interp::PT_Ptr]
+llvm::yaml::yamlizeMappingEnumInput 0x560b98e710d0
+frame size: 0
+arg size:   96
+rvo:        0
+this arg:   0
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
