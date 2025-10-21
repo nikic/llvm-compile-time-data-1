@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+[32/2948] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+[33/2948] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Caching.cpp.o
+[34/2948] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CodeGenCoverage.cpp.o
+FAILED: lib/Support/CMakeFiles/LLVMSupport.dir/CodeGenCoverage.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/../third-party/siphash/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wno-pass-failed -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -Werror=global-constructors -O3 -DNDEBUG -std=c++17  -fno-exceptions -funwind-tables -fno-rtti -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/CodeGenCoverage.cpp.o -MF lib/Support/CMakeFiles/LLVMSupport.dir/CodeGenCoverage.cpp.o.d -o lib/Support/CMakeFiles/LLVMSupport.dir/CodeGenCoverage.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:49:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:22:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AlignOf.h:26:30: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+   26 |   alignas(Align) char buffer[std::max({sizeof(T), sizeof(Ts)...})];
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:535:7: note: in instantiation of template class 'llvm::AlignedCharArrayUnion<bool, double, long, unsigned long, llvm::StringRef, std::basic_string<char>, llvm::json::Array, llvm::json::Object>' requested here
+  535 |       Union;
+      |       ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AlignOf.h:26:51: note: assignment to dereferenced one-past-the-end pointer is not allowed in a constant expression
+   26 |   alignas(Align) char buffer[std::max({sizeof(T), sizeof(Ts)...})];
+      |                                                   ^~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AlignOf.h:26:23: error: fields must have a constant size: 'variable length array in structure' extension will never be supported
+   26 |   alignas(Align) char buffer[std::max({sizeof(T), sizeof(Ts)...})];
+      |                       ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AlignOf.h:25:32: error: constexpr variable 'Align' must be initialized by a constant expression
+   25 |   static constexpr std::size_t Align = std::max({alignof(T), alignof(Ts)...});
+      |                                ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AlignOf.h:26:11: note: in instantiation of static data member 'llvm::AlignedCharArrayUnion<bool, double, long, unsigned long, llvm::StringRef, std::basic_string<char>, llvm::json::Array, llvm::json::Object>::Align' requested here
+   26 |   alignas(Align) char buffer[std::max({sizeof(T), sizeof(Ts)...})];
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:535:7: note: in instantiation of template class 'llvm::AlignedCharArrayUnion<bool, double, long, unsigned long, llvm::StringRef, std::basic_string<char>, llvm::json::Array, llvm::json::Object>' requested here
+  535 |       Union;
+      |       ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AlignOf.h:25:62: note: assignment to dereferenced one-past-the-end pointer is not allowed in a constant expression
+   25 |   static constexpr std::size_t Align = std::max({alignof(T), alignof(Ts)...});
+      |                                                              ^~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AlignOf.h:26:11: error: 'aligned' attribute requires integer constant
+   26 |   alignas(Align) char buffer[std::max({sizeof(T), sizeof(Ts)...})];
+      |           ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:535:7: note: in instantiation of template class 'llvm::AlignedCharArrayUnion<bool, double, long, unsigned long, llvm::StringRef, std::basic_string<char>, llvm::json::Array, llvm::json::Object>' requested here
+  535 |       Union;
+      |       ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AlignOf.h:26:11: note: initializer of 'Align' is not a constant expression
+   26 |   alignas(Align) char buffer[std::max({sizeof(T), sizeof(Ts)...})];
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/AlignOf.h:25:32: note: declared here
+   25 |   static constexpr std::size_t Align = std::max({alignof(T), alignof(Ts)...});
+      |                                ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:49:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:46:34: error: 'pair' is a private member of 'std::pair<llvm::json::ObjectKey, llvm::json::Value>'
+   46 |   using std::pair<KeyT, ValueT>::pair;
+      |                                  ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:650:14: note: in instantiation of template class 'llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>' requested here
+  650 |       R.first->getSecond().moveFrom(std::move(P.V));
+      |              ^
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_pair.h:452:9: note: declared private here
+  452 |         pair(tuple<_Args1...>&, tuple<_Args2...>&,
+      |         ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:21:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:836:24: error: no member named 'second' in 'llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>'
+  836 |       if (!fromJSON(KV.second, Out[std::string(llvm::StringRef(KV.first))],
+      |                     ~~ ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:836:67: error: no member named 'first' in 'llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>'
+  836 |       if (!fromJSON(KV.second, Out[std::string(llvm::StringRef(KV.first))],
+      |                                                                ~~ ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:837:32: error: no member named 'first' in 'llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>'
+  837 |                     P.field(KV.first)))
+      |                             ~~ ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:706:58: error: no viable conversion from 'StringRef' to 'const Value'
+  706 |   void printString(StringRef Value) override { JOS.value(Value); }
+      |                                                          ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:1020:36: note: passing argument to parameter 'V' here
+ 1020 |   LLVM_ABI void value(const Value &V);
+      |                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:709:26: error: no viable conversion from 'StringRef' to 'const Value'
+  709 |     JOS.attribute(Label, Value);
+      |                          ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:1053:52: note: passing argument to parameter 'Contents' here
+ 1053 |   void attribute(llvm::StringRef Key, const Value& Contents) {
+      |                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:748:33: error: no viable conversion from 'const StringRef' to 'const Value'
+  748 |           JOS.attribute("Name", Flag.Name);
+      |                                 ^~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:1053:52: note: passing argument to parameter 'Contents' here
+ 1053 |   void attribute(llvm::StringRef Key, const Value& Contents) {
+      |                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:790:29: error: no viable conversion from 'StringRef' to 'const Value'
+  790 |       JOS.attribute("Name", Str);
+      |                             ^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:1053:52: note: passing argument to parameter 'Contents' here
+ 1053 |   void attribute(llvm::StringRef Key, const Value& Contents) {
+      |                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:798:32: error: no viable conversion from 'StringRef' to 'const Value'
+  798 |       JOS.attribute("SymName", Symbol);
+      |                                ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:1053:52: note: passing argument to parameter 'Contents' here
+ 1053 |   void attribute(llvm::StringRef Key, const Value& Contents) {
+      |                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:806:29: error: no viable conversion from 'StringRef' to 'const Value'
+  806 |       JOS.attribute("Name", Str);
+      |                             ^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:1053:52: note: passing argument to parameter 'Contents' here
+ 1053 |   void attribute(llvm::StringRef Key, const Value& Contents) {
+      |                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:818:32: error: no viable conversion from 'StringRef' to 'const Value'
+  818 |         JOS.attribute("Value", Str);
+      |                                ^~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:1053:52: note: passing argument to parameter 'Contents' here
+ 1053 |   void attribute(llvm::StringRef Key, const Value& Contents) {
+      |                                                    ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:49:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:48:54: error: invalid use of non-static data member 'first'
+   48 |   KeyT &getFirst() { return std::pair<KeyT, ValueT>::first; }
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:1274:50: note: in instantiation of member function 'llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>::getFirst' requested here
+ 1274 |     while (Ptr != End && (KeyInfoT::isEqual(Ptr->getFirst(), Empty) ||
+      |                                                  ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:1204:10: note: in instantiation of member function 'llvm::DenseMapIterator<llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>>::AdvancePastEmptyBuckets' requested here
+ 1204 |     Iter.AdvancePastEmptyBuckets();
+      |          ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:79:22: note: in instantiation of member function 'llvm::DenseMapIterator<llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>>::makeBegin' requested here
+   79 |     return iterator::makeBegin(buckets(), empty(), *this);
+      |                      ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:115:31: note: in instantiation of member function 'llvm::DenseMapBase<llvm::DenseMap<llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>>, llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>, llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>>::begin' requested here
+  115 |   iterator begin() { return M.begin(); }
+      |                               ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:49:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:49:66: error: invalid use of non-static data member 'first'
+   49 |   const KeyT &getFirst() const { return std::pair<KeyT, ValueT>::first; }
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:1274:50: note: in instantiation of member function 'llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>::getFirst' requested here
+ 1274 |     while (Ptr != End && (KeyInfoT::isEqual(Ptr->getFirst(), Empty) ||
+      |                                                  ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:1204:10: note: in instantiation of member function 'llvm::DenseMapIterator<llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>, llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>, true>::AdvancePastEmptyBuckets' requested here
+ 1204 |     Iter.AdvancePastEmptyBuckets();
+      |          ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:85:28: note: in instantiation of member function 'llvm::DenseMapIterator<llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>, llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>, true>::makeBegin' requested here
+   85 |     return const_iterator::makeBegin(buckets(), empty(), *this);
+      |                            ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:116:43: note: in instantiation of member function 'llvm::DenseMapBase<llvm::DenseMap<llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>>, llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>, llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>>::begin' requested here
+  116 |   const_iterator begin() const { return M.begin(); }
+      |                                           ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:49:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:50:57: error: invalid use of non-static data member 'second'
+   50 |   ValueT &getSecond() { return std::pair<KeyT, ValueT>::second; }
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:324:16: note: in instantiation of member function 'llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>::getSecond' requested here
+  324 |     TheBucket->getSecond().~ValueT();
+      |                ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:134:30: note: in instantiation of member function 'llvm::DenseMapBase<llvm::DenseMap<llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>>, llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>, llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>>::erase' requested here
+  134 |   void erase(iterator I) { M.erase(I); }
+      |                              ^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support/CodeGenCoverage.cpp:19:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ScopedPrinter.h:21:
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:49:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:187:33: error: no matching member function for call to 'doFind'
+  187 |     if (const BucketT *Bucket = doFind(Val))
+      |                                 ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:137:53: note: in instantiation of function template specialization 'llvm::DenseMapBase<llvm::DenseMap<llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>>, llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>, llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>>::find_as<llvm::StringRef>' requested here
+  137 |   const_iterator find(StringRef K) const { return M.find_as(K); }
+      |                                                     ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:594:43: note: candidate function template not viable: 'this' argument has type 'const llvm::DenseMapBase<llvm::DenseMap<llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>>, llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>, llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>>', but method is not marked const
+  594 |   template <typename LookupKeyT> BucketT *doFind(const LookupKeyT &Val) {
+      |                                           ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:571:18: note: candidate template ignored: substitution failure [with LookupKeyT = llvm::StringRef]
+  571 |   const BucketT *doFind(const LookupKeyT &Val) const {
+      |                  ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:472:12: error: placement new expression with a const-qualified argument of type 'const llvm::json::Value *' is not allowed
+  472 |     ::new (&TheBucket->getSecond()) ValueT(std::forward<Ts>(Args)...);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:478:31: note: in instantiation of function template specialization 'llvm::DenseMapBase<llvm::DenseMap<llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>>, llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>, llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>>::lookupOrInsertIntoBucket<const llvm::json::ObjectKey &, std::nullptr_t>' requested here
+  478 |     auto [Bucket, Inserted] = lookupOrInsertIntoBucket(
+      |                               ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:246:12: note: in instantiation of function template specialization 'llvm::DenseMapBase<llvm::DenseMap<llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>>, llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>, llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>>::try_emplace_impl<const llvm::json::ObjectKey &, std::nullptr_t>' requested here
+  246 |     return try_emplace_impl(Key, std::forward<Ts>(Args)...);
+      |            ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:127:14: note: in instantiation of function template specialization 'llvm::DenseMapBase<llvm::DenseMap<llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>>, llvm::json::ObjectKey, llvm::json::Value, llvm::DenseMapInfo<StringRef, void>, llvm::detail::DenseMapPair<llvm::json::ObjectKey, llvm::json::Value>>::try_emplace<std::nullptr_t>' requested here
+  127 |     return M.try_emplace(K, std::forward<Ts>(Args)...);
+      |              ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/JSON.h:648:14: note: in instantiation of function template specialization 'llvm::json::Object::try_emplace<std::nullptr_t>' requested here
+  648 |     auto R = try_emplace(P.K, nullptr);
+      |              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.
+[35/2948] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
