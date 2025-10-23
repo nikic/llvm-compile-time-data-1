@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/RecursiveASTVisitor.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTImporterLookupTable.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:112:7: note: ‘Expr’ declared here as ‘class clang::Expr’
+  112 | class Expr : public ValueStmt {
+      |       ^~~~
+[2424/3219] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGCUDARuntime.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CodeGenFunction.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtOpenACC.h:824:17: error: declaration of ‘const clang::Expr* clang::OpenACCAtomicConstruct::StmtInfo::Expr’ changes meaning of ‘Expr’ [-fpermissive]
+  824 |     const Expr *Expr;
+      |                 ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/GlobalDecl.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCUDARuntime.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:112:7: note: ‘Expr’ declared here as ‘class clang::Expr’
+  112 | class Expr : public ValueStmt {
+      |       ^~~~
+[2425/3219] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/ABIInfo.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/ABIInfo.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CodeGenFunction.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCXXABI.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/ABIInfoImpl.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/ABIInfo.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtOpenACC.h:824:17: error: declaration of ‘const clang::Expr* clang::OpenACCAtomicConstruct::StmtInfo::Expr’ changes meaning of ‘Expr’ [-fpermissive]
+  824 |     const Expr *Expr;
+      |                 ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Attr.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/ABIInfo.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/ABIInfo.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:112:7: note: ‘Expr’ declared here as ‘class clang::Expr’
+  112 | class Expr : public ValueStmt {
+      |       ^~~~
+[2426/3219] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTImporter.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTImporter.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTImporter.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTImporter.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTImporter.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTImporter.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtVisitor.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTImporter.cpp:41:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtOpenACC.h:824:17: error: declaration of ‘const clang::Expr* clang::OpenACCAtomicConstruct::StmtInfo::Expr’ changes meaning of ‘Expr’ [-fpermissive]
+  824 |     const Expr *Expr;
+      |                 ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ExprCXX.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTImporter.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTImporter.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:112:7: note: ‘Expr’ declared here as ‘class clang::Expr’
+  112 | class Expr : public ValueStmt {
+      |       ^~~~
+[2427/3219] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTDumper.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTDumper.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTDumper.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTDumper.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTDumper.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTDumper.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtVisitor.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTNodeTraverser.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTDumper.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTDumper.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtOpenACC.h:824:17: error: declaration of ‘const clang::Expr* clang::OpenACCAtomicConstruct::StmtInfo::Expr’ changes meaning of ‘Expr’ [-fpermissive]
+  824 |     const Expr *Expr;
+      |                 ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTTypeTraits.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTNodeTraverser.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTDumper.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ASTDumper.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:112:7: note: ‘Expr’ declared here as ‘class clang::Expr’
+  112 | class Expr : public ValueStmt {
+      |       ^~~~
+[2428/3219] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGAtomic.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGAtomic.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGAtomic.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGAtomic.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGAtomic.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGAtomic.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CodeGenFunction.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGAtomic.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtOpenACC.h:824:17: error: declaration of ‘const clang::Expr* clang::OpenACCAtomicConstruct::StmtInfo::Expr’ changes meaning of ‘Expr’ [-fpermissive]
+  824 |     const Expr *Expr;
+      |                 ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGPointerAuthInfo.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGCall.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGAtomic.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:112:7: note: ‘Expr’ declared here as ‘class clang::Expr’
+  112 | class Expr : public ValueStmt {
+      |       ^~~~
+[2429/3219] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseExpr.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExpr.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaOpenACC.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExpr.cpp:38:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtOpenACC.h:824:17: error: declaration of ‘const clang::Expr* clang::OpenACCAtomicConstruct::StmtInfo::Expr’ changes meaning of ‘Expr’ [-fpermissive]
+  824 |     const Expr *Expr;
+      |                 ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CanonicalType.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseExpr.cpp:23:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:112:7: note: ‘Expr’ declared here as ‘class clang::Expr’
+  112 | class Expr : public ValueStmt {
+      |       ^~~~
+[2430/3219] Building AArch64GenSubtargetInfo.inc...
+[2431/3219] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenACC.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenACC.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenACC.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenACC.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseOpenACC.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseOpenACC.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaOpenACC.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseOpenACC.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtOpenACC.h:824:17: error: declaration of ‘const clang::Expr* clang::OpenACCAtomicConstruct::StmtInfo::Expr’ changes meaning of ‘Expr’ [-fpermissive]
+  824 |     const Expr *Expr;
+      |                 ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CanonicalType.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/OpenACCClause.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseOpenACC.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:112:7: note: ‘Expr’ declared here as ‘class clang::Expr’
+  112 | class Expr : public ValueStmt {
+      |       ^~~~
+[2432/3219] Building AArch64GenInstrInfo.inc...
+[2433/3219] Building CXX object tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmt.cpp.o
+FAILED: tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmt.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmt.cpp.o -MF tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmt.cpp.o.d -o tools/clang/lib/Parse/CMakeFiles/obj.clangParse.dir/ParseStmt.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseStmt.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/SemaOpenACC.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseStmt.cpp:27:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtOpenACC.h:824:17: error: declaration of ‘const clang::Expr* clang::OpenACCAtomicConstruct::StmtInfo::Expr’ changes meaning of ‘Expr’ [-fpermissive]
+  824 |     const Expr *Expr;
+      |                 ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTLambda.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Sema/Sema.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/Parse/Parser.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/Parse/ParseStmt.cpp:20:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:112:7: note: ‘Expr’ declared here as ‘class clang::Expr’
+  112 | class Expr : public ValueStmt {
+      |       ^~~~
+[2434/3219] Building CXX object tools/clang/lib/ASTMatchers/CMakeFiles/obj.clangASTMatchers.dir/ASTMatchFinder.cpp.o
+FAILED: tools/clang/lib/ASTMatchers/CMakeFiles/obj.clangASTMatchers.dir/ASTMatchFinder.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/ASTMatchers -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/ASTMatchers -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/ASTMatchers/CMakeFiles/obj.clangASTMatchers.dir/ASTMatchFinder.cpp.o -MF tools/clang/lib/ASTMatchers/CMakeFiles/obj.clangASTMatchers.dir/ASTMatchFinder.cpp.o.d -o tools/clang/lib/ASTMatchers/CMakeFiles/obj.clangASTMatchers.dir/ASTMatchFinder.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/ASTMatchers/ASTMatchFinder.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/RecursiveASTVisitor.h:39,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/ASTMatchers/ASTMatchFinder.cpp:22:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtOpenACC.h:824:17: error: declaration of ‘const clang::Expr* clang::OpenACCAtomicConstruct::StmtInfo::Expr’ changes meaning of ‘Expr’ [-fpermissive]
+  824 |     const Expr *Expr;
+      |                 ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/CanonicalType.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/ASTContext.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/ASTMatchers/ASTMatchers.h:47,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/ASTMatchers/ASTMatchFinder.h:43,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/ASTMatchers/ASTMatchFinder.cpp:18:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:112:7: note: ‘Expr’ declared here as ‘class clang::Expr’
+  112 | class Expr : public ValueStmt {
+      |       ^~~~
+[2435/3219] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBuiltin.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CodeGenFunction.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtOpenACC.h:824:17: error: declaration of ‘const clang::Expr* clang::OpenACCAtomicConstruct::StmtInfo::Expr’ changes meaning of ‘Expr’ [-fpermissive]
+  824 |     const Expr *Expr;
+      |                 ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGPointerAuthInfo.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/Address.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuilder.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CodeGenFunction.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuiltin.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:112:7: note: ‘Expr’ declared here as ‘class clang::Expr’
+  112 | class Expr : public ValueStmt {
+      |       ^~~~
+[2436/3219] Building CXX object tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o
+FAILED: tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o -MF tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o.d -o tools/clang/lib/CodeGen/CMakeFiles/obj.clangCodeGen.dir/CGBlocks.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBlocks.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CodeGenFunction.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBlocks.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBlocks.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/StmtOpenACC.h:824:17: error: declaration of ‘const clang::Expr* clang::OpenACCAtomicConstruct::StmtInfo::Expr’ changes meaning of ‘Expr’ [-fpermissive]
+  824 |     const Expr *Expr;
+      |                 ^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/DeclCXX.h:22,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Type.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGPointerAuthInfo.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/Address.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBuilder.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBlocks.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/clang/lib/CodeGen/CGBlocks.cpp:13:
+/var/llvm-compile-time-tracker/llvm-project/clang/include/clang/AST/Expr.h:112:7: note: ‘Expr’ declared here as ‘class clang::Expr’
+  112 | class Expr : public ValueStmt {
+      |       ^~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+195.01user 16.46system 0:16.07elapsed 1315%CPU (0avgtext+0avgdata 1207504maxresident)k
+0inputs+2181528outputs (3382major+9000728minor)pagefaults 0swaps
