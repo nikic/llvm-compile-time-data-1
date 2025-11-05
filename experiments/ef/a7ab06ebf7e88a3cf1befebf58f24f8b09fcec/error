@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[373/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LazyMachineBlockFrequencyInfo.cpp.o
+[374/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Comdat.cpp.o
+[375/3217] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenSchedule.cpp.o
+[376/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConstantRangeList.cpp.o
+[377/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SanitizerBinaryMetadata.cpp.o
+[378/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LexicalScopes.cpp.o
+[379/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScheduleDAG.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/ScheduleDAG.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/ScheduleDAG.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:15:46: warning: ‘visibility’ attribute ignored [-Wattributes]
+   15 |   LLVM_ABI const RTLIB::RuntimeLibcallsInfo &RTLCI;
+      |                                              ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:18:25: warning: ‘visibility’ attribute ignored [-Wattributes]
+   18 |       RTLIB::Unsupported};
+      |                         ^
+[380/3217] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/GlobalISel/GlobalISelMatchTable.cpp.o
+[381/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConstantFPRange.cpp.o
+[382/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConstantFold.cpp.o
+[383/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/BasicBlock.cpp.o
+[384/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConstantRange.cpp.o
+[385/3217] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenDAGPatterns.cpp.o
+[386/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Attributes.cpp.o
+[387/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DataLayout.cpp.o
+[388/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConvergenceVerifier.cpp.o
+[389/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DIExpressionOptimizer.cpp.o
+[390/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/CycleInfo.cpp.o
+[391/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DiagnosticHandler.cpp.o
+[392/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DiagnosticPrinter.cpp.o
+[393/3217] Building CXX object utils/TableGen/Common/CMakeFiles/obj.LLVMTableGenCommon.dir/CodeGenRegisters.cpp.o
+[394/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SafeStack.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SafeStack.cpp:33:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:15:46: warning: ‘visibility’ attribute ignored [-Wattributes]
+   15 |   LLVM_ABI const RTLIB::RuntimeLibcallsInfo &RTLCI;
+      |                                              ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:18:25: warning: ‘visibility’ attribute ignored [-Wattributes]
+   18 |       RTLIB::Unsupported};
+      |                         ^
+[395/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/GVMaterializer.cpp.o
+[396/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugProgramInstruction.cpp.o
+[397/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugLoc.cpp.o
+[398/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/GCStrategy.cpp.o
+[399/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/EHPersonalities.cpp.o
+[400/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DIBuilder.cpp.o
+[401/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DiagnosticInfo.cpp.o
+[402/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DroppedVariableStats.cpp.o
+[403/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Core.cpp.o
+[404/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/FPEnv.cpp.o
+[405/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/IRPrintingPasses.cpp.o
+[406/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/AsmWriter.cpp.o
+[407/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o
+[408/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/SSAContext.cpp.o
+[409/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DroppedVariableStatsIR.cpp.o
+[410/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Constants.cpp.o
+[411/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Function.cpp.o
+[412/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/MDBuilder.cpp.o
+[413/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Globals.cpp.o
+[414/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMRemarkStreamer.cpp.o
+[415/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/MemoryModelRelaxationAnnotations.cpp.o
+[416/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Mangler.cpp.o
+[417/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Dominators.cpp.o
+[418/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/IRBuilder.cpp.o
+[419/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Intrinsics.cpp.o
+[420/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/InlineAsm.cpp.o
+[421/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/AutoUpgrade.cpp.o
+[422/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/IntrinsicInst.cpp.o
+[423/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Instruction.cpp.o
+[424/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMContext.cpp.o
+[425/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassInstrumentation.cpp.o
+[426/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/OptBisect.cpp.o
+[427/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassRegistry.cpp.o
+[428/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LegacyPassManager.cpp.o
+[429/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Pass.cpp.o
+[430/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Operator.cpp.o
+[431/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassTimingInfo.cpp.o
+[432/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o
+[433/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ProfileSummary.cpp.o
+[434/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ProfDataUtils.cpp.o
+[435/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PrintPasses.cpp.o
+[436/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Use.cpp.o
+[437/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Instructions.cpp.o
+[438/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ReplaceConstant.cpp.o
+[439/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PseudoProbe.cpp.o
+[440/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Module.cpp.o
+[441/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/VectorTypeUtils.cpp.o
+[442/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Statepoint.cpp.o
+[443/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ValueSymbolTable.cpp.o
+[444/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ModuleSummaryIndex.cpp.o
+[445/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/PassManager.cpp.o
+[446/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/StructuralHash.cpp.o
+[447/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/User.cpp.o
+[448/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/TypedPointerType.cpp.o
+[449/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/LLVMContextImpl.cpp.o
+[450/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/TypeFinder.cpp.o
+[451/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/VFABIDemangler.cpp.o
+[452/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/RuntimeLibcalls.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/RuntimeLibcalls.cpp:26:
+/tmp/llvm-project-build-stage1/include/llvm/IR/RuntimeLibcalls.inc: In member function ‘void llvm::RTLIB::RuntimeLibcallsInfo::setTargetRuntimeLibcallSets(const llvm::Triple&, llvm::ExceptionHandling, llvm::FloatABI::ABIType, llvm::EABI, llvm::StringRef)’:
+/tmp/llvm-project-build-stage1/include/llvm/IR/RuntimeLibcalls.inc:23017:57: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+23017 |         setLibcallImplCallingConv(Impl, TT.isWatchABI() ? DefaultCC :
+      |                                         ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+23018 |     (isAAPCS_ABI(TT, ABIName) ? CallingConv::ARM_AAPCS : CallingConv::ARM_APCS));
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/llvm-project-build-stage1/include/llvm/IR/RuntimeLibcalls.inc:23030:57: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+23030 |         setLibcallImplCallingConv(Impl, TT.isWatchABI() ? DefaultCC :
+      |                                         ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+23031 |     (isAAPCS_ABI(TT, ABIName) ? CallingConv::ARM_AAPCS : CallingConv::ARM_APCS));
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/llvm-project-build-stage1/include/llvm/IR/RuntimeLibcalls.inc:23045:57: warning: enumerated and non-enumerated type in conditional expression [-Wextra]
+23045 |         setLibcallImplCallingConv(Impl, TT.isWatchABI() ? DefaultCC :
+      |                                         ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+23046 |     (isAAPCS_ABI(TT, ABIName) ? CallingConv::ARM_AAPCS : CallingConv::ARM_APCS));
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[453/3217] Building CXX object lib/IRReader/CMakeFiles/LLVMIRReader.dir/IRReader.cpp.o
+[454/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/SafepointIRVerifier.cpp.o
+[455/3217] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/OutlinedHashTree.cpp.o
+[456/3217] Building CXX object lib/IRPrinter/CMakeFiles/LLVMIRPrinter.dir/IRPrintingPasses.cpp.o
+[457/3217] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/CodeGenDataWriter.cpp.o
+[458/3217] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/OutlinedHashTreeRecord.cpp.o
+[459/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Value.cpp.o
+[460/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Type.cpp.o
+[461/3217] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/StableFunctionMap.cpp.o
+[462/3217] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/CodeGenDataReader.cpp.o
+[463/3217] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/StableFunctionMapRecord.cpp.o
+[464/3217] Building CXX object lib/CGData/CMakeFiles/LLVMCGData.dir/CodeGenData.cpp.o
+[465/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AllocationOrder.cpp.o
+[466/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BreakFalseDeps.cpp.o
+[467/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockPathCloning.cpp.o
+[468/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchRelaxation.cpp.o
+[469/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AtomicExpandPass.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AtomicExpandPass.cpp:24:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:15:46: warning: ‘visibility’ attribute ignored [-Wattributes]
+   15 |   LLVM_ABI const RTLIB::RuntimeLibcallsInfo &RTLCI;
+      |                                              ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:18:25: warning: ‘visibility’ attribute ignored [-Wattributes]
+   18 |       RTLIB::Unsupported};
+      |                         ^
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AtomicExpandPass.cpp: In static member function ‘static llvm::Value* {anonymous}::AtomicExpandImpl::insertRMWCmpXchgLoop(llvm::IRBuilderBase&, llvm::Type*, llvm::Value*, llvm::Align, llvm::AtomicOrdering, llvm::SyncScope::ID, llvm::function_ref<llvm::Value*(llvm::IRBuilderBase&, llvm::Value*)>, llvm::CreateCmpXchgInstFun, llvm::Instruction*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AtomicExpandPass.cpp:1694:56: error: could not convert ‘* F’ from ‘llvm::Function’ to ‘llvm::StringRef’
+ 1694 |   setExplicitlyUnknownBranchWeightsIfProfiled(*CondBr, *F, DEBUG_TYPE);
+      |                                                        ^~
+      |                                                        |
+      |                                                        llvm::Function
+[470/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallBrPrepare.cpp.o
+[471/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o
+[472/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGen.cpp.o
+[473/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/Analysis.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:15:46: warning: ‘visibility’ attribute ignored [-Wattributes]
+   15 |   LLVM_ABI const RTLIB::RuntimeLibcallsInfo &RTLCI;
+      |                                              ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:18:25: warning: ‘visibility’ attribute ignored [-Wattributes]
+   18 |       RTLIB::Unsupported};
+      |                         ^
+[474/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/ScheduleDAG.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AggressiveAntiDepBreaker.cpp:27:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:15:46: warning: ‘visibility’ attribute ignored [-Wattributes]
+   15 |   LLVM_ABI const RTLIB::RuntimeLibcallsInfo &RTLCI;
+      |                                              ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:18:25: warning: ‘visibility’ attribute ignored [-Wattributes]
+   18 |       RTLIB::Unsupported};
+      |                         ^
+[475/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Metadata.cpp.o
+[476/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CFGuardLongjmp.cpp.o
+[477/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSectionsProfileReader.cpp.o
+[478/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CalcSpillWeights.cpp.o
+[479/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CFIFixup.cpp.o
+[480/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CallingConvLower.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/CallingConvLower.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:15:46: warning: ‘visibility’ attribute ignored [-Wattributes]
+   15 |   LLVM_ABI const RTLIB::RuntimeLibcallsInfo &RTLCI;
+      |                                              ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:18:25: warning: ‘visibility’ attribute ignored [-Wattributes]
+   18 |       RTLIB::Unsupported};
+      |                         ^
+[481/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o
+[482/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CodeGenCommonISel.cpp.o
+[483/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/CFIInstrInserter.cpp.o
+[484/3217] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Verifier.cpp.o
+[485/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AssignmentTrackingAnalysis.cpp.o
+[486/3217] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/BasicTTIImpl.h:31,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicTargetTransformInfo.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:15:46: warning: ‘visibility’ attribute ignored [-Wattributes]
+   15 |   LLVM_ABI const RTLIB::RuntimeLibcallsInfo &RTLCI;
+      |                                              ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:18:25: warning: ‘visibility’ attribute ignored [-Wattributes]
+   18 |       RTLIB::Unsupported};
+      |                         ^
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+699.97user 44.84system 0:48.66elapsed 1530%CPU (0avgtext+0avgdata 692656maxresident)k
+0inputs+2350440outputs (464major+24492210minor)pagefaults 0swaps
