@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[798/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineSSAUpdater.cpp.o
+[799/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineStripDebug.cpp.o
+[800/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineTraceMetrics.cpp.o
+[801/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineUniformityAnalysis.cpp.o
+[802/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineVerifier.cpp.o
+[803/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRFSDiscriminator.cpp.o
+[804/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRSampleProfile.cpp.o
+[805/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRYamlMapping.cpp.o
+[806/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIR2Vec.cpp.o
+[807/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MLRegAllocEvictAdvisor.cpp.o
+[808/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MLRegAllocPriorityAdvisor.cpp.o
+[809/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MultiHazardRecognizer.cpp.o
+[810/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PatchableFunction.cpp.o
+[811/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ModuloSchedule.cpp.o
+[812/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MBFIWrapper.cpp.o
+[813/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRPrinter.cpp.o
+[814/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRPrintingPass.cpp.o
+[815/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/NonRelocatableStringpool.cpp.o
+[816/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/OptimizePHIs.cpp.o
+[817/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MacroFusion.cpp.o
+[818/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PeepholeOptimizer.cpp.o
+[819/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PHIEliminationUtils.cpp.o
+[820/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PostRAHazardRecognizer.cpp.o
+[821/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PHIElimination.cpp.o
+[822/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PreISelIntrinsicLowering.cpp.o
+[823/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PseudoProbeInserter.cpp.o
+[824/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ProcessImplicitDefs.cpp.o
+[825/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PrologEpilogInserter.cpp.o
+[826/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PseudoSourceValue.cpp.o
+[827/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/PostRASchedulerList.cpp.o
+[828/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RDFGraph.cpp.o
+[829/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RDFLiveness.cpp.o
+[830/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RDFRegisters.cpp.o
+[831/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocBase.cpp.o
+[832/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ReachingDefAnalysis.cpp.o
+[833/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocBasic.cpp.o
+[834/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocEvictionAdvisor.cpp.o
+[835/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocFast.cpp.o
+[836/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocPBQP.cpp.o
+[837/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocPriorityAdvisor.cpp.o
+[838/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocGreedy.cpp.o
+[839/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegAllocScore.cpp.o
+[840/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterClassInfo.cpp.o
+[841/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterCoalescer.cpp.o
+[842/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterPressure.cpp.o
+[843/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterScavenging.cpp.o
+[844/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/GCEmptyBasicBlocks.cpp.o
+[845/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RemoveRedundantDebugValues.cpp.o
+[846/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RenameIndependentSubregs.cpp.o
+[847/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRVRegNamerUtils.cpp.o
+[848/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MachineStableHash.cpp.o
+[849/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRNamerPass.cpp.o
+[850/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/MIRCanonicalizerPass.cpp.o
+[851/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegisterUsageInfo.cpp.o
+[852/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegUsageInfoCollector.cpp.o
+[853/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/RegUsageInfoPropagate.cpp.o
+[854/3221] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFAbbreviationDeclaration.cpp.o
+[855/3221] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFCompileUnit.cpp.o
+[856/3221] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFAcceleratorTable.cpp.o
+[857/3221] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFCFIPrinter.cpp.o
+[858/3221] Building AArch64GenAsmWriter.inc...
+[859/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SanitizerBinaryMetadata.cpp.o
+[860/3221] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFAddressRange.cpp.o
+[861/3221] Building CXX object lib/DebugInfo/DWARF/CMakeFiles/LLVMDebugInfoDWARF.dir/DWARFContext.cpp.o
+[862/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SafeStackLayout.cpp.o
+[863/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScheduleDAG.cpp.o
+[864/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScheduleDAGInstrs.cpp.o
+[865/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScheduleDAGPrinter.cpp.o
+[866/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ScoreboardHazardRecognizer.cpp.o
+[867/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ShadowStackGCLowering.cpp.o
+[868/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ShrinkWrap.cpp.o
+[869/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SelectOptimize.cpp.o
+[870/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SjLjEHPrepare.cpp.o
+[871/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SlotIndexes.cpp.o
+[872/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SpillPlacement.cpp.o
+[873/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SplitKit.cpp.o
+[874/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackColoring.cpp.o
+[875/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackMaps.cpp.o
+[876/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackFrameLayoutAnalysisPass.cpp.o
+[877/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackMapLivenessAnalysis.cpp.o
+[878/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackProtector.cpp.o
+[879/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StackSlotColoring.cpp.o
+[880/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SwiftErrorValueTracking.cpp.o
+[881/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SwitchLoweringUtils.cpp.o
+[882/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StaticDataSplitter.cpp.o
+[883/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/StaticDataAnnotator.cpp.o
+[884/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TailDuplication.cpp.o
+[885/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TailDuplicator.cpp.o
+[886/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetFrameLoweringImpl.cpp.o
+[887/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetInstrInfo.cpp.o
+[888/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetLoweringBase.cpp.o
+[889/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetPassConfig.cpp.o
+[890/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetLoweringObjectFileImpl.cpp.o
+[891/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetOptionsImpl.cpp.o
+[892/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetRegisterInfo.cpp.o
+[893/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetSchedule.cpp.o
+[894/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TargetSubtargetInfo.cpp.o
+[895/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TwoAddressInstructionPass.cpp.o
+[896/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/TypePromotion.cpp.o
+[897/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/ValueTypes.cpp.o
+[898/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/UnreachableBlockElim.cpp.o
+[899/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/VirtRegMap.cpp.o
+[900/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/WindowsSecureHotPatching.cpp.o
+[901/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/XRayInstrumentation.cpp.o
+[902/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/VLIWMachineScheduler.cpp.o
+[903/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/WindowScheduler.cpp.o
+[904/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/WasmEHPrepare.cpp.o
+[905/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/WinEHPrepare.cpp.o
+[906/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugValues/LiveDebugValues.cpp.o
+[907/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugValues/InstrRefBasedImpl.cpp.o
+[908/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeFloatTypes.cpp.o
+[909/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeIntegerTypes.cpp.o
+[910/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LiveDebugValues/VarLocBasedImpl.cpp.o
+[911/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeTypes.cpp.o
+[912/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/FastISel.cpp.o
+[913/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/InstrEmitter.cpp.o
+[914/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeDAG.cpp.o
+[915/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/FunctionLoweringInfo.cpp.o
+[916/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeTypesGeneric.cpp.o
+[917/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeVectorOps.cpp.o
+[918/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/DAGCombiner.cpp.o
+[919/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/LegalizeVectorTypes.cpp.o
+[920/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/ResourcePriorityQueue.cpp.o
+[921/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SDNodeInfo.cpp.o
+[922/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/ScheduleDAGRRList.cpp.o
+[923/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/ScheduleDAGSDNodes.cpp.o
+[924/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/ScheduleDAGFast.cpp.o
+[925/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/ScheduleDAGVLIW.cpp.o
+[926/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGBuilder.cpp.o
+[927/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAG.cpp.o
+[928/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGAddressAnalysis.cpp.o
+[929/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGDumper.cpp.o
+[930/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGTargetInfo.cpp.o
+[931/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGPrinter.cpp.o
+[932/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/StatepointLowering.cpp.o
+[933/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAGISel.cpp.o
+[934/3221] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/TargetLowering.cpp.o
+[935/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AccelTable.cpp.o
+[936/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AddressPool.cpp.o
+[937/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/ARMException.cpp.o
+[938/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AIXException.cpp.o
+[939/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AsmPrinter.cpp.o
+[940/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AsmPrinterDwarf.cpp.o
+[941/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/AsmPrinterInlineAsm.cpp.o
+[942/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DbgEntityHistoryCalculator.cpp.o
+[943/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DebugHandlerBase.cpp.o
+[944/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DebugLocStream.cpp.o
+[945/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DIE.cpp.o
+[946/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DIEHash.cpp.o
+[947/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DwarfCFIException.cpp.o
+[948/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DwarfExpression.cpp.o
+[949/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DwarfFile.cpp.o
+[950/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DwarfStringPool.cpp.o
+[951/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DwarfUnit.cpp.o
+[952/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/EHStreamer.cpp.o
+[953/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/OcamlGCPrinter.cpp.o
+[954/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/ErlangGCPrinter.cpp.o
+[955/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/PseudoProbePrinter.cpp.o
+[956/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/WinCFGuard.cpp.o
+[957/3221] Building AArch64GenAsmWriter1.inc...
+[958/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/WasmException.cpp.o
+[959/3221] Building AArch64GenDisassemblerTables.inc...
+[960/3221] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/GlobalISel.cpp.o
+[961/3221] Building X86GenFastISel.inc...
+[962/3221] Building X86GenGlobalISel.inc...
+[963/3221] Building AArch64GenDAGISel.inc...
+[964/3221] Building X86GenDAGISel.inc...
+[965/3221] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicBlockSections.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicBlockSections.cpp
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicBlockSections.cpp: In function ‘llvm::SmallVector<llvm::BBClusterInfo> createBBClusterInfoForFunction(llvm::MachineFunction&, llvm::BasicBlockMatchingAndInference*)’:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicBlockSections.cpp:190:12: error: could not convert ‘BBClusterInfos’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],3>’
+  190 |     return BBClusterInfos;
+      |            ^~~~~~~~~~~~~~
+      |            |
+      |            SmallVector<[...],4>
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicBlockSections.cpp:250:10: error: could not convert ‘BBClusterInfos’ from ‘SmallVector<[...],4>’ to ‘SmallVector<[...],3>’
+  250 |   return BBClusterInfos;
+      |          ^~~~~~~~~~~~~~
+      |          |
+      |          SmallVector<[...],4>
+[966/3221] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/CSEInfo.cpp.o
+[967/3221] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/CSEMIRBuilder.cpp.o
+[968/3221] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/CombinerHelperArtifacts.cpp.o
+[969/3221] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/GIMatchTableExecutor.cpp.o
+[970/3221] Building X86GenSubtargetInfo.inc...
+[971/3221] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/CombinerHelperCasts.cpp.o
+[972/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/WinException.cpp.o
+[973/3221] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/CallLowering.cpp.o
+[974/3221] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/CombinerHelperCompares.cpp.o
+[975/3221] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/Combiner.cpp.o
+[976/3221] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/GISelValueTracking.cpp.o
+[977/3221] Building X86GenInstrInfo.inc...
+[978/3221] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/CombinerHelperVectorOps.cpp.o
+[979/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DwarfCompileUnit.cpp.o
+[980/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/CodeViewDebug.cpp.o
+[981/3221] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DwarfDebug.cpp.o
+[982/3221] Building CXX object lib/CodeGen/GlobalISel/CMakeFiles/LLVMGlobalISel.dir/CombinerHelper.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+141.67user 9.16system 0:13.73elapsed 1097%CPU (0avgtext+0avgdata 963276maxresident)k
+0inputs+688232outputs (2887major+5789965minor)pagefaults 0swaps
