@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/ResetMachineFunctionPass.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/SystemLibraries.h:20:12: note: ‘VectorLibrary’ declared here as ‘enum class llvm::VectorLibrary’
+   20 | enum class VectorLibrary {
+      |            ^~~~~~~~~~~~~
+[674/3219] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AllocationOrder.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AllocationOrder.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AllocationOrder.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AllocationOrder.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AllocationOrder.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AllocationOrder.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AllocationOrder.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:414:17: error: declaration of ‘llvm::VectorLibrary llvm::TargetOptions::VectorLibrary’ changes meaning of ‘VectorLibrary’ [-fpermissive]
+  414 |   VectorLibrary VectorLibrary = VectorLibrary::NoLibrary;
+      |                 ^~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AllocationOrder.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/SystemLibraries.h:20:12: note: ‘VectorLibrary’ declared here as ‘enum class llvm::VectorLibrary’
+   20 | enum class VectorLibrary {
+      |            ^~~~~~~~~~~~~
+[675/3219] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SanitizerBinaryMetadata.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SanitizerBinaryMetadata.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SanitizerBinaryMetadata.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SanitizerBinaryMetadata.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SanitizerBinaryMetadata.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SanitizerBinaryMetadata.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/SanitizerBinaryMetadata.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SanitizerBinaryMetadata.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:414:17: error: declaration of ‘llvm::VectorLibrary llvm::TargetOptions::VectorLibrary’ changes meaning of ‘VectorLibrary’ [-fpermissive]
+  414 |   VectorLibrary VectorLibrary = VectorLibrary::NoLibrary;
+      |                 ^~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/SanitizerBinaryMetadata.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SanitizerBinaryMetadata.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/SystemLibraries.h:20:12: note: ‘VectorLibrary’ declared here as ‘enum class llvm::VectorLibrary’
+   20 | enum class VectorLibrary {
+      |            ^~~~~~~~~~~~~
+[676/3219] Building AArch64GenDAGISel.inc...
+[677/3219] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LatencyPriorityQueue.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LatencyPriorityQueue.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LatencyPriorityQueue.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LatencyPriorityQueue.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/LatencyPriorityQueue.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LatencyPriorityQueue.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineRegisterInfo.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:34,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/ScheduleDAG.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LatencyPriorityQueue.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LatencyPriorityQueue.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:414:17: error: declaration of ‘llvm::VectorLibrary llvm::TargetOptions::VectorLibrary’ changes meaning of ‘VectorLibrary’ [-fpermissive]
+  414 |   VectorLibrary VectorLibrary = VectorLibrary::NoLibrary;
+      |                 ^~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/RuntimeLibcalls.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/ScheduleDAG.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LatencyPriorityQueue.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/LatencyPriorityQueue.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/SystemLibraries.h:20:12: note: ‘VectorLibrary’ declared here as ‘enum class llvm::VectorLibrary’
+   20 | enum class VectorLibrary {
+      |            ^~~~~~~~~~~~~
+[678/3219] Building X86GenDAGISel.inc...
+[679/3219] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchRelaxation.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchRelaxation.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchRelaxation.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchRelaxation.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchRelaxation.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchRelaxation.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/BranchRelaxation.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchRelaxation.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:414:17: error: declaration of ‘llvm::VectorLibrary llvm::TargetOptions::VectorLibrary’ changes meaning of ‘VectorLibrary’ [-fpermissive]
+  414 |   VectorLibrary VectorLibrary = VectorLibrary::NoLibrary;
+      |                 ^~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/BranchRelaxation.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchRelaxation.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/SystemLibraries.h:20:12: note: ‘VectorLibrary’ declared here as ‘enum class llvm::VectorLibrary’
+   20 | enum class VectorLibrary {
+      |            ^~~~~~~~~~~~~
+[680/3219] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/Analysis.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/Analysis.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/Analysis.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:414:17: error: declaration of ‘llvm::VectorLibrary llvm::TargetOptions::VectorLibrary’ changes meaning of ‘VectorLibrary’ [-fpermissive]
+  414 |   VectorLibrary VectorLibrary = VectorLibrary::NoLibrary;
+      |                 ^~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/Analysis.cpp:15:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/SystemLibraries.h:20:12: note: ‘VectorLibrary’ declared here as ‘enum class llvm::VectorLibrary’
+   20 | enum class VectorLibrary {
+      |            ^~~~~~~~~~~~~
+[681/3219] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AggressiveAntiDepBreaker.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AggressiveAntiDepBreaker.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunctionPass.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineOptimizationRemarkEmitter.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetFrameLowering.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AggressiveAntiDepBreaker.cpp:21:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:414:17: error: declaration of ‘llvm::VectorLibrary llvm::TargetOptions::VectorLibrary’ changes meaning of ‘VectorLibrary’ [-fpermissive]
+  414 |   VectorLibrary VectorLibrary = VectorLibrary::NoLibrary;
+      |                 ^~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunctionPass.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineOptimizationRemarkEmitter.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetFrameLowering.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFrameInfo.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AggressiveAntiDepBreaker.cpp:21:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/SystemLibraries.h:20:12: note: ‘VectorLibrary’ declared here as ‘enum class llvm::VectorLibrary’
+   20 | enum class VectorLibrary {
+      |            ^~~~~~~~~~~~~
+[682/3219] Building X86GenSubtargetInfo.inc...
+[683/3219] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/AtomicExpandPass.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AtomicExpandPass.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineRegisterInfo.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:34,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AtomicExpandPass.cpp:24:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:414:17: error: declaration of ‘llvm::VectorLibrary llvm::TargetOptions::VectorLibrary’ changes meaning of ‘VectorLibrary’ [-fpermissive]
+  414 |   VectorLibrary VectorLibrary = VectorLibrary::NoLibrary;
+      |                 ^~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/RuntimeLibcalls.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/LibcallLoweringInfo.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:32,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/AtomicExpandPass.cpp:24:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/SystemLibraries.h:20:12: note: ‘VectorLibrary’ declared here as ‘enum class llvm::VectorLibrary’
+   20 | enum class VectorLibrary {
+      |            ^~~~~~~~~~~~~
+[684/3219] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BreakFalseDeps.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BreakFalseDeps.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BreakFalseDeps.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BreakFalseDeps.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BreakFalseDeps.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BreakFalseDeps.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunctionPass.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BreakFalseDeps.cpp:22:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:414:17: error: declaration of ‘llvm::VectorLibrary llvm::TargetOptions::VectorLibrary’ changes meaning of ‘VectorLibrary’ [-fpermissive]
+  414 |   VectorLibrary VectorLibrary = VectorLibrary::NoLibrary;
+      |                 ^~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunctionPass.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BreakFalseDeps.cpp:22:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/SystemLibraries.h:20:12: note: ‘VectorLibrary’ declared here as ‘enum class llvm::VectorLibrary’
+   20 | enum class VectorLibrary {
+      |            ^~~~~~~~~~~~~
+[685/3219] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BranchFolding.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchFolding.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/BranchFoldingPass.h:11,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchFolding.cpp:27:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:414:17: error: declaration of ‘llvm::VectorLibrary llvm::TargetOptions::VectorLibrary’ changes meaning of ‘VectorLibrary’ [-fpermissive]
+  414 |   VectorLibrary VectorLibrary = VectorLibrary::NoLibrary;
+      |                 ^~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachinePassManager.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/BranchFoldingPass.h:11,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BranchFolding.cpp:27:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/SystemLibraries.h:20:12: note: ‘VectorLibrary’ declared here as ‘enum class llvm::VectorLibrary’
+   20 | enum class VectorLibrary {
+      |            ^~~~~~~~~~~~~
+[686/3219] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SafeStack.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SafeStack.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SafeStack.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SafeStack.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/SafeStack.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SafeStack.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineRegisterInfo.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:34,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SafeStack.cpp:33:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:414:17: error: declaration of ‘llvm::VectorLibrary llvm::TargetOptions::VectorLibrary’ changes meaning of ‘VectorLibrary’ [-fpermissive]
+  414 |   VectorLibrary VectorLibrary = VectorLibrary::NoLibrary;
+      |                 ^~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetLibraryInfo.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/SafeStack.cpp:32:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/SystemLibraries.h:20:12: note: ‘VectorLibrary’ declared here as ‘enum class llvm::VectorLibrary’
+   20 | enum class VectorLibrary {
+      |            ^~~~~~~~~~~~~
+[687/3219] Building CXX object lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o
+FAILED: lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/CodeGen -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o -MF lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o.d -o lib/CodeGen/CMakeFiles/LLVMCodeGen.dir/BasicTargetTransformInfo.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicTargetTransformInfo.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineFunction.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/MachineRegisterInfo.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/TargetLowering.h:34,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/BasicTTIImpl.h:31,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicTargetTransformInfo.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Target/TargetOptions.h:414:17: error: declaration of ‘llvm::VectorLibrary llvm::TargetOptions::VectorLibrary’ changes meaning of ‘VectorLibrary’ [-fpermissive]
+  414 |   VectorLibrary VectorLibrary = VectorLibrary::NoLibrary;
+      |                 ^~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetLibraryInfo.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/CodeGen/BasicTTIImpl.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/CodeGen/BasicTargetTransformInfo.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/SystemLibraries.h:20:12: note: ‘VectorLibrary’ declared here as ‘enum class llvm::VectorLibrary’
+   20 | enum class VectorLibrary {
+      |            ^~~~~~~~~~~~~
+[688/3219] Building X86GenInstrInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+98.88user 7.31system 0:08.16elapsed 1301%CPU (0avgtext+0avgdata 727088maxresident)k
+0inputs+542728outputs (2776major+4809523minor)pagefaults 0swaps
