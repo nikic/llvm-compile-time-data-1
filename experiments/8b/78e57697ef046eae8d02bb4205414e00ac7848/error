@@ -1,0 +1,104 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O3 stage2 " failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/O3.cmake
+-- The C compiler identification is Clang 22.0.0
+-- The CXX compiler identification is unknown
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /tmp/llvm-project-build-stage2/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - failed
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage2/bin/clang++
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage2/bin/clang++ - broken
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-test-suite-build/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-test-suite-build/CMakeFiles/CMakeError.log".
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+
+
+STDERR:
+CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake:62 (message):
+  The C++ compiler
+
+    "/tmp/llvm-project-build-stage2/bin/clang++"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/ninja cmTC_e3702 && [1/2] Building CXX object CMakeFiles/cmTC_e3702.dir/testCXXCompiler.cxx.o
+    FAILED: CMakeFiles/cmTC_e3702.dir/testCXXCompiler.cxx.o 
+    /tmp/llvm-project-build-stage2/bin/clang++    -o CMakeFiles/cmTC_e3702.dir/testCXXCompiler.cxx.o -c /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+    /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx:4:10: error: expected function body after function declarator
+        4 | int main(){return 0;}
+          |          ^
+    1 error generated.
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: loading 'build.ninja': No such file or directory
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_test_suite.sh O0-g stage2 " failed
+
+STDOUT:
+loading initial cache file ./llvm-test-suite/cmake/caches/O0-g.cmake
+-- The C compiler identification is Clang 22.0.0
+-- The CXX compiler identification is unknown
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /tmp/llvm-project-build-stage2/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - failed
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage2/bin/clang++
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage2/bin/clang++ - broken
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-test-suite-build/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-test-suite-build/CMakeFiles/CMakeError.log".
+ninja: Entering directory `/tmp/llvm-test-suite-build'
+
+
+STDERR:
+CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake:62 (message):
+  The C++ compiler
+
+    "/tmp/llvm-project-build-stage2/bin/clang++"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/ninja cmTC_089b6 && [1/2] Building CXX object CMakeFiles/cmTC_089b6.dir/testCXXCompiler.cxx.o
+    FAILED: CMakeFiles/cmTC_089b6.dir/testCXXCompiler.cxx.o 
+    /tmp/llvm-project-build-stage2/bin/clang++    -o CMakeFiles/cmTC_089b6.dir/testCXXCompiler.cxx.o -c /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+    /tmp/llvm-test-suite-build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx:4:10: error: expected function body after function declarator
+        4 | int main(){return 0;}
+          |          ^
+    1 error generated.
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: loading 'build.ninja': No such file or directory
