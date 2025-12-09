@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+[1023/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopSink.cpp.o
+[1024/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopBoundSplit.cpp.o
+[1025/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopDataPrefetch.cpp.o
+[1026/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopDeletion.cpp.o
+[1027/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopFuse.cpp.o
+[1028/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopInstSimplify.cpp.o
+[1029/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopDistribute.cpp.o
+[1030/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LICM.cpp.o
+[1031/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopRotation.cpp.o
+[1032/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopIdiomRecognize.cpp.o
+[1033/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopPassManager.cpp.o
+[1034/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopFlatten.cpp.o
+[1035/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerAtomicPass.cpp.o
+[1036/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopInterchange.cpp.o
+[1037/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopLoadElimination.cpp.o
+[1038/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopPredication.cpp.o
+[1039/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerExpectIntrinsic.cpp.o
+[1040/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopSimplifyCFG.cpp.o
+[1041/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerGuardIntrinsic.cpp.o
+[1042/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopUnrollAndJamPass.cpp.o
+[1043/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MakeGuardsExplicit.cpp.o
+[1044/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopTermFold.cpp.o
+[1045/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerConstantIntrinsics.cpp.o
+[1046/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerWidenableCondition.cpp.o
+[1047/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopVersioningLICM.cpp.o
+[1048/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Scalar.cpp.o
+[1049/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopUnrollPass.cpp.o
+[1050/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MergedLoadStoreMotion.cpp.o
+[1051/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Reg2Mem.cpp.o
+[1052/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MemCpyOptimizer.cpp.o
+[1053/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/PartiallyInlineLibCalls.cpp.o
+[1054/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/MergeICmps.cpp.o
+[1055/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/NaryReassociate.cpp.o
+[1056/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/PlaceSafepoints.cpp.o
+[1057/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SCCP.cpp.o
+[1058/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopStrengthReduce.cpp.o
+[1059/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Reassociate.cpp.o
+[1060/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Sink.cpp.o
+[1061/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LowerMatrixIntrinsics.cpp.o
+[1062/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/ScalarizeMaskedMemIntrin.cpp.o
+[1063/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/Scalarizer.cpp.o
+[1064/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SeparateConstOffsetFromGEP.cpp.o
+[1065/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/RewriteStatepointsForGC.cpp.o
+[1066/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SpeculativeExecution.cpp.o
+[1067/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SimplifyCFGPass.cpp.o
+[1068/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/BarrierNoopPass.cpp.o
+[1069/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/Annotation2Metadata.cpp.o
+[1070/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ConstantMerge.cpp.o
+[1071/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/TailRecursionElimination.cpp.o
+[1072/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/WarnMissedTransforms.cpp.o
+[1073/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/StraightLineStrengthReduce.cpp.o
+[1074/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/BlockExtractor.cpp.o
+[1075/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/NewGVN.cpp.o
+[1076/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/CalledValuePropagation.cpp.o
+[1077/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/CrossDSOCFI.cpp.o
+[1078/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SROA.cpp.o
+[1079/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/StructurizeCFG.cpp.o
+[1080/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ExtractGV.cpp.o
+[1081/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ElimAvailExtern.cpp.o
+[1082/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ForceFunctionAttrs.cpp.o
+[1083/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/IPO.cpp.o
+[1084/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/EmbedBitcodePass.cpp.o
+[1085/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/FatLTOCleanup.cpp.o
+[1086/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ArgumentPromotion.cpp.o
+[1087/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/DeadArgumentElimination.cpp.o
+[1088/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/GlobalSplit.cpp.o
+[1089/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ExpandVariadics.cpp.o
+[1090/2958] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SimpleLoopUnswitch.cpp.o
+[1091/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/InferFunctionAttrs.cpp.o
+[1092/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/GlobalDCE.cpp.o
+[1093/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/Internalize.cpp.o
+[1094/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/LoopExtractor.cpp.o
+[1095/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/FunctionSpecialization.cpp.o
+[1096/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/HotColdSplitting.cpp.o
+[1097/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/FunctionImport.cpp.o
+[1098/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/Inliner.cpp.o
+[1099/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/GlobalOpt.cpp.o
+[1100/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/MergeFunctions.cpp.o
+[1101/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/FunctionAttrs.cpp.o
+[1102/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/Attributor.cpp.o
+[1103/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ModuleInliner.cpp.o
+[1104/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SampleContextTracker.cpp.o
+[1105/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/StripDeadPrototypes.cpp.o
+[1106/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/IROutliner.cpp.o
+[1107/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/PartialInlining.cpp.o
+[1108/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SCCP.cpp.o
+[1109/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/StripSymbols.cpp.o
+[1110/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SampleProfileProbe.cpp.o
+[1111/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SampleProfileMatcher.cpp.o
+[1112/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/LowerTypeTests.cpp.o
+[1113/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopIdiomVectorize.cpp.o
+[1114/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ThinLTOBitcodeWriter.cpp.o
+[1115/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoadStoreVectorizer.cpp.o
+[1116/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Interval.cpp.o
+[1117/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorizationLegality.cpp.o
+[1118/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/DependencyGraph.cpp.o
+[1119/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/AttributorAttributes.cpp.o
+[1120/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/InstrMaps.cpp.o
+[1121/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/OpenMPOpt.cpp.o
+[1122/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/RegionsFromBBs.cpp.o
+[1123/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/RegionsFromMetadata.cpp.o
+[1124/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/PackReuse.cpp.o
+[1125/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Legality.cpp.o
+[1126/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SampleProfile.cpp.o
+[1127/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/BottomUpVec.cpp.o
+[1128/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/Vectorize.cpp.o
+[1129/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/TransactionSave.cpp.o
+[1130/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/TransactionAcceptOrRevert.cpp.o
+[1131/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/WholeProgramDevirt.cpp.o
+[1132/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/SandboxVectorizer.cpp.o
+[1133/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/SeedCollection.cpp.o
+[1134/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Scheduler.cpp.o
+[1135/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/SandboxVectorizerPassBuilder.cpp.o
+[1136/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/VecUtils.cpp.o
+[1137/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wno-pass-failed -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wno-pass-failed -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp
+1.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:926:79: current parser token ';'
+2.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:914:1: parsing namespace '(anonymous)'
+3.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SLPVectorizer.cpp:921:1: parsing struct/union/class body '(anonymous namespace)::BinOpSameOpcodeHelper'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x0000557fe2aaa330 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x0000557fe2aa7ee4 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x0000557fe29eda68
+3  libc.so.6 0x00007ff16712b520
+4  clang++   0x0000557fe596f367
+5  clang++   0x0000557fe597070d
+6  clang++   0x0000557fe596f59f
+7  clang++   0x0000557fe596f8ec
+8  clang++   0x0000557fe5a15a11 clang::Expr::EvaluateAsInitializer(clang::APValue&, clang::ASTContext const&, clang::VarDecl const*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic>>&, bool) const + 2497
+9  clang++   0x0000557fe581885e clang::VarDecl::evaluateValueImpl(llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic>>&, bool) const + 318
+10 clang++   0x0000557fe5818d22 clang::VarDecl::checkForConstantInitialization(llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic>>&) const + 50
+11 clang++   0x0000557fe4ba8203 clang::Sema::CheckCompleteVariableDeclaration(clang::VarDecl*) + 3075
+12 clang++   0x0000557fe4bfa807 clang::Sema::AddInitializerToDecl(clang::Decl*, clang::Expr*, bool) + 2567
+13 clang++   0x0000557fe488c8b6 clang::Parser::ParseCXXClassMemberDeclaration(clang::AccessSpecifier, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::ParsingDeclRAIIObject*) + 7910
+14 clang++   0x0000557fe488dc28 clang::Parser::ParseCXXClassMemberDeclarationWithPragmas(clang::AccessSpecifier&, clang::ParsedAttributes&, clang::TypeSpecifierType, clang::Decl*) + 1416
+15 clang++   0x0000557fe488e160 clang::Parser::ParseCXXMemberSpecification(clang::SourceLocation, clang::SourceLocation, clang::ParsedAttributes&, unsigned int, clang::Decl*) + 1184
+16 clang++   0x0000557fe489015f clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::ParsedAttributes&) + 5359
+17 clang++   0x0000557fe4856a2b clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*, clang::ImplicitTypenameContext) + 3003
+18 clang++   0x0000557fe481696b clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) + 267
+19 clang++   0x0000557fe48173d3 clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) + 883
+20 clang++   0x0000557fe481fe62 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 738
+21 clang++   0x0000557fe488508b clang::Parser::ParseInnerNamespace(llvm::SmallVector<clang::Parser::InnerNamespaceInfo, 4u> const&, unsigned int, clang::SourceLocation&, clang::ParsedAttributes&, clang::BalancedDelimiterTracker&) + 475
+22 clang++   0x0000557fe4885db9 clang::Parser::ParseNamespace(clang::DeclaratorContext, clang::SourceLocation&, clang::SourceLocation) + 3129
+23 clang++   0x0000557fe486a7c7 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, clang::SourceLocation*) + 759
+24 clang++   0x0000557fe481ffc1 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 1089
+25 clang++   0x0000557fe4820e05 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 549
+26 clang++   0x0000557fe47fcdda clang::ParseAST(clang::Sema&, bool, bool) + 586
+27 clang++   0x0000557fe368613e clang::FrontendAction::Execute() + 46
+28 clang++   0x0000557fe35f5fcb clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+29 clang++   0x0000557fe376b078 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 456
+30 clang++   0x0000557fe1294325 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8277
+31 clang++   0x0000557fe128b6bb
+32 clang++   0x0000557fe128b76f
+33 clang++   0x0000557fe33bb16d
+34 clang++   0x0000557fe29ede97 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+35 clang++   0x0000557fe33bb507
+36 clang++   0x0000557fe337b097 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 167
+37 clang++   0x0000557fe337c0b9 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+38 clang++   0x0000557fe338ea6c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 364
+39 clang++   0x0000557fe12903c4 clang_main(int, char**, llvm::ToolContext const&) + 7748
+40 clang++   0x0000557fe119600b main + 107
+41 libc.so.6 0x00007ff167112d90
+42 libc.so.6 0x00007ff167112e40 __libc_start_main + 128
+43 clang++   0x0000557fe128b135 _start + 37
+clang++: error: clang frontend command failed with exit code 139 (use -v to see invocation)
+clang version 22.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/SLPVectorizer-ae8bcd.cpp
+clang++: note: diagnostic msg: /tmp/SLPVectorizer-ae8bcd.sh
+clang++: note: diagnostic msg: 
+
+********************
+[1138/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/SeedCollector.cpp.o
+[1139/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanAnalysis.cpp.o
+[1140/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanPredicator.cpp.o
+[1141/2958] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARC.cpp.o
+[1142/2958] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/MemProfContextDisambiguation.cpp.o
+[1143/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanSLP.cpp.o
+[1144/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUnroll.cpp.o
+[1145/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanConstruction.cpp.o
+[1146/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o
+[1147/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o
+[1148/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VectorCombine.cpp.o
+[1149/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUtils.cpp.o
+[1150/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o
+[1151/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanVerifier.cpp.o
+[1152/2958] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanTransforms.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
