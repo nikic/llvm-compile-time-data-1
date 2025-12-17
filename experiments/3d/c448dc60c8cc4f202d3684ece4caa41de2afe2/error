@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+[409/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/BasicBlock.cpp.o
+[410/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConstantFold.cpp.o
+[411/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/CycleInfo.cpp.o
+[412/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Attributes.cpp.o
+[413/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wno-pass-failed -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp
+free(): double free detected in tcache 2
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wno-pass-failed -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/DebugInfoMetadata.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp
+1.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp:892:1: current parser token 'std'
+2.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp:875:27: LLVM IR generation of declaration 'llvm::DIBasicType::getImpl'
+3.	/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfoMetadata.cpp:875:27: Generating code for declaration 'llvm::DIBasicType::getImpl'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x000056489bb86f90 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x000056489bb84b44 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x000056489baca638
+3  libc.so.6 0x00007ffb71322520
+4  libc.so.6 0x00007ffb713769fc pthread_kill + 300
+5  libc.so.6 0x00007ffb71322476 raise + 22
+6  libc.so.6 0x00007ffb713087f3 abort + 211
+7  libc.so.6 0x00007ffb71369677
+8  libc.so.6 0x00007ffb71380cfc
+9  libc.so.6 0x00007ffb713830ab
+10 libc.so.6 0x00007ffb71385453 free + 115
+11 clang++   0x000056489eb2fc66
+12 clang++   0x000056489ed37fc3 clang::interp::InterpState::deallocate(clang::interp::Block*) + 51
+13 clang++   0x000056489eb3d219 clang::interp::EvalEmitter::emitDestroy(unsigned int, clang::interp::SourceInfo) + 105
+14 clang++   0x000056489ef8bca2 clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 690
+15 clang++   0x000056489eb3ca6a clang::interp::EvalEmitter::interpretExpr(clang::Expr const*, bool, bool) + 122
+16 clang++   0x000056489eb29e47 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 423
+17 clang++   0x000056489ea7c442
+18 clang++   0x000056489ea80f8f clang::Expr::EvaluateAsRValue(clang::Expr::EvalResult&, clang::ASTContext const&, bool) const + 1263
+19 clang++   0x000056489bed8b14 clang::CodeGen::ConstantEmitter::tryEmitPrivate(clang::Expr const*, clang::QualType) + 260
+20 clang++   0x000056489bedaae0 clang::CodeGen::ConstantEmitter::tryEmitForInitializer(clang::Expr const*, clang::LangAS, clang::QualType) + 160
+21 clang++   0x000056489bea3c5c
+22 clang++   0x000056489bea90fa
+23 clang++   0x000056489bea85ec clang::CodeGen::CodeGenFunction::EmitAggExpr(clang::Expr const*, clang::CodeGen::AggValueSlot) + 828
+24 clang++   0x000056489c375e72 clang::CodeGen::CodeGenFunction::EmitExprAsInit(clang::Expr const*, clang::ValueDecl const*, clang::CodeGen::LValue, bool) + 978
+25 clang++   0x000056489c381137 clang::CodeGen::CodeGenFunction::EmitAutoVarInit(clang::CodeGen::CodeGenFunction::AutoVarEmission const&) + 2615
+26 clang++   0x000056489c38480c
+27 clang++   0x000056489c384e79 clang::CodeGen::CodeGenFunction::EmitDecl(clang::Decl const&, bool) + 745
+28 clang++   0x000056489bffb9dc clang::CodeGen::CodeGenFunction::EmitDeclStmt(clang::DeclStmt const&) + 140
+29 clang++   0x000056489c010fd5 clang::CodeGen::CodeGenFunction::EmitSimpleStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) + 757
+30 clang++   0x000056489c0085ba clang::CodeGen::CodeGenFunction::EmitStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) + 154
+31 clang++   0x000056489c01090b clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 91
+32 clang++   0x000056489c074bb0 clang::CodeGen::CodeGenFunction::EmitFunctionBody(clang::Stmt const*) + 160
+33 clang++   0x000056489c0870db clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 1051
+34 clang++   0x000056489c0d671d clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 397
+35 clang++   0x000056489c0d205c clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 492
+36 clang++   0x000056489c0d2cf0 clang::CodeGen::CodeGenModule::EmitGlobal(clang::GlobalDecl) + 3072
+37 clang++   0x000056489c0dadef
+38 clang++   0x000056489c426529
+39 clang++   0x000056489c412487 clang::BackendConsumer::HandleTopLevelDecl(clang::DeclGroupRef) + 151
+40 clang++   0x000056489d8edf14 clang::ParseAST(clang::Sema&, bool, bool) + 564
+41 clang++   0x000056489c76f8ce clang::FrontendAction::Execute() + 46
+42 clang++   0x000056489c6df33b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+43 clang++   0x000056489c854798 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 456
+44 clang++   0x000056489a36a325 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8341
+45 clang++   0x000056489a36167b
+46 clang++   0x000056489a36172f
+47 clang++   0x000056489c4a3c3d
+48 clang++   0x000056489bacaa67 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+49 clang++   0x000056489c4a3fd7
+50 clang++   0x000056489c463a77 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 167
+51 clang++   0x000056489c464a99 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+52 clang++   0x000056489c47596c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 364
+53 clang++   0x000056489a366384 clang_main(int, char**, llvm::ToolContext const&) + 7748
+54 clang++   0x000056489a26b9db main + 107
+55 libc.so.6 0x00007ffb71309d90
+56 libc.so.6 0x00007ffb71309e40 __libc_start_main + 128
+57 clang++   0x000056489a3610f5 _start + 37
+clang++: error: clang frontend command failed with exit code 134 (use -v to see invocation)
+clang version 22.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/DebugInfoMetadata-452294.cpp
+clang++: note: diagnostic msg: /tmp/DebugInfoMetadata-452294.sh
+clang++: note: diagnostic msg: 
+
+********************
+[414/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/ConvergenceVerifier.cpp.o
+[415/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DataLayout.cpp.o
+[416/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DIExpressionOptimizer.cpp.o
+[417/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugProgramInstruction.cpp.o
+[418/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugLoc.cpp.o
+[419/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DIBuilder.cpp.o
+[420/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Core.cpp.o
+[421/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o
+FAILED: lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wno-pass-failed -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG  -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfo.cpp
+free(): double free detected in tcache 2
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/IR -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wno-pass-failed -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o -MF lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o.d -o lib/IR/CMakeFiles/LLVMCore.dir/DebugInfo.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/IR/DebugInfo.cpp
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DIBuilder.h:940:19: Generating code for declaration 'llvm::DIBuilder::createConstantValueExpression'
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x000055c5b1568f90 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x000055c5b1566b44 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x000055c5b14ac638
+3  libc.so.6 0x00007f45b4871520
+4  libc.so.6 0x00007f45b48c59fc pthread_kill + 300
+5  libc.so.6 0x00007f45b4871476 raise + 22
+6  libc.so.6 0x00007f45b48577f3 abort + 211
+7  libc.so.6 0x00007f45b48b8677
+8  libc.so.6 0x00007f45b48cfcfc
+9  libc.so.6 0x00007f45b48d20ab
+10 libc.so.6 0x00007f45b48d4453 free + 115
+11 clang++   0x000055c5b4511adc
+12 clang++   0x000055c5b4719fc3 clang::interp::InterpState::deallocate(clang::interp::Block*) + 51
+13 clang++   0x000055c5b451f219 clang::interp::EvalEmitter::emitDestroy(unsigned int, clang::interp::SourceInfo) + 105
+14 clang++   0x000055c5b496dca2 clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 690
+15 clang++   0x000055c5b451ea6a clang::interp::EvalEmitter::interpretExpr(clang::Expr const*, bool, bool) + 122
+16 clang++   0x000055c5b450be47 clang::interp::Context::evaluateAsRValue(clang::interp::State&, clang::Expr const*, clang::APValue&) + 423
+17 clang++   0x000055c5b445e442
+18 clang++   0x000055c5b4462f8f clang::Expr::EvaluateAsRValue(clang::Expr::EvalResult&, clang::ASTContext const&, bool) const + 1263
+19 clang++   0x000055c5b18bab14 clang::CodeGen::ConstantEmitter::tryEmitPrivate(clang::Expr const*, clang::QualType) + 260
+20 clang++   0x000055c5b18bcae0 clang::CodeGen::ConstantEmitter::tryEmitForInitializer(clang::Expr const*, clang::LangAS, clang::QualType) + 160
+21 clang++   0x000055c5b1885c5c
+22 clang++   0x000055c5b188b0fa
+23 clang++   0x000055c5b188a5ec clang::CodeGen::CodeGenFunction::EmitAggExpr(clang::Expr const*, clang::CodeGen::AggValueSlot) + 828
+24 clang++   0x000055c5b185ac61 clang::CodeGen::CodeGenFunction::EmitAnyExprToMem(clang::Expr const*, clang::CodeGen::Address, clang::Qualifiers, bool) + 305
+25 clang++   0x000055c5b18780e0 clang::CodeGen::CodeGenFunction::EmitMaterializeTemporaryExpr(clang::MaterializeTemporaryExpr const*) + 4672
+26 clang++   0x000055c5b187c05d clang::CodeGen::CodeGenFunction::EmitLValueHelper(clang::Expr const*, clang::CodeGen::KnownNonNull_t) + 461
+27 clang++   0x000055c5b187cb9e
+28 clang++   0x000055c5b4b1d625 clang::StackExhaustionHandler::runWithSufficientStackSpace(clang::SourceLocation, llvm::function_ref<void ()>) + 69
+29 clang++   0x000055c5b184a151 clang::CodeGen::CodeGenFunction::EmitLValue(clang::Expr const*, clang::CodeGen::KnownNonNull_t) + 193
+30 clang++   0x000055c5b1880a2e
+31 clang++   0x000055c5b188a5ec clang::CodeGen::CodeGenFunction::EmitAggExpr(clang::Expr const*, clang::CodeGen::AggValueSlot) + 828
+32 clang++   0x000055c5b1848d8c clang::CodeGen::CodeGenFunction::EmitAnyExpr(clang::Expr const*, clang::CodeGen::AggValueSlot, bool) + 668
+33 clang++   0x000055c5b1848f76 clang::CodeGen::CodeGenFunction::EmitAnyExprToTemp(clang::Expr const*) + 198
+34 clang++   0x000055c5b1d0d3dd clang::CodeGen::CodeGenFunction::EmitCallArg(clang::CodeGen::CallArgList&, clang::Expr const*, clang::QualType) + 3213
+35 clang++   0x000055c5b1d0f197 clang::CodeGen::CodeGenFunction::EmitCallArgs(clang::CodeGen::CallArgList&, clang::CodeGen::CodeGenFunction::PrototypeWrapper, llvm::iterator_range<clang::Stmt::CastIterator<clang::Expr, clang::Expr const* const, clang::Stmt const* const>>, clang::CodeGen::CodeGenFunction::AbstractCallee, unsigned int, clang::CodeGen::CodeGenFunction::EvaluationOrder) + 599
+36 clang++   0x000055c5b1d38bed clang::CodeGen::CodeGenFunction::EmitCXXConstructorCall(clang::CXXConstructorDecl const*, clang::CXXCtorType, bool, bool, clang::CodeGen::AggValueSlot, clang::CXXConstructExpr const*) + 1005
+37 clang++   0x000055c5b187e467
+38 clang++   0x000055c5b188a5ec clang::CodeGen::CodeGenFunction::EmitAggExpr(clang::Expr const*, clang::CodeGen::AggValueSlot) + 828
+39 clang++   0x000055c5b1848d8c clang::CodeGen::CodeGenFunction::EmitAnyExpr(clang::Expr const*, clang::CodeGen::AggValueSlot, bool) + 668
+40 clang++   0x000055c5b1848f76 clang::CodeGen::CodeGenFunction::EmitAnyExprToTemp(clang::Expr const*) + 198
+41 clang++   0x000055c5b1d0d3dd clang::CodeGen::CodeGenFunction::EmitCallArg(clang::CodeGen::CallArgList&, clang::Expr const*, clang::QualType) + 3213
+42 clang++   0x000055c5b1d0f197 clang::CodeGen::CodeGenFunction::EmitCallArgs(clang::CodeGen::CallArgList&, clang::CodeGen::CodeGenFunction::PrototypeWrapper, llvm::iterator_range<clang::Stmt::CastIterator<clang::Expr, clang::Expr const* const, clang::Stmt const* const>>, clang::CodeGen::CodeGenFunction::AbstractCallee, unsigned int, clang::CodeGen::CodeGenFunction::EvaluationOrder) + 599
+43 clang++   0x000055c5b18791fb clang::CodeGen::CodeGenFunction::EmitCall(clang::QualType, clang::CodeGen::CGCallee const&, clang::CallExpr const*, clang::CodeGen::ReturnValueSlot, llvm::Value*, llvm::CallBase**, clang::CodeGen::CGFunctionInfo const**) + 1515
+44 clang++   0x000055c5b187a5ae clang::CodeGen::CodeGenFunction::EmitCallExpr(clang::CallExpr const*, clang::CodeGen::ReturnValueSlot, llvm::CallBase**) + 622
+45 clang++   0x000055c5b18df19f
+46 clang++   0x000055c5b18da64f clang::CodeGen::CodeGenFunction::EmitScalarExpr(clang::Expr const*, bool) + 111
+47 clang++   0x000055c5b19e1da3 clang::CodeGen::CodeGenFunction::EmitReturnStmt(clang::ReturnStmt const&) + 1795
+48 clang++   0x000055c5b19f290b clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) + 91
+49 clang++   0x000055c5b1a56bb0 clang::CodeGen::CodeGenFunction::EmitFunctionBody(clang::Stmt const*) + 160
+50 clang++   0x000055c5b1a690db clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) + 1051
+51 clang++   0x000055c5b1ab871d clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 397
+52 clang++   0x000055c5b1ab405c clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) + 492
+53 clang++   0x000055c5b1abe1da clang::CodeGen::CodeGenModule::EmitDeferred() + 362
+54 clang++   0x000055c5b1abf254 clang::CodeGen::CodeGenModule::Release() + 116
+55 clang++   0x000055c5b1e07b9e
+56 clang++   0x000055c5b1e05a05 clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) + 1605
+57 clang++   0x000055c5b32d016c clang::ParseAST(clang::Sema&, bool, bool) + 1164
+58 clang++   0x000055c5b21518ce clang::FrontendAction::Execute() + 46
+59 clang++   0x000055c5b20c133b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+60 clang++   0x000055c5b2236798 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 456
+61 clang++   0x000055c5afd4c325 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 8341
+62 clang++   0x000055c5afd4367b
+63 clang++   0x000055c5afd4372f
+64 clang++   0x000055c5b1e85c3d
+65 clang++   0x000055c5b14aca67 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+66 clang++   0x000055c5b1e85fd7
+67 clang++   0x000055c5b1e45a77 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 167
+68 clang++   0x000055c5b1e46a99 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+69 clang++   0x000055c5b1e5796c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 364
+70 clang++   0x000055c5afd48384 clang_main(int, char**, llvm::ToolContext const&) + 7748
+71 clang++   0x000055c5afc4d9db main + 107
+72 libc.so.6 0x00007f45b4858d90
+73 libc.so.6 0x00007f45b4858e40 __libc_start_main + 128
+74 clang++   0x000055c5afd430f5 _start + 37
+clang++: error: clang frontend command failed with exit code 134 (use -v to see invocation)
+clang version 22.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/DebugInfo-af00e3.cpp
+clang++: note: diagnostic msg: /tmp/DebugInfo-af00e3.sh
+clang++: note: diagnostic msg: 
+
+********************
+[422/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/AsmWriter.cpp.o
+[423/2961] Building CXX object lib/IR/CMakeFiles/LLVMCore.dir/Constants.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
