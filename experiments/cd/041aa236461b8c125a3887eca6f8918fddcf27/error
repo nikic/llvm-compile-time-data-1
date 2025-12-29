@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+                 from /tmp/llvm-project-build-stage1/lib/IR/CMakeFiles/LLVMCore.dir/cmake_pch.hxx:6,
+                 from <command-line>:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CodeGen.h:23:13: note:                 ‘namespace llvm::Reloc { }’
+   23 |   namespace Reloc {
+      |             ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:242:4: error: expected ‘)’ before ‘;’ token
+  242 |   };
+      |    ^
+      |    )
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:216:18: note: to match this ‘(’
+  216 |   auto f = [this](const Reloc &ra, const Reloc &rb) {
+      |                  ^
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:242:4: error: expected ‘{’ before ‘;’ token
+  242 |   };
+      |    ^
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp: In lambda function:
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:393:18: error: reference to ‘Reloc’ is ambiguous
+  393 |       for (const Reloc &r : isec->relocs) {
+      |                  ^~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/lld/MachO/Target.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/lld/MachO/InputFiles.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/Relocations.h:54:8: note: candidates are: ‘struct lld::macho::Reloc’
+   54 | struct Reloc {
+      |        ^~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Attributes.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Argument.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/CFG.h:26,
+                 from /tmp/llvm-project-build-stage1/lib/IR/CMakeFiles/LLVMCore.dir/cmake_pch.hxx:6,
+                 from <command-line>:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CodeGen.h:23:13: note:                 ‘namespace llvm::Reloc { }’
+   23 |   namespace Reloc {
+      |             ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:411:8: error: expected ‘;’ before ‘isec’
+  411 |       }
+      |        ^
+      |        ;
+  412 |       // Set MSB to 1 to avoid collisions with non-hashed classes.
+  413 |       isec->icfEqClass[(icfPass + 1) % 2] = hash | (1ull << 31);
+      |       ~~~~
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:413:43: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  413 |       isec->icfEqClass[(icfPass + 1) % 2] = hash | (1ull << 31);
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:414:5: error: expected primary-expression before ‘}’ token
+  414 |     });
+      |     ^
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:413:65: error: expected ‘)’ before ‘}’ token
+  413 |       isec->icfEqClass[(icfPass + 1) % 2] = hash | (1ull << 31);
+      |                                                                 ^
+      |                                                                 )
+  414 |     });
+      |     ~                                                            
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:393:11: note: to match this ‘(’
+  393 |       for (const Reloc &r : isec->relocs) {
+      |           ^
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:414:5: error: expected primary-expression before ‘}’ token
+  414 |     });
+      |     ^
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/streambuf:41,
+                 from /usr/include/c++/11/bits/streambuf_iterator.h:35,
+                 from /usr/include/c++/11/iterator:66,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ADL.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:17,
+                 from /tmp/llvm-project-build-stage1/lib/IR/CMakeFiles/LLVMCore.dir/cmake_pch.hxx:5,
+                 from <command-line>:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘bool std::__equal4(_II1, _II1, _II2, _II2, _BinaryPredicate) [with _II1 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _II2 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _BinaryPredicate = ICF::equalsConstant(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’:
+/usr/include/c++/11/bits/stl_algobase.h:1709:38:   required from ‘bool std::equal(_IIter1, _IIter1, _IIter2, _IIter2, _BinaryPredicate) [with _IIter1 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _IIter2 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _BinaryPredicate = ICF::equalsConstant(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:2143:20:   required from ‘bool llvm::equal(L&&, R&&, BinaryPredicate) [with L = const std::vector<lld::macho::Reloc>&; R = const std::vector<lld::macho::Reloc>&; BinaryPredicate = ICF::equalsConstant(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:180:19:   required from here
+/usr/include/c++/11/bits/stl_algobase.h:1641:32: error: no match for call to ‘(ICF::equalsConstant(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>) (const lld::macho::Reloc&, const lld::macho::Reloc&)’
+ 1641 |         if (!bool(__binary_pred(*__first1, *__first2)))
+      |                   ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/stl_algobase.h:1641:32: note: candidate: ‘void (*)(int)’ (conversion)
+/usr/include/c++/11/bits/stl_algobase.h:1641:32: note:   candidate expects 2 arguments, 3 provided
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:109:12: note: candidate: ‘ICF::equalsConstant(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>’
+  109 |   auto f = [](const Reloc &ra, const Reloc &rb) {
+      |            ^
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:109:12: note:   candidate expects 1 argument, 2 provided
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/streambuf:41,
+                 from /usr/include/c++/11/bits/streambuf_iterator.h:35,
+                 from /usr/include/c++/11/iterator:66,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ADL.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:17,
+                 from /tmp/llvm-project-build-stage1/lib/IR/CMakeFiles/LLVMCore.dir/cmake_pch.hxx:5,
+                 from <command-line>:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘bool std::__equal4(_II1, _II1, _II2, _II2, _BinaryPredicate) [with _II1 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _II2 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _BinaryPredicate = ICF::equalsVariable(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’:
+/usr/include/c++/11/bits/stl_algobase.h:1709:38:   required from ‘bool std::equal(_IIter1, _IIter1, _IIter2, _IIter2, _BinaryPredicate) [with _IIter1 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _IIter2 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _BinaryPredicate = ICF::equalsVariable(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:2143:20:   required from ‘bool llvm::equal(L&&, R&&, BinaryPredicate) [with L = const std::vector<lld::macho::Reloc>&; R = const std::vector<lld::macho::Reloc>&; BinaryPredicate = ICF::equalsVariable(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:243:19:   required from here
+/usr/include/c++/11/bits/stl_algobase.h:1641:32: error: no match for call to ‘(ICF::equalsVariable(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>) (const lld::macho::Reloc&, const lld::macho::Reloc&)’
+ 1641 |         if (!bool(__binary_pred(*__first1, *__first2)))
+      |                   ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:216:12: note: candidate: ‘ICF::equalsVariable(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>’
+  216 |   auto f = [this](const Reloc &ra, const Reloc &rb) {
+      |            ^
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:216:12: note:   candidate expects 1 argument, 2 provided
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/streambuf:41,
+                 from /usr/include/c++/11/bits/streambuf_iterator.h:35,
+                 from /usr/include/c++/11/iterator:66,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ADL.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:17,
+                 from /tmp/llvm-project-build-stage1/lib/IR/CMakeFiles/LLVMCore.dir/cmake_pch.hxx:5,
+                 from <command-line>:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘bool std::equal(_IIter1, _IIter1, _IIter2, _BinaryPredicate) [with _IIter1 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _IIter2 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _BinaryPredicate = ICF::equalsConstant(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’:
+/usr/include/c++/11/bits/stl_algobase.h:1635:32:   required from ‘bool std::__equal4(_II1, _II1, _II2, _II2, _BinaryPredicate) [with _II1 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _II2 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _BinaryPredicate = ICF::equalsConstant(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’
+/usr/include/c++/11/bits/stl_algobase.h:1709:38:   required from ‘bool std::equal(_IIter1, _IIter1, _IIter2, _IIter2, _BinaryPredicate) [with _IIter1 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _IIter2 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _BinaryPredicate = ICF::equalsConstant(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:2143:20:   required from ‘bool llvm::equal(L&&, R&&, BinaryPredicate) [with L = const std::vector<lld::macho::Reloc>&; R = const std::vector<lld::macho::Reloc>&; BinaryPredicate = ICF::equalsConstant(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:180:19:   required from here
+/usr/include/c++/11/bits/stl_algobase.h:1586:32: error: no match for call to ‘(ICF::equalsConstant(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>) (const lld::macho::Reloc&, const lld::macho::Reloc&)’
+ 1586 |         if (!bool(__binary_pred(*__first1, *__first2)))
+      |                   ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/stl_algobase.h:1586:32: note: candidate: ‘void (*)(int)’ (conversion)
+/usr/include/c++/11/bits/stl_algobase.h:1586:32: note:   candidate expects 2 arguments, 3 provided
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:109:12: note: candidate: ‘ICF::equalsConstant(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>’
+  109 |   auto f = [](const Reloc &ra, const Reloc &rb) {
+      |            ^
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:109:12: note:   candidate expects 1 argument, 2 provided
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/streambuf:41,
+                 from /usr/include/c++/11/bits/streambuf_iterator.h:35,
+                 from /usr/include/c++/11/iterator:66,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/ADL.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/BasicBlock.h:17,
+                 from /tmp/llvm-project-build-stage1/lib/IR/CMakeFiles/LLVMCore.dir/cmake_pch.hxx:5,
+                 from <command-line>:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘bool std::equal(_IIter1, _IIter1, _IIter2, _BinaryPredicate) [with _IIter1 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _IIter2 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _BinaryPredicate = ICF::equalsVariable(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’:
+/usr/include/c++/11/bits/stl_algobase.h:1635:32:   required from ‘bool std::__equal4(_II1, _II1, _II2, _II2, _BinaryPredicate) [with _II1 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _II2 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _BinaryPredicate = ICF::equalsVariable(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’
+/usr/include/c++/11/bits/stl_algobase.h:1709:38:   required from ‘bool std::equal(_IIter1, _IIter1, _IIter2, _IIter2, _BinaryPredicate) [with _IIter1 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _IIter2 = __gnu_cxx::__normal_iterator<const lld::macho::Reloc*, std::vector<lld::macho::Reloc> >; _BinaryPredicate = ICF::equalsVariable(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/STLExtras.h:2143:20:   required from ‘bool llvm::equal(L&&, R&&, BinaryPredicate) [with L = const std::vector<lld::macho::Reloc>&; R = const std::vector<lld::macho::Reloc>&; BinaryPredicate = ICF::equalsVariable(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>]’
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:243:19:   required from here
+/usr/include/c++/11/bits/stl_algobase.h:1586:32: error: no match for call to ‘(ICF::equalsVariable(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>) (const lld::macho::Reloc&, const lld::macho::Reloc&)’
+ 1586 |         if (!bool(__binary_pred(*__first1, *__first2)))
+      |                   ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:216:12: note: candidate: ‘ICF::equalsVariable(const lld::macho::ConcatInputSection*, const lld::macho::ConcatInputSection*)::<lambda(int)>’
+  216 |   auto f = [this](const Reloc &ra, const Reloc &rb) {
+      |            ^
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ICF.cpp:216:12: note:   candidate expects 1 argument, 2 provided
+[3166/3235] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ConcatOutputSection.cpp.o
+[3167/3235] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ExportTrie.cpp.o
+[3168/3235] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o
+FAILED: tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/lld/MachO -I/var/llvm-compile-time-tracker/llvm-project/lld/MachO -I/var/llvm-compile-time-tracker/llvm-project/lld/include -I/tmp/llvm-project-build-stage1/tools/lld/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/../libunwind/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -Winvalid-pch -include /tmp/llvm-project-build-stage1/lib/IR/CMakeFiles/LLVMCore.dir/cmake_pch.hxx -MD -MT tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o -MF tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o.d -o tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/lld/MachO/InputSection.cpp
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/InputSection.cpp:34:73: error: template argument 1 is invalid
+   34 |                   sizeof(ConcatInputSection) == sizeof(std::vector<Reloc>) + 88,
+      |                                                                         ^
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/InputSection.cpp:34:73: error: template argument 2 is invalid
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/InputSection.cpp:180:7: error: reference to ‘Reloc’ is ambiguous
+  180 | const Reloc *InputSection::getRelocAt(uint32_t off) const {
+      |       ^~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/lld/MachO/InputSection.h:13,
+                 from /var/llvm-compile-time-tracker/llvm-project/lld/MachO/InputSection.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/Relocations.h:54:8: note: candidates are: ‘struct lld::macho::Reloc’
+   54 | struct Reloc {
+      |        ^~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Attributes.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Argument.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Function.h:25,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/CFG.h:26,
+                 from /tmp/llvm-project-build-stage1/lib/IR/CMakeFiles/LLVMCore.dir/cmake_pch.hxx:6,
+                 from <command-line>:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CodeGen.h:23:13: note:                 ‘namespace llvm::Reloc { }’
+   23 |   namespace Reloc {
+      |             ^~~~~
+[3169/3235] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/LinkerOptimizationHints.cpp.o
+[3170/3235] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Relocations.cpp.o
+[3171/3235] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MarkLive.cpp.o
+[3172/3235] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MapFile.cpp.o
+[3173/3235] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/DriverUtils.cpp.o
+[3174/3235] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/InputFiles.cpp.o
+[3175/3235] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/LTO.cpp.o
+[3176/3235] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Driver.cpp.o
+[3177/3235] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Writer.cpp.o
+[3178/3235] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Driver.cpp.o
+[3179/3235] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputFiles.cpp.o
+[3180/3235] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/SyntheticSections.cpp.o
+[3181/3235] Building CXX object lib/Passes/CMakeFiles/LLVMPasses.dir/PassBuilder.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+4468.53user 422.65system 5:18.97elapsed 1533%CPU (0avgtext+0avgdata 2603284maxresident)k
+0inputs+7105328outputs (7948major+200577039minor)pagefaults 0swaps
