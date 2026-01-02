@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+[2442/2965] Building CXX object tools/clang/lib/ASTMatchers/CMakeFiles/obj.clangASTMatchers.dir/ASTMatchFinder.cpp.o
+[2443/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/FormatString.cpp.o
+[2444/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/InferAlloc.cpp.o
+[2445/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Expr.cpp.o
+[2446/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/InheritViz.cpp.o
+[2447/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTImporterLookupTable.cpp.o
+[2448/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Floating.cpp.o
+[2449/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ParentMapContext.cpp.o
+[2450/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Descriptor.cpp.o
+[2451/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/InitMap.cpp.o
+[2452/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/FunctionPointer.cpp.o
+[2453/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Function.cpp.o
+[2454/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTImporter.cpp.o
+[2455/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/ByteCodeEmitter.cpp.o
+[2456/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Context.cpp.o
+[2457/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Disasm.cpp.o
+[2458/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvaluationResult.cpp.o
+[2459/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/DynamicAllocator.cpp.o
+[2460/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/InterpBuiltinBitCast.cpp.o
+[2461/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/InterpBlock.cpp.o
+[2462/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/InterpStack.cpp.o
+[2463/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o
+[2464/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/DynamicRecursiveASTVisitor.cpp.o
+[2465/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Compiler.cpp.o
+[2466/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/InterpFrame.cpp.o
+[2467/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/InterpState.cpp.o
+[2468/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Source.cpp.o
+[2469/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/PrimType.cpp.o
+[2470/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/InterpBuiltin.cpp.o
+[2471/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Record.cpp.o
+[2472/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Pointer.cpp.o
+[2473/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ExprConstant.cpp.o
+[2474/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Program.cpp.o
+[2475/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/InterpShared.cpp.o
+[2476/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o 
+/var/llvm-compile-time-tracker/timeit_launcher.sh /tmp/llvm-project-build-stage1/bin/clang++ -DCLANG_EXPORTS -DGTEST_HAS_RTTI=0 -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage2/tools/clang/include -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wno-pass-failed -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -flto=thin -fno-common -Woverloaded-virtual -Wno-nested-anon-types -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.cpp:2349:
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47247:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47247 |  [[clang::musttail]] return Ret<PT_Sint8>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47247:4: note: tail call required by 'clang::musttail' attribute here
+ 47247 |  [[clang::musttail]] return Ret<PT_Sint8>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47251:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47251 |  [[clang::musttail]] return Ret<PT_Uint8>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47251:4: note: tail call required by 'clang::musttail' attribute here
+ 47251 |  [[clang::musttail]] return Ret<PT_Uint8>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47255:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47255 |  [[clang::musttail]] return Ret<PT_Sint16>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47255:4: note: tail call required by 'clang::musttail' attribute here
+ 47255 |  [[clang::musttail]] return Ret<PT_Sint16>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47259:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47259 |  [[clang::musttail]] return Ret<PT_Uint16>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47259:4: note: tail call required by 'clang::musttail' attribute here
+ 47259 |  [[clang::musttail]] return Ret<PT_Uint16>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47263:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47263 |  [[clang::musttail]] return Ret<PT_Sint32>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47263:4: note: tail call required by 'clang::musttail' attribute here
+ 47263 |  [[clang::musttail]] return Ret<PT_Sint32>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47267:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47267 |  [[clang::musttail]] return Ret<PT_Uint32>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47267:4: note: tail call required by 'clang::musttail' attribute here
+ 47267 |  [[clang::musttail]] return Ret<PT_Uint32>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47271:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47271 |  [[clang::musttail]] return Ret<PT_Sint64>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47271:4: note: tail call required by 'clang::musttail' attribute here
+ 47271 |  [[clang::musttail]] return Ret<PT_Sint64>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47275:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47275 |  [[clang::musttail]] return Ret<PT_Uint64>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47275:4: note: tail call required by 'clang::musttail' attribute here
+ 47275 |  [[clang::musttail]] return Ret<PT_Uint64>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47279:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47279 |  [[clang::musttail]] return Ret<PT_IntAP>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47279:4: note: tail call required by 'clang::musttail' attribute here
+ 47279 |  [[clang::musttail]] return Ret<PT_IntAP>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47283:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47283 |  [[clang::musttail]] return Ret<PT_IntAPS>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47283:4: note: tail call required by 'clang::musttail' attribute here
+ 47283 |  [[clang::musttail]] return Ret<PT_IntAPS>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47287:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47287 |  [[clang::musttail]] return Ret<PT_Bool>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47287:4: note: tail call required by 'clang::musttail' attribute here
+ 47287 |  [[clang::musttail]] return Ret<PT_Bool>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47291:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47291 |  [[clang::musttail]] return Ret<PT_FixedPoint>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47291:4: note: tail call required by 'clang::musttail' attribute here
+ 47291 |  [[clang::musttail]] return Ret<PT_FixedPoint>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47295:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47295 |  [[clang::musttail]] return Ret<PT_Ptr>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47295:4: note: tail call required by 'clang::musttail' attribute here
+ 47295 |  [[clang::musttail]] return Ret<PT_Ptr>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47299:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47299 |  [[clang::musttail]] return Ret<PT_MemberPtr>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47299:4: note: tail call required by 'clang::musttail' attribute here
+ 47299 |  [[clang::musttail]] return Ret<PT_MemberPtr>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47303:22: error: cannot perform a tail call to function 'Ret' because it uses an incompatible calling convention
+ 47303 |  [[clang::musttail]] return Ret<PT_Float>(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:224:1: note: target function has calling convention preserve_none (expected cdecl)
+  224 | __attribute__((preserve_none)) bool Ret(InterpState &S, CodePtr &PC) {
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47303:4: note: tail call required by 'clang::musttail' attribute here
+ 47303 |  [[clang::musttail]] return Ret<PT_Float>(S, PC);
+       |    ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47600:22: error: cannot perform a tail call to function 'RetVoid' because it uses an incompatible calling convention
+ 47600 |  [[clang::musttail]] return RetVoid(S, PC);
+       |                      ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.h:246:1: note: target function has calling convention preserve_none (expected cdecl)
+  246 | __attribute__((preserve_none)) inline bool RetVoid(InterpState &S,
+      | ^
+/tmp/llvm-project-build-stage2/tools/clang/lib/AST/Opcodes.inc:47600:4: note: tail call required by 'clang::musttail' attribute here
+ 47600 |  [[clang::musttail]] return RetVoid(S, PC);
+       |    ^
+16 errors generated.
+[2477/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/State.cpp.o
+[2478/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/MemberPointer.cpp.o
+[2479/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ItaniumCXXABI.cpp.o
+[2480/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/NestedNameSpecifier.cpp.o
+[2481/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvalEmitter.cpp.o
+[2482/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/NSAPI.cpp.o
+[2483/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/MicrosoftCXXABI.cpp.o
+[2484/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/Mangle.cpp.o
+[2485/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/OpenACCClause.cpp.o
+[2486/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ODRDiagsEmitter.cpp.o
+[2487/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ODRHash.cpp.o
+[2488/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ItaniumMangle.cpp.o
+[2489/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/JSONNodeDumper.cpp.o
+[2490/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/OpenMPClause.cpp.o
+[2491/2965] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/MicrosoftMangle.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
