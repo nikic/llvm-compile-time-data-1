@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ModRef.h:353:69: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘llvm::CaptureComponents’
+  353 | LLVM_ABI raw_ostream &operator<<(raw_ostream &OS, CaptureComponents CC);
+      |                                                   ~~~~~~~~~~~~~~~~~~^~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ModRef.h:442:23: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::CaptureInfo)’
+  442 | LLVM_ABI raw_ostream &operator<<(raw_ostream &OS, CaptureInfo Info);
+      |                       ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/ModRef.h:442:63: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘llvm::CaptureInfo’
+  442 | LLVM_ABI raw_ostream &operator<<(raw_ostream &OS, CaptureInfo Info);
+      |                                                   ~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/CmpPredicate.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instructions.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/LoopPassManager.h:41,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/ExtraPassManager.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/LoopVectorize.h:62,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:56:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/FMF.h:136:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::FastMathFlags)’
+  136 | inline raw_ostream &operator<<(raw_ostream &O, FastMathFlags FMF) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/FMF.h:136:62: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘llvm::FastMathFlags’
+  136 | inline raw_ostream &operator<<(raw_ostream &O, FastMathFlags FMF) {
+      |                                                ~~~~~~~~~~~~~~^~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/CmpPredicate.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Instructions.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopInfo.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/LoopPassManager.h:41,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/ExtraPassManager.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/LoopVectorize.h:62,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:56:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:1005:23: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::CmpInst::Predicate)’
+ 1005 | LLVM_ABI raw_ostream &operator<<(raw_ostream &OS, CmpInst::Predicate Pred);
+      |                       ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/InstrTypes.h:1005:70: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘llvm::CmpInst::Predicate’
+ 1005 | LLVM_ABI raw_ostream &operator<<(raw_ostream &OS, CmpInst::Predicate Pred);
+      |                                                   ~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/LoopPassManager.h:42,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/ExtraPassManager.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/LoopVectorize.h:62,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:56:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopNestAnalysis.h:199:23: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::LoopNest&)’
+  199 | LLVM_ABI raw_ostream &operator<<(raw_ostream &, const LoopNest &);
+      |                       ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopNestAnalysis.h:199:49: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘const llvm::LoopNest&’
+  199 | LLVM_ABI raw_ostream &operator<<(raw_ostream &, const LoopNest &);
+      |                                                 ^~~~~~~~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:20,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IntrinsicInst.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/IVDescriptors.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetTransformInfo.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/LoopUtils.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/LoopPassManager.h:48,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/ExtraPassManager.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/LoopVectorize.h:62,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:56:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:64:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::RoundingMode)’
+   64 | inline raw_ostream &operator << (raw_ostream &OS, RoundingMode RM) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:64:64: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘llvm::RoundingMode’
+   64 | inline raw_ostream &operator << (raw_ostream &OS, RoundingMode RM) {
+      |                                                   ~~~~~~~~~~~~~^~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:206:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::DenormalMode)’
+  206 | inline raw_ostream& operator<<(raw_ostream &OS, DenormalMode Mode) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:206:62: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘llvm::DenormalMode’
+  206 | inline raw_ostream& operator<<(raw_ostream &OS, DenormalMode Mode) {
+      |                                                 ~~~~~~~~~~~~~^~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:303:23: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::FPClassTest)’
+  303 | LLVM_ABI raw_ostream &operator<<(raw_ostream &OS, FPClassTest Mask);
+      |                       ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/FloatingPointMode.h:303:63: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘llvm::FPClassTest’
+  303 | LLVM_ABI raw_ostream &operator<<(raw_ostream &OS, FPClassTest Mask);
+      |                                                   ~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IntrinsicInst.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/IVDescriptors.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetTransformInfo.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/LoopUtils.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/LoopPassManager.h:48,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/ExtraPassManager.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/LoopVectorize.h:62,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:56:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:1729:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::APFloat&)’
+ 1729 | inline raw_ostream &operator<<(raw_ostream &OS, const APFloat &V) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/APFloat.h:1729:64: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘const llvm::APFloat&’
+ 1729 | inline raw_ostream &operator<<(raw_ostream &OS, const APFloat &V) {
+      |                                                 ~~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Constants.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/IntrinsicInst.h:26,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/IVDescriptors.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetTransformInfo.h:28,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/LoopUtils.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/LoopPassManager.h:48,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/ExtraPassManager.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/LoopVectorize.h:62,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:56:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantRange.h:620:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::ConstantRange&)’
+  620 | inline raw_ostream &operator<<(raw_ostream &OS, const ConstantRange &CR) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/ConstantRange.h:620:70: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘const llvm::ConstantRange&’
+  620 | inline raw_ostream &operator<<(raw_ostream &OS, const ConstantRange &CR) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetTransformInfo.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/LoopUtils.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/LoopPassManager.h:48,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/ExtraPassManager.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/LoopVectorize.h:62,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:56:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BranchProbability.h:215:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::BranchProbability)’
+  215 | inline raw_ostream &operator<<(raw_ostream &OS, BranchProbability Prob) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/BranchProbability.h:215:67: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘llvm::BranchProbability’
+  215 | inline raw_ostream &operator<<(raw_ostream &OS, BranchProbability Prob) {
+      |                                                 ~~~~~~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetTransformInfo.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/LoopUtils.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/LoopPassManager.h:48,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/ExtraPassManager.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/LoopVectorize.h:62,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:56:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/InstructionCost.h:276:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::InstructionCost&)’
+  276 | inline raw_ostream &operator<<(raw_ostream &OS, const InstructionCost &V) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/InstructionCost.h:276:72: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘const llvm::InstructionCost&’
+  276 | inline raw_ostream &operator<<(raw_ostream &OS, const InstructionCost &V) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:57:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:178:32: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::VPRecipeBase&)’
+  178 | LLVM_ABI_FOR_TEST raw_ostream &operator<<(raw_ostream &OS,
+      |                                ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanValue.h:179:63: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘const llvm::VPRecipeBase&’
+  179 |                                           const VPRecipeBase &R);
+      |                                           ~~~~~~~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:57:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/MemoryLocation.h:203:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, llvm::LocationSize)’
+  203 | inline raw_ostream &operator<<(raw_ostream &OS, LocationSize Size) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/MemoryLocation.h:203:62: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘llvm::LocationSize’
+  203 | inline raw_ostream &operator<<(raw_ostream &OS, LocationSize Size) {
+      |                                                 ~~~~~~~~~~~~~^~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/LoopAccessAnalysis.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/VectorUtils.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:36,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:57:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolution.h:197:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::SCEV&)’
+  197 | inline raw_ostream &operator<<(raw_ostream &OS, const SCEV &S) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolution.h:197:61: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘const llvm::SCEV&’
+  197 | inline raw_ostream &operator<<(raw_ostream &OS, const SCEV &S) {
+      |                                                 ~~~~~~~~~~~~^
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolution.h:252:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::SCEVPredicate&)’
+  252 | inline raw_ostream &operator<<(raw_ostream &OS, const SCEVPredicate &P) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/ScalarEvolution.h:252:70: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘const llvm::SCEVPredicate&’
+  252 | inline raw_ostream &operator<<(raw_ostream &OS, const SCEVPredicate &P) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:23,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/VectorUtils.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:36,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:57:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Comdat.h:72:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::Comdat&)’
+   72 | inline raw_ostream &operator<<(raw_ostream &OS, const Comdat &C) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Comdat.h:72:63: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘const llvm::Comdat&’
+   72 | inline raw_ostream &operator<<(raw_ostream &OS, const Comdat &C) {
+      |                                                 ~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/TargetParser/Triple.h:14,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:35,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/VectorUtils.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:36,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:57:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/VersionTuple.h:190:23: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::VersionTuple&)’
+  190 | LLVM_ABI raw_ostream &operator<<(raw_ostream &Out, const VersionTuple &V);
+      |                       ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/VersionTuple.h:190:72: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘const llvm::VersionTuple&’
+  190 | LLVM_ABI raw_ostream &operator<<(raw_ostream &Out, const VersionTuple &V);
+      |                                                    ~~~~~~~~~~~~~~~~~~~~^
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/VectorUtils.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:36,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:57:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:1072:21: note: candidate: ‘llvm::raw_ostream& llvm::operator<<(llvm::raw_ostream&, const llvm::Module&)’
+ 1072 | inline raw_ostream &operator<<(raw_ostream &O, const Module &M) {
+      |                     ^~~~~~~~
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:1072:62: note:   no known conversion for argument 2 from ‘llvm::VPlan’ to ‘const llvm::Module&’
+ 1072 | inline raw_ostream &operator<<(raw_ostream &O, const Module &M) {
+      |                                                ~~~~~~~~~~~~~~^
+[1910/3243] Building AArch64GenInstrInfo.inc...
+[1911/3243] Building AArch64GenSubtargetInfo.inc...
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+131.17user 11.24system 0:12.36elapsed 1151%CPU (0avgtext+0avgdata 792456maxresident)k
+0inputs+1025952outputs (2876major+6121655minor)pagefaults 0swaps
