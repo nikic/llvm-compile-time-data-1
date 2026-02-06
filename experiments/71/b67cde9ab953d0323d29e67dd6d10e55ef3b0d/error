@@ -1,0 +1,47 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: /tmp/llvm-project-build-stage1/bin/clang
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang - broken
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeError.log".
+
+
+STDERR:
+CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "/tmp/llvm-project-build-stage1/bin/clang"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/ninja cmTC_b49c7 && [1/2] Building C object CMakeFiles/cmTC_b49c7.dir/testCCompiler.c.o
+    FAILED: CMakeFiles/cmTC_b49c7.dir/testCCompiler.c.o 
+    /tmp/llvm-project-build-stage1/bin/clang    -o CMakeFiles/cmTC_b49c7.dir/testCCompiler.c.o -c /tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c
+    PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+    Stack dump:
+    0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang -o CMakeFiles/cmTC_b49c7.dir/testCCompiler.c.o -c /tmp/llvm-project-build-stage2/CMakeFiles/CMakeTmp/testCCompiler.c
+    1.	<eof> parser at end of file
+    Segmentation fault (core dumped)
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:46 (project)
+
+
