@@ -1,0 +1,214 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[2849/3251] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/MacroExpander.cpp.o
+[2850/3251] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/NumericLiteralInfo.cpp.o
+[2851/3251] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/ObjCPropertyAttributeOrderFixer.cpp.o
+[2852/3251] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/SortJavaScriptImports.cpp.o
+[2853/3251] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/QualifierAlignmentFixer.cpp.o
+[2854/3251] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/TokenAnalyzer.cpp.o
+[2855/3251] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/UnwrappedLineFormatter.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Format/UnwrappedLineFormatter.cpp: In member function ‘unsigned int clang::format::{anonymous}::LineJoiner::tryMergeNamespace(llvm::ArrayRef<clang::format::AnnotatedLine*>::const_iterator, llvm::ArrayRef<clang::format::AnnotatedLine*>::const_iterator, unsigned int)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/Format/UnwrappedLineFormatter.cpp:646:11: warning: type qualifiers ignored on cast result type [-Wignored-qualifiers]
+  646 |           static_cast<decltype(N)>(Distance) <= N) {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2856/3251] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/TokenAnnotator.cpp.o
+[2857/3251] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/UsingDeclarationsSorter.cpp.o
+[2858/3251] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/UnwrappedLineParser.cpp.o
+[2859/3251] Building CXX object tools/clang/lib/Format/CMakeFiles/obj.clangFormat.dir/WhitespaceManager.cpp.o
+[2860/3251] Building X86GenInstrInfo.inc...
+[2861/3251] Building X86GenSubtargetInfo.inc...
+[2862/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ArgumentStackSlotRebase.cpp.o
+[2863/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCAsmInfo.cpp.o
+[2864/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFStreamer.cpp.o
+[2865/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFTargetStreamer.cpp.o
+[2866/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCTargetDesc.cpp.o
+[2867/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MCCodeEmitter.cpp.o
+[2868/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MachObjectWriter.cpp.o
+[2869/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86MnemonicTables.cpp.o
+[2870/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ELFObjectWriter.cpp.o
+[2871/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86WinCOFFObjectWriter.cpp.o
+[2872/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AvoidTrailingCall.cpp.o
+[2873/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AsmPrinter.cpp.o
+[2874/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerAMXType.cpp.o
+[2875/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerAMXIntrinsics.cpp.o
+[2876/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CallFrameOptimization.cpp.o
+[2877/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CleanupLocalDynamicTLS.cpp.o
+[2878/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CmovConversion.cpp.o
+[2879/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CallingConv.cpp.o
+[2880/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DomainReassignment.cpp.o
+[2881/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LowerTileCopy.cpp.o
+[2882/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CodeGenPassBuilder.cpp.o
+[2883/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TileConfig.cpp.o
+[2884/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastPreTileConfig.cpp.o
+[2885/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastTileConfig.cpp.o
+[2886/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PreTileConfig.cpp.o
+[2887/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ExpandPseudo.cpp.o
+[2888/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FastISel.cpp.o
+[2889/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupBWInsts.cpp.o
+[2890/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86GlobalBaseReg.cpp.o
+[2891/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupInstTuning.cpp.o
+[2892/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupVectorConstants.cpp.o
+[2893/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86AvoidStoreForwardingBlocks.cpp.o
+[2894/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupLEAs.cpp.o
+[2895/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86DynAllocaExpander.cpp.o
+[2896/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FixupSetCC.cpp.o
+[2897/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FlagsCopyLowering.cpp.o
+[2898/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FloatingPoint.cpp.o
+[2899/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86FrameLowering.cpp.o
+[2900/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86IndirectBranchTracking.cpp.o
+[2901/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InsertX87Wait.cpp.o
+[2902/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelLoweringCall.cpp.o
+[2903/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelLowering.cpp.o
+[2904/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86IndirectThunks.cpp.o
+[2905/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MachineFunctionInfo.cpp.o
+[2906/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ISelDAGToDAG.cpp.o
+[2907/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InterleavedAccess.cpp.o
+[2908/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstCombineIntrinsic.cpp.o
+[2909/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstrFMA3Info.cpp.o
+[2910/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstrInfo.cpp.o
+[2911/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86CompressEVEX.cpp.o
+[2912/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LoadValueInjectionRetHardening.cpp.o
+[2913/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MCInstLower.cpp.o
+[2914/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86InstrFoldTables.cpp.o
+[2915/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86LoadValueInjectionLoadHardening.cpp.o
+[2916/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86OptimizeLEAs.cpp.o
+[2917/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PadShortFunction.cpp.o
+[2918/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86PartialReduction.cpp.o
+[2919/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ShuffleDecodeConstantPool.cpp.o
+[2920/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86MacroFusion.cpp.o
+[2921/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86RegisterInfo.cpp.o
+[2922/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86ReturnThunks.cpp.o
+[2923/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetObjectFile.cpp.o
+[2924/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SelectionDAGInfo.cpp.o
+[2925/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SpeculativeLoadHardening.cpp.o
+[2926/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86WinEHState.cpp.o
+[2927/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SuppressAPXForReloc.cpp.o
+[2928/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86Subtarget.cpp.o
+[2929/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86SpeculativeExecutionSideEffectSuppression.cpp.o
+[2930/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetMachine.cpp.o
+[2931/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86TargetTransformInfo.cpp.o
+[2932/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86VZeroUpper.cpp.o
+[2933/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86CallLowering.cpp.o
+[2934/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/X86WinEHUnwindV2.cpp.o
+[2935/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86InstructionSelector.cpp.o
+[2936/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86PreLegalizerCombiner.cpp.o
+[2937/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86LegalizerInfo.cpp.o
+[2938/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86PostLegalizerCombiner.cpp.o
+[2939/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ATTInstPrinter.cpp.o
+[2940/3251] Building CXX object lib/Target/X86/CMakeFiles/LLVMX86CodeGen.dir/GISel/X86RegisterBankInfo.cpp.o
+[2941/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86ShuffleDecode.cpp.o
+[2942/3251] Building CXX object lib/Target/X86/TargetInfo/CMakeFiles/LLVMX86Info.dir/X86TargetInfo.cpp.o
+[2943/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86InstComments.cpp.o
+[2944/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86EncodingOptimization.cpp.o
+[2945/3251] Linking CXX static library lib/libLLVMX86Info.a
+[2946/3251] Building CXX object lib/Target/X86/Disassembler/CMakeFiles/LLVMX86Disassembler.dir/X86Disassembler.cpp.o
+[2947/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86AsmBackend.cpp.o
+[2948/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86InstPrinterCommon.cpp.o
+[2949/3251] Building CXX object lib/Target/X86/AsmParser/CMakeFiles/LLVMX86AsmParser.dir/X86AsmParser.cpp.o
+[2950/3251] Building CXX object lib/Target/X86/MCTargetDesc/CMakeFiles/LLVMX86Desc.dir/X86IntelInstPrinter.cpp.o
+[2951/3251] Linking CXX static library lib/libLLVMX86Disassembler.a
+[2952/3251] Linking CXX static library lib/libLLVMX86Desc.a
+[2953/3251] Building CXX object lib/MC/MCParser/CMakeFiles/LLVMMCParser.dir/AsmParser.cpp.o
+[2954/3251] Linking CXX static library lib/libLLVMMCParser.a
+[2955/3251] Linking CXX static library lib/libLLVMX86AsmParser.a
+[2956/3251] Linking CXX static library lib/libLLVMObject.a
+[2957/3251] Linking CXX static library lib/libLLVMDlltoolDriver.a
+[2958/3251] Linking CXX static library lib/libLLVMLibDriver.a
+[2959/3251] Linking CXX static library lib/libLLVMDebugInfoDWARF.a
+[2960/3251] Linking CXX static library lib/libLLVMDebugInfoPDB.a
+[2961/3251] Linking CXX static library lib/libLLVMTextAPIBinaryReader.a
+[2962/3251] Linking CXX static library lib/libLLVMDebugInfoGSYM.a
+[2963/3251] Linking CXX static library lib/libLLVMObjectYAML.a
+[2964/3251] Linking CXX static library lib/libLLVMSymbolize.a
+[2965/3251] Linking CXX static library lib/libLLVMProfileData.a
+[2966/3251] Linking CXX static library lib/libLLVMCoverage.a
+[2967/3251] Linking CXX static library lib/libLLVMAnalysis.a
+[2968/3251] Linking CXX static library lib/libLLVMIRPrinter.a
+[2969/3251] Linking CXX static library lib/libLLVMFrontendAtomic.a
+[2970/3251] Linking CXX static library lib/libLLVMTarget.a
+[2971/3251] Linking CXX static library lib/libLLVMBitWriter.a
+[2972/3251] Linking CXX static library lib/libLLVMSandboxIR.a
+[2973/3251] Linking CXX static library lib/libLLVMCGData.a
+[2974/3251] Linking CXX static library lib/libLLVMTransformUtils.a
+[2975/3251] Linking CXX static library lib/libLLVMHipStdPar.a
+[2976/3251] Linking CXX static library lib/libLLVMAggressiveInstCombine.a
+[2977/3251] Linking CXX static library lib/libLLVMFrontendOffloading.a
+[2978/3251] Linking CXX static library lib/libLLVMLinker.a
+[2979/3251] Linking CXX static library lib/libLLVMObjCARCOpts.a
+[2980/3251] Linking CXX static library lib/libLLVMInstCombine.a
+[2981/3251] Linking CXX static library lib/libLLVMInstrumentation.a
+[2982/3251] Linking CXX static library lib/libLLVMFrontendDriver.a
+[2983/3251] Linking CXX static library lib/libLLVMVectorize.a
+[2984/3251] Linking CXX static library lib/libLLVMScalarOpts.a
+[2985/3251] Linking CXX static library lib/libLLVMFrontendOpenMP.a
+[2986/3251] Linking CXX static library lib/libLLVMipo.a
+[2987/3251] Linking CXX static library lib/libclangBasic.a
+[2988/3251] Linking CXX static library lib/libLLVMCoroutines.a
+[2989/3251] Linking CXX static library lib/libclangOptions.a
+[2990/3251] Linking CXX static library lib/libclangAPINotes.a
+[2991/3251] Linking CXX static library lib/libclangLex.a
+[2992/3251] Linking CXX static library lib/libclangRewrite.a
+[2993/3251] Linking CXX static library lib/libLLVMCodeGen.a
+[2994/3251] Linking CXX static library lib/libclangToolingCore.a
+[2995/3251] Generating VCSVersion.inc
+[2996/3251] Linking CXX static library lib/libclangToolingInclusions.a
+[2997/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DriverDispatcher.cpp.o
+[2998/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Filesystem.cpp.o
+[2999/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Memory.cpp.o
+[3000/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Reproduce.cpp.o
+[3001/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/CommonLinkerContext.cpp.o
+[3002/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Args.cpp.o
+[3003/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/DWARF.cpp.o
+[3004/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/ErrorHandler.cpp.o
+[3005/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Utils.cpp.o
+[3006/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Version.cpp.o
+[3007/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/TargetOptionsCommandFlags.cpp.o
+[3008/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Timer.cpp.o
+[3009/3251] Building CXX object tools/lld/Common/CMakeFiles/lldCommon.dir/Strings.cpp.o
+[3010/3251] Linking CXX static library lib/libLLVMAsmPrinter.a
+[3011/3251] Linking CXX static library lib/liblldCommon.a
+[3012/3251] Linking CXX static library lib/libclangFormat.a
+[3013/3251] Linking CXX static library lib/libLLVMSelectionDAG.a
+[3014/3251] Linking CXX static library lib/libLLVMGlobalISel.a
+[3015/3251] Building CXX object tools/clang/lib/Driver/CMakeFiles/obj.clangDriver.dir/ToolChains/HIPUtility.cpp.o
+[3016/3251] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvaluationResult.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvaluationResult.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvaluationResult.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvaluationResult.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/EvaluationResult.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp: In function ‘bool clang::interp::lval(clang::interp::InterpState&, clang::ASTContext&, const clang::interp::Pointer&, clang::QualType, clang::interp::SourceInfo)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp:351:15: warning: unused variable ‘BaseE’ [-Wunused-variable]
+  351 |   const Expr *BaseE = DeclDesc->asExpr();
+      |               ^~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp:352:20: warning: unused variable ‘BaseVD’ [-Wunused-variable]
+  352 |   const ValueDecl *BaseVD = DeclDesc->asValueDecl();
+      |                    ^~~~~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp: In member function ‘bool clang::interp::EvaluationResult::checkLValueFields(clang::interp::InterpState&, const clang::interp::Pointer&, clang::interp::SourceInfo, clang::ConstantExprKind)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp:447:57: error: ‘Ctx’ was not declared in this scope
+  447 |   QualType SourceType = sourceIsExpr() ? getStorageType(Ctx->getASTContext(), cast<const Expr *>(Source)) : getSourceType();
+      |                                                         ^~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp: In member function ‘bool clang::interp::EvaluationResult::checkLValue(clang::interp::InterpState&, const clang::interp::Pointer&, clang::interp::SourceInfo, clang::ConstantExprKind)’:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp:472:57: error: ‘Ctx’ was not declared in this scope
+  472 |   QualType SourceType = sourceIsExpr() ? getStorageType(Ctx->getASTContext(), cast<const Expr *>(Source)) : getSourceType();
+      |                                                         ^~~
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/EvaluationResult.cpp:334:19: warning: ‘clang::QualType clang::interp::getStorageType(const clang::ASTContext&, const clang::Expr*)’ defined but not used [-Wunused-function]
+  334 |   static QualType getStorageType(const ASTContext &Ctx, const Expr *E) {
+      |                   ^~~~~~~~~~~~~~
+[3017/3251] Linking CXX static library lib/libLLVMPasses.a
+[3018/3251] Linking CXX static library lib/libLLVMX86CodeGen.a
+[3019/3251] Building AArch64GenInstrInfo.inc...
+[3020/3251] Building AArch64GenSubtargetInfo.inc...
+[3021/3251] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ASTContext.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+135.03user 15.90system 0:22.40elapsed 673%CPU (0avgtext+0avgdata 1266848maxresident)k
+0inputs+2799872outputs (4087major+7334519minor)pagefaults 0swaps
