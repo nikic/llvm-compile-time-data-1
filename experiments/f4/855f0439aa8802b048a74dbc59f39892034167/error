@@ -1,0 +1,211 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+38 clang++   0x0000557652394f6e clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 1358
+39 clang++   0x0000557652395d37 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 599
+40 clang++   0x0000557652371f7a clang::ParseAST(clang::Sema&, bool, bool) + 586
+41 clang++   0x00005576512bd3fe clang::FrontendAction::Execute() + 46
+42 clang++   0x000055765122ad9b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+43 clang++   0x00005576513a3138 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 456
+44 clang++   0x000055764ed0eb65 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7189
+45 clang++   0x000055764ed0573b
+46 clang++   0x000055764ed057ef
+47 clang++   0x0000557650fe33cd
+48 clang++   0x00005576504cef17 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+49 clang++   0x0000557650fe3767
+50 clang++   0x0000557650fa2537 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 167
+51 clang++   0x0000557650fa3559 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+52 clang++   0x0000557650fb494c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 364
+53 clang++   0x000055764ed0a490 clang_main(int, char**, llvm::ToolContext const&) + 7840
+54 clang++   0x000055764ec12a51 main + 113
+55 libc.so.6 0x00007fee8f0cdd90
+56 libc.so.6 0x00007fee8f0cde40 __libc_start_main + 128
+57 clang++   0x000055764ed051b5 _start + 37
+clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 23.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/Demangle-fb05f1.cpp
+clang++: note: diagnostic msg: /tmp/Demangle-fb05f1.sh
+clang++: note: diagnostic msg: 
+
+********************
+/tmp/llvm-project-build-stage1/bin/clang++: Segmentation fault
+[295/2986] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -D_GLIBCXX_USE_CXX11_ABI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Demangle -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Demangle -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wno-pass-failed -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -Xclang -fno-pch-timestamp -flto=thin -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o -MF lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o.d -o lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Demangle/MicrosoftDemangleNodes.cpp
+1.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h:6630:43: current parser token ','
+2.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h:6611:1: parsing namespace 'std'
+3.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h:6630:3: parsing function body 'std::stoul'
+4.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h:6630:3: in compound statement ('{}')
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x000055e4554ebe70 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x000055e4554e9a04 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x000055e45542ab78
+3  libc.so.6 0x00007f69833cb520
+4  clang++   0x000055e458a3324d clang::interp::Block::addPointer(clang::interp::Pointer*) + 13
+5  clang++   0x000055e4586ddd75
+6  clang++   0x000055e4586de9a7 clang::interp::EvaluationResult::checkDynamicAllocations(clang::interp::InterpState&, clang::interp::Context const&, clang::interp::Pointer const&, clang::interp::SourceInfo) + 135
+7  clang++   0x000055e458579e27 bool clang::interp::EvalEmitter::emitRet<(clang::interp::PrimType)13>(clang::interp::SourceInfo) + 231
+8  clang++   0x000055e4589d6145 clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 709
+9  clang++   0x000055e458573bf1 clang::interp::EvalEmitter::interpretExpr(clang::Expr const*, bool, bool) + 129
+10 clang++   0x000055e4585678f7 clang::interp::Context::evaluate(clang::interp::EvalSettings const&, clang::Expr const*, clang::APValue&) + 407
+11 clang++   0x000055e45849ede9 clang::Expr::EvaluateAsConstantExpr(clang::Expr::EvalResult&, clang::ASTContext const&, clang::Expr::ConstantExprKind) const + 201
+12 clang++   0x000055e45832bdaa clang::computeDependence(clang::UnaryOperator*, clang::ASTContext const&) + 266
+13 clang++   0x000055e45847397d clang::UnaryOperator::Create(clang::ASTContext const&, clang::Expr*, clang::UnaryOperatorKind, clang::QualType, clang::ExprValueKind, clang::ExprObjectKind, clang::SourceLocation, bool, clang::FPOptionsOverride) + 285
+14 clang++   0x000055e457876f97 clang::Sema::CreateBuiltinUnaryOp(clang::SourceLocation, clang::UnaryOperatorKind, clang::Expr*, bool) + 647
+15 clang++   0x000055e457368a28 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypoCorrectionTypeBehavior, bool, bool*) + 2456
+16 clang++   0x000055e45736a35e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypoCorrectionTypeBehavior, bool, bool*) + 62
+17 clang++   0x000055e45736a58d clang::Parser::ParseAssignmentExpression(clang::TypoCorrectionTypeBehavior) + 61
+18 clang++   0x000055e45736a86e clang::Parser::ParseExpressionList(llvm::SmallVectorImpl<clang::Expr*>&, llvm::function_ref<void ()>, bool) + 126
+19 clang++   0x000055e45736eb7b clang::Parser::ParsePostfixExpressionSuffix(clang::ActionResult<clang::Expr*, true>) + 1275
+20 clang++   0x000055e457368343 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypoCorrectionTypeBehavior, bool, bool*) + 691
+21 clang++   0x000055e45736a133 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypoCorrectionTypeBehavior, bool, bool*) + 8355
+22 clang++   0x000055e45736a35e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypoCorrectionTypeBehavior, bool, bool*) + 62
+23 clang++   0x000055e45736a58d clang::Parser::ParseAssignmentExpression(clang::TypoCorrectionTypeBehavior) + 61
+24 clang++   0x000055e45736e66d clang::Parser::ParseExpression(clang::TypoCorrectionTypeBehavior) + 13
+25 clang++   0x000055e4573ef175 clang::Parser::ParseReturnStatement() + 133
+26 clang++   0x000055e4573f3c17 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&, clang::LabelDecl*) + 3575
+27 clang++   0x000055e4573f4a45 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::LabelDecl*) + 373
+28 clang++   0x000055e4573fcccf clang::Parser::ParseCompoundStatementBody(bool) + 1311
+29 clang++   0x000055e4573fd59a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) + 218
+30 clang++   0x000055e4572ee10f clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) + 1711
+31 clang++   0x000055e4573378e4 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::SourceLocation*, clang::Parser::ForRangeInit*) + 5188
+32 clang++   0x000055e4572e7e94 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) + 996
+33 clang++   0x000055e4572e862b clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) + 891
+34 clang++   0x000055e4572f0f35 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 1301
+35 clang++   0x000055e457355e4b clang::Parser::ParseInnerNamespace(llvm::SmallVector<clang::Parser::InnerNamespaceInfo, 4u> const&, unsigned int, clang::SourceLocation&, clang::ParsedAttributes&, clang::BalancedDelimiterTracker&) + 475
+36 clang++   0x000055e457356c6a clang::Parser::ParseNamespace(clang::DeclaratorContext, clang::SourceLocation&, clang::SourceLocation) + 3370
+37 clang++   0x000055e45733b847 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, clang::SourceLocation*) + 759
+38 clang++   0x000055e4572f0f6e clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 1358
+39 clang++   0x000055e4572f1d37 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 599
+40 clang++   0x000055e4572cdf7a clang::ParseAST(clang::Sema&, bool, bool) + 586
+41 clang++   0x000055e4562193fe clang::FrontendAction::Execute() + 46
+42 clang++   0x000055e456186d9b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+43 clang++   0x000055e4562ff138 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 456
+44 clang++   0x000055e453c6ab65 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7189
+45 clang++   0x000055e453c6173b
+46 clang++   0x000055e453c617ef
+47 clang++   0x000055e455f3f3cd
+48 clang++   0x000055e45542af17 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+49 clang++   0x000055e455f3f767
+50 clang++   0x000055e455efe537 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 167
+51 clang++   0x000055e455eff559 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+52 clang++   0x000055e455f1094c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 364
+53 clang++   0x000055e453c66490 clang_main(int, char**, llvm::ToolContext const&) + 7840
+54 clang++   0x000055e453b6ea51 main + 113
+55 libc.so.6 0x00007f69833b2d90
+56 libc.so.6 0x00007f69833b2e40 __libc_start_main + 128
+57 clang++   0x000055e453c611b5 _start + 37
+clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 23.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/MicrosoftDemangleNodes-b1c4d9.cpp
+clang++: note: diagnostic msg: /tmp/MicrosoftDemangleNodes-b1c4d9.sh
+clang++: note: diagnostic msg: 
+
+********************
+/tmp/llvm-project-build-stage1/bin/clang++: Segmentation fault
+[296/2986] Linking CXX static library lib/libLLVMDemangle.a
+FAILED: lib/libLLVMDemangle.a 
+: && /usr/bin/cmake -E rm -f lib/libLLVMDemangle.a && /tmp/llvm-project-build-stage1/bin/llvm-ar Dqc lib/libLLVMDemangle.a  lib/Demangle/CMakeFiles/LLVMDemangle.dir/Demangle.cpp.o lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangle.cpp.o lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o lib/Demangle/CMakeFiles/LLVMDemangle.dir/RustDemangle.cpp.o lib/Demangle/CMakeFiles/LLVMDemangle.dir/DLangDemangle.cpp.o && /tmp/llvm-project-build-stage1/bin/llvm-ranlib -D lib/libLLVMDemangle.a && :
+/tmp/llvm-project-build-stage1/bin/llvm-ar: error: lib/Demangle/CMakeFiles/LLVMDemangle.dir/Demangle.cpp.o: No such file or directory
+[297/2986] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/cmake_pch.hxx.pch
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /tmp/llvm-project-build-stage1/bin/clang++ -D_GLIBCXX_USE_CXX11_ABI=0 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage2/lib/Support -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Support -I/tmp/llvm-project-build-stage2/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/../third-party/siphash/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wc++98-compat-extra-semi -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wno-pass-failed -Wmisleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -Xclang -fno-pch-timestamp -flto=thin -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -Winvalid-pch -fpch-instantiate-templates -Xclang -emit-pch -Xclang -include -Xclang /tmp/llvm-project-build-stage2/lib/Support/CMakeFiles/LLVMSupport.dir/cmake_pch.hxx -x c++-header -MD -MT lib/Support/CMakeFiles/LLVMSupport.dir/cmake_pch.hxx.pch -MF lib/Support/CMakeFiles/LLVMSupport.dir/cmake_pch.hxx.pch.d -o lib/Support/CMakeFiles/LLVMSupport.dir/cmake_pch.hxx.pch -c /tmp/llvm-project-build-stage2/lib/Support/CMakeFiles/LLVMSupport.dir/cmake_pch.hxx.cxx
+1.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h:6630:43: current parser token ','
+2.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h:6611:1: parsing namespace 'std'
+3.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h:6630:3: parsing function body 'std::stoul'
+4.	/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h:6630:3: in compound statement ('{}')
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  clang++   0x000055a5aa7cfe70 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 240
+1  clang++   0x000055a5aa7cda04 llvm::sys::CleanupOnSignal(unsigned long) + 164
+2  clang++   0x000055a5aa70eb78
+3  libc.so.6 0x00007fa10deef520
+4  clang++   0x000055a5add1724d clang::interp::Block::addPointer(clang::interp::Pointer*) + 13
+5  clang++   0x000055a5ad9c1d75
+6  clang++   0x000055a5ad9c29a7 clang::interp::EvaluationResult::checkDynamicAllocations(clang::interp::InterpState&, clang::interp::Context const&, clang::interp::Pointer const&, clang::interp::SourceInfo) + 135
+7  clang++   0x000055a5ad85de27 bool clang::interp::EvalEmitter::emitRet<(clang::interp::PrimType)13>(clang::interp::SourceInfo) + 231
+8  clang++   0x000055a5adcba145 clang::interp::Compiler<clang::interp::EvalEmitter>::visitExpr(clang::Expr const*, bool) + 709
+9  clang++   0x000055a5ad857bf1 clang::interp::EvalEmitter::interpretExpr(clang::Expr const*, bool, bool) + 129
+10 clang++   0x000055a5ad84b8f7 clang::interp::Context::evaluate(clang::interp::EvalSettings const&, clang::Expr const*, clang::APValue&) + 407
+11 clang++   0x000055a5ad782de9 clang::Expr::EvaluateAsConstantExpr(clang::Expr::EvalResult&, clang::ASTContext const&, clang::Expr::ConstantExprKind) const + 201
+12 clang++   0x000055a5ad60fdaa clang::computeDependence(clang::UnaryOperator*, clang::ASTContext const&) + 266
+13 clang++   0x000055a5ad75797d clang::UnaryOperator::Create(clang::ASTContext const&, clang::Expr*, clang::UnaryOperatorKind, clang::QualType, clang::ExprValueKind, clang::ExprObjectKind, clang::SourceLocation, bool, clang::FPOptionsOverride) + 285
+14 clang++   0x000055a5acb5af97 clang::Sema::CreateBuiltinUnaryOp(clang::SourceLocation, clang::UnaryOperatorKind, clang::Expr*, bool) + 647
+15 clang++   0x000055a5ac64ca28 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypoCorrectionTypeBehavior, bool, bool*) + 2456
+16 clang++   0x000055a5ac64e35e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypoCorrectionTypeBehavior, bool, bool*) + 62
+17 clang++   0x000055a5ac64e58d clang::Parser::ParseAssignmentExpression(clang::TypoCorrectionTypeBehavior) + 61
+18 clang++   0x000055a5ac64e86e clang::Parser::ParseExpressionList(llvm::SmallVectorImpl<clang::Expr*>&, llvm::function_ref<void ()>, bool) + 126
+19 clang++   0x000055a5ac652b7b clang::Parser::ParsePostfixExpressionSuffix(clang::ActionResult<clang::Expr*, true>) + 1275
+20 clang++   0x000055a5ac64c343 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypoCorrectionTypeBehavior, bool, bool*) + 691
+21 clang++   0x000055a5ac64e133 clang::Parser::ParseCastExpression(clang::CastParseKind, bool, bool&, clang::TypoCorrectionTypeBehavior, bool, bool*) + 8355
+22 clang++   0x000055a5ac64e35e clang::Parser::ParseCastExpression(clang::CastParseKind, bool, clang::TypoCorrectionTypeBehavior, bool, bool*) + 62
+23 clang++   0x000055a5ac64e58d clang::Parser::ParseAssignmentExpression(clang::TypoCorrectionTypeBehavior) + 61
+24 clang++   0x000055a5ac65266d clang::Parser::ParseExpression(clang::TypoCorrectionTypeBehavior) + 13
+25 clang++   0x000055a5ac6d3175 clang::Parser::ParseReturnStatement() + 133
+26 clang++   0x000055a5ac6d7c17 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributes&, clang::ParsedAttributes&, clang::LabelDecl*) + 3575
+27 clang++   0x000055a5ac6d8a45 clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 24u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::LabelDecl*) + 373
+28 clang++   0x000055a5ac6e0ccf clang::Parser::ParseCompoundStatementBody(bool) + 1311
+29 clang++   0x000055a5ac6e159a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) + 218
+30 clang++   0x000055a5ac5d210f clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) + 1711
+31 clang++   0x000055a5ac61b8e4 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::ParsedAttributes&, clang::Parser::ParsedTemplateInfo&, clang::SourceLocation*, clang::Parser::ForRangeInit*) + 5188
+32 clang++   0x000055a5ac5cbe94 clang::Parser::ParseDeclOrFunctionDefInternal(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec&, clang::AccessSpecifier) + 996
+33 clang++   0x000055a5ac5cc62b clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*, clang::AccessSpecifier) + 891
+34 clang++   0x000055a5ac5d4f35 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 1301
+35 clang++   0x000055a5ac639e4b clang::Parser::ParseInnerNamespace(llvm::SmallVector<clang::Parser::InnerNamespaceInfo, 4u> const&, unsigned int, clang::SourceLocation&, clang::ParsedAttributes&, clang::BalancedDelimiterTracker&) + 475
+36 clang++   0x000055a5ac63ac6a clang::Parser::ParseNamespace(clang::DeclaratorContext, clang::SourceLocation&, clang::SourceLocation) + 3370
+37 clang++   0x000055a5ac61f847 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::ParsedAttributes&, clang::ParsedAttributes&, clang::SourceLocation*) + 759
+38 clang++   0x000055a5ac5d4f6e clang::Parser::ParseExternalDeclaration(clang::ParsedAttributes&, clang::ParsedAttributes&, clang::ParsingDeclSpec*) + 1358
+39 clang++   0x000055a5ac5d5d37 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, clang::Sema::ModuleImportState&) + 599
+40 clang++   0x000055a5ac5b1f7a clang::ParseAST(clang::Sema&, bool, bool) + 586
+41 clang++   0x000055a5ab4fd3fe clang::FrontendAction::Execute() + 46
+42 clang++   0x000055a5ab46ad9b clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 555
+43 clang++   0x000055a5ab5e3138 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 456
+44 clang++   0x000055a5a8f4eb65 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 7189
+45 clang++   0x000055a5a8f4573b
+46 clang++   0x000055a5a8f457ef
+47 clang++   0x000055a5ab2233cd
+48 clang++   0x000055a5aa70ef17 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) + 39
+49 clang++   0x000055a5ab223767
+50 clang++   0x000055a5ab1e2537 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const + 167
+51 clang++   0x000055a5ab1e3559 clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const + 153
+52 clang++   0x000055a5ab1f494c clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) + 364
+53 clang++   0x000055a5a8f4a490 clang_main(int, char**, llvm::ToolContext const&) + 7840
+54 clang++   0x000055a5a8e52a51 main + 113
+55 libc.so.6 0x00007fa10ded6d90
+56 libc.so.6 0x00007fa10ded6e40 __libc_start_main + 128
+57 clang++   0x000055a5a8f451b5 _start + 37
+clang++: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 23.0.0git
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /tmp/llvm-project-build-stage1/bin
+clang++: error: unable to execute command: Segmentation fault (core dumped)
+clang++: note: diagnostic msg: Error generating preprocessed source(s).
+/tmp/llvm-project-build-stage1/bin/clang++: Segmentation fault
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
