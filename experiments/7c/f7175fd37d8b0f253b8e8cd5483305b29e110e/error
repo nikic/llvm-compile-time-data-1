@@ -1,0 +1,53 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage2.sh" failed
+
+STDOUT:
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: /tmp/llvm-project-build-stage1/bin/clang
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang
+-- Check for working C compiler: /tmp/llvm-project-build-stage1/bin/clang - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - failed
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage1/bin/clang++
+-- Check for working CXX compiler: /tmp/llvm-project-build-stage1/bin/clang++ - works
+-- bolt project is disabled
+-- clang project is enabled
+-- clang-tools-extra project is disabled
+-- cross-project-tests project is disabled
+-- lld project is disabled
+-- lldb project is disabled
+-- mlir project is disabled
+-- polly project is disabled
+-- flang project is disabled
+-- libc project is disabled
+-- compiler-rt project is disabled
+-- Doxygen disabled.
+-- Found Python3: /usr/bin/python3.10 (found suitable version "3.10.12", minimum required is "3.0") found components: Interpreter 
+-- Configuring incomplete, errors occurred!
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeOutput.log".
+See also "/tmp/llvm-project-build-stage2/CMakeFiles/CMakeError.log".
+
+
+STDERR:
+CMake Warning (dev) at /usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake:239 (message):
+  Unable to determine default CMAKE_INSTALL_LIBDIR directory because no
+  target architecture is known.  Please enable at least one language before
+  including GNUInstallDirs.
+Call Stack (most recent call first):
+  CMakeLists.txt:59 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Error at cmake/modules/CheckCompilerVersion.cmake:55 (if):
+  if given arguments:
+
+    "(" "STREQUAL" "MSVC" ")" "AND" "(" "19.24" "VERSION_LESS_EQUAL" ")" "AND" "(" "VERSION_LESS" "19.25" ")"
+
+  Unknown arguments specified
+Call Stack (most recent call first):
+  cmake/config-ix.cmake:11 (include)
+  CMakeLists.txt:1031 (include)
+
+
