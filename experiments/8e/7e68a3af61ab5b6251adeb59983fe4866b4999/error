@@ -1,0 +1,211 @@
+MESSAGE: The process "sudo -u lctt-runner ./build_llvm_project_stage2.sh" exceeded the timeout of 1200 seconds.
+
+STDOUT:
+    `-StringLiteral 0x55c1a05f2280 <col:29> 'const char[26]' lvalue "vector::_M_realloc_insert"
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d73b320 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/vector.tcc:439:7, col:59> col:23 referenced __elems_before 'const size_type':'const unsigned long' cinit
+`-ExprWithCleanups 0x55c19d73cc38 <col:40, col:59> 'const size_type':'const unsigned long'
+  `-ImplicitCastExpr 0x55c19d73cc20 <col:40, col:59> 'const size_type':'const unsigned long' <IntegralCast>
+    `-CXXOperatorCallExpr 0x55c19d73cbe8 <col:40, col:59> 'typename __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>>::difference_type':'long' '-' adl
+      |-ImplicitCastExpr 0x55c19d73cbd0 <col:51> 'typename __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>>::difference_type (*)(const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>> &, const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>> &) noexcept' <FunctionToPointerDecay>
+      | `-DeclRefExpr 0x55c19d73cb48 <col:51> 'typename __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>>::difference_type (const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>> &, const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>> &) noexcept' lvalue Function 0x55c19d73c2e0 'operator-' 'typename __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>>::difference_type (const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>> &, const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>> &) noexcept'
+      |-ImplicitCastExpr 0x55c19d73cb00 <col:40> 'const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>>':'const __gnu_cxx::__normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry>>' lvalue <NoOp>
+      | `-DeclRefExpr 0x55c19d73b388 <col:40> 'iterator':'__gnu_cxx::__normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry>>' lvalue ParmVar 0x55c19d737fd0 '__position' 'iterator':'__gnu_cxx::__normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry>>'
+      `-MaterializeTemporaryExpr 0x55c19d73cb30 <col:53, col:59> 'const iterator':'const __gnu_cxx::__normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry>>' lvalue
+        `-ImplicitCastExpr 0x55c19d73cb18 <col:53, col:59> 'const iterator':'const __gnu_cxx::__normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry>>' <NoOp>
+          `-CXXMemberCallExpr 0x55c19d73b4a0 <col:53, col:59> 'iterator':'__gnu_cxx::__normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry>>'
+            `-MemberExpr 0x55c19d73b470 <col:53> '<bound member function type>' ->begin 0x55c18e412600
+              `-CXXThisExpr 0x55c19d73b460 <col:53> 'std::vector<llvm::MCGenDwarfLabelEntry> *' implicit this
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d73b320 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/vector.tcc:439:7, col:59> col:23 used __elems_before 'const size_type':'const unsigned long' cinit
+`-ExprWithCleanups 0x55c19d73cc38 <col:40, col:59> 'const size_type':'const unsigned long'
+  `-ImplicitCastExpr 0x55c19d73cc20 <col:40, col:59> 'const size_type':'const unsigned long' <IntegralCast>
+    `-CXXOperatorCallExpr 0x55c19d73cbe8 <col:40, col:59> 'typename __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>>::difference_type':'long' '-' adl
+      |-ImplicitCastExpr 0x55c19d73cbd0 <col:51> 'typename __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>>::difference_type (*)(const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>> &, const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>> &) noexcept' <FunctionToPointerDecay>
+      | `-DeclRefExpr 0x55c19d73cb48 <col:51> 'typename __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>>::difference_type (const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>> &, const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>> &) noexcept' lvalue Function 0x55c19d73c2e0 'operator-' 'typename __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>>::difference_type (const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>> &, const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>> &) noexcept'
+      |-ImplicitCastExpr 0x55c19d73cb00 <col:40> 'const __normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry, std::allocator<llvm::MCGenDwarfLabelEntry>>>':'const __gnu_cxx::__normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry>>' lvalue <NoOp>
+      | `-DeclRefExpr 0x55c19d73b388 <col:40> 'iterator':'__gnu_cxx::__normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry>>' lvalue ParmVar 0x55c19d737fd0 '__position' 'iterator':'__gnu_cxx::__normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry>>'
+      `-MaterializeTemporaryExpr 0x55c19d73cb30 <col:53, col:59> 'const iterator':'const __gnu_cxx::__normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry>>' lvalue
+        `-ImplicitCastExpr 0x55c19d73cb18 <col:53, col:59> 'const iterator':'const __gnu_cxx::__normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry>>' <NoOp>
+          `-CXXMemberCallExpr 0x55c19d73b4a0 <col:53, col:59> 'iterator':'__gnu_cxx::__normal_iterator<llvm::MCGenDwarfLabelEntry *, std::vector<llvm::MCGenDwarfLabelEntry>>'
+            `-MemberExpr 0x55c19d73b470 <col:53> '<bound member function type>' ->begin 0x55c18e412600
+              `-CXXThisExpr 0x55c19d73b460 <col:53> 'std::vector<llvm::MCGenDwarfLabelEntry> *' implicit this
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d73ae28 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/vector.tcc:435:7, line:436:56> line:435:23 used __len 'const size_type':'const unsigned long' cinit
+`-CXXMemberCallExpr 0x55c19d73af58 <line:436:2, col:56> 'size_type':'unsigned long'
+  |-MemberExpr 0x55c19d73aea0 <col:2> '<bound member function type>' ->_M_check_len 0x55c18e41c6e8
+  | `-ImplicitCastExpr 0x55c19d73af40 <col:2> 'const std::vector<llvm::MCGenDwarfLabelEntry> *' <NoOp>
+  |   `-CXXThisExpr 0x55c19d73ae90 <col:2> 'std::vector<llvm::MCGenDwarfLabelEntry> *' implicit this
+  |-CXXFunctionalCastExpr 0x55c19d73aee8 <col:15, col:26> 'size_type':'unsigned long' functional cast to size_type <NoOp>
+  | `-ImplicitCastExpr 0x55c19d73aed0 <col:25> 'size_type':'unsigned long' <IntegralCast> part_of_explicit_cast
+  |   `-IntegerLiteral 0x55c1a05f2320 <col:25> 'int' 1
+  `-ImplicitCastExpr 0x55c19d73af90 <col:29> 'const char *' <ArrayToPointerDecay>
+    `-StringLiteral 0x55c1a05f2280 <col:29> 'const char[26]' lvalue "vector::_M_realloc_insert"
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d778820 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h:1761:2, col:57> col:18 referenced __len 'const size_type':'const unsigned long' cinit
+`-ExprWithCleanups 0x55c19d778b68 <col:26, col:57> 'unsigned long'
+  `-BinaryOperator 0x55c19d778b48 <col:26, col:57> 'unsigned long' '+'
+    |-CXXMemberCallExpr 0x55c19d7788c8 <col:26, col:31> 'size_type':'unsigned long'
+    | `-MemberExpr 0x55c19d778898 <col:26> '<bound member function type>' ->size 0x55c18e413370
+    |   `-CXXThisExpr 0x55c19d778888 <col:26> 'const std::vector<llvm::MCGenDwarfLabelEntry> *' implicit this
+    `-ImplicitCastExpr 0x55c19d778b30 <col:35, col:57> 'unsigned long' <LValueToRValue>
+      `-CallExpr 0x55c19d778ab0 <col:35, col:57> 'const unsigned long' lvalue
+        |-ImplicitCastExpr 0x55c19d778a98 <col:35, col:44> 'const unsigned long &(*)(const unsigned long &, const unsigned long &)' <FunctionToPointerDecay>
+        | `-ParenExpr 0x55c19d778a78 <col:35, col:44> 'const unsigned long &(const unsigned long &, const unsigned long &)' lvalue
+        |   `-DeclRefExpr 0x55c19d778a40 <col:36, col:41> 'const unsigned long &(const unsigned long &, const unsigned long &)' lvalue Function 0x55c1a061ff20 'max' 'const unsigned long &(const unsigned long &, const unsigned long &)' (FunctionTemplate 0x55c18cb3c9c8 'max')
+        |     `-NestedNameSpecifier Namespace 0x55c18b9b40e8 'std'
+        |-MaterializeTemporaryExpr 0x55c19d778b00 <col:46, col:51> 'const size_type':'const unsigned long' lvalue
+        | `-ImplicitCastExpr 0x55c19d778ae8 <col:46, col:51> 'const size_type':'const unsigned long' <NoOp>
+        |   `-CXXMemberCallExpr 0x55c19d7789a0 <col:46, col:51> 'size_type':'unsigned long'
+        |     `-MemberExpr 0x55c19d778970 <col:46> '<bound member function type>' ->size 0x55c18e413370
+        |       `-CXXThisExpr 0x55c19d778960 <col:46> 'const std::vector<llvm::MCGenDwarfLabelEntry> *' implicit this
+        `-ImplicitCastExpr 0x55c19d778b18 <col:54> 'const unsigned long' lvalue <NoOp>
+          `-DeclRefExpr 0x55c19d7789c8 <col:54> 'size_type':'unsigned long' lvalue ParmVar 0x55c18e41c5a0 '__n' 'size_type':'unsigned long'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d778820 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h:1761:2, col:57> col:18 used __len 'const size_type':'const unsigned long' cinit
+`-ExprWithCleanups 0x55c19d778b68 <col:26, col:57> 'unsigned long'
+  `-BinaryOperator 0x55c19d778b48 <col:26, col:57> 'unsigned long' '+'
+    |-CXXMemberCallExpr 0x55c19d7788c8 <col:26, col:31> 'size_type':'unsigned long'
+    | `-MemberExpr 0x55c19d778898 <col:26> '<bound member function type>' ->size 0x55c18e413370
+    |   `-CXXThisExpr 0x55c19d778888 <col:26> 'const std::vector<llvm::MCGenDwarfLabelEntry> *' implicit this
+    `-ImplicitCastExpr 0x55c19d778b30 <col:35, col:57> 'unsigned long' <LValueToRValue>
+      `-CallExpr 0x55c19d778ab0 <col:35, col:57> 'const unsigned long' lvalue
+        |-ImplicitCastExpr 0x55c19d778a98 <col:35, col:44> 'const unsigned long &(*)(const unsigned long &, const unsigned long &)' <FunctionToPointerDecay>
+        | `-ParenExpr 0x55c19d778a78 <col:35, col:44> 'const unsigned long &(const unsigned long &, const unsigned long &)' lvalue
+        |   `-DeclRefExpr 0x55c19d778a40 <col:36, col:41> 'const unsigned long &(const unsigned long &, const unsigned long &)' lvalue Function 0x55c1a061ff20 'max' 'const unsigned long &(const unsigned long &, const unsigned long &)' (FunctionTemplate 0x55c18cb3c9c8 'max')
+        |     `-NestedNameSpecifier Namespace 0x55c18b9b40e8 'std'
+        |-MaterializeTemporaryExpr 0x55c19d778b00 <col:46, col:51> 'const size_type':'const unsigned long' lvalue
+        | `-ImplicitCastExpr 0x55c19d778ae8 <col:46, col:51> 'const size_type':'const unsigned long' <NoOp>
+        |   `-CXXMemberCallExpr 0x55c19d7789a0 <col:46, col:51> 'size_type':'unsigned long'
+        |     `-MemberExpr 0x55c19d778970 <col:46> '<bound member function type>' ->size 0x55c18e413370
+        |       `-CXXThisExpr 0x55c19d778960 <col:46> 'const std::vector<llvm::MCGenDwarfLabelEntry> *' implicit this
+        `-ImplicitCastExpr 0x55c19d778b18 <col:54> 'const unsigned long' lvalue <NoOp>
+          `-DeclRefExpr 0x55c19d7789c8 <col:54> 'size_type':'unsigned long' lvalue ParmVar 0x55c18e41c5a0 '__n' 'size_type':'unsigned long'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d779120 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h:1781:2, line:1782:64> line:1781:15 referenced __diffmax 'const size_t':'const unsigned long' cinit
+`-BinaryOperator 0x55c19d7791e8 <line:1782:6, col:64> '__size_t':'unsigned long' '/'
+  |-ImplicitCastExpr 0x55c19d7791d0 <col:6, col:46> '__size_t':'unsigned long' <IntegralCast>
+  | `-ImplicitCastExpr 0x55c19d7791b8 <col:6, col:46> 'long' <LValueToRValue>
+  |   `-DeclRefExpr 0x55c1a0620f58 <col:6, col:46> 'const long' lvalue Var 0x55c1a0621660 '__max' 'const long' non_odr_use_constant
+  |     `-NestedNameSpecifier TypeSpec '__gnu_cxx::__numeric_traits<ptrdiff_t>':'__gnu_cxx::__numeric_traits<long>'
+  `-UnaryExprOrTypeTraitExpr 0x55c19d779198 <col:54, col:64> '__size_t':'unsigned long' sizeof 'llvm::MCGenDwarfLabelEntry'
+Int 288230376151711743
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d779280 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h:1783:2, col:55> col:15 referenced __allocmax 'const size_t':'const unsigned long' cinit
+`-CallExpr 0x55c19d7793c8 <col:28, col:55> 'size_type':'unsigned long'
+  |-ImplicitCastExpr 0x55c19d7793b0 <col:28, col:43> 'size_type (*)(const allocator_type &) noexcept' <FunctionToPointerDecay>
+  | `-DeclRefExpr 0x55c19d779308 <col:28, col:43> 'size_type (const allocator_type &) noexcept' lvalue CXXMethod 0x55c18e3fac30 'max_size' 'size_type (const allocator_type &) noexcept' (UsingShadow 0x55c18e3fbb98 'max_size')
+  |   `-NestedNameSpecifier TypeSpec '_Alloc_traits':'__gnu_cxx::__alloc_traits<std::allocator<llvm::MCGenDwarfLabelEntry>>'
+  `-DeclRefExpr 0x55c19d779358 <col:52> 'const _Tp_alloc_type':'const std::allocator<llvm::MCGenDwarfLabelEntry>' lvalue ParmVar 0x55c18e41ca70 '__a' 'const _Tp_alloc_type &'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d7a8190 </var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringMap.h:390:5, col:52> col:26 referenced Bucket 'StringMapEntryBase *&' cinit
+`-ArraySubscriptExpr 0x55c19d7a8328 <col:35, col:52> 'StringMapEntryBase *' lvalue
+  |-ImplicitCastExpr 0x55c19d7a82f8 <col:35> 'StringMapEntryBase **' <LValueToRValue>
+  | `-MemberExpr 0x55c19d7a82a8 <col:35> 'StringMapEntryBase **' lvalue ->TheTable 0x55c18d0c98e8
+  |   `-ImplicitCastExpr 0x55c19d7a8288 <col:35> 'llvm::StringMapImpl *' <UncheckedDerivedToBase (StringMapImpl)>
+  |     `-CXXThisExpr 0x55c19d7a8278 <col:35> 'llvm::StringMap<llvm::MCAsmMacro> *' implicit this
+  `-ImplicitCastExpr 0x55c19d7a8310 <col:44> 'unsigned int' <LValueToRValue>
+    `-DeclRefExpr 0x55c19d7a82d8 <col:44> 'unsigned int' lvalue Var 0x55c19d7a78b8 'BucketNo' 'unsigned int'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d7a8190 </var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringMap.h:390:5, col:52> col:26 used Bucket 'StringMapEntryBase *&' cinit
+`-ArraySubscriptExpr 0x55c19d7a8328 <col:35, col:52> 'StringMapEntryBase *' lvalue
+  |-ImplicitCastExpr 0x55c19d7a82f8 <col:35> 'StringMapEntryBase **' <LValueToRValue>
+  | `-MemberExpr 0x55c19d7a82a8 <col:35> 'StringMapEntryBase **' lvalue ->TheTable 0x55c18d0c98e8
+  |   `-ImplicitCastExpr 0x55c19d7a8288 <col:35> 'llvm::StringMapImpl *' <UncheckedDerivedToBase (StringMapImpl)>
+  |     `-CXXThisExpr 0x55c19d7a8278 <col:35> 'llvm::StringMap<llvm::MCAsmMacro> *' implicit this
+  `-ImplicitCastExpr 0x55c19d7a8310 <col:44> 'unsigned int' <LValueToRValue>
+    `-DeclRefExpr 0x55c19d7a82d8 <col:44> 'unsigned int' lvalue Var 0x55c19d7a78b8 'BucketNo' 'unsigned int'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d7d6680 </var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringMap.h:428:5, col:22> col:17 referenced V 'MapEntryTy &' cinit
+`-CXXOperatorCallExpr 0x55c19d7d6878 <col:21, col:22> 'llvm::StringMapEntry<llvm::MCAsmMacro>' lvalue '*'
+  |-ImplicitCastExpr 0x55c19d7d6860 <col:21> 'reference (*)() const' <FunctionToPointerDecay>
+  | `-DeclRefExpr 0x55c19d7d67d8 <col:21> 'reference () const' lvalue CXXMethod 0x55c18ea8a628 'operator*' 'reference () const'
+  `-ImplicitCastExpr 0x55c19d7d67c0 <col:22> 'const llvm::StringMapIterBase<llvm::MCAsmMacro, false>' lvalue <NoOp>
+    `-DeclRefExpr 0x55c19d7d6788 <col:22> 'iterator':'llvm::StringMapIterBase<llvm::MCAsmMacro, false>' lvalue ParmVar 0x55c18e5bc788 'I' 'iterator':'llvm::StringMapIterBase<llvm::MCAsmMacro, false>'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d7d6680 </var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/ADT/StringMap.h:428:5, col:22> col:17 used V 'MapEntryTy &' cinit
+`-CXXOperatorCallExpr 0x55c19d7d6878 <col:21, col:22> 'llvm::StringMapEntry<llvm::MCAsmMacro>' lvalue '*'
+  |-ImplicitCastExpr 0x55c19d7d6860 <col:21> 'reference (*)() const' <FunctionToPointerDecay>
+  | `-DeclRefExpr 0x55c19d7d67d8 <col:21> 'reference () const' lvalue CXXMethod 0x55c18ea8a628 'operator*' 'reference () const'
+  `-ImplicitCastExpr 0x55c19d7d67c0 <col:22> 'const llvm::StringMapIterBase<llvm::MCAsmMacro, false>' lvalue <NoOp>
+    `-DeclRefExpr 0x55c19d7d6788 <col:22> 'iterator':'llvm::StringMapIterBase<llvm::MCAsmMacro, false>' lvalue ParmVar 0x55c18e5bc788 'I' 'iterator':'llvm::StringMapIterBase<llvm::MCAsmMacro, false>'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d802808 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_ptr.h:359:2, col:28> col:8 referenced __ptr 'pointer &' cinit
+`-CXXMemberCallExpr 0x55c19d802960 <col:16, col:28> 'pointer':'llvm::MCRelocationInfo *' lvalue
+  `-MemberExpr 0x55c19d802910 <col:16, col:21> '<bound member function type>' ._M_ptr 0x55c18eb38410
+    `-ImplicitCastExpr 0x55c19d802940 <col:16> 'std::__uniq_ptr_impl<llvm::MCRelocationInfo, std::default_delete<llvm::MCRelocationInfo>>' lvalue <UncheckedDerivedToBase (__uniq_ptr_impl)>
+      `-MemberExpr 0x55c19d802880 <col:16> '__uniq_ptr_data<llvm::MCRelocationInfo, std::default_delete<llvm::MCRelocationInfo>>':'std::__uniq_ptr_data<llvm::MCRelocationInfo, std::default_delete<llvm::MCRelocationInfo>>' lvalue ->_M_t 0x55c18eba6f50
+        `-CXXThisExpr 0x55c19d802870 <col:16> 'std::unique_ptr<llvm::MCRelocationInfo> *' implicit this
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d802808 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_ptr.h:359:2, col:28> col:8 used __ptr 'pointer &' cinit
+`-CXXMemberCallExpr 0x55c19d802960 <col:16, col:28> 'pointer':'llvm::MCRelocationInfo *' lvalue
+  `-MemberExpr 0x55c19d802910 <col:16, col:21> '<bound member function type>' ._M_ptr 0x55c18eb38410
+    `-ImplicitCastExpr 0x55c19d802940 <col:16> 'std::__uniq_ptr_impl<llvm::MCRelocationInfo, std::default_delete<llvm::MCRelocationInfo>>' lvalue <UncheckedDerivedToBase (__uniq_ptr_impl)>
+      `-MemberExpr 0x55c19d802880 <col:16> '__uniq_ptr_data<llvm::MCRelocationInfo, std::default_delete<llvm::MCRelocationInfo>>':'std::__uniq_ptr_data<llvm::MCRelocationInfo, std::default_delete<llvm::MCRelocationInfo>>' lvalue ->_M_t 0x55c18eba6f50
+        `-CXXThisExpr 0x55c19d802870 <col:16> 'std::unique_ptr<llvm::MCRelocationInfo> *' implicit this
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d814688 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_ptr.h:359:2, col:28> col:8 referenced __ptr 'pointer &' cinit
+`-CXXMemberCallExpr 0x55c19d8147e0 <col:16, col:28> 'pointer':'llvm::MCSymbolizer *' lvalue
+  `-MemberExpr 0x55c19d814790 <col:16, col:21> '<bound member function type>' ._M_ptr 0x55c18eeef5d0
+    `-ImplicitCastExpr 0x55c19d8147c0 <col:16> 'std::__uniq_ptr_impl<llvm::MCSymbolizer, std::default_delete<llvm::MCSymbolizer>>' lvalue <UncheckedDerivedToBase (__uniq_ptr_impl)>
+      `-MemberExpr 0x55c19d814700 <col:16> '__uniq_ptr_data<llvm::MCSymbolizer, std::default_delete<llvm::MCSymbolizer>>':'std::__uniq_ptr_data<llvm::MCSymbolizer, std::default_delete<llvm::MCSymbolizer>>' lvalue ->_M_t 0x55c18ef4b070
+        `-CXXThisExpr 0x55c19d8146f0 <col:16> 'std::unique_ptr<llvm::MCSymbolizer> *' implicit this
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d814688 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_ptr.h:359:2, col:28> col:8 used __ptr 'pointer &' cinit
+`-CXXMemberCallExpr 0x55c19d8147e0 <col:16, col:28> 'pointer':'llvm::MCSymbolizer *' lvalue
+  `-MemberExpr 0x55c19d814790 <col:16, col:21> '<bound member function type>' ._M_ptr 0x55c18eeef5d0
+    `-ImplicitCastExpr 0x55c19d8147c0 <col:16> 'std::__uniq_ptr_impl<llvm::MCSymbolizer, std::default_delete<llvm::MCSymbolizer>>' lvalue <UncheckedDerivedToBase (__uniq_ptr_impl)>
+      `-MemberExpr 0x55c19d814700 <col:16> '__uniq_ptr_data<llvm::MCSymbolizer, std::default_delete<llvm::MCSymbolizer>>':'std::__uniq_ptr_data<llvm::MCSymbolizer, std::default_delete<llvm::MCSymbolizer>>' lvalue ->_M_t 0x55c18ef4b070
+        `-CXXThisExpr 0x55c19d8146f0 <col:16> 'std::unique_ptr<llvm::MCSymbolizer> *' implicit this
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d83fde0 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_algobase.h:922:7, col:25> col:17 referenced __tmp 'const unsigned long long' cinit
+`-ImplicitCastExpr 0x55c19d83fea0 <col:25> 'unsigned long long' <LValueToRValue>
+  `-DeclRefExpr 0x55c19d83fe80 <col:25> 'const unsigned long long' lvalue ParmVar 0x55c19d83f680 '__value' 'const unsigned long long &'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d83fde0 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_algobase.h:922:7, col:25> col:17 used __tmp 'const unsigned long long' cinit
+`-ImplicitCastExpr 0x55c19d83fea0 <col:25> 'unsigned long long' <LValueToRValue>
+  `-DeclRefExpr 0x55c19d83fe80 <col:25> 'const unsigned long long' lvalue ParmVar 0x55c19d83f680 '__value' 'const unsigned long long &'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d89b798 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_ptr.h:359:2, col:28> col:8 referenced __ptr 'pointer &' cinit
+`-CXXMemberCallExpr 0x55c19d89b8f0 <col:16, col:28> 'pointer':'const llvm::MCInstrInfo *' lvalue
+  `-MemberExpr 0x55c19d89b8a0 <col:16, col:21> '<bound member function type>' ._M_ptr 0x55c19fc477e0
+    `-ImplicitCastExpr 0x55c19d89b8d0 <col:16> 'std::__uniq_ptr_impl<const llvm::MCInstrInfo, std::default_delete<const llvm::MCInstrInfo>>' lvalue <UncheckedDerivedToBase (__uniq_ptr_impl)>
+      `-MemberExpr 0x55c19d89b810 <col:16> '__uniq_ptr_data<const llvm::MCInstrInfo, std::default_delete<const llvm::MCInstrInfo>>':'std::__uniq_ptr_data<const llvm::MCInstrInfo, std::default_delete<const llvm::MCInstrInfo>>' lvalue ->_M_t 0x55c19fd26c40
+        `-CXXThisExpr 0x55c19d89b800 <col:16> 'std::unique_ptr<const llvm::MCInstrInfo> *' implicit this
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d89b798 </usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_ptr.h:359:2, col:28> col:8 used __ptr 'pointer &' cinit
+`-CXXMemberCallExpr 0x55c19d89b8f0 <col:16, col:28> 'pointer':'const llvm::MCInstrInfo *' lvalue
+  `-MemberExpr 0x55c19d89b8a0 <col:16, col:21> '<bound member function type>' ._M_ptr 0x55c19fc477e0
+    `-ImplicitCastExpr 0x55c19d89b8d0 <col:16> 'std::__uniq_ptr_impl<const llvm::MCInstrInfo, std::default_delete<const llvm::MCInstrInfo>>' lvalue <UncheckedDerivedToBase (__uniq_ptr_impl)>
+      `-MemberExpr 0x55c19d89b810 <col:16> '__uniq_ptr_data<const llvm::MCInstrInfo, std::default_delete<const llvm::MCInstrInfo>>':'std::__uniq_ptr_data<const llvm::MCInstrInfo, std::default_delete<const llvm::MCInstrInfo>>' lvalue ->_M_t 0x55c19fd26c40
+        `-CXXThisExpr 0x55c19d89b800 <col:16> 'std::unique_ptr<const llvm::MCInstrInfo> *' implicit this
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d8b1448 </var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CommandLine.h:602:5, line:603:57> line:602:38 referenced VC 'const OptionValueCopy<llvm::cl::boolOrDefault> &' cinit
+`-CXXStaticCastExpr 0x55c19d8b16b8 <line:603:9, col:57> 'const OptionValueCopy<llvm::cl::boolOrDefault>':'const llvm::cl::OptionValueCopy<llvm::cl::boolOrDefault>' lvalue static_cast<const OptionValueCopy<enum llvm::cl::boolOrDefault> &> <BaseToDerived (GenericOptionValue)>
+  `-DeclRefExpr 0x55c19d8b1698 <col:56> 'const GenericOptionValue' lvalue ParmVar 0x55c19fe03258 'V' 'const GenericOptionValue &'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d8b1448 </var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CommandLine.h:602:5, line:603:57> line:602:38 used VC 'const OptionValueCopy<llvm::cl::boolOrDefault> &' cinit
+`-CXXStaticCastExpr 0x55c19d8b16b8 <line:603:9, col:57> 'const OptionValueCopy<llvm::cl::boolOrDefault>':'const llvm::cl::OptionValueCopy<llvm::cl::boolOrDefault>' lvalue static_cast<const OptionValueCopy<enum llvm::cl::boolOrDefault> &> <BaseToDerived (GenericOptionValue)>
+  `-DeclRefExpr 0x55c19d8b1698 <col:56> 'const GenericOptionValue' lvalue ParmVar 0x55c19fe03258 'V' 'const GenericOptionValue &'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d8b23b8 </var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CommandLine.h:602:5, line:603:57> line:602:38 referenced VC 'const OptionValueCopy<std::basic_string<char>> &' cinit
+`-CXXStaticCastExpr 0x55c19d8b2508 <line:603:9, col:57> 'const OptionValueCopy<std::basic_string<char>>':'const llvm::cl::OptionValueCopy<std::basic_string<char>>' lvalue static_cast<const OptionValueCopy<class std::basic_string<char> > &> <BaseToDerived (GenericOptionValue)>
+  `-DeclRefExpr 0x55c19d8b24e8 <col:56> 'const GenericOptionValue' lvalue ParmVar 0x55c19fe059e0 'V' 'const GenericOptionValue &'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19d8b23b8 </var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Support/CommandLine.h:602:5, line:603:57> line:602:38 used VC 'const OptionValueCopy<std::basic_string<char>> &' cinit
+`-CXXStaticCastExpr 0x55c19d8b2508 <line:603:9, col:57> 'const OptionValueCopy<std::basic_string<char>>':'const llvm::cl::OptionValueCopy<std::basic_string<char>>' lvalue static_cast<const OptionValueCopy<class std::basic_string<char> > &> <BaseToDerived (GenericOptionValue)>
+  `-DeclRefExpr 0x55c19d8b24e8 <col:56> 'const GenericOptionValue' lvalue ParmVar 0x55c19fe059e0 'V' 'const GenericOptionValue &'
+bool clang::Expr::EvaluateAsInitializer(clang::APValue&, const clang::ASTContext&, const clang::VarDecl*, llvm::SmallVectorImpl<std::pair<clang::SourceLocation, clang::PartialDiagnostic> >&, bool) const
+VarDecl 0x55c19fde3a28 </var/llvm-compile-time-tracker/llvm-project/llvm/lib/Target/X86/Disassembler/X86Disassembler.cpp:2463:25, col:30> col:25 implicit used __range1 'ArrayRef<OperandSpecifier> &' cinit
+`-MemberExpr 0x55c19fde3938 <col:25, col:30> 'ArrayRef<OperandSpecifier>':'llvm::ArrayRef<llvm::X86Disassembler::OperandSpecifier>' lvalue .operands 0x55c18c4beca0
+  `-DeclRefExpr 0x55c19fde3918 <col:25> 'InternalInstruction' lvalue ParmVar 0x55c19fde2ad0 'insn' 'InternalInstruction &'
+[2242/2989] Linking CXX static library lib/libLLVMX86Disassembler.a
+
+
+STDERR:
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
