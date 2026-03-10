@@ -1,0 +1,215 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+[3182/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ConcatOutputSection.cpp.o
+[3183/3261] Building CXX object tools/lld/ELF/CMakeFiles/lldELF.dir/Writer.cpp.o
+[3184/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Arch/X86_64.cpp.o
+[3185/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Dwarf.cpp.o
+[3186/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/DriverUtils.cpp.o
+[3187/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/EhFrame.cpp.o
+[3188/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ExportTrie.cpp.o
+[3189/3261] Linking CXX static library lib/libLLVMAArch64Desc.a
+[3190/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Driver.cpp.o
+[3191/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ICF.cpp.o
+[3192/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o
+[3193/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/LinkerOptimizationHints.cpp.o
+[3194/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MapFile.cpp.o
+[3195/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/MarkLive.cpp.o
+[3196/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/ObjC.cpp.o
+/var/llvm-compile-time-tracker/llvm-project/lld/MachO/ObjC.cpp:723:1: warning: ‘{anonymous}::ObjcCategoryMerger::PointerListInfo {anonymous}::ObjcCategoryMerger::parseProtocolListInfo(const lld::macho::ConcatInputSection*, uint32_t, {anonymous}::ObjcCategoryMerger::SourceLanguage)’ defined but not used [-Wunused-function]
+  723 | ObjcCategoryMerger::parseProtocolListInfo(const ConcatInputSection *isec,
+      | ^~~~~~~~~~~~~~~~~~
+[3197/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSection.cpp.o
+[3198/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/OutputSegment.cpp.o
+[3199/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Relocations.cpp.o
+[3200/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/InputFiles.cpp.o
+[3201/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/LTO.cpp.o
+[3202/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SectionPriorities.cpp.o
+[3203/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/BPSectionOrderer.cpp.o
+[3204/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Sections.cpp.o
+[3205/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SymbolTable.cpp.o
+[3206/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Symbols.cpp.o
+[3207/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Target.cpp.o
+[3208/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/SyntheticSections.cpp.o
+[3209/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/UnwindInfoSection.cpp.o
+[3210/3261] Building CXX object tools/lld/MachO/CMakeFiles/lldMachO.dir/Writer.cpp.o
+[3211/3261] Building CXX object tools/lld/MinGW/CMakeFiles/lldMinGW.dir/Driver.cpp.o
+[3212/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputChunks.cpp.o
+[3213/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Driver.cpp.o
+[3214/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/InputFiles.cpp.o
+[3215/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/LTO.cpp.o
+[3216/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MapFile.cpp.o
+[3217/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/MarkLive.cpp.o
+[3218/3261] Linking CXX static library lib/libLLVMAArch64AsmParser.a
+[3219/3261] Linking CXX static library lib/libLLVMAArch64Disassembler.a
+[3220/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSections.cpp.o
+[3221/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Relocations.cpp.o
+[3222/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SymbolTable.cpp.o
+[3223/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/OutputSegment.cpp.o
+[3224/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Symbols.cpp.o
+[3225/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/SyntheticSections.cpp.o
+[3226/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/WriterUtils.cpp.o
+[3227/3261] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/clang-driver.cpp.o
+[3228/3261] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1gen_reproducer_main.cpp.o
+[3229/3261] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1as_main.cpp.o
+[3230/3261] Building CXX object tools/lld/wasm/CMakeFiles/lldWasm.dir/Writer.cpp.o
+[3231/3261] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/driver.cpp.o
+[3232/3261] Building CXX object tools/clang/tools/driver/CMakeFiles/clang.dir/cc1_main.cpp.o
+[3233/3261] Linking CXX static library lib/libLLVMAArch64CodeGen.a
+[3234/3261] Linking CXX static library lib/liblldWasm.a
+[3235/3261] Linking CXX static library lib/liblldCOFF.a
+[3236/3261] Linking CXX static library lib/liblldMachO.a
+[3237/3261] Linking CXX static library lib/liblldMinGW.a
+[3238/3261] Linking CXX static library lib/liblldELF.a
+[3239/3261] Linking CXX executable bin/llvm-ar
+[3240/3261] Generating ../../bin/llvm-ranlib
+[3241/3261] Linking CXX shared module lib/LLVMgold.so
+[3242/3261] Linking CXX executable bin/lld
+[3243/3261] Building CXX object tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o
+FAILED: tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -DCLANG_EXPORTS -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/tools/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST -I/var/llvm-compile-time-tracker/llvm-project/clang/include -I/tmp/llvm-project-build-stage1/tools/clang/include -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -fno-common -Woverloaded-virtual -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o -MF tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o.d -o tools/clang/lib/AST/CMakeFiles/obj.clangAST.dir/ByteCode/Interp.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.cpp:2545:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_EndSpeculation(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:17667:5: error: ‘MUSTTAIL’ was not declared in this scope
+17667 |     MUSTTAIL return EndSpeculation(S, PC);
+      |     ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:17668:1: warning: no return statement in function returning non-void [-Wreturn-type]
+17668 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetSint8(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44681:2: error: ‘MUSTTAIL’ was not declared in this scope
+44681 |  MUSTTAIL return Ret<PT_Sint8>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44682:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44682 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetUint8(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44685:2: error: ‘MUSTTAIL’ was not declared in this scope
+44685 |  MUSTTAIL return Ret<PT_Uint8>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44686:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44686 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetSint16(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44689:2: error: ‘MUSTTAIL’ was not declared in this scope
+44689 |  MUSTTAIL return Ret<PT_Sint16>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44690:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44690 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetUint16(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44693:2: error: ‘MUSTTAIL’ was not declared in this scope
+44693 |  MUSTTAIL return Ret<PT_Uint16>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44694:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44694 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetSint32(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44697:2: error: ‘MUSTTAIL’ was not declared in this scope
+44697 |  MUSTTAIL return Ret<PT_Sint32>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44698:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44698 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetUint32(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44701:2: error: ‘MUSTTAIL’ was not declared in this scope
+44701 |  MUSTTAIL return Ret<PT_Uint32>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44702:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44702 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetSint64(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44705:2: error: ‘MUSTTAIL’ was not declared in this scope
+44705 |  MUSTTAIL return Ret<PT_Sint64>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44706:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44706 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetUint64(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44709:2: error: ‘MUSTTAIL’ was not declared in this scope
+44709 |  MUSTTAIL return Ret<PT_Uint64>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44710:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44710 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetIntAP(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44713:2: error: ‘MUSTTAIL’ was not declared in this scope
+44713 |  MUSTTAIL return Ret<PT_IntAP>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44714:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44714 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetIntAPS(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44717:2: error: ‘MUSTTAIL’ was not declared in this scope
+44717 |  MUSTTAIL return Ret<PT_IntAPS>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44718:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44718 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetBool(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44721:2: error: ‘MUSTTAIL’ was not declared in this scope
+44721 |  MUSTTAIL return Ret<PT_Bool>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44722:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44722 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetFixedPoint(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44725:2: error: ‘MUSTTAIL’ was not declared in this scope
+44725 |  MUSTTAIL return Ret<PT_FixedPoint>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44726:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44726 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetPtr(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44729:2: error: ‘MUSTTAIL’ was not declared in this scope
+44729 |  MUSTTAIL return Ret<PT_Ptr>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44730:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44730 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetMemberPtr(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44733:2: error: ‘MUSTTAIL’ was not declared in this scope
+44733 |  MUSTTAIL return Ret<PT_MemberPtr>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44734:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44734 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetFloat(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44737:2: error: ‘MUSTTAIL’ was not declared in this scope
+44737 |  MUSTTAIL return Ret<PT_Float>(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44738:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44738 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetValue(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44985:2: error: ‘MUSTTAIL’ was not declared in this scope
+44985 |  MUSTTAIL return RetValue(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:44986:1: warning: no return statement in function returning non-void [-Wreturn-type]
+44986 | }
+      | ^
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc: In function ‘bool clang::interp::Interp_RetVoid(clang::interp::InterpState&, clang::interp::CodePtr&)’:
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:45010:2: error: ‘MUSTTAIL’ was not declared in this scope
+45010 |  MUSTTAIL return RetVoid(S, PC);
+      |  ^~~~~~~~
+/tmp/llvm-project-build-stage1/tools/clang/lib/AST/Opcodes.inc:45011:1: warning: no return statement in function returning non-void [-Wreturn-type]
+45011 | }
+      | ^
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.cpp: At global scope:
+/var/llvm-compile-time-tracker/llvm-project/clang/lib/AST/ByteCode/Interp.cpp:46:27: warning: ‘bool RetValue(clang::interp::InterpState&, clang::interp::CodePtr&)’ defined but not used [-Wunused-function]
+   46 | PRESERVE_NONE static bool RetValue(InterpState &S, CodePtr &Ptr) {
+      |                           ^~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Using ccache with precompiled headers with non-Clang compilers is not supported. CMAKE_DISABLE_PRECOMPILE_HEADERS will be set to ON. Pass -DCMAKE_DISABLE_PRECOMPILE_HEADERS=OFF to override this.
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:456 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+122.63user 17.20system 0:14.59elapsed 958%CPU (0avgtext+0avgdata 813760maxresident)k
+0inputs+3420064outputs (49949major+7605945minor)pagefaults 0swaps
