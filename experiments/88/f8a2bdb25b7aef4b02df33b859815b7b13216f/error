@@ -1,0 +1,215 @@
+MESSAGE: Execution of "sudo -u lctt-runner ./build_llvm_project_stage1.sh" failed
+
+STDOUT:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SandboxVectorizer/Legality.h:186:33: warning: ‘maybe_unused’ attribute ignored [-Wattributes]
+  186 |   [[maybe_unused]] ResultReason Reason;
+      |                                 ^~~~~~
+[1313/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Interval.cpp.o
+[1314/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Legality.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Legality.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SandboxVectorizer/Legality.h:186:33: warning: ‘maybe_unused’ attribute ignored [-Wattributes]
+  186 |   [[maybe_unused]] ResultReason Reason;
+      |                                 ^~~~~~
+[1315/3275] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/StructurizeCFG.cpp.o
+[1316/3275] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/LoopStrengthReduce.cpp.o
+[1317/3275] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/ArgumentPromotion.cpp.o
+[1318/3275] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/HotColdSplitting.cpp.o
+[1319/3275] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SCCP.cpp.o
+[1320/3275] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/FunctionSpecialization.cpp.o
+[1321/3275] Building CXX object lib/Transforms/Scalar/CMakeFiles/LLVMScalarOpts.dir/SimpleLoopUnswitch.cpp.o
+[1322/3275] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/GlobalOpt.cpp.o
+[1323/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/RegionsFromBBs.cpp.o
+[1324/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Scheduler.cpp.o
+[1325/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/SeedCollector.cpp.o
+[1326/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/VecUtils.cpp.o
+[1327/3275] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/PartialInlining.cpp.o
+[1328/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/Vectorize.cpp.o
+[1329/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/RegionsFromMetadata.cpp.o
+[1330/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopIdiomVectorize.cpp.o
+[1331/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/TransactionAcceptOrRevert.cpp.o
+[1332/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoadStoreVectorizer.cpp.o
+[1333/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/PackReuse.cpp.o
+[1334/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/BottomUpVec.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SandboxVectorizer/Passes/BottomUpVec.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/Passes/BottomUpVec.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SandboxVectorizer/Legality.h:186:33: warning: ‘maybe_unused’ attribute ignored [-Wattributes]
+  186 |   [[maybe_unused]] ResultReason Reason;
+      |                                 ^~~~~~
+[1335/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanSLP.cpp.o
+[1336/3275] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/IROutliner.cpp.o
+[1337/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/TransactionSave.cpp.o
+[1338/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorizationLegality.cpp.o
+[1339/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/Passes/SeedCollection.cpp.o
+[1340/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/SandboxVectorizer.cpp.o
+[1341/3275] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARC.cpp.o
+[1342/3275] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARCOpts.cpp.o
+[1343/3275] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARCExpand.cpp.o
+[1344/3275] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/DependencyAnalysis.cpp.o
+[1345/3275] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ProvenanceAnalysis.cpp.o
+[1346/3275] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ObjCARCContract.cpp.o
+[1347/3275] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/ProvenanceAnalysisEvaluator.cpp.o
+[1348/3275] Building CXX object lib/Transforms/ObjCARC/CMakeFiles/LLVMObjCARCOpts.dir/PtrState.cpp.o
+[1349/3275] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/CoroAnnotationElide.cpp.o
+[1350/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/LoopVectorize.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:60:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.h:50:21: error: declaration of ‘const llvm::DataLayout& llvm::VPTypeAnalysis::DataLayout’ changes meaning of ‘DataLayout’ [-fpermissive]
+   50 |   const DataLayout &DataLayout;
+      |                     ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/InterestingMemoryOperand.h:17,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/TargetTransformInfo.h:29,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/LoopUtils.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Scalar/LoopPassManager.h:48,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Utils/ExtraPassManager.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/LoopVectorize.h:62,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp:56:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DataLayout.h:64:7: note: ‘DataLayout’ declared here as ‘class llvm::DataLayout’
+   64 | class DataLayout {
+      |       ^~~~~~~~~~
+[1351/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SandboxVectorizer/SandboxVectorizerPassBuilder.cpp.o
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SandboxVectorizer/Passes/BottomUpVec.h:21,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/SandboxVectorizer/SandboxVectorizerPassBuilder.cpp:3:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Transforms/Vectorize/SandboxVectorizer/Legality.h:186:33: warning: ‘maybe_unused’ attribute ignored [-Wattributes]
+  186 |   [[maybe_unused]] ResultReason Reason;
+      |                                 ^~~~~~
+[1352/3275] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/LowerTypeTests.cpp.o
+[1353/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlan.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanHelpers.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.cpp:23:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.h:50:21: error: declaration of ‘const llvm::DataLayout& llvm::VPTypeAnalysis::DataLayout’ changes meaning of ‘DataLayout’ [-fpermissive]
+   50 |   const DataLayout &DataLayout;
+      |                     ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/VectorUtils.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DataLayout.h:64:7: note: ‘DataLayout’ declared here as ‘class llvm::DataLayout’
+   64 | class DataLayout {
+      |       ^~~~~~~~~~
+[1354/3275] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/CoroCleanup.cpp.o
+[1355/3275] Building CXX object lib/Transforms/Coroutines/CMakeFiles/LLVMCoroutines.dir/Coroutines.cpp.o
+[1356/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanAnalysis.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanAnalysis.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanAnalysis.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanAnalysis.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanAnalysis.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.h:50:21: error: declaration of ‘const llvm::DataLayout& llvm::VPTypeAnalysis::DataLayout’ changes meaning of ‘DataLayout’ [-fpermissive]
+   50 |   const DataLayout &DataLayout;
+      |                     ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.h:15,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DataLayout.h:64:7: note: ‘DataLayout’ declared here as ‘class llvm::DataLayout’
+   64 | class DataLayout {
+      |       ^~~~~~~~~~
+[1357/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanRecipes.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanRecipes.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanRecipes.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.h:50:21: error: declaration of ‘const llvm::DataLayout& llvm::VPTypeAnalysis::DataLayout’ changes meaning of ‘DataLayout’ [-fpermissive]
+   50 |   const DataLayout &DataLayout;
+      |                     ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/VectorUtils.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanRecipes.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DataLayout.h:64:7: note: ‘DataLayout’ declared here as ‘class llvm::DataLayout’
+   64 | class DataLayout {
+      |       ^~~~~~~~~~
+[1358/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUnroll.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUnroll.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUnroll.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUnroll.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUnroll.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUnroll.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUnroll.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.h:50:21: error: declaration of ‘const llvm::DataLayout& llvm::VPTypeAnalysis::DataLayout’ changes meaning of ‘DataLayout’ [-fpermissive]
+   50 |   const DataLayout &DataLayout;
+      |                     ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/VectorUtils.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPRecipeBuilder.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUnroll.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DataLayout.h:64:7: note: ‘DataLayout’ declared here as ‘class llvm::DataLayout’
+   64 | class DataLayout {
+      |       ^~~~~~~~~~
+[1359/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanConstruction.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanConstruction.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanConstruction.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanConstruction.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanConstruction.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanConstruction.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanConstruction.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.h:50:21: error: declaration of ‘const llvm::DataLayout& llvm::VPTypeAnalysis::DataLayout’ changes meaning of ‘DataLayout’ [-fpermissive]
+   50 |   const DataLayout &DataLayout;
+      |                     ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/VectorUtils.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/LoopVectorizationPlanner.h:27,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanConstruction.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DataLayout.h:64:7: note: ‘DataLayout’ declared here as ‘class llvm::DataLayout’
+   64 | class DataLayout {
+      |       ^~~~~~~~~~
+[1360/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanVerifier.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanVerifier.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanVerifier.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanVerifier.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanVerifier.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanVerifier.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanHelpers.h:18,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanVerifier.cpp:19:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.h:50:21: error: declaration of ‘const llvm::DataLayout& llvm::VPTypeAnalysis::DataLayout’ changes meaning of ‘DataLayout’ [-fpermissive]
+   50 |   const DataLayout &DataLayout;
+      |                     ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/VectorUtils.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanVerifier.cpp:16:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DataLayout.h:64:7: note: ‘DataLayout’ declared here as ‘class llvm::DataLayout’
+   64 | class DataLayout {
+      |       ^~~~~~~~~~
+[1361/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUtils.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUtils.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUtils.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUtils.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanUtils.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUtils.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUtils.cpp:10:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.h:50:21: error: declaration of ‘const llvm::DataLayout& llvm::VPTypeAnalysis::DataLayout’ changes meaning of ‘DataLayout’ [-fpermissive]
+   50 |   const DataLayout &DataLayout;
+      |                     ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/VectorUtils.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUtils.h:12,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanUtils.cpp:9:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DataLayout.h:64:7: note: ‘DataLayout’ declared here as ‘class llvm::DataLayout’
+   64 | class DataLayout {
+      |       ^~~~~~~~~~
+[1362/3275] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/SampleProfile.cpp.o
+[1363/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanPredicator.cpp.o
+[1364/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanTransforms.cpp.o
+FAILED: lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanTransforms.cpp.o 
+CCACHE_CPP2=yes CCACHE_HASHDIR=yes CCACHE_SLOPPINESS=pch_defines,time_macros /usr/bin/ccache /usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/tmp/llvm-project-build-stage1/lib/Transforms/Vectorize -I/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize -I/tmp/llvm-project-build-stage1/include -I/var/llvm-compile-time-tracker/llvm-project/llvm/include -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-uninitialized -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -fno-exceptions -funwind-tables -fno-rtti -std=c++17 -MD -MT lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanTransforms.cpp.o -MF lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanTransforms.cpp.o.d -o lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VPlanTransforms.cpp.o -c /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:17:
+/var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanAnalysis.h:50:21: error: declaration of ‘const llvm::DataLayout& llvm::VPTypeAnalysis::DataLayout’ changes meaning of ‘DataLayout’ [-fpermissive]
+   50 |   const DataLayout &DataLayout;
+      |                     ^~~~~~~~~~
+In file included from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/Module.h:24,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/Analysis/VectorUtils.h:19,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlan.h:37,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.h:16,
+                 from /var/llvm-compile-time-tracker/llvm-project/llvm/lib/Transforms/Vectorize/VPlanTransforms.cpp:14:
+/var/llvm-compile-time-tracker/llvm-project/llvm/include/llvm/IR/DataLayout.h:64:7: note: ‘DataLayout’ declared here as ‘class llvm::DataLayout’
+   64 | class DataLayout {
+      |       ^~~~~~~~~~
+[1365/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/VectorCombine.cpp.o
+[1366/3275] Building CXX object lib/Transforms/IPO/CMakeFiles/LLVMipo.dir/AttributorAttributes.cpp.o
+[1367/3275] Building CXX object lib/Transforms/Vectorize/CMakeFiles/LLVMVectorize.dir/SLPVectorizer.cpp.o
+ninja: build stopped: subcommand failed.
+
+
+STDERR:
+Using ccache with precompiled headers with non-Clang compilers is not supported. CMAKE_DISABLE_PRECOMPILE_HEADERS will be set to ON. Pass -DCMAKE_DISABLE_PRECOMPILE_HEADERS=OFF to override this.
+CMake Deprecation Warning at /var/llvm-compile-time-tracker/llvm-project/clang/CMakeLists.txt:494 (message):
+  'CLANG_ENABLE_ARCMT' is deprecated as ARCMigrate has been removed from
+  Clang.  Please use 'CLANG_ENABLE_OBJC_REWRITER' instead to enable or
+  disable the Objective-C rewriter.
+
+
+Command exited with non-zero status 1
+749.47user 34.15system 1:11.81elapsed 1091%CPU (0avgtext+0avgdata 1726552maxresident)k
+0inputs+1892680outputs (2927major+20973600minor)pagefaults 0swaps
